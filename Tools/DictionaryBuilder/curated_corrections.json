@@ -1,0 +1,674 @@
+{
+  "corrections": [
+  {"word":"aquarium","part_of_speech":"noun","english":"A public place where live fish and other aquatic animals are exhibited.","chinese":"水族館"},
+  {"word":"bless","part_of_speech":"verb","english":"(Perl, _, programming, transitive, past tense only blessed) To turn (a reference) into an object.","chinese":"（Perl 程式設計）將參照轉換為物件"},
+  {"word":"blessing","part_of_speech":"noun","english":"Some kind of divine or supernatural aid, or reward.","chinese":"神恩；庇佑"},
+  {"word":"bookkeeping","part_of_speech":"noun","english":"(accounting) The skill or practice of keeping books or systematic records of financial transactions, e.g. income and expenses.","chinese":"簿記；記帳"},
+  {"word":"botanical garden","part_of_speech":"noun","english":"A place where a variety of plants are grown, primarily for scientific or educational reasons, but are normally open to the public, and include ornamental plants from around the world.","chinese":"植物園"},
+  {"word":"charge","part_of_speech":"noun","english":"The scope of someone's responsibility.","chinese":"責任範圍；職責"},
+  {"word":"church","part_of_speech":"noun","english":"(uncountable, countable, as bare noun) Christian worship held at a church; service. [from 10th c.]","chinese":"教堂禮拜；禮拜儀式"},
+  {"word":"compulsory education","part_of_speech":"noun","english":"(legal, education) A period of time in a child's life during which the child must receive schooling as required by law.","chinese":"義務教育"},
+  {"word":"concerto","part_of_speech":"noun","english":"(music) A piece of music for one or more solo instruments and orchestra.","chinese":"協奏曲"},
+  {"word":"congressman","part_of_speech":"noun","english":"A male member of congress.","chinese":"男性國會議員"},
+  {"word":"conjunctiva","part_of_speech":"noun","english":"(anatomy) A clear mucous membrane that lines the inner surface of the eyelid and the exposed surface of the eyeball or sclera.","chinese":"結膜"},
+  {"word":"conjunctivitis","part_of_speech":"noun","english":"(pathology) An inflammation of the conjunctiva, often due to infection.","chinese":"結膜炎"},
+  {"word":"construct","part_of_speech":"verb","english":"(transitive) To build or form (something) by assembling parts.","chinese":"建造；構築"},
+  {"word":"constructible","part_of_speech":"adjective","english":"Of a land, suitable or allowable for constructing a building on.","chinese":"（土地）適合或獲准建築的"},
+  {"word":"construction","part_of_speech":"noun","english":"The process of constructing.","chinese":"建造；施工"},
+  {"word":"electrical energy","part_of_speech":"noun","english":"Energy made available for consumption or consumed in the form of electricity or electric power; electricity.","chinese":"電能"},
+  {"word":"equilateral triangle","part_of_speech":"noun","english":"(geometry) A triangle having all three sides equal.","chinese":"等邊三角形"},
+  {"word":"finale","part_of_speech":"noun","english":"The grand end of something, especially of a show or piece of music.","chinese":"終曲；結尾"},
+  {"word":"giant-killing","part_of_speech":"noun","english":"(sports, also used as an adjective) The defeat of a team by a much weaker opponent.","chinese":"（體育）弱隊擊敗強隊；爆冷"},
+  {"word":"globe","part_of_speech":"noun","english":"The planet Earth.","chinese":"地球"},
+  {"word":"happy birthday","part_of_speech":"exclamation","english":"Said or written to a person who is celebrating their birthday in order to convey the good wishes of the speaker or writer (literally, \"may you have a happy birthday\")","chinese":"生日快樂！"},
+  {"word":"item","part_of_speech":"noun","english":"A distinct physical object.","chinese":"物件；物品"},
+  {"word":"java sparrow","part_of_speech":"noun","english":"Any of species Padda oryzivora of finches, native of Java, but very commonly kept as a cage bird.","chinese":"爪哇禾雀；文鳥"},
+  {"word":"lawsuit","part_of_speech":"noun","english":"(legal) In civil law, a case where two or more people disagree and one or more of the parties take the case to a court for resolution.","chinese":"訴訟；官司"},
+  {"word":"litigation","part_of_speech":"noun","english":"(legal) The conduct of a lawsuit.","chinese":"訴訟；打官司"},
+  {"word":"majestic","part_of_speech":"adjective","english":"Having qualities of splendor or royalty.","chinese":"雄偉的；莊嚴的"},
+  {"word":"no smoking","part_of_speech":"phraseologicalUnit","english":"A phrase used in notices indicating that the smoking of cigarettes, etc., is not permitted in the surrounding area.","chinese":"禁止吸煙"},
+  {"word":"obtuse","part_of_speech":"adjective","english":"(geometry, specifically, of an, angle) Larger than one, and smaller than two right angles, or more than 90° and less than 180°.","chinese":"（角）鈍角的"},
+  {"word":"obtuse angle","part_of_speech":"noun","english":"(mathematics, geometry) An angle that is greater than 90 degrees and less than 180 degrees.","chinese":"鈍角"},
+  {"word":"obtuse triangle","part_of_speech":"noun","english":"(geometry) A triangle one of whose angles is obtuse.","chinese":"鈍角三角形"},
+  {"word":"personal","part_of_speech":"adjective","english":"(grammar) Related to grammatical first, second, etc. persons.","chinese":"（文法）人稱的"},
+  {"word":"poultry","part_of_speech":"noun","english":"The meat from a domestic fowl.","chinese":"家禽肉"},
+  {"word":"rectangular","part_of_speech":"adjective","english":"Having a shape like a rectangle.","chinese":"長方形的；矩形的"},
+  {"word":"reduce","part_of_speech":"verb","english":"(transitive, mathematics) To simplify an equation or formula without changing its value.","chinese":"（數學）化簡"},
+  {"word":"right angle","part_of_speech":"noun","english":"(geometry) Half of the angle formed by a single straight line, equivalent to 90 degrees.","chinese":"直角"},
+  {"word":"rock paper scissors","part_of_speech":"noun","english":"(hand game) A popular children's game using three hand signs representing rock, paper and scissors, frequently used as a tiebreaker.","chinese":"石頭、剪刀、布"},
+  {"word":"round angle","part_of_speech":"noun","english":"(geometry) An angle of 360 degrees; a full circle.","chinese":"周角"},
+  {"word":"scholarship","part_of_speech":"noun","english":"The sum of knowledge accrued by scholars; the realm of refined learning.","chinese":"學問；學術造詣"},
+  {"word":"straight angle","part_of_speech":"noun","english":"(maths, geometry) An angle that is equal to 180° (pi radians or two right angles).","chinese":"平角"},
+  {"word":"treasury","part_of_speech":"noun","english":"A place where treasure is stored safely.","chinese":"寶庫；金庫"},
+  {"word":"versatile","part_of_speech":"adjective","english":"Capable of doing many things competently.","chinese":"多才多藝的；多面手的"},
+  {"word":"versatile","part_of_speech":"adjective","english":"Having varied uses or many functions.","chinese":"多用途的；多功能的"},
+  {"word":"zoological garden","part_of_speech":"noun","english":"(formal) A zoo, a park where live animals are exhibited.","chinese":"動物園"},
+
+  {"word":"coupon","part_of_speech":"noun","english":"A section of a ticket, showing the holder to be entitled to some specified accommodation or service, as to a passage over a designated line of travel, a particular seat in a theater, a discount, etc.","chinese":"票券；票根"},
+  {"word":"coupon","part_of_speech":"noun","english":"A voucher issued by a manufacturer or retailer which offers a discount on a particular product.","chinese":"優惠券"},
+  {"word":"good luck","part_of_speech":"noun","english":"Desirable or beneficial fortune.","chinese":"好運"},
+  {"word":"major","part_of_speech":"adjective","english":"Greater in number, quantity, or extent.","chinese":"較多的；較大的；主要的"},
+  {"word":"major","part_of_speech":"adjective","english":"Of full legal age, having attained majority.","chinese":"成年的；已達法定年齡的"},
+  {"word":"major","part_of_speech":"adjective","english":"(education) Of or relating to a subject of academic study chosen as a field of specialization.","chinese":"主修的"},
+  {"word":"major","part_of_speech":"adjective","english":"(postpositive) (of a key) Based on a major scale, tending to produce a bright or joyful effect.","chinese":"（調性）大調的"},
+  {"word":"major","part_of_speech":"adjective","english":"Equivalent to that between the tonic and another note of a major scale, and greater by a semitone than the corresponding minor interval. (of an interval)","chinese":"（音程）大的"},
+  {"word":"major","part_of_speech":"adjective","english":"Occurring as the predicate in the conclusion of a categorical syllogism. (of a term)","chinese":"（邏輯）大項的"},
+  {"word":"major","part_of_speech":"noun","english":"A person of legal age.","chinese":"成年人"},
+  {"word":"major","part_of_speech":"noun","english":"(education, North America, Australia, New Zealand) The principal subject or course of a student working toward a degree at a college or university.","chinese":"主修科目；主修"},
+  {"word":"wetland","part_of_speech":"noun","english":"(usually, in the plural) Land that is covered mostly with water, with occasional marshy and soggy areas.","chinese":"濕地"}
+  ,
+  {"word":"allative","part_of_speech":"noun","english":"(grammar) The allative case, or a word in that case.","chinese":"向格"},
+  {"word":"allative case","part_of_speech":"noun","english":"(grammatical case) A case used to indicate movement onto, or to the adjacency of something. In English, this is usually expressed by the prepositions to or onto, as in \"to the house,\" \"onto the house.\" Languages that use the allative case include Basque, Dyirbal, Estonian, Finnish, Hungarian, and Lithuanian.","chinese":"向格"},
+  {"word":"apparel","part_of_speech":"noun","english":"Clothing.","chinese":"衣服；服裝"},
+  {"word":"bejel","part_of_speech":"noun","english":"Endemic syphilis, a chronic disease of skin and tissue caused by infection by a subspecies of the spirochete Treponema pallidum.","chinese":"地方性梅毒"},
+  {"word":"bully","part_of_speech":"adjective","english":"(US, slang, dated) Very good.","chinese":"非常好的；一流的"},
+  {"word":"charwoman","part_of_speech":"noun","english":"(chiefly, British) A woman employed to do housework, traditionally coming and going on a daily basis and paid weekly wages.","chinese":"女傭；清潔女工"},
+  {"word":"cheerful","part_of_speech":"adjective","english":"Noticeably happy and optimistic.","chinese":"快樂的；開朗的"},
+  {"word":"comme ci comme ça","part_of_speech":"adverb","english":"Neither very well nor very poorly.","chinese":"馬馬虎虎；一般般"},
+  {"word":"dodgeball","part_of_speech":"noun","english":"A team sport whose main objective is to dodge or catch balls thrown by the opposition.","chinese":"躲避球"},
+  {"word":"dress","part_of_speech":"noun","english":"Apparel or clothing, especially when appropriate for a particular occasion, profession, etc.","chinese":"服裝；衣著"},
+  {"word":"dungan","part_of_speech":"noun","english":"A Muslim people originally from north-west China who currently reside in Kazakhstan, Kyrgyzstan, and Russia.","chinese":"東干族"},
+  {"word":"et tu, brute","part_of_speech":"phraseologicalUnit","english":"\"You too, Brutus\" or \"even you, Brutus\"; expressing a recognition of betrayal.","chinese":"布魯圖，你也有份？"},
+  {"word":"first class","part_of_speech":"adjective","english":"Belonging to the best or top group in a system of classification.","chinese":"一流的；最高級的"},
+  {"word":"flush","part_of_speech":"noun","english":"Particularly, such a cleansing of a toilet.","chinese":"（廁所的）沖水；沖洗"},
+  {"word":"flush","part_of_speech":"noun","english":"A suffusion of the face with blood, as from fear, shame, modesty, or intensity of feeling of any kind; a blush; a glow.","chinese":"臉紅；紅暈"},
+  {"word":"flush toilet","part_of_speech":"noun","english":"A toilet that uses water to flush urine and feces through a pipe to another location, typically a sewer main in urban settings or a septic tank elsewhere.","chinese":"沖水式馬桶"},
+  {"word":"gang of four","part_of_speech":"proper noun","english":"(China, historical, politics) A radical political faction composed of four Communist Party of China officials that came to prominence during the Chinese Cultural Revolution.","chinese":"四人幫"},
+  {"word":"gobo","part_of_speech":"noun","english":"(film, photography, television) A screen (often in disc form) placed between a light and an illuminated actor or object in order to diffuse the glare. [from early 20th c.]","chinese":"（影視）遮光片；遮光板"},
+  {"word":"gobo","part_of_speech":"noun","english":"(sound engineering) A device used to shield a microphone from extraneous sounds. [from early 20th c.]","chinese":"（錄音）隔音板"},
+  {"word":"gobo","part_of_speech":"noun","english":"(theater) A template inserted over a light source to control the shape of the thrown light. [from early 20th c.]","chinese":"（舞台燈光）圖案片"},
+  {"word":"google","part_of_speech":"noun","english":"An Internet search, such as one performed on the Google search engine.","chinese":"Google 搜尋"},
+  {"word":"google","part_of_speech":"verb","english":"To search for (something) on the Internet using the Google search engine.","chinese":"用 Google 搜尋"},
+  {"word":"gorge","part_of_speech":"noun","english":"(archaic) The front aspect of the neck; the outside of the throat.","chinese":"頸部前方；喉部"},
+  {"word":"gorge","part_of_speech":"noun","english":"(archaic, literary) The inside of the throat; the esophagus, the gullet; (falconry, specifically) the crop or gizzard of a hawk.","chinese":"咽喉；食道；（鷹的）嗉囊"},
+  {"word":"helminth","part_of_speech":"noun","english":"A parasitic worm; a fluke, tapeworm, or nematode.","chinese":"寄生蟲；蠕蟲"},
+  {"word":"high-class","part_of_speech":"adjective","english":"Recognized for its quality.","chinese":"高級的；優質的"},
+  {"word":"high-grade","part_of_speech":"adjective","english":"Of high quality, particularly good.","chinese":"高品質的；高級的"},
+  {"word":"home stretch","part_of_speech":"noun","english":"The final part of a racecourse from the last curve to the finish line.","chinese":"最後直路；終點直道"},
+  {"word":"home stretch","part_of_speech":"noun","english":"(figurative, by extension) The final part of a distance or the final effort needed to finish.","chinese":"最後階段；最後衝刺"},
+  {"word":"incontestable","part_of_speech":"adjective","english":"Not contestable; indisputable; certain.","chinese":"無可爭辯的；確定的"},
+  {"word":"indisputable","part_of_speech":"adjective","english":"Not disputable; not open to question; obviously true","chinese":"無可爭議的；不容置疑的"},
+  {"word":"irrefragable","part_of_speech":"adjective","english":"Which cannot be refuted; clearly right, incontrovertible, indisputable, irrefutable. [from 16th c.]","chinese":"無法反駁的；無可爭辯的"},
+  {"word":"jovial","part_of_speech":"adjective","english":"(comparable) Cheerful and good-humoured; jolly, merry.","chinese":"快活的；樂天的"},
+  {"word":"li","part_of_speech":"noun","english":"The Chinese mile, a traditional unit of distance equal to 1500 chis or 150 zhangs, now standardized as a half-kilometer (500 meters).","chinese":"里"},
+  {"word":"mamey sapote","part_of_speech":"noun","english":"The fruit of this tree.","chinese":"人心果"},
+  {"word":"mean","part_of_speech":"adjective","english":"(colloquial) Accomplished with great skill; deft; hard to compete with.","chinese":"高超的；厲害的"},
+  {"word":"moo","part_of_speech":"exclamation","english":"The characteristic sound made by a cow or bull.","chinese":"哞"},
+  {"word":"moo","part_of_speech":"noun","english":"(onomatopoeia) The characteristic lowing sound made by cattle.","chinese":"牛叫聲；哞聲"},
+  {"word":"morass","part_of_speech":"noun","english":"A tract of soft, wet ground; a marsh; a fen.","chinese":"沼澤；泥沼"},
+  {"word":"mwah","part_of_speech":"exclamation","english":"(often, internet slang) The sound of a kiss, to indicate blowing a kiss to someone.","chinese":"啵；親吻聲"},
+  {"word":"nathan","part_of_speech":"proper noun","english":"(biblical character) An Old Testament prophet who advised King David.","chinese":"拿單"},
+  {"word":"nathan","part_of_speech":"proper noun","english":"A en given name, of Biblical origin.","chinese":"內森（男子名）"},
+  {"word":"nookie","part_of_speech":"noun","english":"(slang) Sex or other sexual activity, especially if illicit.","chinese":"（俚語）性行為"},
+  {"word":"oh","part_of_speech":"noun","english":"the digit 0 (especially in representations of speech)","chinese":"零；〇"},
+  {"word":"our lady of sorrows","part_of_speech":"proper noun","english":"(Christianity, chiefly, _, Catholicism) Synonym of Mary, mother of Jesus, in particular reference to her grief at the Christ's crucifixion.","chinese":"七苦聖母；憂苦之母"},
+  {"word":"pavilion","part_of_speech":"noun","english":"A detached or semi-detached building at a hospital or other building complex.","chinese":"（醫院等建築群的）分館；獨立建築"},
+  {"word":"philter","part_of_speech":"noun","english":"A kind of potion, charm, or drug; especially a love potion intended to make the drinker fall in love with the giver. [from the 16th c.]","chinese":"魔藥；愛情藥水"},
+  {"word":"philtrum","part_of_speech":"noun","english":"(anatomy) The shallow vertical groove running from the nasal septum to the center of the upper lip.","chinese":"人中"},
+  {"word":"quadrilateral","part_of_speech":"adjective","english":"Having four sides.","chinese":"四邊形的；有四邊的"},
+  {"word":"quagmire","part_of_speech":"noun","english":"A swampy, soggy area of ground.","chinese":"沼澤；泥潭"},
+  {"word":"sapodilla","part_of_speech":"noun","english":"A long-lived evergreen tree, Manilkara zapota, native to the New World tropics.","chinese":"人心果樹"},
+  {"word":"sapodilla","part_of_speech":"noun","english":"The edible fruit of this tree.","chinese":"人心果"},
+  {"word":"sapote","part_of_speech":"noun","english":"The soft, edible fruit of various South American trees, including the sapodilla.","chinese":"人心果類水果"},
+  {"word":"sick","part_of_speech":"adjective","english":"(slang) Very good, excellent, awesome, badass.","chinese":"（俚語）極好的；厲害的"},
+  {"word":"signify","part_of_speech":"verb","english":"To give (something) a meaning or an importance.","chinese":"賦予意義；表示"},
+  {"word":"site","part_of_speech":"noun","english":"(Internet) A website.","chinese":"網站"},
+  {"word":"skoal","part_of_speech":"exclamation","english":"A toast when drinking, roughly equivalent to cheers.","chinese":"乾杯"},
+  {"word":"slap-up","part_of_speech":"adjective","english":"(informal) Excellent, first-class.","chinese":"（非正式）一流的；極好的"},
+  {"word":"sub","part_of_speech":"noun","english":"Abbreviation of submarine.","chinese":"潛艇（submarine 的縮寫）"},
+  {"word":"submersible","part_of_speech":"adjective","english":"Able to be submerged.","chinese":"可潛水的；可浸沒的"},
+  {"word":"swell","part_of_speech":"adjective","english":"(North America, dated, _, slang) Excellent.","chinese":"（北美舊俚語）極好的"},
+  {"word":"thirty-seven","part_of_speech":"numeral","english":"The cardinal number occurring after thirty-six and before thirty-eight.","chinese":"三十七"},
+  {"word":"tick","part_of_speech":"noun","english":"A tiny woodland arachnid of the suborder Ixodida.","chinese":"蜱；壁蝨"},
+  {"word":"top notch","part_of_speech":"adjective","english":"(idiomatic) Very good; of the highest level or quality. [from 1848]","chinese":"一流的；頂尖的"},
+  {"word":"truck","part_of_speech":"verb","english":"(intransitive) To drive a truck.","chinese":"駕駛卡車"},
+  {"word":"undergrowth","part_of_speech":"noun","english":"The plants in a forest which only reach a relatively low height (such as shrubs and bushes).","chinese":"林下灌木；矮樹叢"},
+  {"word":"undisputed","part_of_speech":"adjective","english":"Unchallenged and accepted without question.","chinese":"無可爭議的；公認的"},
+  {"word":"undoubted","part_of_speech":"adjective","english":"Without doubt; without question; certain.","chinese":"無疑的；確定的"},
+  {"word":"unquestionable","part_of_speech":"adjective","english":"Undeniable, obvious.","chinese":"毋庸置疑的；無可否認的"},
+  {"word":"ward","part_of_speech":"noun","english":"A part of a hospital, with beds, where patients reside.","chinese":"病房"}
+  ],
+  "word_replacements": {
+    "test": [
+      {
+        "word": "test",
+        "uk_ipa": "/test/",
+        "us_ipa": "/test/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "測驗，考查",
+        "english": "a way of discovering, by questions or practical activities, what someone knows, or what someone or something can do or is like",
+        "examples": [
+          {
+            "english": "She had to take/do an aptitude test before she got the job.",
+            "chinese": "她先接受了能力測試後才得到這份工作。"
+          }
+        ]
+      },
+      {
+        "word": "test",
+        "uk_ipa": "/test/",
+        "us_ipa": "/test/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "試驗；檢驗；試用；檢測",
+        "english": "to put something through a process in order to discover if it is safe, works correctly, etc., or if something is present in it",
+        "examples": [
+          {
+            "english": "The manufacturers are currently testing the new engine.",
+            "chinese": "生產廠家目前正試驗這種新的引擎。"
+          }
+        ]
+      }
+    ],
+    "yes": [
+      {
+        "word": "yes",
+        "uk_ipa": "/jes/",
+        "us_ipa": "/jes/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "是，對；好的",
+        "english": "used to give an affirmative answer or to show agreement, acceptance, or willingness",
+        "examples": [
+          {
+            "english": "“Are you coming?” “Yes, I am.”",
+            "chinese": "「你會來嗎？」「是的，我會來。」"
+          }
+        ]
+      },
+      {
+        "word": "yes",
+        "uk_ipa": "/jes/",
+        "us_ipa": "/jes/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "肯定的回答；同意",
+        "english": "an answer or decision that shows agreement or acceptance",
+        "examples": [
+          {
+            "english": "We need a definite yes by Friday.",
+            "chinese": "我們需要你在星期五前給予明確的肯定答覆。"
+          }
+        ]
+      }
+    ],
+    "closet": [
+      {
+        "word":"closet","uk_ipa":"/ˈklɒz.ɪt/","us_ipa":"/ˈklɑː.zət/","part_of_speech":"noun","countability":"C",
+        "chinese":"壁櫥；衣櫥",
+        "english":"a small room or enclosed space used for storing clothes or other household items",
+        "examples":[{"english":"He hung his coat in the closet.","chinese":"他把外套掛在衣櫥裡。"}]
+      }
+    ],
+    "shooter": [
+      {
+        "word":"shooter","uk_ipa":"/ˈʃuː.tər/","us_ipa":"/ˈʃuː.t̬ɚ/","part_of_speech":"noun","countability":"C",
+        "chinese":"射手；槍手",
+        "english":"a person who shoots a gun, bow, or other weapon",
+        "examples":[{"english":"The shooter hit the centre of the target.","chinese":"射手擊中了靶心。"}]
+      },
+      {
+        "word":"shooter","uk_ipa":"/ˈʃuː.tər/","us_ipa":"/ˈʃuː.t̬ɚ/","part_of_speech":"noun","countability":"C",
+        "chinese":"射擊遊戲",
+        "english":"a video game in which the main activity is shooting enemies or targets",
+        "examples":[{"english":"This online shooter supports teams of five players.","chinese":"這款網上射擊遊戲支援五人隊伍。"}]
+      }
+    ],
+    "abide": [
+      {
+        "word":"abide","uk_ipa":"/əˈbaɪd/","us_ipa":"/əˈbaɪd/","part_of_speech":"verb","countability":"T",
+        "chinese":"忍受；容忍",
+        "english":"to accept or tolerate someone or something unpleasant",
+        "examples":[{"english":"I cannot abide that kind of rude behaviour.","chinese":"我無法容忍那種無禮行為。"}]
+      }
+    ],
+    "brain": [
+      {
+        "word":"brain","uk_ipa":"/breɪn/","us_ipa":"/breɪn/","part_of_speech":"noun","countability":"C",
+        "chinese":"腦；大腦",
+        "english":"the organ inside the head that controls thought, memory, feelings, and movement",
+        "examples":[{"english":"The human brain is extremely complex.","chinese":"人類的大腦極其複雜。"}]
+      },
+      {
+        "word":"brain","uk_ipa":"/breɪn/","us_ipa":"/breɪn/","part_of_speech":"noun","countability":"C",
+        "chinese":"智囊；聰明的人",
+        "english":"an intelligent person who plans or organizes something",
+        "examples":[{"english":"She is the brain behind the successful project.","chinese":"她是這個成功項目背後的智囊。"}]
+      }
+    ],
+    "jelly": [
+      {
+        "word":"jelly","uk_ipa":"/ˈdʒel.i/","us_ipa":"/ˈdʒel.i/","part_of_speech":"noun","countability":"C or U",
+        "chinese":"果凍",
+        "english":"a soft, sweet food made with gelatine or a similar substance",
+        "examples":[{"english":"The children had strawberry jelly for dessert.","chinese":"孩子們以草莓果凍作甜品。"}]
+      },
+      {
+        "word":"jelly","uk_ipa":"/ˈdʒel.i/","us_ipa":"/ˈdʒel.i/","part_of_speech":"noun","countability":"U",
+        "chinese":"果醬；果膠",
+        "english":"a clear fruit preserve made from fruit juice and sugar",
+        "examples":[{"english":"She spread grape jelly on the toast.","chinese":"她在多士上塗了葡萄果醬。"}]
+      }
+    ],
+    "snatch": [
+      {
+        "word":"snatch","uk_ipa":"/snætʃ/","us_ipa":"/snætʃ/","part_of_speech":"verb","countability":"T",
+        "chinese":"一把奪走；搶走",
+        "english":"to take or grab something suddenly and quickly",
+        "examples":[{"english":"Someone snatched her bag from her hand.","chinese":"有人從她手中一把搶走了手袋。"}]
+      },
+      {
+        "word":"snatch","uk_ipa":"/snætʃ/","us_ipa":"/snætʃ/","part_of_speech":"noun","countability":"C",
+        "chinese":"短暫片段；一小段",
+        "english":"a short part of a conversation, song, or period of time",
+        "examples":[{"english":"I heard a snatch of their conversation.","chinese":"我聽到他們談話的一小段。"}]
+      }
+    ],
+    "trip": [
+      {
+        "word":"trip","uk_ipa":"/trɪp/","us_ipa":"/trɪp/","part_of_speech":"noun","countability":"C",
+        "chinese":"旅行；旅程",
+        "english":"a journey in which you go somewhere, usually for a short time, and return",
+        "examples":[{"english":"We are planning a trip to Japan.","chinese":"我們正計劃一次日本之旅。"}]
+      },
+      {
+        "word":"trip","uk_ipa":"/trɪp/","us_ipa":"/trɪp/","part_of_speech":"noun","countability":"C",
+        "chinese":"絆倒；失足",
+        "english":"an occasion when someone catches a foot and loses balance",
+        "examples":[{"english":"A trip on the stairs left him with a bruised knee.","chinese":"他在樓梯上失足，膝蓋因而瘀傷。"}]
+      },
+      {
+        "word":"trip","uk_ipa":"/trɪp/","us_ipa":"/trɪp/","part_of_speech":"verb","countability":"I or T",
+        "chinese":"絆倒；使失足",
+        "english":"to catch your foot on something and fall or almost fall, or to cause someone to do this",
+        "examples":[{"english":"She tripped over a loose cable.","chinese":"她被一條鬆脫的電線絆倒了。"}]
+      }
+    ],
+    "partner": [
+      {
+        "word":"partner","uk_ipa":"/ˈpɑːt.nər/","us_ipa":"/ˈpɑːrt.nɚ/","part_of_speech":"noun","countability":"C",
+        "chinese":"夥伴；搭檔；合夥人",
+        "english":"a person or organization that you work with or do an activity with",
+        "examples":[{"english":"She started the company with a business partner.","chinese":"她與一名商業合夥人共同創辦公司。"}]
+      },
+      {
+        "word":"partner","uk_ipa":"/ˈpɑːt.nər/","us_ipa":"/ˈpɑːrt.nɚ/","part_of_speech":"noun","countability":"C",
+        "chinese":"伴侶；配偶",
+        "english":"the person you are married to or have a romantic relationship with",
+        "examples":[{"english":"He attended the event with his partner.","chinese":"他與伴侶一起出席活動。"}]
+      }
+    ],
+    "product": [
+      {
+        "word":"product","uk_ipa":"/ˈprɒd.ʌkt/","us_ipa":"/ˈprɑː.dʌkt/","part_of_speech":"noun","countability":"C",
+        "chinese":"產品；商品",
+        "english":"something that is made or grown to be sold or used",
+        "examples":[{"english":"The company launched a new product this week.","chinese":"公司本週推出了一款新產品。"}]
+      },
+      {
+        "word":"product","uk_ipa":"/ˈprɒd.ʌkt/","us_ipa":"/ˈprɑː.dʌkt/","part_of_speech":"noun","countability":"C",
+        "chinese":"結果；產物",
+        "english":"a result produced by a process, situation, or set of circumstances",
+        "examples":[{"english":"The plan was the product of months of discussion.","chinese":"這項計劃是數月討論的結果。"}]
+      },
+      {
+        "word":"product","uk_ipa":"/ˈprɒd.ʌkt/","us_ipa":"/ˈprɑː.dʌkt/","part_of_speech":"noun","countability":"C",
+        "chinese":"乘積",
+        "english":"the number obtained by multiplying two or more numbers",
+        "examples":[{"english":"The product of six and seven is forty-two.","chinese":"六和七的乘積是四十二。"}]
+      }
+    ],
+    "first class": [
+      {
+        "word":"first class","uk_ipa":"/ˌfɜːst ˈklɑːs/","us_ipa":"/ˌfɝːst ˈklæs/","part_of_speech":"adjective","countability":"",
+        "chinese":"一流的；最高級的",
+        "english":"of the highest quality or belonging to the best group in a system",
+        "examples":[{"english":"The hotel provides first-class service.","chinese":"這間酒店提供一流的服務。"}]
+      }
+    ],
+    "flush": [
+      {
+        "word":"flush","uk_ipa":"/flʌʃ/","us_ipa":"/flʌʃ/","part_of_speech":"adjective","countability":"",
+        "chinese":"手頭寬裕的；有錢的",
+        "english":"having plenty of money available",
+        "examples":[{"english":"I am feeling flush after receiving my bonus.","chinese":"收到花紅後，我現在手頭很寬裕。"}]
+      },
+      {
+        "word":"flush","uk_ipa":"/flʌʃ/","us_ipa":"/flʌʃ/","part_of_speech":"noun","countability":"C",
+        "chinese":"沖水；沖洗",
+        "english":"the act of cleaning something by forcing water through it",
+        "examples":[{"english":"Give the toilet another flush.","chinese":"再沖一次馬桶。"}]
+      },
+      {
+        "word":"flush","uk_ipa":"/flʌʃ/","us_ipa":"/flʌʃ/","part_of_speech":"noun","countability":"C",
+        "chinese":"同花",
+        "english":"a poker hand in which all the cards are of the same suit",
+        "examples":[{"english":"She won the game with a flush.","chinese":"她以同花贏了這局牌。"}]
+      }
+    ],
+    "good": [
+      {
+        "word":"good","uk_ipa":"/ɡʊd/","us_ipa":"/ɡʊd/","part_of_speech":"adjective","countability":"",
+        "chinese":"好的；優質的",
+        "english":"of a high quality or standard",
+        "examples":[{"english":"This restaurant serves very good food.","chinese":"這間餐廳供應非常好的食物。"}]
+      },
+      {
+        "word":"good","uk_ipa":"/ɡʊd/","us_ipa":"/ɡʊd/","part_of_speech":"adjective","countability":"",
+        "chinese":"擅長的；熟練的",
+        "english":"able to do something well",
+        "examples":[{"english":"She is very good at mathematics.","chinese":"她很擅長數學。"}]
+      },
+      {
+        "word":"good","uk_ipa":"/ɡʊd/","us_ipa":"/ɡʊd/","part_of_speech":"adjective","countability":"",
+        "chinese":"善良的；合乎道德的",
+        "english":"kind, helpful, or morally right",
+        "examples":[{"english":"He is a good person who always helps others.","chinese":"他是一個善良的人，總是幫助別人。"}]
+      },
+      {
+        "word":"good","uk_ipa":"/ɡʊd/","us_ipa":"/ɡʊd/","part_of_speech":"noun","countability":"U",
+        "chinese":"益處；好處",
+        "english":"something that is beneficial or morally right",
+        "examples":[{"english":"The changes were made for the good of everyone.","chinese":"這些改變是為了所有人的益處。"}]
+      }
+    ],
+    "be": [
+      {"word":"be","uk_ipa":"/biː/","us_ipa":"/biː/","part_of_speech":"verb","countability":"","chinese":"是；為","english":"used to say that someone or something has a particular identity, quality, or condition","examples":[{"english":"She is a doctor.","chinese":"她是一名醫生。"}]},
+      {"word":"be","uk_ipa":"/biː/","us_ipa":"/biː/","part_of_speech":"verb","countability":"","chinese":"在；位於","english":"to exist or be present in a place","examples":[{"english":"The keys are on the table.","chinese":"鑰匙在桌上。"}]},
+      {"word":"be","uk_ipa":"/biː/","us_ipa":"/biː/","part_of_speech":"verb","countability":"","chinese":"發生；舉行","english":"to happen or take place","examples":[{"english":"The meeting will be tomorrow.","chinese":"會議將於明天舉行。"}]}
+    ],
+    "class": [
+      {"word":"class","uk_ipa":"/klɑːs/","us_ipa":"/klæs/","part_of_speech":"noun","countability":"C or U","chinese":"課；課堂；班級","english":"a group of students who are taught together, or a period when they are taught","examples":[{"english":"Our English class starts at nine.","chinese":"我們的英語課九時開始。"}]},
+      {"word":"class","uk_ipa":"/klɑːs/","us_ipa":"/klæs/","part_of_speech":"noun","countability":"C","chinese":"類別；種類","english":"a group of things that share similar qualities","examples":[{"english":"These animals belong to the same class.","chinese":"這些動物屬於同一類別。"}]},
+      {"word":"class","uk_ipa":"/klɑːs/","us_ipa":"/klæs/","part_of_speech":"noun","countability":"C or U","chinese":"社會階級；艙等","english":"a social rank or a level of travel accommodation","examples":[{"english":"They travelled in first class.","chinese":"他們乘坐頭等艙。"}]}
+    ],
+    "foot": [
+      {"word":"foot","uk_ipa":"/fʊt/","us_ipa":"/fʊt/","part_of_speech":"noun","countability":"C","chinese":"腳；足","english":"the part at the end of the leg on which a person or animal stands","examples":[{"english":"She hurt her left foot.","chinese":"她弄傷了左腳。"}]},
+      {"word":"foot","uk_ipa":"/fʊt/","us_ipa":"/fʊt/","part_of_speech":"noun","countability":"C","chinese":"英尺","english":"a unit of length equal to twelve inches or 30.48 centimetres","examples":[{"english":"The wall is six feet high.","chinese":"這面牆高六英尺。"}]},
+      {"word":"foot","uk_ipa":"/fʊt/","us_ipa":"/fʊt/","part_of_speech":"noun","countability":"C","chinese":"底部；下端","english":"the lowest part of something","examples":[{"english":"They stood at the foot of the mountain.","chinese":"他們站在山腳下。"}]}
+    ],
+    "key": [
+      {"word":"key","uk_ipa":"/kiː/","us_ipa":"/kiː/","part_of_speech":"noun","countability":"C","chinese":"鑰匙","english":"a shaped piece of metal used to open or close a lock","examples":[{"english":"I cannot find my house key.","chinese":"我找不到家門鑰匙。"}]},
+      {"word":"key","uk_ipa":"/kiː/","us_ipa":"/kiː/","part_of_speech":"noun","countability":"C","chinese":"關鍵；要訣","english":"the most important thing needed to achieve or understand something","examples":[{"english":"Practice is the key to success.","chinese":"練習是成功的關鍵。"}]},
+      {"word":"key","uk_ipa":"/kiː/","us_ipa":"/kiː/","part_of_speech":"noun","countability":"C","chinese":"按鍵；琴鍵","english":"a button on a keyboard or musical instrument that is pressed","examples":[{"english":"Press the return key.","chinese":"按下返回鍵。"}]},
+      {"word":"key","uk_ipa":"/kiː/","us_ipa":"/kiː/","part_of_speech":"adjective","countability":"","chinese":"關鍵的；主要的","english":"very important or essential","examples":[{"english":"She played a key role in the project.","chinese":"她在項目中擔當關鍵角色。"}]}
+    ],
+    "black": [
+      {"word":"black","uk_ipa":"/blæk/","us_ipa":"/blæk/","part_of_speech":"adjective","countability":"","chinese":"黑色的","english":"having the darkest colour, like the colour of coal","examples":[{"english":"He was wearing a black jacket.","chinese":"他穿着一件黑色外套。"}]},
+      {"word":"black","uk_ipa":"/blæk/","us_ipa":"/blæk/","part_of_speech":"adjective","countability":"","chinese":"黑人的；非裔的","english":"relating to people with dark skin, especially people of African origin","examples":[{"english":"The museum celebrates Black history and culture.","chinese":"博物館頌揚黑人歷史與文化。"}]},
+      {"word":"black","uk_ipa":"/blæk/","us_ipa":"/blæk/","part_of_speech":"noun","countability":"U","chinese":"黑色","english":"the darkest colour, produced by the absence or absorption of light","examples":[{"english":"The design is available in black.","chinese":"這款設計有黑色可供選擇。"}]}
+    ],
+    "chest": [
+      {"word":"chest","uk_ipa":"/tʃest/","us_ipa":"/tʃest/","part_of_speech":"noun","countability":"C","chinese":"胸部；胸膛","english":"the front part of the body between the neck and the stomach","examples":[{"english":"He felt a pain in his chest.","chinese":"他感到胸部疼痛。"}]},
+      {"word":"chest","uk_ipa":"/tʃest/","us_ipa":"/tʃest/","part_of_speech":"noun","countability":"C","chinese":"大箱子；箱櫃","english":"a large strong box used for storing things","examples":[{"english":"The blankets were kept in a wooden chest.","chinese":"毛氈存放在一個木箱裡。"}]},
+      {"word":"chest","uk_ipa":"/tʃest/","us_ipa":"/tʃest/","part_of_speech":"noun","countability":"C","chinese":"抽屜櫃","english":"a piece of furniture with several drawers","examples":[{"english":"Her clothes are in the chest of drawers.","chinese":"她的衣服放在抽屜櫃裡。"}]}
+    ],
+    "dimension": [
+      {"word":"dimension","uk_ipa":"/daɪˈmen.ʃən/","us_ipa":"/dɪˈmen.ʃən/","part_of_speech":"noun","countability":"C","chinese":"尺寸；維度","english":"a measurement of length, width, height, or another spatial direction","examples":[{"english":"Check the dimensions of the room before buying furniture.","chinese":"購買家具前先量度房間的尺寸。"}]},
+      {"word":"dimension","uk_ipa":"/daɪˈmen.ʃən/","us_ipa":"/dɪˈmen.ʃən/","part_of_speech":"noun","countability":"C","chinese":"方面；層面","english":"a particular aspect or feature of a situation","examples":[{"english":"The decision has an important social dimension.","chinese":"這項決定具有重要的社會層面。"}]}
+    ],
+    "float": [
+      {"word":"float","uk_ipa":"/fləʊt/","us_ipa":"/floʊt/","part_of_speech":"verb","countability":"I","chinese":"漂浮；浮動","english":"to stay or move on the surface of a liquid or in the air","examples":[{"english":"Leaves floated on the water.","chinese":"樹葉漂浮在水面上。"}]},
+      {"word":"float","uk_ipa":"/fləʊt/","us_ipa":"/floʊt/","part_of_speech":"verb","countability":"T","chinese":"提出（想法）","english":"to suggest an idea for people to consider","examples":[{"english":"She floated the idea of working from home.","chinese":"她提出在家工作的想法供大家考慮。"}]},
+      {"word":"float","uk_ipa":"/fləʊt/","us_ipa":"/floʊt/","part_of_speech":"noun","countability":"C","chinese":"花車","english":"a decorated vehicle used in a public parade","examples":[{"english":"The parade included several colourful floats.","chinese":"巡遊中有多輛色彩繽紛的花車。"}]}
+    ],
+    "in": [
+      {"word":"in","uk_ipa":"/ɪn/","us_ipa":"/ɪn/","part_of_speech":"preposition","countability":"","chinese":"在…裡；於","english":"inside a place, area, or container","examples":[{"english":"The documents are in the drawer.","chinese":"文件在抽屜裡。"}]},
+      {"word":"in","uk_ipa":"/ɪn/","us_ipa":"/ɪn/","part_of_speech":"preposition","countability":"","chinese":"在…期間；於…之後","english":"during a period of time or after a specified amount of time","examples":[{"english":"The train will arrive in ten minutes.","chinese":"火車將在十分鐘後到達。"}]},
+      {"word":"in","uk_ipa":"/ɪn/","us_ipa":"/ɪn/","part_of_speech":"adverb","countability":"","chinese":"在裡面；在家","english":"inside a place or at home","examples":[{"english":"Come in and sit down.","chinese":"請進來坐下。"}]}
+    ],
+    "root": [
+      {"word":"root","uk_ipa":"/ruːt/","us_ipa":"/ruːt/","part_of_speech":"noun","countability":"C","chinese":"根；根部","english":"the part of a plant that grows underground and absorbs water and nutrients","examples":[{"english":"The tree has deep roots.","chinese":"這棵樹有很深的根。"}]},
+      {"word":"root","uk_ipa":"/ruːt/","us_ipa":"/ruːt/","part_of_speech":"noun","countability":"C","chinese":"根源；起因","english":"the basic cause or origin of something","examples":[{"english":"We need to find the root of the problem.","chinese":"我們需要找出問題的根源。"}]},
+      {"word":"root","uk_ipa":"/ruːt/","us_ipa":"/ruːt/","part_of_speech":"noun","countability":"C","chinese":"詞根","english":"the basic part of a word from which other words are formed","examples":[{"english":"The words share the same Latin root.","chinese":"這些詞有相同的拉丁詞根。"}]}
+    ],
+    "strong": [
+      {"word":"strong","uk_ipa":"/strɒŋ/","us_ipa":"/strɔːŋ/","part_of_speech":"adjective","countability":"","chinese":"強壯的；強大的","english":"having great physical power or able to resist force","examples":[{"english":"She is strong enough to lift the box.","chinese":"她很強壯，足以提起箱子。"}]},
+      {"word":"strong","uk_ipa":"/strɒŋ/","us_ipa":"/strɔːŋ/","part_of_speech":"adjective","countability":"","chinese":"濃烈的；強烈的","english":"having a powerful taste, smell, effect, or concentration","examples":[{"english":"This coffee is too strong for me.","chinese":"這杯咖啡對我來說太濃了。"}]},
+      {"word":"strong","uk_ipa":"/strɒŋ/","us_ipa":"/strɔːŋ/","part_of_speech":"adjective","countability":"","chinese":"有力的；有說服力的","english":"convincing, effective, or well supported","examples":[{"english":"She made a strong argument for change.","chinese":"她提出了支持改革的有力論據。"}]}
+    ],
+    "take": [
+      {"word":"take","uk_ipa":"/teɪk/","us_ipa":"/teɪk/","part_of_speech":"verb","countability":"T","chinese":"拿；取；帶走","english":"to get hold of something and move it or carry it with you","examples":[{"english":"Please take an umbrella with you.","chinese":"請帶一把雨傘。"}]},
+      {"word":"take","uk_ipa":"/teɪk/","us_ipa":"/teɪk/","part_of_speech":"verb","countability":"T","chinese":"乘搭；採用","english":"to use a form of transport, route, or course of action","examples":[{"english":"We took the train to London.","chinese":"我們乘火車前往倫敦。"}]},
+      {"word":"take","uk_ipa":"/teɪk/","us_ipa":"/teɪk/","part_of_speech":"verb","countability":"T","chinese":"需要；花費","english":"to need a particular amount of time or effort","examples":[{"english":"The journey takes about two hours.","chinese":"這段旅程大約需要兩小時。"}]},
+      {"word":"take","uk_ipa":"/teɪk/","us_ipa":"/teɪk/","part_of_speech":"verb","countability":"T","chinese":"接受；選擇","english":"to accept, choose, or receive something","examples":[{"english":"I will take the blue one.","chinese":"我會選藍色的那一個。"}]}
+    ],
+    "material": [
+      {"word":"material","uk_ipa":"/məˈtɪə.ri.əl/","us_ipa":"/məˈtɪr.i.əl/","part_of_speech":"noun","countability":"C or U","chinese":"材料；原料","english":"a substance from which something is made","examples":[{"english":"The bag is made from recycled material.","chinese":"這個袋由再造材料製成。"}]},
+      {"word":"material","uk_ipa":"/məˈtɪə.ri.əl/","us_ipa":"/məˈtɪr.i.əl/","part_of_speech":"noun","countability":"U","chinese":"布料","english":"cloth used for making clothes or other items","examples":[{"english":"We chose a soft material for the curtains.","chinese":"我們為窗簾選了一種柔軟布料。"}]},
+      {"word":"material","uk_ipa":"/məˈtɪə.ri.əl/","us_ipa":"/məˈtɪr.i.əl/","part_of_speech":"noun","countability":"U","chinese":"資料；素材","english":"information or ideas used to create a book, programme, or other work","examples":[{"english":"The interviews provided useful material for the article.","chinese":"訪問為文章提供了有用素材。"}]},
+      {"word":"material","uk_ipa":"/məˈtɪə.ri.əl/","us_ipa":"/məˈtɪr.i.əl/","part_of_speech":"adjective","countability":"","chinese":"物質的；重要的","english":"relating to physical things, or important enough to affect a decision","examples":[{"english":"The new evidence is material to the case.","chinese":"新證據對案件十分重要。"}]}
+    ],
+    "place": [
+      {"word":"place","uk_ipa":"/pleɪs/","us_ipa":"/pleɪs/","part_of_speech":"noun","countability":"C","chinese":"地方；地點","english":"a particular area, position, or location","examples":[{"english":"This is a quiet place to study.","chinese":"這是一個安靜的學習地方。"}]},
+      {"word":"place","uk_ipa":"/pleɪs/","us_ipa":"/pleɪs/","part_of_speech":"noun","countability":"C","chinese":"座位；位置","english":"a position, seat, or role intended for someone or something","examples":[{"english":"Please return the book to its place.","chinese":"請把書放回原位。"}]},
+      {"word":"place","uk_ipa":"/pleɪs/","us_ipa":"/pleɪs/","part_of_speech":"verb","countability":"T","chinese":"放置；安放","english":"to put something in a particular position","examples":[{"english":"She placed the cup on the table.","chinese":"她把杯子放在桌上。"}]},
+      {"word":"place","uk_ipa":"/pleɪs/","us_ipa":"/pleɪs/","part_of_speech":"verb","countability":"T","chinese":"辨認；認出","english":"to recognize or identify someone or something","examples":[{"english":"I know her face, but I cannot place her.","chinese":"我認得她的臉，但想不起她是誰。"}]}
+    ],
+    "general": [
+      {"word":"general","uk_ipa":"/ˈdʒen.ər.əl/","us_ipa":"/ˈdʒen.ɚ.əl/","part_of_speech":"adjective","countability":"","chinese":"一般的；普遍的","english":"affecting or relating to most people, things, or situations","examples":[{"english":"There was general agreement about the plan.","chinese":"大家普遍同意這項計劃。"}]},
+      {"word":"general","uk_ipa":"/ˈdʒen.ər.əl/","us_ipa":"/ˈdʒen.ɚ.əl/","part_of_speech":"adjective","countability":"","chinese":"概括的；非專門的","english":"considering the main features without giving exact details","examples":[{"english":"The guide gives a general description of the area.","chinese":"指南對該區作出概括描述。"}]},
+      {"word":"general","uk_ipa":"/ˈdʒen.ər.əl/","us_ipa":"/ˈdʒen.ɚ.əl/","part_of_speech":"noun","countability":"C","chinese":"將軍","english":"a very senior officer in an army","examples":[{"english":"The general addressed the soldiers.","chinese":"將軍向士兵講話。"}]}
+    ],
+    "flex": [
+      {"word":"flex","uk_ipa":"/fleks/","us_ipa":"/fleks/","part_of_speech":"verb","countability":"I or T","chinese":"彎曲；屈曲","english":"to bend a part of the body or tighten a muscle","examples":[{"english":"Flex your knees before you jump.","chinese":"跳躍前先屈曲膝蓋。"}]},
+      {"word":"flex","uk_ipa":"/fleks/","us_ipa":"/fleks/","part_of_speech":"verb","countability":"I","chinese":"炫耀；顯擺","english":"to show off something such as money, skill, or status","examples":[{"english":"He likes to flex on social media.","chinese":"他喜歡在社交媒體上炫耀。"}]},
+      {"word":"flex","uk_ipa":"/fleks/","us_ipa":"/fleks/","part_of_speech":"noun","countability":"C","chinese":"炫耀；展示實力","english":"an act of showing off something impressive","examples":[{"english":"Buying that car was a huge flex.","chinese":"買那輛車是一次大肆炫耀。"}]}
+    ],
+    "new": [
+      {"word":"new","uk_ipa":"/njuː/","us_ipa":"/nuː/","part_of_speech":"adjective","countability":"","chinese":"新的；新近的","english":"recently made, created, discovered, or obtained","examples":[{"english":"She bought a new computer yesterday.","chinese":"她昨天買了一部新電腦。"}]},
+      {"word":"new","uk_ipa":"/njuː/","us_ipa":"/nuː/","part_of_speech":"adjective","countability":"","chinese":"初來的；不熟悉的","english":"not experienced in or familiar with a place, activity, or situation","examples":[{"english":"I am new to this job.","chinese":"我初來擔任這份工作，尚不熟悉。"}]},
+      {"word":"new","uk_ipa":"/njuː/","us_ipa":"/nuː/","part_of_speech":"adjective","countability":"","chinese":"嶄新的；未使用過的","english":"in its original condition and not previously used","examples":[{"english":"The shoes still look brand new.","chinese":"這雙鞋看起來仍然嶄新。"}]}
+    ],
+    "zero": [
+      {"word":"zero","uk_ipa":"/ˈzɪə.rəʊ/","us_ipa":"/ˈzɪr.oʊ/","part_of_speech":"numeral","countability":"","chinese":"零","english":"the number 0, representing no amount","examples":[{"english":"The temperature fell below zero.","chinese":"氣溫降至零度以下。"}]},
+      {"word":"zero","uk_ipa":"/ˈzɪə.rəʊ/","us_ipa":"/ˈzɪr.oʊ/","part_of_speech":"noun","countability":"C or U","chinese":"零點；零值","english":"a point or value from which measurement begins, or a value of nothing","examples":[{"english":"Reset the scale to zero.","chinese":"把磅秤重設至零點。"}]},
+      {"word":"zero","uk_ipa":"/ˈzɪə.rəʊ/","us_ipa":"/ˈzɪr.oʊ/","part_of_speech":"adjective","countability":"","chinese":"零的；沒有的","english":"having no amount, quantity, or value","examples":[{"english":"The account charges zero interest.","chinese":"這個帳戶收取零利息。"}]}
+    ],
+    "attack": [
+      {"word":"attack","uk_ipa":"/əˈtæk/","us_ipa":"/əˈtæk/","part_of_speech":"verb","countability":"I or T","chinese":"攻擊；襲擊","english":"to use violence against a person, place, or group","examples":[{"english":"The animal attacked without warning.","chinese":"那隻動物毫無預警地發動攻擊。"}]},
+      {"word":"attack","uk_ipa":"/əˈtæk/","us_ipa":"/əˈtæk/","part_of_speech":"verb","countability":"T","chinese":"抨擊；猛烈批評","english":"to criticize someone or something strongly","examples":[{"english":"The report attacked the government's policy.","chinese":"報告猛烈抨擊政府的政策。"}]},
+      {"word":"attack","uk_ipa":"/əˈtæk/","us_ipa":"/əˈtæk/","part_of_speech":"noun","countability":"C","chinese":"發作；侵襲","english":"a sudden occurrence of an illness or strong physical condition","examples":[{"english":"He suffered a severe asthma attack.","chinese":"他的哮喘嚴重發作。"}]}
+    ],
+    "deep": [
+      {"word":"deep","uk_ipa":"/diːp/","us_ipa":"/diːp/","part_of_speech":"adjective","countability":"","chinese":"深的；縱深的","english":"extending a long way down, back, or inward","examples":[{"english":"The lake is very deep.","chinese":"這個湖非常深。"}]},
+      {"word":"deep","uk_ipa":"/diːp/","us_ipa":"/diːp/","part_of_speech":"adjective","countability":"","chinese":"深刻的；難懂的","english":"serious, intense, or difficult to understand","examples":[{"english":"The book raises some deep questions.","chinese":"這本書提出了一些深刻問題。"}]},
+      {"word":"deep","uk_ipa":"/diːp/","us_ipa":"/diːp/","part_of_speech":"adjective","countability":"","chinese":"低沉的；濃郁的","english":"low in sound or rich and strong in colour or flavour","examples":[{"english":"He spoke in a deep voice.","chinese":"他以低沉的聲音說話。"}]}
+    ],
+    "beat": [
+      {"word":"beat","uk_ipa":"/biːt/","us_ipa":"/biːt/","part_of_speech":"verb","countability":"I or T","chinese":"打；敲擊","english":"to hit someone or something repeatedly","examples":[{"english":"Rain beat against the window.","chinese":"雨水不斷敲擊窗戶。"}]},
+      {"word":"beat","uk_ipa":"/biːt/","us_ipa":"/biːt/","part_of_speech":"verb","countability":"T","chinese":"打敗；勝過","english":"to defeat someone in a game, competition, or contest","examples":[{"english":"Our team beat the champions.","chinese":"我們的隊伍打敗了冠軍隊。"}]},
+      {"word":"beat","uk_ipa":"/biːt/","us_ipa":"/biːt/","part_of_speech":"noun","countability":"C","chinese":"節拍；拍子","english":"a regular movement or sound that forms the basic rhythm of music","examples":[{"english":"Dance to the beat of the music.","chinese":"隨着音樂的節拍跳舞。"}]},
+      {"word":"beat","uk_ipa":"/biːt/","us_ipa":"/biːt/","part_of_speech":"adjective","countability":"","chinese":"筋疲力盡的","english":"extremely tired","examples":[{"english":"I am completely beat after the long walk.","chinese":"長途步行後我筋疲力盡。"}]}
+    ],
+    "color": [
+      {"word":"color","uk_ipa":"/ˈkʌl.ər/","us_ipa":"/ˈkʌl.ɚ/","part_of_speech":"noun","countability":"C or U","chinese":"顏色；色彩","english":"the appearance that things have as a result of the way they reflect light","examples":[{"english":"What color is your car?","chinese":"你的汽車是甚麼顏色？"}]},
+      {"word":"color","uk_ipa":"/ˈkʌl.ər/","us_ipa":"/ˈkʌl.ɚ/","part_of_speech":"verb","countability":"I or T","chinese":"着色；染色","english":"to add colour to something or become coloured","examples":[{"english":"The children colored the picture with crayons.","chinese":"孩子們用蠟筆為圖畫着色。"}]},
+      {"word":"color","uk_ipa":"/ˈkʌl.ər/","us_ipa":"/ˈkʌl.ɚ/","part_of_speech":"verb","countability":"T","chinese":"影響；使帶有偏見","english":"to influence the way someone thinks about or describes something","examples":[{"english":"His past experience colored his judgment.","chinese":"過往經驗影響了他的判斷。"}]}
+    ],
+    "little": [
+      {"word":"little","uk_ipa":"/ˈlɪt.əl/","us_ipa":"/ˈlɪt̬.əl/","part_of_speech":"adjective","countability":"","chinese":"小的；年幼的","english":"small in size or young in age","examples":[{"english":"A little girl opened the door.","chinese":"一個年幼的小女孩打開了門。"}]},
+      {"word":"little","uk_ipa":"/ˈlɪt.əl/","us_ipa":"/ˈlɪt̬.əl/","part_of_speech":"determiner","countability":"","chinese":"少量的；幾乎沒有","english":"a small amount of something, often less than needed","examples":[{"english":"There is little time left.","chinese":"剩下的時間很少。"}]},
+      {"word":"little","uk_ipa":"/ˈlɪt.əl/","us_ipa":"/ˈlɪt̬.əl/","part_of_speech":"adverb","countability":"","chinese":"一點；不多","english":"to a small degree or not much","examples":[{"english":"She slept very little last night.","chinese":"她昨晚睡得不多。"}]}
+    ],
+    "death": [
+      {"word":"death","uk_ipa":"/deθ/","us_ipa":"/deθ/","part_of_speech":"noun","countability":"C or U","chinese":"死亡；去世","english":"the end of a person's or animal's life","examples":[{"english":"His death was a great loss to the community.","chinese":"他的去世是社區的重大損失。"}]},
+      {"word":"death","uk_ipa":"/deθ/","us_ipa":"/deθ/","part_of_speech":"noun","countability":"U","chinese":"終結；消亡","english":"the permanent end or destruction of something","examples":[{"english":"Many feared the death of the local industry.","chinese":"許多人擔心本地工業的消亡。"}]}
+    ],
+    "ivory": [
+      {"word":"ivory","uk_ipa":"/ˈaɪ.vər.i/","us_ipa":"/ˈaɪ.vɚ.i/","part_of_speech":"noun","countability":"U","chinese":"象牙","english":"the hard white material that forms the tusks of elephants and some other animals","examples":[{"english":"The sale of elephant ivory is restricted.","chinese":"象牙買賣受到限制。"}]},
+      {"word":"ivory","uk_ipa":"/ˈaɪ.vər.i/","us_ipa":"/ˈaɪ.vɚ.i/","part_of_speech":"noun","countability":"U","chinese":"象牙色；乳白色","english":"a pale yellowish-white colour","examples":[{"english":"The walls were painted ivory.","chinese":"牆壁髹成象牙色。"}]}
+    ],
+    "purple": [
+      {"word":"purple","uk_ipa":"/ˈpɜː.pəl/","us_ipa":"/ˈpɝː.pəl/","part_of_speech":"adjective","countability":"","chinese":"紫色的","english":"having a colour that is a mixture of red and blue","examples":[{"english":"She wore a purple dress.","chinese":"她穿着一條紫色連身裙。"}]},
+      {"word":"purple","uk_ipa":"/ˈpɜː.pəl/","us_ipa":"/ˈpɝː.pəl/","part_of_speech":"noun","countability":"U","chinese":"紫色","english":"a colour produced by mixing red and blue","examples":[{"english":"Purple is her favourite colour.","chinese":"紫色是她最喜歡的顏色。"}]}
+    ],
+    "silk": [
+      {"word":"silk","uk_ipa":"/sɪlk/","us_ipa":"/sɪlk/","part_of_speech":"noun","countability":"U","chinese":"絲；蠶絲","english":"a fine natural fibre produced by silkworms","examples":[{"english":"The scarf is made of silk.","chinese":"這條圍巾由蠶絲製成。"}]},
+      {"word":"silk","uk_ipa":"/sɪlk/","us_ipa":"/sɪlk/","part_of_speech":"noun","countability":"C or U","chinese":"絲綢；絲織品","english":"soft cloth made from silk fibres","examples":[{"english":"The shop sells fine Chinese silk.","chinese":"這間商店售賣優質中國絲綢。"}]}
+    ],
+    "vague": [
+      {"word":"vague","uk_ipa":"/veɪɡ/","us_ipa":"/veɪɡ/","part_of_speech":"adjective","countability":"","chinese":"含糊的；不明確的","english":"not clearly expressed, explained, or understood","examples":[{"english":"The instructions were too vague.","chinese":"這些指示太含糊。"}]},
+      {"word":"vague","uk_ipa":"/veɪɡ/","us_ipa":"/veɪɡ/","part_of_speech":"adjective","countability":"","chinese":"模糊的；隱約的","english":"not clear in shape, detail, memory, or feeling","examples":[{"english":"I have only a vague memory of the event.","chinese":"我對那件事只有模糊的記憶。"}]}
+    ],
+    "wing": [
+      {"word":"wing","uk_ipa":"/wɪŋ/","us_ipa":"/wɪŋ/","part_of_speech":"noun","countability":"C","chinese":"翅膀；翼","english":"a body part used by birds, insects, or bats for flying","examples":[{"english":"The bird injured one of its wings.","chinese":"那隻鳥弄傷了一邊翅膀。"}]},
+      {"word":"wing","uk_ipa":"/wɪŋ/","us_ipa":"/wɪŋ/","part_of_speech":"noun","countability":"C","chinese":"機翼","english":"a part of an aircraft that provides lift","examples":[{"english":"Ice had formed on the aircraft's wings.","chinese":"飛機的機翼上結了冰。"}]},
+      {"word":"wing","uk_ipa":"/wɪŋ/","us_ipa":"/wɪŋ/","part_of_speech":"noun","countability":"C","chinese":"側翼；派別","english":"a side section of a building or a group within an organization or political party","examples":[{"english":"The library is in the east wing.","chinese":"圖書館位於東側翼。"}]}
+    ],
+    "bad": [
+      {"word":"bad","uk_ipa":"/bæd/","us_ipa":"/bæd/","part_of_speech":"adjective","countability":"","chinese":"壞的；差的","english":"unpleasant, harmful, or of poor quality","examples":[{"english":"The weather was bad all weekend.","chinese":"整個週末天氣都很差。"}]},
+      {"word":"bad","uk_ipa":"/bæd/","us_ipa":"/bæd/","part_of_speech":"adjective","countability":"","chinese":"嚴重的；有害的","english":"serious in degree or likely to cause harm","examples":[{"english":"He has a bad cough.","chinese":"他咳嗽得很嚴重。"}]},
+      {"word":"bad","uk_ipa":"/bæd/","us_ipa":"/bæd/","part_of_speech":"adjective","countability":"","chinese":"不擅長的","english":"not skilled or successful at doing something","examples":[{"english":"I am bad at remembering names.","chinese":"我不擅長記住別人的名字。"}]}
+    ],
+    "bed": [
+      {"word":"bed","uk_ipa":"/bed/","us_ipa":"/bed/","part_of_speech":"noun","countability":"C","chinese":"床","english":"a piece of furniture used for sleeping or resting","examples":[{"english":"The child was asleep in bed.","chinese":"孩子在床上睡着了。"}]},
+      {"word":"bed","uk_ipa":"/bed/","us_ipa":"/bed/","part_of_speech":"noun","countability":"C","chinese":"河床；海床","english":"the ground at the bottom of a river, lake, or sea","examples":[{"english":"The river bed was covered with stones.","chinese":"河床鋪滿石頭。"}]},
+      {"word":"bed","uk_ipa":"/bed/","us_ipa":"/bed/","part_of_speech":"noun","countability":"C","chinese":"花圃；苗床","english":"an area of ground prepared for growing plants","examples":[{"english":"She planted roses in the flower bed.","chinese":"她在花圃種植玫瑰。"}]}
+    ],
+    "bind": [
+      {"word":"bind","uk_ipa":"/baɪnd/","us_ipa":"/baɪnd/","part_of_speech":"verb","countability":"T","chinese":"綁；捆；繫牢","english":"to tie or fasten something tightly","examples":[{"english":"Bind the package with string.","chinese":"用繩把包裹捆好。"}]},
+      {"word":"bind","uk_ipa":"/baɪnd/","us_ipa":"/baɪnd/","part_of_speech":"verb","countability":"T","chinese":"約束；使有義務","english":"to impose a legal or moral duty on someone","examples":[{"english":"The agreement binds both parties.","chinese":"協議約束雙方。"}]},
+      {"word":"bind","uk_ipa":"/baɪnd/","us_ipa":"/baɪnd/","part_of_speech":"verb","countability":"T","chinese":"裝訂","english":"to fasten pages together to make a book","examples":[{"english":"The documents were bound into a single volume.","chinese":"文件被裝訂成一冊。"}]}
+    ],
+    "cross": [
+      {"word":"cross","uk_ipa":"/krɒs/","us_ipa":"/krɔːs/","part_of_speech":"noun","countability":"C","chinese":"十字形；十字架","english":"a shape or object formed by two lines crossing each other","examples":[{"english":"A wooden cross stood on the hill.","chinese":"山上豎立着一個木製十字架。"}]},
+      {"word":"cross","uk_ipa":"/krɒs/","us_ipa":"/krɔːs/","part_of_speech":"verb","countability":"I or T","chinese":"穿過；越過","english":"to go from one side of something to the other","examples":[{"english":"We crossed the road carefully.","chinese":"我們小心地穿過馬路。"}]},
+      {"word":"cross","uk_ipa":"/krɒs/","us_ipa":"/krɔːs/","part_of_speech":"adjective","countability":"","chinese":"生氣的；惱怒的","english":"angry or annoyed","examples":[{"english":"She was cross with me for being late.","chinese":"我遲到令她很生氣。"}]}
+    ],
+    "definition": [
+      {"word":"definition","uk_ipa":"/ˌdef.ɪˈnɪʃ.ən/","us_ipa":"/ˌdef.əˈnɪʃ.ən/","part_of_speech":"noun","countability":"C","chinese":"定義；釋義","english":"a statement explaining the meaning of a word, phrase, or idea","examples":[{"english":"Look up the definition in a dictionary.","chinese":"在字典中查閱這個詞的定義。"}]},
+      {"word":"definition","uk_ipa":"/ˌdef.ɪˈnɪʃ.ən/","us_ipa":"/ˌdef.əˈnɪʃ.ən/","part_of_speech":"noun","countability":"U","chinese":"清晰度；解像度","english":"the degree to which an image or sound is clear and detailed","examples":[{"english":"The screen displays images in high definition.","chinese":"這個螢幕以高清晰度顯示影像。"}]}
+    ],
+    "eye": [
+      {"word":"eye","uk_ipa":"/aɪ/","us_ipa":"/aɪ/","part_of_speech":"noun","countability":"C","chinese":"眼睛；眼","english":"one of the organs used for seeing","examples":[{"english":"She has blue eyes.","chinese":"她有一雙藍色眼睛。"}]},
+      {"word":"eye","uk_ipa":"/aɪ/","us_ipa":"/aɪ/","part_of_speech":"noun","countability":"C","chinese":"眼光；鑑賞力","english":"an ability to notice or judge visual details and quality","examples":[{"english":"He has a good eye for design.","chinese":"他對設計很有眼光。"}]},
+      {"word":"eye","uk_ipa":"/aɪ/","us_ipa":"/aɪ/","part_of_speech":"noun","countability":"C","chinese":"針眼；孔眼","english":"a small hole, especially the hole at the end of a needle","examples":[{"english":"Pass the thread through the eye of the needle.","chinese":"把線穿過針眼。"}]}
+    ],
+    "language": [
+      {"word":"language","uk_ipa":"/ˈlæŋ.ɡwɪdʒ/","us_ipa":"/ˈlæŋ.ɡwɪdʒ/","part_of_speech":"noun","countability":"C or U","chinese":"語言","english":"a system of words and grammar used by people to communicate","examples":[{"english":"English is widely used as an international language.","chinese":"英語被廣泛用作國際語言。"}]},
+      {"word":"language","uk_ipa":"/ˈlæŋ.ɡwɪdʒ/","us_ipa":"/ˈlæŋ.ɡwɪdʒ/","part_of_speech":"noun","countability":"U","chinese":"措辭；用語","english":"the words and expressions used in speech or writing","examples":[{"english":"The report uses simple language.","chinese":"報告使用簡單的措辭。"}]},
+      {"word":"language","uk_ipa":"/ˈlæŋ.ɡwɪdʒ/","us_ipa":"/ˈlæŋ.ɡwɪdʒ/","part_of_speech":"noun","countability":"C","chinese":"程式語言","english":"a formal system used to write instructions for computers","examples":[{"english":"Swift is a programming language.","chinese":"Swift 是一種程式語言。"}]}
+    ],
+    "set": [
+      {"word":"set","uk_ipa":"/set/","us_ipa":"/set/","part_of_speech":"verb","countability":"T","chinese":"放置；擺放","english":"to put something in a particular position","examples":[{"english":"She set the vase on the table.","chinese":"她把花瓶放在桌上。"}]},
+      {"word":"set","uk_ipa":"/set/","us_ipa":"/set/","part_of_speech":"verb","countability":"T","chinese":"設定；確定","english":"to establish a rule, limit, time, or value","examples":[{"english":"We set a date for the meeting.","chinese":"我們確定了會議日期。"}]},
+      {"word":"set","uk_ipa":"/set/","us_ipa":"/set/","part_of_speech":"noun","countability":"C","chinese":"一套；一組","english":"a group of similar things that belong together","examples":[{"english":"She bought a new set of glasses.","chinese":"她買了一套新玻璃杯。"}]},
+      {"word":"set","uk_ipa":"/set/","us_ipa":"/set/","part_of_speech":"adjective","countability":"","chinese":"固定的；預定的","english":"fixed and arranged in advance","examples":[{"english":"The meal is served at a set time.","chinese":"膳食在預定時間供應。"}]}
+    ],
+    "pitch": [
+      {"word":"pitch","uk_ipa":"/pɪtʃ/","us_ipa":"/pɪtʃ/","part_of_speech":"noun","countability":"C","chinese":"球場；比賽場地","english":"an area of ground used for playing a sport","examples":[{"english":"The players ran onto the football pitch.","chinese":"球員跑上足球場。"}]},
+      {"word":"pitch","uk_ipa":"/pɪtʃ/","us_ipa":"/pɪtʃ/","part_of_speech":"noun","countability":"C or U","chinese":"音高","english":"how high or low a sound is","examples":[{"english":"Her voice rose in pitch.","chinese":"她的聲音音高上升了。"}]},
+      {"word":"pitch","uk_ipa":"/pɪtʃ/","us_ipa":"/pɪtʃ/","part_of_speech":"noun","countability":"C","chinese":"推銷說辭；提案","english":"a speech intended to persuade someone to buy or support something","examples":[{"english":"He gave a convincing sales pitch.","chinese":"他作了一番有說服力的推銷說辭。"}]},
+      {"word":"pitch","uk_ipa":"/pɪtʃ/","us_ipa":"/pɪtʃ/","part_of_speech":"verb","countability":"T","chinese":"投；擲","english":"to throw something, especially a ball","examples":[{"english":"She pitched the ball to her teammate.","chinese":"她把球投給隊友。"}]}
+    ],
+    "charge": [
+      {"word":"charge","uk_ipa":"/tʃɑːdʒ/","us_ipa":"/tʃɑːrdʒ/","part_of_speech":"verb","countability":"I or T","chinese":"收費；索價","english":"to ask someone to pay a particular amount for something","examples":[{"english":"The hotel charges fifty dollars for breakfast.","chinese":"酒店早餐收費五十美元。"}]},
+      {"word":"charge","uk_ipa":"/tʃɑːdʒ/","us_ipa":"/tʃɑːrdʒ/","part_of_speech":"verb","countability":"T","chinese":"充電","english":"to put electrical energy into a battery","examples":[{"english":"I need to charge my phone.","chinese":"我需要為手機充電。"}]},
+      {"word":"charge","uk_ipa":"/tʃɑːdʒ/","us_ipa":"/tʃɑːrdʒ/","part_of_speech":"noun","countability":"C or U","chinese":"費用；收費","english":"an amount of money requested for a service or product","examples":[{"english":"There is no extra charge for delivery.","chinese":"送貨不收額外費用。"}]},
+      {"word":"charge","uk_ipa":"/tʃɑːdʒ/","us_ipa":"/tʃɑːrdʒ/","part_of_speech":"noun","countability":"C","chinese":"指控；控罪","english":"a formal accusation that someone has committed a crime","examples":[{"english":"He denied the charge of theft.","chinese":"他否認盜竊控罪。"}]}
+    ],
+    "round": [
+      {"word":"round","uk_ipa":"/raʊnd/","us_ipa":"/raʊnd/","part_of_speech":"adjective","countability":"","chinese":"圓形的；球形的","english":"shaped like a circle or a ball","examples":[{"english":"They sat around a round table.","chinese":"他們圍坐在一張圓桌旁。"}]},
+      {"word":"round","uk_ipa":"/raʊnd/","us_ipa":"/raʊnd/","part_of_speech":"noun","countability":"C","chinese":"一輪；一回合","english":"one stage in a competition or series of events","examples":[{"english":"She reached the final round of the contest.","chinese":"她晉身比賽的最後一輪。"}]},
+      {"word":"round","uk_ipa":"/raʊnd/","us_ipa":"/raʊnd/","part_of_speech":"noun","countability":"C","chinese":"一巡；逐一拜訪","english":"a regular series of visits or activities","examples":[{"english":"The doctor is doing her morning rounds.","chinese":"醫生正在進行早上的例行巡房。"}]}
+    ],
+    "cast": [
+      {"word":"cast","uk_ipa":"/kɑːst/","us_ipa":"/kæst/","part_of_speech":"noun","countability":"C","chinese":"演員陣容","english":"all the actors performing in a film, play, or show","examples":[{"english":"The film has an excellent cast.","chinese":"這部電影有出色的演員陣容。"}]},
+      {"word":"cast","uk_ipa":"/kɑːst/","us_ipa":"/kæst/","part_of_speech":"noun","countability":"C","chinese":"石膏固定模","english":"a hard covering used to protect a broken bone while it heals","examples":[{"english":"His arm was in a cast for six weeks.","chinese":"他的手臂用石膏固定了六星期。"}]},
+      {"word":"cast","uk_ipa":"/kɑːst/","us_ipa":"/kæst/","part_of_speech":"verb","countability":"T","chinese":"選派角色","english":"to choose an actor for a particular role","examples":[{"english":"She was cast as the lead character.","chinese":"她獲選派飾演主角。"}]},
+      {"word":"cast","uk_ipa":"/kɑːst/","us_ipa":"/kæst/","part_of_speech":"verb","countability":"T","chinese":"投；擲；拋","english":"to throw something in a particular direction","examples":[{"english":"He cast the fishing line into the river.","chinese":"他把魚線拋進河裡。"}]}
+    ],
+    "save": [
+      {"word":"save","uk_ipa":"/seɪv/","us_ipa":"/seɪv/","part_of_speech":"verb","countability":"T","chinese":"拯救；挽救","english":"to stop someone or something from being harmed or destroyed","examples":[{"english":"The firefighters saved the family.","chinese":"消防員救了這家人。"}]},
+      {"word":"save","uk_ipa":"/seɪv/","us_ipa":"/seɪv/","part_of_speech":"verb","countability":"I or T","chinese":"儲蓄；節省","english":"to keep money or avoid wasting time, money, or resources","examples":[{"english":"We are saving money for a holiday.","chinese":"我們正在儲蓄金錢去旅行。"}]},
+      {"word":"save","uk_ipa":"/seɪv/","us_ipa":"/seɪv/","part_of_speech":"verb","countability":"T","chinese":"儲存","english":"to store computer data so that it can be used later","examples":[{"english":"Remember to save the document.","chinese":"記得儲存這份文件。"}]},
+      {"word":"save","uk_ipa":"/seɪv/","us_ipa":"/seɪv/","part_of_speech":"noun","countability":"C","chinese":"救球；撲救","english":"an action that prevents an opponent from scoring in sport","examples":[{"english":"The goalkeeper made a brilliant save.","chinese":"守門員作出了一次精彩撲救。"}]}
+    ],
+    "case": [
+      {"word":"case","uk_ipa":"/keɪs/","us_ipa":"/keɪs/","part_of_speech":"noun","countability":"C","chinese":"情況；事例","english":"a particular situation or example of something","examples":[{"english":"This is a clear case of discrimination.","chinese":"這是一個明顯的歧視事例。"}]},
+      {"word":"case","uk_ipa":"/keɪs/","us_ipa":"/keɪs/","part_of_speech":"noun","countability":"C","chinese":"案件；訴訟","english":"a matter being considered by the police or a court","examples":[{"english":"The police are investigating the case.","chinese":"警方正在調查這宗案件。"}]},
+      {"word":"case","uk_ipa":"/keɪs/","us_ipa":"/keɪs/","part_of_speech":"noun","countability":"C","chinese":"盒；箱；套","english":"a container used to hold or protect something","examples":[{"english":"Keep the camera in its case.","chinese":"把相機放在保護套內。"}]},
+      {"word":"case","uk_ipa":"/keɪs/","us_ipa":"/keɪs/","part_of_speech":"noun","countability":"C","chinese":"病例","english":"an occurrence of a particular illness","examples":[{"english":"The hospital reported two new cases.","chinese":"醫院報告了兩宗新病例。"}]}
+    ],
+    "crack": [
+      {"word":"crack","uk_ipa":"/kræk/","us_ipa":"/kræk/","part_of_speech":"noun","countability":"C","chinese":"裂縫；裂痕","english":"a narrow line where something has split without completely breaking","examples":[{"english":"There is a crack in the wall.","chinese":"牆上有一道裂縫。"}]},
+      {"word":"crack","uk_ipa":"/kræk/","us_ipa":"/kræk/","part_of_speech":"noun","countability":"C","chinese":"爆裂聲；劈啪聲","english":"a sudden short and sharp sound","examples":[{"english":"We heard a loud crack of thunder.","chinese":"我們聽到一聲響亮的雷鳴。"}]},
+      {"word":"crack","uk_ipa":"/kræk/","us_ipa":"/kræk/","part_of_speech":"verb","countability":"I or T","chinese":"裂開；使破裂","english":"to break without separating completely, or to make something do this","examples":[{"english":"The ice cracked under his feet.","chinese":"他腳下的冰裂開了。"}]},
+      {"word":"crack","uk_ipa":"/kræk/","us_ipa":"/kræk/","part_of_speech":"verb","countability":"T","chinese":"破解；解開","english":"to solve a difficult problem or discover a secret code","examples":[{"english":"The team finally cracked the code.","chinese":"團隊終於破解了密碼。"}]}
+    ],
+    "draw": [
+      {"word":"draw","uk_ipa":"/drɔː/","us_ipa":"/drɔː/","part_of_speech":"verb","countability":"I or T","chinese":"畫；繪畫","english":"to make a picture using a pen, pencil, or similar tool","examples":[{"english":"The child drew a picture of her house.","chinese":"孩子畫了一幅她家的圖畫。"}]},
+      {"word":"draw","uk_ipa":"/drɔː/","us_ipa":"/drɔː/","part_of_speech":"verb","countability":"T","chinese":"拉；拖；牽引","english":"to pull something in a particular direction","examples":[{"english":"He drew the curtains across the window.","chinese":"他拉上窗簾。"}]},
+      {"word":"draw","uk_ipa":"/drɔː/","us_ipa":"/drɔː/","part_of_speech":"verb","countability":"T","chinese":"吸引","english":"to attract people or attention","examples":[{"english":"The exhibition drew a large crowd.","chinese":"展覽吸引了大批人群。"}]},
+      {"word":"draw","uk_ipa":"/drɔː/","us_ipa":"/drɔː/","part_of_speech":"noun","countability":"C","chinese":"平局；和局","english":"a game or competition that ends with equal scores","examples":[{"english":"The match ended in a draw.","chinese":"比賽以平局結束。"}]}
+    ],
+    "flat": [
+      {"word":"flat","uk_ipa":"/flæt/","us_ipa":"/flæt/","part_of_speech":"adjective","countability":"","chinese":"平坦的；平的","english":"level and smooth, without raised or curved areas","examples":[{"english":"The land here is completely flat.","chinese":"這裡的土地完全平坦。"}]},
+      {"word":"flat","uk_ipa":"/flæt/","us_ipa":"/flæt/","part_of_speech":"adjective","countability":"","chinese":"沒氣的；洩了氣的","english":"containing little or no air, especially in a tyre","examples":[{"english":"We had a flat tyre on the way home.","chinese":"我們回家途中有一個輪胎洩了氣。"}]},
+      {"word":"flat","uk_ipa":"/flæt/","us_ipa":"/flæt/","part_of_speech":"adjective","countability":"","chinese":"平淡的；無生氣的","english":"lacking interest, excitement, or energy","examples":[{"english":"Her performance felt rather flat.","chinese":"她的表演顯得相當平淡。"}]},
+      {"word":"flat","uk_ipa":"/flæt/","us_ipa":"/flæt/","part_of_speech":"noun","countability":"C","chinese":"公寓；住宅單位","english":"a set of rooms for living in, usually on one floor of a building","examples":[{"english":"They rent a small flat in London.","chinese":"他們在倫敦租了一個小公寓。"}]}
+    ],
+    "issue": [
+      {"word":"issue","uk_ipa":"/ˈɪʃ.uː/","us_ipa":"/ˈɪʃ.uː/","part_of_speech":"noun","countability":"C","chinese":"問題；議題","english":"an important subject or problem for discussion","examples":[{"english":"We need to discuss this issue today.","chinese":"我們今天需要討論這個問題。"}]},
+      {"word":"issue","uk_ipa":"/ˈɪʃ.uː/","us_ipa":"/ˈɪʃ.uː/","part_of_speech":"noun","countability":"C","chinese":"期；號","english":"one of a series of newspapers, magazines, or journals","examples":[{"english":"The article appears in the latest issue.","chinese":"這篇文章刊登在最新一期。"}]},
+      {"word":"issue","uk_ipa":"/ˈɪʃ.uː/","us_ipa":"/ˈɪʃ.uː/","part_of_speech":"verb","countability":"T","chinese":"發出；頒布","english":"to officially provide or announce something","examples":[{"english":"The government issued a warning.","chinese":"政府發出了一項警告。"}]},
+      {"word":"issue","uk_ipa":"/ˈɪʃ.uː/","us_ipa":"/ˈɪʃ.uː/","part_of_speech":"verb","countability":"T","chinese":"發行；配發","english":"to supply or distribute something for use","examples":[{"english":"New identity cards will be issued next month.","chinese":"新身分證將於下月配發。"}]}
+    ],
+    "list": [
+      {"word":"list","uk_ipa":"/lɪst/","us_ipa":"/lɪst/","part_of_speech":"noun","countability":"C","chinese":"清單；名單","english":"a series of names, words, or items written one after another","examples":[{"english":"I made a list of things to buy.","chinese":"我列了一張購物清單。"}]},
+      {"word":"list","uk_ipa":"/lɪst/","us_ipa":"/lɪst/","part_of_speech":"verb","countability":"T","chinese":"列出；列入清單","english":"to write or include items in a list","examples":[{"english":"The guide lists several local restaurants.","chinese":"指南列出了幾間本地餐廳。"}]},
+      {"word":"list","uk_ipa":"/lɪst/","us_ipa":"/lɪst/","part_of_speech":"verb","countability":"I","chinese":"傾斜","english":"to lean to one side, especially of a ship","examples":[{"english":"The damaged boat began to list.","chinese":"受損的小船開始傾斜。"}]}
+    ],
+    "range": [
+      {"word":"range","uk_ipa":"/reɪndʒ/","us_ipa":"/reɪndʒ/","part_of_speech":"noun","countability":"C","chinese":"範圍；幅度","english":"the limits between which an amount, number, or quality varies","examples":[{"english":"The price range is quite wide.","chinese":"價格範圍相當廣。"}]},
+      {"word":"range","uk_ipa":"/reɪndʒ/","us_ipa":"/reɪndʒ/","part_of_speech":"noun","countability":"C","chinese":"一系列；一整套","english":"a group of different products or things of the same general type","examples":[{"english":"The shop sells a wide range of books.","chinese":"這間店售賣一系列不同的書籍。"}]},
+      {"word":"range","uk_ipa":"/reɪndʒ/","us_ipa":"/reɪndʒ/","part_of_speech":"noun","countability":"C","chinese":"山脈","english":"a connected line of mountains","examples":[{"english":"They crossed a high mountain range.","chinese":"他們越過了一座高山脈。"}]},
+      {"word":"range","uk_ipa":"/reɪndʒ/","us_ipa":"/reɪndʒ/","part_of_speech":"verb","countability":"I","chinese":"涵蓋；介乎","english":"to include different things or vary between particular limits","examples":[{"english":"The courses range from beginner to advanced.","chinese":"課程涵蓋初級至高級程度。"}]}
+    ],
+    "resolution": [
+      {"word":"resolution","uk_ipa":"/ˌrez.əˈluː.ʃən/","us_ipa":"/ˌrez.əˈluː.ʃən/","part_of_speech":"noun","countability":"C","chinese":"決議；正式決定","english":"a formal decision made by a group or organization","examples":[{"english":"The council passed the resolution unanimously.","chinese":"議會一致通過這項決議。"}]},
+      {"word":"resolution","uk_ipa":"/ˌrez.əˈluː.ʃən/","us_ipa":"/ˌrez.əˈluː.ʃən/","part_of_speech":"noun","countability":"C or U","chinese":"解決；化解","english":"the act of solving a problem or ending a disagreement","examples":[{"english":"Both sides are seeking a peaceful resolution.","chinese":"雙方都在尋求和平解決方法。"}]},
+      {"word":"resolution","uk_ipa":"/ˌrez.əˈluː.ʃən/","us_ipa":"/ˌrez.əˈluː.ʃən/","part_of_speech":"noun","countability":"C","chinese":"決心；新年願望","english":"a firm decision to do or not do something","examples":[{"english":"My New Year's resolution is to exercise more.","chinese":"我的新年願望是多做運動。"}]},
+      {"word":"resolution","uk_ipa":"/ˌrez.əˈluː.ʃən/","us_ipa":"/ˌrez.əˈluː.ʃən/","part_of_speech":"noun","countability":"C or U","chinese":"解像度；清晰度","english":"the amount of detail shown in a digital image or display","examples":[{"english":"This camera records video at a higher resolution.","chinese":"這部相機以較高解像度錄影。"}]}
+    ],
+    "sense": [
+      {"word":"sense","uk_ipa":"/sens/","us_ipa":"/sens/","part_of_speech":"noun","countability":"C","chinese":"感官；感覺能力","english":"one of the physical abilities to see, hear, smell, taste, or touch","examples":[{"english":"Dogs have a very keen sense of smell.","chinese":"狗有非常敏銳的嗅覺。"}]},
+      {"word":"sense","uk_ipa":"/sens/","us_ipa":"/sens/","part_of_speech":"noun","countability":"C or U","chinese":"感覺；意識","english":"a feeling or awareness about something","examples":[{"english":"I had a sense that something was wrong.","chinese":"我感覺到有些事情不對勁。"}]},
+      {"word":"sense","uk_ipa":"/sens/","us_ipa":"/sens/","part_of_speech":"noun","countability":"C","chinese":"含義；意思","english":"a particular meaning of a word or expression","examples":[{"english":"The word has several different senses.","chinese":"這個詞有幾個不同的含義。"}]},
+      {"word":"sense","uk_ipa":"/sens/","us_ipa":"/sens/","part_of_speech":"verb","countability":"T","chinese":"察覺；感受到","english":"to become aware of something without being directly told","examples":[{"english":"She sensed his disappointment.","chinese":"她察覺到他的失望。"}]}
+    ],
+    "sharp": [
+      {"word":"sharp","uk_ipa":"/ʃɑːp/","us_ipa":"/ʃɑːrp/","part_of_speech":"adjective","countability":"","chinese":"鋒利的；尖的","english":"having a thin edge or point that can cut or pierce","examples":[{"english":"Be careful with that sharp knife.","chinese":"小心那把鋒利的刀。"}]},
+      {"word":"sharp","uk_ipa":"/ʃɑːp/","us_ipa":"/ʃɑːrp/","part_of_speech":"adjective","countability":"","chinese":"急劇的；大幅度的","english":"sudden and large in amount or degree","examples":[{"english":"There was a sharp rise in prices.","chinese":"價格急劇上升。"}]},
+      {"word":"sharp","uk_ipa":"/ʃɑːp/","us_ipa":"/ʃɑːrp/","part_of_speech":"adjective","countability":"","chinese":"敏銳的；機警的","english":"quick to notice, understand, or react","examples":[{"english":"She has a sharp mind.","chinese":"她頭腦敏銳。"}]},
+      {"word":"sharp","uk_ipa":"/ʃɑːp/","us_ipa":"/ʃɑːrp/","part_of_speech":"adjective","countability":"","chinese":"清晰的；鮮明的","english":"clear, distinct, and easy to see or hear","examples":[{"english":"The photograph is sharp and detailed.","chinese":"這張照片清晰而細緻。"}]}
+    ],
+    "break": [
+      {"word":"break","uk_ipa":"/breɪk/","us_ipa":"/breɪk/","part_of_speech":"verb","countability":"I or T","chinese":"打破；破裂；弄壞","english":"to separate into pieces or stop working because of damage","examples":[{"english":"Be careful not to break the glass.","chinese":"小心不要打破玻璃杯。"}]},
+      {"word":"break","uk_ipa":"/breɪk/","us_ipa":"/breɪk/","part_of_speech":"verb","countability":"T","chinese":"違反；破壞","english":"to fail to obey a law, rule, promise, or agreement","examples":[{"english":"He was fined for breaking the law.","chinese":"他因違反法律而被罰款。"}]},
+      {"word":"break","uk_ipa":"/breɪk/","us_ipa":"/breɪk/","part_of_speech":"noun","countability":"C","chinese":"休息；小休","english":"a short period when you stop an activity to rest","examples":[{"english":"Let's take a ten-minute break.","chinese":"我們休息十分鐘吧。"}]},
+      {"word":"break","uk_ipa":"/breɪk/","us_ipa":"/breɪk/","part_of_speech":"noun","countability":"C","chinese":"中斷；間斷","english":"a temporary interruption or gap","examples":[{"english":"There was a break in the conversation.","chinese":"談話出現了一段短暫中斷。"}]}
+    ],
+    "copy": [
+      {"word":"copy","uk_ipa":"/ˈkɒp.i/","us_ipa":"/ˈkɑː.pi/","part_of_speech":"noun","countability":"C","chinese":"複本；副本","english":"something made to be the same as an original","examples":[{"english":"Please keep a copy of the receipt.","chinese":"請保留收據副本。"}]},
+      {"word":"copy","uk_ipa":"/ˈkɒp.i/","us_ipa":"/ˈkɑː.pi/","part_of_speech":"noun","countability":"C","chinese":"一本；一份","english":"one example of a book, newspaper, document, or other printed work","examples":[{"english":"I bought a copy of the magazine.","chinese":"我買了一本雜誌。"}]},
+      {"word":"copy","uk_ipa":"/ˈkɒp.i/","us_ipa":"/ˈkɑː.pi/","part_of_speech":"verb","countability":"T","chinese":"複製；抄寫","english":"to produce something that is the same as an original","examples":[{"english":"Copy the file to another folder.","chinese":"把檔案複製到另一個資料夾。"}]},
+      {"word":"copy","uk_ipa":"/ˈkɒp.i/","us_ipa":"/ˈkɑː.pi/","part_of_speech":"verb","countability":"T","chinese":"模仿","english":"to behave, dress, or act in the same way as someone else","examples":[{"english":"Young children often copy their parents.","chinese":"幼兒經常模仿父母。"}]}
+    ],
+    "drive": [
+      {"word":"drive","uk_ipa":"/draɪv/","us_ipa":"/draɪv/","part_of_speech":"verb","countability":"I or T","chinese":"駕駛；開車","english":"to operate and control a motor vehicle","examples":[{"english":"She drives to work every day.","chinese":"她每天駕車上班。"}]},
+      {"word":"drive","uk_ipa":"/draɪv/","us_ipa":"/draɪv/","part_of_speech":"verb","countability":"T","chinese":"驅使；迫使","english":"to cause someone to act in a particular way","examples":[{"english":"Ambition drove him to work harder.","chinese":"抱負驅使他更加努力工作。"}]},
+      {"word":"drive","uk_ipa":"/draɪv/","us_ipa":"/draɪv/","part_of_speech":"noun","countability":"C","chinese":"駕車旅程","english":"a journey in a car","examples":[{"english":"It is a two-hour drive to the coast.","chinese":"駕車到海岸需時兩小時。"}]},
+      {"word":"drive","uk_ipa":"/draɪv/","us_ipa":"/draɪv/","part_of_speech":"noun","countability":"C or U","chinese":"動力；幹勁","english":"energy and determination to achieve something","examples":[{"english":"Her talent and drive made her successful.","chinese":"她的才華和幹勁令她成功。"}]}
+    ],
+    "fall": [
+      {"word":"fall","uk_ipa":"/fɔːl/","us_ipa":"/fɑːl/","part_of_speech":"verb","countability":"I","chinese":"落下；跌倒","english":"to move downwards, often quickly and without control","examples":[{"english":"The glass fell to the floor.","chinese":"玻璃杯掉到地上。"}]},
+      {"word":"fall","uk_ipa":"/fɔːl/","us_ipa":"/fɑːl/","part_of_speech":"verb","countability":"I","chinese":"下降；減少","english":"to become lower in amount, level, or value","examples":[{"english":"Temperatures will fall tonight.","chinese":"今晚氣溫將會下降。"}]},
+      {"word":"fall","uk_ipa":"/fɔːl/","us_ipa":"/fɑːl/","part_of_speech":"noun","countability":"C","chinese":"跌倒；墜落","english":"an act of falling to the ground or from a higher position","examples":[{"english":"He injured his arm in a fall.","chinese":"他跌倒時弄傷了手臂。"}]},
+      {"word":"fall","uk_ipa":"/fɔːl/","us_ipa":"/fɑːl/","part_of_speech":"noun","countability":"C","chinese":"下降；減少","english":"a reduction in amount, level, or value","examples":[{"english":"The company reported a fall in sales.","chinese":"公司報告銷售額有所下降。"}]},
+      {"word":"fall","uk_ipa":"/fɔːl/","us_ipa":"/fɑːl/","part_of_speech":"noun","countability":"U","chinese":"秋季；秋天","english":"the season between summer and winter","examples":[{"english":"The leaves change colour in the fall.","chinese":"樹葉在秋天會變色。"}]}
+    ]
+  }
+}

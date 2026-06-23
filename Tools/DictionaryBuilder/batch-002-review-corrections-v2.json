@@ -1,0 +1,2741 @@
+{
+  "word_replacements": {
+    "drink": [
+      {
+        "word": "drink",
+        "uk_ipa": "/dɹɪŋk/",
+        "us_ipa": "/ˈdɹɪŋk/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "飲料",
+        "english": "a liquid that you can drink",
+        "examples": [
+          {
+            "english": "I bought a cold drink after the run.",
+            "chinese": "跑步後我買了一杯冷飲料。"
+          }
+        ]
+      },
+      {
+        "word": "drink",
+        "uk_ipa": "/dɹɪŋk/",
+        "us_ipa": "/ˈdɹɪŋk/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "喝；飲用",
+        "english": "to take liquid into your mouth and swallow it",
+        "examples": [
+          {
+            "english": "Drink more water on hot days.",
+            "chinese": "天氣熱的日子要多喝水。"
+          }
+        ]
+      },
+      {
+        "word": "drink",
+        "uk_ipa": "/dɹɪŋk/",
+        "us_ipa": "/ˈdɹɪŋk/",
+        "part_of_speech": "verb",
+        "countability": "intransitive",
+        "chinese": "喝酒",
+        "english": "to drink alcohol, especially regularly or too much",
+        "examples": [
+          {
+            "english": "He does not drink before driving.",
+            "chinese": "他開車前不喝酒。"
+          }
+        ]
+      }
+    ],
+    "edge": [
+      {
+        "word": "edge",
+        "uk_ipa": "/ɛd͡ʒ/",
+        "us_ipa": "/ˈɛdʒ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "邊緣",
+        "english": "the outside limit of a surface or area",
+        "examples": [
+          {
+            "english": "She sat on the edge of the bed.",
+            "chinese": "她坐在床的邊緣。"
+          }
+        ]
+      },
+      {
+        "word": "edge",
+        "uk_ipa": "/ɛd͡ʒ/",
+        "us_ipa": "/ˈɛdʒ/",
+        "part_of_speech": "noun",
+        "countability": "singular",
+        "chinese": "優勢",
+        "english": "a small advantage over others",
+        "examples": [
+          {
+            "english": "Good design gives the product an edge.",
+            "chinese": "良好的設計給產品帶來優勢。"
+          }
+        ]
+      },
+      {
+        "word": "edge",
+        "uk_ipa": "/ɛd͡ʒ/",
+        "us_ipa": "/ˈɛdʒ/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "緩慢移動",
+        "english": "to move slowly and carefully in a particular direction",
+        "examples": [
+          {
+            "english": "The car edged forward in traffic.",
+            "chinese": "汽車在車流中緩慢移動向前。"
+          }
+        ]
+      }
+    ],
+    "egg": [
+      {
+        "word": "egg",
+        "uk_ipa": "/(j)ɛɡ/",
+        "us_ipa": "/ˈɛɡ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "蛋；雞蛋",
+        "english": "a round object produced by a female bird, often eaten as food",
+        "examples": [
+          {
+            "english": "She boiled an egg for breakfast.",
+            "chinese": "她早餐煮了一隻雞蛋。"
+          }
+        ]
+      },
+      {
+        "word": "egg",
+        "uk_ipa": "/(j)ɛɡ/",
+        "us_ipa": "/ˈɛɡ/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "慫恿",
+        "english": "to encourage someone to do something, often something unwise",
+        "examples": [
+          {
+            "english": "His friends egged him on.",
+            "chinese": "他的朋友慫恿他繼續做。"
+          }
+        ]
+      }
+    ],
+    "fault": [
+      {
+        "word": "fault",
+        "uk_ipa": "/fɑlt/",
+        "us_ipa": "/ˈfɔlt/",
+        "part_of_speech": "noun",
+        "countability": "countable/uncountable",
+        "chinese": "錯誤；過失",
+        "english": "responsibility for a mistake or problem",
+        "examples": [
+          {
+            "english": "The accident was not your fault.",
+            "chinese": "這次意外不是你的過失。"
+          }
+        ]
+      },
+      {
+        "word": "fault",
+        "uk_ipa": "/fɑlt/",
+        "us_ipa": "/ˈfɔlt/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "缺點；毛病",
+        "english": "a weakness or problem in something or someone",
+        "examples": [
+          {
+            "english": "The machine has a serious fault.",
+            "chinese": "這部機器有嚴重毛病。"
+          }
+        ]
+      },
+      {
+        "word": "fault",
+        "uk_ipa": "/fɑlt/",
+        "us_ipa": "/ˈfɔlt/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "責怪；挑剔",
+        "english": "to criticize someone or something for a mistake",
+        "examples": [
+          {
+            "english": "I cannot fault her work.",
+            "chinese": "我不能挑剔她的工作。"
+          }
+        ]
+      }
+    ],
+    "figure": [
+      {
+        "word": "figure",
+        "uk_ipa": "/ˈfɪɡjɚ/",
+        "us_ipa": "/ˈfɪɡjɝ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "數字",
+        "english": "a number, especially in official information",
+        "examples": [
+          {
+            "english": "The sales figures were higher this year.",
+            "chinese": "今年的銷售數字較高。"
+          }
+        ]
+      },
+      {
+        "word": "figure",
+        "uk_ipa": "/ˈfɪɡjɚ/",
+        "us_ipa": "/ˈfɪɡjɝ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "人物",
+        "english": "a person, especially one who is important or well known",
+        "examples": [
+          {
+            "english": "She is a leading figure in science.",
+            "chinese": "她是科學界的重要人物。"
+          }
+        ]
+      },
+      {
+        "word": "figure",
+        "uk_ipa": "/ˈfɪɡjɚ/",
+        "us_ipa": "/ˈfɪɡjɝ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "身形；輪廓",
+        "english": "the shape of a person or object",
+        "examples": [
+          {
+            "english": "A dark figure stood by the door.",
+            "chinese": "一個黑色身形站在門旁。"
+          }
+        ]
+      },
+      {
+        "word": "figure",
+        "uk_ipa": "/ˈfɪɡjɚ/",
+        "us_ipa": "/ˈfɪɡjɝ/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "認為；估計",
+        "english": "to think or calculate that something is true or likely",
+        "examples": [
+          {
+            "english": "I figure the trip will take two hours.",
+            "chinese": "我估計這趟旅程要兩小時。"
+          }
+        ]
+      }
+    ],
+    "iron": [
+      {
+        "word": "iron",
+        "uk_ipa": "/æən/",
+        "us_ipa": "/ˈaɪɝn/",
+        "part_of_speech": "noun",
+        "countability": "uncountable",
+        "chinese": "鐵",
+        "english": "a strong hard metal used for making tools, machines, and buildings",
+        "examples": [
+          {
+            "english": "The gate is made of iron.",
+            "chinese": "這道閘門是用鐵製成的。"
+          }
+        ]
+      },
+      {
+        "word": "iron",
+        "uk_ipa": "/æən/",
+        "us_ipa": "/ˈaɪɝn/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "熨斗",
+        "english": "a tool used for making clothes smooth with heat",
+        "examples": [
+          {
+            "english": "The iron is too hot for this shirt.",
+            "chinese": "這個熨斗對這件襯衫來說太熱。"
+          }
+        ]
+      },
+      {
+        "word": "iron",
+        "uk_ipa": "/æən/",
+        "us_ipa": "/ˈaɪɝn/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "熨；燙平",
+        "english": "to make clothes smooth using an iron",
+        "examples": [
+          {
+            "english": "Please iron this shirt.",
+            "chinese": "請熨這件襯衫。"
+          }
+        ]
+      },
+      {
+        "word": "iron",
+        "uk_ipa": "/æən/",
+        "us_ipa": "/ˈaɪɝn/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "鐵製的",
+        "english": "made of iron",
+        "examples": [
+          {
+            "english": "They opened the iron gate.",
+            "chinese": "他們打開了鐵製的閘門。"
+          }
+        ]
+      }
+    ],
+    "level": [
+      {
+        "word": "level",
+        "uk_ipa": "/ˈlɛv.l̩/",
+        "us_ipa": "/ˈlɛvʌl/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "水平；程度",
+        "english": "the amount, standard, or degree of something",
+        "examples": [
+          {
+            "english": "Noise levels were high in the room.",
+            "chinese": "房間內的噪音水平很高。"
+          }
+        ]
+      },
+      {
+        "word": "level",
+        "uk_ipa": "/ˈlɛv.l̩/",
+        "us_ipa": "/ˈlɛvʌl/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "樓層；層級",
+        "english": "a floor or layer in a building or system",
+        "examples": [
+          {
+            "english": "The restaurant is on the top level.",
+            "chinese": "餐廳在最高樓層。"
+          }
+        ]
+      },
+      {
+        "word": "level",
+        "uk_ipa": "/ˈlɛv.l̩/",
+        "us_ipa": "/ˈlɛvʌl/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "平坦的；水平的",
+        "english": "flat and not sloping",
+        "examples": [
+          {
+            "english": "Put the table on a level floor.",
+            "chinese": "把桌子放在平坦的地板上。"
+          }
+        ]
+      },
+      {
+        "word": "level",
+        "uk_ipa": "/ˈlɛv.l̩/",
+        "us_ipa": "/ˈlɛvʌl/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "弄平；夷平",
+        "english": "to make something flat or equal in height",
+        "examples": [
+          {
+            "english": "Workers leveled the ground.",
+            "chinese": "工人把地面弄平。"
+          }
+        ]
+      }
+    ],
+    "machine": [
+      {
+        "word": "machine",
+        "uk_ipa": "/-ˈʃɪn/",
+        "us_ipa": "/mʌˈʃin/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "機器",
+        "english": "a device with moving parts that uses power to do work",
+        "examples": [
+          {
+            "english": "This machine washes clothes quickly.",
+            "chinese": "這部機器洗衣服很快。"
+          }
+        ]
+      },
+      {
+        "word": "machine",
+        "uk_ipa": "/-ˈʃɪn/",
+        "us_ipa": "/mʌˈʃin/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "用機器加工",
+        "english": "to make or shape something using a machine",
+        "examples": [
+          {
+            "english": "The parts are machined from steel.",
+            "chinese": "這些零件是用機器加工鋼材製成的。"
+          }
+        ]
+      }
+    ],
+    "drum": [
+      {
+        "word": "drum",
+        "uk_ipa": "/ˈdɹʌm/",
+        "us_ipa": "/ˈdɹʌm/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "鼓",
+        "english": "a musical instrument that you hit with your hands or sticks",
+        "examples": [
+          {
+            "english": "He played the drum loudly.",
+            "chinese": "他大聲打鼓。"
+          }
+        ]
+      },
+      {
+        "word": "drum",
+        "uk_ipa": "/ˈdɹʌm/",
+        "us_ipa": "/ˈdɹʌm/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "桶；圓筒",
+        "english": "a large round container or cylinder",
+        "examples": [
+          {
+            "english": "Oil was stored in a metal drum.",
+            "chinese": "油儲存在金屬桶裏。"
+          }
+        ]
+      },
+      {
+        "word": "drum",
+        "uk_ipa": "/ˈdɹʌm/",
+        "us_ipa": "/ˈdɹʌm/",
+        "part_of_speech": "verb",
+        "countability": "intransitive/transitive",
+        "chinese": "打鼓；敲打",
+        "english": "to play a drum or make a regular beating sound",
+        "examples": [
+          {
+            "english": "Rain drummed on the roof.",
+            "chinese": "雨點在屋頂上敲打。"
+          }
+        ]
+      }
+    ],
+    "drunk": [
+      {
+        "word": "drunk",
+        "uk_ipa": "/dɹʌŋk/",
+        "us_ipa": "/ˈdɹʌŋk/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "醉酒的",
+        "english": "unable to behave normally because of alcohol",
+        "examples": [
+          {
+            "english": "He was too drunk to walk home.",
+            "chinese": "他醉酒得無法走路回家。"
+          }
+        ]
+      },
+      {
+        "word": "drunk",
+        "uk_ipa": "/dɹʌŋk/",
+        "us_ipa": "/ˈdɹʌŋk/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "醉漢",
+        "english": "a person who is often or currently drunk",
+        "examples": [
+          {
+            "english": "A drunk shouted in the street.",
+            "chinese": "一名醉漢在街上大叫。"
+          }
+        ]
+      }
+    ],
+    "dude": [
+      {
+        "word": "dude",
+        "uk_ipa": "/dj/",
+        "us_ipa": "/ˈdud/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "傢伙；老兄",
+        "english": "an informal word for a man or a person",
+        "examples": [
+          {
+            "english": "That dude helped me carry the box.",
+            "chinese": "那個傢伙幫我搬箱子。"
+          }
+        ]
+      }
+    ],
+    "even": [
+      {
+        "word": "even",
+        "uk_ipa": "/ˈivn̩/",
+        "us_ipa": "/ˈivɪn/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "甚至",
+        "english": "used to emphasize something surprising or extreme",
+        "examples": [
+          {
+            "english": "Even a child can understand this rule.",
+            "chinese": "甚至小孩也能明白這條規則。"
+          }
+        ]
+      },
+      {
+        "word": "even",
+        "uk_ipa": "/ˈivn̩/",
+        "us_ipa": "/ˈivɪn/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "平坦的；均勻的",
+        "english": "flat, level, or equal in amount",
+        "examples": [
+          {
+            "english": "Spread the paint in an even layer.",
+            "chinese": "把油漆塗成均勻的一層。"
+          }
+        ]
+      }
+    ],
+    "exposure": [
+      {
+        "word": "exposure",
+        "uk_ipa": "/ɪkˈspoʊ.ʒɚ/",
+        "us_ipa": "/ɪˈkspoʊʒɝ/",
+        "part_of_speech": "noun",
+        "countability": "uncountable",
+        "chinese": "接觸；暴露",
+        "english": "the state of being affected by something or made known",
+        "examples": [
+          {
+            "english": "Long exposure to the sun can damage skin.",
+            "chinese": "長時間暴露在陽光下會傷害皮膚。"
+          }
+        ]
+      }
+    ],
+    "fox": [
+      {
+        "word": "fox",
+        "uk_ipa": "",
+        "us_ipa": "/ˈfɑks/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "狐狸",
+        "english": "a wild animal like a dog with red-brown fur and a bushy tail",
+        "examples": [
+          {
+            "english": "A fox ran across the field.",
+            "chinese": "一隻狐狸跑過田野。"
+          }
+        ]
+      }
+    ],
+    "friendly": [
+      {
+        "word": "friendly",
+        "uk_ipa": "/ˈfɹɛn.li/",
+        "us_ipa": "/ˈfɹɛndli/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "友善的",
+        "english": "kind and pleasant to others",
+        "examples": [
+          {
+            "english": "The staff were friendly and helpful.",
+            "chinese": "員工友善又樂於助人。"
+          }
+        ]
+      }
+    ],
+    "fry": [
+      {
+        "word": "fry",
+        "uk_ipa": "/fɹaɪ/",
+        "us_ipa": "/ˈfɹaɪ/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "油炸；煎",
+        "english": "to cook food in hot oil or fat",
+        "examples": [
+          {
+            "english": "Fry the fish for five minutes.",
+            "chinese": "把魚油炸五分鐘。"
+          }
+        ]
+      },
+      {
+        "word": "fry",
+        "uk_ipa": "/fɹaɪ/",
+        "us_ipa": "/ˈfɹaɪ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "薯條",
+        "english": "a long thin piece of potato cooked in hot oil",
+        "examples": [
+          {
+            "english": "He ate a plate of fries.",
+            "chinese": "他吃了一盤薯條。"
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "word": "full",
+        "uk_ipa": "/fʉl/",
+        "us_ipa": "/ˈfʊl/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "滿的；飽的",
+        "english": "containing as much as possible, or having eaten enough",
+        "examples": [
+          {
+            "english": "The glass is full of water.",
+            "chinese": "杯子滿是水。"
+          }
+        ]
+      }
+    ],
+    "generation": [
+      {
+        "word": "generation",
+        "uk_ipa": "/ˌd͡ʒɛnəˈɹeɪʃən/",
+        "us_ipa": "/dʒɛnɝˈeɪʃʌn/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "一代",
+        "english": "all the people born and living at about the same time",
+        "examples": [
+          {
+            "english": "This song is popular with a younger generation.",
+            "chinese": "這首歌受年輕一代歡迎。"
+          }
+        ]
+      }
+    ],
+    "ghosting": [
+      {
+        "word": "ghosting",
+        "uk_ipa": "",
+        "us_ipa": "",
+        "part_of_speech": "noun",
+        "countability": "uncountable",
+        "chinese": "突然斷聯",
+        "english": "the act of suddenly ending contact with someone without explanation",
+        "examples": [
+          {
+            "english": "Ghosting can feel very hurtful.",
+            "chinese": "突然斷聯會令人很受傷。"
+          }
+        ]
+      }
+    ],
+    "go out": [
+      {
+        "word": "go out",
+        "uk_ipa": "",
+        "us_ipa": "",
+        "part_of_speech": "phrasal verb",
+        "countability": "intransitive",
+        "chinese": "外出；約會",
+        "english": "to leave home for entertainment or to have a romantic relationship",
+        "examples": [
+          {
+            "english": "They go out for dinner every Friday.",
+            "chinese": "他們每個星期五外出吃晚餐。"
+          }
+        ]
+      }
+    ],
+    "golden": [
+      {
+        "word": "golden",
+        "uk_ipa": "/ˈɡoʊl.dən/",
+        "us_ipa": "/ˈɡoʊldʌn/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "金色的；珍貴的",
+        "english": "bright yellow like gold, or very valuable",
+        "examples": [
+          {
+            "english": "The child had golden hair.",
+            "chinese": "那孩子有金色的頭髮。"
+          }
+        ]
+      }
+    ],
+    "graphic": [
+      {
+        "word": "graphic",
+        "uk_ipa": "/ˈɡɹæfɪk/",
+        "us_ipa": "/ˈɡɹæfɪk/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "圖像的；生動的",
+        "english": "relating to pictures, or described very clearly",
+        "examples": [
+          {
+            "english": "The report includes a graphic image.",
+            "chinese": "報告包含一幅圖像。"
+          }
+        ]
+      }
+    ],
+    "gross": [
+      {
+        "word": "gross",
+        "uk_ipa": "/ɡɹos/",
+        "us_ipa": "/ˈɡɹoʊs/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "總的；令人噁心的",
+        "english": "total before deductions, or very unpleasant",
+        "examples": [
+          {
+            "english": "The gross income was listed first.",
+            "chinese": "總收入列在最前面。"
+          }
+        ]
+      }
+    ],
+    "gut": [
+      {
+        "word": "gut",
+        "uk_ipa": "/ɡʊt/",
+        "us_ipa": "/ˈɡʌt/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "腸道；內臟",
+        "english": "the stomach or intestines",
+        "examples": [
+          {
+            "english": "The medicine affects the gut.",
+            "chinese": "這種藥會影響腸道。"
+          }
+        ]
+      },
+      {
+        "word": "gut",
+        "uk_ipa": "/ɡʊt/",
+        "us_ipa": "/ˈɡʌt/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "取出內臟；徹底破壞",
+        "english": "to remove the inside parts of an animal or destroy the inside of a building",
+        "examples": [
+          {
+            "english": "The fire gutted the house.",
+            "chinese": "大火徹底破壞了房屋內部。"
+          }
+        ]
+      }
+    ],
+    "guy": [
+      {
+        "word": "guy",
+        "uk_ipa": "/ɡaɪ/",
+        "us_ipa": "/ˈɡaɪ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "男人；傢伙",
+        "english": "an informal word for a man or person",
+        "examples": [
+          {
+            "english": "The guy at the desk smiled.",
+            "chinese": "櫃台那個男人笑了。"
+          }
+        ]
+      }
+    ],
+    "herb": [
+      {
+        "word": "herb",
+        "uk_ipa": "/(h)ɝb/",
+        "us_ipa": "/ˈɝb/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "香草；藥草",
+        "english": "a plant used for flavoring food or as medicine",
+        "examples": [
+          {
+            "english": "Basil is my favorite herb.",
+            "chinese": "羅勒是我最喜歡的香草。"
+          }
+        ]
+      }
+    ],
+    "herd": [
+      {
+        "word": "herd",
+        "uk_ipa": "/hɜɹd/",
+        "us_ipa": "/ˈhɝd/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "獸群",
+        "english": "a group of animals of the same kind",
+        "examples": [
+          {
+            "english": "A herd of cows crossed the road.",
+            "chinese": "一群牛穿過馬路。"
+          }
+        ]
+      },
+      {
+        "word": "herd",
+        "uk_ipa": "/hɜɹd/",
+        "us_ipa": "/ˈhɝd/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "驅趕；聚集",
+        "english": "to move animals or people together as a group",
+        "examples": [
+          {
+            "english": "The dog herded the sheep.",
+            "chinese": "狗把羊群驅趕在一起。"
+          }
+        ]
+      }
+    ],
+    "hurt": [
+      {
+        "word": "hurt",
+        "uk_ipa": "/hɜːt/",
+        "us_ipa": "/ˈhɝt/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "弄傷；疼痛",
+        "english": "to cause pain or feel pain",
+        "examples": [
+          {
+            "english": "My knee hurts after the run.",
+            "chinese": "跑步後我的膝蓋疼痛。"
+          }
+        ]
+      },
+      {
+        "word": "hurt",
+        "uk_ipa": "/hɜːt/",
+        "us_ipa": "/ˈhɝt/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "受傷的",
+        "english": "injured or emotionally upset",
+        "examples": [
+          {
+            "english": "She looked hurt by his words.",
+            "chinese": "她看起來被他的話傷害了。"
+          }
+        ]
+      }
+    ],
+    "juice": [
+      {
+        "word": "juice",
+        "uk_ipa": "/d͡ʒus/",
+        "us_ipa": "/ˈdʒus/",
+        "part_of_speech": "noun",
+        "countability": "uncountable/countable",
+        "chinese": "果汁；汁液",
+        "english": "liquid from fruit, vegetables, or meat",
+        "examples": [
+          {
+            "english": "Orange juice is on the table.",
+            "chinese": "橙汁在桌上。"
+          }
+        ]
+      }
+    ],
+    "jump": [
+      {
+        "word": "jump",
+        "uk_ipa": "/d͡ʒʌmp/",
+        "us_ipa": "/ˈdʒʌmp/",
+        "part_of_speech": "verb",
+        "countability": "intransitive/transitive",
+        "chinese": "跳；跳躍",
+        "english": "to push yourself off the ground into the air",
+        "examples": [
+          {
+            "english": "The cat jumped over the wall.",
+            "chinese": "貓跳過了牆。"
+          }
+        ]
+      },
+      {
+        "word": "jump",
+        "uk_ipa": "/d͡ʒʌmp/",
+        "us_ipa": "/ˈdʒʌmp/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "跳躍",
+        "english": "an act of jumping",
+        "examples": [
+          {
+            "english": "That was a high jump.",
+            "chinese": "那是一次很高的跳躍。"
+          }
+        ]
+      }
+    ],
+    "kiss": [
+      {
+        "word": "kiss",
+        "uk_ipa": "/kɪs/",
+        "us_ipa": "/ˈkɪs/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "親吻",
+        "english": "to touch someone with your lips to show love or greeting",
+        "examples": [
+          {
+            "english": "She kissed the baby on the cheek.",
+            "chinese": "她親吻寶寶的臉頰。"
+          }
+        ]
+      },
+      {
+        "word": "kiss",
+        "uk_ipa": "/kɪs/",
+        "us_ipa": "/ˈkɪs/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "親吻",
+        "english": "an act of touching someone with the lips",
+        "examples": [
+          {
+            "english": "He gave her a kiss goodbye.",
+            "chinese": "他給了她一個告別親吻。"
+          }
+        ]
+      }
+    ],
+    "layer": [
+      {
+        "word": "layer",
+        "uk_ipa": "/lɛə/",
+        "us_ipa": "/ˈleɪɝ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "層",
+        "english": "one thickness or sheet of material over or under another",
+        "examples": [
+          {
+            "english": "Add a layer of cream.",
+            "chinese": "加上一層忌廉。"
+          }
+        ]
+      }
+    ],
+    "lens": [
+      {
+        "word": "lens",
+        "uk_ipa": "/lɛnz/",
+        "us_ipa": "/ˈlɛnz/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "鏡片；鏡頭",
+        "english": "a curved piece of glass or plastic used in glasses or cameras",
+        "examples": [
+          {
+            "english": "Clean the camera lens carefully.",
+            "chinese": "小心清潔相機鏡頭。"
+          }
+        ]
+      }
+    ],
+    "light": [
+      {
+        "word": "light",
+        "uk_ipa": "/laɪt/",
+        "us_ipa": "/ˈlaɪt/",
+        "part_of_speech": "noun",
+        "countability": "uncountable/countable",
+        "chinese": "光；燈",
+        "english": "brightness that lets you see, or a lamp",
+        "examples": [
+          {
+            "english": "Turn on the light, please.",
+            "chinese": "請開燈。"
+          }
+        ]
+      },
+      {
+        "word": "light",
+        "uk_ipa": "/laɪt/",
+        "us_ipa": "/ˈlaɪt/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "輕的；淺色的",
+        "english": "not heavy, or pale in color",
+        "examples": [
+          {
+            "english": "This bag is very light.",
+            "chinese": "這個袋子很輕。"
+          }
+        ]
+      },
+      {
+        "word": "light",
+        "uk_ipa": "/laɪt/",
+        "us_ipa": "/ˈlaɪt/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "點燃；照亮",
+        "english": "to start a fire or make a place bright",
+        "examples": [
+          {
+            "english": "She lit a candle.",
+            "chinese": "她點燃了一支蠟燭。"
+          }
+        ]
+      }
+    ],
+    "living": [
+      {
+        "word": "living",
+        "uk_ipa": "/ˈlɪvɪŋ/",
+        "us_ipa": "/ˈlɪvɪŋ/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "活著的",
+        "english": "alive now",
+        "examples": [
+          {
+            "english": "All living things need water.",
+            "chinese": "所有活著的生物都需要水。"
+          }
+        ]
+      },
+      {
+        "word": "living",
+        "uk_ipa": "/ˈlɪvɪŋ/",
+        "us_ipa": "/ˈlɪvɪŋ/",
+        "part_of_speech": "noun",
+        "countability": "singular",
+        "chinese": "生計",
+        "english": "the money needed to live",
+        "examples": [
+          {
+            "english": "He earns a living by teaching.",
+            "chinese": "他靠教書謀生計。"
+          }
+        ]
+      }
+    ],
+    "lose": [
+      {
+        "word": "lose",
+        "uk_ipa": "/luːz/",
+        "us_ipa": "/ˈluz/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "失去；輸掉",
+        "english": "to no longer have something, or not win",
+        "examples": [
+          {
+            "english": "Do not lose your keys.",
+            "chinese": "不要失去你的鑰匙。"
+          }
+        ]
+      }
+    ],
+    "low": [
+      {
+        "word": "low",
+        "uk_ipa": "/ˈloʊ/",
+        "us_ipa": "/ˈloʊ/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "低的",
+        "english": "not high in position, amount, or level",
+        "examples": [
+          {
+            "english": "The price is low today.",
+            "chinese": "今天價格很低。"
+          }
+        ]
+      },
+      {
+        "word": "low",
+        "uk_ipa": "/ˈloʊ/",
+        "us_ipa": "/ˈloʊ/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "低地；低聲地",
+        "english": "in or to a low position or level",
+        "examples": [
+          {
+            "english": "She spoke low so no one heard.",
+            "chinese": "她低聲地說話，所以沒有人聽見。"
+          }
+        ]
+      }
+    ],
+    "mass": [
+      {
+        "word": "mass",
+        "uk_ipa": "/ˈmæs/",
+        "us_ipa": "/ˈmæs/",
+        "part_of_speech": "noun",
+        "countability": "countable/uncountable",
+        "chinese": "大量；群眾",
+        "english": "a large amount or large group of people or things",
+        "examples": [
+          {
+            "english": "A mass of people filled the square.",
+            "chinese": "大量群眾擠滿了廣場。"
+          }
+        ]
+      },
+      {
+        "word": "mass",
+        "uk_ipa": "/ˈmæs/",
+        "us_ipa": "/ˈmæs/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "大規模的",
+        "english": "involving many people or things",
+        "examples": [
+          {
+            "english": "The city built a mass transport system.",
+            "chinese": "城市建立了大規模運輸系統。"
+          }
+        ]
+      }
+    ],
+    "mild": [
+      {
+        "word": "mild",
+        "uk_ipa": "/ˈmaɪld/",
+        "us_ipa": "/ˈmaɪld/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "溫和的；輕微的",
+        "english": "not strong, severe, or extreme",
+        "examples": [
+          {
+            "english": "He had a mild fever.",
+            "chinese": "他有輕微的發燒。"
+          }
+        ]
+      }
+    ],
+    "mix": [
+      {
+        "word": "mix",
+        "uk_ipa": "/ˈmɪks/",
+        "us_ipa": "/ˈmɪks/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "混合",
+        "english": "to combine two or more things",
+        "examples": [
+          {
+            "english": "Mix the flour with water.",
+            "chinese": "把麵粉和水混合。"
+          }
+        ]
+      },
+      {
+        "word": "mix",
+        "uk_ipa": "/ˈmɪks/",
+        "us_ipa": "/ˈmɪks/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "混合物",
+        "english": "a combination of different things",
+        "examples": [
+          {
+            "english": "The cake mix is ready.",
+            "chinese": "蛋糕混合物準備好了。"
+          }
+        ]
+      }
+    ],
+    "narrow": [
+      {
+        "word": "narrow",
+        "uk_ipa": "/ˈnæɹoʊ/",
+        "us_ipa": "/ˈnɛɹoʊ/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "狹窄的",
+        "english": "not wide",
+        "examples": [
+          {
+            "english": "The car entered a narrow street.",
+            "chinese": "汽車駛進一條狹窄的街道。"
+          }
+        ]
+      },
+      {
+        "word": "narrow",
+        "uk_ipa": "/ˈnæɹoʊ/",
+        "us_ipa": "/ˈnɛɹoʊ/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "縮小",
+        "english": "to become or make something less wide or less broad",
+        "examples": [
+          {
+            "english": "The gap narrowed quickly.",
+            "chinese": "差距很快縮小。"
+          }
+        ]
+      }
+    ],
+    "network": [
+      {
+        "word": "network",
+        "uk_ipa": "/ˈnɛt.wɜːk/",
+        "us_ipa": "/ˈnɛtwɝk/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "網絡",
+        "english": "a system of connected people, things, or computers",
+        "examples": [
+          {
+            "english": "The office network was down.",
+            "chinese": "辦公室網絡故障了。"
+          }
+        ]
+      },
+      {
+        "word": "network",
+        "uk_ipa": "/ˈnɛt.wɜːk/",
+        "us_ipa": "/ˈnɛtwɝk/",
+        "part_of_speech": "verb",
+        "countability": "intransitive",
+        "chinese": "建立人脈",
+        "english": "to meet people who may be useful professionally",
+        "examples": [
+          {
+            "english": "She likes to network at conferences.",
+            "chinese": "她喜歡在會議上建立人脈。"
+          }
+        ]
+      }
+    ],
+    "oil": [
+      {
+        "word": "oil",
+        "uk_ipa": "/ɔl/",
+        "us_ipa": "/ˈɔɪl/",
+        "part_of_speech": "noun",
+        "countability": "uncountable/countable",
+        "chinese": "油",
+        "english": "a thick liquid used as fuel, lubricant, or food",
+        "examples": [
+          {
+            "english": "Heat the oil in a pan.",
+            "chinese": "在平底鍋中加熱油。"
+          }
+        ]
+      },
+      {
+        "word": "oil",
+        "uk_ipa": "/ɔl/",
+        "us_ipa": "/ˈɔɪl/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "給……上油",
+        "english": "to put oil on something",
+        "examples": [
+          {
+            "english": "Oil the door hinge.",
+            "chinese": "給門鉸上油。"
+          }
+        ]
+      }
+    ],
+    "paragraph": [
+      {
+        "word": "paragraph",
+        "uk_ipa": "/ˈpaɹəɡɹaf/",
+        "us_ipa": "/ˈpæɹʌɡɹæf/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "段落",
+        "english": "a section of writing that begins on a new line",
+        "examples": [
+          {
+            "english": "Read the first paragraph aloud.",
+            "chinese": "大聲讀出第一個段落。"
+          }
+        ]
+      }
+    ],
+    "perfect": [
+      {
+        "word": "perfect",
+        "uk_ipa": "/-fɛkt/",
+        "us_ipa": "/pɝˈfɛkt/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "完美的",
+        "english": "having no faults or exactly right",
+        "examples": [
+          {
+            "english": "The weather was perfect for a walk.",
+            "chinese": "天氣完美，適合散步。"
+          }
+        ]
+      },
+      {
+        "word": "perfect",
+        "uk_ipa": "/-fɛkt/",
+        "us_ipa": "/pɝˈfɛkt/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "完善",
+        "english": "to make something as good as possible",
+        "examples": [
+          {
+            "english": "She practiced to perfect her speech.",
+            "chinese": "她練習以完善演講。"
+          }
+        ]
+      }
+    ],
+    "pick": [
+      {
+        "word": "pick",
+        "uk_ipa": "/pɪk/",
+        "us_ipa": "/ˈpɪk/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "挑選；採摘",
+        "english": "to choose something or take flowers or fruit from a plant",
+        "examples": [
+          {
+            "english": "Pick a card from the deck.",
+            "chinese": "從牌堆中挑選一張牌。"
+          }
+        ]
+      },
+      {
+        "word": "pick",
+        "uk_ipa": "/pɪk/",
+        "us_ipa": "/ˈpɪk/",
+        "part_of_speech": "noun",
+        "countability": "singular/countable",
+        "chinese": "選擇",
+        "english": "a choice or selected person or thing",
+        "examples": [
+          {
+            "english": "This restaurant is my top pick.",
+            "chinese": "這間餐廳是我的首選選擇。"
+          }
+        ]
+      }
+    ],
+    "pop": [
+      {
+        "word": "pop",
+        "uk_ipa": "/pɑp/",
+        "us_ipa": "/ˈpɑp/",
+        "part_of_speech": "verb",
+        "countability": "intransitive/transitive",
+        "chinese": "砰地響；突然出現",
+        "english": "to make a short sharp sound or appear suddenly",
+        "examples": [
+          {
+            "english": "The balloon popped loudly.",
+            "chinese": "氣球砰地響了一聲。"
+          }
+        ]
+      },
+      {
+        "word": "pop",
+        "uk_ipa": "/pɑp/",
+        "us_ipa": "/ˈpɑp/",
+        "part_of_speech": "noun",
+        "countability": "uncountable",
+        "chinese": "流行音樂",
+        "english": "popular music",
+        "examples": [
+          {
+            "english": "She listens to pop every day.",
+            "chinese": "她每天聽流行音樂。"
+          }
+        ]
+      }
+    ],
+    "race": [
+      {
+        "word": "race",
+        "uk_ipa": "/ɹeɪs/",
+        "us_ipa": "/ˈɹeɪs/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "比賽；競賽",
+        "english": "a competition to see who is fastest",
+        "examples": [
+          {
+            "english": "He won the race easily.",
+            "chinese": "他輕易贏得比賽。"
+          }
+        ]
+      },
+      {
+        "word": "race",
+        "uk_ipa": "/ɹeɪs/",
+        "us_ipa": "/ˈɹeɪs/",
+        "part_of_speech": "verb",
+        "countability": "intransitive/transitive",
+        "chinese": "比賽；快速移動",
+        "english": "to compete in speed or move very quickly",
+        "examples": [
+          {
+            "english": "They raced to the station.",
+            "chinese": "他們快速移動到車站。"
+          }
+        ]
+      }
+    ],
+    "rent": [
+      {
+        "word": "rent",
+        "uk_ipa": "/ɹɛnt/",
+        "us_ipa": "/ˈɹɛnt/",
+        "part_of_speech": "noun",
+        "countability": "uncountable/countable",
+        "chinese": "租金",
+        "english": "money paid regularly for using a home, room, or land",
+        "examples": [
+          {
+            "english": "The rent is due tomorrow.",
+            "chinese": "租金明天到期。"
+          }
+        ]
+      },
+      {
+        "word": "rent",
+        "uk_ipa": "/ɹɛnt/",
+        "us_ipa": "/ˈɹɛnt/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "租用；出租",
+        "english": "to pay to use something or let someone use it for money",
+        "examples": [
+          {
+            "english": "We rented a small apartment.",
+            "chinese": "我們租用了一間小公寓。"
+          }
+        ]
+      }
+    ],
+    "rice": [
+      {
+        "word": "rice",
+        "uk_ipa": "/ɹaɪs/",
+        "us_ipa": "/ˈɹaɪs/",
+        "part_of_speech": "noun",
+        "countability": "uncountable",
+        "chinese": "米；米飯",
+        "english": "small white or brown grains eaten as food",
+        "examples": [
+          {
+            "english": "We had rice with vegetables.",
+            "chinese": "我們吃了米飯配蔬菜。"
+          }
+        ]
+      }
+    ],
+    "right": [
+      {
+        "word": "right",
+        "uk_ipa": "/ˈɹaɪt/",
+        "us_ipa": "/ˈɹaɪt/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "正確的；右邊的",
+        "english": "correct, suitable, or on the side opposite the left",
+        "examples": [
+          {
+            "english": "You gave the right answer.",
+            "chinese": "你給了正確的答案。"
+          }
+        ]
+      },
+      {
+        "word": "right",
+        "uk_ipa": "/ˈɹaɪt/",
+        "us_ipa": "/ˈɹaɪt/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "權利",
+        "english": "something you are morally or legally allowed to do or have",
+        "examples": [
+          {
+            "english": "Everyone has the right to speak.",
+            "chinese": "人人都有發言的權利。"
+          }
+        ]
+      },
+      {
+        "word": "right",
+        "uk_ipa": "/ˈɹaɪt/",
+        "us_ipa": "/ˈɹaɪt/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "正好；向右",
+        "english": "exactly or toward the right side",
+        "examples": [
+          {
+            "english": "Turn right at the corner.",
+            "chinese": "在街角向右轉。"
+          }
+        ]
+      }
+    ],
+    "rob": [
+      {
+        "word": "rob",
+        "uk_ipa": "/ɹɑb/",
+        "us_ipa": "/ˈɹɑb/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "搶劫",
+        "english": "to steal from a person or place by force or threat",
+        "examples": [
+          {
+            "english": "Two men robbed the bank.",
+            "chinese": "兩名男子搶劫了銀行。"
+          }
+        ]
+      }
+    ],
+    "route": [
+      {
+        "word": "route",
+        "uk_ipa": "/ɹaʊt/",
+        "us_ipa": "/ˈɹut/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "路線",
+        "english": "the way from one place to another",
+        "examples": [
+          {
+            "english": "This is the fastest route home.",
+            "chinese": "這是回家最快的路線。"
+          }
+        ]
+      }
+    ],
+    "scratch": [
+      {
+        "word": "scratch",
+        "uk_ipa": "/skɹæt͡ʃ/",
+        "us_ipa": "/ˈskɹætʃ/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "抓；刮",
+        "english": "to rub something with nails or a sharp object",
+        "examples": [
+          {
+            "english": "The cat scratched the door.",
+            "chinese": "貓抓了門。"
+          }
+        ]
+      },
+      {
+        "word": "scratch",
+        "uk_ipa": "/skɹæt͡ʃ/",
+        "us_ipa": "/ˈskɹætʃ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "刮痕；抓痕",
+        "english": "a mark made by scratching",
+        "examples": [
+          {
+            "english": "There is a scratch on the table.",
+            "chinese": "桌上有一道刮痕。"
+          }
+        ]
+      }
+    ],
+    "sheet": [
+      {
+        "word": "sheet",
+        "uk_ipa": "/ʃit/",
+        "us_ipa": "/ˈʃit/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "床單；一張紙",
+        "english": "a large piece of cloth for a bed, or a piece of paper",
+        "examples": [
+          {
+            "english": "Write your name on this sheet.",
+            "chinese": "把你的名字寫在這張紙上。"
+          }
+        ]
+      }
+    ],
+    "short": [
+      {
+        "word": "short",
+        "uk_ipa": "/ʃoɹt/",
+        "us_ipa": "/ˈʃɔɹt/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "短的；矮的",
+        "english": "measuring little in length, height, or time",
+        "examples": [
+          {
+            "english": "This is a short story.",
+            "chinese": "這是一個短的故事。"
+          }
+        ]
+      }
+    ],
+    "shoulder": [
+      {
+        "word": "shoulder",
+        "uk_ipa": "/ˈʃoʊldɚ/",
+        "us_ipa": "/ˈʃoʊldɝ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "肩膀",
+        "english": "the part of the body between the neck and arm",
+        "examples": [
+          {
+            "english": "She carried the bag on her shoulder.",
+            "chinese": "她把袋子背在肩膀上。"
+          }
+        ]
+      },
+      {
+        "word": "shoulder",
+        "uk_ipa": "/ˈʃoʊldɚ/",
+        "us_ipa": "/ˈʃoʊldɝ/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "承擔",
+        "english": "to accept responsibility or a burden",
+        "examples": [
+          {
+            "english": "He shouldered the cost alone.",
+            "chinese": "他獨自承擔費用。"
+          }
+        ]
+      }
+    ],
+    "snow": [
+      {
+        "word": "snow",
+        "uk_ipa": "/snoʊ̯/",
+        "us_ipa": "/ˈsnoʊ/",
+        "part_of_speech": "noun",
+        "countability": "uncountable",
+        "chinese": "雪",
+        "english": "soft white pieces of frozen water that fall from the sky",
+        "examples": [
+          {
+            "english": "Snow covered the road.",
+            "chinese": "雪覆蓋了道路。"
+          }
+        ]
+      },
+      {
+        "word": "snow",
+        "uk_ipa": "/snoʊ̯/",
+        "us_ipa": "/ˈsnoʊ/",
+        "part_of_speech": "verb",
+        "countability": "intransitive",
+        "chinese": "下雪",
+        "english": "to have snow falling from the sky",
+        "examples": [
+          {
+            "english": "It snowed all night.",
+            "chinese": "整晚都在下雪。"
+          }
+        ]
+      }
+    ],
+    "solution": [
+      {
+        "word": "solution",
+        "uk_ipa": "/səˈl(j)uːʃən/",
+        "us_ipa": "/sʌˈluʃʌn/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "解決方法",
+        "english": "a way to solve a problem",
+        "examples": [
+          {
+            "english": "We need a better solution.",
+            "chinese": "我們需要更好的解決方法。"
+          }
+        ]
+      },
+      {
+        "word": "solution",
+        "uk_ipa": "/səˈl(j)uːʃən/",
+        "us_ipa": "/sʌˈluʃʌn/",
+        "part_of_speech": "noun",
+        "countability": "countable/uncountable",
+        "chinese": "溶液",
+        "english": "a liquid mixture in which a substance is dissolved",
+        "examples": [
+          {
+            "english": "Salt solution can clean the wound.",
+            "chinese": "鹽水溶液可以清潔傷口。"
+          }
+        ]
+      }
+    ],
+    "spell": [
+      {
+        "word": "spell",
+        "uk_ipa": "/spɛl/",
+        "us_ipa": "/ˈspɛl/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "拼寫",
+        "english": "to say or write the letters of a word in order",
+        "examples": [
+          {
+            "english": "Can you spell your name?",
+            "chinese": "你能拼寫你的名字嗎？"
+          }
+        ]
+      },
+      {
+        "word": "spell",
+        "uk_ipa": "/spɛl/",
+        "us_ipa": "/ˈspɛl/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "一段時間；咒語",
+        "english": "a short period of time, or words believed to have magic power",
+        "examples": [
+          {
+            "english": "There was a spell of dry weather.",
+            "chinese": "有一段時間天氣乾燥。"
+          }
+        ]
+      }
+    ],
+    "spend": [
+      {
+        "word": "spend",
+        "uk_ipa": "/spɛnd/",
+        "us_ipa": "/ˈspɛnd/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "花費",
+        "english": "to use money, time, or energy",
+        "examples": [
+          {
+            "english": "Do not spend all your money.",
+            "chinese": "不要花費你所有的錢。"
+          }
+        ]
+      }
+    ],
+    "square": [
+      {
+        "word": "square",
+        "uk_ipa": "/-æː/",
+        "us_ipa": "/ˈskwɛɹ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "正方形；廣場",
+        "english": "a shape with four equal sides, or an open public area",
+        "examples": [
+          {
+            "english": "Draw a square on the paper.",
+            "chinese": "在紙上畫一個正方形。"
+          }
+        ]
+      },
+      {
+        "word": "square",
+        "uk_ipa": "/-æː/",
+        "us_ipa": "/ˈskwɛɹ/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "正方形的；平方的",
+        "english": "shaped like a square or measuring an area unit",
+        "examples": [
+          {
+            "english": "The room has a square table.",
+            "chinese": "房間裏有一張正方形的桌子。"
+          }
+        ]
+      }
+    ],
+    "stage": [
+      {
+        "word": "stage",
+        "uk_ipa": "/steɪd͡ʒ/",
+        "us_ipa": "/ˈsteɪdʒ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "階段；舞台",
+        "english": "a part of a process, or a raised area for performance",
+        "examples": [
+          {
+            "english": "The project is in its final stage.",
+            "chinese": "這個項目處於最後階段。"
+          }
+        ]
+      },
+      {
+        "word": "stage",
+        "uk_ipa": "/steɪd͡ʒ/",
+        "us_ipa": "/ˈsteɪdʒ/",
+        "part_of_speech": "verb",
+        "countability": "transitive",
+        "chinese": "舉行；上演",
+        "english": "to organize an event or perform a play",
+        "examples": [
+          {
+            "english": "The school staged a concert.",
+            "chinese": "學校舉行了一場音樂會。"
+          }
+        ]
+      }
+    ],
+    "star": [
+      {
+        "word": "star",
+        "uk_ipa": "/staː(ɹ)/",
+        "us_ipa": "/ˈstɑɹ/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "星星；明星",
+        "english": "a bright object in the sky, or a famous performer",
+        "examples": [
+          {
+            "english": "A bright star shone above us.",
+            "chinese": "一顆明亮的星星在我們上方閃耀。"
+          }
+        ]
+      },
+      {
+        "word": "star",
+        "uk_ipa": "/staː(ɹ)/",
+        "us_ipa": "/ˈstɑɹ/",
+        "part_of_speech": "verb",
+        "countability": "intransitive/transitive",
+        "chinese": "主演",
+        "english": "to be the main performer in a film, play, or show",
+        "examples": [
+          {
+            "english": "She starred in a new film.",
+            "chinese": "她主演了一部新電影。"
+          }
+        ]
+      }
+    ],
+    "still": [
+      {
+        "word": "still",
+        "uk_ipa": "/stɪl/",
+        "us_ipa": "/ˈstɪl/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "仍然",
+        "english": "continuing until now or then",
+        "examples": [
+          {
+            "english": "She still lives here.",
+            "chinese": "她仍然住在這裏。"
+          }
+        ]
+      },
+      {
+        "word": "still",
+        "uk_ipa": "/stɪl/",
+        "us_ipa": "/ˈstɪl/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "靜止的",
+        "english": "not moving",
+        "examples": [
+          {
+            "english": "The lake was still at dawn.",
+            "chinese": "黎明時湖面靜止。"
+          }
+        ]
+      }
+    ],
+    "stone": [
+      {
+        "word": "stone",
+        "uk_ipa": "/stoʊn/",
+        "us_ipa": "/ˈstoʊn/",
+        "part_of_speech": "noun",
+        "countability": "countable/uncountable",
+        "chinese": "石頭；石材",
+        "english": "hard solid mineral material",
+        "examples": [
+          {
+            "english": "He threw a small stone into the river.",
+            "chinese": "他把一顆小石頭丟進河裏。"
+          }
+        ]
+      }
+    ],
+    "stream": [
+      {
+        "word": "stream",
+        "uk_ipa": "/stɹiːm/",
+        "us_ipa": "/ˈstɹim/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "小溪；串流",
+        "english": "a small river, or a continuous flow of data",
+        "examples": [
+          {
+            "english": "A clear stream ran through the valley.",
+            "chinese": "一條清澈的小溪流過山谷。"
+          }
+        ]
+      },
+      {
+        "word": "stream",
+        "uk_ipa": "/stɹiːm/",
+        "us_ipa": "/ˈstɹim/",
+        "part_of_speech": "verb",
+        "countability": "transitive/intransitive",
+        "chinese": "串流播放；流動",
+        "english": "to play media over the internet or flow continuously",
+        "examples": [
+          {
+            "english": "We streamed the movie online.",
+            "chinese": "我們在線上串流播放那部電影。"
+          }
+        ]
+      }
+    ],
+    "string": [
+      {
+        "word": "string",
+        "uk_ipa": "/stɹɪŋ/",
+        "us_ipa": "/ˈstɹɪŋ/",
+        "part_of_speech": "noun",
+        "countability": "countable/uncountable",
+        "chinese": "繩子；一串",
+        "english": "thin cord, or a series of things",
+        "examples": [
+          {
+            "english": "Tie the box with string.",
+            "chinese": "用繩子綁住盒子。"
+          }
+        ]
+      }
+    ],
+    "well": [
+      {
+        "word": "well",
+        "uk_ipa": "/wel/",
+        "us_ipa": "/ˈwɛl/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "好；順利地",
+        "english": "in a good or satisfactory way",
+        "examples": [
+          {
+            "english": "She sings very well.",
+            "chinese": "她唱得很好。"
+          }
+        ]
+      },
+      {
+        "word": "well",
+        "uk_ipa": "/wel/",
+        "us_ipa": "/ˈwɛl/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "健康的",
+        "english": "in good health",
+        "examples": [
+          {
+            "english": "I hope you feel well soon.",
+            "chinese": "我希望你很快恢復健康。"
+          }
+        ]
+      },
+      {
+        "word": "well",
+        "uk_ipa": "/wel/",
+        "us_ipa": "/ˈwɛl/",
+        "part_of_speech": "noun",
+        "countability": "countable",
+        "chinese": "井",
+        "english": "a deep hole in the ground for getting water",
+        "examples": [
+          {
+            "english": "The village has an old well.",
+            "chinese": "村裏有一口老井。"
+          }
+        ]
+      }
+    ],
+    "wine": [
+      {
+        "word": "wine",
+        "uk_ipa": "/waɪn/",
+        "us_ipa": "/ˈwaɪn/",
+        "part_of_speech": "noun",
+        "countability": "uncountable/countable",
+        "chinese": "葡萄酒",
+        "english": "an alcoholic drink made from grapes",
+        "examples": [
+          {
+            "english": "They served red wine with dinner.",
+            "chinese": "他們晚餐供應紅葡萄酒。"
+          }
+        ]
+      }
+    ]
+  },
+  "skipped_words": [
+    {
+      "word": "eat away at",
+      "reason": "'eat away at' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "footstep",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「脚印、脚印」等常用義（如：The mark or impression left by a foot; a track.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "fuck",
+      "reason": "'fuck' 屬粗俗或冒犯性詞彙；本批按一般學習詞典保守處理，暫不新增修正詞條。"
+    },
+    {
+      "word": "fuddle",
+      "reason": "'fuddle' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "gel",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「冰、冰」等常用義（如：A semi-solid to almost solid colloid of a solid and a liquid, such as jelly, che），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "give birth",
+      "reason": "'give birth' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "grit",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「沙、沙」等常用義（如：A collection of hard small materials, such as dirt, ground stone, debris from sa），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "halo",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「晕、晕」等常用義（如：A circular band of coloured light, visible around the sun or moon etc., caused b），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "haze",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「霾、浊度」等常用義（如：Very fine solid particles (smoke, dust) or liquid droplets (moisture) suspended ），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "heave",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「丟、丟」等常用義（如：(intransitive) To retch, to make an effort to vomit; to vomit.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "heavens",
+      "reason": "'heavens' 在原資料中多作固定感嘆或宗教/文化用語，是否保留需依產品範圍決定，故跳過。"
+    },
+    {
+      "word": "hey",
+      "reason": "已逐詞檢查；原資料已有 exclamation 詞條並涵蓋「你、你」等常用義（如：An exclamation to get attention.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "holy",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「圣、圣」等常用義（如：Dedicated to a religious purpose or a god.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "horn",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「角、角」等常用義（如：Any similar real or imaginary growth or projection such as the elongated tusk of），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "howl",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「吼、吼」等常用義（如：To utter a loud, protracted, mournful sound or cry, as dogs and wolves often do.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "hyper-",
+      "reason": "'hyper-' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "hyperlink",
+      "reason": "'hyperlink' 偏技術或專門術語；原有 verb 詞條需按專門領域確認，故跳過。"
+    },
+    {
+      "word": "inflexible",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「刚、刚」等常用義（如：Not flexible; not capable of bending or being bent.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "ink",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「墨、墨」等常用義（如：A pigment (or dye)-based fluid used for writing, printing etc.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "lady",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「太太、太」等常用義（如：An aristocratic title for a woman; the wife of a lord and/or a woman who holds t），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "landlord",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「东、东」等常用義（如：A person that leases real property; a lessor.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "lane",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「弄、路」等常用義（如：A narrow passageway between fences, walls, hedges or trees.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "lantern",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「灯、灯」等常用義（如：(architectural element) An open structure of light material set upon a roof, to ），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "lap",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「懷、懷」等常用義（如：The part of the clothing that lies on the knees or thighs when one sits down; th），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "laugh",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「笑、笑」等常用義（如：An expression of mirth particular to the human species; the sound heard in laugh），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "lifeless",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「死、死」等常用義（如：inanimate; having no life），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "look at",
+      "reason": "'look at' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "maroon",
+      "reason": "已逐詞檢查；原資料已有 adjective, noun, verb 詞條並涵蓋「栗、栗」等常用義（如：Associated with Maroon culture, communities or peoples.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "me",
+      "reason": "已逐詞檢查；原資料已有 pronoun 詞條並涵蓋「我、我」等常用義（如：(archaic, proscribed) Myself; as a reflexive direct object of a verb.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "meat",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「肉、肉」等常用義（如：The flesh (muscle tissue) of an animal used as food, or a food designed to repli），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "membrane",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「膜、膜」等常用義（如：(anatomy, zootomy) A flexible enclosing or separating tissue forming a plane or ），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "meta-",
+      "reason": "'meta-' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "meter",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「米、米」等常用義（如：A device that measures things.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "moment",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「刻、刻」等常用義（如：(historical, unit) A definite period of time, specifically one-tenth of a point,），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "most",
+      "reason": "已逐詞檢查；原資料已有 adverb, determiner 詞條並涵蓋「最、很」等常用義（如：Forms the superlative of many adjectives.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "noble",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「贵、贵」等常用義（如：Having honorable qualities; having moral eminence and freedom from anything pett），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "northern",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「北、北」等常用義（如：Of, facing, situated in, or related to the north; northerly.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "nose",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「鼻、鼻」等常用義（如：A protuberance on the face housing the nostrils, which are used to breathe or sm），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "or",
+      "reason": "已逐詞檢查；原資料已有 conjunction 詞條並涵蓋「或、或」等常用義（如：(logic) An operator denoting the disjunction of two propositions or truth values），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "overflow",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「流、流」等常用義（如：(transitive) To flow over the brim of (a container).），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "pawn",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「兵、兵」等常用義（如：(chess) The most numerous chess piece, or a similar piece in a similar game. In ），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "peer",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「偶、偶」等常用義（如：Somebody who is, or something that is, at a level or of a value equal (to that o），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "peg",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「木釘、主題」等常用義（如：A cylindrical wooden or metal object used to fasten or as a bearing between obje），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "plume",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「羽毛、云」等常用義（如：(archaic, literary, and, poetic) A feather of a bird, especially a large or show），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "pot",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「大麻、鍋」等常用義（如：(slang, uncountable) Marijuana.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "powder",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「灰、灰」等常用義（如：The fine particles which are the result of reducing a dry substance by pounding,），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "pussy",
+      "reason": "'pussy' 屬粗俗或冒犯性詞彙；本批按一般學習詞典保守處理，暫不新增修正詞條。"
+    },
+    {
+      "word": "raising",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「彙、彙」等常用義（如：Collection or gathering, especially of money.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "rip",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「撕、撕」等常用義（如：(transitive) To divide or separate the parts of (especially something flimsy, su），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "role",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「角、角」等常用義（如：A character or part played by a performer or actor.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "sable",
+      "reason": "'sable' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "saddle",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「鞍、鞍」等常用義（如：A seat for a rider, typically made of leather and raised in the front and rear, ），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "scab",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「痂、痂」等常用義（如：An incrustation over a sore, wound, vesicle, or pustule, formed during healing.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "shaft",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「符干、半径」等常用義（如：The long, narrow, central body of a spear, arrow, or javelin.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "shallow",
+      "reason": "已逐詞檢查；原資料已有 adjective, noun 詞條並涵蓋「浅、浅」等常用義（如：Having little depth; significantly less deep than wide.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "shed",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「分、倒」等常用義（如：(transitive, UK, dialectal) To part, separate or divide.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "shout",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「喊、喊叫」等常用義（如：A loud burst of voice or voices; a violent and sudden outcry, especially that of），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "soup",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「湯、湯」等常用義（如：A serving of such a dish, typically in a bowl.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "south",
+      "reason": "已逐詞檢查；原資料已有 noun, proper noun 詞條並涵蓋「南、南」等常用義（如：The direction towards the pole to the right-hand side of someone facing east, sp），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "spicy",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「辣、辣」等常用義（如：Of, pertaining to, or containing spice.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "spoil",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「坏、坏」等常用義（如：(transitive) To ruin; to damage in such a way as to make undesirable or unusable），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "stalk",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「茎、茎」等常用義（如：The stem or main axis of a plant.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "stool",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「几、几」等常用義（如：(now, chiefly, dialectal, Scotland) A seat with a back; a chair.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "strap",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「带、带」等常用義（如：A long, narrow, pliable strip of leather, cloth, or the like.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "strength",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「力、力」等常用義（如：The quality or degree of being strong.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "stupid",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「笨、笨」等常用義（如：(of animates) Lacking in intelligence.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "suck",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「吸、吸」等常用義（如：(transitive) To use the mouth and lips to pull in (a liquid, especially milk fro），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "tag",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「属性、日」等常用義（如：(computing) A keyword, term, or phrase associated with or assigned to data, medi），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "tall",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「高、高」等常用義（如：(of a person) Having a vertical extent greater than the average. For example, so），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "tease",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「梳、梳」等常用義（如：(transitive) To backcomb.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "tee",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「茶、茶」等常用義（如：The name of the Latin-script letter T/t.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "thirst",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「渴、渴」等常用義（如：A sensation of dryness in the throat associated with a craving for liquids, prod），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "turtle",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「龟、龟」等常用義（如：(zoology, US, Canada) Any land or marine reptile of the order Testudines, charac），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "veil",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「帆、帆」等常用義（如：Something hung up or spread out to hide or protect the face, or hide an object f），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "vend",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「卖、卖」等常用義（如：The act of vending or selling; a sale.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "wash",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「洗、洗」等常用義（如：(transitive) To clean with water.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "wax",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「蠟、蠟」等常用義（如：Any oily, water-resistant, solid or semisolid substance; normally long-chain hyd），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "weigh",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「重、重」等常用義（如：(transitive) To determine the weight of an object.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "which",
+      "reason": "已逐詞檢查；原資料已有 determiner, pronoun 詞條並涵蓋「哪、哪」等常用義（如：(interrogative) What, of those mentioned or implied.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "while",
+      "reason": "已逐詞檢查；原資料已有 conjunction 詞條並涵蓋「當、當」等常用義（如：During the same time that.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "wisdom",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「智、智」等常用義（如：An element of personal character that enables one to distinguish the wise from t），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "witch",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「巫、巫」等常用義（如：A person (now usually particularly a woman) who uses magical or similar supernat），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "wu",
+      "reason": "'wu' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "aah",
+      "reason": "'aah' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "abdomen",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「腹、腹」等常用義（如：(obsolete) The fat surrounding the belly. [mid 16th c. – late 17th c.]），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "access",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「进入、进入」等常用義（如：A way or means of approaching or entering; an entrance; a passage.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "admit",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「住進、住進」等常用義（如：(transitive) To allow to enter; to grant entrance (to), whether into a place, in），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "adulterate",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「坏、卖」等常用義（如：(transitive) To corrupt, to debase (someone or something).），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "agglomeration",
+      "reason": "'agglomeration' 偏技術或專門術語；原有 noun 詞條需按專門領域確認，故跳過。"
+    },
+    {
+      "word": "ago",
+      "reason": "已逐詞檢查；原資料已有 postposition 詞條並涵蓋「前」等常用義（如：Before now, before the present time），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "alcohol",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「醇、醇」等常用義（如：(organic compound, countable) Any of a class of organic compounds (such as ethan），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "along",
+      "reason": "已逐詞檢查；原資料已有 adverb, preposition 詞條並涵蓋「一块、后」等常用義（如：In company; together.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "ammonic",
+      "reason": "'ammonic' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "amuse",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「打、打」等常用義（如：(transitive) To entertain or occupy (someone or something) in a pleasant manner;），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "anchorman",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「东、东」等常用義（如：(television, radio) The main host of a television or radio program, particularly），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "angle bracket",
+      "reason": "'angle bracket' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "apex",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「峰、峰」等常用義（如：The highest or the greatest part of something, especially forming a point.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "append",
+      "reason": "'append' 偏技術或專門術語；原有 verb 詞條需按專門領域確認，故跳過。"
+    },
+    {
+      "word": "aromatic",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「香、香」等常用義（如：Fragrant or spicy.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "arrival",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「到、到」等常用義（如：The act of arriving (reaching a certain place).），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "arrow",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「箭、箭」等常用義（如：A projectile consisting of a shaft, a point and a tail with stabilizing fins tha），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "assembly",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「集会、会」等常用義（如：The act or process of putting together a set of pieces, fragments, or elements.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "assist",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「帮助、帮」等常用義（如：(baseball) A defensive play, allowing a teammate to record a putout.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "associate",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「爱人、同事」等常用義（如：A person united with another or others in an act, enterprise, or business; a par），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "at it",
+      "reason": "'at it' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "at large",
+      "reason": "'at large' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "autumn",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「秋、秋」等常用義（如：Traditionally the third of the four seasons, when deciduous trees lose their lea），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "average",
+      "reason": "已逐詞檢查；原資料已有 adjective, noun 詞條並涵蓋「中、普通」等常用義（如：(not comparable) Constituting or relating to the average.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "awry",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「弯、壞」等常用義（如：Turned or twisted toward one side; crooked, distorted, out of place; wry.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "baboon",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「狒、狒」等常用義（如：An Old World monkey of the genus Papio, having dog-like muzzles and large canine），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bach",
+      "reason": "'bach' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "bamboo",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「竹、竹」等常用義（如：The wood of the bamboo plant as a material for building, furniture, etc.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bang",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「盾, 越南盾、爆炸」等常用義（如：A sudden percussive noise.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bar",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「巴、酒吧」等常用義（如：A non-SI unit of pressure equal to 100,000 pascals, slightly less than atmospher），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "barrel roll",
+      "reason": "'barrel roll' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "basket",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「籃子、篮」等常用義（如：A lightweight container, generally round, open at the top, and tapering toward t），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bass",
+      "reason": "已逐詞檢查；原資料已有 adjective, noun 詞條並涵蓋「男低音、低」等常用義（如：Of sound, a voice or an instrument, low in pitch or frequency.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "beaker",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「烧杯、杯」等常用義（如：A flat-bottomed, straight-sided, glass vessel, with a lip and often a small spou），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "beam",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「横梁、符杠」等常用義（如：(structural) Any large piece of timber or iron long in proportion to its thickne），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "beast",
+      "reason": "已逐詞檢查；原資料已有 noun, proper noun 詞條並涵蓋「动物、兽」等常用義（如：(biblical) A figure in the Book of Revelation (Apocalypse), often identified wit），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "belie",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「黑、黑」等常用義（如：(transitive, archaic) To tell lies about. [from 13th c.]），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "besom",
+      "reason": "'besom' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "bird",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「鸟、鳥」等常用義（如：(slang, Canada, Philippines) A penis.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "blackness",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「黑、黑」等常用義（如：The state or quality of being black in colour.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "blindfold",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「帆」等常用義（如：(sometimes, figurative) Anything that obscures the vision.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bloom",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「放大鏡、花朵」等常用義（如：The spongy mass of metal formed in a furnace by the smelting process.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bone",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「骨头、骨头」等常用義（如：A composite material consisting largely of calcium phosphate and collagen and ma），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "boss",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「老板、老板」等常用義（如：A person who oversees and directs the work of others; a supervisor.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "brand",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「品牌、背 面」等常用義（如：A mark or scar made by burning with a hot iron, especially to mark cattle or to ），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bridge",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「橋、桥」等常用義（如：(dentistry) A prosthesis replacing one or several adjacent teeth.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "brief",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「短」等常用義（如：Of short duration; happening quickly. [from 15th c.]），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bristle",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「丝、毛」等常用義（如：A stiff or coarse hair on a nonhuman mammal or on a plant.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "browse",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「复习、复习」等常用義（如：To scan, to casually look through in order to find items of interest, especially），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bump",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「疙瘩、疙瘩」等常用義（如：A protuberance on a level surface.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "bunch",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「一串、一串」等常用義（如：A group of similar things, either growing together, or in a cluster or clump, us），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "butt",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「波河、活塞」等常用義（如：(slang, metonymic) Body; self.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "buttress",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「熊、山」等常用義（如：(architecture) A brick, concrete or stone structure built against another struct），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "by oneself",
+      "reason": "'by oneself' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "cable",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「电线、索」等常用義（如：An assembly of two or more wires, used for electrical power or data circuits; on），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "camp",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「媚俗、露营」等常用義（如：An affected, exaggerated, or intentionally tasteless style.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "cardiac",
+      "reason": "'cardiac' 偏技術或專門術語；原有 adjective 詞條需按專門領域確認，故跳過。"
+    },
+    {
+      "word": "carmine",
+      "reason": "'carmine' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "carve",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「切、切」等常用義（如：To shape to sculptural effect; to produce (a work) by cutting, or to cut (a mate），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "centime",
+      "reason": "'centime' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "channel",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「频道、運河」等常用義（如：The natural or man-made deeper course through a reef, bar, bay, or any shallow b），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "chapter",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「章、章」等常用義（如：A section of a work, a collection of works, or fragments of works, often manuscr），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "character",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「人物、人物」等常用義（如：A being involved in the action of a story; a persona.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "charcoal",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「煤炭、煤炭」等常用義（如：impure carbon obtained by destructive distillation of wood or other organic matt），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "chart",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「地图、图解」等常用義（如：A navigator's map.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "cheek",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「脸、屁股」等常用義（如：(anatomy) The soft skin on each side of the face, below the eyes; the outer surf），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "chevron",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「椽、椽」等常用義（如：A V-shaped pattern; used in architecture, and as an insignia of military or poli），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "chill",
+      "reason": "已逐詞檢查；原資料已有 adjective, noun 詞條並涵蓋「冷、寒冷」等常用義（如：Moderately cold or chilly.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "chock",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「楔」等常用義（如：Any object used as a wedge or filler, especially when placed behind a wheel to p），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "choir",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「心、类」等常用義（如：A group of people who sing together; a company of people who are trained to sing），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "closed",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「不、关着」等常用義（如：Not public.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "common bean",
+      "reason": "'common bean' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "compound",
+      "reason": "'compound' 偏技術或專門術語；原有 noun 詞條需按專門領域確認，故跳過。"
+    },
+    {
+      "word": "condition",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「問題、状态」等常用義（如：A certain abnormal state of health; a malady or sickness.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "conflate",
+      "reason": "'conflate' 偏技術或專門術語；原有 verb 詞條需按專門領域確認，故跳過。"
+    },
+    {
+      "word": "conglomerate",
+      "reason": "'conglomerate' 偏技術或專門術語；原有 noun 詞條需按專門領域確認，故跳過。"
+    },
+    {
+      "word": "congregation",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「会、会」等常用義（如：A gathering of faithful in a temple, church, synagogue, mosque or other place of），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "corner",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「角、角落」等常用義（如：An intersection of two streets; any of the four outer points off the street at t），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "corps",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「身、身」等常用義（如：(military) A battlefield formation composed of two or more divisions.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "countenance",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「面、面」等常用義（如：Appearance, especially the features and expression of the face.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "courtesy of",
+      "reason": "'courtesy of' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "cower",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「貘、貘」等常用義（如：(intransitive) To crouch or cringe, or to avoid or shy away from something, in f），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "crank",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「曲柄、原始的」等常用義（如：A bent piece of an axle or shaft, or an attached arm perpendicular, or nearly so），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "crap",
+      "reason": "'crap' 屬粗俗或冒犯性詞彙；本批按一般學習詞典保守處理，暫不新增修正詞條。"
+    },
+    {
+      "word": "crawl",
+      "reason": "已逐詞檢查；原資料已有 noun, verb 詞條並涵蓋「捷泳、爬」等常用義（如：A rapid swimming stroke with alternate overarm strokes and a fluttering kick.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "creek bed",
+      "reason": "'creek bed' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "crime",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「罪、罪」等常用義（如：A specific act committed in violation of the law, especially criminal law.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "crimson",
+      "reason": "'crimson' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    },
+    {
+      "word": "crooked",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「弯、弯」等常用義（如：Not straight; having one or more bends or angles.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "crust",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「面包(Simplificado)、面包(Simplificado)」等常用義（如：The external, hardened layer of certain foodstuffs, including most types of brea），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "cylinder",
+      "reason": "已逐詞檢查；原資料已有 noun 詞條並涵蓋「圆柱体、圆柱体」等常用義（如：(geometry) A surface created by projecting a closed two-dimensional curve along ），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "dangerous",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「危、危」等常用義（如：Full of danger.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "deaf",
+      "reason": "已逐詞檢查；原資料已有 adjective 詞條並涵蓋「聋」等常用義（如：Unable (or partially able) to hear.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "dear",
+      "reason": "已逐詞檢查；原資料已有 adjective, noun 詞條並涵蓋「昂贵、昂贵」等常用義（如：Loved; lovable.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "decamp",
+      "reason": "已逐詞檢查；原資料已有 verb 詞條並涵蓋「滾、滾」等常用義（如：(intransitive) To break up camp and move on.），未發現必須重寫的明確錯誤。"
+    },
+    {
+      "word": "deep water",
+      "reason": "'deep water' 屬片語、罕見詞或專門搭配；原資料若保留需人工按語境確認，故不猜測修正。"
+    }
+  ]
+}

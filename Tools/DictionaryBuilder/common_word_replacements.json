@@ -1,0 +1,3610 @@
+{
+  "word_replacements": {
+    "head": [
+      {
+        "word": "head",
+        "uk_ipa": "/hiːd/",
+        "us_ipa": "/ˈhɛd/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "頭",
+        "english": "The part of the body of an animal or human which contains the brain, mouth, and main sense organs.",
+        "examples": [
+          {
+            "english": "Cover your head when you are in the sun.",
+            "chinese": "當你在陽光下的時候，遮住你的頭。"
+          }
+        ]
+      },
+      {
+        "word": "head",
+        "uk_ipa": "/hiːd/",
+        "us_ipa": "/ˈhɛd/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "頭",
+        "english": "Of, relating to, or intended for the head.",
+        "examples": [
+          {
+            "english": "Tom received a heavy blow on the head.",
+            "chinese": "汤姆的頭部受了重重的一击。"
+          }
+        ]
+      }
+    ],
+    "old": [
+      {
+        "word": "old",
+        "uk_ipa": "/aʊld/",
+        "us_ipa": "/ˈoʊld/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "老",
+        "english": "Of a living being, having lived for most of the expected years.",
+        "examples": [
+          {
+            "english": "I am too old for this world.",
+            "chinese": "我對這個世界来說太老了。"
+          }
+        ]
+      }
+    ],
+    "year": [
+      {
+        "word": "year",
+        "uk_ipa": "/jir/",
+        "us_ipa": "/ˈjɪɹ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "年",
+        "english": "The length of a year as marked by a calendar, 365 or 366 days in the Gregorian calendar; a calendar year.",
+        "examples": [
+          {
+            "english": "We went to London last year.",
+            "chinese": "我們去年去了伦敦。"
+          }
+        ]
+      }
+    ],
+    "alone": [
+      {
+        "word": "alone",
+        "uk_ipa": "/aˈluŋ/",
+        "us_ipa": "/ʌˈloʊn/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "一",
+        "english": "By oneself, solitary.",
+        "examples": [
+          {
+            "english": "If you don't want to stay alone, I can keep you company.",
+            "chinese": "如果你不想一個人呆著，我可以陪著你。"
+          }
+        ]
+      },
+      {
+        "word": "alone",
+        "uk_ipa": "/aˈluŋ/",
+        "us_ipa": "/ʌˈloʊn/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "单",
+        "english": "By oneself; apart from, or exclusive of, others; solo.",
+        "examples": [
+          {
+            "english": "I always think of him when I'm alone.",
+            "chinese": "我孤单的時候總會想起他。"
+          }
+        ]
+      }
+    ],
+    "horse": [
+      {
+        "word": "horse",
+        "uk_ipa": "/hoɹs/",
+        "us_ipa": "/ˈhɔɹs/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "馬",
+        "english": "Any member of the species Equus ferus, including the Przewalski's horse and the extinct Equus ferus ferus.",
+        "examples": [
+          {
+            "english": "The horse stopped and wouldn't move.",
+            "chinese": "這匹馬停下來不動了。"
+          }
+        ]
+      }
+    ],
+    "earth": [
+      {
+        "word": "earth",
+        "uk_ipa": "/ɛrθ/",
+        "us_ipa": "/ˈɝθ/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "土",
+        "english": "Soil.",
+        "examples": [
+          {
+            "english": "God is the creator. Heaven and Earth and people and everything apart from God are created.",
+            "chinese": "上帝就是造物主。天空，土地以及人类，一切都出自上帝之手，除了上帝自身以外。"
+          }
+        ]
+      },
+      {
+        "word": "earth",
+        "uk_ipa": "/ɜːθ/",
+        "us_ipa": "/ˈɝθ/",
+        "part_of_speech": "proper noun",
+        "countability": "",
+        "chinese": "地球",
+        "english": "The third planet of the Solar System; the world upon which humans live.",
+        "examples": [
+          {
+            "english": "Were the earth to stop revolving, what do you suppose would happen?",
+            "chinese": "如果地球停止自传，你認為會發生什麼？"
+          }
+        ]
+      }
+    ],
+    "tree": [
+      {
+        "word": "tree",
+        "uk_ipa": "/tɹiː/",
+        "us_ipa": "/ˈtɹi/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "樹",
+        "english": "A perennial woody plant taller and larger than a shrub with a wooden trunk and, at some distance from the ground, having leaves and branches.",
+        "examples": [
+          {
+            "english": "Some apples fell down from the tree.",
+            "chinese": "有些蘋果從樹上掉了下來。"
+          }
+        ]
+      }
+    ],
+    "day": [
+      {
+        "word": "day",
+        "uk_ipa": "/deɪ/",
+        "us_ipa": "/ˈdeɪ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "日",
+        "english": "A period of time equal or almost equal to a full day-night cycle, being 24 hours long.",
+        "examples": [
+          {
+            "english": "Rome wasn't built in a day.",
+            "chinese": "冰冻三尺，非一日之寒。"
+          }
+        ]
+      }
+    ],
+    "follow": [
+      {
+        "word": "follow",
+        "uk_ipa": "/ˈfɑloʊ/",
+        "us_ipa": "/ˈfɑloʊ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "隨",
+        "english": "(ambitransitive) To go after; to pursue; to move behind in the same path or direction, especially with the intent of catching.",
+        "examples": [
+          {
+            "english": "All you have to do is follow his advice.",
+            "chinese": "你跟隨他的指示做就行了。"
+          }
+        ]
+      }
+    ],
+    "number": [
+      {
+        "word": "number",
+        "uk_ipa": "/ˈnʌmbər/",
+        "us_ipa": "/ˈnʌmbɝ/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "數",
+        "english": "An abstract entity used to describe quantity.",
+        "examples": [
+          {
+            "english": "Due to a number of unfortunate causes, one-parent families are on the increase.",
+            "chinese": "由于诸多不幸因素，单親家庭的數量在增長中。"
+          }
+        ]
+      }
+    ],
+    "pass": [
+      {
+        "word": "pass",
+        "uk_ipa": "/pæs/",
+        "us_ipa": "/ˈpæs/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "過",
+        "english": "(ditransitive) To cause to move or go; to send; to transfer from one person, place, or condition to another.",
+        "examples": [
+          {
+            "english": "If you study earnestly, you can expect to pass the exam.",
+            "chinese": "如果你認真學習，就有希望通過考试。"
+          }
+        ]
+      },
+      {
+        "word": "pass",
+        "uk_ipa": "/pæs/",
+        "us_ipa": "/ˈpæs/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "通過",
+        "english": "An opening, road, or track, available for passing; especially, one through or over some dangerous or otherwise impracticable barrier such as a mountain range; a passageway; a defile; a ford.",
+        "examples": [
+          {
+            "english": "If you study earnestly, you can expect to pass the exam.",
+            "chinese": "如果你認真學習，就有希望通過考试。"
+          }
+        ]
+      }
+    ],
+    "build": [
+      {
+        "word": "build",
+        "uk_ipa": "/bɪld/",
+        "us_ipa": "/ˈbɪld/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "建",
+        "english": "(transitive) To form (something) by combining materials or parts.",
+        "examples": [
+          {
+            "english": "He likes to build model planes.",
+            "chinese": "他喜歡建造模型飛機。"
+          }
+        ]
+      }
+    ],
+    "work": [
+      {
+        "word": "work",
+        "uk_ipa": "/(w)ɵrk/<a:backing after W>",
+        "us_ipa": "/ˈwɝk/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "工作",
+        "english": "(intransitive) To do a specific task by employing physical or mental powers.",
+        "examples": [
+          {
+            "english": "I work even on Sunday.",
+            "chinese": "我甚至在週日工作。"
+          }
+        ]
+      },
+      {
+        "word": "work",
+        "uk_ipa": "/(w)ɵrk/<a:backing after W>",
+        "us_ipa": "/ˈwɝk/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "工作",
+        "english": "Labour, occupation, job.",
+        "examples": [
+          {
+            "english": "I work even on Sunday.",
+            "chinese": "我甚至在週日工作。"
+          }
+        ]
+      }
+    ],
+    "free": [
+      {
+        "word": "free",
+        "uk_ipa": "/fɹiː/",
+        "us_ipa": "/ˈfɹi/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "放",
+        "english": "(transitive) To make free; set at liberty; release.",
+        "examples": [
+          {
+            "english": "The king ordered that the prisoner should be set free.",
+            "chinese": "國王下令把囚犯釋放。"
+          }
+        ]
+      },
+      {
+        "word": "free",
+        "uk_ipa": "/fɹiː/",
+        "us_ipa": "/ˈfɹi/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "自由",
+        "english": "(software) With no or only freedom-preserving limitations on distribution or modification.",
+        "examples": [
+          {
+            "english": "A democrat is a free citizen who yields to the will of the majority.",
+            "chinese": "民主主义者是屈服于大部分人的自由公民。"
+          }
+        ]
+      },
+      {
+        "word": "free",
+        "uk_ipa": "/fɹiː/",
+        "us_ipa": "/ˈfɹi/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "免費",
+        "english": "Without needing to pay.",
+        "examples": [
+          {
+            "english": "Are drinks free?",
+            "chinese": "飲料是免費的嗎？"
+          }
+        ]
+      },
+      {
+        "word": "free",
+        "uk_ipa": "/fɹiː/",
+        "us_ipa": "/ˈfɹi/",
+        "part_of_speech": "suffix",
+        "countability": "",
+        "chinese": "有",
+        "english": "Free from; devoid of; without.",
+        "examples": [
+          {
+            "english": "Freedom is not free.",
+            "chinese": "自由是有代价的。"
+          }
+        ]
+      }
+    ],
+    "early": [
+      {
+        "word": "early",
+        "uk_ipa": "/ˈɜɹli/",
+        "us_ipa": "/ˈɝli/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "早",
+        "english": "At a time in advance of the usual or expected event.",
+        "examples": [
+          {
+            "english": "What did you come here so early for?",
+            "chinese": "你這麼早來到幹甚麼？"
+          }
+        ]
+      },
+      {
+        "word": "early",
+        "uk_ipa": "/ˈɜɹli/",
+        "us_ipa": "/ˈɝli/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "早",
+        "english": "At a time before expected; sooner than usual.",
+        "examples": [
+          {
+            "english": "The early bird catches the worm.",
+            "chinese": "早起的鸟儿有虫吃。"
+          }
+        ]
+      }
+    ],
+    "light": [
+      {
+        "word": "light",
+        "uk_ipa": "/laɪt/",
+        "us_ipa": "/ˈlaɪt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "光",
+        "english": "(physics, uncountable) Electromagnetic radiation in the wavelength range visible to the human eye (about 400–750 nanometers); visible light.",
+        "examples": [
+          {
+            "english": "We felt relieved when we saw a light in the distance.",
+            "chinese": "我們看見遠處傳來了一點光，不禁都鬆了一口氣。"
+          }
+        ]
+      },
+      {
+        "word": "light",
+        "uk_ipa": "/laɪt/",
+        "us_ipa": "/ˈlaɪt/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "轻",
+        "english": "(nautical, of a ship) Riding high because of no cargo; by extension, pertaining to a ship which is light.",
+        "examples": [
+          {
+            "english": "It's good now; neither too heavy nor too light.",
+            "chinese": "現在正好，不重也不轻。"
+          }
+        ]
+      }
+    ],
+    "play": [
+      {
+        "word": "play",
+        "uk_ipa": "/ple(j)/",
+        "us_ipa": "/ˈpleɪ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "打",
+        "english": "(intransitive) To act in a manner such that one has fun; to engage in activities expressly for the purpose of recreation or entertainment.",
+        "examples": [
+          {
+            "english": "I will play Sudoku then instead of continuing to bother you.",
+            "chinese": "那我就不继续打扰你，玩數独游戏去了。"
+          }
+        ]
+      }
+    ],
+    "run": [
+      {
+        "word": "run",
+        "uk_ipa": "/ɹʊn/",
+        "us_ipa": "/ˈɹʌn/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "跑",
+        "english": "(transitive) To cause to move quickly or lightly.",
+        "examples": [
+          {
+            "english": "Someday I'll run like the wind.",
+            "chinese": "有一天，我會跑得像风一樣快。"
+          }
+        ]
+      },
+      {
+        "word": "run",
+        "uk_ipa": "/ɹʊn/",
+        "us_ipa": "/ˈɹʌn/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "跑",
+        "english": "Act or instance of running, of moving rapidly using the feet.",
+        "examples": [
+          {
+            "english": "Someday I'll run like the wind.",
+            "chinese": "有一天，我會跑得像风一樣快。"
+          }
+        ]
+      }
+    ],
+    "south": [
+      {
+        "word": "south",
+        "uk_ipa": "/saʊt̪/",
+        "us_ipa": "/ˈsaʊθ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "南",
+        "english": "The direction towards the pole to the right-hand side of someone facing east, specifically 180°, or (on another celestial object) the direction towards the pole lying on the southern side of the invariable plane.",
+        "examples": [
+          {
+            "english": "France is to the south of England.",
+            "chinese": "法國在英國的南邊。"
+          }
+        ]
+      },
+      {
+        "word": "south",
+        "uk_ipa": "",
+        "us_ipa": "/ˈsaʊθ/",
+        "part_of_speech": "proper noun",
+        "countability": "",
+        "chinese": "南",
+        "english": "(US) The south-eastern states of the United States, including many of the same states as formed the Confederacy.",
+        "examples": [
+          {
+            "english": "France is to the south of England.",
+            "chinese": "法國在英國的南邊。"
+          }
+        ]
+      }
+    ],
+    "write": [
+      {
+        "word": "write",
+        "uk_ipa": "/ɹaɪt/",
+        "us_ipa": "/ˈɹaɪt/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "寫",
+        "english": "(transitive) To be the author of (a book, article, poem, etc.).",
+        "examples": [
+          {
+            "english": "Most people write about their daily life.",
+            "chinese": "大部分人寫的東西是關于他們的日常生活的。"
+          }
+        ]
+      }
+    ],
+    "answer": [
+      {
+        "word": "answer",
+        "uk_ipa": "/ˈan.sə/",
+        "us_ipa": "/ˈænsɝ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "回",
+        "english": "(ambitransitive) To suit a need or purpose satisfactorily.",
+        "examples": [
+          {
+            "english": "What did you answer?",
+            "chinese": "你回答了什麼？"
+          }
+        ]
+      },
+      {
+        "word": "answer",
+        "uk_ipa": "/ˈan.sə/",
+        "us_ipa": "/ˈænsɝ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "回答",
+        "english": "A response or reply; something said or done in reaction to a statement or question.",
+        "examples": [
+          {
+            "english": "What did you answer?",
+            "chinese": "你回答了什麼？"
+          }
+        ]
+      }
+    ],
+    "ball": [
+      {
+        "word": "ball",
+        "uk_ipa": "/baːl/",
+        "us_ipa": "/ˈbɔl/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "球",
+        "english": "A solid or hollow sphere, or roughly spherical mass.",
+        "examples": [
+          {
+            "english": "Throw the ball back to me.",
+            "chinese": "把球丟還給我。"
+          }
+        ]
+      }
+    ],
+    "family": [
+      {
+        "word": "family",
+        "uk_ipa": "/ˈfæ.m(ə.)li/",
+        "us_ipa": "/ˈfæmʌli/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "家",
+        "english": "A nuclear family: a mother and father who are married and cohabiting and their child or children.",
+        "examples": [
+          {
+            "english": "You'd better go to see your family doctor at once.",
+            "chinese": "你最好立刻去看你的家庭醫生。"
+          }
+        ]
+      }
+    ],
+    "life": [
+      {
+        "word": "life",
+        "uk_ipa": "/laɪf/",
+        "us_ipa": "/ˈlaɪf/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "生活",
+        "english": "The state of organisms preceding their death, characterized by biological processes such as metabolism and reproduction and distinguishing them from inanimate objects; the state of being alive and living.",
+        "examples": [
+          {
+            "english": "Life is what happens to you while you're busy making other plans.",
+            "chinese": "生活就是當你忙著進行你的計劃時總有其他的事情發生。"
+          }
+        ]
+      }
+    ],
+    "water": [
+      {
+        "word": "water",
+        "uk_ipa": "/-ɑ/",
+        "us_ipa": "/ˈwɔtɝ/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "水",
+        "english": "An inorganic compound (of molecular formula H2O) found at room temperature and pressure as a clear liquid; it is present naturally as rain, and found in rivers, lakes and seas; its solid form is ice and its gaseous form is steam.",
+        "examples": [
+          {
+            "english": "Gold is far heavier than water.",
+            "chinese": "金子比水重得多。"
+          }
+        ]
+      }
+    ],
+    "cat": [
+      {
+        "word": "cat",
+        "uk_ipa": "/kæt/",
+        "us_ipa": "/ˈkæt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "貓",
+        "english": "A carnivorous, four-legged, generally furry domesticated species (Felis catus) of feline animal, commonly kept as a house pet. [from 8th c.]",
+        "examples": [
+          {
+            "english": "My pet cat died yesterday.",
+            "chinese": "我養的貓昨天死了。"
+          }
+        ]
+      }
+    ],
+    "east": [
+      {
+        "word": "east",
+        "uk_ipa": "/iːst/",
+        "us_ipa": "/ˈist/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "東",
+        "english": "The direction of the earth's rotation, specifically 90°.",
+        "examples": [
+          {
+            "english": "Japan faces the Pacific on the east.",
+            "chinese": "日本東面太平洋。"
+          }
+        ]
+      },
+      {
+        "word": "east",
+        "uk_ipa": "/iːst/",
+        "us_ipa": "/ˈist/",
+        "part_of_speech": "proper noun",
+        "countability": "",
+        "chinese": "東方",
+        "english": "The Eastern world; the regions, primarily situated in the Eastern Hemisphere, whose culture is derived from Arabia, India, Persia or China.",
+        "examples": [
+          {
+            "english": "The plane flew east.",
+            "chinese": "飞機飞向東方。"
+          }
+        ]
+      }
+    ],
+    "person": [
+      {
+        "word": "person",
+        "uk_ipa": "/-zən/",
+        "us_ipa": "/ˈpɝsʌn/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "人",
+        "english": "(in a compound noun or noun phrase) A human of unspecified gender (in terms usually constructed with man or woman).",
+        "examples": [
+          {
+            "english": "Each person is a world.",
+            "chinese": "每一個人就是一個世界。"
+          }
+        ]
+      }
+    ],
+    "school": [
+      {
+        "word": "school",
+        "uk_ipa": "/(ɪ)ˈsk(ʰ)ul/",
+        "us_ipa": "/ˈskul/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "學校",
+        "english": "(North America) An institution dedicated to teaching and learning; an educational institution.",
+        "examples": [
+          {
+            "english": "You did not come to school yesterday.",
+            "chinese": "你昨天没来學校。"
+          }
+        ]
+      }
+    ],
+    "sun": [
+      {
+        "word": "sun",
+        "uk_ipa": "/sʊn/",
+        "us_ipa": "/ˈsʌn/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "日",
+        "english": "(astronomy) A star, especially when seen as the centre of any single solar system.",
+        "examples": [
+          {
+            "english": "The summer sun glared down on us.",
+            "chinese": "夏日的阳光照在我們身上。"
+          }
+        ]
+      },
+      {
+        "word": "sun",
+        "uk_ipa": "/sʌn/",
+        "us_ipa": "/ˈsʌn/",
+        "part_of_speech": "proper noun",
+        "countability": "",
+        "chinese": "太陽",
+        "english": "The star at the center of the Solar System (our solar system), which shines in our sky, represented in astronomy and astrology by ☉.",
+        "examples": [
+          {
+            "english": "The sun rose from the sea.",
+            "chinese": "太陽從海上升起了。"
+          }
+        ]
+      }
+    ],
+    "action": [
+      {
+        "word": "action",
+        "uk_ipa": "/ˈæk.ʃn̩/",
+        "us_ipa": "/ˈækʃʌn/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "行動",
+        "english": "Something done, often so as to accomplish a purpose.",
+        "examples": [
+          {
+            "english": "My way is action not words.",
+            "chinese": "我的做法是要行動不要空話。"
+          }
+        ]
+      },
+      {
+        "word": "action",
+        "uk_ipa": "/ˈæk.ʃn̩/",
+        "us_ipa": "/ˈækʃʌn/",
+        "part_of_speech": "exclamation",
+        "countability": "",
+        "chinese": "行動",
+        "english": "Demanding or signifying the start of something, usually a performance.",
+        "examples": [
+          {
+            "english": "My way is action not words.",
+            "chinese": "我的做法是要行動不要空話。"
+          }
+        ]
+      }
+    ],
+    "mean": [
+      {
+        "word": "mean",
+        "uk_ipa": "/mijən/",
+        "us_ipa": "/ˈmin/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "想",
+        "english": "(transitive) To intend, to plan (to do); to have as one's intention. [from 8th c.]",
+        "examples": [
+          {
+            "english": "I have no idea what you mean.",
+            "chinese": "我不明白你想說甚麼。"
+          }
+        ]
+      },
+      {
+        "word": "mean",
+        "uk_ipa": "/mijən/",
+        "us_ipa": "/ˈmin/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "中",
+        "english": "Having the mean (see noun below) as its value; average.",
+        "examples": [
+          {
+            "english": "What does that mean in Arabic?",
+            "chinese": "那在阿拉伯語中代表什麼意思？"
+          }
+        ]
+      }
+    ],
+    "note": [
+      {
+        "word": "note",
+        "uk_ipa": "/noʊt/",
+        "us_ipa": "/ˈnoʊt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "音符",
+        "english": "A brief remark; a marginal comment or explanation; hence, an annotation on a text or author; a comment; a critical, explanatory, or illustrative observation.",
+        "examples": [
+          {
+            "english": "I screwed up the very first note.",
+            "chinese": "我搞砸了第一個音符。"
+          }
+        ]
+      }
+    ],
+    "stop": [
+      {
+        "word": "stop",
+        "uk_ipa": "/stɑp/",
+        "us_ipa": "/ˈstɑp/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "停",
+        "english": "(transitive) To cause (something) to cease moving or progressing.",
+        "examples": [
+          {
+            "english": "I wish it would stop raining.",
+            "chinese": "我希望雨會停。"
+          }
+        ]
+      },
+      {
+        "word": "stop",
+        "uk_ipa": "/stɑp/",
+        "us_ipa": "/ˈstɑp/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "車站",
+        "english": "A (usually marked) place where buses, trams or trains halt to let passengers get on and off, usually smaller than a station.",
+        "examples": [
+          {
+            "english": "The bus stop is across the street.",
+            "chinese": "公車站牌就在街對面。"
+          }
+        ]
+      }
+    ],
+    "appear": [
+      {
+        "word": "appear",
+        "uk_ipa": "/əˈpiːɹ/",
+        "us_ipa": "/ʌˈpɪɹ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "出現",
+        "english": "(intransitive) To come or be in sight; to be in view; to become visible.",
+        "examples": [
+          {
+            "english": "The king will appear in person tomorrow evening.",
+            "chinese": "國王明晚會親自出現。"
+          }
+        ]
+      }
+    ],
+    "part": [
+      {
+        "word": "part",
+        "uk_ipa": "/pæɹt/",
+        "us_ipa": "/ˈpɑɹt/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "分",
+        "english": "(transitive) To divide in two.",
+        "examples": [
+          {
+            "english": "Translate the underlined part.",
+            "chinese": "翻译划線部分。"
+          }
+        ]
+      },
+      {
+        "word": "part",
+        "uk_ipa": "/pæɹt/",
+        "us_ipa": "/ˈpɑɹt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "部分",
+        "english": "A fraction of a whole.",
+        "examples": [
+          {
+            "english": "Translate the underlined part.",
+            "chinese": "翻译划線部分。"
+          }
+        ]
+      }
+    ],
+    "white": [
+      {
+        "word": "white",
+        "uk_ipa": "/waɪt/",
+        "us_ipa": "/ˈwaɪt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "白",
+        "english": "The color of snow or milk; the color of light containing equal amounts of all visible wavelengths.",
+        "examples": [
+          {
+            "english": "You are as white as a sheet.",
+            "chinese": "你象纸一樣白."
+          }
+        ]
+      },
+      {
+        "word": "white",
+        "uk_ipa": "/waɪt/",
+        "us_ipa": "/ˈwaɪt/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "白色",
+        "english": "Bright and colourless; reflecting equal quantities of all frequencies of visible light.",
+        "examples": [
+          {
+            "english": "The bird was covered with white feathers.",
+            "chinese": "鸟儿身上铺满了白色的羽毛。"
+          }
+        ]
+      }
+    ],
+    "business": [
+      {
+        "word": "business",
+        "uk_ipa": "/ˈbɪd.nɪs/",
+        "us_ipa": "/ˈbɪznʌs/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "事業",
+        "english": "A specific commercial enterprise or establishment.",
+        "examples": [
+          {
+            "english": "George failed in business.",
+            "chinese": "喬治在事業上失敗了。"
+          }
+        ]
+      }
+    ],
+    "hand": [
+      {
+        "word": "hand",
+        "uk_ipa": "/hænd/",
+        "us_ipa": "/ˈhænd/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "手",
+        "english": "The part of the forelimb below the forearm or wrist in a human, and the corresponding part in many other animals.",
+        "examples": [
+          {
+            "english": "All students of English should have a good English-English dictionary at hand.",
+            "chinese": "所有學英語的學生應該隨手有一本好的英英詞典。"
+          }
+        ]
+      }
+    ],
+    "minute": [
+      {
+        "word": "minute",
+        "uk_ipa": "/ˈmɪnɪt/",
+        "us_ipa": "/ˈmɪnʌt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "分",
+        "english": "A unit of time which is one sixtieth of an hour (sixty seconds).",
+        "examples": [
+          {
+            "english": "A minute has sixty seconds.",
+            "chinese": "一分钟有六十秒。"
+          }
+        ]
+      }
+    ],
+    "second": [
+      {
+        "word": "second",
+        "uk_ipa": "/ˈsɛk.(ə)nd/",
+        "us_ipa": "/ˈsɛkʌnd/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "秒",
+        "english": "A unit of time historically and commonly defined as a sixtieth of a minute which the International System of Units more precisely defines as the duration of 9,192,631,770 periods of radiation corresponding to the transition between two hyperfine levels of caesium-133 in a ground state at a temperature of absolute zero and at rest.",
+        "examples": [
+          {
+            "english": "Six pence per second, Bob reminds her.",
+            "chinese": "每秒六便士 鮑勃提醒她。"
+          }
+        ]
+      },
+      {
+        "word": "second",
+        "uk_ipa": "/ˈsɛk.(ə)nd/",
+        "us_ipa": "/ˈsɛkʌnd/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "第二",
+        "english": "Number-two; following after the first one with nothing between them. The ordinal number corresponding to the cardinal number two.",
+        "examples": [
+          {
+            "english": "Everyone deserves a second chance.",
+            "chinese": "每個人都值得被給予第二次機會。"
+          }
+        ]
+      }
+    ],
+    "account": [
+      {
+        "word": "account",
+        "uk_ipa": "/əˈkaʊnt/",
+        "us_ipa": "/ʌˈkaʊnt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "帐",
+        "english": "(accounting) A registry of pecuniary transactions; a written or printed statement of business dealings or debts and credits, and also of other things subjected to a reckoning or review. [from c. 1300]",
+        "examples": [
+          {
+            "english": "I do not have an account in these forums.",
+            "chinese": "我在這些论坛上没有帐号。"
+          }
+        ]
+      }
+    ],
+    "book": [
+      {
+        "word": "book",
+        "uk_ipa": "/buːk/",
+        "us_ipa": "/ˈbʊk/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "書",
+        "english": "A collection of sheets of paper bound together to hinge at one edge, containing printed or written material, pictures, etc.",
+        "examples": [
+          {
+            "english": "You may have read this book already.",
+            "chinese": "你可能已經看過這本書。"
+          }
+        ]
+      }
+    ],
+    "country": [
+      {
+        "word": "country",
+        "uk_ipa": "/kəɳʈɾi/",
+        "us_ipa": "/ˈkʌntɹi/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "國",
+        "english": "The territory of a nation; a sovereign state or a region once independent and still distinct in institutions, language, etc. [from 14th c.]",
+        "examples": [
+          {
+            "english": "Which country are you from?",
+            "chinese": "你是從哪個國家来的？"
+          }
+        ]
+      }
+    ],
+    "fact": [
+      {
+        "word": "fact",
+        "uk_ipa": "/fækt/",
+        "us_ipa": "/ˈfækt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "事實",
+        "english": "Something actual as opposed to invented.",
+        "examples": [
+          {
+            "english": "The fact that television frequently limits communication within families is already well known.",
+            "chinese": "電视限制家庭成員的沟通的事實已經廣為人知。"
+          }
+        ]
+      }
+    ],
+    "high": [
+      {
+        "word": "high",
+        "uk_ipa": "/haɪ/",
+        "us_ipa": "/ˈhaɪ/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "高",
+        "english": "Physically elevated, extending above a base or average level:",
+        "examples": [
+          {
+            "english": "Are you a senior high school student?",
+            "chinese": "你是個高中生嗎?"
+          }
+        ]
+      }
+    ],
+    "order": [
+      {
+        "word": "order",
+        "uk_ipa": "/ˈɔɹ.dɚ/",
+        "us_ipa": "/ˈɔɹdɝ/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "目",
+        "english": "Arrangement, disposition, or sequence.",
+        "examples": [
+          {
+            "english": "Every function should have comments describing its purpose in order to avoid confusion.",
+            "chinese": "每一個函數都應该有描述其目的的注释以避免误解。"
+          }
+        ]
+      }
+    ],
+    "point": [
+      {
+        "word": "point",
+        "uk_ipa": "/pɔɪnt/",
+        "us_ipa": "/ˈpɔɪnt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "點",
+        "english": "(mathematics, science) A zero-dimensional mathematical object representing a location in one or more dimensions; something considered to have position but no magnitude or direction. [from 14th c.]",
+        "examples": [
+          {
+            "english": "I want to emphasize this point in particular.",
+            "chinese": "我想特别强调這一點。"
+          }
+        ]
+      }
+    ],
+    "read": [
+      {
+        "word": "read",
+        "uk_ipa": "/riːd/",
+        "us_ipa": "/ˈɹɛd/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "看",
+        "english": "(transitive, or, intransitive) To look at and interpret letters or other information that is written.",
+        "examples": [
+          {
+            "english": "You may have read this book already.",
+            "chinese": "你可能已經看過這本書。"
+          }
+        ]
+      }
+    ],
+    "road": [
+      {
+        "word": "road",
+        "uk_ipa": "/rod/",
+        "us_ipa": "/ˈɹoʊd/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "路",
+        "english": "A way used for travelling between places, originally one wide enough to allow foot passengers and horses to travel, now (US) usually one surfaced with asphalt or concrete and designed to accommodate many vehicles travelling in both directions. In the UK both senses are heard: a country road is the same as a country lane. [from 16th c.]",
+        "examples": [
+          {
+            "english": "Look out! There's a hole in the road.",
+            "chinese": "小心。路上有一個洞。"
+          }
+        ]
+      }
+    ],
+    "say": [
+      {
+        "word": "say",
+        "uk_ipa": "/seɪ/",
+        "us_ipa": "/ˈseɪ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "說",
+        "english": "(transitive) To tell, either verbally or in writing.",
+        "examples": [
+          {
+            "english": "I just don't know what to say.",
+            "chinese": "我只是不知道應該說什麼而已……"
+          }
+        ]
+      }
+    ],
+    "small": [
+      {
+        "word": "small",
+        "uk_ipa": "/smoːl/",
+        "us_ipa": "/ˈsmɔl/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "小",
+        "english": "Not large or big; insignificant; few in number.",
+        "examples": [
+          {
+            "english": "When we are small, everything seems so big.",
+            "chinese": "我們小時候，所有的一切對我們来說都显得那麼大。。。"
+          }
+        ]
+      }
+    ],
+    "think": [
+      {
+        "word": "think",
+        "uk_ipa": "/θɪŋk/",
+        "us_ipa": "/ˈθɪŋk/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "想",
+        "english": "(intransitive) To communicate to oneself in one's mind, to try to find a solution to a problem.",
+        "examples": [
+          {
+            "english": "I think I'm gonna sneeze. Give me a tissue.",
+            "chinese": "我想我要打喷嚏了。。。給我張纸巾。"
+          }
+        ]
+      }
+    ],
+    "walk": [
+      {
+        "word": "walk",
+        "uk_ipa": "/waːk/",
+        "us_ipa": "/ˈwɔk/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "走",
+        "english": "(intransitive) To move on the feet by alternately setting each foot (or pair or group of feet, in the case of animals with four or more feet) forward, with at least one foot on the ground at all times. Compare run.",
+        "examples": [
+          {
+            "english": "I can walk to school in 10 minutes.",
+            "chinese": "我走路10分钟能到學校 。"
+          }
+        ]
+      }
+    ],
+    "art": [
+      {
+        "word": "art",
+        "uk_ipa": "/ɐːt/",
+        "us_ipa": "/ˈɑɹt/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "藝術",
+        "english": "The conscious production or arrangement of sounds, colours, forms, movements, or other elements in a manner that affects the senses and emotions, usually specifically the production of the beautiful in a graphic or plastic medium.",
+        "examples": [
+          {
+            "english": "He is not interested in art at all.",
+            "chinese": "他對藝術一點也不感興趣。"
+          }
+        ]
+      }
+    ],
+    "green": [
+      {
+        "word": "green",
+        "uk_ipa": "/ɡɹin/",
+        "us_ipa": "/ˈɡɹin/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "綠色",
+        "english": "The color of grass and leaves; a primary additive color midway between yellow and blue which is evoked by light between roughly 495–570 nm.",
+        "examples": [
+          {
+            "english": "Green suits you.",
+            "chinese": "綠色適合你。"
+          }
+        ]
+      },
+      {
+        "word": "green",
+        "uk_ipa": "/ɡɹin/",
+        "us_ipa": "/ˈɡɹin/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "绿",
+        "english": "Unripe, said of certain fruits that change color when they ripen.",
+        "examples": [
+          {
+            "english": "What is that building with the green roof?",
+            "chinese": "那幢绿色屋顶的建筑是什麼？"
+          }
+        ]
+      }
+    ],
+    "heart": [
+      {
+        "word": "heart",
+        "uk_ipa": "/hɑɹt/",
+        "us_ipa": "/ˈhɑɹt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "心臟",
+        "english": "(anatomy) A muscular organ that pumps blood through the body, traditionally thought to be the seat of emotion.",
+        "examples": [
+          {
+            "english": "He's going to have a heart attack.",
+            "chinese": "他的心臟病要發作了。"
+          }
+        ]
+      }
+    ],
+    "party": [
+      {
+        "word": "party",
+        "uk_ipa": "/ˈpɐːti/",
+        "us_ipa": "/ˈpɑɹti/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "党",
+        "english": "(legal) A person or group of people constituting one side in a legal proceeding, such as in a legal action or a contract. [from ca. 1300s]",
+        "examples": [
+          {
+            "english": "I willingly join the Chinese Communist Party.",
+            "chinese": "我自愿加入中國共產党。"
+          }
+        ]
+      }
+    ],
+    "pay": [
+      {
+        "word": "pay",
+        "uk_ipa": "/peɪ/",
+        "us_ipa": "/ˈpeɪ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "付款",
+        "english": "(ambitransitive) To give money or other compensation to in exchange for goods or services.",
+        "examples": [
+          {
+            "english": "Pay the cashier on the way out.",
+            "chinese": "在出口處的收银台付款。"
+          }
+        ]
+      }
+    ],
+    "area": [
+      {
+        "word": "area",
+        "uk_ipa": "/ˈerɪjɑ/",
+        "us_ipa": "/ˈɛɹiʌ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "面积",
+        "english": "(mathematics) A measure of the extent of a surface; it is measured in square units.",
+        "examples": [
+          {
+            "english": "The pasture has an area of 10 acres.",
+            "chinese": "牧场的面积有10英亩。"
+          }
+        ]
+      }
+    ],
+    "friend": [
+      {
+        "word": "friend",
+        "uk_ipa": "/frɪnd/",
+        "us_ipa": "/ˈfɹɛnd/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "朋友",
+        "english": "An associate who provides assistance; patron, mentor.",
+        "examples": [
+          {
+            "english": "You're a friend of Tom's, eh?",
+            "chinese": "你是湯姆的一個朋友，不是嗎？"
+          }
+        ]
+      }
+    ],
+    "history": [
+      {
+        "word": "history",
+        "uk_ipa": "/ˈhəs.tə.ɹi/",
+        "us_ipa": "/ˈhɪstɝi/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "歷史",
+        "english": "The aggregate of past events.",
+        "examples": [
+          {
+            "english": "How come you know so much about Japanese history?",
+            "chinese": "你為什麼知道這麼多的日本歷史?"
+          }
+        ]
+      }
+    ],
+    "red": [
+      {
+        "word": "red",
+        "uk_ipa": "/ɹɛd/",
+        "us_ipa": "/ˈɹɛd/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "红",
+        "english": "(countable, and, uncountable) The colour of the setting sun, blood, and strawberries; the colour which is evoked by the longest visible wavelengths (between about 625–740 nm), and a primary additive colour.",
+        "examples": [
+          {
+            "english": "In case of fire, break the glass and push the red button.",
+            "chinese": "萬一發生火灾，打碎玻璃并按下红色按钮。"
+          }
+        ]
+      },
+      {
+        "word": "red",
+        "uk_ipa": "/ɹɛd/",
+        "us_ipa": "/ˈɹɛd/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "红",
+        "english": "(of hair) Having an orange-brown or orange-blond colour; ginger.",
+        "examples": [
+          {
+            "english": "Fish and red wine don't go together.",
+            "chinese": "鱼和红酒不相配。"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "word": "world",
+        "uk_ipa": "/wɜɹld/",
+        "us_ipa": "/ˈwɝld/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "世界",
+        "english": "(with \"the\" or a plural possessive pronoun) The subjective human experience, regarded collectively; human collective existence; existence in general; the reality we live in.",
+        "examples": [
+          {
+            "english": "Education in this world disappoints me.",
+            "chinese": "世界上的教育都讓我失望。"
+          }
+        ]
+      }
+    ],
+    "allow": [
+      {
+        "word": "allow",
+        "uk_ipa": "/əˈlaʊ/",
+        "us_ipa": "/ʌˈlaʊ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "讓",
+        "english": "(transitive, catenative) To permit, to give permission to.",
+        "examples": [
+          {
+            "english": "I won't allow you to do that.",
+            "chinese": "我不會讓你去做。"
+          }
+        ]
+      }
+    ],
+    "cold": [
+      {
+        "word": "cold",
+        "uk_ipa": "/kaʉld/",
+        "us_ipa": "/ˈkoʊld/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "冷",
+        "english": "A condition of low temperature.",
+        "examples": [
+          {
+            "english": "You'll soon get accustomed to this cold weather.",
+            "chinese": "你很快就會習慣這種冷天氣。"
+          }
+        ]
+      },
+      {
+        "word": "cold",
+        "uk_ipa": "/kaʉld/",
+        "us_ipa": "/ˈkoʊld/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "冷",
+        "english": "(of the weather) Causing the air to be cold.",
+        "examples": [
+          {
+            "english": "You'll soon get accustomed to this cold weather.",
+            "chinese": "你很快就會習慣這種冷天氣。"
+          }
+        ]
+      }
+    ],
+    "fish": [
+      {
+        "word": "fish",
+        "uk_ipa": "/fɘʃ/",
+        "us_ipa": "/ˈfɪʃ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "鱼",
+        "english": "Now used in combination: (e.g., starfish, cuttlefish, jellyfish, etc).",
+        "examples": [
+          {
+            "english": "I'm not a real fish, I'm just a mere plushy.",
+            "chinese": "我不是一条真的鱼，我只是一個長毛绒玩具。"
+          }
+        ]
+      }
+    ],
+    "right": [
+      {
+        "word": "right",
+        "uk_ipa": "/ˈɹaɪt/",
+        "us_ipa": "/ˈɹaɪt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "右",
+        "english": "The right side or direction.",
+        "examples": [
+          {
+            "english": "Turn right at the crossroad.",
+            "chinese": "在十字路口右转。"
+          }
+        ]
+      },
+      {
+        "word": "right",
+        "uk_ipa": "/ˈɹaɪt/",
+        "us_ipa": "/ˈɹaɪt/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "右",
+        "english": "(geography) Designating the bank of a river (etc.) on one's right when facing downstream (i.e. facing forward while floating with the current); that is, the south bank of a river that flows eastward. If this arrow: ⥴ shows the direction of the current, the tilde is on the right side of the river.",
+        "examples": [
+          {
+            "english": "Turn right at the crossroad.",
+            "chinese": "在十字路口右转。"
+          }
+        ]
+      }
+    ],
+    "short": [
+      {
+        "word": "short",
+        "uk_ipa": "/ʃoɹt/",
+        "us_ipa": "/ˈʃɔɹt/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "短",
+        "english": "Having a small distance from one end or edge to another, either horizontally or vertically.",
+        "examples": [
+          {
+            "english": "A rabbit has long ears and a short tail.",
+            "chinese": "兔子有長耳朵和短尾巴。"
+          }
+        ]
+      }
+    ],
+    "word": [
+      {
+        "word": "word",
+        "uk_ipa": "/weːd/",
+        "us_ipa": "/ˈwɝd/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "詞",
+        "english": "(semantics) The smallest unit of language that has a particular meaning and can be expressed by itself; the smallest discrete, meaningful unit of language. (contrast morpheme.)",
+        "examples": [
+          {
+            "english": "I'm not sure how to pronounce the word.",
+            "chinese": "我不確定這個單詞該怎麼讀。"
+          }
+        ]
+      },
+      {
+        "word": "word",
+        "uk_ipa": "/weːd/",
+        "us_ipa": "/ˈwɝd/",
+        "part_of_speech": "proper noun",
+        "countability": "",
+        "chinese": "詞",
+        "english": "The creative word of God; Logos.",
+        "examples": [
+          {
+            "english": "I'm not sure how to pronounce the word.",
+            "chinese": "我不確定這個單詞該怎麼讀。"
+          }
+        ]
+      }
+    ],
+    "blood": [
+      {
+        "word": "blood",
+        "uk_ipa": "/blʊd/",
+        "us_ipa": "/ˈblʌd/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "血",
+        "english": "A vital liquid flowing in the bodies of many types of animals that usually conveys nutrients and oxygen. In vertebrates, it is colored red by hemoglobin, is conveyed by arteries and veins, is pumped by the heart and is usually generated in bone marrow.",
+        "examples": [
+          {
+            "english": "My blood pressure is 155 over 105.",
+            "chinese": "我的血壓為155比105。"
+          }
+        ]
+      }
+    ],
+    "body": [
+      {
+        "word": "body",
+        "uk_ipa": "/ˈbɑ.di/",
+        "us_ipa": "/ˈbɑdi/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "身體",
+        "english": "The physical structure of a human or animal seen as one single organism. [from 9th c.]",
+        "examples": [
+          {
+            "english": "The child's body felt feverish.",
+            "chinese": "這個小孩身體很燙。"
+          }
+        ]
+      }
+    ],
+    "college": [
+      {
+        "word": "college",
+        "uk_ipa": "/kɔ.ledʒ/",
+        "us_ipa": "/ˈkɑlɪdʒ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "大學",
+        "english": "(chiefly, US) An institution of higher education teaching undergraduates.",
+        "examples": [
+          {
+            "english": "My brother seems to enjoy himself at college.",
+            "chinese": "我弟弟似乎在大學過得很愉快。"
+          }
+        ]
+      }
+    ],
+    "floor": [
+      {
+        "word": "floor",
+        "uk_ipa": "/flo(ː)ɹ/",
+        "us_ipa": "/ˈflɔɹ/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "地上",
+        "english": "The interior bottom or surface of a house or building; the supporting surface of a room.",
+        "examples": [
+          {
+            "english": "Your glasses fell on the floor.",
+            "chinese": "你的眼镜掉在地上了。"
+          }
+        ]
+      }
+    ],
+    "group": [
+      {
+        "word": "group",
+        "uk_ipa": "/ɡɹuːp/",
+        "us_ipa": "/ˈɡɹup/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "帮",
+        "english": "A number of things or persons being in some relation to one another.",
+        "examples": [
+          {
+            "english": "The group of people came along with us.",
+            "chinese": "那帮人也和我們一起来了。"
+          }
+        ]
+      }
+    ],
+    "common": [
+      {
+        "word": "common",
+        "uk_ipa": "/ˈkɑ.mən/",
+        "us_ipa": "/ˈkɑmʌn/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "共同",
+        "english": "Mutual; shared by more than one.",
+        "examples": [
+          {
+            "english": "Music is a common speech for humanity.",
+            "chinese": "音樂是人類共同的語言。"
+          }
+        ]
+      }
+    ],
+    "create": [
+      {
+        "word": "create",
+        "uk_ipa": "/kɹiːˈeɪt/",
+        "us_ipa": "/kɹiˈeɪt/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "創造",
+        "english": "(especially, of a, god) To bring into existence out of nothing, without the prior existence of the materials or elements used.",
+        "examples": [
+          {
+            "english": "Can an omnipotent God create a stone so heavy that even He may not lift it?",
+            "chinese": "萬能的神能不能創造一塊重得連祂自己也拿不起的石頭呢？"
+          }
+        ]
+      }
+    ],
+    "go": [
+      {
+        "word": "go",
+        "uk_ipa": "/ɡoʊ/",
+        "us_ipa": "/ˈɡoʊ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "去",
+        "english": "(intransitive) To move through space (especially to or through a place). (May be used of tangible things such as people or cars, or intangible things such as moods or information.)",
+        "examples": [
+          {
+            "english": "I have to go to sleep.",
+            "chinese": "我该去睡覺了。"
+          }
+        ]
+      },
+      {
+        "word": "go",
+        "uk_ipa": "/ɡoʊ/",
+        "us_ipa": "/ˈɡoʊ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "圍棋",
+        "english": "(board game) A strategic board game, originally from China and today also popular in Japan and Korea, in which two players (black and white) attempt to control the largest area of the board with their counters.",
+        "examples": [
+          {
+            "english": "On a 19x19 lines board, Go is played with 361 stones (181 black and 180 white).",
+            "chinese": "圍棋使用十九路棋盤，共 361 顆棋子 (181 顆黑子與 180 顆白子)。"
+          }
+        ]
+      }
+    ],
+    "know": [
+      {
+        "word": "know",
+        "uk_ipa": "/noʊ/",
+        "us_ipa": "/ˈnoʊ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "知道",
+        "english": "(transitive) To perceive the truth or factuality of; to be certain of; to be certain that.",
+        "examples": [
+          {
+            "english": "I just don't know what to say.",
+            "chinese": "我只是不知道應該說什麼而已……"
+          }
+        ]
+      }
+    ],
+    "learn": [
+      {
+        "word": "learn",
+        "uk_ipa": "/lɑː(ɹ)n/",
+        "us_ipa": "/ˈlɝn/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "學",
+        "english": "To acquire, or attempt to acquire knowledge or an ability to do something.",
+        "examples": [
+          {
+            "english": "You'd be surprised what you can learn in a week.",
+            "chinese": "你會很惊讶你在一周内能學到的東西。"
+          }
+        ]
+      }
+    ],
+    "really": [
+      {
+        "word": "really",
+        "uk_ipa": "/rɪˈjɜli/<a:emphasised>",
+        "us_ipa": "/ˈɹɪli/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "真的",
+        "english": "(modal) Actually; in fact; in reality.",
+        "examples": [
+          {
+            "english": "You're really not stupid.",
+            "chinese": "你真的不笨。"
+          }
+        ]
+      },
+      {
+        "word": "really",
+        "uk_ipa": "/rɪˈjɜli/<a:emphasised>",
+        "us_ipa": "/ˈɹɪli/",
+        "part_of_speech": "exclamation",
+        "countability": "",
+        "chinese": "真的",
+        "english": "(informal) Indicating surprise at, or requesting confirmation of, some new information; to express skepticism.",
+        "examples": [
+          {
+            "english": "You're really not stupid.",
+            "chinese": "你真的不笨。"
+          }
+        ]
+      }
+    ],
+    "air": [
+      {
+        "word": "air",
+        "uk_ipa": "/eə/",
+        "us_ipa": "/ˈɛɹ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "空氣",
+        "english": "(uncountable, loosely) The substance of the atmosphere on a planet other than Earth.",
+        "examples": [
+          {
+            "english": "To live without air is impossible.",
+            "chinese": "沒有空氣生活是不可能的。"
+          }
+        ]
+      }
+    ],
+    "almost": [
+      {
+        "word": "almost",
+        "uk_ipa": "/ɔːɫˈməʊst/",
+        "us_ipa": "/ˈɔlmoʊst/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "幾乎",
+        "english": "Very close to, but not quite.",
+        "examples": [
+          {
+            "english": "Almost no one thinks that we are sisters.",
+            "chinese": "幾乎没有人認為我們是姐妹。"
+          }
+        ]
+      }
+    ],
+    "bank": [
+      {
+        "word": "bank",
+        "uk_ipa": "/bæŋk/",
+        "us_ipa": "/ˈbæŋk/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "银行",
+        "english": "A branch office of such an institution.",
+        "examples": [
+          {
+            "english": "You can get a loan from a bank.",
+            "chinese": "你可以從银行贷款。"
+          }
+        ]
+      }
+    ],
+    "big": [
+      {
+        "word": "big",
+        "uk_ipa": "/bɪɡ/",
+        "us_ipa": "/ˈbɪɡ/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "大",
+        "english": "Of great size, large.",
+        "examples": [
+          {
+            "english": "When we are small, everything seems so big.",
+            "chinese": "我們小時候，所有的一切對我們来說都显得那麼大。。。"
+          }
+        ]
+      }
+    ],
+    "call": [
+      {
+        "word": "call",
+        "uk_ipa": "/kaːl/",
+        "us_ipa": "/ˈkɔl/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "叫",
+        "english": "(intransitive) To request, summon, or beckon.",
+        "examples": [
+          {
+            "english": "Call the police!",
+            "chinese": "叫警察！"
+          }
+        ]
+      }
+    ],
+    "effect": [
+      {
+        "word": "effect",
+        "uk_ipa": "/i-/",
+        "us_ipa": "/ɪˈfɛkt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "效果",
+        "english": "(filmology, computer graphics, demoscene) An illusion produced by technical means (as in \"special effect\")",
+        "examples": [
+          {
+            "english": "These issues have no effect on us.",
+            "chinese": "這些問題對我們毫無效果。"
+          }
+        ]
+      }
+    ],
+    "enough": [
+      {
+        "word": "enough",
+        "uk_ipa": "/i-/",
+        "us_ipa": "/ɪˈnʌf/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "够",
+        "english": "Sufficiently.",
+        "examples": [
+          {
+            "english": "You're not fast enough.",
+            "chinese": "你不够快。"
+          }
+        ]
+      },
+      {
+        "word": "enough",
+        "uk_ipa": "/i-/",
+        "us_ipa": "/ɪˈnʌf/",
+        "part_of_speech": "determiner",
+        "countability": "",
+        "chinese": "够",
+        "english": "Sufficient; all that is required, needed, or appropriate.",
+        "examples": [
+          {
+            "english": "You're not fast enough.",
+            "chinese": "你不够快。"
+          }
+        ]
+      },
+      {
+        "word": "enough",
+        "uk_ipa": "/i-/",
+        "us_ipa": "/ɪˈnʌf/",
+        "part_of_speech": "exclamation",
+        "countability": "",
+        "chinese": "還",
+        "english": "Stop! Don't do that any more!",
+        "examples": [
+          {
+            "english": "You're not old enough to get a driver's license.",
+            "chinese": "你還没到可以拿驾驶执照的年龄。"
+          }
+        ]
+      }
+    ],
+    "example": [
+      {
+        "word": "example",
+        "uk_ipa": "/əɡˈzaːm.pəl/",
+        "us_ipa": "/ɪˈɡzæmpʌl/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "例子",
+        "english": "Something that is representative of all such things in a group.",
+        "examples": [
+          {
+            "english": "Let me give you an example.",
+            "chinese": "讓我来給你举個例子吧。"
+          }
+        ]
+      }
+    ],
+    "face": [
+      {
+        "word": "face",
+        "uk_ipa": "/feɪs/",
+        "us_ipa": "/ˈfeɪs/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "面",
+        "english": "(anatomy) The front part of the head of a human or other animal, featuring the eyes, nose, and mouth, and the surrounding area.",
+        "examples": [
+          {
+            "english": "Those selected will have to face extensive medical and psychological tests.",
+            "chinese": "被选上的将會面临大量的醫學和精神测试。"
+          }
+        ]
+      }
+    ],
+    "food": [
+      {
+        "word": "food",
+        "uk_ipa": "/fuːd/",
+        "us_ipa": "/ˈfud/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "食物",
+        "english": "Any solid substance that can be consumed by living organisms, especially by eating, in order to sustain life.",
+        "examples": [
+          {
+            "english": "How do you find food in outer space?",
+            "chinese": "你怎麼在太空里找到食物？"
+          }
+        ]
+      }
+    ],
+    "leave": [
+      {
+        "word": "leave",
+        "uk_ipa": "/liv/",
+        "us_ipa": "/ˈliv/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "留",
+        "english": "(transitive) To cause or allow (something) to remain as available; to refrain from taking (something) away; to stop short of consuming or otherwise depleting (something) entirely.",
+        "examples": [
+          {
+            "english": "You may leave your bag here.",
+            "chinese": "你可以把你的袋子留在這裡。"
+          }
+        ]
+      }
+    ],
+    "long": [
+      {
+        "word": "long",
+        "uk_ipa": "/læŋ/",
+        "us_ipa": "/ˈlɔŋ/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "長",
+        "english": "Having much distance in space from one end to the other.",
+        "examples": [
+          {
+            "english": "Well, the night is quite long, isn't it?",
+            "chinese": "夜晚很長，不是嗎？"
+          }
+        ]
+      }
+    ],
+    "mile": [
+      {
+        "word": "mile",
+        "uk_ipa": "/maɪ̯l/",
+        "us_ipa": "/ˈmaɪl/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "英里",
+        "english": "Any of several customary units of length derived from the 1593 English statute mile of 8 furlongs, equivalent to 5,280 feet or 1,760 yards of various precise values.",
+        "examples": [
+          {
+            "english": "I walked three-fourths of a mile.",
+            "chinese": "我走了四分之三英里。"
+          }
+        ]
+      }
+    ],
+    "name": [
+      {
+        "word": "name",
+        "uk_ipa": "/neɪm/",
+        "us_ipa": "/ˈneɪm/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "名",
+        "english": "Any nounal word or phrase which indicates a particular person, place, class, or thing.",
+        "examples": [
+          {
+            "english": "All you have to do is sign your name here.",
+            "chinese": "你在這裏簽個名就行了。"
+          }
+        ]
+      }
+    ],
+    "night": [
+      {
+        "word": "night",
+        "uk_ipa": "/naɪt/",
+        "us_ipa": "/ˈnaɪt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "夜",
+        "english": "(legal, countable) A period of time often defined in the legal system as beginning 30 minutes after sunset, and ending 30 minutes before sunrise.",
+        "examples": [
+          {
+            "english": "For some reason I feel more alive at night.",
+            "chinese": "不知道為什麼我夜裡覺得比較有活力。"
+          }
+        ]
+      }
+    ],
+    "paper": [
+      {
+        "word": "paper",
+        "uk_ipa": "/ˈpeɪpə/",
+        "us_ipa": "/ˈpeɪpɝ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "纸",
+        "english": "A sheet material typically used for writing on or printing on (or as a non-waterproof container), usually made by draining cellulose fibres from a suspension in water.",
+        "examples": [
+          {
+            "english": "I have to write a letter. Do you have some paper?",
+            "chinese": "我需要寫一封信。你有纸嗎？"
+          }
+        ]
+      }
+    ],
+    "sit": [
+      {
+        "word": "sit",
+        "uk_ipa": "/sɪt/",
+        "us_ipa": "/ˈsɪt/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "坐",
+        "english": "(intransitive, copulative, of a person) To be in a position in which the upper body is upright and supported by the buttocks.",
+        "examples": [
+          {
+            "english": "I'm going to sit on the bench over there next to the street lamp.",
+            "chinese": "我會在那盞街燈旁邊的長凳上坐下來。"
+          }
+        ]
+      }
+    ],
+    "stay": [
+      {
+        "word": "stay",
+        "uk_ipa": "/steɪ/",
+        "us_ipa": "/ˈsteɪ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "留下",
+        "english": "(intransitive) To remain in a particular place, especially for a definite or short period of time; sojourn; abide.",
+        "examples": [
+          {
+            "english": "Why don't you stay a little while?",
+            "chinese": "你為什麼不留下來一會兒？"
+          }
+        ]
+      }
+    ],
+    "student": [
+      {
+        "word": "student",
+        "uk_ipa": "/ˈstjuː.dn̩t/",
+        "us_ipa": "/ˈstudʌnt/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "大學生",
+        "english": "A person who studies or learns about a particular subject.",
+        "examples": [
+          {
+            "english": "I am a university student.",
+            "chinese": "我是一個大學生。"
+          }
+        ]
+      }
+    ],
+    "study": [
+      {
+        "word": "study",
+        "uk_ipa": "/ˈstʊd.i/",
+        "us_ipa": "/ˈstʌdi/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "學習",
+        "english": "(academic, transitive) To take a course or courses on a subject.",
+        "examples": [
+          {
+            "english": "I think it necessary for you to study harder.",
+            "chinese": "我認為你需要更努力學習。"
+          }
+        ]
+      }
+    ],
+    "teach": [
+      {
+        "word": "teach",
+        "uk_ipa": "/tiːt͡ʃ/",
+        "us_ipa": "/ˈtitʃ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "教",
+        "english": "(ditransitive) To pass on knowledge to.",
+        "examples": [
+          {
+            "english": "I'll teach you how to drive a car.",
+            "chinese": "我會教你怎麼開車。"
+          }
+        ]
+      }
+    ],
+    "week": [
+      {
+        "word": "week",
+        "uk_ipa": "/wik/",
+        "us_ipa": "/ˈwik/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "週",
+        "english": "A period of seven days beginning with Sunday or Monday.",
+        "examples": [
+          {
+            "english": "I'm going to Europe next week.",
+            "chinese": "我下週要去歐洲。"
+          }
+        ]
+      }
+    ],
+    "grow": [
+      {
+        "word": "grow",
+        "uk_ipa": "/ɡrəʊ/",
+        "us_ipa": "/ˈɡɹoʊ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "生長",
+        "english": "(intransitive) To appear or sprout.",
+        "examples": [
+          {
+            "english": "These flowers grow in warm countries.",
+            "chinese": "這些花生長在溫暖的國家。"
+          }
+        ]
+      }
+    ],
+    "hear": [
+      {
+        "word": "hear",
+        "uk_ipa": "/heː(ɹ)/",
+        "us_ipa": "/ˈhiɹ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "聽見",
+        "english": "(intransitive, stative) To perceive sounds through the ear. [from 10th c.]",
+        "examples": [
+          {
+            "english": "He pretended not to hear me.",
+            "chinese": "他假装没有聽見我。"
+          }
+        ]
+      }
+    ],
+    "like": [
+      {
+        "word": "like",
+        "uk_ipa": "/laɪ̯k/",
+        "us_ipa": "/ˈlaɪk/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "喜欢",
+        "english": "To find attractive; to prefer the company of; to have mild romantic feelings for.",
+        "examples": [
+          {
+            "english": "I didn't like it.",
+            "chinese": "我没有喜欢過。"
+          }
+        ]
+      },
+      {
+        "word": "like",
+        "uk_ipa": "",
+        "us_ipa": "/ˈlaɪk/",
+        "part_of_speech": "suffix",
+        "countability": "",
+        "chinese": "像",
+        "english": "Resembling, having some of the characteristics of (used to form adjectives from nouns).",
+        "examples": [
+          {
+            "english": "If I could be like that...",
+            "chinese": "如果我可以像那樣的話..."
+          }
+        ]
+      }
+    ],
+    "animal": [
+      {
+        "word": "animal",
+        "uk_ipa": "/əˈnɪ.məl/",
+        "us_ipa": "/ˈænʌmʌl/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "動物",
+        "english": "(science) Any member of the kingdom Animalia of multicellular organisms that are usually mobile, whose cells are not encased in a rigid cell wall (distinguishing them from plants and fungi) and which derive energy solely from the consumption of other organisms (further distinguishing them from plants).",
+        "examples": [
+          {
+            "english": "That animal feeds on flesh.",
+            "chinese": "那種動物靠肉食為生。"
+          }
+        ]
+      },
+      {
+        "word": "animal",
+        "uk_ipa": "/əˈnɪ.məl/",
+        "us_ipa": "/ˈænʌmʌl/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "動物",
+        "english": "Of or relating to animals.",
+        "examples": [
+          {
+            "english": "The hunters captured the wild animal with a strong rope net.",
+            "chinese": "獵人們用堅韌的繩網把野生動物捉住了。"
+          }
+        ]
+      }
+    ],
+    "father": [
+      {
+        "word": "father",
+        "uk_ipa": "",
+        "us_ipa": "/ˈfɑðɝ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "父",
+        "english": "(Christianity) One of the chief ecclesiastical authorities of the first centuries after Christ.",
+        "examples": [
+          {
+            "english": "Like father, like son.",
+            "chinese": "有其父必有其子。"
+          }
+        ]
+      },
+      {
+        "word": "father",
+        "uk_ipa": "",
+        "us_ipa": "/ˈfɑðɝ/",
+        "part_of_speech": "proper noun",
+        "countability": "",
+        "chinese": "父",
+        "english": "(Wicca) One of the triune gods of the Horned God in Wicca, representing a man, younger than the elderly Sage and older than the boyish Master.",
+        "examples": [
+          {
+            "english": "Like father, like son.",
+            "chinese": "有其父必有其子。"
+          }
+        ]
+      }
+    ],
+    "fly": [
+      {
+        "word": "fly",
+        "uk_ipa": "/flaɪ/",
+        "us_ipa": "/ˈflaɪ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "飞",
+        "english": "(transitive, ergative) To cause to fly (travel or float in the air): to transport via air or the like.",
+        "examples": [
+          {
+            "english": "Not all birds can fly.",
+            "chinese": "不是所有的鸟都會飞。"
+          }
+        ]
+      },
+      {
+        "word": "fly",
+        "uk_ipa": "/flaɪ/",
+        "us_ipa": "/ˈflaɪ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "蝇",
+        "english": "(non-technical) Especially, any of the insects of the family Muscidae, such as the common housefly (other families of Diptera include mosquitoes and midges).",
+        "examples": [
+          {
+            "english": "I saw a fly on the ceiling.",
+            "chinese": "我看到天花板上有一只苍蝇"
+          }
+        ]
+      }
+    ],
+    "house": [
+      {
+        "word": "house",
+        "uk_ipa": "/haʊs/",
+        "us_ipa": "/ˈhaʊs/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "房子",
+        "english": "A building used for something other than a residence (typically with qualifying word). [from 10th c.]",
+        "examples": [
+          {
+            "english": "A burglar broke into his house.",
+            "chinese": "一個竊賊闖進了他的房子。"
+          }
+        ]
+      }
+    ],
+    "arm": [
+      {
+        "word": "arm",
+        "uk_ipa": "/ɐːm/",
+        "us_ipa": "/ˈɑɹm/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "手臂",
+        "english": "(anatomy) The portion of the upper human appendage, from the shoulder to the wrist and sometimes including the hand.",
+        "examples": [
+          {
+            "english": "I have a very sore arm where you hit me.",
+            "chinese": "你打在我手臂上的地方超級痛。"
+          }
+        ]
+      }
+    ],
+    "boy": [
+      {
+        "word": "boy",
+        "uk_ipa": "/bɔɪ/",
+        "us_ipa": "/ˈbɔɪ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "男孩儿",
+        "english": "A male child. [from 15th c.]",
+        "examples": [
+          {
+            "english": "Jack is the most intelligent boy in the class.",
+            "chinese": "杰克是班里最聪明的男孩儿 。"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "word": "brother",
+        "uk_ipa": "/ˈbɹɐðə/",
+        "us_ipa": "/ˈbɹʌðɝ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "弟弟",
+        "english": "A male having at least one parent in common with another (see half-brother, stepbrother).",
+        "examples": [
+          {
+            "english": "My brother is very important. At least he thinks he is.",
+            "chinese": "我弟弟是個很重要的人物，或者說，至少他自己是這麼認為的。"
+          }
+        ]
+      }
+    ],
+    "center": [
+      {
+        "word": "center",
+        "uk_ipa": "/ˈsɛn.(t)ɚ/",
+        "us_ipa": "/ˈsɛntɝ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "中心",
+        "english": "(geometry) The point in the interior of any figure of any number of dimensions that has as its coordinates the arithmetic mean of the coordinates of all points on the perimeter of the figure (or of all points in the interior for a center of volume).",
+        "examples": [
+          {
+            "english": "The town developed into the center of the economy.",
+            "chinese": "這座城鎮發展成為了一個經濟中心。"
+          }
+        ]
+      }
+    ],
+    "consider": [
+      {
+        "word": "consider",
+        "uk_ipa": "/kənˈsɪdə/",
+        "us_ipa": "/kʌˈnsɪdɝ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "考慮",
+        "english": "(intransitive) To think about something seriously or carefully: to deliberate.",
+        "examples": [
+          {
+            "english": "You must consider what kind of work you want to do.",
+            "chinese": "你一定要考慮清楚你想做怎麼樣的工作。"
+          }
+        ]
+      }
+    ],
+    "data": [
+      {
+        "word": "data",
+        "uk_ipa": "/ˈdeɪ.tə/",
+        "us_ipa": "/ˈdeɪtʌ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "數據",
+        "english": "(collective, computing) A representation of information in a computer (as symbols, quantities, sound, images or videos) which is stored, processed or transmitted in the form of electrical signals, records on magnetic tape or punched cards, etc.",
+        "examples": [
+          {
+            "english": "However, all these data were not confirmed.",
+            "chinese": "但是所有這些數據都没有得到确認。"
+          }
+        ]
+      }
+    ],
+    "end": [
+      {
+        "word": "end",
+        "uk_ipa": "/iːnd/",
+        "us_ipa": "/ˈɛnd/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "完成",
+        "english": "(transitive) To finish, terminate.",
+        "examples": [
+          {
+            "english": "In the end he achieved his objective.",
+            "chinese": "他終于完成了他的目标。"
+          }
+        ]
+      },
+      {
+        "word": "end",
+        "uk_ipa": "/iːnd/",
+        "us_ipa": "/ˈɛnd/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "最後",
+        "english": "(by extension, often with \"the\") Death.",
+        "examples": [
+          {
+            "english": "You don't have to wait until the end.",
+            "chinese": "你没必要待到最後。"
+          }
+        ]
+      }
+    ],
+    "five": [
+      {
+        "word": "five",
+        "uk_ipa": "/faj(v)/",
+        "us_ipa": "/ˈfaɪv/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "五",
+        "english": "The digit/figure 5.",
+        "examples": [
+          {
+            "english": "Where is your twenty? I'll give you five bucks for it.",
+            "chinese": "你的二十塊在哪裡? 我給你五塊錢找到它。"
+          }
+        ]
+      },
+      {
+        "word": "five",
+        "uk_ipa": "/faj(v)/",
+        "us_ipa": "/ˈfaɪv/",
+        "part_of_speech": "numeral",
+        "countability": "",
+        "chinese": "五",
+        "english": "A numerical value equal to 5; the number following four and preceding six.",
+        "examples": [
+          {
+            "english": "It will take five to ten years for the technology to be ready.",
+            "chinese": "在科技准备好之前需要五到十年。"
+          }
+        ]
+      }
+    ],
+    "four": [
+      {
+        "word": "four",
+        "uk_ipa": "/fo(ː)r/",
+        "us_ipa": "/ˈfɔɹ/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "四",
+        "english": "The digit or figure 4; an occurrence thereof.",
+        "examples": [
+          {
+            "english": "I am four months pregnant.",
+            "chinese": "我怀孕四個月了。"
+          }
+        ]
+      },
+      {
+        "word": "four",
+        "uk_ipa": "/fo(ː)r/",
+        "us_ipa": "/ˈfɔɹ/",
+        "part_of_speech": "numeral",
+        "countability": "",
+        "chinese": "四",
+        "english": "A numerical value equal to 4; the number after three and before five; two plus two. This many dots (••••)",
+        "examples": [
+          {
+            "english": "I am four months pregnant.",
+            "chinese": "我怀孕四個月了。"
+          }
+        ]
+      }
+    ],
+    "girl": [
+      {
+        "word": "girl",
+        "uk_ipa": "/ɡərl/<a:non-rhotic>",
+        "us_ipa": "/ˈɡɝl/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "女孩",
+        "english": "(sometimes, offensive, see usage note) A woman, especially a young and often attractive woman.",
+        "examples": [
+          {
+            "english": "You should have introduced yourself to the girl.",
+            "chinese": "你應該向那個女孩自我介紹的。"
+          }
+        ]
+      }
+    ],
+    "health": [
+      {
+        "word": "health",
+        "uk_ipa": "/hɛlθ/",
+        "us_ipa": "/ˈhɛlθ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "健康",
+        "english": "The state of being free from physical or psychological disease, illness, or malfunction; wellness. [from 11th c.]",
+        "examples": [
+          {
+            "english": "Eating fish is good for your health.",
+            "chinese": "吃鱼有益于你的健康。"
+          }
+        ]
+      }
+    ],
+    "keep": [
+      {
+        "word": "keep",
+        "uk_ipa": "/kiːp/",
+        "us_ipa": "/ˈkip/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "保持",
+        "english": "(ditransitive) To maintain the condition of; to preserve in a certain state.",
+        "examples": [
+          {
+            "english": "Whatever happens, keep calm.",
+            "chinese": "無論發生甚麼事也要保持冷靜。"
+          }
+        ]
+      }
+    ],
+    "make": [
+      {
+        "word": "make",
+        "uk_ipa": "/meɪk/",
+        "us_ipa": "/ˈmeɪk/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "的",
+        "english": "Brand; marque; manufacturer; maker.",
+        "examples": [
+          {
+            "english": "It's no use pretending to make me believe that I believe things you don't believe!",
+            "chinese": "要我相信我會相信你不相信的東西是没用的！"
+          }
+        ]
+      }
+    ],
+    "man": [
+      {
+        "word": "man",
+        "uk_ipa": "/mæn/",
+        "us_ipa": "/ˈmæn/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "人",
+        "english": "A male person, usually an adult; a (generally adult male) sentient being, whether human, supernatural, elf, alien, etc.",
+        "examples": [
+          {
+            "english": "You seem to be an honest man.",
+            "chinese": "你看起来像個老實人。"
+          }
+        ]
+      },
+      {
+        "word": "man",
+        "uk_ipa": "",
+        "us_ipa": "/ˈmæn/",
+        "part_of_speech": "proper noun",
+        "countability": "",
+        "chinese": "人",
+        "english": "The genus Homo.",
+        "examples": [
+          {
+            "english": "He's already a man.",
+            "chinese": "他已經是個男人了。"
+          }
+        ]
+      }
+    ],
+    "nothing": [
+      {
+        "word": "nothing",
+        "uk_ipa": "/-ŋk/",
+        "us_ipa": "/ˈnʌθɪŋ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "什麼",
+        "english": "Something trifling, or of no consequence or importance.",
+        "examples": [
+          {
+            "english": "Nothing is achieved without effort.",
+            "chinese": "没有什麼是不劳而获的。"
+          }
+        ]
+      },
+      {
+        "word": "nothing",
+        "uk_ipa": "/-ŋk/",
+        "us_ipa": "/ˈnʌθɪŋ/",
+        "part_of_speech": "pronoun",
+        "countability": "",
+        "chinese": "什麼",
+        "english": "Not any thing; no thing.",
+        "examples": [
+          {
+            "english": "Nothing is achieved without effort.",
+            "chinese": "没有什麼是不劳而获的。"
+          }
+        ]
+      }
+    ],
+    "picture": [
+      {
+        "word": "picture",
+        "uk_ipa": "/ˈpɪk(t)ʃə/",
+        "us_ipa": "/ˈpɪktʃɝ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "照片",
+        "english": "(transitive) To represent in or with a picture.",
+        "examples": [
+          {
+            "english": "I would like your picture.",
+            "chinese": "我想要你的照片。"
+          }
+        ]
+      },
+      {
+        "word": "picture",
+        "uk_ipa": "/ˈpɪk(t)ʃə/",
+        "us_ipa": "/ˈpɪktʃɝ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "画",
+        "english": "A representation of anything (as a person, a landscape, a building) upon canvas, paper, or other surface, by drawing, painting, printing, photography, etc.",
+        "examples": [
+          {
+            "english": "The frame itself is worth more than the picture.",
+            "chinese": "画框比画還值錢。"
+          }
+        ]
+      }
+    ],
+    "reason": [
+      {
+        "word": "reason",
+        "uk_ipa": "/ˈɹiːzn̩/",
+        "us_ipa": "/ˈɹizʌn/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "理由",
+        "english": "An excuse: a thought or a consideration offered in support of a determination or an opinion; that which is offered or accepted as an explanation.",
+        "examples": [
+          {
+            "english": "You have good reason to be angry.",
+            "chinese": "你有充分的理由生氣。"
+          }
+        ]
+      }
+    ],
+    "same": [
+      {
+        "word": "same",
+        "uk_ipa": "/seɪm/",
+        "us_ipa": "/ˈseɪm/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "同一",
+        "english": "Not different or other; not another or others; not different as regards self; selfsame; identical.",
+        "examples": [
+          {
+            "english": "A fox is not caught twice in the same snare.",
+            "chinese": "一只狐狸不會兩次掉入同一個陷阱里。"
+          }
+        ]
+      },
+      {
+        "word": "same",
+        "uk_ipa": "/seɪm/",
+        "us_ipa": "/ˈseɪm/",
+        "part_of_speech": "pronoun",
+        "countability": "",
+        "chinese": "同一",
+        "english": "Something similar, something of the identical type.",
+        "examples": [
+          {
+            "english": "A fox is not caught twice in the same snare.",
+            "chinese": "一只狐狸不會兩次掉入同一個陷阱里。"
+          }
+        ]
+      }
+    ],
+    "time": [
+      {
+        "word": "time",
+        "uk_ipa": "/taɪm/",
+        "us_ipa": "/ˈtaɪm/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "時間",
+        "english": "The inevitable progression into the future with the passing of present and past events.",
+        "examples": [
+          {
+            "english": "I don't know if I have the time.",
+            "chinese": "我不知道我有沒有時間。"
+          }
+        ]
+      }
+    ],
+    "today": [
+      {
+        "word": "today",
+        "uk_ipa": "/təˈdeɪ/",
+        "us_ipa": "/tʌˈdeɪ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "現在",
+        "english": "The current day or date.",
+        "examples": [
+          {
+            "english": "What do you think about young people today?",
+            "chinese": "你對于現在的年轻人有什麼看法？"
+          }
+        ]
+      },
+      {
+        "word": "today",
+        "uk_ipa": "/təˈdeɪ/",
+        "us_ipa": "/tʌˈdeɪ/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "現在",
+        "english": "On the current day or date.",
+        "examples": [
+          {
+            "english": "What do you think about young people today?",
+            "chinese": "你對于現在的年轻人有什麼看法？"
+          }
+        ]
+      }
+    ],
+    "two": [
+      {
+        "word": "two",
+        "uk_ipa": "/tu/",
+        "us_ipa": "/ˈtu/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "二",
+        "english": "The digit/figure 2.",
+        "examples": [
+          {
+            "english": "To kill two birds with one stone.",
+            "chinese": "一石二鸟。"
+          }
+        ]
+      },
+      {
+        "word": "two",
+        "uk_ipa": "/tu/",
+        "us_ipa": "/ˈtu/",
+        "part_of_speech": "numeral",
+        "countability": "",
+        "chinese": "兩",
+        "english": "A numerical value equal to 2; this many dots (••).",
+        "examples": [
+          {
+            "english": "I am married and have two children.",
+            "chinese": "我结婚了，而且有兩個孩子。"
+          }
+        ]
+      }
+    ],
+    "already": [
+      {
+        "word": "already",
+        "uk_ipa": "/ɑlˈɹɛdi/",
+        "us_ipa": "/ɔˈlɹɛdi/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "已經",
+        "english": "Prior to some specified time, either past, present, or future; by this time; previously.",
+        "examples": [
+          {
+            "english": "It is already eleven.",
+            "chinese": "已經是11點了。"
+          }
+        ]
+      }
+    ],
+    "always": [
+      {
+        "word": "always",
+        "uk_ipa": "/ˈɑl.weɪz/",
+        "us_ipa": "/ˈɔlweɪz/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "總是",
+        "english": "At all times; throughout all time; since the beginning.",
+        "examples": [
+          {
+            "english": "You are always as busy as a bee.",
+            "chinese": "你總是跟蜜蜂一樣地忙碌。"
+          }
+        ]
+      }
+    ],
+    "around": [
+      {
+        "word": "around",
+        "uk_ipa": "/əˈɹaʊnd/",
+        "us_ipa": "/ɝˈaʊnd/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "大約",
+        "english": "Nearly; approximately; about.",
+        "examples": [
+          {
+            "english": "It will cost around 10,000 yen.",
+            "chinese": "它將花費大約10,000日元。"
+          }
+        ]
+      },
+      {
+        "word": "around",
+        "uk_ipa": "/əˈɹaʊnd/",
+        "us_ipa": "/ɝˈaʊnd/",
+        "part_of_speech": "preposition",
+        "countability": "",
+        "chinese": "来",
+        "english": "Forming a circle or closed curve containing (something).",
+        "examples": [
+          {
+            "english": "A crowd soon gathered around him.",
+            "chinese": "很快人群就在他周围聚集了起来。"
+          }
+        ]
+      }
+    ],
+    "believe": [
+      {
+        "word": "believe",
+        "uk_ipa": "/bi-/",
+        "us_ipa": "/bɪˈliv/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "相信",
+        "english": "(transitive) To accept as true, particularly without absolute certainty (i.e., as opposed to knowing).",
+        "examples": [
+          {
+            "english": "It depends what you mean by \"believe\" in God.",
+            "chinese": "這取决于你所說的”相信“上帝是什麼意思。"
+          }
+        ]
+      }
+    ],
+    "better": [
+      {
+        "word": "better",
+        "uk_ipa": "/ˈbɛt.ə/",
+        "us_ipa": "/ˈbɛtɝ/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "改",
+        "english": "(transitive) To give advantage to; to support; to advance the interest of.",
+        "examples": [
+          {
+            "english": "All the signs are that she is getting better.",
+            "chinese": "一切的跡象都表示她的狀況有所改善。"
+          }
+        ]
+      },
+      {
+        "word": "better",
+        "uk_ipa": "/ˈbɛt.ə/",
+        "us_ipa": "/ˈbɛtɝ/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "更好",
+        "english": "Healed or recovered from an injury or illness.",
+        "examples": [
+          {
+            "english": "I have nothing better to do.",
+            "chinese": "我没有其他更好的事情去做。"
+          }
+        ]
+      },
+      {
+        "word": "better",
+        "uk_ipa": "/ˈbɛt.ə/",
+        "us_ipa": "/ˈbɛtɝ/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "不如",
+        "english": "comparative of the adverb well",
+        "examples": [
+          {
+            "english": "It is better to do well than to say well.",
+            "chinese": "說的好不如做的好"
+          }
+        ]
+      }
+    ],
+    "cause": [
+      {
+        "word": "cause",
+        "uk_ipa": "/kɔz/",
+        "us_ipa": "/ˈkɑz/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "原因",
+        "english": "(countable, often with of, typically of adverse results) The source of, or reason for, an event or action; that which produces or effects a result.",
+        "examples": [
+          {
+            "english": "The cause of the fire is not known.",
+            "chinese": "起火原因不明。"
+          }
+        ]
+      }
+    ],
+    "child": [
+      {
+        "word": "child",
+        "uk_ipa": "/t͡ʃaɪld/",
+        "us_ipa": "/ˈtʃaɪld/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "小孩",
+        "english": "(with possessive) One's direct descendant by birth, regardless of age; one's offspring; a son or daughter.",
+        "examples": [
+          {
+            "english": "The burglar shut the child in the closet.",
+            "chinese": "強盗把小孩關在了衣櫃裏。"
+          }
+        ]
+      }
+    ],
+    "city": [
+      {
+        "word": "city",
+        "uk_ipa": "/sɪtɪ/",
+        "us_ipa": "/ˈsɪti/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "城市",
+        "english": "A large settlement, bigger than a town; sometimes with a specific legal definition, depending on the place.",
+        "examples": [
+          {
+            "english": "How many schools are there in your city?",
+            "chinese": "你們城市有多少個學校？"
+          }
+        ]
+      }
+    ],
+    "course": [
+      {
+        "word": "course",
+        "uk_ipa": "/koəs/",
+        "us_ipa": "/ˈkɔɹs/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "課程",
+        "english": "(education) A learning programme",
+        "examples": [
+          {
+            "english": "This course will help you master correct pronunciation.",
+            "chinese": "這個課程能幫助你掌握正確發音。"
+          }
+        ]
+      }
+    ],
+    "decide": [
+      {
+        "word": "decide",
+        "uk_ipa": "/dɪˈsaɪd/",
+        "us_ipa": "/dɪˈsaɪd/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "决定",
+        "english": "(ambitransitive) To resolve (a contest, problem, dispute, etc.); to choose, determine, or settle.",
+        "examples": [
+          {
+            "english": "It is up to you to decide whether we will go there or not.",
+            "chinese": "该由你来决定我們去不去那儿。"
+          }
+        ]
+      }
+    ],
+    "dream": [
+      {
+        "word": "dream",
+        "uk_ipa": "/dɹiːm/",
+        "us_ipa": "/ˈdɹim/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "夢見",
+        "english": "(intransitive) To see imaginary events in one's mind while sleeping.",
+        "examples": [
+          {
+            "english": "I sometimes dream of my mother.",
+            "chinese": "有時我夢見我的母親。"
+          }
+        ]
+      },
+      {
+        "word": "dream",
+        "uk_ipa": "/dɹiːm/",
+        "us_ipa": "/ˈdɹim/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "夢想",
+        "english": "Imaginary events seen in the mind while sleeping.",
+        "examples": [
+          {
+            "english": "Do you ever dream about flying through the sky?",
+            "chinese": "你曾經夢想在天空飛翔嗎？"
+          }
+        ]
+      }
+    ],
+    "eat": [
+      {
+        "word": "eat",
+        "uk_ipa": "/it/",
+        "us_ipa": "/ˈit/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "吃饭",
+        "english": "To ingest; to be ingested.",
+        "examples": [
+          {
+            "english": "You shouldn't eat here.",
+            "chinese": "你不该在這里吃饭。"
+          }
+        ]
+      }
+    ],
+    "education": [
+      {
+        "word": "education",
+        "uk_ipa": "/ˌɛd.jʊˈkeɪ.ʃən/",
+        "us_ipa": "/ɛdʒʌˈkeɪʃʌn/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "教育",
+        "english": "The process of imparting knowledge, skill and judgment.",
+        "examples": [
+          {
+            "english": "If you think education is expensive, wait till you see what ignorance costs you.",
+            "chinese": "如果你認為教育是昂貴的, 那麼你等著看無知讓你付出的代價。"
+          }
+        ]
+      }
+    ],
+    "future": [
+      {
+        "word": "future",
+        "uk_ipa": "/ˈfju.t͡ʃɚ/",
+        "us_ipa": "/ˈfjutʃɝ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "未来",
+        "english": "The time ahead; those moments yet to be experienced.",
+        "examples": [
+          {
+            "english": "Tell me about your program for the future.",
+            "chinese": "給我谈谈你未来的计划。"
+          }
+        ]
+      }
+    ],
+    "help": [
+      {
+        "word": "help",
+        "uk_ipa": "/hɛlp/",
+        "us_ipa": "/ˈhɛlp/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "帮",
+        "english": "(transitive) To provide assistance to (someone or something).",
+        "examples": [
+          {
+            "english": "There's quite a lot of things to do; do you want some help?",
+            "chinese": "有很多事情要做。你需要我帮忙嗎？"
+          }
+        ]
+      },
+      {
+        "word": "help",
+        "uk_ipa": "/hɛlp/",
+        "us_ipa": "/ˈhɛlp/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "救命",
+        "english": "Action given to provide assistance; aid.",
+        "examples": [
+          {
+            "english": "He heard someone calling for help.",
+            "chinese": "他聽到某人叫救命。"
+          }
+        ]
+      },
+      {
+        "word": "help",
+        "uk_ipa": "/hɛlp/",
+        "us_ipa": "/ˈhɛlp/",
+        "part_of_speech": "exclamation",
+        "countability": "",
+        "chinese": "救命",
+        "english": "A cry of distress or an urgent request for assistance.",
+        "examples": [
+          {
+            "english": "He heard someone calling for help.",
+            "chinese": "他聽到某人叫救命。"
+          }
+        ]
+      }
+    ],
+    "hope": [
+      {
+        "word": "hope",
+        "uk_ipa": "/həʊp/",
+        "us_ipa": "/ˈhoʊp/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "希望",
+        "english": "(countable, _, or, _, uncountable) The feeling of trust, confidence, belief or expectation that something wished for can or will happen.",
+        "examples": [
+          {
+            "english": "Hope is not a strategy.",
+            "chinese": "希望不是一種策略。"
+          }
+        ]
+      }
+    ],
+    "idea": [
+      {
+        "word": "idea",
+        "uk_ipa": "/aɪˈdi.ə/",
+        "us_ipa": "/aɪˈdiʌ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "主意",
+        "english": "An image of an object that is formed in the mind or recalled by the memory. [from 16th c.]",
+        "examples": [
+          {
+            "english": "That's a good idea!",
+            "chinese": "真是個好主意！"
+          }
+        ]
+      }
+    ],
+    "miss": [
+      {
+        "word": "miss",
+        "uk_ipa": "/mɪs/",
+        "us_ipa": "/ˈmɪs/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "小姐",
+        "english": "(often disparaging or sarcastic) Used in a mock title to point out some quality, or alleged quality, of a girl or woman.",
+        "examples": [
+          {
+            "english": "Miss Ito made her students work hard.",
+            "chinese": "伊藤小姐要她的學生們努力學習。"
+          }
+        ]
+      }
+    ],
+    "morning": [
+      {
+        "word": "morning",
+        "uk_ipa": "/mɔːnɪŋ/",
+        "us_ipa": "/ˈmɔɹnɪŋ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "早上",
+        "english": "The early part of the day, especially from midnight to noon. [from 13th c.]",
+        "examples": [
+          {
+            "english": "Back in high school, I got up at 6 a.m. every morning.",
+            "chinese": "以前讀高中的時候﹐我每天早上六點起床。"
+          }
+        ]
+      }
+    ],
+    "music": [
+      {
+        "word": "music",
+        "uk_ipa": "/ˈmjuzɪk/",
+        "us_ipa": "/ˈmjuzɪk/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "音樂",
+        "english": "A series of sounds organized in time, usually employing some combination of harmony, melody, rhythm, tempo, etc., often to convey a mood.",
+        "examples": [
+          {
+            "english": "I cheered myself up by listening to music.",
+            "chinese": "我藉由聽音樂來鼓舞我自己。"
+          }
+        ]
+      }
+    ],
+    "off": [
+      {
+        "word": "off",
+        "uk_ipa": "/ɑf/",
+        "us_ipa": "/ˈɔf/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "離開",
+        "english": "(predicative, _, only) Inoperative, disabled.",
+        "examples": [
+          {
+            "english": "Get off the lawn!",
+            "chinese": "離開草坪!"
+          }
+        ]
+      },
+      {
+        "word": "off",
+        "uk_ipa": "/ɑf/",
+        "us_ipa": "/ˈɔf/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "出",
+        "english": "In a direction away from the speaker or other reference point.",
+        "examples": [
+          {
+            "english": "I shouldn't have logged off.",
+            "chinese": "我不该退出的。"
+          }
+        ]
+      }
+    ],
+    "only": [
+      {
+        "word": "only",
+        "uk_ipa": "/(w)ɵnˈli/",
+        "us_ipa": "/ˈoʊnli/",
+        "part_of_speech": "adverb",
+        "countability": "",
+        "chinese": "只有",
+        "english": "Without others or anything further; exclusively.",
+        "examples": [
+          {
+            "english": "The only useful answers are those that raise new questions.",
+            "chinese": "只有能提出新問題的回答才是有用的回答。"
+          }
+        ]
+      }
+    ],
+    "our": [
+      {
+        "word": "our",
+        "uk_ipa": "/aʊ(ə)ɹ/",
+        "us_ipa": "/ˈaʊɝ/",
+        "part_of_speech": "determiner",
+        "countability": "",
+        "chinese": "我們的",
+        "english": "Belonging to us, excluding the person(s) being addressed (exclusive our).",
+        "examples": [
+          {
+            "english": "You ought to have come to our party.",
+            "chinese": "你應該到我們的派對的。"
+          }
+        ]
+      }
+    ],
+    "plan": [
+      {
+        "word": "plan",
+        "uk_ipa": "/plæn/",
+        "us_ipa": "/ˈplæn/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "计划",
+        "english": "A set of intended actions, usually mutually related, through which one expects to achieve a goal.",
+        "examples": [
+          {
+            "english": "You must go through with your plan.",
+            "chinese": "你必须按照你的计划行事。"
+          }
+        ]
+      }
+    ],
+    "possible": [
+      {
+        "word": "possible",
+        "uk_ipa": "/ˈpɑ.sə.bl̩/",
+        "us_ipa": "/ˈpɑsʌbʌl/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "可能",
+        "english": "(usually, not comparable) Able but not certain to happen; neither inevitable nor impossible.",
+        "examples": [
+          {
+            "english": "She's asking how that's possible.",
+            "chinese": "她問這怎麼可能。"
+          }
+        ]
+      }
+    ],
+    "problem": [
+      {
+        "word": "problem",
+        "uk_ipa": "/-ɪm/<a:RP><q:dated>",
+        "us_ipa": "/ˈpɹɑblʌm/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "難題",
+        "english": "A difficulty that has to be resolved or dealt with.",
+        "examples": [
+          {
+            "english": "He's thinking about this difficult problem.",
+            "chinese": "他正在思考這個難題。"
+          }
+        ]
+      }
+    ],
+    "speak": [
+      {
+        "word": "speak",
+        "uk_ipa": "/spik/",
+        "us_ipa": "/ˈspik/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "說話",
+        "english": "(intransitive) To communicate with one's voice, to say words out loud.",
+        "examples": [
+          {
+            "english": "Since Mario lied to me, I don't speak to him anymore.",
+            "chinese": "自從马里奥對我撒了谎，我就再也不跟他說話了。"
+          }
+        ]
+      }
+    ],
+    "table": [
+      {
+        "word": "table",
+        "uk_ipa": "/ˈteɪbl̩/",
+        "us_ipa": "/ˈteɪbʌl/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "桌子",
+        "english": "An item of furniture with a flat top surface raised above the ground, usually on one or more legs.",
+        "examples": [
+          {
+            "english": "Could we have a table outside?",
+            "chinese": "我們在外面可以有一張桌子嗎？"
+          }
+        ]
+      }
+    ],
+    "thought": [
+      {
+        "word": "thought",
+        "uk_ipa": "/θoːt/",
+        "us_ipa": "/ˈθɔt/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "chinese": "思维",
+        "english": "A representation created in the mind without the use of one's faculties of vision, sound, smell, touch, or taste; an instance of thinking.",
+        "examples": [
+          {
+            "english": "He puts a lot of thought into how he thinks.",
+            "chinese": "他對自己的思维方式進行著很多思考。"
+          }
+        ]
+      }
+    ],
+    "understand": [
+      {
+        "word": "understand",
+        "uk_ipa": "/əɳɖə(r)ˈsʈaɳɖ/",
+        "us_ipa": "/ʌndɝˈstænd/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "明白",
+        "english": "(transitive, intransitive, of communication or means of communication: words, statements, signs, etc.) To know the meaning of; to parse or have parsed correctly; to comprehend.",
+        "examples": [
+          {
+            "english": "To be surprised, to wonder, is to begin to understand.",
+            "chinese": "感到惊讶、感到惊奇就是明白的開始。"
+          }
+        ]
+      }
+    ],
+    "war": [
+      {
+        "word": "war",
+        "uk_ipa": "/wɑ(r)/<a:father-bother>",
+        "us_ipa": "/ˈwɔɹ/",
+        "part_of_speech": "noun",
+        "countability": "C or U",
+        "chinese": "戰爭",
+        "english": "Organized, large-scale, armed conflict between countries or between national, ethnic, or other sizeable groups, usually but not always involving active engagement of military forces.",
+        "examples": [
+          {
+            "english": "A nuclear war will bring about the destruction of mankind.",
+            "chinese": "核戰爭將會為人類帶來滅亡。"
+          }
+        ]
+      }
+    ],
+    "among": [
+      {
+        "word": "among",
+        "uk_ipa": "/əˈmɒŋ/",
+        "us_ipa": "/ʌˈmʌŋ/",
+        "part_of_speech": "preposition",
+        "countability": "",
+        "chinese": "中",
+        "english": "Denotes a mingling or intermixing with distinct or separable objects. (See Usage Note at amidst.)",
+        "examples": [
+          {
+            "english": "Bees are flying among the flowers.",
+            "chinese": "蜜蜂在花丛中飞行。"
+          }
+        ]
+      }
+    ],
+    "carry": [
+      {
+        "word": "carry",
+        "uk_ipa": "/ˈkeɹ.i/",
+        "us_ipa": "/ˈkæɹi/",
+        "part_of_speech": "verb",
+        "countability": "",
+        "chinese": "带",
+        "english": "(transitive) To lift (something) and take it to another place; to transport (something) by lifting.",
+        "examples": [
+          {
+            "english": "Can I carry this on the plane?",
+            "chinese": "我能把這個東西带到飞機上嗎？"
+          }
+        ]
+      }
+    ],
+    "drop": [
+      {
+        "word": "drop",
+        "uk_ipa": "/dɹɑp/",
+        "us_ipa": "/ˈdɹɑp/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "滴",
+        "english": "(also, figuratively) A small quantity of liquid, just large enough to hold its own round shape through surface tension, especially one that falls from a source of liquid.",
+        "examples": [
+          {
+            "english": "We have not had a single drop of rain for two weeks.",
+            "chinese": "這兩個禮拜一滴雨也沒下過。"
+          }
+        ]
+      }
+    ],
+    "large": [
+      {
+        "word": "large",
+        "uk_ipa": "/læɹd͡ʒ/",
+        "us_ipa": "/ˈlɑɹdʒ/",
+        "part_of_speech": "adjective",
+        "countability": "",
+        "chinese": "大",
+        "english": "Of considerable or relatively great size or extent.",
+        "examples": [
+          {
+            "english": "Kyoto is not as large as Osaka.",
+            "chinese": "京都不如大阪大。"
+          }
+        ]
+      }
+    ],
+    "letter": [
+      {
+        "word": "letter",
+        "uk_ipa": "/ˈletə/",
+        "us_ipa": "/ˈlɛtɝ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "字母",
+        "english": "A symbol in an alphabet.",
+        "examples": [
+          {
+            "english": "In this secret code, each number stands for a letter of the alphabet.",
+            "chinese": "在這個密码里，每個數字取代了一個字母。"
+          }
+        ]
+      }
+    ],
+    "river": [
+      {
+        "word": "river",
+        "uk_ipa": "/ˈɹɪvə/",
+        "us_ipa": "/ˈɹɪvɝ/",
+        "part_of_speech": "noun",
+        "countability": "",
+        "chinese": "川",
+        "english": "A large and often winding stream which drains a land mass, carrying water down from higher areas to a lower point, oftentimes ending in another body of water, such as an ocean or in an inland sea.",
+        "examples": [
+          {
+            "english": "It is very important for us to love a river.",
+            "chinese": "對於我們來說愛惜河川是很重要的。"
+          }
+        ]
+      }
+    ]
+  }
+}

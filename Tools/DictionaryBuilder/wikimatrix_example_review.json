@@ -1,0 +1,2896 @@
+{
+  "source": "WikiMatrix v1 English-Chinese scored TSV",
+  "license": "CC BY-SA 4.0",
+  "automatic_filters": {
+    "minimum_alignment_score": 1.08,
+    "minimum_chinese_similarity": 0.55,
+    "minimum_chinese_sequence_similarity": 0.5,
+    "minimum_back_translation_similarity": 0.65,
+    "proper_nouns_excluded": true,
+    "learning_sentence_surface_filter": true
+  },
+  "review_count": 120,
+  "approved_count": 85,
+  "reviews": [
+    {
+      "entry_id": 252,
+      "word": "acceptable",
+      "part_of_speech": "adjective",
+      "chinese": "可接受的",
+      "english": "Worthy, decent, sure of being accepted or received with at least moderate pleasure.",
+      "example": {
+        "english": "Women's prayer groups were an early and socially acceptable form of women's organization.",
+        "chinese": "妇女祈祷团体是妇女组织的一个早期和社会可接受的形式。",
+        "source": "WikiMatrix v1",
+        "source_line": 1577,
+        "alignment_score": 1.12209483
+      },
+      "matched_definition_term": "可接受的",
+      "quality": {
+        "chinese_similarity": 0.636364,
+        "chinese_sequence_similarity": 0.541667,
+        "back_translation_similarity": 0.875,
+        "machine_chinese": "妇女祈祷团体是早期的、社会可以接受的妇女组织形式。",
+        "back_translation": "The Women ' s Prayer Group is an early and socially acceptable form of women ' s organizations."
+      },
+      "decision": "rejected",
+      "review_note": "Chinese sentence is grammatically awkward."
+    },
+    {
+      "entry_id": 311,
+      "word": "accurate",
+      "part_of_speech": "adjective",
+      "chinese": "准确",
+      "english": "Telling the truth or giving a true result; exact; not defective or faulty",
+      "example": {
+        "english": "Technical writing must be accurate.",
+        "chinese": "技术写作必须准确。",
+        "source": "WikiMatrix v1",
+        "source_line": 596,
+        "alignment_score": 1.13144007
+      },
+      "matched_definition_term": "准确",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "技术写作必须准确。",
+        "back_translation": "Technical writing must be accurate."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 626,
+      "word": "affluence",
+      "part_of_speech": "noun",
+      "chinese": "财富",
+      "english": "An abundance of wealth.",
+      "example": {
+        "english": "Other studies give particular attention to resource depletion and increased world affluence.",
+        "chinese": "其它研究特别关注资源枯竭和世界财富增加。",
+        "source": "WikiMatrix v1",
+        "source_line": 53623,
+        "alignment_score": 1.08502074
+      },
+      "matched_definition_term": "财富",
+      "quality": {
+        "chinese_similarity": 0.722222,
+        "chinese_sequence_similarity": 0.894737,
+        "back_translation_similarity": 0.7,
+        "machine_chinese": "其他研究特别注意资源枯竭和世界财富增加。",
+        "back_translation": "Other studies have paid particular attention to resource depletion and the increase in world wealth."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 823,
+      "word": "albanian",
+      "part_of_speech": "noun",
+      "chinese": "阿尔巴尼亚人",
+      "english": "A native or inhabitant of Albania; a person of Albanian citizenship or nationality and their descendants. [from 1569?]",
+      "example": {
+        "english": "Albanians are another major ethnic group in the region.",
+        "chinese": "阿尔巴尼亚人是该地区的另一主要族群。",
+        "source": "WikiMatrix v1",
+        "source_line": 50871,
+        "alignment_score": 1.0856754
+      },
+      "matched_definition_term": "阿尔巴尼亚人",
+      "quality": {
+        "chinese_similarity": 0.705882,
+        "chinese_sequence_similarity": 0.888889,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "阿尔巴尼亚人是该地区另一个主要族裔群体。",
+        "back_translation": "Albanians are another major ethnic group in the region."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 1125,
+      "word": "amend",
+      "part_of_speech": "verb",
+      "chinese": "修改",
+      "english": "(transitive) To make a formal alteration (in legislation, a report, etc.) by adding, deleting, or rephrasing.",
+      "example": {
+        "english": "She was able to amend laws and other legal issues.",
+        "chinese": "她有權力修改法律和其他法律問題。",
+        "source": "WikiMatrix v1",
+        "source_line": 4609,
+        "alignment_score": 1.1115022
+      },
+      "matched_definition_term": "修改",
+      "quality": {
+        "chinese_similarity": 0.56,
+        "chinese_sequence_similarity": 0.758621,
+        "back_translation_similarity": 0.833333,
+        "machine_chinese": "她能够修正法律和其他法律问题。",
+        "back_translation": "She has the right to amend laws and other legal issues."
+      },
+      "decision": "rejected",
+      "review_note": "The coordinated object is semantically unnatural."
+    },
+    {
+      "entry_id": 1355,
+      "word": "animal rights",
+      "part_of_speech": "noun",
+      "chinese": "动物权利",
+      "english": "Certain fundamental rights that animals are entitled to, such as the right to be spared undue suffering.",
+      "example": {
+        "english": "Animal rights activists say they are not looking for the practice to end overnight.",
+        "chinese": "动物权利活动人士说，他们不指望一夜之间就结束这种行为。",
+        "source": "WikiMatrix v1",
+        "source_line": 2658,
+        "alignment_score": 1.11685301
+      },
+      "matched_definition_term": "動物权利",
+      "quality": {
+        "chinese_similarity": 0.608696,
+        "chinese_sequence_similarity": 0.75,
+        "back_translation_similarity": 0.75,
+        "machine_chinese": "动物权利活动家说,他们不想在一夜之间结束这种做法。",
+        "back_translation": "Animal rights activists say that they do not expect to end this act overnight."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 1459,
+      "word": "anthropology",
+      "part_of_speech": "noun",
+      "chinese": "人類學",
+      "english": "The scientific study of humans, systematically describing the ethnographic, linguistic, archaeological, and evolutionary dimensions of humanity using a holistic methodological framework.",
+      "example": {
+        "english": "One major problem in the anthropology of religion is the definition of religion itself.",
+        "chinese": "宗教人類學的一個主要問題是宗教本身的定義。",
+        "source": "WikiMatrix v1",
+        "source_line": 54264,
+        "alignment_score": 1.08488203
+      },
+      "matched_definition_term": "人類學",
+      "quality": {
+        "chinese_similarity": 0.833333,
+        "chinese_sequence_similarity": 0.9,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "宗教人类学的一个主要问题是宗教本身的定义。",
+        "back_translation": "One of the main issues of religious anthropology is the definition of religion itself."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 1467,
+      "word": "anti-semitism",
+      "part_of_speech": "noun",
+      "chinese": "反犹太主义",
+      "english": "(narrower sense) Prejudice, discrimination, hostility or political or religious opposition directed against ethnic or religious Jews or against Judaism; antijudaism; judeophobia.",
+      "example": {
+        "english": "She was interested in religious persecution and early modern anti-Semitism.",
+        "chinese": "她对宗教迫害和早期现代反犹太主义兴趣浓厚。",
+        "source": "WikiMatrix v1",
+        "source_line": 2271,
+        "alignment_score": 1.11827432
+      },
+      "matched_definition_term": "反犹太主义",
+      "quality": {
+        "chinese_similarity": 0.789474,
+        "chinese_sequence_similarity": 0.9,
+        "back_translation_similarity": 0.923077,
+        "machine_chinese": "她对宗教迫害和早期的现代反犹太主义感兴趣。",
+        "back_translation": "She has a strong interest in religious persecution and early modern anti-Semitism."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 1751,
+      "word": "archaeology",
+      "part_of_speech": "noun",
+      "chinese": "考古学",
+      "english": "The study of the past by excavation and analysis of its material remains.",
+      "example": {
+        "english": "The principal areas of research and development are energy, nanotechnology, archaeology and medicine.",
+        "chinese": "研究和开发的主要领域是能源， 纳米技术 ， 考古学和医学。",
+        "source": "WikiMatrix v1",
+        "source_line": 72832,
+        "alignment_score": 1.08116641
+      },
+      "matched_definition_term": "考古學",
+      "quality": {
+        "chinese_similarity": 0.818182,
+        "chinese_sequence_similarity": 0.913043,
+        "back_translation_similarity": 0.875,
+        "machine_chinese": "研究与发展的主要领域是能源、纳米技术、考古学和医学。",
+        "back_translation": "The main areas of research and development are energy, nanotechnology, archaeology and medicine."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 1863,
+      "word": "armed forces",
+      "part_of_speech": "noun",
+      "chinese": "武装部队",
+      "english": "The military forces of a nation, such as the army, navy, air force, marines, and sometimes, coastguard or border guard, which are tasked with the defence of the nation and its citizens, if necessary through use of deadly force.",
+      "example": {
+        "english": "The armed forces were claimed to attack unarmed students.",
+        "chinese": "武装部队据称袭击了手无寸铁的学生。",
+        "source": "WikiMatrix v1",
+        "source_line": 18139,
+        "alignment_score": 1.09744001
+      },
+      "matched_definition_term": "武装部队",
+      "quality": {
+        "chinese_similarity": 0.866667,
+        "chinese_sequence_similarity": 0.875,
+        "back_translation_similarity": 0.833333,
+        "machine_chinese": "据称武装部队袭击了手无寸铁的学生。",
+        "back_translation": "Armed forces allegedly attacked unarmed students."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 2166,
+      "word": "asymmetric",
+      "part_of_speech": "adjective",
+      "chinese": "不对称",
+      "english": "Not symmetric.",
+      "example": {
+        "english": "This method of asymmetric synthesis is economically most desirable.",
+        "chinese": "这种不对称合成的方法是经济最可取的。",
+        "source": "WikiMatrix v1",
+        "source_line": 57161,
+        "alignment_score": 1.08425069
+      },
+      "matched_definition_term": "不對称",
+      "quality": {
+        "chinese_similarity": 0.5625,
+        "chinese_sequence_similarity": 0.823529,
+        "back_translation_similarity": 0.833333,
+        "machine_chinese": "这种不对称合成方法在经济上最为可取。",
+        "back_translation": "This asymmetric synthesis approach is the most economically desirable."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 2424,
+      "word": "automation",
+      "part_of_speech": "noun",
+      "chinese": "自动化",
+      "english": "The act or process of converting the controlling of a machine or device to a more automatic system, such as computer or electronic controls.",
+      "example": {
+        "english": "The institute also provides consultation on the use of automation and robotics in industry.",
+        "chinese": "这个研究所也为工业自动化和机器人的使用提供咨询。",
+        "source": "WikiMatrix v1",
+        "source_line": 31329,
+        "alignment_score": 1.09145542
+      },
+      "matched_definition_term": "自動化",
+      "quality": {
+        "chinese_similarity": 0.622222,
+        "chinese_sequence_similarity": 0.723404,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "研究所还就工业中使用自动化和机器人的问题提供咨询。",
+        "back_translation": "The Institute also provides advice on industrial automation and robotics."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 2588,
+      "word": "backpack",
+      "part_of_speech": "noun",
+      "chinese": "背包",
+      "english": "A knapsack, sometimes mounted on a light frame, but always supported by straps, worn on a person’s back for the purpose of carrying things, especially when hiking, or on a student's back when carrying books.",
+      "example": {
+        "english": "Murray had owned a black backpack.",
+        "chinese": "穆雷曾拥有一个黑色背包。",
+        "source": "WikiMatrix v1",
+        "source_line": 5305,
+        "alignment_score": 1.11016846
+      },
+      "matched_definition_term": "背包",
+      "quality": {
+        "chinese_similarity": 0.823529,
+        "chinese_sequence_similarity": 0.842105,
+        "back_translation_similarity": 0.888889,
+        "machine_chinese": "Murray拥有一个黑色背包",
+        "back_translation": "Murray used to own a black backpack."
+      },
+      "decision": "rejected",
+      "review_note": "Unnecessary biographical proper-name example."
+    },
+    {
+      "entry_id": 2971,
+      "word": "battlefield",
+      "part_of_speech": "noun",
+      "chinese": "战场",
+      "english": "The area where a land battle is fought, which may not necessarily be a field.",
+      "example": {
+        "english": "Josephine helped wounded men on the battlefield.",
+        "chinese": "约瑟芬在战场上帮助伤员。",
+        "source": "WikiMatrix v1",
+        "source_line": 64343,
+        "alignment_score": 1.08274532
+      },
+      "matched_definition_term": "战场",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 0.888889,
+        "machine_chinese": "约瑟芬在战场上帮助伤员",
+        "back_translation": "Josephine helped the wounded on the battlefield."
+      },
+      "decision": "rejected",
+      "review_note": "Unnecessary biographical proper-name example."
+    },
+    {
+      "entry_id": 3481,
+      "word": "biodiversity",
+      "part_of_speech": "noun",
+      "chinese": "生物多样性",
+      "english": "(ecology) The diversity (number and variety of species) of plant and animal life within a region.",
+      "example": {
+        "english": "These people have replaced biodiversity with language.",
+        "chinese": "這些人用語言取代了生物多樣性。",
+        "source": "WikiMatrix v1",
+        "source_line": 3518,
+        "alignment_score": 1.1141076
+      },
+      "matched_definition_term": "生物多樣性",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 0.727273,
+        "machine_chinese": "这些人用语言取代了生物多样性。",
+        "back_translation": "These people have replaced biological diversity with language."
+      },
+      "decision": "rejected",
+      "review_note": "Sentence is unnatural and unsuitable for a learner dictionary."
+    },
+    {
+      "entry_id": 4376,
+      "word": "broadcasting",
+      "part_of_speech": "noun",
+      "chinese": "廣播",
+      "english": "(business) The business or profession of radio and television.",
+      "example": {
+        "english": "For generations they operated their own newspapers and broadcasting association.",
+        "chinese": "几代人一直在经营自己的报纸和广播协会。",
+        "source": "WikiMatrix v1",
+        "source_line": 6544,
+        "alignment_score": 1.10802886
+      },
+      "matched_definition_term": "廣播",
+      "quality": {
+        "chinese_similarity": 0.742857,
+        "chinese_sequence_similarity": 0.810811,
+        "back_translation_similarity": 0.833333,
+        "machine_chinese": "几代人以来,他们经营自己的报纸和广播协会。",
+        "back_translation": "Generations have been running their own newspapers and broadcasting associations."
+      },
+      "decision": "rejected",
+      "review_note": "Uses the word only inside an organization name."
+    },
+    {
+      "entry_id": 4979,
+      "word": "campaign",
+      "part_of_speech": "noun",
+      "chinese": "活动",
+      "english": "A series of operations undertaken to achieve a set goal.",
+      "example": {
+        "english": "In the actual electoral campaign, however, the new policy was not consistent.",
+        "chinese": "然而，在实际的竞选活动中，新政策并不一致。",
+        "source": "WikiMatrix v1",
+        "source_line": 47416,
+        "alignment_score": 1.08654223
+      },
+      "matched_definition_term": "活動",
+      "quality": {
+        "chinese_similarity": 0.8125,
+        "chinese_sequence_similarity": 0.941176,
+        "back_translation_similarity": 0.923077,
+        "machine_chinese": "然而,在实际竞选活动中,新政策不一致。",
+        "back_translation": "However, in actual campaigning, the new policy is not consistent."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 5551,
+      "word": "central bank",
+      "part_of_speech": "noun",
+      "chinese": "中央银行",
+      "english": "(banking) The principal monetary authority of a polity or monetary union; it normally regulates the supply of money, issues currency and controls interest rates. It usually oversees banking activity within its country's borders.",
+      "example": {
+        "english": "The world's oldest central bank.",
+        "chinese": "世界上最古老的中央银行。",
+        "source": "WikiMatrix v1",
+        "source_line": 8722,
+        "alignment_score": 1.10507963
+      },
+      "matched_definition_term": "中央银行",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 0.75,
+        "machine_chinese": "世界上最古老的中央银行",
+        "back_translation": "The oldest central bank in the world."
+      },
+      "decision": "rejected",
+      "review_note": "English sentence is a fragment."
+    },
+    {
+      "entry_id": 6204,
+      "word": "civil society",
+      "part_of_speech": "noun",
+      "chinese": "公民社会",
+      "english": "All of the institutions, voluntary organizations and corporate bodies that are less than the state but greater than the family. [from 19th c.]",
+      "example": {
+        "english": "Khatami's definition of civil society and freedom has been also subject to criticisms.",
+        "chinese": "哈塔米对公民社会和自由的定义也受到批评。",
+        "source": "WikiMatrix v1",
+        "source_line": 3883,
+        "alignment_score": 1.1132041
+      },
+      "matched_definition_term": "公民社會",
+      "quality": {
+        "chinese_similarity": 0.727273,
+        "chinese_sequence_similarity": 0.857143,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "Khatami对民间社会和自由的定义也受到批评。",
+        "back_translation": "The definition of civil society and freedoms in Khatami has also been criticized."
+      },
+      "decision": "rejected",
+      "review_note": "Unnecessary biographical proper-name example."
+    },
+    {
+      "entry_id": 6733,
+      "word": "comic book",
+      "part_of_speech": "noun",
+      "chinese": "漫画",
+      "english": "(comics) A book or magazine that uses sequences of drawings to narrate a story or a series of stories, primarily in a serialized form, usually fiction.",
+      "example": {
+        "english": "Certain comic book heroes use magic words to activate their powers.",
+        "chinese": "某些漫画书中的英雄使用魔法词来激活他们的超能力。",
+        "source": "WikiMatrix v1",
+        "source_line": 47289,
+        "alignment_score": 1.08657409
+      },
+      "matched_definition_term": "漫画",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.829268,
+        "back_translation_similarity": 0.888889,
+        "machine_chinese": "某些漫画英雄用魔法词来激活他们的力量",
+        "back_translation": "Some of the heroes in comic books use magic words to activate their powers."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 6834,
+      "word": "communicate",
+      "part_of_speech": "verb",
+      "chinese": "傳達；告知",
+      "english": "(transitive) To impart or transmit (information or knowledge) to someone; to make known, to tell. [from 16th c.]",
+      "example": {
+        "english": "They do not know how to communicate their ideas to caregivers or others.",
+        "chinese": "他們不知道如何將他們的想法傳達給照料者或其他人。",
+        "source": "WikiMatrix v1",
+        "source_line": 14833,
+        "alignment_score": 1.09955276
+      },
+      "matched_definition_term": "傳達",
+      "quality": {
+        "chinese_similarity": 0.571429,
+        "chinese_sequence_similarity": 0.577778,
+        "back_translation_similarity": 0.833333,
+        "machine_chinese": "他们不知道如何向照顾者或其他人传达自己的想法。",
+        "back_translation": "They do not know how to convey their ideas to caregivers or others."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 7092,
+      "word": "conflict",
+      "part_of_speech": "noun",
+      "chinese": "冲突的",
+      "english": "An incompatibility, as of two things that cannot be simultaneously fulfilled.",
+      "example": {
+        "english": "It also calls for external guarantees to eventual political settlements of these conflicts.",
+        "chinese": "它还呼吁为这些冲突的最终政治解决提供外部保证。",
+        "source": "WikiMatrix v1",
+        "source_line": 8903,
+        "alignment_score": 1.10485104
+      },
+      "matched_definition_term": "冲突的",
+      "quality": {
+        "chinese_similarity": 0.780488,
+        "chinese_sequence_similarity": 0.744186,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "它还呼吁为最终政治解决这些冲突提供外部保障。",
+        "back_translation": "It also called for external assurances for the final political settlement of those conflicts."
+      },
+      "decision": "rejected",
+      "review_note": "Local Chinese definition has the wrong adjectival form."
+    },
+    {
+      "entry_id": 7147,
+      "word": "connotation",
+      "part_of_speech": "noun",
+      "chinese": "含义",
+      "english": "(semantics) A meaning of a word or phrase that is suggested or implied, as opposed to a denotation, or literal meaning. A characteristic of words or phrases, or of the contexts that words and phrases are used in.",
+      "example": {
+        "english": "This imagery is sometimes considered to have a sexual connotation.",
+        "chinese": "这一图像有时被认为具有性含义。",
+        "source": "WikiMatrix v1",
+        "source_line": 57778,
+        "alignment_score": 1.08411832
+      },
+      "matched_definition_term": "含义",
+      "quality": {
+        "chinese_similarity": 0.846154,
+        "chinese_sequence_similarity": 0.928571,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "这种图像有时被认为具有性含义。",
+        "back_translation": "This image is sometimes considered to have sexual connotations."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 7257,
+      "word": "contamination",
+      "part_of_speech": "noun",
+      "chinese": "污染",
+      "english": "The act or process of contaminating.",
+      "example": {
+        "english": "The different collection systems can result in different levels of contamination.",
+        "chinese": "不同的收集系统会导致不同的污染水平。",
+        "source": "WikiMatrix v1",
+        "source_line": 64430,
+        "alignment_score": 1.08272647
+      },
+      "matched_definition_term": "污染",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.8,
+        "back_translation_similarity": 0.714286,
+        "machine_chinese": "不同的收集系统可能导致不同程度的污染。",
+        "back_translation": "Different collection systems can lead to different levels of pollution."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 7487,
+      "word": "coronation",
+      "part_of_speech": "noun",
+      "chinese": "加冕",
+      "english": "(specifically, also, attributively) An act or the ceremony of formally investing a sovereign or the sovereign's consort with a crown and other insignia of royalty, on or shortly after their accession to the sovereignty.",
+      "example": {
+        "english": "She arranged her son's funeral and her grandson's coronation.",
+        "chinese": "玛格丽特安排了儿子的葬礼和孙子的加冕礼。",
+        "source": "WikiMatrix v1",
+        "source_line": 13682,
+        "alignment_score": 1.10038425
+      },
+      "matched_definition_term": "加冕",
+      "quality": {
+        "chinese_similarity": 0.625,
+        "chinese_sequence_similarity": 0.722222,
+        "back_translation_similarity": 0.727273,
+        "machine_chinese": "她安排她儿子的葬礼和孙子的加冕仪式",
+        "back_translation": "Margaret arranged for his son's funeral and grandkids' coronation."
+      },
+      "decision": "rejected",
+      "review_note": "Chinese sentence adds a person name absent from the English."
+    },
+    {
+      "entry_id": 8581,
+      "word": "deem",
+      "part_of_speech": "verb",
+      "chinese": "认为",
+      "english": "(ditransitive) To hold in belief or estimation; to adjudge as a conclusion; to regard as being; to evaluate according to one's beliefs; to account.",
+      "example": {
+        "english": "Stuttgart could carry only two aircraft, however, which was deemed insufficient for fleet support.",
+        "chinese": "然而，斯图加特号只能搭载两架飞机，这被认为不足以为舰队提供支援。",
+        "source": "WikiMatrix v1",
+        "source_line": 9289,
+        "alignment_score": 1.10443194
+      },
+      "matched_definition_term": "認為",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.821429,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "然而,斯图加特只能运载两架飞机,这被认为不足以提供机队支助。",
+        "back_translation": "However, the Stuttgart was only able to carry two aircraft, which was considered insufficient to provide support to the fleet."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 8746,
+      "word": "demolition",
+      "part_of_speech": "noun",
+      "chinese": "拆除",
+      "english": "The process of demolishing or destroying buildings or other structures.",
+      "example": {
+        "english": "Local historians, archaeologists, and architects agreed to the monastery's demolition, although reluctantly.",
+        "chinese": "当地历史学家、考古学家和建筑师同意拆除修道院，尽管不情愿。",
+        "source": "WikiMatrix v1",
+        "source_line": 22228,
+        "alignment_score": 1.09526362
+      },
+      "matched_definition_term": "拆除",
+      "quality": {
+        "chinese_similarity": 0.84,
+        "chinese_sequence_similarity": 0.836364,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "当地历史学家、考古学家和建筑师同意拆除修道院,尽管他们勉强同意。",
+        "back_translation": "Local historians, archaeologists and architects agreed, albeit reluctantly, to dismantle the monastery."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 8799,
+      "word": "deny",
+      "part_of_speech": "verb",
+      "chinese": "拒绝",
+      "english": "To disclaim connection with, responsibility for, etc.; to refuse to acknowledge; to disown; to abjure; to disavow.",
+      "example": {
+        "english": "All requests were denied or went unanswered.",
+        "chinese": "但所有要求均被拒绝或没有得到答复。",
+        "source": "WikiMatrix v1",
+        "source_line": 37362,
+        "alignment_score": 1.08937841
+      },
+      "matched_definition_term": "拒绝",
+      "quality": {
+        "chinese_similarity": 0.827586,
+        "chinese_sequence_similarity": 0.903226,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "所有请求均被拒绝或没有得到答复。",
+        "back_translation": "All requests were denied or answered."
+      },
+      "decision": "rejected",
+      "review_note": "Example uses the refusal sense, not the exact local sense."
+    },
+    {
+      "entry_id": 9391,
+      "word": "distribute",
+      "part_of_speech": "verb",
+      "chinese": "分配；分發",
+      "english": "(transitive) To divide into portions and dispense.",
+      "example": {
+        "english": "However, overall balance may involve compartments distributed on a global scale.",
+        "chinese": "但是，总体平衡可能涉及在全球范围内分发的隔间。",
+        "source": "WikiMatrix v1",
+        "source_line": 2859,
+        "alignment_score": 1.11621137
+      },
+      "matched_definition_term": "分發",
+      "quality": {
+        "chinese_similarity": 0.717949,
+        "chinese_sequence_similarity": 0.829268,
+        "back_translation_similarity": 0.777778,
+        "machine_chinese": "然而,总体平衡可能涉及在全球范围分布的隔间。",
+        "back_translation": "However, the overall balance may involve a gap in distribution on a global scale."
+      },
+      "decision": "rejected",
+      "review_note": "Example uses distributed as spread rather than divide and dispense."
+    },
+    {
+      "entry_id": 9475,
+      "word": "dock",
+      "part_of_speech": "noun",
+      "chinese": "码头",
+      "english": "(US, nautical) A fixed structure attached to shore to which a vessel is secured when in port; usually for loading and unloading.",
+      "example": {
+        "english": "Civil authorities closed all schools and docks in potentially affected areas.",
+        "chinese": "民政部门关闭了可能受影响地区的所有学校和码头。",
+        "source": "WikiMatrix v1",
+        "source_line": 24465,
+        "alignment_score": 1.09422188
+      },
+      "matched_definition_term": "码頭",
+      "quality": {
+        "chinese_similarity": 0.714286,
+        "chinese_sequence_similarity": 0.818182,
+        "back_translation_similarity": 0.888889,
+        "machine_chinese": "民政当局关闭了潜在受影响地区的所有学校和码头。",
+        "back_translation": "Civil affairs closed all schools and docks in potentially affected areas."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 9540,
+      "word": "domestic violence",
+      "part_of_speech": "noun",
+      "chinese": "家庭暴力",
+      "english": "Violence between members of a household, such as spouses.",
+      "example": {
+        "english": "Pizzey is still actively working to help victims of domestic violence.",
+        "chinese": "派齐仍在积极努力帮助家庭暴力受害者。",
+        "source": "WikiMatrix v1",
+        "source_line": 37246,
+        "alignment_score": 1.08941368
+      },
+      "matched_definition_term": "家庭暴力",
+      "quality": {
+        "chinese_similarity": 0.733333,
+        "chinese_sequence_similarity": 0.8125,
+        "back_translation_similarity": 0.875,
+        "machine_chinese": "皮泽仍在积极帮助家庭暴力受害者。",
+        "back_translation": "Pycsi is still actively working to help victims of domestic violence."
+      },
+      "decision": "rejected",
+      "review_note": "Unnecessary biographical proper-name example."
+    },
+    {
+      "entry_id": 9838,
+      "word": "drug",
+      "part_of_speech": "noun",
+      "chinese": "药物",
+      "english": "(pharmacology) A substance used to treat an illness, relieve a symptom, or modify a chemical process in the body for a specific purpose.",
+      "example": {
+        "english": "She said that the drug improved her mood and increased her appetite.",
+        "chinese": "她说，药物改善了她的情绪，并增加了她的胃口。",
+        "source": "WikiMatrix v1",
+        "source_line": 1254,
+        "alignment_score": 1.12434163
+      },
+      "matched_definition_term": "药物",
+      "quality": {
+        "chinese_similarity": 0.6875,
+        "chinese_sequence_similarity": 0.842105,
+        "back_translation_similarity": 0.833333,
+        "machine_chinese": "她说,该药物改善了她的情绪,增加了她的食欲。",
+        "back_translation": "She said that the medication had improved her mood and increased her appetite."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 9863,
+      "word": "dry ice",
+      "part_of_speech": "noun",
+      "chinese": "乾冰",
+      "english": "Carbon dioxide frozen in the solid state, used especially as a cooling agent and for the production of fog-like special effects. It sublimes at −78.5 °C (−109.3 °F) at normal atmospheric pressure.",
+      "example": {
+        "english": "Dry ice is the solid form of carbon dioxide.",
+        "chinese": "乾冰是二氧化碳的固体形式。",
+        "source": "WikiMatrix v1",
+        "source_line": 56983,
+        "alignment_score": 1.08428838
+      },
+      "matched_definition_term": "乾冰",
+      "quality": {
+        "chinese_similarity": 0.727273,
+        "chinese_sequence_similarity": 0.833333,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "干冰是二氧化碳的固态形式。",
+        "back_translation": "Dry ice is a solid form of carbon dioxide."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 9937,
+      "word": "durable",
+      "part_of_speech": "adjective",
+      "chinese": "持久",
+      "english": "Able to resist wear or decay; lasting; enduring.",
+      "example": {
+        "english": "Since scientific knowledge is usually durable, this occurs much less commonly than modification.",
+        "chinese": "由于科学知识通常是持久的，发生这种情况通常比修改要少得多。",
+        "source": "WikiMatrix v1",
+        "source_line": 23635,
+        "alignment_score": 1.09462253
+      },
+      "matched_definition_term": "持久",
+      "quality": {
+        "chinese_similarity": 0.693878,
+        "chinese_sequence_similarity": 0.807692,
+        "back_translation_similarity": 0.818182,
+        "machine_chinese": "由于科学知识通常可以持久,因此,这种情况比修改要少得多。",
+        "back_translation": "Since scientific knowledge is usually sustainable, this often occurs much less than with modifications."
+      },
+      "decision": "rejected",
+      "review_note": "Sentence depends on missing context and the translation is awkward."
+    },
+    {
+      "entry_id": 10312,
+      "word": "electromagnetic",
+      "part_of_speech": "adjective",
+      "chinese": "电磁",
+      "english": "Relating to electromagnetism.",
+      "example": {
+        "english": "Other researchers also investigated electromagnetic isotope separation.",
+        "chinese": "其他研究人员也对电磁同位素分离进行了调查。",
+        "source": "WikiMatrix v1",
+        "source_line": 35828,
+        "alignment_score": 1.08986082
+      },
+      "matched_definition_term": "電磁",
+      "quality": {
+        "chinese_similarity": 0.742857,
+        "chinese_sequence_similarity": 0.756757,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "其他研究人员也调查了电磁同位素分离。",
+        "back_translation": "Other researchers also investigated the separation of electromagnetic isotopes."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 10470,
+      "word": "enable",
+      "part_of_speech": "verb",
+      "chinese": "能够",
+      "english": "To make somebody able (to do, or to be, something); to give sufficient ability or power to do or to be; to give strength or ability to.",
+      "example": {
+        "english": "This enabled scientists to isolate genes from an organism's genome.",
+        "chinese": "这使科学家能够从一个生物体的基因组中分离出基因。",
+        "source": "WikiMatrix v1",
+        "source_line": 33668,
+        "alignment_score": 1.09059849
+      },
+      "matched_definition_term": "能够",
+      "quality": {
+        "chinese_similarity": 0.615385,
+        "chinese_sequence_similarity": 0.790698,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "科学家们因此能够从生物基因组中分离出基因。",
+        "back_translation": "This allows scientists to isolate genes from the genome of a organism."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 10497,
+      "word": "encrypt",
+      "part_of_speech": "verb",
+      "chinese": "加密",
+      "english": "To conceal information by means of a code or cipher.",
+      "example": {
+        "english": "Apart from that, encrypting the content protects the copyrights of the producers and distributors.",
+        "chinese": "除此之外，加密内容保护了分销商和制片商的版权。",
+        "source": "WikiMatrix v1",
+        "source_line": 65934,
+        "alignment_score": 1.08243842
+      },
+      "matched_definition_term": "加密",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.731707,
+        "back_translation_similarity": 0.714286,
+        "machine_chinese": "除此之外,加密内容保护生产者和经销商的版权。",
+        "back_translation": "In addition, encryption content protects copyrights of distributors and producers."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 10839,
+      "word": "estimate",
+      "part_of_speech": "verb",
+      "chinese": "认为",
+      "english": "To calculate roughly, often from imperfect data.",
+      "example": {
+        "english": "Today many mainstream historians concur that this estimate is exaggerated.",
+        "chinese": "今天，许多主流历史学家认为这一估计被夸大了。",
+        "source": "WikiMatrix v1",
+        "source_line": 44978,
+        "alignment_score": 1.08717628
+      },
+      "matched_definition_term": "認為",
+      "quality": {
+        "chinese_similarity": 0.894737,
+        "chinese_sequence_similarity": 0.95,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "今天,许多主流历史学家都认为这一估计被夸大。",
+        "back_translation": "Today, many mainstream historians believe that this estimate has been exaggerated."
+      },
+      "decision": "rejected",
+      "review_note": "Example contains estimate as a noun, not the target verb."
+    },
+    {
+      "entry_id": 10856,
+      "word": "ethanol",
+      "part_of_speech": "noun",
+      "chinese": "乙醇",
+      "english": "(organic compound) A simple aliphatic alcohol formally derived from ethane by replacing one hydrogen atom with a hydroxyl group: CH3-CH2-OH.",
+      "example": {
+        "english": "Pure ethanol will irritate the skin and eyes.",
+        "chinese": "純乙醇會刺激皮膚和眼睛。",
+        "source": "WikiMatrix v1",
+        "source_line": 43020,
+        "alignment_score": 1.08771489
+      },
+      "matched_definition_term": "乙醇",
+      "quality": {
+        "chinese_similarity": 0.7,
+        "chinese_sequence_similarity": 0.818182,
+        "back_translation_similarity": 0.727273,
+        "machine_chinese": "纯乙醇会刺激皮肤和眼睛",
+        "back_translation": "Pure ethanol stimulates skin and eyes."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 10880,
+      "word": "ethylene",
+      "part_of_speech": "noun",
+      "chinese": "乙烯",
+      "english": "(organic compound) The common name for the organic chemical compound ethene. The simplest alkene, a colorless gaseous (at room temperature and pressure) hydrocarbon with the chemical formula C2H4.",
+      "example": {
+        "english": "Removal of ethylene may reduce disease and spoilage in all berries.",
+        "chinese": "去除乙烯可以減少所有莓果中的疾病和腐敗。",
+        "source": "WikiMatrix v1",
+        "source_line": 58746,
+        "alignment_score": 1.08390199
+      },
+      "matched_definition_term": "乙烯",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.789474,
+        "back_translation_similarity": 0.75,
+        "machine_chinese": "消除乙烯可以减少所有浆果中的疾病和腐坏。",
+        "back_translation": "The removal of ethylene can reduce disease and corruption in all berries."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 11034,
+      "word": "exaggerate",
+      "part_of_speech": "verb",
+      "chinese": "夸大",
+      "english": "To overstate, to describe more than the fact.",
+      "example": {
+        "english": "Today many mainstream historians concur that this estimate is exaggerated.",
+        "chinese": "今天，许多主流历史学家认为这一估计被夸大了。",
+        "source": "WikiMatrix v1",
+        "source_line": 44978,
+        "alignment_score": 1.08717628
+      },
+      "matched_definition_term": "夸大",
+      "quality": {
+        "chinese_similarity": 0.894737,
+        "chinese_sequence_similarity": 0.95,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "今天,许多主流历史学家都认为这一估计被夸大。",
+        "back_translation": "Today, many mainstream historians believe that this estimate has been exaggerated."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 11584,
+      "word": "feasibility",
+      "part_of_speech": "noun",
+      "chinese": "可行性",
+      "english": "The state of being feasible or possible.",
+      "example": {
+        "english": "These have been developed to a conceptual level to confirm their feasibility.",
+        "chinese": "这些已经发展到一个概念水平，以确认其可行性。",
+        "source": "WikiMatrix v1",
+        "source_line": 2743,
+        "alignment_score": 1.11660928
+      },
+      "matched_definition_term": "可行性",
+      "quality": {
+        "chinese_similarity": 0.631579,
+        "chinese_sequence_similarity": 0.8,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "这些建议已经发展到概念层面,以确认其可行性。",
+        "back_translation": "These have developed to a conceptual level to confirm their feasibility."
+      },
+      "decision": "rejected",
+      "review_note": "Sentence depends on an unresolved antecedent."
+    },
+    {
+      "entry_id": 12460,
+      "word": "fortress",
+      "part_of_speech": "noun",
+      "chinese": "要塞",
+      "english": "A fortified place; a large and permanent fortification, sometimes including a town; for example a fort, a castle; a stronghold; a place of defense or security.",
+      "example": {
+        "english": "They built many temples, cities and fortresses.",
+        "chinese": "他们建造了许多寺庙，城市和要塞。",
+        "source": "WikiMatrix v1",
+        "source_line": 16836,
+        "alignment_score": 1.09822896
+      },
+      "matched_definition_term": "要塞",
+      "quality": {
+        "chinese_similarity": 0.846154,
+        "chinese_sequence_similarity": 0.857143,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "他们建造了许多寺庙、城市和堡垒。",
+        "back_translation": "They have built many temples, cities and forts."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 13066,
+      "word": "gasoline",
+      "part_of_speech": "noun",
+      "chinese": "汽油",
+      "english": "(uncountable, North America) A flammable liquid consisting of a mixture of refined petroleum hydrocarbons, mainly used as a motor fuel; petrol.",
+      "example": {
+        "english": "It can be used in unmodified gasoline engines.",
+        "chinese": "它可用于未改造的汽油发动机。",
+        "source": "WikiMatrix v1",
+        "source_line": 6562,
+        "alignment_score": 1.10799965
+      },
+      "matched_definition_term": "汽油",
+      "quality": {
+        "chinese_similarity": 0.615385,
+        "chinese_sequence_similarity": 0.857143,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "它可以用于未经改装的汽油发动机。",
+        "back_translation": "It can be used for unmodified gasoline engines."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 13762,
+      "word": "graduation",
+      "part_of_speech": "noun",
+      "chinese": "畢業典禮",
+      "english": "(sciences) A marking (e.g., on a container) indicating a measurement on a scale, usually one of many such markings.",
+      "example": {
+        "english": "On the day of graduation, everyone is assigned a career.",
+        "chinese": "畢業典禮當天，每個人都被分配職業。",
+        "source": "WikiMatrix v1",
+        "source_line": 74933,
+        "alignment_score": 1.08078387
+      },
+      "matched_definition_term": "畢業典禮",
+      "quality": {
+        "chinese_similarity": 0.551724,
+        "chinese_sequence_similarity": 0.709677,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "毕业当天,每个人都被分配到职业生涯。",
+        "back_translation": "On the day of graduation, everyone was assigned to a job."
+      },
+      "decision": "rejected",
+      "review_note": "Example is the ceremony sense, not the measurement-mark sense."
+    },
+    {
+      "entry_id": 14367,
+      "word": "handicapped",
+      "part_of_speech": "adjective",
+      "chinese": "残疾人",
+      "english": "(sometimes considered, _, offensive) Having a handicap.",
+      "example": {
+        "english": "They began efforts to reform prisons and care for the handicapped and mentally ill.",
+        "chinese": "他们开始努力改革监狱和照顾残疾人和精神病的疗养院。",
+        "source": "WikiMatrix v1",
+        "source_line": 55747,
+        "alignment_score": 1.08455226
+      },
+      "matched_definition_term": "残疾人",
+      "quality": {
+        "chinese_similarity": 0.790698,
+        "chinese_sequence_similarity": 0.844444,
+        "back_translation_similarity": 0.705882,
+        "machine_chinese": "他们开始努力改革监狱和照顾残疾和精神病患者。",
+        "back_translation": "They began their efforts to reform prisons and nursing homes for the disabled and for the mentally ill."
+      },
+      "decision": "rejected",
+      "review_note": "Example uses handicapped as a substantive plural, not an adjective."
+    },
+    {
+      "entry_id": 14702,
+      "word": "heavy water",
+      "part_of_speech": "noun",
+      "chinese": "重水",
+      "english": "(inorganic compound) Water containing deuterium instead of normal hydrogen (protium) (thus, ²H₂O); used as a moderator in nuclear reactors.",
+      "example": {
+        "english": "Since then, it has also operated two heavy water reactors to produce tritium.",
+        "chinese": "从那时起，它还运营两家重水反应堆生产氚。",
+        "source": "WikiMatrix v1",
+        "source_line": 16086,
+        "alignment_score": 1.09869236
+      },
+      "matched_definition_term": "重水",
+      "quality": {
+        "chinese_similarity": 0.5625,
+        "chinese_sequence_similarity": 0.705882,
+        "back_translation_similarity": 0.842105,
+        "machine_chinese": "此后,它还运营了两个重水反应堆,生产。",
+        "back_translation": "Since then, it has operated two heavy water reactors for the production of tritium."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 14929,
+      "word": "higher education",
+      "part_of_speech": "noun",
+      "chinese": "高等教育",
+      "english": "Education at a university level or beyond.",
+      "example": {
+        "english": "Indian higher education is in need of radical reforms.",
+        "chinese": "印度高等教育正需要激進的改革。",
+        "source": "WikiMatrix v1",
+        "source_line": 4404,
+        "alignment_score": 1.11197239
+      },
+      "matched_definition_term": "高等教育",
+      "quality": {
+        "chinese_similarity": 0.583333,
+        "chinese_sequence_similarity": 0.769231,
+        "back_translation_similarity": 0.833333,
+        "machine_chinese": "印度高等教育需要彻底改革。",
+        "back_translation": "India ' s higher education is in need of radical reform."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 15123,
+      "word": "homemaker",
+      "part_of_speech": "noun",
+      "chinese": "家庭主妇",
+      "english": "(US, Australia) A person who maintains the administration and upkeep of his or her residence, especially one who is not employed outside the home; one who runs the household.",
+      "example": {
+        "english": "Her mother was a homemaker and a computer analyst and is now retired.",
+        "chinese": "她的母亲是一名家庭主妇和电脑分析师，现已退休。",
+        "source": "WikiMatrix v1",
+        "source_line": 11021,
+        "alignment_score": 1.10271868
+      },
+      "matched_definition_term": "家庭主妇",
+      "quality": {
+        "chinese_similarity": 0.717949,
+        "chinese_sequence_similarity": 0.829268,
+        "back_translation_similarity": 0.727273,
+        "machine_chinese": "她的母亲是家庭主妇和计算机分析师,现已退休。",
+        "back_translation": "Her mother, a housewife and computer analyst, had retired."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 15383,
+      "word": "human rights",
+      "part_of_speech": "noun",
+      "chinese": "人权",
+      "english": "(international law) The set of basic rights and freedoms that all humans should be guaranteed, including the right to life and liberty, freedom of thought and expression, and equality before the law.",
+      "example": {
+        "english": "He has done work in human rights and other areas.",
+        "chinese": "他在人权和其他领域做过工作。",
+        "source": "WikiMatrix v1",
+        "source_line": 4052,
+        "alignment_score": 1.11277842
+      },
+      "matched_definition_term": "人权",
+      "quality": {
+        "chinese_similarity": 0.833333,
+        "chinese_sequence_similarity": 0.923077,
+        "back_translation_similarity": 0.727273,
+        "machine_chinese": "他在人权和其他领域做了工作。",
+        "back_translation": "He has worked in human rights and other fields."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 15634,
+      "word": "ideal gas",
+      "part_of_speech": "noun",
+      "chinese": "理想气体",
+      "english": "(physics) a hypothetical gas, whose molecules exhibit no interaction, and undergo elastic collision with each other and with the walls of the container",
+      "example": {
+        "english": "In an ideal gas the particles are assumed to interact only through collisions.",
+        "chinese": "在一理想氣體中，假設粒子只通過碰撞來相互作用。",
+        "source": "WikiMatrix v1",
+        "source_line": 62582,
+        "alignment_score": 1.08309749
+      },
+      "matched_definition_term": "理想氣體",
+      "quality": {
+        "chinese_similarity": 0.648649,
+        "chinese_sequence_similarity": 0.871795,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "在理想气体中,粒子只能通过碰撞相互作用。",
+        "back_translation": "In an ideal gas, hypothetical particles interact only by collision."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 15909,
+      "word": "inadequate",
+      "part_of_speech": "adjective",
+      "chinese": "不够",
+      "english": "Not adequate; lacking in quality or quantity required; insufficient for a purpose.",
+      "example": {
+        "english": "The design of the station has been criticised as inadequate.",
+        "chinese": "车站的设计被批评为不够充分。",
+        "source": "WikiMatrix v1",
+        "source_line": 8967,
+        "alignment_score": 1.10477474
+      },
+      "matched_definition_term": "不够",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.769231,
+        "back_translation_similarity": 0.75,
+        "machine_chinese": "电视台的设计被批评为不充分。",
+        "back_translation": "The station design was criticized as inadequate."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 16054,
+      "word": "industrial",
+      "part_of_speech": "adjective",
+      "chinese": "产业",
+      "english": "Of or relating to industry, notably manufacturing.",
+      "example": {
+        "english": "His main research interests are in public choice and industrial economics.",
+        "chinese": "其主要研究兴趣在公共选择和产业经济。",
+        "source": "WikiMatrix v1",
+        "source_line": 46561,
+        "alignment_score": 1.08675978
+      },
+      "matched_definition_term": "產業",
+      "quality": {
+        "chinese_similarity": 0.571429,
+        "chinese_sequence_similarity": 0.756757,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "他的主要研究兴趣在于公众选择和工业经济学。",
+        "back_translation": "Its main research interests are in public choice and industrial economy."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 16161,
+      "word": "inherit",
+      "part_of_speech": "verb",
+      "chinese": "继承",
+      "english": "(transitive) To receive (property, a title, etc.), by legal succession or bequest after the previous owner's death.",
+      "example": {
+        "english": "Koniecpolski inherited some seven or eight villages from his father.",
+        "chinese": "科涅茨波尔斯基从他父亲那里继承约七八个村庄。",
+        "source": "WikiMatrix v1",
+        "source_line": 1361,
+        "alignment_score": 1.12354551
+      },
+      "matched_definition_term": "继承",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.742857,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "Koniecpolski从他父亲那里继承了七八个村庄。",
+        "back_translation": "Konetspolski inherited some seven or eight villages from his father."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 16305,
+      "word": "intellectual property",
+      "part_of_speech": "noun",
+      "chinese": "知识产权",
+      "english": "(copyright law, uncountable) A kind of property that includes intangible creations of the human intellect, such as patents, copyrights, and trademarks.",
+      "example": {
+        "english": "It also offered intellectual property protection and maritime law services.",
+        "chinese": "它还提供知识产权保护和海事法服务。",
+        "source": "WikiMatrix v1",
+        "source_line": 8211,
+        "alignment_score": 1.10572425
+      },
+      "matched_definition_term": "知識產权",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 0.875,
+        "machine_chinese": "它还提供知识产权保护和海事法服务。",
+        "back_translation": "It also provides intellectual property protection and maritime law services."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 16318,
+      "word": "intent",
+      "part_of_speech": "noun",
+      "chinese": "意图",
+      "english": "Something that is intended.",
+      "example": {
+        "english": "A war of aggression is a series of acts committed with a sustained intent.",
+        "chinese": "侵略战争是一系列具有持续意图的行为。",
+        "source": "WikiMatrix v1",
+        "source_line": 24285,
+        "alignment_score": 1.09430767
+      },
+      "matched_definition_term": "意图",
+      "quality": {
+        "chinese_similarity": 0.625,
+        "chinese_sequence_similarity": 0.705882,
+        "back_translation_similarity": 0.769231,
+        "machine_chinese": "侵略战争是持续意图实施的一系列行为。",
+        "back_translation": "The war of aggression is a series of acts of continuing intent."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 16580,
+      "word": "isotope",
+      "part_of_speech": "noun",
+      "chinese": "同位素",
+      "english": "(nuclear physics) Any of two or more forms of an element where the atoms have the same number of protons, but a different number of neutrons within their nuclei. Thus, isotopes have the same atomic number but a different mass number.",
+      "example": {
+        "english": "Other researchers also investigated electromagnetic isotope separation.",
+        "chinese": "其他研究人员也对电磁同位素分离进行了调查。",
+        "source": "WikiMatrix v1",
+        "source_line": 35828,
+        "alignment_score": 1.08986082
+      },
+      "matched_definition_term": "同位素",
+      "quality": {
+        "chinese_similarity": 0.742857,
+        "chinese_sequence_similarity": 0.756757,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "其他研究人员也调查了电磁同位素分离。",
+        "back_translation": "Other researchers also investigated the separation of electromagnetic isotopes."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 17995,
+      "word": "liberal",
+      "part_of_speech": "adjective",
+      "chinese": "自由主义",
+      "english": "Of or relating to the Liberal party, its membership, or its platform, policy, or viewpoint.",
+      "example": {
+        "english": "Matthiessen was well known for his support of liberal causes and progressive politics.",
+        "chinese": "马西森以其对自由主义事业和进步政治的支持而闻名。",
+        "source": "WikiMatrix v1",
+        "source_line": 53272,
+        "alignment_score": 1.08510674
+      },
+      "matched_definition_term": "自由主义",
+      "quality": {
+        "chinese_similarity": 0.564103,
+        "chinese_sequence_similarity": 0.731707,
+        "back_translation_similarity": 0.875,
+        "machine_chinese": "马提森以支持自由事业和进步政治而闻名。",
+        "back_translation": "Matheson is well known for his support for liberal causes and progressive politics."
+      },
+      "decision": "rejected",
+      "review_note": "Example is political liberalism, not the exact Liberal-party sense."
+    },
+    {
+      "entry_id": 18068,
+      "word": "lifetime",
+      "part_of_speech": "noun",
+      "chinese": "寿命",
+      "english": "The duration of the life of someone or something.",
+      "example": {
+        "english": "An important research area is devoted to extending this lifetime to technologically relevant timescales.",
+        "chinese": "一个重要的研究领域致力于将这一寿命延长到技术相关的时间尺度。",
+        "source": "WikiMatrix v1",
+        "source_line": 35647,
+        "alignment_score": 1.08991949
+      },
+      "matched_definition_term": "寿命",
+      "quality": {
+        "chinese_similarity": 0.714286,
+        "chinese_sequence_similarity": 0.827586,
+        "back_translation_similarity": 0.705882,
+        "machine_chinese": "一个重要的研究领域是将这一寿命期扩大到与技术相关的时间尺度。",
+        "back_translation": "An important area of research is dedicated to extending this lifetime to technology-related timescales."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 18456,
+      "word": "longevity",
+      "part_of_speech": "noun",
+      "chinese": "长寿",
+      "english": "The quality of being long-lasting, especially of life.",
+      "example": {
+        "english": "As for longevity, both use life expectancy at birth as indicator.",
+        "chinese": "至于长寿，两者都使用出生时的预期寿命作为指标。",
+        "source": "WikiMatrix v1",
+        "source_line": 8848,
+        "alignment_score": 1.1049075
+      },
+      "matched_definition_term": "長寿",
+      "quality": {
+        "chinese_similarity": 0.648649,
+        "chinese_sequence_similarity": 0.85,
+        "back_translation_similarity": 0.769231,
+        "machine_chinese": "至于寿命,两者都以出生时预期寿命作为指标。",
+        "back_translation": "As for longevity, life expectancy at birth is used as an indicator."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 18873,
+      "word": "maize",
+      "part_of_speech": "noun",
+      "chinese": "玉米",
+      "english": "Corn; a type of grain of the species Zea mays.",
+      "example": {
+        "english": "Security forces claim that opium fields are hidden among maize crops.",
+        "chinese": "安全部队声称鸦片田藏在玉米作物中。",
+        "source": "WikiMatrix v1",
+        "source_line": 38668,
+        "alignment_score": 1.08898033
+      },
+      "matched_definition_term": "玉米",
+      "quality": {
+        "chinese_similarity": 0.903226,
+        "chinese_sequence_similarity": 0.969697,
+        "back_translation_similarity": 0.941176,
+        "machine_chinese": "安全部队声称,鸦片田隐藏在玉米作物中。",
+        "back_translation": "Security forces claimed that opium fields were hidden in maize crops."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 19254,
+      "word": "massacre",
+      "part_of_speech": "noun",
+      "chinese": "大屠杀",
+      "english": "The killing of a considerable number (usually limited to people) where little or no resistance can be made, with indiscriminate violence, without necessity, and/or contrary to civilized norms.",
+      "example": {
+        "english": "The size of the massacre was unprecedented.",
+        "chinese": "这次大屠杀的规模是前所未有的。",
+        "source": "WikiMatrix v1",
+        "source_line": 5073,
+        "alignment_score": 1.11061379
+      },
+      "matched_definition_term": "大屠杀",
+      "quality": {
+        "chinese_similarity": 0.916667,
+        "chinese_sequence_similarity": 0.923077,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "大屠杀的规模是前所未有的。",
+        "back_translation": "The scale of the massacre was unprecedented."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 19364,
+      "word": "maze",
+      "part_of_speech": "noun",
+      "chinese": "迷宫",
+      "english": "A labyrinth; a puzzle consisting of a complicated network of paths or passages, the aim of which is to find one's way through.",
+      "example": {
+        "english": "Water mazes have been used to test discrimination learning and spatial learning abilities.",
+        "chinese": "水迷宫被用来测试辨别学习和空间学习能力。",
+        "source": "WikiMatrix v1",
+        "source_line": 65297,
+        "alignment_score": 1.08255956
+      },
+      "matched_definition_term": "迷宫",
+      "quality": {
+        "chinese_similarity": 0.823529,
+        "chinese_sequence_similarity": 0.894737,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "水迷宫被用来测试歧视学习和空间学习能力。",
+        "back_translation": "Water mazes are used to test learning and space learning capabilities."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 19427,
+      "word": "mechanics",
+      "part_of_speech": "noun",
+      "chinese": "力學",
+      "english": "(physics) The branch of physics that deals with the action of forces on material objects with mass",
+      "example": {
+        "english": "Together, soil and rock mechanics are the basis for solving many engineering geology problems.",
+        "chinese": "土壤和岩石力学一起是解决许多工程地质问题的基础。",
+        "source": "WikiMatrix v1",
+        "source_line": 64268,
+        "alignment_score": 1.0827575
+      },
+      "matched_definition_term": "力學",
+      "quality": {
+        "chinese_similarity": 0.619048,
+        "chinese_sequence_similarity": 0.772727,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "土壤和岩石力学共同解决了许多工程地质学问题。",
+        "back_translation": "Soil and rock mechanics together are the basis for resolving many engineering geological problems."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 19662,
+      "word": "methane",
+      "part_of_speech": "noun",
+      "chinese": "甲烷",
+      "english": "(organic compound, uncountable) The simplest aliphatic hydrocarbon, CH₄, being a constituent of natural gas, and one of the most abundant greenhouse gases.",
+      "example": {
+        "english": "New and more efficient ways to convert methane into methanol are also being developed.",
+        "chinese": "新的和更有效的将甲烷转化为甲醇的方法也正在被开发。",
+        "source": "WikiMatrix v1",
+        "source_line": 3060,
+        "alignment_score": 1.11545296
+      },
+      "matched_definition_term": "甲烷",
+      "quality": {
+        "chinese_similarity": 0.833333,
+        "chinese_sequence_similarity": 0.64,
+        "back_translation_similarity": 0.7,
+        "machine_chinese": "还将甲烷转化为甲醇的新的和更有效的方法也正在开发之中。",
+        "back_translation": "New and more effective methods of conversion of methane into methanol are also being developed."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 19663,
+      "word": "methanol",
+      "part_of_speech": "noun",
+      "chinese": "甲醇",
+      "english": "(organic compound) The simplest aliphatic alcohol, CH3OH; a colourless, toxic, inflammable liquid, used as a solvent, antifreeze, in the chemical industry, and in the preparation of methylated spirit.",
+      "example": {
+        "english": "New and more efficient ways to convert methane into methanol are also being developed.",
+        "chinese": "新的和更有效的将甲烷转化为甲醇的方法也正在被开发。",
+        "source": "WikiMatrix v1",
+        "source_line": 3060,
+        "alignment_score": 1.11545296
+      },
+      "matched_definition_term": "甲醇",
+      "quality": {
+        "chinese_similarity": 0.833333,
+        "chinese_sequence_similarity": 0.64,
+        "back_translation_similarity": 0.7,
+        "machine_chinese": "还将甲烷转化为甲醇的新的和更有效的方法也正在开发之中。",
+        "back_translation": "New and more effective methods of conversion of methane into methanol are also being developed."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 19709,
+      "word": "microbiology",
+      "part_of_speech": "noun",
+      "chinese": "微生物学",
+      "english": "(biology) The branch of biology that deals with microorganisms, especially their effects on man and other living organisms.",
+      "example": {
+        "english": "The branches of microbiology can be classified into pure and applied sciences.",
+        "chinese": "微生物学的分支可以分为纯科学和应用科学。",
+        "source": "WikiMatrix v1",
+        "source_line": 77328,
+        "alignment_score": 1.080365
+      },
+      "matched_definition_term": "微生物學",
+      "quality": {
+        "chinese_similarity": 0.909091,
+        "chinese_sequence_similarity": 0.972973,
+        "back_translation_similarity": 0.875,
+        "machine_chinese": "微生物学的分支可分为纯科学和应用科学。",
+        "back_translation": "The branch of microbiology can be divided into pure and applied sciences."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 19713,
+      "word": "microkernel",
+      "part_of_speech": "noun",
+      "chinese": "微内核",
+      "english": "(operating systems) A minimal operating system kernel offering basic mechanisms rather than abstract services.",
+      "example": {
+        "english": "These components abstract microkernel functions and support user applications.",
+        "chinese": "这些组件抽象微内核功能，和支持用户应用程序。",
+        "source": "WikiMatrix v1",
+        "source_line": 30848,
+        "alignment_score": 1.0916317
+      },
+      "matched_definition_term": "微内核",
+      "quality": {
+        "chinese_similarity": 0.761905,
+        "chinese_sequence_similarity": 0.863636,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "这些组成部分是抽象的微内核功能和支持用户应用程序。",
+        "back_translation": "These components are abstract microkernel functions and support user applications."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 19715,
+      "word": "microorganism",
+      "part_of_speech": "noun",
+      "chinese": "微生物",
+      "english": "(microbiology) An organism that is too small to be seen by the unaided eye; especially, a single-celled organism, such as a bacterium.",
+      "example": {
+        "english": "These reactive molecules contribute in the destruction process of the microorganisms.",
+        "chinese": "这些反应性分子有助于微生物的破坏过程。",
+        "source": "WikiMatrix v1",
+        "source_line": 37145,
+        "alignment_score": 1.08944478
+      },
+      "matched_definition_term": "微生物",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.8,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "这些活性分子有助于微生物的销毁过程。",
+        "back_translation": "These reactive elements contribute to the destruction process of microorganisms."
+      },
+      "decision": "rejected",
+      "review_note": "Chinese and English are both awkward for a learner example."
+    },
+    {
+      "entry_id": 20023,
+      "word": "modem",
+      "part_of_speech": "noun",
+      "chinese": "调制解调器",
+      "english": "(computing) A device that encodes digital computer signals into analog telephone signals and vice versa, allowing computers to communicate over a phone line.",
+      "example": {
+        "english": "However, a modem generally provides few other network functions.",
+        "chinese": "但是，调制解调器通常很少提供其他的网络功能。",
+        "source": "WikiMatrix v1",
+        "source_line": 78499,
+        "alignment_score": 1.08016387
+      },
+      "matched_definition_term": "调制解调器",
+      "quality": {
+        "chinese_similarity": 0.648649,
+        "chinese_sequence_similarity": 0.769231,
+        "back_translation_similarity": 0.75,
+        "machine_chinese": "然而,调制解调器通常提供很少其他网络功能。",
+        "back_translation": "However, modems often provide few other network functions."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 20031,
+      "word": "modernize",
+      "part_of_speech": "verb",
+      "chinese": "现代化",
+      "english": "(transitive) To make (something old or outdated) up to date, or modern in style or function by adding or changing equipment, designs, etc.",
+      "example": {
+        "english": "It was thought that this would modernize the country and globalize its economy.",
+        "chinese": "这被认为会使该国现代化，使其经济全球化。",
+        "source": "WikiMatrix v1",
+        "source_line": 7240,
+        "alignment_score": 1.10702329
+      },
+      "matched_definition_term": "現代化",
+      "quality": {
+        "chinese_similarity": 0.588235,
+        "chinese_sequence_similarity": 0.777778,
+        "back_translation_similarity": 0.727273,
+        "machine_chinese": "据认为,这将使国家现代化,使其经济全球化。",
+        "back_translation": "This is considered to modernize the country and globalize its economy."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 20104,
+      "word": "monarchy",
+      "part_of_speech": "noun",
+      "chinese": "君主制",
+      "english": "A government in which sovereignty is embodied within a single, today usually hereditary head of state (whether as a figurehead or as a powerful ruler).",
+      "example": {
+        "english": "The monarchy was its first victim.",
+        "chinese": "君主制是它的第一個受害者。",
+        "source": "WikiMatrix v1",
+        "source_line": 2105,
+        "alignment_score": 1.1190016
+      },
+      "matched_definition_term": "君主制",
+      "quality": {
+        "chinese_similarity": 0.6,
+        "chinese_sequence_similarity": 0.727273,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "君主制是其首个受害者。",
+        "back_translation": "Monarchy is its first victim."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 20105,
+      "word": "monastery",
+      "part_of_speech": "noun",
+      "chinese": "修道院",
+      "english": "A residence for monks or others who have taken religious vows.",
+      "example": {
+        "english": "The monastery was founded probably a few years before by the same king.",
+        "chinese": "修道院大概是几年前由同一个国王创立的。",
+        "source": "WikiMatrix v1",
+        "source_line": 36989,
+        "alignment_score": 1.08949295
+      },
+      "matched_definition_term": "修道院",
+      "quality": {
+        "chinese_similarity": 0.727273,
+        "chinese_sequence_similarity": 0.857143,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "修道院大概是几年前由同一位国王建的",
+        "back_translation": "The monastery was founded a few years ago by the same king."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 20434,
+      "word": "multimedia",
+      "part_of_speech": "noun",
+      "chinese": "多媒体",
+      "english": "The combined use of sound, video, and text to present an idea.",
+      "example": {
+        "english": "Graphics are one of the five key elements of multimedia technology.",
+        "chinese": "图形是多媒体技术的五个关键要素之一。",
+        "source": "WikiMatrix v1",
+        "source_line": 31673,
+        "alignment_score": 1.09133188
+      },
+      "matched_definition_term": "多媒體",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "图形是多媒体技术的五个关键要素之一。",
+        "back_translation": "Graphics are one of the five key elements of multimedia technology."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 20456,
+      "word": "municipality",
+      "part_of_speech": "noun",
+      "chinese": "市政當局",
+      "english": "A district with a government that typically encloses no other governed districts; a borough, city, or incorporated town or village.",
+      "example": {
+        "english": "The municipality operates eight public swimming pools.",
+        "chinese": "奥斯陆市政当局经营着八个公共游泳池。",
+        "source": "WikiMatrix v1",
+        "source_line": 31384,
+        "alignment_score": 1.09143771
+      },
+      "matched_definition_term": "市政當局",
+      "quality": {
+        "chinese_similarity": 0.592593,
+        "chinese_sequence_similarity": 0.758621,
+        "back_translation_similarity": 0.923077,
+        "machine_chinese": "市政府经营八个公共游泳池。",
+        "back_translation": "The Oslo municipality operates eight public swimming pools."
+      },
+      "decision": "rejected",
+      "review_note": "Chinese sentence adds Oslo, which is absent from the English."
+    },
+    {
+      "entry_id": 20489,
+      "word": "museology",
+      "part_of_speech": "noun",
+      "chinese": "博物馆学",
+      "english": "The design, organization, and management of museums.",
+      "example": {
+        "english": "Today is a tragic day for our country's museology.",
+        "chinese": "今天是我国博物馆学的悲惨日子。",
+        "source": "WikiMatrix v1",
+        "source_line": 7425,
+        "alignment_score": 1.10674762
+      },
+      "matched_definition_term": "博物馆學",
+      "quality": {
+        "chinese_similarity": 0.8,
+        "chinese_sequence_similarity": 0.888889,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "今天是我国博物馆学的悲剧日。",
+        "back_translation": "Today is a tragic day for our museum."
+      },
+      "decision": "rejected",
+      "review_note": "Sentence does not explain or naturally illustrate museology."
+    },
+    {
+      "entry_id": 20622,
+      "word": "nanotechnology",
+      "part_of_speech": "noun",
+      "chinese": "纳米技术",
+      "english": "The science and technology of creating nanoparticles and of manufacturing machines which have sizes within the range of nanometres (1–100 nm).",
+      "example": {
+        "english": "The principal areas of research and development are energy, nanotechnology, archaeology and medicine.",
+        "chinese": "研究和开发的主要领域是能源， 纳米技术 ， 考古学和医学。",
+        "source": "WikiMatrix v1",
+        "source_line": 72832,
+        "alignment_score": 1.08116641
+      },
+      "matched_definition_term": "纳米技术",
+      "quality": {
+        "chinese_similarity": 0.818182,
+        "chinese_sequence_similarity": 0.913043,
+        "back_translation_similarity": 0.875,
+        "machine_chinese": "研究与发展的主要领域是能源、纳米技术、考古学和医学。",
+        "back_translation": "The main areas of research and development are energy, nanotechnology, archaeology and medicine."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 20681,
+      "word": "national holiday",
+      "part_of_speech": "noun",
+      "chinese": "假日",
+      "english": "A public holiday.",
+      "example": {
+        "english": "The law does not specify the significance of this day as the national holiday.",
+        "chinese": "法律没有说明指定这一天为国定假日的意义。",
+        "source": "WikiMatrix v1",
+        "source_line": 30230,
+        "alignment_score": 1.09187043
+      },
+      "matched_definition_term": "假日",
+      "quality": {
+        "chinese_similarity": 0.588235,
+        "chinese_sequence_similarity": 0.777778,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "法律没有规定这一天作为国庆日的意义。",
+        "back_translation": "The law does not specify the significance of designating this date as a national holiday."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 20903,
+      "word": "neuroscience",
+      "part_of_speech": "noun",
+      "chinese": "神经科学",
+      "english": "The scientific study of the nervous system.",
+      "example": {
+        "english": "The latter combines neuroscience, economics, and psychology to study how we make choices.",
+        "chinese": "后者结合了神经科学、经济学和心理学研究我们如何作出选择。",
+        "source": "WikiMatrix v1",
+        "source_line": 27726,
+        "alignment_score": 1.0928459
+      },
+      "matched_definition_term": "神經科學",
+      "quality": {
+        "chinese_similarity": 0.938776,
+        "chinese_sequence_similarity": 0.980392,
+        "back_translation_similarity": 0.823529,
+        "machine_chinese": "后者结合神经科学、经济学和心理学,研究我们如何作出选择。",
+        "back_translation": "The latter combines neuroscience, economics and psychology to study how we choose."
+      },
+      "decision": "rejected",
+      "review_note": "English sentence is a fragment."
+    },
+    {
+      "entry_id": 21333,
+      "word": "nucleotide",
+      "part_of_speech": "noun",
+      "chinese": "核苷酸",
+      "english": "(biochemistry) The monomer constituting DNA or RNA biopolymer molecules. Each nucleotide consists of a nitrogenous heterocyclic base (or nucleobase), which can be either a double-ringed purine or a single-ringed pyrimidine; a five-carbon pentose sugar (deoxyribose in DNA or ribose in RNA); and a phosphate group.",
+      "example": {
+        "english": "Comparing and determining % difference between two nucleotide sequences.",
+        "chinese": "比较和确定两个核苷酸序列之间的％差异。",
+        "source": "WikiMatrix v1",
+        "source_line": 19203,
+        "alignment_score": 1.09683312
+      },
+      "matched_definition_term": "核苷酸",
+      "quality": {
+        "chinese_similarity": 0.628571,
+        "chinese_sequence_similarity": 0.810811,
+        "back_translation_similarity": 0.714286,
+        "machine_chinese": "比较和确定两种核核酸序列之间的百分比差异。",
+        "back_translation": "Compare and determine the % difference between the two nucleotide sequences."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 21711,
+      "word": "olive tree",
+      "part_of_speech": "noun",
+      "chinese": "橄榄树",
+      "english": "An evergreen tree, Olea europaea, that produces olives as fruit.",
+      "example": {
+        "english": "In front of the tower is now a symbolic peace olive tree.",
+        "chinese": "在塔前现在是一棵象征和平的橄榄树。",
+        "source": "WikiMatrix v1",
+        "source_line": 60385,
+        "alignment_score": 1.08355074
+      },
+      "matched_definition_term": "橄榄树",
+      "quality": {
+        "chinese_similarity": 0.827586,
+        "chinese_sequence_similarity": 0.903226,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "塔前现在是一个象征和平的橄榄树。",
+        "back_translation": "It is now an olive tree that symbolizes peace in front of the tower."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 22861,
+      "word": "peasant",
+      "part_of_speech": "noun",
+      "chinese": "农民",
+      "english": "(strategy games) A worker unit.",
+      "example": {
+        "english": "The beards of peasants were burned, their wives and daughters raped.",
+        "chinese": "农民的胡须被烧毁，他们的妻子和女儿被强奸。",
+        "source": "WikiMatrix v1",
+        "source_line": 13337,
+        "alignment_score": 1.10067211
+      },
+      "matched_definition_term": "农民",
+      "quality": {
+        "chinese_similarity": 0.6875,
+        "chinese_sequence_similarity": 0.823529,
+        "back_translation_similarity": 0.833333,
+        "machine_chinese": "农民的胡子被烧,妻子和女儿被强奸。",
+        "back_translation": "Farmers ' beards were burned and their wives and daughters were raped."
+      },
+      "decision": "rejected",
+      "review_note": "Example is an ordinary peasant, not the strategy-game unit sense."
+    },
+    {
+      "entry_id": 22862,
+      "word": "peat",
+      "part_of_speech": "noun",
+      "chinese": "泥炭",
+      "english": "Soil formed of dead but not fully decayed plants found in bog areas, often burned as fuel. [from 14th c.]",
+      "example": {
+        "english": "In the early time coal and peat were used to power these plants.",
+        "chinese": "在早期，煤炭和泥炭被用来驱动这些工厂。",
+        "source": "WikiMatrix v1",
+        "source_line": 27082,
+        "alignment_score": 1.09310891
+      },
+      "matched_definition_term": "泥炭",
+      "quality": {
+        "chinese_similarity": 0.588235,
+        "chinese_sequence_similarity": 0.666667,
+        "back_translation_similarity": 0.75,
+        "machine_chinese": "煤炭和泥炭早期被用来为这些工厂提供电力。",
+        "back_translation": "In the early years, coal and peat were used to drive these plants."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 23053,
+      "word": "period",
+      "part_of_speech": "noun",
+      "chinese": "期间",
+      "english": "The length of time during which the same characteristics of a periodic phenomenon recur, such as the repetition of a wave or the rotation of a planet. [from 17th c.]",
+      "example": {
+        "english": "However, during this period, it also experienced some degree of prosperity.",
+        "chinese": "然而，在此期间，它也经历了一定程度的繁荣。",
+        "source": "WikiMatrix v1",
+        "source_line": 1269,
+        "alignment_score": 1.12425171
+      },
+      "matched_definition_term": "期間",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 0.933333,
+        "machine_chinese": "然而,在此期间,它也经历了一定程度的繁荣。",
+        "back_translation": "However, it has also experienced a degree of prosperity during this period."
+      },
+      "decision": "rejected",
+      "review_note": "Example is a generic time span, not the periodic-cycle sense."
+    },
+    {
+      "entry_id": 23106,
+      "word": "persist",
+      "part_of_speech": "verb",
+      "chinese": "持续",
+      "english": "(intransitive) To continue to exist.",
+      "example": {
+        "english": "Threats of violence and lawsuits persisted.",
+        "chinese": "暴力和诉讼的威胁持续着。",
+        "source": "WikiMatrix v1",
+        "source_line": 17864,
+        "alignment_score": 1.09761727
+      },
+      "matched_definition_term": "持续",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.695652,
+        "back_translation_similarity": 0.75,
+        "machine_chinese": "暴力和诉讼的威胁依然存在。",
+        "back_translation": "The threat of violence and litigation persists."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 23153,
+      "word": "pesticide",
+      "part_of_speech": "noun",
+      "chinese": "农药",
+      "english": "Anything, especially a synthetic substance but also any substance (e.g. sulfur), or virus, bacterium, or other organism, which kills or suppresses the activities of pests.",
+      "example": {
+        "english": "Monocrotophos is principally used in agriculture, as a relatively cheap pesticide.",
+        "chinese": "久效磷主要用于农业,且是一个相对便宜的农药。",
+        "source": "WikiMatrix v1",
+        "source_line": 76644,
+        "alignment_score": 1.08047634
+      },
+      "matched_definition_term": "农药",
+      "quality": {
+        "chinese_similarity": 0.578947,
+        "chinese_sequence_similarity": 0.75,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "久效磷主要用于农业,作为一种相对廉价的农药。",
+        "back_translation": "Monocrotophos is used mainly in agriculture and is a relatively cheap pesticide."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 23295,
+      "word": "physiology",
+      "part_of_speech": "noun",
+      "chinese": "生理学",
+      "english": "A branch of biology that deals with the functions and activities of life or of living matter (as organs, tissues, or cells) and of the physical and chemical phenomena involved.",
+      "example": {
+        "english": "Physiology focuses on the systems and organs of the human body and their functions.",
+        "chinese": "生理学侧重于人体的系统和器官及其功能。",
+        "source": "WikiMatrix v1",
+        "source_line": 29320,
+        "alignment_score": 1.09222336
+      },
+      "matched_definition_term": "生理學",
+      "quality": {
+        "chinese_similarity": 0.628571,
+        "chinese_sequence_similarity": 0.789474,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "生理生理学的重点是人体的系统、器官及其功能。",
+        "back_translation": "Physiology focuses on the system and organs of the human body and their functioning."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 23569,
+      "word": "plankton",
+      "part_of_speech": "noun",
+      "chinese": "浮游生物",
+      "english": "Organisms, especially small and microscopic ones, that drift in water.",
+      "example": {
+        "english": "This scheme divides the plankton community into broad producer, consumer and recycler groups.",
+        "chinese": "该计划将浮游生物群落划分为广泛的生产者，消费者和回收者群体。",
+        "source": "WikiMatrix v1",
+        "source_line": 44970,
+        "alignment_score": 1.08717895
+      },
+      "matched_definition_term": "浮游生物",
+      "quality": {
+        "chinese_similarity": 0.821429,
+        "chinese_sequence_similarity": 0.896552,
+        "back_translation_similarity": 0.9,
+        "machine_chinese": "这项计划将浮游生物群落分为广泛的生产者、消费者和回收利用者群体。",
+        "back_translation": "The scheme divides plankton communities into a broad group of producers, consumers and recyclers."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 23685,
+      "word": "plunder",
+      "part_of_speech": "noun",
+      "chinese": "掠夺",
+      "english": "An instance of plundering.",
+      "example": {
+        "english": "Houses were plundered and livestock were stolen.",
+        "chinese": "房屋被掠夺，牲畜被盗。",
+        "source": "WikiMatrix v1",
+        "source_line": 56722,
+        "alignment_score": 1.08434669
+      },
+      "matched_definition_term": "掠夺",
+      "quality": {
+        "chinese_similarity": 0.875,
+        "chinese_sequence_similarity": 0.888889,
+        "back_translation_similarity": 0.75,
+        "machine_chinese": "房屋被掠夺,牲畜被偷。",
+        "back_translation": "Houses were looted and livestock stolen."
+      },
+      "decision": "rejected",
+      "review_note": "Example contains a verb, not the target noun sense."
+    },
+    {
+      "entry_id": 24001,
+      "word": "post",
+      "part_of_speech": "verb",
+      "chinese": "發布；發帖",
+      "english": "(Internet) To publish (a message) to a newsgroup, forum, blog, etc. [from 20th c.]",
+      "example": {
+        "english": "She is the only person who posts on her social media accounts.",
+        "chinese": "她是唯一一个在她的社交媒体上发布贴文的人。",
+        "source": "WikiMatrix v1",
+        "source_line": 36889,
+        "alignment_score": 1.08952745
+      },
+      "matched_definition_term": "發布",
+      "quality": {
+        "chinese_similarity": 0.555556,
+        "chinese_sequence_similarity": 0.736842,
+        "back_translation_similarity": 0.769231,
+        "machine_chinese": "她是唯一一个在社交媒体账户上任职的人。",
+        "back_translation": "She was the only one who posted post posts on her social media."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 24055,
+      "word": "pottery",
+      "part_of_speech": "noun",
+      "chinese": "陶器",
+      "english": "The potter's craft or art: making vessels from clay.",
+      "example": {
+        "english": "She can for example make cotton or pottery.",
+        "chinese": "例如她可以做棉花或陶器。",
+        "source": "WikiMatrix v1",
+        "source_line": 34762,
+        "alignment_score": 1.09021922
+      },
+      "matched_definition_term": "陶器",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "例如,她可以做棉花或陶器。",
+        "back_translation": "She can make cotton or pottery, for example."
+      },
+      "decision": "rejected",
+      "review_note": "The sentence and translation are semantically unnatural."
+    },
+    {
+      "entry_id": 24220,
+      "word": "present",
+      "part_of_speech": "verb",
+      "chinese": "提出",
+      "english": "(transitive) To put (something) forward in order for it to be seen; to show, exhibit. [from 14th c.]",
+      "example": {
+        "english": "For simplicity, the logics presented so far have been intuitionistic.",
+        "chinese": "为了简单性，迄今为止提出的逻辑都是直觉的。",
+        "source": "WikiMatrix v1",
+        "source_line": 12268,
+        "alignment_score": 1.10157741
+      },
+      "matched_definition_term": "提出",
+      "quality": {
+        "chinese_similarity": 0.564103,
+        "chinese_sequence_similarity": 0.731707,
+        "back_translation_similarity": 0.727273,
+        "machine_chinese": "为了简单起见,到目前为止提出的逻辑是直觉主义的。",
+        "back_translation": "The logic presented so far is intuitive for the sake of simplicity."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 24266,
+      "word": "previous",
+      "part_of_speech": "adjective",
+      "chinese": "先前的；以前的",
+      "english": "(not comparable) Prior; occurring before something else, either in time or order.",
+      "example": {
+        "english": "It reviews all previous activities and promulgates the political, organisational and financial report.",
+        "chinese": "它审查以前的所有活动并发布政治、组织和财务报告。",
+        "source": "WikiMatrix v1",
+        "source_line": 1342,
+        "alignment_score": 1.12367153
+      },
+      "matched_definition_term": "以前的",
+      "quality": {
+        "chinese_similarity": 0.837209,
+        "chinese_sequence_similarity": 0.888889,
+        "back_translation_similarity": 0.777778,
+        "machine_chinese": "该处审查以前的所有活动,并公布政治、组织和财务报告。",
+        "back_translation": "It reviews all previous activities and issues political, organizational and financial reports."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 24363,
+      "word": "private sector",
+      "part_of_speech": "noun",
+      "chinese": "私人部门",
+      "english": "(business) All organizations in an economy or jurisdiction that are not controlled by government, including privately owned businesses and not-for-profit organizations.",
+      "example": {
+        "english": "Public policy may be created by either the private sector or the public sector.",
+        "chinese": "公共政策可能由私人部门或公共部门创建。",
+        "source": "WikiMatrix v1",
+        "source_line": 10998,
+        "alignment_score": 1.10273675
+      },
+      "matched_definition_term": "私人部門",
+      "quality": {
+        "chinese_similarity": 0.62069,
+        "chinese_sequence_similarity": 0.8,
+        "back_translation_similarity": 0.769231,
+        "machine_chinese": "公共政策可由私营部门或公共部门制定。",
+        "back_translation": "Public policies may be created by the private or public sector."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 24433,
+      "word": "productivity",
+      "part_of_speech": "noun",
+      "chinese": "生产力",
+      "english": "The state of being productive, fertile, or efficient.",
+      "example": {
+        "english": "Despite the poor performance of the mining sector, productivity has increased in recent years.",
+        "chinese": "尽管矿业表现不佳，但近年来生产力却有所提高。",
+        "source": "WikiMatrix v1",
+        "source_line": 41141,
+        "alignment_score": 1.08825121
+      },
+      "matched_definition_term": "生產力",
+      "quality": {
+        "chinese_similarity": 0.564103,
+        "chinese_sequence_similarity": 0.780488,
+        "back_translation_similarity": 0.941176,
+        "machine_chinese": "尽管采矿部门业绩不佳,但近年来生产率有所提高。",
+        "back_translation": "Despite poor mining performance, productivity has increased in recent years."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 25985,
+      "word": "retain",
+      "part_of_speech": "verb",
+      "chinese": "保持",
+      "english": "To keep (something) in control or possession; to continue having (something); to keep back.",
+      "example": {
+        "english": "Vanuatu culture retains a strong diversity through local regional variations and through foreign influence.",
+        "chinese": "瓦努阿图文化由于当地区域差异和外国影响力保持强大的多样性。",
+        "source": "WikiMatrix v1",
+        "source_line": 28834,
+        "alignment_score": 1.0924224
+      },
+      "matched_definition_term": "保持",
+      "quality": {
+        "chinese_similarity": 0.703704,
+        "chinese_sequence_similarity": 0.857143,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "瓦努阿图文化通过地方区域差异和外国影响保持了强大的多样性。",
+        "back_translation": "Vanuatu culture maintains strong diversity due to regional differences and foreign influence."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 26047,
+      "word": "revival",
+      "part_of_speech": "noun",
+      "chinese": "复兴",
+      "english": "The act of reviving, or the state of being revived.",
+      "example": {
+        "english": "The revival also inspired slaves to demand freedom.",
+        "chinese": "这种复兴也激励了奴隶们要求自由。",
+        "source": "WikiMatrix v1",
+        "source_line": 21667,
+        "alignment_score": 1.09553795
+      },
+      "matched_definition_term": "复兴",
+      "quality": {
+        "chinese_similarity": 0.64,
+        "chinese_sequence_similarity": 0.814815,
+        "back_translation_similarity": 0.769231,
+        "machine_chinese": "复兴还激励奴隶们要求自由。",
+        "back_translation": "This revival has also inspired the slave community to demand freedom."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 27220,
+      "word": "seal",
+      "part_of_speech": "noun",
+      "chinese": "海豹",
+      "english": "A pinniped (Pinnipedia), particularly an earless seal (true seal) or eared seal.",
+      "example": {
+        "english": "Her fingers become the first seals and she becomes a mighty sea goddess.",
+        "chinese": "她的手指成为第一只海豹，而她成为了强大的海上女神。",
+        "source": "WikiMatrix v1",
+        "source_line": 2296,
+        "alignment_score": 1.11817439
+      },
+      "matched_definition_term": "海豹",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.869565,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "她的手指成为第一批海豹 她成为了一位强大的海女神",
+        "back_translation": "Her finger became the first seal and she became the mighty goddess of the sea."
+      },
+      "decision": "rejected",
+      "review_note": "Mythological context makes the example confusing for learners."
+    },
+    {
+      "entry_id": 27618,
+      "word": "sex",
+      "part_of_speech": "noun",
+      "chinese": "性交",
+      "english": "Sexual activity, usually sexual intercourse unless preceded by a modifier. [from 1899]",
+      "example": {
+        "english": "Kondracki subsequently devoted significant time to research human trafficking and the sex trade.",
+        "chinese": "康达基随后投入了大量时间研究人口贩卖和性交易活动。",
+        "source": "WikiMatrix v1",
+        "source_line": 17109,
+        "alignment_score": 1.09806503
+      },
+      "matched_definition_term": "性交",
+      "quality": {
+        "chinese_similarity": 0.619048,
+        "chinese_sequence_similarity": 0.727273,
+        "back_translation_similarity": 0.736842,
+        "machine_chinese": "Kondracki随后花了大量时间研究人口贩运和性交易问题。",
+        "back_translation": "Condaki subsequently devoted considerable time to research on trafficking and sex trade."
+      },
+      "decision": "rejected",
+      "review_note": "Example is sex trade, not the sexual-intercourse sense."
+    },
+    {
+      "entry_id": 27805,
+      "word": "shield",
+      "part_of_speech": "noun",
+      "chinese": "盾牌",
+      "english": "A broad piece of defensive armor, held in hand, formerly in general use in war, for the protection of the body.",
+      "example": {
+        "english": "Austrian police forced them back with batons, shields and pepper spray.",
+        "chinese": "奥地利警方用警棍、盾牌和胡椒喷雾迫使他们回去。",
+        "source": "WikiMatrix v1",
+        "source_line": 43370,
+        "alignment_score": 1.08761054
+      },
+      "matched_definition_term": "盾牌",
+      "quality": {
+        "chinese_similarity": 0.65,
+        "chinese_sequence_similarity": 0.857143,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "奥地利警察用警棍、盾牌和胡椒喷雾强迫他们返回。",
+        "back_translation": "The Austrian police forced them back with batons, shields and pepper spray."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 28018,
+      "word": "shyness",
+      "part_of_speech": "noun",
+      "chinese": "羞怯",
+      "english": "The quality of being shy; a fear of social interactions.",
+      "example": {
+        "english": "Her mother encouraged her to try community theater to overcome her shyness.",
+        "chinese": "她的母亲鼓励她尝试社区剧场演出以克服她的羞怯心理。",
+        "source": "WikiMatrix v1",
+        "source_line": 9857,
+        "alignment_score": 1.10388002
+      },
+      "matched_definition_term": "羞怯",
+      "quality": {
+        "chinese_similarity": 0.65,
+        "chinese_sequence_similarity": 0.772727,
+        "back_translation_similarity": 0.8,
+        "machine_chinese": "她的母亲鼓励她尝试社区剧院来克服她的害羞。",
+        "back_translation": "Her mother encouraged her to try a community theatre performance to overcome her shyness."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 28160,
+      "word": "simplification",
+      "part_of_speech": "noun",
+      "chinese": "简化",
+      "english": "The act of simplifying or something that has been simplified.",
+      "example": {
+        "english": "The usual tools of language reform are simplification and purification.",
+        "chinese": "语言改革常用的方法是简化和净化。",
+        "source": "WikiMatrix v1",
+        "source_line": 7863,
+        "alignment_score": 1.10615566
+      },
+      "matched_definition_term": "简化",
+      "quality": {
+        "chinese_similarity": 0.642857,
+        "chinese_sequence_similarity": 0.8,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "语言改革的常用工具是简化和净化。",
+        "back_translation": "The common method of language reform is simplification and purification."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 29550,
+      "word": "status",
+      "part_of_speech": "noun",
+      "chinese": "状态",
+      "english": "A situation or state of affairs.",
+      "example": {
+        "english": "One of the most important social structures is status.",
+        "chinese": "一个最重要的社会结构是社会状态。",
+        "source": "WikiMatrix v1",
+        "source_line": 7722,
+        "alignment_score": 1.10636205
+      },
+      "matched_definition_term": "状态",
+      "quality": {
+        "chinese_similarity": 0.56,
+        "chinese_sequence_similarity": 0.642857,
+        "back_translation_similarity": 0.769231,
+        "machine_chinese": "最重要的社会结构之一是地位。",
+        "back_translation": "One of the most important social structures is the state of society."
+      },
+      "decision": "rejected",
+      "review_note": "Example is social rank, not the state-of-affairs sense."
+    },
+    {
+      "entry_id": 30238,
+      "word": "superconducting",
+      "part_of_speech": "adjective",
+      "chinese": "超导体",
+      "english": "Exhibiting superconductivity.",
+      "example": {
+        "english": "At very low temperatures, this phase also becomes superconducting.",
+        "chinese": "在非常低的温度下，这一相位也会成为超导体。",
+        "source": "WikiMatrix v1",
+        "source_line": 41981,
+        "alignment_score": 1.08800083
+      },
+      "matched_definition_term": "超导體",
+      "quality": {
+        "chinese_similarity": 0.705882,
+        "chinese_sequence_similarity": 0.833333,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "在非常低的温度下,这一阶段也成为超导。",
+        "back_translation": "At very low temperatures, this phase also becomes superconductor."
+      },
+      "decision": "rejected",
+      "review_note": "Chinese definition and translation incorrectly use a noun."
+    },
+    {
+      "entry_id": 30365,
+      "word": "sustainable development",
+      "part_of_speech": "noun",
+      "chinese": "可持续发展",
+      "english": "(agriculture, ecology) Development which seeks to produce sustainable economic growth while ensuring future generations' ability to do the same by not exceeding the regenerative capacity of nature.",
+      "example": {
+        "english": "It aims to increase the impact of scientific research on sustainable development.",
+        "chinese": "它的目标是增加科学研究对可持续发展的影响。",
+        "source": "WikiMatrix v1",
+        "source_line": 7156,
+        "alignment_score": 1.10713903
+      },
+      "matched_definition_term": "可持续發展",
+      "quality": {
+        "chinese_similarity": 0.810811,
+        "chinese_sequence_similarity": 0.871795,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "其目的是增加科学研究对可持续发展的影响。",
+        "back_translation": "Its objective is to increase the impact of scientific research on sustainable development."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 30548,
+      "word": "synthetic",
+      "part_of_speech": "adjective",
+      "chinese": "合成",
+      "english": "Of, or relating to synthesis.",
+      "example": {
+        "english": "Many synthetic socks are treated with chemicals to help reduce odor.",
+        "chinese": "许多合成袜子都经过化学品处理，以帮助减少穿着它们时产生的气味。",
+        "source": "WikiMatrix v1",
+        "source_line": 71628,
+        "alignment_score": 1.08137866
+      },
+      "matched_definition_term": "合成",
+      "quality": {
+        "chinese_similarity": 0.723404,
+        "chinese_sequence_similarity": 0.816327,
+        "back_translation_similarity": 0.823529,
+        "machine_chinese": "许多合成袜子都经过化学处理,以帮助减少气味。",
+        "back_translation": "Many synthetic socks are treated with chemicals to help reduce the smell of their wearing."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 30921,
+      "word": "telecommunication",
+      "part_of_speech": "noun",
+      "chinese": "电信",
+      "english": "The science and technology of the communication of messages over a distance using electric, electronic or electromagnetic impulses. [1932]",
+      "example": {
+        "english": "Banking, financial services, insurance and telecommunications were also opened up to foreign investment.",
+        "chinese": "银行业、金融服务业、保险业和电信业也向国外投资开放。",
+        "source": "WikiMatrix v1",
+        "source_line": 20408,
+        "alignment_score": 1.09616858
+      },
+      "matched_definition_term": "電信",
+      "quality": {
+        "chinese_similarity": 0.55,
+        "chinese_sequence_similarity": 0.857143,
+        "back_translation_similarity": 0.947368,
+        "machine_chinese": "银行、金融服务、保险和电信也向外国投资开放。",
+        "back_translation": "The banking, financial services, insurance and telecommunications industries are also open to foreign investment."
+      },
+      "decision": "rejected",
+      "review_note": "Example is an industry list and does not illustrate the exact sense."
+    },
+    {
+      "entry_id": 31042,
+      "word": "term",
+      "part_of_speech": "noun",
+      "chinese": "期间",
+      "english": "Duration of officeholding, or its limit; period in office of fixed length.",
+      "example": {
+        "english": "The term may also refer to any data collected during the scientific activity.",
+        "chinese": "该术语还可以指在科学活动期间收集的任何数据。",
+        "source": "WikiMatrix v1",
+        "source_line": 2267,
+        "alignment_score": 1.11828305
+      },
+      "matched_definition_term": "期間",
+      "quality": {
+        "chinese_similarity": 0.842105,
+        "chinese_sequence_similarity": 0.95,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "该术语还可指科学活动期间收集的任何数据。",
+        "back_translation": "The term may also refer to any data collected during the scientific activity."
+      },
+      "decision": "rejected",
+      "review_note": "Example is the word-or-expression sense, not a term of office."
+    },
+    {
+      "entry_id": 31199,
+      "word": "theology",
+      "part_of_speech": "noun",
+      "chinese": "神學",
+      "english": "The study of God, a god, or gods; and of the truthfulness of religion in general. [from mid-14th c.]",
+      "example": {
+        "english": "The theology and religious texts of each community were distinctively different.",
+        "chinese": "每个社区的神学和宗教文本都有显着的不同。",
+        "source": "WikiMatrix v1",
+        "source_line": 59704,
+        "alignment_score": 1.0836966
+      },
+      "matched_definition_term": "神學",
+      "quality": {
+        "chinese_similarity": 0.647059,
+        "chinese_sequence_similarity": 0.777778,
+        "back_translation_similarity": 0.714286,
+        "machine_chinese": "每个社区的神学和宗教文字都截然不同。",
+        "back_translation": "Theological and religious texts of each community are significantly different."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 31719,
+      "word": "torpedo",
+      "part_of_speech": "noun",
+      "chinese": "魚雷",
+      "english": "(military) A cylindrical explosive projectile that can travel underwater and is used as a weapon. [from 1805]",
+      "example": {
+        "english": "The torpedo needed careful maintenance.",
+        "chinese": "魚雷需要小心維護。",
+        "source": "WikiMatrix v1",
+        "source_line": 71597,
+        "alignment_score": 1.081385
+      },
+      "matched_definition_term": "魚雷",
+      "quality": {
+        "chinese_similarity": 0.571429,
+        "chinese_sequence_similarity": 0.625,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "鱼雷需要小心维修",
+        "back_translation": "Torpedoes need careful maintenance."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 31826,
+      "word": "trade",
+      "part_of_speech": "noun",
+      "chinese": "交易",
+      "english": "A particular instance of buying or selling.",
+      "example": {
+        "english": "Kondracki subsequently devoted significant time to research human trafficking and the sex trade.",
+        "chinese": "康达基随后投入了大量时间研究人口贩卖和性交易活动。",
+        "source": "WikiMatrix v1",
+        "source_line": 17109,
+        "alignment_score": 1.09806503
+      },
+      "matched_definition_term": "交易",
+      "quality": {
+        "chinese_similarity": 0.619048,
+        "chinese_sequence_similarity": 0.727273,
+        "back_translation_similarity": 0.736842,
+        "machine_chinese": "Kondracki随后花了大量时间研究人口贩运和性交易问题。",
+        "back_translation": "Condaki subsequently devoted considerable time to research on trafficking and sex trade."
+      },
+      "decision": "rejected",
+      "review_note": "Example is the sex-trade industry, not a buying or selling instance."
+    },
+    {
+      "entry_id": 32833,
+      "word": "urban planning",
+      "part_of_speech": "noun",
+      "chinese": "城市规划",
+      "english": "The conscious design of towns and cities.",
+      "example": {
+        "english": "Urban planning projects take a long time to be approved and established.",
+        "chinese": "城市规划项目需要很长时间才能获得批准和确立。",
+        "source": "WikiMatrix v1",
+        "source_line": 8485,
+        "alignment_score": 1.10536906
+      },
+      "matched_definition_term": "城市规划",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 1.0,
+        "machine_chinese": "城市规划项目需要很长时间才能获得批准和确立。",
+        "back_translation": "Urban planning projects take a long time to be approved and established."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 32889,
+      "word": "usual",
+      "part_of_speech": "adjective",
+      "chinese": "常用",
+      "english": "Most commonly occurring; typical.",
+      "example": {
+        "english": "The usual tools of language reform are simplification and purification.",
+        "chinese": "语言改革常用的方法是简化和净化。",
+        "source": "WikiMatrix v1",
+        "source_line": 7863,
+        "alignment_score": 1.10615566
+      },
+      "matched_definition_term": "常用",
+      "quality": {
+        "chinese_similarity": 0.642857,
+        "chinese_sequence_similarity": 0.8,
+        "back_translation_similarity": 0.666667,
+        "machine_chinese": "语言改革的常用工具是简化和净化。",
+        "back_translation": "The common method of language reform is simplification and purification."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 33063,
+      "word": "vegetation",
+      "part_of_speech": "noun",
+      "chinese": "植被",
+      "english": "Plants, taken collectively.",
+      "example": {
+        "english": "Vegetation, soil, drainage layer, roof barrier and irrigation system constitute green roof.",
+        "chinese": "植被，土壤，排水层，屋顶屏障和灌溉系统构成绿色屋顶。",
+        "source": "WikiMatrix v1",
+        "source_line": 47124,
+        "alignment_score": 1.08661194
+      },
+      "matched_definition_term": "植被",
+      "quality": {
+        "chinese_similarity": 1.0,
+        "chinese_sequence_similarity": 1.0,
+        "back_translation_similarity": 0.947368,
+        "machine_chinese": "植被、土壤、排水层、屋顶屏障和灌溉系统构成绿色屋顶。",
+        "back_translation": "Vegetation, soil, drainage, roof barriers and irrigation systems constitute green roofs."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 33332,
+      "word": "virtual reality",
+      "part_of_speech": "noun",
+      "chinese": "虚拟现实",
+      "english": "A computer technology that simulates a real or imagined environment so that the user can interact with it as if physically present.",
+      "example": {
+        "english": "Development of virtual reality gaming platforms has continued.",
+        "chinese": "虚拟现实游戏平台的开发仍在继续。",
+        "source": "WikiMatrix v1",
+        "source_line": 3330,
+        "alignment_score": 1.11465066
+      },
+      "matched_definition_term": "虚拟現實",
+      "quality": {
+        "chinese_similarity": 0.666667,
+        "chinese_sequence_similarity": 0.8125,
+        "back_translation_similarity": 0.833333,
+        "machine_chinese": "虚拟现实博彩平台的开发工作仍在继续。",
+        "back_translation": "The development of virtual reality game platforms continues."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 33472,
+      "word": "vulnerability",
+      "part_of_speech": "noun",
+      "chinese": "脆弱性",
+      "english": "The state of being vulnerable; susceptibility to attack or injury, either physical or emotional; the state or condition of being weak or poorly defended.",
+      "example": {
+        "english": "Genuine intimacy in human relationships requires dialogue, transparency, vulnerability, and reciprocity.",
+        "chinese": "真正的人类亲密关系需要对话性、透明性、脆弱性和互惠性。",
+        "source": "WikiMatrix v1",
+        "source_line": 57817,
+        "alignment_score": 1.08410888
+      },
+      "matched_definition_term": "脆弱性",
+      "quality": {
+        "chinese_similarity": 0.590909,
+        "chinese_sequence_similarity": 0.723404,
+        "back_translation_similarity": 0.823529,
+        "machine_chinese": "人类关系中的真正亲密关系需要对话、透明、脆弱和互惠。",
+        "back_translation": "True human intimacy requires dialogue, transparency, vulnerability and reciprocity."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 33953,
+      "word": "white dwarf",
+      "part_of_speech": "noun",
+      "chinese": "白矮星",
+      "english": "(star) The dim, highly dense core remnant that is the final stage in the evolution of a star of low or medium mass, after nuclear reactions have ceased.",
+      "example": {
+        "english": "The past accretion events also explain the high temperature of the second white dwarf.",
+        "chinese": "過去的吸積事件也解釋了第二顆白矮星的高溫。",
+        "source": "WikiMatrix v1",
+        "source_line": 39637,
+        "alignment_score": 1.08871141
+      },
+      "matched_definition_term": "白矮星",
+      "quality": {
+        "chinese_similarity": 0.578947,
+        "chinese_sequence_similarity": 0.75,
+        "back_translation_similarity": 0.777778,
+        "machine_chinese": "过去的排泄事件也解释了第二个白矮星的高温。",
+        "back_translation": "The past intakes also explain the temperature of the second white dwarf."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 33954,
+      "word": "white flag",
+      "part_of_speech": "noun",
+      "chinese": "白旗",
+      "english": "A flag with a white color, used as a symbol of truce or surrender.",
+      "example": {
+        "english": "Of course they carried a white flag.",
+        "chinese": "他们当然带着白旗。",
+        "source": "WikiMatrix v1",
+        "source_line": 9303,
+        "alignment_score": 1.10442122
+      },
+      "matched_definition_term": "白旗",
+      "quality": {
+        "chinese_similarity": 0.571429,
+        "chinese_sequence_similarity": 0.625,
+        "back_translation_similarity": 0.75,
+        "machine_chinese": "当然他们举着白旗",
+        "back_translation": "Of course they were wearing white flags."
+      },
+      "decision": "rejected",
+      "review_note": "Example does not demonstrate the truce or surrender meaning."
+    },
+    {
+      "entry_id": 34197,
+      "word": "withstand",
+      "part_of_speech": "verb",
+      "chinese": "抵抗",
+      "english": "(transitive) To resist or endure (something) successfully.",
+      "example": {
+        "english": "Some are even specially enhanced to withstand damage from water or stains.",
+        "chinese": "有些甚至特别增强以抵抗水或污渍的损坏。",
+        "source": "WikiMatrix v1",
+        "source_line": 5730,
+        "alignment_score": 1.10940608
+      },
+      "matched_definition_term": "抵抗",
+      "quality": {
+        "chinese_similarity": 0.555556,
+        "chinese_sequence_similarity": 0.684211,
+        "back_translation_similarity": 0.875,
+        "machine_chinese": "其中一些甚至特别增强,以承受水或污点的损害。",
+        "back_translation": "Some are even particularly enhanced to withstand damage to water or stains."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    },
+    {
+      "entry_id": 34689,
+      "word": "zone",
+      "part_of_speech": "noun",
+      "chinese": "區域",
+      "english": "A given area distinguished on the basis of a particular characteristic, use, restriction, etc.",
+      "example": {
+        "english": "In this zone there is a close interaction between the plant and microorganisms.",
+        "chinese": "在這區域植物和微生物之間密切的互動。",
+        "source": "WikiMatrix v1",
+        "source_line": 57238,
+        "alignment_score": 1.08423463
+      },
+      "matched_definition_term": "區域",
+      "quality": {
+        "chinese_similarity": 0.555556,
+        "chinese_sequence_similarity": 0.736842,
+        "back_translation_similarity": 0.857143,
+        "machine_chinese": "在这个区,植物与微生物之间有着密切的互动关系。",
+        "back_translation": "There is a close interaction between plants and microorganisms in this area."
+      },
+      "decision": "approved",
+      "review_note": "Exact sense and bilingual sentence manually verified."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IPA Dictionary reviewed replacements",
+  "type": "object",
+  "required": [
+    "word_replacements",
+    "skipped_words"
+  ],
+  "properties": {
+    "word_replacements": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "word",
+            "uk_ipa",
+            "us_ipa",
+            "part_of_speech",
+            "countability",
+            "chinese",
+            "english",
+            "examples"
+          ],
+          "properties": {
+            "word": {
+              "type": "string"
+            },
+            "uk_ipa": {
+              "type": "string"
+            },
+            "us_ipa": {
+              "type": "string"
+            },
+            "part_of_speech": {
+              "type": "string"
+            },
+            "countability": {
+              "type": "string"
+            },
+            "chinese": {
+              "type": "string"
+            },
+            "english": {
+              "type": "string"
+            },
+            "examples": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "english",
+                  "chinese"
+                ],
+                "properties": {
+                  "english": {
+                    "type": "string"
+                  },
+                  "chinese": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "skipped_words": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "word",
+          "reason"
+        ],
+        "properties": {
+          "word": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

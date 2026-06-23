@@ -1,0 +1,54 @@
+{
+  "source": "Tatoeba candidates recovered during full rebuild",
+  "license": "CC BY 2.0 FR",
+  "candidate_count": 20,
+  "review_count": 4,
+  "rejected_count": 16,
+  "approved_count": 4,
+  "reviews": [
+    {
+      "word": "awareness",
+      "part_of_speech": "noun",
+      "chinese": "意識",
+      "english": "The state or level of consciousness where sense data can be confirmed by an observer.",
+      "example": {
+        "english": "Developing political awareness takes time.",
+        "chinese": "培养政治意识要花费时间。"
+      },
+      "decision": "approved"
+    },
+    {
+      "word": "chance",
+      "part_of_speech": "noun",
+      "chinese": "机会",
+      "english": "An opportunity or possibility.",
+      "example": {
+        "english": "Everyone deserves a second chance.",
+        "chinese": "每個人都值得被給予第二次機會。"
+      },
+      "decision": "approved"
+    },
+    {
+      "word": "principal",
+      "part_of_speech": "noun",
+      "chinese": "校長",
+      "english": "(North America, Australia, New Zealand, Philippines) The chief administrator of a school.",
+      "example": {
+        "english": "The principal severely reproved the students whenever they made a mess in the hallway.",
+        "chinese": "每次学生把走廊弄得一团糟的时候，校长都会严厉地训斥他们。"
+      },
+      "decision": "approved"
+    },
+    {
+      "word": "theme",
+      "part_of_speech": "noun",
+      "chinese": "主題",
+      "english": "A subject, now especially of a talk or an artistic piece; a topic.",
+      "example": {
+        "english": "The principal theme of the book is the American Revolution.",
+        "chinese": "这本书的主题是美国革命。"
+      },
+      "decision": "approved"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "format_version": 1,
+  "generated_on": "2026-06-21",
+  "database": "dictionary.sqlite",
+  "database_sha256": "0b17f16498807fcd58384a1d1362c8a63373240e8295be2c2afe76c801eb56a5",
+  "entry_count": 17187,
+  "unique_words": 8615,
+  "common_manual_review_words": 62,
+  "words_in_multiple_queues": 1958,
+  "audit_queue_rows": {
+    "definition_alignment": 3728,
+    "one_character_chinese": 4697,
+    "missing_part_of_speech": 4187,
+    "non_chinese_translation": 11
+  },
+  "audit_queue_unique_words": {
+    "definition_alignment": 3524,
+    "one_character_chinese": 3490,
+    "missing_part_of_speech": 3842,
+    "non_chinese_translation": 8
+  },
+  "batch_size": 250,
+  "batch_count": 36,
+  "batches": [
+    {
+      "file": "batches/000-priority-common.jsonl",
+      "bytes": 169845,
+      "sha256": "b081220af5d5c992d748a1f37f86edc42568346b3bd55c926b69a09c19ed5af9",
+      "records": 62
+    },
+    {
+      "file": "batches/001-review.jsonl",
+      "bytes": 580806,
+      "sha256": "ecfda598614c63c6ee14225ba69432b3adcda572dccf10194abc8411a92b3e15",
+      "records": 250
+    },
+    {
+      "file": "batches/002-review.jsonl",
+      "bytes": 400111,
+      "sha256": "940adc7c99bcc57cb0d4ca7bb6d7cacd6fbdf0bd7d2f8e32cbdb0faec6b95ae6",
+      "records": 250
+    },
+    {
+      "file": "batches/003-review.jsonl",
+      "bytes": 348959,
+      "sha256": "996d4cea2fd563ee3e4a2bbb4b94f3419ff1a4634d2b99ff4e13b36439fe42e7",
+      "records": 250
+    },
+    {
+      "file": "batches/004-review.jsonl",
+      "bytes": 297517,
+      "sha256": "9280eb8ebf0f5cac4ea3f8a782c4411799c22234726d86e539e902bee462a015",
+      "records": 250
+    },
+    {
+      "file": "batches/005-review.jsonl",
+      "bytes": 289994,
+      "sha256": "f2090caa8e3e606dfa076e7f584680b5a21e7e0e59a7e73a3c3c547ab7f2d0b8",
+      "records": 250
+    },
+    {
+      "file": "batches/006-review.jsonl",
+      "bytes": 265154,
+      "sha256": "33ba3a828432cd950e799c9d5f9b6317a15fd0a29ddbab3c5f946f7f65588d27",
+      "records": 250
+    },
+    {
+      "file": "batches/007-review.jsonl",
+      "bytes": 289522,
+      "sha256": "c224f74c6468e9b752e53ffc803b94846aad4550750734c6e5f0c0e110ed8098",
+      "records": 250
+    },
+    {
+      "file": "batches/008-review.jsonl",
+      "bytes": 366886,
+      "sha256": "e9fcb0d8a264d4f33e3d3da75afd398124c78f33ff416b7940c8522c7a27ee30",
+      "records": 250
+    },
+    {
+      "file": "batches/009-review.jsonl",
+      "bytes": 288336,
+      "sha256": "57eb208a81e0d79dfcaef822d6a6a352bb624976e91dea4f1157d548f7441c0f",
+      "records": 250
+    },
+    {
+      "file": "batches/010-review.jsonl",
+      "bytes": 290430,
+      "sha256": "00294528b7e071a0c62e5bdf61e5ab5b046f8bf380e18a600a9e64636f6260ea",
+      "records": 250
+    },
+    {
+      "file": "batches/011-review.jsonl",
+      "bytes": 298482,
+      "sha256": "93ac0c40bf6b45f2770f0c4ba4981ef9b2d0259bd0ae9da65b8c9840f8ef717a",
+      "records": 250
+    },
+    {
+      "file": "batches/012-review.jsonl",
+      "bytes": 279767,
+      "sha256": "7a608d524b5e52382256fe71a4122dc375d56a2fb9c1c54d811bb363deae2b96",
+      "records": 250
+    },
+    {
+      "file": "batches/013-review.jsonl",
+      "bytes": 294309,
+      "sha256": "f4f35d17ae0b2cd9d2a98d09a54301cfdab50ce60f9a2a6d0dbdcfc2eefa0bbf",
+      "records": 250
+    },
+    {
+      "file": "batches/014-review.jsonl",
+      "bytes": 281551,
+      "sha256": "d5caf34eeef66989c95d6432eaebd4285cb3ed45e409e2c851f7043397604a3f",
+      "records": 250
+    },
+    {
+      "file": "batches/015-review.jsonl",
+      "bytes": 302703,
+      "sha256": "af7504dc1a38a33d8ffadfdf75ad9d95724796a0233473d80d629d85c96d297c",
+      "records": 250
+    },
+    {
+      "file": "batches/016-review.jsonl",
+      "bytes": 285446,
+      "sha256": "d78a47e0065e924298b468414356d1815bdd5b7699664a6f579f1a78d8cb4770",
+      "records": 250
+    },
+    {
+      "file": "batches/017-review.jsonl",
+      "bytes": 296521,
+      "sha256": "7632045dcfcfdfe7400da353915ab63b4856c76219a5472ac6369f3bf2858b41",
+      "records": 250
+    },
+    {
+      "file": "batches/018-review.jsonl",
+      "bytes": 159268,
+      "sha256": "1932fdb95e8c8347ebf1f241b495d048c711fa3b1b0798c4bc6fad7991bd500d",
+      "records": 250
+    },
+    {
+      "file": "batches/019-review.jsonl",
+      "bytes": 160374,
+      "sha256": "76f279125a2281ea389e34ba2c3159d2c2235a68b7aec869b07664ba617ba4e3",
+      "records": 250
+    },
+    {
+      "file": "batches/020-review.jsonl",
+      "bytes": 165896,
+      "sha256": "74cfe5af9a5f39721dc244c15b55f122350edb539dc7fef35a70f4af192831eb",
+      "records": 250
+    },
+    {
+      "file": "batches/021-review.jsonl",
+      "bytes": 153221,
+      "sha256": "4ee84af63ff370409c826232150e1c5771516fe1ed51211b1b28b8c44110e889",
+      "records": 250
+    },
+    {
+      "file": "batches/022-review.jsonl",
+      "bytes": 170721,
+      "sha256": "5f9b525aeb5c560a7e63d15a1b3e96ad0cce735ea1de8e263eb4a64375941dff",
+      "records": 250
+    },
+    {
+      "file": "batches/023-review.jsonl",
+      "bytes": 170502,
+      "sha256": "f4b13a0bc60dc435eced295cd51fc7dac4be500d669efbefafa6e4aa7f4366f5",
+      "records": 250
+    },
+    {
+      "file": "batches/024-review.jsonl",
+      "bytes": 157349,
+      "sha256": "11334bfef4b3d4bb0ec1a70b4c3ab3a9d430ce6f77899558e03e11a2269faf2b",
+      "records": 250
+    },
+    {
+      "file": "batches/025-review.jsonl",
+      "bytes": 158252,
+      "sha256": "550d8a8da7e3f910196d390e912336d14cb5613dd911bd6ed3e13e8b36294f28",
+      "records": 250
+    },
+    {
+      "file": "batches/026-review.jsonl",
+      "bytes": 156128,
+      "sha256": "8ca26e2bcbb449228b9d069dc13077b8d7ffa5fe443f7c9514957357a6e6afa6",
+      "records": 250
+    },
+    {
+      "file": "batches/027-review.jsonl",
+      "bytes": 157250,
+      "sha256": "d263ac20dcf1697d6bd4da9d9f8950c797dfe3628658d75688e81b8df620003a",
+      "records": 250
+    },
+    {
+      "file": "batches/028-review.jsonl",
+      "bytes": 155893,
+      "sha256": "ddd9e879d38184fdc8e3385f1a09616b3a49a9fc5de90636a671e25774378350",
+      "records": 250
+    },
+    {
+      "file": "batches/029-review.jsonl",
+      "bytes": 152388,
+      "sha256": "aba15d61219a70cc705fda6d62ac4633b1e9041890733817a6f2e9ce6fe63b42",
+      "records": 250
+    },
+    {
+      "file": "batches/030-review.jsonl",
+      "bytes": 145681,
+      "sha256": "fd1603c09116dc4496843b1138c594f4316def95eac6e5c66179c2a9dc15dfa7",
+      "records": 250
+    },
+    {
+      "file": "batches/031-review.jsonl",
+      "bytes": 152022,
+      "sha256": "b964235b8a4d03c99f04c4ce1a3ce6abe5763d351d76358d1f293d8d7b8f9b09",
+      "records": 250
+    },
+    {
+      "file": "batches/032-review.jsonl",
+      "bytes": 153774,
+      "sha256": "8a132cfe4636fd745de48def150ea73c90c4c2f6ff2edebad6fd153e6a147127",
+      "records": 250
+    },
+    {
+      "file": "batches/033-review.jsonl",
+      "bytes": 151340,
+      "sha256": "d3d235717a4ebd564971383290b4cb942753b12705cb9fbf87937bc70fd832fa",
+      "records": 250
+    },
+    {
+      "file": "batches/034-review.jsonl",
+      "bytes": 154333,
+      "sha256": "29a9569fb67a5f2cf951fcaa7410b4d91fe0bf56fd8077e85254b0a8ed00711b",
+      "records": 250
+    },
+    {
+      "file": "batches/035-review.jsonl",
+      "bytes": 30132,
+      "sha256": "b24e60bf4f5b4797c803b19c6747744070bfa30761f6d07e2a8963d9d9dbec96",
+      "records": 53
+    }
+  ]
+}
