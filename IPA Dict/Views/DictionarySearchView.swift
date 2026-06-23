@@ -102,6 +102,7 @@ struct DictionarySearchView: View {
     @State private var showsClearHistoryConfirmation = false
     @State private var showsHistorySuggestions = false
     @State private var selectedHistoryIndex: Int?
+    @State private var hasActivatedSearch = false
     @FocusState private var isSearchFocused: Bool
 
     var body: some View {
@@ -157,9 +158,15 @@ struct DictionarySearchView: View {
                     isSearchFocused = false
                     showsHistorySuggestions = false
                     selectedHistoryIndex = nil
+                    hasActivatedSearch = false
+
+                    Task { @MainActor in
+                        await Task.yield()
+                        isSearchFocused = false
+                    }
                 }
                 .onChange(of: isSearchFocused) { _, isFocused in
-                    if isFocused {
+                    if isFocused && hasActivatedSearch {
                         showsHistorySuggestions = true
                     } else {
                         showsHistorySuggestions = false
@@ -357,6 +364,7 @@ struct DictionarySearchView: View {
         .contentShape(RoundedRectangle(cornerRadius: 16))
         .simultaneousGesture(
             TapGesture().onEnded {
+                hasActivatedSearch = true
                 isSearchFocused = true
                 showsHistorySuggestions = true
             }
@@ -632,6 +640,7 @@ struct DictionarySearchView: View {
         isSearchFocused = false
         showsHistorySuggestions = false
         selectedHistoryIndex = nil
+        hasActivatedSearch = false
     }
 }
 
