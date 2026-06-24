@@ -3,46 +3,60 @@ import SwiftUI
 struct WordDetailView: View {
     let entries: [DictionaryEntry]
     var showsNavigationTitle = true
+    var onSelectWord: ((String) -> Void)?
 
     @State private var expandedPartsOfSpeech: Set<String> = []
 
     private let audioPlayer = AudioPlayerService.shared
     private let collapsedMeaningLimit = 3
 
-    init(entry: DictionaryEntry, showsNavigationTitle: Bool = true) {
+    init(
+        entry: DictionaryEntry,
+        showsNavigationTitle: Bool = true,
+        onSelectWord: ((String) -> Void)? = nil
+    ) {
         self.entries = [entry]
         self.showsNavigationTitle = showsNavigationTitle
+        self.onSelectWord = onSelectWord
     }
 
-    init(entries: [DictionaryEntry], showsNavigationTitle: Bool = true) {
+    init(
+        entries: [DictionaryEntry],
+        showsNavigationTitle: Bool = true,
+        onSelectWord: ((String) -> Void)? = nil
+    ) {
         self.entries = entries
         self.showsNavigationTitle = showsNavigationTitle
+        self.onSelectWord = onSelectWord
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 28) {
-                ForEach(Array(groupedEntries.enumerated()), id: \.element.id) { groupIndex, group in
-                    let isExpanded = expandedPartsOfSpeech.contains(group.id)
-                    let visibleEntries = isExpanded
-                        ? group.entries
-                        : Array(group.entries.prefix(collapsedMeaningLimit))
+                if let primaryEntry {
+                    headerSection(primaryEntry)
 
-                    if groupIndex > 0 {
+                    ForEach(groupedEntries) { group in
+                        let isExpanded = expandedPartsOfSpeech.contains(group.id)
+                        let visibleEntries = isExpanded
+                            ? group.entries
+                            : Array(group.entries.prefix(collapsedMeaningLimit))
+
                         Divider()
-                            .padding(.vertical, 8)
-                    }
-                    completeGroup(group, visibleEntries: visibleEntries)
+                            .padding(.vertical, 4)
 
-                    if group.entries.count > collapsedMeaningLimit {
-                        expansionButton(for: group, isExpanded: isExpanded)
-                    }
-                }
+                        meaningGroupSection(group, visibleEntries: visibleEntries)
 
-                if !allSynonyms.isEmpty {
-                    Divider()
-                        .padding(.vertical, 8)
-                    wordChipsSection(title: "同義詞", words: allSynonyms)
+                        if group.entries.count > collapsedMeaningLimit {
+                            expansionButton(for: group, isExpanded: isExpanded)
+                        }
+                    }
+
+                    if !allSynonyms.isEmpty {
+                        Divider()
+                            .padding(.vertical, 4)
+                        linkedWordsSection(title: "同義詞", words: allSynonyms)
+                    }
                 }
             }
             .frame(maxWidth: 760, alignment: .leading)
@@ -55,6 +69,10 @@ struct WordDetailView: View {
         #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
         #endif
+    }
+
+    private var primaryEntry: DictionaryEntry? {
+        entries.first
     }
 
     private var groupedEntries: [MeaningGroup] {
@@ -88,13 +106,58 @@ struct WordDetailView: View {
         }
     }
 
-    private func completeGroup(
+    private func headerSection(_ entry: DictionaryEntry) -> some View {
+        VStack(alignment: .leading, spacing: 22) {
+            MarkdownText("# \(entry.word.markdownEscaped)")
+
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: 20) {
+                    pronunciationButton(
+                        region: "UK",
+                        word: entry.word,
+                        ipa: entry.ukIPA,
+                        remoteAudioURL: entry.ukAudioURL,
+                        localAudioFile: "\(entry.word)_uk"
+                    )
+
+                    pronunciationButton(
+                        region: "US",
+                        word: entry.word,
+                        ipa: entry.usIPA,
+                        remoteAudioURL: entry.usAudioURL,
+                        localAudioFile: "\(entry.word)_us"
+                    )
+                }
+
+                VStack(alignment: .leading, spacing: 12) {
+                    pronunciationButton(
+                        region: "UK",
+                        word: entry.word,
+                        ipa: entry.ukIPA,
+                        remoteAudioURL: entry.ukAudioURL,
+                        localAudioFile: "\(entry.word)_uk"
+                    )
+
+                    pronunciationButton(
+                        region: "US",
+                        word: entry.word,
+                        ipa: entry.usIPA,
+                        remoteAudioURL: entry.usAudioURL,
+                        localAudioFile: "\(entry.word)_us"
+                    )
+                }
+            }
+
+            phonemeButtons(for: preferredIPA(for: entry))
+        }
+    }
+
+    private func meaningGroupSection(
         _ group: MeaningGroup,
         visibleEntries: [DictionaryEntry]
     ) -> some View {
-        let primaryEntry = group.entries[0]
         let chineseDefinitions = uniqueValues(
-            group.entries.map(\.zhDefinition)
+            visibleEntries.map(\.zhDefinition)
         )
         let countability = uniqueValues(
             group.entries.map(\.countability).filter { !$0.isEmpty }
@@ -103,106 +166,64 @@ struct WordDetailView: View {
             group.entries.flatMap(\.inflections)
         )
 
-        return VStack(alignment: .leading, spacing: 26) {
-            MarkdownText("# \(primaryEntry.word.markdownEscaped)")
-
-            HStack(spacing: 8) {
-                MarkdownText(
-                    "**\(group.partOfSpeech.markdownEscaped)**",
-                    font: .headline
-                )
-
-                if !countability.isEmpty {
-                    MarkdownText(
-                        "\\[ \(countability.markdownEscaped) \\]",
-                        font: .subheadline.weight(.medium),
-                        color: .primary
-                    )
-                }
-            }
-
-            ViewThatFits(in: .horizontal) {
-                HStack(spacing: 20) {
-                    pronunciationButton(
-                        region: "UK",
-                        word: primaryEntry.word,
-                        ipa: primaryEntry.ukIPA,
-                        remoteAudioURL: primaryEntry.ukAudioURL,
-                        localAudioFile: "\(primaryEntry.word)_uk"
-                    )
-
-                    pronunciationButton(
-                        region: "US",
-                        word: primaryEntry.word,
-                        ipa: primaryEntry.usIPA,
-                        remoteAudioURL: primaryEntry.usAudioURL,
-                        localAudioFile: "\(primaryEntry.word)_us"
-                    )
-                }
-
-                VStack(alignment: .leading, spacing: 12) {
-                    pronunciationButton(
-                        region: "UK",
-                        word: primaryEntry.word,
-                        ipa: primaryEntry.ukIPA,
-                        remoteAudioURL: primaryEntry.ukAudioURL,
-                        localAudioFile: "\(primaryEntry.word)_uk"
-                    )
-
-                    pronunciationButton(
-                        region: "US",
-                        word: primaryEntry.word,
-                        ipa: primaryEntry.usIPA,
-                        remoteAudioURL: primaryEntry.usAudioURL,
-                        localAudioFile: "\(primaryEntry.word)_us"
-                    )
-                }
-            }
-
-            phonemeButtons(for: primaryEntry.ukIPA)
+        return VStack(alignment: .leading, spacing: 24) {
+            MarkdownText(
+                partOfSpeechLine(
+                    partOfSpeech: group.partOfSpeech,
+                    countability: countability
+                ),
+                font: .system(size: 16, weight: .semibold)
+            )
 
             if !inflections.isEmpty {
                 MarkdownText(
                     inflections
                         .map(\.markdownEscaped)
                         .joined(separator: " \\| "),
-                    font: .body.weight(.semibold),
+                    font: .system(size: 16, weight: .semibold),
                     color: .primary
                 )
             }
 
-            definitionSection(
-                title: "中文解釋",
-                content: chineseDefinitions.joined(separator: "；"),
-                sourceForTranslation: primaryEntry.enDefinition,
-                contentFont: .title3.weight(.medium)
+            plainDefinitionSection(
+                title: "中文釋義",
+                contents: chineseDefinitions,
+                emptyText: "暫無中文釋義",
+                contentFont: .system(size: 16, weight: .medium)
             )
 
-            VStack(alignment: .leading, spacing: 22) {
-                sectionTitle("英文解釋")
+            plainDefinitionSection(
+                title: "英文釋義",
+                contents: uniqueValues(visibleEntries.map(\.enDefinition)),
+                emptyText: "No English definition available.",
+                contentFont: .system(size: 16)
+            )
 
-                ForEach(Array(visibleEntries.enumerated()), id: \.element.id) { index, entry in
-                    VStack(alignment: .leading, spacing: 14) {
-                        if visibleEntries.count > 1 {
-                            MarkdownText(
-                                "**\(index + 1).**",
-                                font: .caption.weight(.bold),
-                                color: .primary
-                            )
-                        }
-
-                        MarkdownText(
-                            entry.enDefinition.markdownEscaped,
-                            lineSpacing: 5
-                        )
-
-                        if !entry.examples.isEmpty {
-                            examplesSection(entry.examples)
-                        }
-                    }
+            examplesSection(
+                visibleEntries.flatMap { entry in
+                    Array(entry.examples.prefix(1))
                 }
-            }
+            )
         }
+    }
+
+    private func preferredIPA(for entry: DictionaryEntry) -> String {
+        if !entry.ukIPA.isEmpty {
+            return entry.ukIPA
+        }
+
+        return entry.usIPA
+    }
+
+    private func partOfSpeechLine(
+        partOfSpeech: String,
+        countability: String
+    ) -> String {
+        if countability.isEmpty {
+            return partOfSpeech.markdownEscaped
+        }
+
+        return "\(partOfSpeech.markdownEscaped) \\[ \(countability.markdownEscaped) \\]"
     }
 
     private func uniqueValues(_ values: [String]) -> [String] {
@@ -231,7 +252,7 @@ struct WordDetailView: View {
                     : "顯示更多解釋（\(group.entries.count - collapsedMeaningLimit)）",
                 systemImage: isExpanded ? "chevron.up" : "chevron.down"
             )
-            .font(.subheadline.weight(.semibold))
+            .font(.system(size: 16, weight: .semibold))
         }
         .buttonStyle(.borderless)
         .foregroundStyle(.primary)
@@ -261,17 +282,17 @@ struct WordDetailView: View {
         } label: {
             HStack(spacing: 7) {
                 Image(systemName: "speaker.wave.2.fill")
-                    .font(.subheadline)
+                    .font(.system(size: 16))
                     .foregroundStyle(.primary)
                 MarkdownText(
                     "**\(region.markdownEscaped)**",
-                    font: .body.weight(.semibold),
+                    font: .system(size: 16, weight: .semibold),
                     color: .primary
                 )
                 if !ipa.isEmpty {
                     MarkdownText(
                         ipa.markdownEscaped,
-                        font: .system(.body, design: .rounded),
+                        font: .system(size: 16, design: .rounded),
                         color: .accentColor
                     )
                 }
@@ -306,27 +327,29 @@ struct WordDetailView: View {
         }
     }
 
-    private func definitionSection(
+    private func plainDefinitionSection(
         title: String,
-        content: String,
-        sourceForTranslation: String?,
+        contents: [String],
+        emptyText: String,
         contentFont: Font
     ) -> some View {
         VStack(alignment: .leading, spacing: 10) {
             sectionTitle(title)
 
-            if let sourceForTranslation, content.isEmpty {
+            if contents.isEmpty {
                 MarkdownText(
-                    sourceForTranslation.markdownEscaped,
+                    emptyText.markdownEscaped,
                     font: contentFont,
                     lineSpacing: 5
                 )
             } else {
-                MarkdownText(
-                    content.markdownEscaped,
-                    font: contentFont,
-                    lineSpacing: 5
-                )
+                ForEach(Array(contents.enumerated()), id: \.offset) { _, content in
+                    MarkdownText(
+                        content.markdownEscaped,
+                        font: contentFont,
+                        lineSpacing: 5
+                    )
+                }
             }
         }
     }
@@ -335,38 +358,51 @@ struct WordDetailView: View {
         VStack(alignment: .leading, spacing: 14) {
             sectionTitle("例句")
 
-            ForEach(examples.prefix(1)) { example in
-                VStack(alignment: .leading, spacing: 8) {
-                    MarkdownText(
-                        example.english.markdownEscaped,
-                        font: .body.weight(.medium)
-                    )
+            if examples.isEmpty {
+                MarkdownText(
+                    "暫無例句",
+                    color: .primary
+                )
+            } else {
+                ForEach(examples.prefix(1)) { example in
+                    VStack(alignment: .leading, spacing: 8) {
+                        MarkdownText(
+                            example.english.markdownEscaped,
+                            font: .system(size: 16, weight: .medium)
+                        )
 
-                    MarkdownText(
-                        example.chinese.markdownEscaped,
-                        color: .primary
-                    )
+                        MarkdownText(
+                            example.chinese.markdownEscaped,
+                            color: .primary
+                        )
+                    }
+                    .lineSpacing(4)
+                    .textSelection(.enabled)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
-                .lineSpacing(4)
-                .textSelection(.enabled)
-                .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
     }
 
-    private func wordChipsSection(title: String, words: [String]) -> some View {
+    private func linkedWordsSection(title: String, words: [String]) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             sectionTitle(title)
 
             PhonemeFlowLayout(spacing: 8) {
                 ForEach(words.prefix(20), id: \.self) { word in
-                    MarkdownText(
-                        word.markdownEscaped,
-                        font: .subheadline.weight(.medium)
-                    )
-                        .padding(.horizontal, 11)
-                        .padding(.vertical, 7)
-                        .background(.regularMaterial, in: Capsule())
+                    Button {
+                        onSelectWord?(word)
+                    } label: {
+                        Text(word)
+                            .font(.system(size: 16, weight: .medium))
+                            .underline()
+                            .foregroundStyle(Color.accentColor)
+                            .padding(.vertical, 4)
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(onSelectWord == nil)
+                    .accessibilityLabel("查詢同義詞 \(word)")
                 }
             }
         }

@@ -6,7 +6,8 @@ enum CuratedDictionary {
         "program": [.programNoun, .programVerb],
         "find": [.findVerb, .findNoun],
         "test": [.testNoun, .testVerb],
-        "yes": [.yesAdverb, .yesNoun]
+        "yes": [.yesAdverb, .yesNoun],
+        "itinerary": [.itinerary]
     ]
 
     private static let fullyReplacedWords: Set<String> = ["yes"]

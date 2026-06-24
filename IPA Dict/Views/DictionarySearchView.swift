@@ -103,6 +103,7 @@ struct DictionarySearchView: View {
     @State private var showsHistorySuggestions = false
     @State private var selectedHistoryIndex: Int?
     @State private var hasActivatedSearch = false
+    @State private var hasCompletedInitialAppearance = false
     @FocusState private var isSearchFocused: Bool
 
     var body: some View {
@@ -159,14 +160,17 @@ struct DictionarySearchView: View {
                     showsHistorySuggestions = false
                     selectedHistoryIndex = nil
                     hasActivatedSearch = false
+                    hasCompletedInitialAppearance = false
 
                     Task { @MainActor in
                         await Task.yield()
                         isSearchFocused = false
+                        hasCompletedInitialAppearance = true
                     }
                 }
                 .onChange(of: isSearchFocused) { _, isFocused in
-                    if isFocused && hasActivatedSearch {
+                    if isFocused && hasCompletedInitialAppearance {
+                        hasActivatedSearch = true
                         showsHistorySuggestions = true
                     } else {
                         showsHistorySuggestions = false
@@ -175,7 +179,7 @@ struct DictionarySearchView: View {
                 }
                 .onChange(of: viewModel.query) {
                     selectedHistoryIndex = nil
-                    if isSearchFocused {
+                    if isSearchFocused && hasActivatedSearch {
                         showsHistorySuggestions = true
                     }
                 }
@@ -208,7 +212,10 @@ struct DictionarySearchView: View {
                 ZStack {
                     WordDetailView(
                         entries: result.entries,
-                        showsNavigationTitle: false
+                        showsNavigationTitle: false,
+                        onSelectWord: { word in
+                            selectLinkedWord(word)
+                        }
                     )
 
                     if viewModel.isLoading {
@@ -218,6 +225,7 @@ struct DictionarySearchView: View {
                         ContentUnavailableView {
                             ProgressView()
                             Text("正在查詢字典…")
+                                .font(.system(size: 16))
                         }
                         .foregroundStyle(.primary)
                     } else if let errorMessage = viewModel.errorMessage {
@@ -227,6 +235,7 @@ struct DictionarySearchView: View {
                             HStack(spacing: 10) {
                                 Image(systemName: "exclamationmark.circle")
                                 Text(errorMessage)
+                                    .font(.system(size: 16))
                                 Spacer()
                             }
                             .foregroundStyle(.primary)
@@ -320,6 +329,7 @@ struct DictionarySearchView: View {
 
             TextField("輸入英文單字，例如 apple", text: $viewModel.query)
                 .textFieldStyle(.plain)
+                .font(.system(size: 16))
                 .foregroundStyle(.primary)
                 .focused($isSearchFocused)
                 .submitLabel(.search)
@@ -329,6 +339,9 @@ struct DictionarySearchView: View {
                 #endif
                 .onSubmit {
                     submitSearch()
+                }
+                .onTapGesture {
+                    activateSearchSuggestions()
                 }
                 .onKeyPress(.escape) {
                     handleEscapeKey()
@@ -355,6 +368,7 @@ struct DictionarySearchView: View {
             Button("查詢") {
                 submitSearch()
             }
+            .font(.system(size: 16))
             .buttonStyle(.bordered)
             .foregroundStyle(.primary)
             .disabled(viewModel.isLoading)
@@ -364,9 +378,7 @@ struct DictionarySearchView: View {
         .contentShape(RoundedRectangle(cornerRadius: 16))
         .simultaneousGesture(
             TapGesture().onEnded {
-                hasActivatedSearch = true
-                isSearchFocused = true
-                showsHistorySuggestions = true
+                activateSearchSuggestions()
             }
         )
         .padding(.horizontal)
@@ -395,6 +407,7 @@ struct DictionarySearchView: View {
             ContentUnavailableView {
                 ProgressView()
                 Text("正在查詢字典…")
+                    .font(.system(size: 16))
             }
             .foregroundStyle(.primary)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -407,6 +420,7 @@ struct DictionarySearchView: View {
                 "查詢失敗",
                 systemImage: "exclamationmark.magnifyingglass",
                 description: Text(errorMessage)
+                    .font(.system(size: 16))
             )
             .foregroundStyle(.primary)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -422,7 +436,7 @@ struct DictionarySearchView: View {
             VStack(alignment: .leading, spacing: 18) {
                 HStack {
                     Text("最近搜尋")
-                        .font(.title2.bold())
+                        .font(.system(size: 22, weight: .bold))
 
                     Spacer()
 
@@ -430,6 +444,7 @@ struct DictionarySearchView: View {
                         Button("清除記錄") {
                             showsClearHistoryConfirmation = true
                         }
+                        .font(.system(size: 16))
                         .buttonStyle(.borderless)
                         .foregroundStyle(.primary)
                     }
@@ -444,6 +459,7 @@ struct DictionarySearchView: View {
                                 ? "成功查詢的英文單字會顯示在這裡。"
                                 : "請輸入其他字母或直接查詢新單字。"
                         )
+                        .font(.system(size: 16))
                     )
                     .foregroundStyle(.primary)
                     .frame(maxWidth: .infinity, minHeight: 280)
@@ -456,7 +472,7 @@ struct DictionarySearchView: View {
                                 HStack(spacing: 12) {
                                     Image(systemName: "clock.arrow.circlepath")
                                     Text(word)
-                                        .font(.body.weight(.medium))
+                                        .font(.system(size: 16, weight: .medium))
                                     Spacer()
                                     Image(systemName: "arrow.up.left")
                                 }
@@ -518,7 +534,7 @@ struct DictionarySearchView: View {
                             HStack(spacing: 12) {
                                 Image(systemName: "clock.arrow.circlepath")
                                 Text(word)
-                                    .font(.body.weight(.medium))
+                                    .font(.system(size: 16, weight: .medium))
                                 Spacer()
                                 Image(systemName: "arrow.up.left")
                             }
@@ -594,6 +610,21 @@ struct DictionarySearchView: View {
         viewModel.search(word: word)
     }
 
+    private func selectLinkedWord(_ word: String) {
+        isSearchFocused = false
+        showsHistorySuggestions = false
+        selectedHistoryIndex = nil
+        hasActivatedSearch = false
+        viewModel.search(word: word)
+    }
+
+    private func activateSearchSuggestions() {
+        hasActivatedSearch = true
+        isSearchFocused = true
+        selectedHistoryIndex = nil
+        showsHistorySuggestions = !filteredHistory.isEmpty && !viewModel.isLoading
+    }
+
     private func handleEscapeKey() -> KeyPress.Result {
         if showsHistoryDropdown {
             showsHistorySuggestions = false
@@ -606,8 +637,7 @@ struct DictionarySearchView: View {
 
     private func moveHistorySelection(for key: KeyEquivalent) {
         guard showsHistoryDropdown else {
-            isSearchFocused = true
-            showsHistorySuggestions = true
+            activateSearchSuggestions()
             selectedHistoryIndex = key == .upArrow
                 ? filteredHistory.indices.last
                 : filteredHistory.indices.first

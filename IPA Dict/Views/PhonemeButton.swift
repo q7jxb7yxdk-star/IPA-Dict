@@ -7,7 +7,7 @@ struct PhonemeButton: View {
     var body: some View {
         Button(action: action) {
             Text(symbol)
-                .font(.system(.body, design: .rounded, weight: .semibold))
+                .font(.system(size: 16, weight: .semibold, design: .rounded))
                 .frame(minWidth: 24, minHeight: 30)
                 .padding(.horizontal, 3)
         }

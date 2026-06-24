@@ -33,13 +33,13 @@ struct MarkdownText: View {
 
         switch heading.level {
         case 1:
-            return .system(size: 46, weight: .bold, design: .rounded)
+            return .system(size: 28, weight: .bold, design: .rounded)
         case 2:
-            return .title2.bold()
+            return .system(size: 22, weight: .bold)
         case 3:
-            return .title3.bold()
+            return .system(size: 18, weight: .bold)
         default:
-            return .body
+            return .system(size: 16)
         }
     }
 

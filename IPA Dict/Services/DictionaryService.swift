@@ -40,16 +40,21 @@ struct DictionaryService {
         guard !word.isEmpty else {
             throw DictionaryServiceError.invalidWord
         }
+        let curatedEntries = CuratedDictionary.entries(for: word)
 
         if let localEntries = try? await localDictionary.lookup(word: word),
            !localEntries.isEmpty {
-            if let curatedEntries = CuratedDictionary.entries(for: word) {
+            if let curatedEntries {
                 return CuratedDictionary.merge(
                     curatedEntries: curatedEntries,
                     apiEntries: localEntries
                 )
             }
             return localEntries
+        }
+
+        if let curatedEntries {
+            return curatedEntries
         }
 
         guard var components = URLComponents(
@@ -80,7 +85,7 @@ struct DictionaryService {
                     throw DictionaryServiceError.wordNotFound(word)
                 }
 
-                if let curatedEntries = CuratedDictionary.entries(for: word) {
+                if let curatedEntries {
                     return CuratedDictionary.merge(
                         curatedEntries: curatedEntries,
                         apiEntries: entries

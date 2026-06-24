@@ -244,6 +244,22 @@ extension DictionaryEntry {
         ]
     )
 
+    static let itinerary = DictionaryEntry(
+        word: "itinerary",
+        ukIPA: "/aɪˈtɪn.ər.ər.i/",
+        usIPA: "/aɪˈtɪn.ə.rer.i/",
+        partOfSpeech: "noun",
+        countability: "C",
+        zhDefinition: "旅行計劃，預定行程",
+        enDefinition: "a detailed plan or route of a journey",
+        examples: [
+            DictionaryExample(
+                english: "The tour operator will arrange transport and plan your itinerary.",
+                chinese: "旅行社工作人員將負責安排交通和行程計劃。"
+            )
+        ]
+    )
+
     static func makeEntries(from apiEntry: DictionaryAPIEntry) -> [DictionaryEntry] {
         let ukPhonetic = bestPhonetic(in: apiEntry.phonetics, marker: "-uk")
         let usPhonetic = bestPhonetic(in: apiEntry.phonetics, marker: "-us")

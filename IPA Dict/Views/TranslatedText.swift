@@ -3,7 +3,7 @@ import Translation
 
 struct TranslatedText: View {
     let sourceText: String
-    var font: Font = .body
+    var font: Font = .system(size: 16)
     var foregroundStyle: Color = .primary
     var placeholder: String = "翻譯中…"
 
@@ -21,7 +21,7 @@ struct TranslatedText: View {
                     .foregroundStyle(foregroundStyle)
             } else if let translationError {
                 Text(translationError)
-                    .font(.caption)
+                    .font(.system(size: 16))
                     .foregroundStyle(.primary)
             } else {
                 HStack(spacing: 7) {
