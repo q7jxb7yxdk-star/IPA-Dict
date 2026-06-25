@@ -19,7 +19,7 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
   - 同義詞連結
 - UK / US IPA 可以點擊播放整字發音。
 - IPA 會拆成音素按鈕，例如 `/ˈæp.əl/` 可拆成 `æ`、`p`、`ə`、`l`。
-- 每個音素可對應本地音檔播放，例如 `æ -> ae.mp3`、`ə -> schwa.mp3`。
+- 每個音素可對應本地音檔播放，例如 `æ -> ipa_ae.mp3`、`ə -> ipa_schwa.mp3`。
 - 使用 AVFoundation 播放本地音檔、遠端音檔與系統語音 fallback。
 - 搜尋歷史記錄，輸入框 focus 時以類似 Google 搜尋的下拉選單顯示。
 - 同義詞以文字連結形式顯示，可點擊查詢。
@@ -135,20 +135,30 @@ IPA Dict/
 2. 遠端 audio URL。
 3. 使用 `AVSpeechSynthesizer` 作為 fallback。
 
-音素對應表位於 `AudioPlayerService.phonemeAudioMap`，例如：
+音素對應表位於 `AudioPlayerService.phonemeAudioMap`。單一音素可對應一個本地音檔，複合音素可對應多個音檔順序播放，例如：
 
 ```swift
-"æ": "ae"
-"ə": "schwa"
-"ɪ": "i_short"
-"iː": "i_long"
-"θ": "theta"
-"ð": "eth"
-"ʃ": "sh"
-"ʒ": "zh"
+"æ": ["ipa_ae"]
+"ə": ["ipa_schwa"]
+"ɪ": ["ipa_i_short"]
+"iː": ["ipa_i"]
+"θ": ["ipa_theta"]
+"ð": ["ipa_eth"]
+"ʃ": ["ipa_sh"]
+"ʒ": ["ipa_zh"]
+"aɪ": ["ipa_a", "ipa_i_short"]
+"tʃ": ["ipa_t", "ipa_sh"]
 ```
 
-對應音檔需要加入 app bundle，例如 `ae.mp3`、`schwa.mp3`。
+對應音檔需要加入 app bundle，例如 `ipa_ae.mp3`、`ipa_schwa.mp3`。目前音素音檔放在：
+
+```text
+IPA Dict/Audio/Phonemes/
+```
+
+音素錄音取自 Wikimedia Commons 的可再散布音檔，個別作者、來源頁面及
+`CC BY-SA 3.0` 授權資料記錄於
+`IPA Dict/Audio/Phonemes/ATTRIBUTION.md`。
 
 ## 注意事項
 

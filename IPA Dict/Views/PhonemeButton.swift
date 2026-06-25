@@ -22,18 +22,13 @@ struct PhonemeButton: View {
 enum IPATokenizer {
     private static let compoundPhonemes = [
         "tʃ", "dʒ", "eɪ", "aɪ", "ɔɪ", "aʊ", "əʊ", "oʊ",
-        "ɪə", "eə", "ʊə", "iː", "ɑː", "ɔː", "uː", "ɜː"
+        "ɪə", "eə", "ʊə", "iː", "ɑː", "ɔː", "uː", "ɜː",
+        "æː", "ɛː", "ɪː", "ʊː", "əː", "ɝː", "aː", "oː",
+        "eɪː", "aɪː", "oʊː"
     ]
 
     static func phonemes(in transcription: String) -> [String] {
-        var remaining = transcription
-            .replacingOccurrences(of: "/", with: "")
-            .replacingOccurrences(of: "[", with: "")
-            .replacingOccurrences(of: "]", with: "")
-            .replacingOccurrences(of: "ˈ", with: "")
-            .replacingOccurrences(of: "ˌ", with: "")
-            .replacingOccurrences(of: ".", with: "")
-            .replacingOccurrences(of: " ", with: "")
+        var remaining = normalized(transcription)
 
         var result: [String] = []
 
@@ -52,6 +47,30 @@ enum IPATokenizer {
         }
 
         return result
+    }
+
+    private static func normalized(_ transcription: String) -> String {
+        var value = transcription
+            .replacingOccurrences(of: "d͡ʒ", with: "dʒ")
+            .replacingOccurrences(of: "d͜ʒ", with: "dʒ")
+            .replacingOccurrences(of: "t͡ʃ", with: "tʃ")
+            .replacingOccurrences(of: "t͜ʃ", with: "tʃ")
+            .replacingOccurrences(of: "ɫ", with: "l")
+            .replacingOccurrences(of: "ɚ", with: "ər")
+            .replacingOccurrences(of: "ɝ", with: "ɜr")
+            .replacingOccurrences(of: "ᵻ", with: "ɪ")
+            .replacingOccurrences(of: "ᵿ", with: "ʊ")
+            .replacingOccurrences(of: "ä", with: "a")
+
+        [
+            "/", "[", "]", "ˈ", "ˌ", ".", " ", "(", ")", "-",
+            "~", "ˑ", "ʰ", "ʲ", "̃", "̈", "̝", "̞", "̟", "̩",
+            "̬", "̯", "͡", "͜", "‿"
+        ].forEach {
+            value = value.replacingOccurrences(of: $0, with: "")
+        }
+
+        return value
     }
 }
 

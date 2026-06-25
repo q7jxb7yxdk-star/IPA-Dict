@@ -85,6 +85,7 @@ DictionaryEntry models
   - 使用 `AVPlayer` 播放遠端 audio URL。
   - 使用 `AVSpeechSynthesizer` 作為整字發音 fallback。
   - 包含 `phonemeAudioMap`。
+  - 支援複合音素依序播放多個本地 mp3。
 
 - `SearchHistoryStore.swift`
   - 使用 `UserDefaults` 儲存最近搜尋字。
@@ -287,26 +288,48 @@ linked words
 audioPlayer.playPhoneme(symbol: symbol)
 ```
 
-音素會查 `phonemeAudioMap`：
+音素會查 `phonemeAudioMap`。此 map 的 value 是 `[String]`，因此同一個 IPA symbol 可以播放一個或多個本地音檔：
 
 ```swift
-"æ": "ae"
-"ə": "schwa"
-"ɪ": "i_short"
-"iː": "i_long"
-"θ": "theta"
-"ð": "eth"
-"ʃ": "sh"
-"ʒ": "zh"
-"p": "p"
-"l": "l"
+"æ": ["ipa_ae"]
+"ə": ["ipa_schwa"]
+"ɪ": ["ipa_i_short"]
+"iː": ["ipa_i"]
+"θ": ["ipa_theta"]
+"ð": ["ipa_eth"]
+"ʃ": ["ipa_sh"]
+"ʒ": ["ipa_zh"]
+"p": ["ipa_p"]
+"l": ["ipa_l"]
+"aɪ": ["ipa_a", "ipa_i_short"]
+"tʃ": ["ipa_t", "ipa_sh"]
 ```
 
-例如 `æ` 會播放 app bundle 內的 `ae.mp3`。
+例如 `æ` 會播放 app bundle 內的 `ipa_ae.mp3`，`aɪ` 會依序播放 `ipa_a.mp3` 與 `ipa_i_short.mp3`。
+
+本地音素音檔位於：
+
+```text
+IPA Dict/Audio/Phonemes/
+```
+
+正式 app bundle 只包含轉換後的 MP3。原始 OGG、下載 metadata 及舊版私人
+比較音檔不放入 synchronized app source folder。Wikimedia Commons 的作者、
+來源及 `CC BY-SA 3.0` 授權紀錄保存在同目錄的 `ATTRIBUTION.md`。
 
 ## 9. IPA Tokenizer
 
-`IPATokenizer.phonemes(in:)` 會先移除：
+`IPATokenizer.phonemes(in:)` 會先 normalize 常見英文 IPA 變體，例如：
+
+- `d͡ʒ` / `d͜ʒ` -> `dʒ`
+- `t͡ʃ` / `t͜ʃ` -> `tʃ`
+- `ɫ` -> `l`
+- `ɚ` -> `ər`
+- `ɝ` -> `ɜr`
+- `ᵻ` -> `ɪ`
+- `ᵿ` -> `ʊ`
+
+然後移除不應顯示為音素按鈕的符號：
 
 - `/`
 - `[`
@@ -315,6 +338,8 @@ audioPlayer.playPhoneme(symbol: symbol)
 - secondary stress `ˌ`
 - syllable dot `.`
 - spaces
+- optional pronunciation parentheses
+- common IPA diacritics and tie bars
 
 然後依序拆出 compound phonemes，例如：
 
