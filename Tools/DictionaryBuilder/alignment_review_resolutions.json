@@ -1,6 +1,6 @@
 {
   "scope": "FullDictionaryAudit/definition_alignment_review.csv",
-  "resolution_count": 3033,
+  "resolution_count": 3092,
   "resolutions": [
     {
       "word": "hryhorivka",
@@ -27298,6 +27298,596 @@
       "english_definition_count": 2,
       "status": "accepted_homonymous_proper_name",
       "keep_english": ""
+    },
+    {
+      "word": "aborigine",
+      "part_of_speech": "noun",
+      "chinese": "土著",
+      "resolved_chinese": "土著",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "alien",
+      "part_of_speech": "noun",
+      "chinese": "外國人",
+      "resolved_chinese": "外國人",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "annotation",
+      "part_of_speech": "noun",
+      "chinese": "評論",
+      "resolved_chinese": "評論",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "annul",
+      "part_of_speech": "verb",
+      "chinese": "廢除",
+      "resolved_chinese": "廢除",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "arabic",
+      "part_of_speech": "proper noun",
+      "chinese": "阿拉伯語",
+      "resolved_chinese": "阿拉伯語",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "asia",
+      "part_of_speech": "proper noun",
+      "chinese": "亞洲",
+      "resolved_chinese": "亞洲",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "automotive",
+      "part_of_speech": "adjective",
+      "chinese": "汽車",
+      "resolved_chinese": "汽車",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "berry",
+      "part_of_speech": "noun",
+      "chinese": "漿果",
+      "resolved_chinese": "漿果",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "bronze",
+      "part_of_speech": "noun",
+      "chinese": "青銅",
+      "resolved_chinese": "青銅",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "c major",
+      "part_of_speech": "noun",
+      "chinese": "C大調",
+      "resolved_chinese": "C大調",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "castile",
+      "part_of_speech": "proper noun",
+      "chinese": "卡斯蒂利亞",
+      "resolved_chinese": "卡斯蒂利亞",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "chameleon",
+      "part_of_speech": "noun",
+      "chinese": "變色龍",
+      "resolved_chinese": "變色龍",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "chemistry",
+      "part_of_speech": "noun",
+      "chinese": "化學",
+      "resolved_chinese": "化學",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "climate",
+      "part_of_speech": "noun",
+      "chinese": "氣候",
+      "resolved_chinese": "氣候",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "clock",
+      "part_of_speech": "noun",
+      "chinese": "時鐘",
+      "resolved_chinese": "時鐘",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "coin",
+      "part_of_speech": "noun",
+      "chinese": "硬幣",
+      "resolved_chinese": "硬幣",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "compiler",
+      "part_of_speech": "noun",
+      "chinese": "編譯器",
+      "resolved_chinese": "編譯器",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "danger",
+      "part_of_speech": "noun",
+      "chinese": "危險",
+      "resolved_chinese": "危險",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "deism",
+      "part_of_speech": "noun",
+      "chinese": "自然神論",
+      "resolved_chinese": "自然神論",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "diagonal",
+      "part_of_speech": "adjective",
+      "chinese": "對角線",
+      "resolved_chinese": "對角線",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "diagonal",
+      "part_of_speech": "noun",
+      "chinese": "對角線",
+      "resolved_chinese": "對角線",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "dog collar",
+      "part_of_speech": "noun",
+      "chinese": "項鏈",
+      "resolved_chinese": "項鏈",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "dove",
+      "part_of_speech": "noun",
+      "chinese": "鴿子",
+      "resolved_chinese": "鴿子",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "dragon",
+      "part_of_speech": "noun",
+      "chinese": "龍",
+      "resolved_chinese": "龍",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "explain",
+      "part_of_speech": "verb",
+      "chinese": "解釋",
+      "resolved_chinese": "解釋",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "fastidious",
+      "part_of_speech": "adjective",
+      "chinese": "仔細",
+      "resolved_chinese": "仔細",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "final",
+      "part_of_speech": "adjective",
+      "chinese": "最後",
+      "resolved_chinese": "最後",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "gas",
+      "part_of_speech": "noun",
+      "chinese": "氣體",
+      "resolved_chinese": "氣體",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "german",
+      "part_of_speech": "noun",
+      "chinese": "德國人",
+      "resolved_chinese": "德國人",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "humidity",
+      "part_of_speech": "noun",
+      "chinese": "濕度",
+      "resolved_chinese": "濕度",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "inferno",
+      "part_of_speech": "noun",
+      "chinese": "地獄",
+      "resolved_chinese": "地獄",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "javelin",
+      "part_of_speech": "noun",
+      "chinese": "標槍",
+      "resolved_chinese": "標槍",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "lawyer",
+      "part_of_speech": "noun",
+      "chinese": "律師",
+      "resolved_chinese": "律師",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "lift",
+      "part_of_speech": "noun",
+      "chinese": "電梯",
+      "resolved_chinese": "電梯",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "lightning",
+      "part_of_speech": "noun",
+      "chinese": "閃電",
+      "resolved_chinese": "閃電",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "lion",
+      "part_of_speech": "noun",
+      "chinese": "獅子",
+      "resolved_chinese": "獅子",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "liver",
+      "part_of_speech": "noun",
+      "chinese": "肝臟",
+      "resolved_chinese": "肝臟",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "london",
+      "part_of_speech": "proper noun",
+      "chinese": "倫敦",
+      "resolved_chinese": "倫敦",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "nerve",
+      "part_of_speech": "noun",
+      "chinese": "神經",
+      "resolved_chinese": "神經",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "painter",
+      "part_of_speech": "noun",
+      "chinese": "畫家",
+      "resolved_chinese": "畫家",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "paradox",
+      "part_of_speech": "noun",
+      "chinese": "悖論",
+      "resolved_chinese": "悖論",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "paul",
+      "part_of_speech": "proper noun",
+      "chinese": "保羅",
+      "resolved_chinese": "保羅",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "pelt",
+      "part_of_speech": "noun",
+      "chinese": "皮膚",
+      "resolved_chinese": "皮膚",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "pigeon",
+      "part_of_speech": "noun",
+      "chinese": "鴿子",
+      "resolved_chinese": "鴿子",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "poverty",
+      "part_of_speech": "noun",
+      "chinese": "貧窮",
+      "resolved_chinese": "貧窮",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "refuse",
+      "part_of_speech": "verb",
+      "chinese": "拒絕",
+      "resolved_chinese": "拒絕",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "repetition",
+      "part_of_speech": "noun",
+      "chinese": "重複",
+      "resolved_chinese": "重複",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "ride",
+      "part_of_speech": "verb",
+      "chinese": "騎",
+      "resolved_chinese": "騎",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "sensation",
+      "part_of_speech": "noun",
+      "chinese": "感覺",
+      "resolved_chinese": "感覺",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "solomon",
+      "part_of_speech": "proper noun",
+      "chinese": "所羅門",
+      "resolved_chinese": "所羅門",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "sunshine",
+      "part_of_speech": "noun",
+      "chinese": "太陽",
+      "resolved_chinese": "太陽",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "tell",
+      "part_of_speech": "verb",
+      "chinese": "告訴",
+      "resolved_chinese": "告訴",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "this",
+      "part_of_speech": "determiner",
+      "chinese": "這",
+      "resolved_chinese": "這",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "ton",
+      "part_of_speech": "noun",
+      "chinese": "噸",
+      "resolved_chinese": "噸",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "umbra",
+      "part_of_speech": "noun",
+      "chinese": "陰影",
+      "resolved_chinese": "陰影",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "whereas",
+      "part_of_speech": "conjunction",
+      "chinese": "當",
+      "resolved_chinese": "當",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "wizard",
+      "part_of_speech": "noun",
+      "chinese": "巫師",
+      "resolved_chinese": "巫師",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "wizardry",
+      "part_of_speech": "noun",
+      "chinese": "巫術",
+      "resolved_chinese": "巫術",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
+    },
+    {
+      "word": "youth",
+      "part_of_speech": "noun",
+      "chinese": "年輕",
+      "resolved_chinese": "年輕",
+      "english_definition_count": 2,
+      "status": "accepted_shared_traditional_translation",
+      "keep_english": "",
+      "reason": "After Simplified-to-Traditional normalization, multiple exact English senses share the same acceptable Traditional Chinese translation. Entries are preserved."
     }
   ]
 }

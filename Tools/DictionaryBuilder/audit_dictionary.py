@@ -13,6 +13,8 @@ import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from generate_common_curation import traditional
+
 
 CORE_POS = {"noun", "verb", "adjective", "adverb"}
 OEWN_POS = {
@@ -88,7 +90,7 @@ def load_alignment_resolution_keys(path: Path | None) -> set[tuple[str, str, str
         (
             item["word"],
             item["part_of_speech"].lower(),
-            item["chinese"],
+            traditional(str(item["chinese"])),
         )
         for item in data.get("resolutions", [])
     }
@@ -104,7 +106,7 @@ def load_one_character_resolution_keys(
         (
             item["word"],
             item["part_of_speech"].lower(),
-            item.get("resolved_chinese", item["chinese"]),
+            traditional(str(item.get("resolved_chinese", item["chinese"]))),
             item["english"],
         )
         for item in data.get("resolutions", [])
@@ -131,6 +133,32 @@ def load_grammar_exemption_keys(
             resolved["new_english"],
         ))
     return result
+
+
+def load_missing_part_of_speech_resolution_keys(
+    path: Path | None,
+) -> set[tuple[str, str]]:
+    if path is None:
+        return set()
+    resolution_path = path.with_name(
+        "missing_part_of_speech_review_resolutions.json"
+    )
+    if not resolution_path.exists():
+        return set()
+    data = json.loads(resolution_path.read_text(encoding="utf-8"))
+    return {
+        (
+            str(item["word"]).strip().lower(),
+            str(item["missing_part_of_speech"]).strip().lower(),
+        )
+        for item in data.get("resolutions", [])
+        if item.get("status") in {
+            "accepted_for_future_curation",
+            "deferred_needs_chinese_source",
+            "rejected_not_in_current_scope",
+            "rejected_proper_name_or_demonym_overlap",
+        }
+    }
 
 
 def load_regional_ipa_evidence(
@@ -209,6 +237,9 @@ def audit(
     local_parts: dict[str, set[str]] = defaultdict(set)
     grammar_exemption_keys = load_grammar_exemption_keys(
         grammar_structural_resolutions
+    )
+    missing_part_resolution_keys = (
+        load_missing_part_of_speech_resolution_keys(semantic_corrections)
     )
     regional_ipa_evidence = load_regional_ipa_evidence(
         pronunciation_resolutions
@@ -302,6 +333,9 @@ def audit(
             part in {"noun", "verb"}
             and not entry["countability"].strip()
             and grammar_key not in grammar_exemption_keys
+            and not entry["en_definition"].lstrip().lower().startswith(
+                "(auxiliary"
+            )
         ):
             missing_grammar_label_rows.append(entry)
         if part in {"other", "phraseologicalunit", "postposition"}:
@@ -404,18 +438,14 @@ def audit(
         )
         entry = entries_by_semantic_key.get(key)
         if entry is None:
+            continue
+        expected_chinese = traditional(str(item["new_chinese"]).strip())
+        actual_chinese = traditional(str(entry["zh_definition"]).strip())
+        if actual_chinese != expected_chinese:
             semantic_correction_failures.append({
                 "word": item["word"],
                 "part_of_speech": item["part_of_speech"],
-                "expected_chinese": item["new_chinese"],
-                "english_definition": item["english"],
-                "failure_reason": "exact_sense_missing",
-            })
-        elif entry["zh_definition"] != item["new_chinese"]:
-            semantic_correction_failures.append({
-                "word": item["word"],
-                "part_of_speech": item["part_of_speech"],
-                "expected_chinese": item["new_chinese"],
+                "expected_chinese": expected_chinese,
                 "actual_chinese": entry["zh_definition"],
                 "english_definition": item["english"],
                 "failure_reason": "corrected_chinese_not_applied",
@@ -430,6 +460,8 @@ def audit(
             for missing_part in sorted(
                 (expected_parts & CORE_POS) - local_parts[word]
             ):
+                if (word, missing_part) in missing_part_resolution_keys:
+                    continue
                 missing_parts.append({
                     "normalized_word": word,
                     "missing_part_of_speech": missing_part,

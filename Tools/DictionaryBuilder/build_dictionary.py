@@ -50,6 +50,7 @@ from generate_fallback_content import (
     record_default_provenance,
     record_reviewed_semantics,
 )
+from generate_common_curation import traditional
 
 
 FREEDICT_URL = (
@@ -206,7 +207,7 @@ def parse_freedict(archive: Path) -> dict[str, list[dict]]:
                 node.text or ""
                 for node in sense.findall("./tei:cit[@type='trans']/tei:quote", TEI)
             ]
-            chinese = prefer_traditional(translations)
+            chinese = traditional(prefer_traditional(translations))
             definitions = [
                 (node.text or "").strip()
                 for node in sense.findall(".//tei:def", TEI)
@@ -349,7 +350,7 @@ def load_tatoeba_examples(
                 chinese_id, english_id = second, first
             else:
                 continue
-            chinese = chinese_sentences[chinese_id]
+            chinese = traditional(chinese_sentences[chinese_id])
 
             if english_id in exact_ids:
                 normalized, english = exact_ids[english_id]
@@ -393,7 +394,7 @@ def load_tatoeba_examples(
             english = candidate_texts.get(english_id)
             if not english:
                 continue
-            chinese = chinese_sentences[chinese_id]
+            chinese = traditional(chinese_sentences[chinese_id])
             for word in candidates_by_id.get(english_id, []):
                 current = best_fallback.get(word)
                 if current is None or traditional_score(chinese) > traditional_score(current[1]):
@@ -563,18 +564,19 @@ def create_database(
         ),
     )
     semantic_corrections = load_semantic_corrections(corrections_path)
+    example_resolutions = exclude_semantically_corrected_items(
+        remap_example_resolutions(
+            exclude_replaced_words(
+                load_example_resolutions(corrections_path),
+                superseded_resolution_words,
+            ),
+            structural_resolutions,
+        ),
+        semantic_corrections,
+    )
     example_corrections = apply_example_resolutions(
         connection,
-        exclude_semantically_corrected_items(
-            remap_example_resolutions(
-                exclude_replaced_words(
-                    load_example_resolutions(corrections_path),
-                    superseded_resolution_words,
-                ),
-                structural_resolutions,
-            ),
-            semantic_corrections,
-        ),
+        example_resolutions,
         replace_existing=True,
     )
     semantic_correction_count = apply_semantic_corrections(
@@ -589,6 +591,52 @@ def create_database(
         ),
     )
     ensure_provenance_table(connection)
+    reviewed_replacement_words = {
+        word.strip().lower()
+        for word in curated_data.get("word_replacements", {})
+    }
+    reviewed_example_keys = {
+        (
+            item["word"].strip().lower(),
+            normalized_part_of_speech(item["part_of_speech"]).lower(),
+            traditional(item["chinese"].strip()),
+            item["english"].strip(),
+        )
+        for item in example_resolutions
+        if isinstance(item.get("example"), dict)
+    }
+    reviewed_example_keys.update(
+        (
+            item["word"].strip().lower(),
+            normalized_part_of_speech(item["part_of_speech"]).lower(),
+            traditional(item["new_chinese"].strip()),
+            item["english"].strip(),
+        )
+        for item in semantic_corrections
+        if isinstance(item.get("example"), dict)
+    )
+    for entry_id, normalized, part, chinese, english in connection.execute(
+        """
+        SELECT id, normalized_word, part_of_speech, zh_definition,
+               en_definition
+        FROM entries
+        """
+    ).fetchall():
+        reviewed_example_key = (
+            normalized,
+            normalized_part_of_speech(part).lower(),
+            chinese.strip(),
+            english.strip(),
+        )
+        if (
+            normalized in reviewed_replacement_words
+            or reviewed_example_key in reviewed_example_keys
+        ):
+            continue
+        connection.execute(
+            "UPDATE entries SET examples_json = '[]' WHERE id = ?",
+            (entry_id,),
+        )
     generated_examples = fill_generated_examples(connection)
     generated_uk, generated_us = fill_generated_pronunciations(connection)
     reviewed_semantic_provenance = record_reviewed_semantics(

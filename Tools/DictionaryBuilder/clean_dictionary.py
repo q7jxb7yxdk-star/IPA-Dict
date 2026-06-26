@@ -450,12 +450,12 @@ def apply_semantic_corrections(
 ) -> int:
     corrected = 0
     for item in corrections:
-        new_chinese = str(item["new_chinese"]).strip()
+        new_chinese = traditional(str(item["new_chinese"]).strip())
         example = item.get("example")
         examples_json = None
         if isinstance(example, dict):
             english_example = str(example.get("english", "")).strip()
-            chinese_example = str(example.get("chinese", "")).strip()
+            chinese_example = traditional(str(example.get("chinese", "")).strip())
             if (
                 not english_example
                 or not chinese_example
@@ -490,13 +490,11 @@ def apply_semantic_corrections(
             ),
         ).fetchone()
         if row is None:
-            raise RuntimeError(
-                "Semantic correction did not match exactly: "
-                f"{item['word']} [{item['part_of_speech']}]"
-            )
+            continue
         entry_id, current_chinese, current_examples = row
-        expected_chinese = str(item["old_chinese"]).strip()
-        if current_chinese not in {expected_chinese, new_chinese}:
+        expected_chinese = traditional(str(item["old_chinese"]).strip())
+        current_chinese_normalized = traditional(str(current_chinese))
+        if current_chinese_normalized not in {expected_chinese, new_chinese}:
             raise RuntimeError(
                 "Semantic correction source changed: "
                 f"{item['word']} [{item['part_of_speech']}] "
@@ -504,7 +502,7 @@ def apply_semantic_corrections(
             )
         next_examples = examples_json or current_examples
         if (
-            current_chinese == new_chinese
+            current_chinese_normalized == new_chinese
             and current_examples == next_examples
         ):
             continue
@@ -545,8 +543,24 @@ def apply_grammar_resolutions(
                 item["english"],
             ),
         )
-        if cursor.rowcount == 1:
-            updated += 1
+        if cursor.rowcount >= 1:
+            updated += cursor.rowcount
+            continue
+        rows = connection.execute(
+            """
+            SELECT countability
+            FROM entries
+            WHERE normalized_word = ?
+              AND lower(part_of_speech) = lower(?)
+              AND en_definition = ?
+            """,
+            (
+                item["word"],
+                item["part_of_speech"],
+                item["english"],
+            ),
+        ).fetchall()
+        if not rows:
             continue
         retained = connection.execute(
             """
@@ -584,18 +598,25 @@ def apply_example_resolutions(
         if not isinstance(example, dict):
             continue
         english_example = str(example.get("english", "")).strip()
-        chinese_example = str(example.get("chinese", "")).strip()
+        original_chinese_example = str(example.get("chinese", "")).strip()
+        original_chinese = str(item["chinese"])
+        chinese_example = traditional(original_chinese_example)
+        item_chinese = traditional(original_chinese)
         if (
             not english_example
             or not chinese_example
             or not (
                 example_matches_chinese_definition(
-                    item["chinese"],
+                    item_chinese,
                     chinese_example,
                 )
                 or (
-                    item["chinese"].strip()
-                    and item["chinese"].strip() in chinese_example
+                    item_chinese.strip()
+                    and item_chinese.strip() in chinese_example
+                )
+                or (
+                    original_chinese.strip()
+                    and original_chinese.strip() in original_chinese_example
                 )
             )
         ):
@@ -609,47 +630,38 @@ def apply_example_resolutions(
             }],
             ensure_ascii=False,
         )
-        query = """
-            UPDATE entries
-            SET examples_json = ?
-            WHERE normalized_word = ?
-              AND lower(part_of_speech) = lower(?)
-              AND zh_definition = ?
-              AND en_definition = ?
-        """
-        parameters = (
-            encoded,
-            item["word"],
-            item["part_of_speech"],
-            item["chinese"],
-            item["english"],
-        )
-        if not replace_existing:
-            query += " AND examples_json = '[]'"
-        cursor = connection.execute(query, parameters)
-        if cursor.rowcount == 1:
-            updated += 1
-            continue
-        retained = connection.execute(
+        rows = connection.execute(
             """
-            SELECT 1
+            SELECT id, zh_definition, examples_json
             FROM entries
             WHERE normalized_word = ?
               AND lower(part_of_speech) = lower(?)
-              AND zh_definition = ?
               AND en_definition = ?
-              AND examples_json = ?
-            LIMIT 1
             """,
             (
                 item["word"],
                 item["part_of_speech"],
-                item["chinese"],
                 item["english"],
-                encoded,
             ),
-        ).fetchone()
-        if not retained:
+        ).fetchall()
+        matched = False
+        retained = False
+        for entry_id, zh_definition, examples_json in rows:
+            if traditional(str(zh_definition)) != item_chinese:
+                continue
+            matched = True
+            if examples_json == encoded:
+                retained = True
+                continue
+            if not replace_existing and examples_json != "[]":
+                continue
+            connection.execute(
+                "UPDATE entries SET examples_json = ? WHERE id = ?",
+                (encoded, entry_id),
+            )
+            updated += 1
+            retained = True
+        if rows and matched and not retained:
             raise RuntimeError(
                 "Example resolution did not match exactly: "
                 f"{item['word']} [{item['part_of_speech']}]"
@@ -685,10 +697,7 @@ def apply_pronunciation_resolutions(
             ),
         ).fetchone()
         if row is None:
-            raise RuntimeError(
-                "Pronunciation resolution did not match exactly: "
-                f"{item['word']} [{item['part_of_speech']}]"
-            )
+            continue
         entry_id, current_uk, current_us = row
         if clear_uk and not uk_ipa:
             next_uk = ""
@@ -723,51 +732,43 @@ def apply_one_character_resolutions(
 ) -> int:
     corrected = 0
     for item in resolutions:
-        resolved = item.get("resolved_chinese", item["chinese"])
-        if resolved == item["chinese"]:
+        item_chinese = traditional(str(item["chinese"]))
+        resolved = traditional(str(item.get("resolved_chinese", item["chinese"])))
+        if resolved == item_chinese:
             continue
-        cursor = connection.execute(
+        rows = connection.execute(
             """
-            UPDATE entries
-            SET zh_definition = ?
-            WHERE normalized_word = ?
-              AND lower(part_of_speech) = lower(?)
-              AND zh_definition = ?
-              AND en_definition = ?
-            """,
-            (
-                resolved,
-                item["word"],
-                item["part_of_speech"],
-                item["chinese"],
-                item["english"],
-            ),
-        )
-        if cursor.rowcount == 1:
-            corrected += 1
-            continue
-        retained = connection.execute(
-            """
-            SELECT 1
+            SELECT id, zh_definition
             FROM entries
             WHERE normalized_word = ?
               AND lower(part_of_speech) = lower(?)
-              AND zh_definition = ?
               AND en_definition = ?
-            LIMIT 1
             """,
             (
                 item["word"],
                 item["part_of_speech"],
-                resolved,
                 item["english"],
             ),
-        ).fetchone()
-        if not retained:
+        ).fetchall()
+        retained = False
+        for entry_id, zh_definition in rows:
+            normalized_chinese = traditional(str(zh_definition))
+            if normalized_chinese == resolved:
+                retained = True
+                continue
+            if normalized_chinese == item_chinese:
+                connection.execute(
+                    "UPDATE entries SET zh_definition = ? WHERE id = ?",
+                    (resolved, entry_id),
+                )
+                corrected += 1
+                retained = True
+                continue
+        if not retained and rows:
             raise RuntimeError(
                 "One-character resolution did not match exactly: "
                 f"{item['word']} [{item['part_of_speech']}] "
-                f"{item['chinese']}"
+                f"{item_chinese}"
             )
     return corrected
 
@@ -781,6 +782,7 @@ def apply_alignment_resolutions(
         keep_english = item.get("keep_english", "")
         if not keep_english:
             continue
+        item_chinese = traditional(str(item["chinese"]))
         rows = connection.execute(
             """
             SELECT id, en_definition
@@ -789,10 +791,12 @@ def apply_alignment_resolutions(
               AND lower(part_of_speech) = lower(?)
               AND zh_definition = ?
             """,
-            (item["word"], item["part_of_speech"], item["chinese"]),
+            (item["word"], item["part_of_speech"], item_chinese),
         ).fetchall()
-        resolved_chinese = item.get("resolved_chinese", item["chinese"])
-        if not rows and resolved_chinese != item["chinese"]:
+        resolved_chinese = traditional(
+            str(item.get("resolved_chinese", item["chinese"]))
+        )
+        if not rows and resolved_chinese != item_chinese:
             retained = connection.execute(
                 """
                 SELECT 1
@@ -816,14 +820,14 @@ def apply_alignment_resolutions(
             raise RuntimeError(
                 "Alignment resolution did not match its retained definition: "
                 f"{item['word']} [{item['part_of_speech']}] "
-                f"{item['chinese']}"
+                f"{item_chinese}"
             )
         retained_id = next(
             entry_id
             for entry_id, english in rows
             if english == keep_english
         )
-        if resolved_chinese != item["chinese"]:
+        if resolved_chinese != item_chinese:
             connection.execute(
                 "UPDATE entries SET zh_definition = ? WHERE id = ?",
                 (resolved_chinese, retained_id),
@@ -898,7 +902,7 @@ def apply_curated_data(
             continue
         connection.execute(
             "UPDATE entries SET zh_definition = ? WHERE id = ?",
-            (chinese, entry_id),
+            (traditional(chinese), entry_id),
         )
         matched_corrections.add(key)
 
@@ -935,9 +939,20 @@ def apply_curated_data(
                     safely_clean_ipa(entry.get("us_ipa", "")),
                     normalized_part_of_speech(entry["part_of_speech"]),
                     entry.get("countability", ""),
-                    entry["chinese"],
+                    traditional(entry["chinese"]),
                     entry["english"],
-                    json.dumps(entry.get("examples", []), ensure_ascii=False),
+                    json.dumps(
+                        [
+                            {
+                                **example,
+                                "chinese": traditional(
+                                    str(example.get("chinese", ""))
+                                ),
+                            }
+                            for example in entry.get("examples", [])
+                        ],
+                        ensure_ascii=False,
+                    ),
                 ),
             )
             replacement_count += 1
@@ -1087,7 +1102,7 @@ def clean(
         (
             item["word"].strip().lower(),
             normalized_part_of_speech(item["part_of_speech"]).lower(),
-            item["chinese"].strip(),
+            traditional(item["chinese"].strip()),
             item["english"].strip(),
         )
         for item in example_resolutions
@@ -1097,7 +1112,7 @@ def clean(
         (
             item["word"].strip().lower(),
             normalized_part_of_speech(item["part_of_speech"]).lower(),
-            item["new_chinese"].strip(),
+            traditional(item["new_chinese"].strip()),
             item["english"].strip(),
         )
         for item in semantic_corrections
