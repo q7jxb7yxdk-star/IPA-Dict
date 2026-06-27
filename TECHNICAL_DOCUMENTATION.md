@@ -345,6 +345,13 @@ IPA Dict/Audio/Phonemes/
 比較音檔不放入 synchronized app source folder。Wikimedia Commons 的作者、
 來源、裁剪紀錄及 `CC BY-SA 3.0` 授權紀錄保存在同目錄的 `ATTRIBUTION.md`。
 
+可使用以下唯讀工具檢查 app bundle 音素 MP3 是否與
+`AudioPlayerService.phonemeAudioMap` 一致，並確認音檔可解碼且沒有過長：
+
+```sh
+python3 Tools/audit_phoneme_audio.py
+```
+
 ## 9. IPA Tokenizer
 
 `IPATokenizer.phonemes(in:)` 會先 normalize 常見英文 IPA 變體，例如：

@@ -106932,6 +106932,601 @@
         }
       ],
       "deferred_policy": "Entries without explicit regional UK IPA in Wiktextract remain generated_fallback/deferred; ambiguous candidate lists are retained for audit but first explicit regional IPA is used as primary value."
+    },
+    {
+      "batch_id": "2026-06-27-us-wiktextract-ga-013",
+      "reviewed_on": "2026-06-27",
+      "source": "raw Wiktextract English data from user-downloaded raw-wiktextract-data.jsonl.gz",
+      "source_url": "https://kaikki.org/dictionary/rawdata.html / Wiktextract English extraction",
+      "source_license": "Wiktionary/Wikimedia content under CC BY-SA/GFDL-compatible Wiktextract redistribution terms; preserve attribution to Wiktionary contributors",
+      "selection_policy": "All entries whose US IPA provenance was generated_fallback and whose exact normalized word + normalized part of speech had explicit Wiktextract General-American/US/American IPA. Existing UK IPA was not modified or inferred.",
+      "candidate_count": 43,
+      "replacement_count": 43,
+      "appended_resolution_count": 0,
+      "wiktextract_line_count": 10667129,
+      "wiktextract_english_record_count": 1473332,
+      "relevant_pronunciation_record_count": 42,
+      "scope_sha256": "cfcead785064b8bdcdbf74b52953403a104db1526629806abff497f3e4f032cc",
+      "replacements": [
+        {
+          "entry_id": 69,
+          "word": "abducens nerve",
+          "display_word": "abducens nerve",
+          "part_of_speech": "noun",
+          "english": "(neuroanatomy) Each of the sixth pair of cranial nerves that are the motor nerves supplying the lateral rectus in the eye. [19th century.]",
+          "old_us_ipa": "/ˈæbdʌkɛns ˈnɝv/",
+          "new_us_ipa": "/æbˈduˌsɛnz ˌnɝv/",
+          "us_candidates": [
+            "/æbˈduˌsɛnz ˌnɝv/",
+            "/æbˈdjuˌsɛnz ˌnɝv/"
+          ]
+        },
+        {
+          "entry_id": 1402,
+          "word": "annulus",
+          "display_word": "annulus",
+          "part_of_speech": "noun",
+          "english": "(astronomy) A ring of light in a celestial body, especially when caused by an annular eclipse (for example, when the Sun and Moon are in line with the Earth, but the Moon does not completely cover the Sun's disc).",
+          "old_us_ipa": "/ˈænnʌlʌs/",
+          "new_us_ipa": "/ˈænjələs/",
+          "us_candidates": [
+            "/ˈænjələs/",
+            "/ˈænjəlaɪ/",
+            "/-li/"
+          ]
+        },
+        {
+          "entry_id": 1403,
+          "word": "annulus",
+          "display_word": "annulus",
+          "part_of_speech": "noun",
+          "english": "(botany) A structure surrounding a sporangium (or part of it) which shrinks and causes it to rupture for spore dispersal; specifically, in a fern: a structure around about two-thirds of the sporangium consisting of differentially thick-walled cells which dry and distort the sporangium; and in a moss: a complete ring of cells around the tip of the sporangium which dissolves to cause the tip to detach.",
+          "old_us_ipa": "/ˈænnʌlʌs/",
+          "new_us_ipa": "/ˈænjələs/",
+          "us_candidates": [
+            "/ˈænjələs/",
+            "/ˈænjəlaɪ/",
+            "/-li/"
+          ]
+        },
+        {
+          "entry_id": 1404,
+          "word": "annulus",
+          "display_word": "annulus",
+          "part_of_speech": "noun",
+          "english": "(geometry) The region in a plane between two concentric circles of different radii.",
+          "old_us_ipa": "/ˈænnʌlʌs/",
+          "new_us_ipa": "/ˈænjələs/",
+          "us_candidates": [
+            "/ˈænjələs/",
+            "/ˈænjəlaɪ/",
+            "/-li/"
+          ]
+        },
+        {
+          "entry_id": 1405,
+          "word": "annulus",
+          "display_word": "annulus",
+          "part_of_speech": "noun",
+          "english": "(topology) Any topological space homeomorphic to the region in a plane between two concentric circles of different radii.",
+          "old_us_ipa": "/ˈænnʌlʌs/",
+          "new_us_ipa": "/ˈænjələs/",
+          "us_candidates": [
+            "/ˈænjələs/",
+            "/ˈænjəlaɪ/",
+            "/-li/"
+          ]
+        },
+        {
+          "entry_id": 1401,
+          "word": "annulus",
+          "display_word": "annulus",
+          "part_of_speech": "noun",
+          "english": "A ring- or donut-shaped area, object, or structure.",
+          "old_us_ipa": "/ˈænnʌlʌs/",
+          "new_us_ipa": "/ˈænjələs/",
+          "us_candidates": [
+            "/ˈænjələs/",
+            "/ˈænjəlaɪ/",
+            "/-li/"
+          ]
+        },
+        {
+          "entry_id": 1563,
+          "word": "aphantasia",
+          "display_word": "aphantasia",
+          "part_of_speech": "noun",
+          "english": "(pathology, psychology) A condition where one does not possess a functioning \"mind's eye\" and cannot visualize imagery. [from 2015]",
+          "old_us_ipa": "/ˈæfæntæsɪæ/",
+          "new_us_ipa": "/ˌeɪˌfænˈteɪ.zi.ə/",
+          "us_candidates": [
+            "/ˌeɪˌfænˈteɪ.zi.ə/",
+            "/ˌeɪˌfænˈteɪ.ʒə/"
+          ]
+        },
+        {
+          "entry_id": 2529,
+          "word": "azurite",
+          "display_word": "azurite",
+          "part_of_speech": "noun",
+          "english": "(mineral) A blue vitreous mineral; a basic hydrated copper carbonate, with the chemical formula Cu2+3(CO3)2(OH)2, used since antiquity as a blue pigment or ores to extract metallic copper.",
+          "old_us_ipa": "/ˈæzɝɪt/",
+          "new_us_ipa": "/ˈæʒ.əˌɹaɪt/",
+          "us_candidates": [
+            "/ˈæʒ.əˌɹaɪt/",
+            "/ˈæʒ.(j)ʊəɹˌaɪt/"
+          ]
+        },
+        {
+          "entry_id": 2566,
+          "word": "bachelorette",
+          "display_word": "bachelorette",
+          "part_of_speech": "noun",
+          "english": "(North America) An unmarried woman.",
+          "old_us_ipa": "/ˈbætʃɛlɑɹɛtt/",
+          "new_us_ipa": "/ˌbætʃləˈɹɛt/",
+          "us_candidates": [
+            "/ˌbætʃləˈɹɛt/",
+            "/ˌbætʃələˈɹɛt/"
+          ]
+        },
+        {
+          "entry_id": 4970,
+          "word": "camera obscura",
+          "display_word": "camera obscura",
+          "part_of_speech": "noun",
+          "english": "A darkened chamber in which the image of an outside object is projected and focused onto a surface.",
+          "old_us_ipa": "/ˈkæmɝæ ˈɑbskɝæ/",
+          "new_us_ipa": "/ˌkæm.ɚ.ə əbˈskjʊɚ.ə/",
+          "us_candidates": [
+            "/ˌkæm.ɚ.ə əbˈskjʊɚ.ə/",
+            "/ˌkæm.ɹə əbˈskjʊɚ.ə/"
+          ]
+        },
+        {
+          "entry_id": 6008,
+          "word": "chloroquine",
+          "display_word": "chloroquine",
+          "part_of_speech": "noun",
+          "english": "(pharmaceutical drug) A 4-aminoquinoline drug used to treat and prevent malaria, having the chemical formula C18H26ClN3.",
+          "old_us_ipa": "/ˈtʃlɑɹɑkwɪn/",
+          "new_us_ipa": "/ˈklɔɹ.əˌkwɪn/",
+          "us_candidates": [
+            "/ˈklɔɹ.əˌkwɪn/",
+            "/ˈklɔɹ.əˌkwin/"
+          ]
+        },
+        {
+          "entry_id": 8409,
+          "word": "daydreamer",
+          "display_word": "daydreamer",
+          "part_of_speech": "noun",
+          "english": "One who daydreams.",
+          "old_us_ipa": "/ˈdeɪdɹiːmɝ/",
+          "new_us_ipa": "/ˈdeɪdɹiːmɚ/",
+          "us_candidates": [
+            "/ˈdeɪdɹiːmɚ/",
+            "/ˈdeɪdɹimɚ/"
+          ]
+        },
+        {
+          "entry_id": 8928,
+          "word": "desuetude",
+          "display_word": "desuetude",
+          "part_of_speech": "noun",
+          "english": "The state when something (for example, a custom or a law) is no longer observed nor practised; disuse, obsolescence; (countable) an instance of this.",
+          "old_us_ipa": "/ˈdɛsʌɛtʌd/",
+          "new_us_ipa": "/ˈdɛswəˌt(j)ud/",
+          "us_candidates": [
+            "/ˈdɛswəˌt(j)ud/",
+            "/dəˈsuəˌtud/"
+          ]
+        },
+        {
+          "entry_id": 9701,
+          "word": "dragoon",
+          "display_word": "dragoon",
+          "part_of_speech": "noun",
+          "english": "(by extension) Originally (historical) , a soldier armed with a dragoon musket (sense 1.1) who fought both on foot and mounted on a horse; now, a cavalier or horse soldier from a regiment formerly armed with such muskets.",
+          "old_us_ipa": "/ˈdɹæɡuːn/",
+          "new_us_ipa": "/dɹəˈɡun/",
+          "us_candidates": [
+            "/dɹəˈɡun/",
+            "/ˌdɹæˈɡun/"
+          ]
+        },
+        {
+          "entry_id": 9702,
+          "word": "dragoon",
+          "display_word": "dragoon",
+          "part_of_speech": "noun",
+          "english": "A variety of pigeon, originally a cross between a horseman and a tumbler.",
+          "old_us_ipa": "/ˈdɹæɡuːn/",
+          "new_us_ipa": "/dɹəˈɡun/",
+          "us_candidates": [
+            "/dɹəˈɡun/",
+            "/ˌdɹæˈɡun/"
+          ]
+        },
+        {
+          "entry_id": 10430,
+          "word": "emoji",
+          "display_word": "emoji",
+          "part_of_speech": "noun",
+          "english": "A digital graphic icon with a unique code point used to represent a concept, object, person, animal or place, originally used in Japanese text messaging but since adopted internationally in other contexts such as social media. Or, by extension, any non-standard emoji-like image inserted inline in text, i.e. an image emoticon.",
+          "old_us_ipa": "/ˈɛmɑdʒɪ/",
+          "new_us_ipa": "/ɪˈmoʊ.d͡ʒi/",
+          "us_candidates": [
+            "/ɪˈmoʊ.d͡ʒi/",
+            "/iˈmoʊ.d͡ʒi/"
+          ]
+        },
+        {
+          "entry_id": 10789,
+          "word": "erythema",
+          "display_word": "erythema",
+          "part_of_speech": "noun",
+          "english": "Abnormal redness and inflammation of the skin, due to vasodilation.",
+          "old_us_ipa": "/ˈɝjθɛmæ/",
+          "new_us_ipa": "/ˌɛɹɪˈθimə/",
+          "us_candidates": [
+            "/ˌɛɹɪˈθimə/",
+            "/ˌɛɹəˈθimə/"
+          ]
+        },
+        {
+          "entry_id": 12922,
+          "word": "führer",
+          "display_word": "führer",
+          "part_of_speech": "noun",
+          "english": "(by extension) A leader, especially one exercising the powers of a tyrant.",
+          "old_us_ipa": "/ˈf ˈhɹɝ/",
+          "new_us_ipa": "/ˈfjʊɹ.ɚ/",
+          "us_candidates": [
+            "/ˈfjʊɹ.ɚ/",
+            "/ˈfɪɹ.ɚ/"
+          ]
+        },
+        {
+          "entry_id": 14715,
+          "word": "hectometre",
+          "display_word": "hectometre",
+          "part_of_speech": "noun",
+          "english": "(metrology) An SI unit of length equal to 100 metres. Symbol: hm",
+          "old_us_ipa": "/ˈhɛktɑmɛtɹ/",
+          "new_us_ipa": "/ˈhɛktəˌmitɚ/",
+          "us_candidates": [
+            "/ˈhɛktəˌmitɚ/",
+            "/hɛkˈtɑmɪtɚ/"
+          ]
+        },
+        {
+          "entry_id": 14976,
+          "word": "hircine",
+          "display_word": "hircine",
+          "part_of_speech": "adjective",
+          "english": "(book word, not comparable) Of, pertaining to, or characteristic of goats.",
+          "old_us_ipa": "/ˈhɝkɪn/",
+          "new_us_ipa": "/ˈhɝsaɪn/",
+          "us_candidates": [
+            "/ˈhɝsaɪn/",
+            "/ˈhɝsɪn/"
+          ]
+        },
+        {
+          "entry_id": 15455,
+          "word": "hurdy-gurdy",
+          "display_word": "hurdy-gurdy",
+          "part_of_speech": "noun",
+          "english": "(musical instrument) A stringed instrument that produces a droning sound by turning a handle that connects to a wheel that rubs against a rosined string, with a keyboard also used to alter the pitch of the string.",
+          "old_us_ipa": "/ˈhɝdjɡɝdj/",
+          "new_us_ipa": "/ˈhɝː.diˌɡɝː.di/",
+          "us_candidates": [
+            "/ˈhɝː.diˌɡɝː.di/",
+            "/ˌhɝː.diˈɡɝː.di/"
+          ]
+        },
+        {
+          "entry_id": 15640,
+          "word": "ideogram",
+          "display_word": "ideogram",
+          "part_of_speech": "noun",
+          "english": "A picture or symbol which represents the idea of something without indicating the sequence of sounds used to pronounce it. Examples include digits, traffic signs, and graphic symbols such as @.",
+          "old_us_ipa": "/ˈɪdɛɑɡɹæm/",
+          "new_us_ipa": "/ˈɪd.i.oʊ.ɡɹæm/",
+          "us_candidates": [
+            "/ˈɪd.i.oʊ.ɡɹæm/",
+            "/ˈɪd.i.ə.ɡɹæm/"
+          ]
+        },
+        {
+          "entry_id": 17066,
+          "word": "katakana",
+          "display_word": "katakana",
+          "part_of_speech": "noun",
+          "english": "A Japanese syllabary used when writing words borrowed from foreign languages other than Chinese, specific names of plants and animals and other jargon, onomatopoeia, or to emphasize a word or phrase. Also used to write the Ainu language.",
+          "old_us_ipa": "/ˈkætækænæ/",
+          "new_us_ipa": "/ˌkætəˈkɑːnə/",
+          "us_candidates": [
+            "/ˌkætəˈkɑːnə/",
+            "/ˌkɑtəˈkɑːnə/"
+          ]
+        },
+        {
+          "entry_id": 17164,
+          "word": "kibitzer",
+          "display_word": "kibitzer",
+          "part_of_speech": "noun",
+          "english": "A person who offers unsolicited views, advice, or criticism; one who kibitzes.",
+          "old_us_ipa": "/ˈkɪbɪtzɝ/",
+          "new_us_ipa": "/ˈkɪˈbɪtsɚ/",
+          "us_candidates": [
+            "/ˈkɪˈbɪtsɚ/",
+            "/ˈkɪbətsɚ/"
+          ]
+        },
+        {
+          "entry_id": 17901,
+          "word": "leporine",
+          "display_word": "leporine",
+          "part_of_speech": "adjective",
+          "english": "(chiefly, mammalogy, also, figuratively) Of, relating to, or characteristic of a hare or a rabbit.",
+          "old_us_ipa": "/ˈlɛpɑɹɪn/",
+          "new_us_ipa": "/ˈlɛpəˌɹaɪn/",
+          "us_candidates": [
+            "/ˈlɛpəˌɹaɪn/",
+            "/ˈlɛpəɹən/"
+          ]
+        },
+        {
+          "entry_id": 18237,
+          "word": "listenership",
+          "display_word": "listenership",
+          "part_of_speech": "noun",
+          "english": "The audience that listens to a certain form or genre of audio material (specifically (Internet, radio) , an audio broadcast such as a radio program or a podcast).",
+          "old_us_ipa": "/ˈlɪstɛnɝʃɪp/",
+          "new_us_ipa": "/ˈlɪsənɚʃɪp/",
+          "us_candidates": [
+            "/ˈlɪsənɚʃɪp/",
+            "/ˈlɪsnɚʃɪp/"
+          ]
+        },
+        {
+          "entry_id": 18843,
+          "word": "mahjong",
+          "display_word": "mahjong",
+          "part_of_speech": "noun",
+          "english": "A game (originally Chinese) for four players, using a collection of tiles divided into five or six suits.",
+          "old_us_ipa": "/ˈmæhdʒɑŋ/",
+          "new_us_ipa": "/mɑˈd͡ʒɔŋ/",
+          "us_candidates": [
+            "/mɑˈd͡ʒɔŋ/",
+            "/mɑˈʒɔŋ/"
+          ]
+        },
+        {
+          "entry_id": 20445,
+          "word": "multiverse",
+          "display_word": "multiverse",
+          "part_of_speech": "noun",
+          "english": "(physics, cosmology) The hypothetical group of all the possible universes in existence.",
+          "old_us_ipa": "/ˈmʌltɪvɝs/",
+          "new_us_ipa": "/ˈmʌltəˌvɝs/",
+          "us_candidates": [
+            "/ˈmʌltəˌvɝs/",
+            "/ˈmʌltiˌvɝs/"
+          ]
+        },
+        {
+          "entry_id": 23771,
+          "word": "pokémon",
+          "display_word": "pokémon",
+          "part_of_speech": "noun",
+          "english": "A pocket monster; a fictional creature from the universe of the Pokémon franchise.",
+          "old_us_ipa": "/ˈpɑk ˈmɑn/",
+          "new_us_ipa": "/ˈpoʊ.keɪˌmɑn/",
+          "us_candidates": [
+            "/ˈpoʊ.keɪˌmɑn/",
+            "/ˈpoʊ.kə.mɑn/",
+            "/ˈpoʊkiˌmɑn/"
+          ]
+        },
+        {
+          "entry_id": 23853,
+          "word": "polynya",
+          "display_word": "polynya",
+          "part_of_speech": "noun",
+          "english": "(hydrology, oceanography) A naturally formed transient area of open water surrounded by sea ice, especially in polar or subpolar seas. [from mid 19th c.]",
+          "old_us_ipa": "/ˈpɑljnjæ/",
+          "new_us_ipa": "/pəˈlɪnjə/",
+          "us_candidates": [
+            "/pəˈlɪnjə/",
+            "/ˌpɑlənˈjɑ/"
+          ]
+        },
+        {
+          "entry_id": 24672,
+          "word": "pterodactyl",
+          "display_word": "pterodactyl",
+          "part_of_speech": "noun",
+          "english": "(loosely, proscribed) Any pterosaur.",
+          "old_us_ipa": "/ˈptɝɑdæktjl/",
+          "new_us_ipa": "/ˌtɛɹ.əˈdæk.təl/",
+          "us_candidates": [
+            "/ˌtɛɹ.əˈdæk.təl/",
+            "/ˌtɛɹ.əˈdæk.tɪl/"
+          ]
+        },
+        {
+          "entry_id": 24671,
+          "word": "pterodactyl",
+          "display_word": "pterodactyl",
+          "part_of_speech": "noun",
+          "english": "A pterosaur of the genus Pterodactylus.",
+          "old_us_ipa": "/ˈptɝɑdæktjl/",
+          "new_us_ipa": "/ˌtɛɹ.əˈdæk.təl/",
+          "us_candidates": [
+            "/ˌtɛɹ.əˈdæk.təl/",
+            "/ˌtɛɹ.əˈdæk.tɪl/"
+          ]
+        },
+        {
+          "entry_id": 24891,
+          "word": "pyroclastic flow",
+          "display_word": "pyroclastic flow",
+          "part_of_speech": "noun",
+          "english": "(physics, uncountable, uncommon) Used other than figuratively or idiomatically: see pyroclastic,‎ flow: flow (uncountable) of pyroclastic particles.",
+          "old_us_ipa": "/ˈpjɹɑklæstɪk ˈflaʊ/",
+          "new_us_ipa": "/ˈpaɪ.ɹoʊ.klæ.stɪk floʊ/",
+          "us_candidates": [
+            "/ˈpaɪ.ɹoʊ.klæ.stɪk floʊ/",
+            "/ˈpaɪ.ɹə.klæ.stɪk floʊ/"
+          ]
+        },
+        {
+          "entry_id": 25111,
+          "word": "racemate",
+          "display_word": "racemate",
+          "part_of_speech": "noun",
+          "english": "A mixture which is racemic.",
+          "old_us_ipa": "/ˈɹækɛmæt/",
+          "new_us_ipa": "/ˈɹæsəˌmeɪt/",
+          "us_candidates": [
+            "/ˈɹæsəˌmeɪt/",
+            "/ˈɹeɪ-/",
+            "/ˈɹeɪsˌmeɪt/"
+          ]
+        },
+        {
+          "entry_id": 26220,
+          "word": "riverine",
+          "display_word": "riverine",
+          "part_of_speech": "adjective",
+          "english": "Of or pertaining to rivers, or located on or by a river; inhabiting a river or its surrounds.",
+          "old_us_ipa": "/ˈɹɪvɝɪn/",
+          "new_us_ipa": "/ˈɹɪvɚ.ɪn/",
+          "us_candidates": [
+            "/ˈɹɪvɚ.ɪn/",
+            "/ˈɹɪvɚ.in/",
+            "/ˈɹɪvɚ.aɪn/"
+          ]
+        },
+        {
+          "entry_id": 26351,
+          "word": "rooibos",
+          "display_word": "rooibos",
+          "part_of_speech": "noun",
+          "english": "(South Africa) Various shrubs of the genus Combretum.",
+          "old_us_ipa": "/ˈɹuːɪbɑs/",
+          "new_us_ipa": "/ˈɹɔɪˌbɔs/",
+          "us_candidates": [
+            "/ˈɹɔɪˌbɔs/",
+            "/ˈɹɔɪˌbɑs/",
+            "/ˈɹu.iˌbɔs/",
+            "/ˈɹu.iˌbɑs/"
+          ]
+        },
+        {
+          "entry_id": 26350,
+          "word": "rooibos",
+          "display_word": "rooibos",
+          "part_of_speech": "noun",
+          "english": "The tisane (herbal tea) made from this plant.",
+          "old_us_ipa": "/ˈɹuːɪbɑs/",
+          "new_us_ipa": "/ˈɹɔɪˌbɔs/",
+          "us_candidates": [
+            "/ˈɹɔɪˌbɔs/",
+            "/ˈɹɔɪˌbɑs/",
+            "/ˈɹu.iˌbɔs/",
+            "/ˈɹu.iˌbɑs/"
+          ]
+        },
+        {
+          "entry_id": 26784,
+          "word": "samogitian",
+          "display_word": "samogitian",
+          "part_of_speech": "adjective",
+          "english": "Of, from, or pertaining to the region of Samogitia, or its people.",
+          "old_us_ipa": "/ˈsæmɑɡɪtɪæn/",
+          "new_us_ipa": "/ˌsæ.moʊˈɡi.ʃən/",
+          "us_candidates": [
+            "/ˌsæ.moʊˈɡi.ʃən/",
+            "/ˌsæ.məˈɡi.ʃən/"
+          ]
+        },
+        {
+          "entry_id": 26815,
+          "word": "sandhi",
+          "display_word": "sandhi",
+          "part_of_speech": "noun",
+          "english": "(phonology) Any of a wide variety of phonological processes that occur at morpheme or word boundaries, such as the fusion of sounds across word boundaries and the alteration of sounds due to neighboring sounds or due to the grammatical function of adjacent words.",
+          "old_us_ipa": "/ˈsændhɪ/",
+          "new_us_ipa": "/ˈsʌndi/",
+          "us_candidates": [
+            "/ˈsʌndi/",
+            "/ˈsɑndi/"
+          ]
+        },
+        {
+          "entry_id": 27812,
+          "word": "shiitake",
+          "display_word": "shiitake",
+          "part_of_speech": "noun",
+          "english": "A wide, brown variety of edible mushroom, Lentinula edodes.",
+          "old_us_ipa": "/ˈʃɪɪtæk/",
+          "new_us_ipa": "/ʃɪˈtɑkeɪ/",
+          "us_candidates": [
+            "/ʃɪˈtɑkeɪ/",
+            "/ʃɪˈtɑki/"
+          ]
+        },
+        {
+          "entry_id": 27851,
+          "word": "shitter",
+          "display_word": "shitter",
+          "part_of_speech": "noun",
+          "english": "(slang, vulgar) A toilet or lavatory; an outhouse.",
+          "old_us_ipa": "/ˈʃɪttɝ/",
+          "new_us_ipa": "/ˈʃɪt.ɚ/",
+          "us_candidates": [
+            "/ˈʃɪt.ɚ/",
+            "/ˈʃɪ.tɚ/"
+          ]
+        },
+        {
+          "entry_id": 28273,
+          "word": "skank",
+          "display_word": "skank",
+          "part_of_speech": "noun",
+          "english": "(pejorative, slang) A lewd and disreputable person, often female, especially an unattractive person with an air of tawdry promiscuity.",
+          "old_us_ipa": "/ˈskænk/",
+          "new_us_ipa": "/ˈskeɪ̯ŋk/",
+          "us_candidates": [
+            "/ˈskeɪ̯ŋk/",
+            "/ˈskɛ̃ŋk/"
+          ]
+        },
+        {
+          "entry_id": 30117,
+          "word": "sudoku",
+          "display_word": "sudoku",
+          "part_of_speech": "noun",
+          "english": "(games) A type of pencil puzzle played on a square grid, requiring each of the columns, each of the rows, and each of the subregions (called \"boxes\" or \"regions\") to contain the lowest whole numbers up to the dimension of the puzzle, usually 1 to 9, once each. The subregions are rectangular or square except in variants.",
+          "old_us_ipa": "/ˈsʌdɑkʌ/",
+          "new_us_ipa": "/sʊˈdoʊku/",
+          "us_candidates": [
+            "/sʊˈdoʊku/",
+            "/sʊˈdɑku/",
+            "/sʊˈdukoʊ/",
+            "/sʊˈduku/",
+            "/sə-/",
+            "/su-/",
+            "/ˈsʊdoʊku/",
+            "/ˈsʊdɑku/"
+          ]
+        }
+      ],
+      "deferred_policy": "Entries without explicit regional US IPA in Wiktextract remain generated_fallback/deferred; ambiguous candidate lists are retained for audit but first explicit regional IPA is used as primary value."
     }
   ]
 }
