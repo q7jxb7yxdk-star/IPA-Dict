@@ -1,13 +1,13 @@
 # IPA Phoneme Audio Attribution
 
-These phoneme audio files were downloaded from Wikimedia Commons and converted from OGG to MP3 for use in IPA Dict. Each file remains under its original Wikimedia Commons license. Follow the source file license terms when redistributing the app or repository.
+These phoneme audio files were downloaded from Wikimedia Commons and converted from OGG to MP3 for use in IPA Dict. Some original consonant samples contain multiple demonstration sounds; the app bundle uses a single-shot derivative that keeps the main phoneme segment. Each file remains under its original Wikimedia Commons license. Follow the source file license terms when redistributing the app or repository.
 
 ## Conversion
 
 - Source format: OGG from Wikimedia Commons
 - App format: MP3
 - Tool: ffmpeg
-- Changes: audio format conversion and local filename normalization only
+- Changes: audio format conversion, local filename normalization, and for multi-segment samples, trimming to a single main phoneme segment. The full converted MP3 files and the trimming report are preserved under `Tools/AudioArchive/WikimediaCommonsSources/`.
 
 ## Files
 

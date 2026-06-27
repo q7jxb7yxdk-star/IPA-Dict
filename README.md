@@ -122,6 +122,12 @@ IPA Dict/
 - English Wiktionary data via Kaikki / Wiktextract
 - CC-CEDICT
 
+目前 bundled `dictionary.sqlite` 已包含一批由本地 Wiktextract raw JSONL gzip
+審核匯入的 UK IPA 修正。匯入規則只接受明確標示為
+Received Pronunciation、UK 或 British 的音標，不會把 US IPA 推斷成 UK IPA。
+截至 2026-06-27，已把 1,583 筆原本的 generated fallback UK IPA
+替換為 verified source。
+
 詳細授權請參考：
 
 - `IPA Dict/Data/DictionaryLicenses.md`
@@ -156,9 +162,10 @@ IPA Dict/
 IPA Dict/Audio/Phonemes/
 ```
 
-音素錄音取自 Wikimedia Commons 的可再散布音檔，個別作者、來源頁面及
-`CC BY-SA 3.0` 授權資料記錄於
-`IPA Dict/Audio/Phonemes/ATTRIBUTION.md`。
+音素錄音取自 Wikimedia Commons 的可再散布音檔。部分原始 consonant
+錄音包含多段示範聲音；app bundle 內使用的是裁剪後的 single-shot MP3，
+只保留主要單一音素聲音。個別作者、來源頁面、裁剪紀錄及 `CC BY-SA 3.0`
+授權資料記錄於 `IPA Dict/Audio/Phonemes/ATTRIBUTION.md`。
 
 ## 注意事項
 

@@ -188,6 +188,32 @@ WHERE normalized_word = ?
 ORDER BY id
 ```
 
+詞庫不是直接手改 SQLite 作為唯一來源；可重建修正會記錄在
+`Tools/DictionaryBuilder/` 內的 JSON 帳本，再由建庫工具重建資料庫。
+發音修正主要記錄於：
+
+```text
+Tools/DictionaryBuilder/pronunciation_review_resolutions.json
+Tools/DictionaryBuilder/ipa_fallback_review_batches.json
+```
+
+2026-06-27 的 Wiktextract UK IPA 批次使用使用者提供的
+`raw-wiktextract-data.jsonl.gz` 進行本地掃描。該批次只採用明確帶有
+`Received-Pronunciation`、`UK` 或 `British` tag 的 IPA，並以
+`word + part_of_speech + en_definition` 精準匹配現有詞條；US IPA
+不會被複製或推斷成 UK IPA。該批次把 1,583 筆
+`uk_ipa:generated_fallback` 替換為 verified source。
+
+最近一次詞庫驗證結果：
+
+```text
+malformed_ipa_count = 0
+suspicious_regional_ipa_count = 0
+invalid_example_count = 0
+semantic_correction_failure_count = 0
+missing_part_of_speech_candidate_count = 0
+```
+
 app 顯示時，每個 entry 只取最多一個例句：
 
 ```swift
@@ -313,9 +339,11 @@ audioPlayer.playPhoneme(symbol: symbol)
 IPA Dict/Audio/Phonemes/
 ```
 
-正式 app bundle 只包含轉換後的 MP3。原始 OGG、下載 metadata 及舊版私人
+正式 app bundle 只包含轉換後的 MP3。部分 Wikimedia consonant 原始錄音
+包含多段示範聲音；app bundle 使用 single-shot 裁剪版，只保留主要單一
+音素聲音。原始 OGG、完整轉檔 MP3、single-shot 裁剪版、裁剪報告及舊版私人
 比較音檔不放入 synchronized app source folder。Wikimedia Commons 的作者、
-來源及 `CC BY-SA 3.0` 授權紀錄保存在同目錄的 `ATTRIBUTION.md`。
+來源、裁剪紀錄及 `CC BY-SA 3.0` 授權紀錄保存在同目錄的 `ATTRIBUTION.md`。
 
 ## 9. IPA Tokenizer
 
