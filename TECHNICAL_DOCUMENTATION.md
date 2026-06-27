@@ -328,10 +328,11 @@ audioPlayer.playPhoneme(symbol: symbol)
 "p": ["ipa_p"]
 "l": ["ipa_l"]
 "aɪ": ["ipa_a", "ipa_i_short"]
-"tʃ": ["ipa_t", "ipa_sh"]
+"tʃ": ["ipa_t_ch"]
+"dʒ": ["ipa_d_zh"]
 ```
 
-例如 `æ` 會播放 app bundle 內的 `ipa_ae.mp3`，`aɪ` 會依序播放 `ipa_a.mp3` 與 `ipa_i_short.mp3`。
+例如 `æ` 會播放 app bundle 內的 `ipa_ae.mp3`，`aɪ` 會依序播放 `ipa_a.mp3` 與 `ipa_i_short.mp3`。`tʃ` 與 `dʒ` 使用獨立 affricate MP3，避免順序播放 `t + ʃ` 或 `d + ʒ` 時聽起來像兩個音。
 
 本地音素音檔位於：
 

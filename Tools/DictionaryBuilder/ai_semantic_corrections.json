@@ -4958,6 +4958,4290 @@
         "english": "The lake was covered with ice.",
         "chinese": "湖面覆蓋著冰。"
       }
+    },
+    {
+      "word": "abatement",
+      "part_of_speech": "noun",
+      "old_chinese": "推理",
+      "new_chinese": "減少；減免；折扣",
+      "english": "An amount abated; that which is taken away by way of reduction; deduction; decrease; a rebate or discount allowed; in particular from a tax. [Late 15th century.]",
+      "reason": "Abatement is a reduction, deduction, decrease, or rebate; 推理 means inference and is unrelated.",
+      "example": {
+        "english": "The company applied for a tax abatement.",
+        "chinese": "那家公司申請稅項減免。"
+      }
+    },
+    {
+      "word": "ability",
+      "part_of_speech": "noun",
+      "old_chinese": "人才",
+      "new_chinese": "能力；才能",
+      "english": "The quality or state of being able; capacity to do or of doing something; having the necessary power. [First attested from around (1350 to 1470).]",
+      "reason": "Ability means capacity or power to do something; 人才 means talented person.",
+      "example": {
+        "english": "She has the ability to solve difficult problems.",
+        "chinese": "她有解決難題的能力。"
+      }
+    },
+    {
+      "word": "abeyance",
+      "part_of_speech": "noun",
+      "old_chinese": "休假",
+      "new_chinese": "暫停；中止；所有權未定狀態",
+      "english": "(legal) Expectancy; a condition when an ownership of real property is undetermined; lapse in succession of ownership of estate, or title. [Late 16th century]",
+      "reason": "Abeyance means suspension or a legal state of undetermined ownership, not vacation.",
+      "example": {
+        "english": "The matter was held in abeyance until the court ruled.",
+        "chinese": "此事暫停處理，直到法院作出裁決。"
+      }
+    },
+    {
+      "word": "abietic acid",
+      "part_of_speech": "noun",
+      "old_chinese": "枞酸",
+      "new_chinese": "樅酸；松香酸",
+      "english": "(carboxylic acid) A yellowish resin acid isolated from rosin and used in varnishes and esters for plasticizers; C19H29COOH.",
+      "reason": "Use Traditional Chinese 樅酸 and add common name 松香酸 for abietic acid.",
+      "example": {
+        "english": "Abietic acid is found in rosin.",
+        "chinese": "樅酸存在於松香之中。"
+      }
+    },
+    {
+      "word": "ablution",
+      "part_of_speech": "noun",
+      "old_chinese": "沐浴仪式",
+      "new_chinese": "沐浴儀式；洗禮；淨身",
+      "english": "The act of washing or cleansing the body, or some part of it, as a religious rite. [From mid 16th century.]",
+      "reason": "Convert Simplified 仪式 to Traditional 儀式 and clarify the religious washing sense.",
+      "example": {
+        "english": "Ablution is performed before the prayer.",
+        "chinese": "祈禱前會進行淨身沐浴儀式。"
+      }
+    },
+    {
+      "word": "abort",
+      "part_of_speech": "noun",
+      "old_chinese": "堕胎",
+      "new_chinese": "中止；任務中止",
+      "english": "(military, aeronautics) An early termination of a mission, action, or procedure in relation to missiles or spacecraft; the craft making such a mission.",
+      "reason": "This noun sense is early termination of a mission or procedure, not abortion.",
+      "example": {
+        "english": "The launch ended in an abort.",
+        "chinese": "這次發射以任務中止告終。"
+      }
+    },
+    {
+      "word": "abort",
+      "part_of_speech": "noun",
+      "old_chinese": "堕胎",
+      "new_chinese": "流產；墮胎",
+      "english": "(now, rare) The product of a miscarriage; an aborted offspring; an abortion. [First attested in the early 17th century.]",
+      "reason": "Use Traditional Chinese 墮胎 and include miscarriage sense 流產.",
+      "example": {
+        "english": "The old medical text referred to an abort.",
+        "chinese": "那本舊醫學文本提到流產或墮胎。"
+      }
+    },
+    {
+      "word": "abort",
+      "part_of_speech": "noun",
+      "old_chinese": "堕胎",
+      "new_chinese": "流產；墮胎",
+      "english": "(obsolete) A miscarriage; an untimely birth; an abortion. [Attested from around (1350 to 1470) until the mid 17th century.]",
+      "reason": "Use Traditional Chinese 墮胎 and include miscarriage sense 流產.",
+      "example": {
+        "english": "In older usage, abort could mean a miscarriage.",
+        "chinese": "在較舊用法中，abort 可指流產或墮胎。"
+      }
+    },
+    {
+      "word": "abort",
+      "part_of_speech": "verb",
+      "old_chinese": "流產",
+      "new_chinese": "中止；終止",
+      "english": "(transitive, computing) To terminate a process prior to completion.",
+      "reason": "The computing verb means to terminate a process, not miscarry.",
+      "example": {
+        "english": "Press escape to abort the process.",
+        "chinese": "按 Escape 鍵可中止這個程序。"
+      }
+    },
+    {
+      "word": "abort",
+      "part_of_speech": "verb",
+      "old_chinese": "流產",
+      "new_chinese": "使發育不全；阻止成熟",
+      "english": "(transitive, biology) To cause an organism to develop minimally; to cause rudimentary development to happen; to prevent maturation. [First attested in the mid 19th century.]",
+      "reason": "The biology sense is preventing maturation or causing rudimentary development, not pregnancy miscarriage.",
+      "example": {
+        "english": "The mutation may abort normal development.",
+        "chinese": "這種突變可能使正常發育不全，並阻止成熟。"
+      }
+    },
+    {
+      "word": "abortive",
+      "part_of_speech": "noun",
+      "old_chinese": "堕胎",
+      "new_chinese": "早產兒；流產胎兒；未成熟事物",
+      "english": "(obsolete) Someone or something born or brought forth prematurely; an abortion. [Attested from around (1150 to 1350) until the mid 18th century.]",
+      "reason": "Use Traditional Chinese and reflect obsolete noun sense of something born prematurely.",
+      "example": {
+        "english": "The obsolete noun abortive referred to something born prematurely.",
+        "chinese": "這個過時名詞 abortive 指早產兒或未成熟事物。"
+      }
+    },
+    {
+      "word": "absence",
+      "part_of_speech": "noun",
+      "old_chinese": "請假",
+      "new_chinese": "缺席；不在",
+      "english": "Failure to be present where one is expected, wanted, or needed; nonattendance; deficiency. [First attested around 1350 to 1470.]",
+      "reason": "Absence is the state/fact of not being present; 請假 is requesting leave.",
+      "example": {
+        "english": "Her absence from the meeting was noticed.",
+        "chinese": "她缺席會議一事引起了注意。"
+      }
+    },
+    {
+      "word": "absurdity",
+      "part_of_speech": "noun",
+      "old_chinese": "谬論",
+      "new_chinese": "荒謬；荒唐；荒謬之事",
+      "english": "That which is absurd; an absurd action; a logical contradiction. [First attested in the late 15th century.]",
+      "reason": "Use Traditional Chinese and cover absurd action/contradiction, not only fallacy.",
+      "example": {
+        "english": "The absurdity of the rule was obvious.",
+        "chinese": "這條規則的荒謬顯而易見。"
+      }
+    },
+    {
+      "word": "absurdity",
+      "part_of_speech": "noun",
+      "old_chinese": "谬論",
+      "new_chinese": "荒謬；荒唐",
+      "english": "The quality of being absurd or inconsistent with obvious truth, reason, or sound judgment. [First attested in the early 16th century.]",
+      "reason": "Absurdity here is the quality of being absurd; 谬論 is Simplified and too narrow.",
+      "example": {
+        "english": "They laughed at the absurdity of the claim.",
+        "chinese": "他們嘲笑那個說法的荒謬。"
+      }
+    },
+    {
+      "word": "abundance",
+      "part_of_speech": "noun",
+      "old_chinese": "複數",
+      "new_chinese": "大量；許多",
+      "english": "A large quantity; many. [First attested around 1150 to 1350.]",
+      "reason": "Abundance means a large quantity; 複數 means plural.",
+      "example": {
+        "english": "There was an abundance of food at the festival.",
+        "chinese": "節日裡有大量食物。"
+      }
+    },
+    {
+      "word": "abuttal",
+      "part_of_speech": "noun",
+      "old_chinese": "國境",
+      "new_chinese": "鄰接邊界；地界",
+      "english": "(rare, pluralonly) The butting or boundary of land, particularly at the end; buttals. [First attested in the early 17th century.]",
+      "reason": "Abuttal refers to the boundary or end of a parcel of land, not necessarily a national border.",
+      "example": {
+        "english": "The deed described the abuttal of the land.",
+        "chinese": "契約描述了該土地的鄰接邊界。"
+      }
+    },
+    {
+      "word": "attendance",
+      "part_of_speech": "noun",
+      "old_chinese": "出現",
+      "new_chinese": "出席率；到場次數",
+      "english": "The frequency with which one has been present for a regular activity or set of events.",
+      "reason": "Attendance here means frequency of being present, not simply appearance.",
+      "example": {
+        "english": "Her attendance improved this term.",
+        "chinese": "她這學期的出席率提高了。"
+      }
+    },
+    {
+      "word": "this",
+      "part_of_speech": "determiner",
+      "old_chinese": "这",
+      "new_chinese": "這",
+      "english": "The known (thing) (used in indicating something or someone just mentioned).",
+      "reason": "The known thing just mentioned; convert Simplified 这 to Traditional 這.",
+      "example": {
+        "english": "This is never going to end.",
+        "chinese": "這件事永遠不會結束。"
+      }
+    },
+    {
+      "word": "bread",
+      "part_of_speech": "noun",
+      "old_chinese": "面包",
+      "new_chinese": "麵包",
+      "english": "A foodstuff made by baking dough made from cereals.",
+      "reason": "Bread is food made by baking dough; 面包 is Simplified, 麵包 is Traditional.",
+      "example": {
+        "english": "She bought a loaf of bread.",
+        "chinese": "她買了一條麵包。"
+      }
+    },
+    {
+      "word": "inherit",
+      "part_of_speech": "verb",
+      "old_chinese": "继承",
+      "new_chinese": "繼承",
+      "english": "(transitive) To receive (property, a title, etc.), by legal succession or bequest after the previous owner's death.",
+      "reason": "Inherit means to receive property or a title by succession; convert Simplified 继承 to Traditional 繼承.",
+      "example": {
+        "english": "She will inherit the house from her aunt.",
+        "chinese": "她將從姑母那裡繼承這所房子。"
+      }
+    },
+    {
+      "word": "where",
+      "part_of_speech": "adverb",
+      "old_chinese": "哪儿",
+      "new_chinese": "哪裡；哪兒",
+      "english": "In, at or to the place (that) or a place (that).",
+      "reason": "Where asks or refers to a place; 哪儿 is Simplified, use Traditional 哪兒/哪裡.",
+      "example": {
+        "english": "Where are you going?",
+        "chinese": "你要去哪裡？"
+      }
+    },
+    {
+      "word": "wheel",
+      "part_of_speech": "noun",
+      "old_chinese": "轮子",
+      "new_chinese": "輪子",
+      "english": "A circular device capable of rotating on its axis, facilitating movement or transportation or performing labour in machines.",
+      "reason": "Wheel is a circular device that rotates; 轮子 is Simplified, 輪子 is Traditional.",
+      "example": {
+        "english": "The front wheel is broken.",
+        "chinese": "前輪子壞了。"
+      }
+    },
+    {
+      "word": "butter",
+      "part_of_speech": "noun",
+      "old_chinese": "黃油",
+      "new_chinese": "牛油；黃油",
+      "english": "A soft, fatty foodstuff made by churning the cream of milk (generally cow's milk).",
+      "reason": "Butter is a dairy fat; 牛油 is common Traditional Chinese usage and 黃油 is also understood.",
+      "example": {
+        "english": "Spread some butter on the bread.",
+        "chinese": "在麵包上塗些牛油。"
+      }
+    },
+    {
+      "word": "cleanse",
+      "part_of_speech": "verb",
+      "old_chinese": "清洗",
+      "new_chinese": "清洗；淨化",
+      "english": "(transitive) To free from dirt; to clean, to purify.",
+      "reason": "Cleanse means to free from dirt or purify; add 淨化 to cover purify sense.",
+      "example": {
+        "english": "Use clean water to cleanse the wound.",
+        "chinese": "用清水清洗傷口。"
+      }
+    },
+    {
+      "word": "read",
+      "part_of_speech": "verb",
+      "old_chinese": "閱讀；讀",
+      "new_chinese": "閱讀；讀",
+      "english": "(transitive, or, intransitive) To look at and interpret letters or other information that is written.",
+      "reason": "Read means to look at and interpret written information; current term is correct but add reviewed example.",
+      "example": {
+        "english": "She can read French.",
+        "chinese": "她能閱讀法文。"
+      }
+    },
+    {
+      "word": "morning",
+      "part_of_speech": "noun",
+      "old_chinese": "早上",
+      "new_chinese": "早上；早晨；上午",
+      "english": "The early part of the day, especially from midnight to noon. [from 13th c.]",
+      "reason": "Morning is the early part of the day; current term is correct but expand common Traditional variants.",
+      "example": {
+        "english": "I drink coffee every morning.",
+        "chinese": "我每天早上喝咖啡。"
+      }
+    },
+    {
+      "word": "bastion",
+      "part_of_speech": "noun",
+      "old_chinese": "堡壘 堡垒",
+      "new_chinese": "堡壘",
+      "english": "(architecture) A projecting part of a rampart or other fortification.",
+      "reason": "Remove duplicate Simplified/Traditional forms; bastion is a projecting fortified part or stronghold.",
+      "example": {
+        "english": "The old bastion guarded the harbour.",
+        "chinese": "那座古老堡壘守衛著港口。"
+      }
+    },
+    {
+      "word": "beeswax",
+      "part_of_speech": "noun",
+      "old_chinese": "蜂蜡 蜂蠟",
+      "new_chinese": "蜂蠟",
+      "english": "A wax secreted by bees from which they make honeycomb; or, the processed form of this wax used in the manufacture of various goods.",
+      "reason": "Remove Simplified 蜡 and keep Traditional 蜂蠟.",
+      "example": {
+        "english": "Beeswax is used to make candles.",
+        "chinese": "蜂蠟可用來製作蠟燭。"
+      }
+    },
+    {
+      "word": "bolt from the blue",
+      "part_of_speech": "noun",
+      "old_chinese": "晴天霹雳 晴天霹靂",
+      "new_chinese": "晴天霹靂",
+      "english": "(informal, idiomatic) A complete surprise; something totally unexpected.",
+      "reason": "Use Traditional 霹靂 and remove duplicate Simplified form.",
+      "example": {
+        "english": "The news came as a bolt from the blue.",
+        "chinese": "這個消息如晴天霹靂。"
+      }
+    },
+    {
+      "word": "bulwark",
+      "part_of_speech": "noun",
+      "old_chinese": "堡壘 堡垒",
+      "new_chinese": "堡壘；防壁",
+      "english": "A defensive wall or rampart.",
+      "reason": "Bulwark is a defensive wall or rampart; remove duplicate Simplified form and clarify.",
+      "example": {
+        "english": "The city built a bulwark against attack.",
+        "chinese": "該城建造堡壘和防壁以抵禦攻擊。"
+      }
+    },
+    {
+      "word": "bush dog",
+      "part_of_speech": "noun",
+      "old_chinese": "藪犬 薮犬",
+      "new_chinese": "藪犬",
+      "english": "A wild canine animal (Speothos venaticus), found in Central and South America.",
+      "reason": "Use Traditional 藪犬 and remove Simplified duplicate.",
+      "example": {
+        "english": "The bush dog lives in Central and South America.",
+        "chinese": "藪犬生活在中南美洲。"
+      }
+    },
+    {
+      "word": "carcass",
+      "part_of_speech": "noun",
+      "old_chinese": "尸身 屍身 尸體 屍體 尸首 屍首",
+      "new_chinese": "屍身；屍體；屍首",
+      "english": "The body of a dead animal, especially a vertebrate or other animal having flesh.",
+      "reason": "Use Traditional 屍 and remove duplicate Simplified variants.",
+      "example": {
+        "english": "The carcass was found near the road.",
+        "chinese": "屍體在路邊被發現。"
+      }
+    },
+    {
+      "word": "carp bream",
+      "part_of_speech": "noun",
+      "old_chinese": "東方歐鳊(引進)",
+      "new_chinese": "歐鯿；東方歐鯿",
+      "english": "A species of freshwater bream, Abramis brama.",
+      "reason": "Use Traditional 鯿 and remove mixed note.",
+      "example": {
+        "english": "The carp bream is a freshwater fish.",
+        "chinese": "歐鯿是一種淡水魚。"
+      }
+    },
+    {
+      "word": "condemnation",
+      "part_of_speech": "noun",
+      "old_chinese": "判決書 判决書",
+      "new_chinese": "判決書；譴責",
+      "english": "The act of judicially condemning, or adjudging guilty, unfit for use, or forfeited; the act of dooming to punishment or forfeiture.",
+      "reason": "Use Traditional 決 and include condemnation sense of judgment/condemnation.",
+      "example": {
+        "english": "The court issued a condemnation of the unsafe building.",
+        "chinese": "法院發出針對危險建築的判決書。"
+      }
+    },
+    {
+      "word": "counterespionage",
+      "part_of_speech": "noun",
+      "old_chinese": "反間谍 反間諜",
+      "new_chinese": "反間諜活動",
+      "english": "All those activities undertaken to neutralize or exploit the espionage activities of another nation or an enemy.",
+      "reason": "Use Traditional 諜 and clarify counterespionage as activity.",
+      "example": {
+        "english": "Counterespionage protects secrets from spies.",
+        "chinese": "反間諜活動保護機密免受間諜竊取。"
+      }
+    },
+    {
+      "word": "dmytro",
+      "part_of_speech": "proper noun",
+      "old_chinese": "德米特里 ‎",
+      "new_chinese": "德米特羅",
+      "english": "A transliteration of the Ukrainian male given name Дмитро (Dmytro)",
+      "reason": "Dmytro is a Ukrainian given name; current form has stray invisible character and less accurate transliteration.",
+      "example": {
+        "english": "Dmytro is a common Ukrainian given name.",
+        "chinese": "德米特羅是一個常見的烏克蘭男性名字。"
+      }
+    },
+    {
+      "word": "double track",
+      "part_of_speech": "noun",
+      "old_chinese": "复線鐵路 tiě lù 複綫鐵路 鉄路",
+      "new_chinese": "雙線鐵路",
+      "english": "(rail) A section of railway line or tramline consisting of two parallel tracks, one being used in one direction and the other in the opposite direction.",
+      "reason": "Normalize mixed Simplified/Traditional and remove pinyin fragments.",
+      "example": {
+        "english": "A double track allows trains to run in both directions.",
+        "chinese": "雙線鐵路可讓列車雙向行駛。"
+      }
+    },
+    {
+      "word": "dresser",
+      "part_of_speech": "noun",
+      "old_chinese": "多屉櫃 多屜櫃",
+      "new_chinese": "多屜櫃",
+      "english": "(US) An item of bedroom furniture, like a low chest of drawers (bureau), often with a mirror.",
+      "reason": "Use Traditional 屜 and remove duplicate mixed form.",
+      "example": {
+        "english": "She put her clothes in the dresser.",
+        "chinese": "她把衣服放進多屜櫃。"
+      }
+    },
+    {
+      "word": "duopoly",
+      "part_of_speech": "noun",
+      "old_chinese": "雙頭壟斷 雙頭垄斷",
+      "new_chinese": "雙頭壟斷",
+      "english": "(economics) An economic condition in which two sellers exert most control over the market of a commodity.",
+      "reason": "Use Traditional 壟 and remove Simplified duplicate.",
+      "example": {
+        "english": "A duopoly occurs when two sellers dominate a market.",
+        "chinese": "雙頭壟斷是指兩個賣方主導市場。"
+      }
+    },
+    {
+      "word": "epitaph",
+      "part_of_speech": "noun",
+      "old_chinese": "墓志铭 墓誌銘",
+      "new_chinese": "墓誌銘",
+      "english": "An inscription on a gravestone in memory of the deceased.",
+      "reason": "Use Traditional 誌 and 銘.",
+      "example": {
+        "english": "The epitaph was carved on the stone.",
+        "chinese": "墓誌銘刻在石碑上。"
+      }
+    },
+    {
+      "word": "eurasian magpie",
+      "part_of_speech": "noun",
+      "old_chinese": "喜鵲 喜鹊",
+      "new_chinese": "喜鵲",
+      "english": "A well-known black-and-white corvid species, Pica pica, of Eurasian distribution.",
+      "reason": "Use Traditional 鵲 and remove Simplified duplicate.",
+      "example": {
+        "english": "The Eurasian magpie has black and white feathers.",
+        "chinese": "喜鵲有黑白相間的羽毛。"
+      }
+    },
+    {
+      "word": "first baseman",
+      "part_of_speech": "noun",
+      "old_chinese": "一壘手 / 一垒手",
+      "new_chinese": "一壘手",
+      "english": "(baseball) The infield defensive player that stands near first base.",
+      "reason": "Use Traditional 壘 and remove slash duplicate.",
+      "example": {
+        "english": "The first baseman caught the throw.",
+        "chinese": "一壘手接住了傳球。"
+      }
+    },
+    {
+      "word": "freeze-drying",
+      "part_of_speech": "noun",
+      "old_chinese": "冷冻 乾燥",
+      "new_chinese": "冷凍乾燥",
+      "english": "The process of dehydration by sublimation for preservation or convenience; the removal of moisture from a frozen material using vacuum.",
+      "reason": "Use Traditional 凍 and clarify freeze-drying.",
+      "example": {
+        "english": "Freeze-drying preserves the sample.",
+        "chinese": "冷凍乾燥可保存樣本。"
+      }
+    },
+    {
+      "word": "graben",
+      "part_of_speech": "noun",
+      "old_chinese": "地堑 地塹",
+      "new_chinese": "地塹",
+      "english": "(geology) An elongated block of the Earth's crust, bounded by faults, that has dropped relative to the surrounding area.",
+      "reason": "Use Traditional 塹 and remove duplicate Simplified form.",
+      "example": {
+        "english": "A graben forms when a block of crust drops.",
+        "chinese": "地塹是在地殼塊體下陷時形成的。"
+      }
+    },
+    {
+      "word": "hanging",
+      "part_of_speech": "noun",
+      "old_chinese": "绞刑 絞刑",
+      "new_chinese": "絞刑",
+      "english": "The act of hanging a person (or oneself) by the neck in order to kill that person (or to commit suicide).",
+      "reason": "Use Traditional 絞 and remove Simplified duplicate.",
+      "example": {
+        "english": "Hanging was once used as a punishment.",
+        "chinese": "絞刑曾被用作刑罰。"
+      }
+    },
+    {
+      "word": "hole in one",
+      "part_of_speech": "noun",
+      "old_chinese": "一杆進洞 一桿進洞",
+      "new_chinese": "一桿進洞",
+      "english": "(golf) A hole that is completed by sinking the ball in a single shot or attempt, with one hit.",
+      "reason": "Use Traditional 桿 and normalize golf term.",
+      "example": {
+        "english": "She scored a hole in one.",
+        "chinese": "她打出了一桿進洞。"
+      }
+    },
+    {
+      "word": "home run",
+      "part_of_speech": "noun",
+      "old_chinese": "全壘打 全垒打",
+      "new_chinese": "全壘打",
+      "english": "(pesäpallo) A three-base hit, a legal hit where the batter gets to third base without stopping and without the opposing team attempting to put the batter out on earlier bases, scoring one run immediately.",
+      "reason": "Use Traditional 壘 and remove duplicate Simplified form.",
+      "example": {
+        "english": "He hit a home run.",
+        "chinese": "他擊出全壘打。"
+      }
+    },
+    {
+      "word": "illogical",
+      "part_of_speech": "adjective",
+      "old_chinese": "雜乱無章 雜亂無章",
+      "new_chinese": "雜亂無章；不合邏輯",
+      "english": "Contrary to logic; lacking sense or sound reasoning.",
+      "reason": "Use Traditional 亂 and clarify illogical as contrary to logic.",
+      "example": {
+        "english": "His argument was illogical.",
+        "chinese": "他的論點不合邏輯，雜亂無章。"
+      }
+    },
+    {
+      "word": "jeon",
+      "part_of_speech": "noun",
+      "old_chinese": "约翰 約翰",
+      "new_chinese": "煎；韓式煎餅",
+      "english": "A fried, filled pancake-like food eaten in Korea",
+      "reason": "Current 約翰 is a name and mismatches Korean food jeon.",
+      "example": {
+        "english": "Jeon is a Korean fried pancake-like food.",
+        "chinese": "煎是一種韓式煎餅類食物。"
+      }
+    },
+    {
+      "word": "kowloon",
+      "part_of_speech": "proper noun",
+      "old_chinese": "庫侖 庫仑",
+      "new_chinese": "九龍",
+      "english": "A region, peninsula, and urban area of Hong Kong.",
+      "reason": "Kowloon is a Hong Kong region; 庫侖/庫仑 is unrelated.",
+      "example": {
+        "english": "Kowloon is an urban area of Hong Kong.",
+        "chinese": "九龍是香港的一個市區。"
+      }
+    },
+    {
+      "word": "lyophilization",
+      "part_of_speech": "noun",
+      "old_chinese": "冷冻 乾燥",
+      "new_chinese": "冷凍乾燥",
+      "english": ".",
+      "reason": "Use Traditional 凍 and clarify lyophilization.",
+      "example": {
+        "english": "Lyophilization removes water from frozen material.",
+        "chinese": "冷凍乾燥會從冷凍材料中移除水分。"
+      }
+    },
+    {
+      "word": "parakeet",
+      "part_of_speech": "noun",
+      "old_chinese": "鸚鵡 / 鹦鹉",
+      "new_chinese": "鸚鵡；長尾小鸚鵡",
+      "english": "Any of various species of small parrot primarily of tropical regions. [from 16th c.]",
+      "reason": "Use Traditional 鸚鵡 and remove slash duplicate.",
+      "example": {
+        "english": "A parakeet is a small parrot.",
+        "chinese": "長尾小鸚鵡是一種小型鸚鵡。"
+      }
+    },
+    {
+      "word": "poetic justice",
+      "part_of_speech": "noun",
+      "old_chinese": "勸善懲惡 劝善懲惡",
+      "new_chinese": "善惡有報；詩意正義",
+      "english": "(by extension, generally) The fact of someone experiencing what they deserve for their actions, especially when this happens in an ironic manner.",
+      "reason": "Poetic justice means deserved ironic outcome; normalize duplicate Simplified/Traditional phrase.",
+      "example": {
+        "english": "His defeat felt like poetic justice.",
+        "chinese": "他的失敗像是善惡有報的詩意正義。"
+      }
+    },
+    {
+      "word": "private detective",
+      "part_of_speech": "noun",
+      "old_chinese": "侦探 偵探",
+      "new_chinese": "私家偵探",
+      "english": "Person who is not a government official who is hired to provide information about a person or group that is not widely available",
+      "reason": "Use Traditional 偵探 and clarify private detective.",
+      "example": {
+        "english": "The family hired a private detective.",
+        "chinese": "那家人聘請了一名私家偵探。"
+      }
+    },
+    {
+      "word": "rite",
+      "part_of_speech": "noun",
+      "old_chinese": "儀式 仪式",
+      "new_chinese": "儀式；禮拜儀式",
+      "english": "A religious custom.",
+      "reason": "Use Traditional 儀式 and remove Simplified duplicate.",
+      "example": {
+        "english": "The rite is performed every spring.",
+        "chinese": "這項儀式每年春天舉行。"
+      }
+    },
+    {
+      "word": "rite",
+      "part_of_speech": "noun",
+      "old_chinese": "儀式 仪式",
+      "new_chinese": "儀式；慣例",
+      "english": "(by extension) A prescribed behavior.",
+      "reason": "Use Traditional 儀式 and include extended prescribed behavior sense.",
+      "example": {
+        "english": "The handshake became a rite of welcome.",
+        "chinese": "握手成了歡迎的儀式和慣例。"
+      }
+    },
+    {
+      "word": "rome wasn't built in a day",
+      "part_of_speech": "proverb",
+      "old_chinese": "冰凍三尺，非一日之寒 冰冻三尺，非一日之寒",
+      "new_chinese": "冰凍三尺，非一日之寒",
+      "english": "(idiomatic) It takes a long time to create something complicated or impressive.",
+      "reason": "Use Traditional 凍 and remove duplicate Simplified form.",
+      "example": {
+        "english": "Rome was not built in a day, so be patient.",
+        "chinese": "冰凍三尺，非一日之寒，所以要有耐心。"
+      }
+    },
+    {
+      "word": "second baseman",
+      "part_of_speech": "noun",
+      "old_chinese": "二壘手 / 二垒手",
+      "new_chinese": "二壘手",
+      "english": "(baseball) The infield defensive player that stands between the first baseman and the shortstop, normally on the right field side of second base.",
+      "reason": "Use Traditional 壘 and remove slash duplicate.",
+      "example": {
+        "english": "The second baseman threw to first.",
+        "chinese": "二壘手把球傳向一壘。"
+      }
+    },
+    {
+      "word": "supervacaneous",
+      "part_of_speech": "adjective",
+      "old_chinese": "多余 [duōyú]",
+      "new_chinese": "多餘的",
+      "english": "(now, _, rare) Added above what is needed or necessary; superfluous, redundant.",
+      "reason": "Use Traditional 餘 and remove pinyin annotation.",
+      "example": {
+        "english": "The extra note was supervacaneous.",
+        "chinese": "那條額外註記是多餘的。"
+      }
+    },
+    {
+      "word": "third baseman",
+      "part_of_speech": "noun",
+      "old_chinese": "三壘手 / 三垒手",
+      "new_chinese": "三壘手",
+      "english": "(baseball) The infield defensive player that stands near third base.",
+      "reason": "Use Traditional 壘 and remove slash duplicate.",
+      "example": {
+        "english": "The third baseman fielded the ground ball.",
+        "chinese": "三壘手接住了滾地球。"
+      }
+    },
+    {
+      "word": "west frisian",
+      "part_of_speech": "proper noun",
+      "old_chinese": "弗里西亞語 弗里西語",
+      "new_chinese": "西弗里斯蘭語",
+      "english": "A language spoken mostly in the province of Friesland, in the north of the Netherlands; one of the Frisian languages (or language varieties).",
+      "reason": "West Frisian is a Frisian language; current generic terms are less precise.",
+      "example": {
+        "english": "West Frisian is spoken in Friesland.",
+        "chinese": "西弗里斯蘭語在弗里斯蘭使用。"
+      }
+    },
+    {
+      "word": "wrestle",
+      "part_of_speech": "verb",
+      "old_chinese": "搏鬥 搏斗",
+      "new_chinese": "摔跤；搏鬥",
+      "english": "To grapple or otherwise contend with an opponent in order to throw or force them to the ground, chiefly as a sport or in unarmed combat.",
+      "reason": "Use Traditional 鬥 and clarify wrestle as grapple/contend.",
+      "example": {
+        "english": "The athletes wrestle on the mat.",
+        "chinese": "運動員在墊上摔跤搏鬥。"
+      }
+    },
+    {
+      "word": "ürümqi",
+      "part_of_speech": "proper noun",
+      "old_chinese": "烏魯木齊 乌魯木齊",
+      "new_chinese": "烏魯木齊",
+      "english": "A prefecture-level city, the capital of the Xinjiang autonomous region, China.",
+      "reason": "Use Traditional 烏 and remove duplicate Simplified form.",
+      "example": {
+        "english": "Ürümqi is the capital of Xinjiang.",
+        "chinese": "烏魯木齊是新疆的首府。"
+      }
+    },
+    {
+      "word": "abet",
+      "part_of_speech": "verb",
+      "old_chinese": "激励",
+      "new_chinese": "教唆；煽動；幫助犯罪",
+      "english": "(transitive, crime) To incite; to assist or encourage by aid or countenance in crime. [ca. 1350–1470]",
+      "reason": "Abet means to incite or assist in a crime; 激励 is Simplified and too positive.",
+      "example": {
+        "english": "He was charged with abetting the robbery.",
+        "chinese": "他被控教唆並幫助犯罪。"
+      }
+    },
+    {
+      "word": "abjectly",
+      "part_of_speech": "adverb",
+      "old_chinese": "沮丧地",
+      "new_chinese": "卑屈地；可憐地；羞愧地",
+      "english": "In an abject fashion; with great shame; desperately. [first attested c. 1350–1470]",
+      "reason": "Abjectly means in an abject, shameful, or desperate manner; 沮丧地 is Simplified and incomplete.",
+      "example": {
+        "english": "He apologized abjectly.",
+        "chinese": "他卑屈地道歉。"
+      }
+    },
+    {
+      "word": "above-mentioned",
+      "part_of_speech": "adjective",
+      "old_chinese": "上面",
+      "new_chinese": "上述的；前述的",
+      "english": "Mentioned or named before; aforesaid.",
+      "reason": "Above-mentioned means mentioned before, not merely 上面.",
+      "example": {
+        "english": "The above-mentioned rule still applies.",
+        "chinese": "上述的規則仍然適用。"
+      }
+    },
+    {
+      "word": "abroad",
+      "part_of_speech": "adverb",
+      "old_chinese": "外面",
+      "new_chinese": "在外；到國外；在國外",
+      "english": "(dated) Without a certain confine; outside the house; away from one's abode. [from 1150–1350)]",
+      "reason": "Abroad can mean outside the home or in/to a foreign country; 外面 is too vague.",
+      "example": {
+        "english": "She studied abroad for a year.",
+        "chinese": "她在國外讀了一年書。"
+      }
+    },
+    {
+      "word": "abu dhabi",
+      "part_of_speech": "proper noun",
+      "old_chinese": "阿布扎比",
+      "new_chinese": "阿布達比",
+      "english": "The capital city of the United Arab Emirates; the capital of Abu Dhabi emirate.",
+      "reason": "Abu Dhabi is conventionally rendered 阿布達比 in Traditional Chinese.",
+      "example": {
+        "english": "Abu Dhabi is the capital of the United Arab Emirates.",
+        "chinese": "阿布達比是阿拉伯聯合大公國的首都。"
+      }
+    },
+    {
+      "word": "abundantly",
+      "part_of_speech": "adverb",
+      "old_chinese": "丰富地",
+      "new_chinese": "豐富地；大量地",
+      "english": "In an abundant manner; in a sufficient degree; in large measure. [First attested around 1350 to 1470.]",
+      "reason": "Abundantly means in large measure or sufficiently; convert Simplified 丰 to Traditional 豐.",
+      "example": {
+        "english": "The garden was abundantly supplied with water.",
+        "chinese": "花園有豐富地供水。"
+      }
+    },
+    {
+      "word": "accordingly",
+      "part_of_speech": "adverb",
+      "old_chinese": "合适",
+      "new_chinese": "相應地；因此；合適地",
+      "english": "(manner) Agreeably; correspondingly; suitably",
+      "reason": "Accordingly can mean correspondingly or as a result; 合适 is Simplified and too narrow.",
+      "example": {
+        "english": "The rules changed, and we acted accordingly.",
+        "chinese": "規則改變了，我們也相應地行動。"
+      }
+    },
+    {
+      "word": "acetylcholine",
+      "part_of_speech": "noun",
+      "old_chinese": "乙酰胆碱",
+      "new_chinese": "乙醯膽鹼",
+      "english": "(neurotransmitter) A neurotransmitter in humans and other animals. It is an ester of acetic acid and choline with chemical formula CH3COOCH2CH2N+(CH3)3.",
+      "reason": "Acetylcholine is the neurotransmitter 乙醯膽鹼; current term is Simplified.",
+      "example": {
+        "english": "Acetylcholine acts as a neurotransmitter.",
+        "chinese": "乙醯膽鹼是一種神經傳遞物質。"
+      }
+    },
+    {
+      "word": "aconitic acid",
+      "part_of_speech": "noun",
+      "old_chinese": "乌頭酸",
+      "new_chinese": "烏頭酸",
+      "english": "(organic compound) An organic acid involved in the isomerization of citrate to isocitrate in the citric acid cycle.",
+      "reason": "Use Traditional 烏頭酸 for aconitic acid.",
+      "example": {
+        "english": "Aconitic acid occurs in the citric acid cycle.",
+        "chinese": "烏頭酸出現在檸檬酸循環中。"
+      }
+    },
+    {
+      "word": "acre",
+      "part_of_speech": "proper noun",
+      "old_chinese": "阿克里州",
+      "new_chinese": "阿卡；阿卡古城",
+      "english": "A port city in northern Israel, holiest city in the Baháʼí Faith.",
+      "reason": "Acre city in northern Israel is 阿卡, not the Brazilian state 阿克里州.",
+      "example": {
+        "english": "Acre is a port city in northern Israel.",
+        "chinese": "阿卡是以色列北部的港口城市。"
+      }
+    },
+    {
+      "word": "acre",
+      "part_of_speech": "noun",
+      "old_chinese": "英亩",
+      "new_chinese": "英畝",
+      "english": "Any of various similar units of area in other systems.",
+      "reason": "Use Traditional 畝 for acre as an area unit.",
+      "example": {
+        "english": "The farm covers one acre.",
+        "chinese": "這座農場面積為一英畝。"
+      }
+    },
+    {
+      "word": "advice",
+      "part_of_speech": "noun",
+      "old_chinese": "劝告",
+      "new_chinese": "勸告；建議",
+      "english": "An opinion offered to guide behavior in an effort to be helpful.",
+      "reason": "Advice means guidance or recommendation; convert Simplified 劝 to Traditional 勸.",
+      "example": {
+        "english": "She gave me useful advice.",
+        "chinese": "她給了我有用的勸告。"
+      }
+    },
+    {
+      "word": "aeneid",
+      "part_of_speech": "proper noun",
+      "old_chinese": "埃涅阿斯纪",
+      "new_chinese": "埃涅阿斯紀",
+      "english": "A classic epic poem, written in Latin by Virgil in the 1st century BCE (between 29 and 19 BCE), that tells the legendary story of Aeneas fleeing Troy and settling in Italy as ancestor of the Romans.",
+      "reason": "Aeneid is an epic poem; convert Simplified 纪 to Traditional 紀.",
+      "example": {
+        "english": "The Aeneid was written by Virgil.",
+        "chinese": "《埃涅阿斯紀》由維吉爾創作。"
+      }
+    },
+    {
+      "word": "aftershock",
+      "part_of_speech": "noun",
+      "old_chinese": "余震",
+      "new_chinese": "餘震",
+      "english": "(seismology) An earthquake that follows in the same vicinity as another, usually larger, earthquake (the \"mainshock\").",
+      "reason": "Use Traditional 餘震 for aftershock.",
+      "example": {
+        "english": "An aftershock followed the main earthquake.",
+        "chinese": "主震之後發生了一次餘震。"
+      }
+    },
+    {
+      "word": "age of enlightenment",
+      "part_of_speech": "proper noun",
+      "old_chinese": "启蒙時代",
+      "new_chinese": "啟蒙時代",
+      "english": "(historical period) A period of European intellectual history during which the Enlightenment, an intellectual movement emphasizing the importance of logic and reason, flourished, from part of the 17th century through much of the 18th century.",
+      "reason": "Age of Enlightenment is 啟蒙時代; convert Simplified 启.",
+      "example": {
+        "english": "The Age of Enlightenment emphasized reason.",
+        "chinese": "啟蒙時代強調理性。"
+      }
+    },
+    {
+      "word": "aggressive",
+      "part_of_speech": "adjective",
+      "old_chinese": "好斗的",
+      "new_chinese": "好鬥的；挑釁的",
+      "english": "Characterized by aggression; highly combative; prone to behave in a way that involves attacking (especially if unjustly) or arguing.",
+      "reason": "Aggressive means combative or prone to attack; convert 斗 to 鬥 and clarify.",
+      "example": {
+        "english": "The dog became aggressive.",
+        "chinese": "那隻狗變得好鬥的。"
+      }
+    },
+    {
+      "word": "aggressive",
+      "part_of_speech": "adjective",
+      "old_chinese": "好斗的",
+      "new_chinese": "侵襲性的；惡性的",
+      "english": "(pathology, of a tumour or disease) That spreads quickly or extensively; virulent; malignant.",
+      "reason": "For tumour or disease, aggressive means spreading quickly or malignant, not 好斗的.",
+      "example": {
+        "english": "The doctor diagnosed an aggressive tumour.",
+        "chinese": "醫生診斷出侵襲性的腫瘤。"
+      }
+    },
+    {
+      "word": "aggressively",
+      "part_of_speech": "adverb",
+      "old_chinese": "好斗的",
+      "new_chinese": "好鬥地；挑釁地",
+      "english": "In an aggressive manner.",
+      "reason": "Aggressively means in an aggressive manner; convert 斗 to 鬥.",
+      "example": {
+        "english": "He argued aggressively.",
+        "chinese": "他好鬥地爭辯。"
+      }
+    },
+    {
+      "word": "aiglet",
+      "part_of_speech": "noun",
+      "old_chinese": "生面團",
+      "new_chinese": "金屬包頭；鞋帶頭",
+      "english": "A tip, originally of metal and often decorative, on a ribbon or cord that makes lacing two parts of a garment or garments together easier, as in corset lacings, \"points\" (lacing hose or trousers to jacket or doublet) or sleeves to a bodice.",
+      "reason": "Aiglet is the tip on a lace or cord, not 生面團.",
+      "example": {
+        "english": "The aiglet kept the lace from fraying.",
+        "chinese": "金屬包頭防止鞋帶磨散。"
+      }
+    },
+    {
+      "word": "aim",
+      "part_of_speech": "verb",
+      "old_chinese": "對准",
+      "new_chinese": "瞄準；對準",
+      "english": "(transitive) To direct or point (e.g. a weapon), at a particular object; to direct, as a missile, an act, or a proceeding, at, to, or against an object",
+      "reason": "Aim means direct or point at a target; convert 准 to 準.",
+      "example": {
+        "english": "She aimed the arrow at the target.",
+        "chinese": "她把箭瞄準目標。"
+      }
+    },
+    {
+      "word": "alkali",
+      "part_of_speech": "noun",
+      "old_chinese": "碱",
+      "new_chinese": "鹼性物質；鹼",
+      "english": "(chemistry) One of a class of caustic bases, such as soda, soda ash, caustic soda, potash, ammonia, and lithia, whose distinguishing characteristics are dissolving in alcohol and water, uniting with oils and fats to form soap, neutralizing and forming salts with acids, turning to brown several vegetable yellows, and changing reddened litmus to blue.",
+      "reason": "Alkali is a caustic base or alkaline substance; use Traditional 鹼 and avoid a one-character learner definition.",
+      "example": {
+        "english": "An alkali can neutralize an acid.",
+        "chinese": "鹼性物質可以中和酸。"
+      }
+    },
+    {
+      "word": "alkalinity",
+      "part_of_speech": "noun",
+      "old_chinese": "碱度",
+      "new_chinese": "鹼度",
+      "english": "(chemistry) The state of being, or the degree to which a thing is, alkaline.",
+      "reason": "Use Traditional 鹼度 for alkalinity.",
+      "example": {
+        "english": "The alkalinity of the water was measured.",
+        "chinese": "水的鹼度已被測量。"
+      }
+    },
+    {
+      "word": "aloe",
+      "part_of_speech": "noun",
+      "old_chinese": "蘆荟",
+      "new_chinese": "沉香脂；蘆薈香脂",
+      "english": "(in the plural) The resins of the tree Aquilaria malaccensis (syn. Aquilaria agallocha), known for their fragrant aroma, produced after infection by the fungus Phialophora parasitica.",
+      "reason": "This plural aloe sense refers to resins from Aquilaria, not aloe plant 蘆薈.",
+      "example": {
+        "english": "Aloes were valued for their fragrance.",
+        "chinese": "沉香脂因其香氣而受到重視。"
+      }
+    },
+    {
+      "word": "aloe",
+      "part_of_speech": "noun",
+      "old_chinese": "蘆荟",
+      "new_chinese": "蘆薈",
+      "english": "Any plant of the large and variable genus Aloe.",
+      "reason": "Use Traditional 薈 for aloe plant.",
+      "example": {
+        "english": "Aloe is often grown as a houseplant.",
+        "chinese": "蘆薈常被種作室內植物。"
+      }
+    },
+    {
+      "word": "aloud",
+      "part_of_speech": "adverb",
+      "old_chinese": "厉害",
+      "new_chinese": "出聲地；大聲地",
+      "english": "With a loud voice, or great noise; loudly; audibly.",
+      "reason": "Aloud means with a loud or audible voice, not 厉害.",
+      "example": {
+        "english": "Please read the sentence aloud.",
+        "chinese": "請出聲地讀出這個句子。"
+      }
+    },
+    {
+      "word": "altercation",
+      "part_of_speech": "noun",
+      "old_chinese": "争吵",
+      "new_chinese": "爭吵；爭執",
+      "english": "An angry or heated dispute.",
+      "reason": "Altercation means a heated dispute; convert 争 to 爭.",
+      "example": {
+        "english": "The altercation happened outside the shop.",
+        "chinese": "爭吵發生在商店外。"
+      }
+    },
+    {
+      "word": "altercation",
+      "part_of_speech": "noun",
+      "old_chinese": "争吵",
+      "new_chinese": "爭吵；激烈爭論",
+      "english": "Angry or heated disputation.",
+      "reason": "Altercation means angry disputation; convert 争 to 爭.",
+      "example": {
+        "english": "Their altercation lasted several minutes.",
+        "chinese": "他們的激烈爭論持續了幾分鐘。"
+      }
+    },
+    {
+      "word": "ambit",
+      "part_of_speech": "noun",
+      "old_chinese": "球面",
+      "new_chinese": "範圍；領域",
+      "english": "The area or sphere of control and influence of something.",
+      "reason": "Ambit means area or sphere of control and influence, not 球面.",
+      "example": {
+        "english": "The issue lies within the ambit of the law.",
+        "chinese": "這個問題屬於法律的範圍。"
+      }
+    },
+    {
+      "word": "amble",
+      "part_of_speech": "noun",
+      "old_chinese": "對侧步",
+      "new_chinese": "漫步；悠閒散步",
+      "english": "An unhurried leisurely walk or stroll.",
+      "reason": "Amble is an unhurried walk, not 對側步.",
+      "example": {
+        "english": "We went for an amble by the river.",
+        "chinese": "我們沿河悠閒散步。"
+      }
+    },
+    {
+      "word": "amends",
+      "part_of_speech": "noun",
+      "old_chinese": "補偿",
+      "new_chinese": "賠償；補償",
+      "english": "Compensation for an injury or loss; recompense; reparation.",
+      "reason": "Amends means compensation or reparation; convert 补偿 to Traditional 補償 and include 賠償.",
+      "example": {
+        "english": "He tried to make amends for his mistake.",
+        "chinese": "他試圖為自己的錯誤作出補償。"
+      }
+    },
+    {
+      "word": "and a partridge in a pear tree",
+      "part_of_speech": "phrase",
+      "old_chinese": "云雀",
+      "new_chinese": "等等；還有一大堆",
+      "english": "(humorous) Used at the end of a list of items to emphasize its length. [from 20th c.]",
+      "reason": "This humorous phrase is used to end a long list, not 云雀.",
+      "example": {
+        "english": "She listed gifts, chores, errands, and a partridge in a pear tree.",
+        "chinese": "她列出禮物、家務、差事等等，還有一大堆。"
+      }
+    },
+    {
+      "word": "anthelmintic",
+      "part_of_speech": "adjective",
+      "old_chinese": "抗蠕虫藥",
+      "new_chinese": "驅蟲的；殺蠕蟲的",
+      "english": "(pharmaceutical effect) Destructive to parasitic worms.",
+      "reason": "Anthelmintic adjective means destructive to parasitic worms; convert 虫 to 蟲.",
+      "example": {
+        "english": "The drug has an anthelmintic effect.",
+        "chinese": "這種藥有驅蟲的效果。"
+      }
+    },
+    {
+      "word": "anthelmintic",
+      "part_of_speech": "noun",
+      "old_chinese": "抗蠕虫藥",
+      "new_chinese": "驅蟲藥",
+      "english": "(medicine) A drug for the treatment of worm infestation, either by killing the worms or by causing them to be expelled from the body.",
+      "reason": "Anthelmintic noun means a drug for worm infestation; convert 虫 to 蟲 and clarify.",
+      "example": {
+        "english": "The doctor prescribed an anthelmintic.",
+        "chinese": "醫生開了一種驅蟲藥。"
+      }
+    },
+    {
+      "word": "antwerp",
+      "part_of_speech": "proper noun",
+      "old_chinese": "安特卫普",
+      "new_chinese": "安特衛普",
+      "english": "The largest city and provincial capital of the province of Antwerp, Belgium.",
+      "reason": "Use Traditional 衛 for Antwerp.",
+      "example": {
+        "english": "Antwerp is a city in Belgium.",
+        "chinese": "安特衛普是比利時的一座城市。"
+      }
+    },
+    {
+      "word": "apocalypse",
+      "part_of_speech": "proper noun",
+      "old_chinese": "启示錄",
+      "new_chinese": "啟示錄",
+      "english": "(countable, biblical) The written account of a revelation of hidden things given by God to a chosen prophet.",
+      "reason": "Use Traditional 啟示錄.",
+      "example": {
+        "english": "The Apocalypse describes a revelation.",
+        "chinese": "《啟示錄》描述一場神啟。"
+      }
+    },
+    {
+      "word": "apocalypse",
+      "part_of_speech": "proper noun",
+      "old_chinese": "启示錄",
+      "new_chinese": "啟示錄",
+      "english": "(Christianity) Revelation (last book of the Bible, composed of twenty-two chapters, which narrates a vision of the end times).",
+      "reason": "Use Traditional 啟示錄 for the biblical book Revelation.",
+      "example": {
+        "english": "The Apocalypse is the last book of the New Testament.",
+        "chinese": "《啟示錄》是新約聖經的最後一卷。"
+      }
+    },
+    {
+      "word": "applicable",
+      "part_of_speech": "adjective",
+      "old_chinese": "合适",
+      "new_chinese": "適用的；合適的",
+      "english": "Suitable for application, relevant.",
+      "reason": "Applicable means relevant or suitable for application; convert 适 to 適.",
+      "example": {
+        "english": "This rule is applicable to all members.",
+        "chinese": "這是一條適用的規則，適用於所有成員。"
+      }
+    },
+    {
+      "word": "apprehensive",
+      "part_of_speech": "adjective",
+      "old_chinese": "心神不宁",
+      "new_chinese": "憂慮的；不安的",
+      "english": "Anticipating something with anxiety, fear, or doubt; reluctant.",
+      "reason": "Apprehensive means anxious or fearful, not merely 心神不宁 in Simplified.",
+      "example": {
+        "english": "She felt apprehensive before the exam.",
+        "chinese": "她考試前感到憂慮的和不安。"
+      }
+    },
+    {
+      "word": "appropriately",
+      "part_of_speech": "adverb",
+      "old_chinese": "合适",
+      "new_chinese": "適當地；合適地",
+      "english": "In an appropriate manner; properly; suitably.",
+      "reason": "Appropriately means in a suitable manner; convert 适 to 適.",
+      "example": {
+        "english": "Please dress appropriately for the event.",
+        "chinese": "請為活動適當地穿著。"
+      }
+    },
+    {
+      "word": "apropos",
+      "part_of_speech": "adverb",
+      "old_chinese": "合适",
+      "new_chinese": "適時地；恰好地",
+      "english": "Timely; at a good time.",
+      "reason": "Apropos as adverb means timely or at a good time; convert 适 to 適.",
+      "example": {
+        "english": "His comment came apropos.",
+        "chinese": "他的評論來得適時地。"
+      }
+    },
+    {
+      "word": "apt",
+      "part_of_speech": "adjective",
+      "old_chinese": "合适",
+      "new_chinese": "合適的；適當的",
+      "english": "Suitable; appropriate; fit or fitted; suited.",
+      "reason": "Apt means suitable or appropriate; convert 适 to 適 and make adjective explicit.",
+      "example": {
+        "english": "That is an apt description.",
+        "chinese": "那是一個合適的描述。"
+      }
+    },
+    {
+      "word": "aptly",
+      "part_of_speech": "adverb",
+      "old_chinese": "合适",
+      "new_chinese": "合適地；恰當地",
+      "english": "In an apt or suitable manner; fittingly; appropriately; suitably",
+      "reason": "Aptly means suitably or fittingly; convert 适 to 適.",
+      "example": {
+        "english": "The book is aptly titled.",
+        "chinese": "這本書的標題起得很合適地。"
+      }
+    },
+    {
+      "word": "arccosine",
+      "part_of_speech": "noun",
+      "old_chinese": "反余弦",
+      "new_chinese": "反餘弦",
+      "english": "(trigonometry) Any of several single-valued or multivalued functions that are inverses of the cosine function.",
+      "reason": "Use Traditional 餘 for arccosine.",
+      "example": {
+        "english": "Arccosine is the inverse of cosine.",
+        "chinese": "反餘弦是餘弦的反函數。"
+      }
+    },
+    {
+      "word": "architect",
+      "part_of_speech": "noun",
+      "old_chinese": "建筑師",
+      "new_chinese": "建築師",
+      "english": "A professional who designs buildings or other structures, or who prepares plans and superintends construction.",
+      "reason": "Use Traditional 建築師 for architect.",
+      "example": {
+        "english": "The architect designed the museum.",
+        "chinese": "建築師設計了那座博物館。"
+      }
+    },
+    {
+      "word": "architect",
+      "part_of_speech": "noun",
+      "old_chinese": "建筑師",
+      "new_chinese": "設計者；策劃者",
+      "english": "A person who plans, devises or contrives the achievement of a desired result.",
+      "reason": "Architect figuratively means one who plans or devises, not necessarily 建筑師.",
+      "example": {
+        "english": "She was the architect of the reform.",
+        "chinese": "她是這場改革的策劃者。"
+      }
+    },
+    {
+      "word": "architecture",
+      "part_of_speech": "noun",
+      "old_chinese": "建筑學",
+      "new_chinese": "建築學；建築術",
+      "english": "The art and science of designing and managing the construction of buildings and other structures, particularly if they are well proportioned and decorated.",
+      "reason": "Use Traditional 建築學 for architecture.",
+      "example": {
+        "english": "He studied architecture in college.",
+        "chinese": "他在大學修讀建築學。"
+      }
+    },
+    {
+      "word": "ariel",
+      "part_of_speech": "proper noun",
+      "old_chinese": "天卫一",
+      "new_chinese": "天衛一",
+      "english": "(astronomy) The brightest moon of the planet Uranus.",
+      "reason": "Use Traditional 衛 for Ariel, a moon of Uranus.",
+      "example": {
+        "english": "Ariel is a moon of Uranus.",
+        "chinese": "天衛一是天王星的一顆衛星。"
+      }
+    },
+    {
+      "word": "artemis",
+      "part_of_speech": "proper noun",
+      "old_chinese": "阿耳忒弥斯",
+      "new_chinese": "阿耳忒彌斯",
+      "english": "(Greek god) The Greek goddess of the hunt, wild animals, and wilderness; the daughter of Leto and Zeus; the sister of Apollo. (Compare Diana.)",
+      "reason": "Use Traditional 彌 for Artemis.",
+      "example": {
+        "english": "Artemis is a Greek goddess.",
+        "chinese": "阿耳忒彌斯是希臘女神。"
+      }
+    },
+    {
+      "word": "as the case may be",
+      "part_of_speech": "phrase",
+      "old_chinese": "若時機合适",
+      "new_chinese": "視情況而定；酌情",
+      "english": "As is appropriate to the circumstances; particularly where a choice must be made between two options.",
+      "reason": "As the case may be means as appropriate to circumstances, not 若時機合适.",
+      "example": {
+        "english": "The rule applies to parents or guardians, as the case may be.",
+        "chinese": "這條規則適用於父母或監護人，視情況而定。"
+      }
+    },
+    {
+      "word": "ash wednesday",
+      "part_of_speech": "noun",
+      "old_chinese": "大斋首日",
+      "new_chinese": "聖灰星期三；大齋首日",
+      "english": "(Christianity) The Wednesday 46 days before Easter in a given year, (Catholicism) traditionally observed as the beginning of Lent and a day of strict abstention from certain foods and pleasures.",
+      "reason": "Ash Wednesday is the first day of Lent in Western Christianity; convert 斋 to 齋 and clarify.",
+      "example": {
+        "english": "Ash Wednesday marks the beginning of Lent.",
+        "chinese": "聖灰星期三標誌著大齋期開始。"
+      }
+    },
+    {
+      "word": "astigmatic",
+      "part_of_speech": "adjective",
+      "old_chinese": "乱視",
+      "new_chinese": "散光的",
+      "english": "(medicine) Suffering from astigmatism.",
+      "reason": "Astigmatic means suffering from astigmatism; 亂視 is Japanese/Simplified-mixed style.",
+      "example": {
+        "english": "The patient is astigmatic.",
+        "chinese": "這名病人是散光的。"
+      }
+    },
+    {
+      "word": "asymptote",
+      "part_of_speech": "noun",
+      "old_chinese": "渐近線",
+      "new_chinese": "漸近線",
+      "english": "(analysis) A straight line which a curve approaches arbitrarily closely as it goes to infinity. The limit of the curve; its tangent \"at infinity\".",
+      "reason": "Use Traditional 漸 for asymptote.",
+      "example": {
+        "english": "The curve approaches the asymptote.",
+        "chinese": "曲線逐漸接近漸近線。"
+      }
+    },
+    {
+      "word": "atlas",
+      "part_of_speech": "proper noun",
+      "old_chinese": "土卫十五",
+      "new_chinese": "阿特拉斯",
+      "english": "(Greek god) The son of Iapetus and Clymene, war leader of the Titans ordered by the god Zeus to support the sky on his shoulders; father to the Hesperides, the Hyades, and the Pleiades; king of the legendary Atlantis.",
+      "reason": "Atlas Greek god is 阿特拉斯, not Saturn moon 土衛十五.",
+      "example": {
+        "english": "Atlas was ordered to hold up the sky.",
+        "chinese": "阿特拉斯被命令支撐天空。"
+      }
+    },
+    {
+      "word": "atlas",
+      "part_of_speech": "proper noun",
+      "old_chinese": "土卫十五",
+      "new_chinese": "阿特拉斯環形山",
+      "english": "(astronomy) A crater in the last quadrant of the moon.",
+      "reason": "This Atlas sense is a lunar crater, not Saturn moon 土衛十五.",
+      "example": {
+        "english": "Atlas is a crater on the Moon.",
+        "chinese": "阿特拉斯環形山位於月球上。"
+      }
+    },
+    {
+      "word": "atlas",
+      "part_of_speech": "proper noun",
+      "old_chinese": "土卫十五",
+      "new_chinese": "阿特拉斯火箭",
+      "english": "(rocketry, military, US) An SM-65, an early ICBM, soon developed into a long-lived orbital launch vehicle series.",
+      "reason": "This Atlas sense is a rocket/missile series, not Saturn moon 土衛十五.",
+      "example": {
+        "english": "The Atlas rocket launched the payload.",
+        "chinese": "阿特拉斯火箭發射了載荷。"
+      }
+    },
+    {
+      "word": "attribute",
+      "part_of_speech": "noun",
+      "old_chinese": "决定性的",
+      "new_chinese": "定語；屬性語",
+      "english": "(grammar) A word that qualifies a noun.",
+      "reason": "In grammar, attribute means a word that qualifies a noun, not 决定性的.",
+      "example": {
+        "english": "In this phrase, the adjective functions as an attribute.",
+        "chinese": "在這個片語中，形容詞作定語。"
+      }
+    },
+    {
+      "word": "autunite",
+      "part_of_speech": "noun",
+      "old_chinese": "鈣铀云母",
+      "new_chinese": "鈣鈾雲母",
+      "english": "(mineral) A yellow mineral with tetragonal crystals, Ca(UO2)2(PO4)2·10-12H2O.",
+      "reason": "Use Traditional 鈾 and 雲 for autunite.",
+      "example": {
+        "english": "Autunite is a uranium mineral.",
+        "chinese": "鈣鈾雲母是一種含鈾礦物。"
+      }
+    },
+    {
+      "word": "avenger",
+      "part_of_speech": "noun",
+      "old_chinese": "复仇者",
+      "new_chinese": "復仇者",
+      "english": "One who avenges or vindicates.",
+      "reason": "Use Traditional 復 for avenger.",
+      "example": {
+        "english": "The avenger sought justice.",
+        "chinese": "復仇者尋求正義。"
+      }
+    },
+    {
+      "word": "abide by",
+      "part_of_speech": "verb",
+      "old_chinese": "提交",
+      "new_chinese": "遵守；服從",
+      "english": "(transitive) To accept (a decision or law) and act in accordance with it; to conform to (a decision or law); to acquiesce to (a decision or law).",
+      "reason": "Abide by means to accept and act according to a law, decision, or rule; 提交 is unrelated.",
+      "example": {
+        "english": "Everyone must abide by the rules.",
+        "chinese": "每個人都必須遵守規則。"
+      }
+    },
+    {
+      "word": "abject",
+      "part_of_speech": "adjective",
+      "old_chinese": "卑鄙",
+      "new_chinese": "卑微的；卑屈的；絕望的",
+      "english": "Of a person: cast down in hope or spirit; showing utter helplessness, hopelessness, or resignation; also, grovelling; ingratiating; servile. [from mid 14th c.]",
+      "reason": "Abject in this sense means cast down, hopeless, or servile, not morally despicable 卑鄙.",
+      "example": {
+        "english": "They lived in abject poverty.",
+        "chinese": "他們生活在卑微的絕望貧困中。"
+      }
+    },
+    {
+      "word": "abscond",
+      "part_of_speech": "verb",
+      "old_chinese": "掩藏",
+      "new_chinese": "躲藏；潛逃",
+      "english": "(intransitive) To hide, to be in hiding or concealment.",
+      "reason": "Abscond here means to hide or be in hiding; 掩藏 is awkward and incomplete.",
+      "example": {
+        "english": "The suspect absconded after the trial.",
+        "chinese": "嫌疑人在審訊後潛逃並躲藏。"
+      }
+    },
+    {
+      "word": "abysmal",
+      "part_of_speech": "adjective",
+      "old_chinese": "地下",
+      "new_chinese": "極差的；糟透的",
+      "english": "(figurative) Extremely bad; terrible.",
+      "reason": "Abysmal figuratively means extremely bad, not underground.",
+      "example": {
+        "english": "The team gave an abysmal performance.",
+        "chinese": "那支隊伍的表現是糟透的。"
+      }
+    },
+    {
+      "word": "academy",
+      "part_of_speech": "noun",
+      "old_chinese": "神學院",
+      "new_chinese": "學院知識；學術知識",
+      "english": "(obsolete) The knowledge disseminated in an Academy. [Attested from the early 17th century until the mid 18th century.]",
+      "reason": "This obsolete academy sense means knowledge disseminated in an academy, not a seminary.",
+      "example": {
+        "english": "The text reflects the academy of its time.",
+        "chinese": "這篇文本反映了當時的學院知識。"
+      }
+    },
+    {
+      "word": "acceptance",
+      "part_of_speech": "noun",
+      "old_chinese": "同化",
+      "new_chinese": "接受；被接受",
+      "english": "The state of being accepted.",
+      "reason": "Acceptance means the state of being accepted, not assimilation.",
+      "example": {
+        "english": "Her acceptance into the program was confirmed.",
+        "chinese": "她被該計劃接受一事已獲確認。"
+      }
+    },
+    {
+      "word": "acceptance",
+      "part_of_speech": "noun",
+      "old_chinese": "同意",
+      "new_chinese": "承諾；接受條款",
+      "english": "(law) An agreeing to the action, proposals, or terms of another by some act which results in the conclusion of a legally binding contract; the reception or taking of a thing bought as that for which it was bought, or as that agreed to be delivered, or the taking of possession of a thing as owner.",
+      "reason": "Legal acceptance means agreeing to terms in a binding contract, not generic agreement only.",
+      "example": {
+        "english": "Acceptance of the offer created a contract.",
+        "chinese": "接受條款和承諾使合約成立。"
+      }
+    },
+    {
+      "word": "accoucheuse",
+      "part_of_speech": "noun",
+      "old_chinese": "姥姥",
+      "new_chinese": "助產士；女助產員",
+      "english": "(rare) A midwife.",
+      "reason": "Accoucheuse is a midwife, not grandmother.",
+      "example": {
+        "english": "The accoucheuse helped deliver the baby.",
+        "chinese": "助產士幫忙接生嬰兒。"
+      }
+    },
+    {
+      "word": "accuser",
+      "part_of_speech": "noun",
+      "old_chinese": "原告",
+      "new_chinese": "控告者；原告人",
+      "english": "One who accuses; one who brings a charge of crime or fault.",
+      "reason": "Accuser is one who accuses; 原告 alone is too narrow and may be civil plaintiff.",
+      "example": {
+        "english": "The accuser gave evidence in court.",
+        "chinese": "控告者在法庭上作證。"
+      }
+    },
+    {
+      "word": "ace up one's sleeve",
+      "part_of_speech": "noun",
+      "old_chinese": "鬼牌",
+      "new_chinese": "秘密王牌；出奇制勝的一招",
+      "english": "(idiom) A surprise advantage of which others are not aware.",
+      "reason": "Ace up one’s sleeve is a hidden advantage, not simply joker.",
+      "example": {
+        "english": "Her experience was an ace up her sleeve.",
+        "chinese": "她的經驗是她秘密王牌。"
+      }
+    },
+    {
+      "word": "acerbic",
+      "part_of_speech": "adjective",
+      "old_chinese": "粗糙",
+      "new_chinese": "酸澀的；尖刻的",
+      "english": "Tasting sour or bitter.",
+      "reason": "Acerbic can mean sour/bitter tasting or sharp in tone, not rough.",
+      "example": {
+        "english": "The fruit had an acerbic taste.",
+        "chinese": "這種水果有酸澀的味道。"
+      }
+    },
+    {
+      "word": "achievement",
+      "part_of_speech": "noun",
+      "old_chinese": "成功",
+      "new_chinese": "成就；遊戲成就",
+      "english": "(video games) An award for completing a particular task or meeting an objective in a video game.",
+      "reason": "In video games, achievement is an award for completing a task; 成功 is too broad.",
+      "example": {
+        "english": "He unlocked a rare achievement in the game.",
+        "chinese": "他在遊戲中解鎖了一項罕見成就。"
+      }
+    },
+    {
+      "word": "acquaintance",
+      "part_of_speech": "noun",
+      "old_chinese": "朋友",
+      "new_chinese": "熟人；相識的人",
+      "english": "A person or persons with whom one is acquainted. [from 14th c.]",
+      "reason": "Acquaintance is a person one knows, not necessarily a friend.",
+      "example": {
+        "english": "She is an acquaintance from work.",
+        "chinese": "她是一位工作上認識的熟人。"
+      }
+    },
+    {
+      "word": "acquittal",
+      "part_of_speech": "noun",
+      "old_chinese": "赦免",
+      "new_chinese": "無罪判決；開釋",
+      "english": "(legal) A legal decision that someone is not guilty with which they have been charged, or the formal dismissal of a charge by some other legal process. [from 15th c.]",
+      "reason": "Acquittal is a legal decision that someone is not guilty, not pardon/赦免.",
+      "example": {
+        "english": "The jury returned an acquittal.",
+        "chinese": "陪審團作出無罪判決。"
+      }
+    },
+    {
+      "word": "acrimonious",
+      "part_of_speech": "adjective",
+      "old_chinese": "粗糙",
+      "new_chinese": "尖刻的；激烈的",
+      "english": "(figuratively) Angry, acid, and sharp in delivering argumentative replies: bitter, mean-spirited, sharp in language or tone. [from early 17th c.]",
+      "reason": "Acrimonious means bitter or sharp in argument, not rough.",
+      "example": {
+        "english": "They had an acrimonious debate.",
+        "chinese": "他們進行了一場尖刻而激烈的辯論。"
+      }
+    },
+    {
+      "word": "actual",
+      "part_of_speech": "adjective",
+      "old_chinese": "有效",
+      "new_chinese": "實際的；真實的",
+      "english": "Existing in reality, not just potentially; really acted or acting; occurring in fact. [from 14th c.]",
+      "reason": "Actual means existing in reality, not valid/effective.",
+      "example": {
+        "english": "The actual cost was higher than expected.",
+        "chinese": "實際的成本比預期高。"
+      }
+    },
+    {
+      "word": "adapt",
+      "part_of_speech": "verb",
+      "old_chinese": "同化",
+      "new_chinese": "適應",
+      "english": "(intransitive) To make oneself comfortable to a new thing.",
+      "reason": "Adapt intransitive means to adjust oneself to new conditions, not assimilate.",
+      "example": {
+        "english": "Children adapt quickly to new schools.",
+        "chinese": "孩子很快適應新學校。"
+      }
+    },
+    {
+      "word": "adenoid",
+      "part_of_speech": "noun",
+      "old_chinese": "扁桃",
+      "new_chinese": "腺樣體；增殖腺",
+      "english": "(symptom) an abnormally enlarged mass of lymphatic tissue at the back of the pharynx, often obstructing the nasal and ear passages and hindering speaking and breathing in young children.",
+      "reason": "Adenoid is enlarged lymphatic tissue near the pharynx, not tonsil.",
+      "example": {
+        "english": "The child had enlarged adenoids.",
+        "chinese": "那名兒童有腺樣體肥大。"
+      }
+    },
+    {
+      "word": "adept",
+      "part_of_speech": "noun",
+      "old_chinese": "大家",
+      "new_chinese": "行家；能手；熟練者",
+      "english": "One fully skilled or well versed in anything; a proficient",
+      "reason": "Adept noun means a proficient person, not 大家 as a vague honorific.",
+      "example": {
+        "english": "She is an adept at negotiation.",
+        "chinese": "她是談判能手。"
+      }
+    },
+    {
+      "word": "adherent",
+      "part_of_speech": "adjective",
+      "old_chinese": "貼紙",
+      "new_chinese": "黏著的；附著的",
+      "english": "Adhesive, sticking to something.",
+      "reason": "Adherent adjective means sticking to something, not sticker.",
+      "example": {
+        "english": "The adherent label was hard to remove.",
+        "chinese": "那張黏著的標籤很難撕掉。"
+      }
+    },
+    {
+      "word": "adjourn",
+      "part_of_speech": "verb",
+      "old_chinese": "延緩",
+      "new_chinese": "移往別處；轉到另一地",
+      "english": "(intransitive, formal, uncommon) To move as a group from one place to another.",
+      "reason": "Adjourn can mean to move as a group from one place to another; 延緩 is not this sense.",
+      "example": {
+        "english": "After dinner, we adjourned to the lounge.",
+        "chinese": "晚餐後，我們移往別處，到休息室去。"
+      }
+    },
+    {
+      "word": "adumbration",
+      "part_of_speech": "noun",
+      "old_chinese": "底子",
+      "new_chinese": "略圖；概要；輪廓",
+      "english": "A faint sketch; a brief representation, an outline.",
+      "reason": "Adumbration is a faint sketch or outline, not foundation.",
+      "example": {
+        "english": "The essay offered an adumbration of the theory.",
+        "chinese": "這篇文章提出了該理論的概要。"
+      }
+    },
+    {
+      "word": "advantage",
+      "part_of_speech": "noun",
+      "old_chinese": "利益",
+      "new_chinese": "佔先；局末平分後領先",
+      "english": "(tennis) The score where one player wins a point after deuce but needs the next to carry the game.",
+      "reason": "In tennis, advantage is the score after deuce, not benefit.",
+      "example": {
+        "english": "She won the next point and gained advantage.",
+        "chinese": "她贏得下一分，取得局末平分後領先。"
+      }
+    },
+    {
+      "word": "advertise",
+      "part_of_speech": "verb",
+      "old_chinese": "出版",
+      "new_chinese": "做廣告；宣傳",
+      "english": "(intransitive) To provide information about a person or goods and services to influence others. [from 18th c.]",
+      "reason": "Advertise means to provide information to influence buyers or others, not publish.",
+      "example": {
+        "english": "The company will advertise the new product.",
+        "chinese": "公司將為新產品做廣告宣傳。"
+      }
+    },
+    {
+      "word": "affable",
+      "part_of_speech": "adjective",
+      "old_chinese": "仁慈",
+      "new_chinese": "和藹的；親切的",
+      "english": "Mild; benign.",
+      "reason": "Affable means mild and easy to talk to, not merely benevolent.",
+      "example": {
+        "english": "He was an affable host.",
+        "chinese": "他是一位和藹親切的主人。"
+      }
+    },
+    {
+      "word": "affluent",
+      "part_of_speech": "adjective",
+      "old_chinese": "分流",
+      "new_chinese": "支流的",
+      "english": "(dated) Tributary.",
+      "reason": "Affluent dated adjective means tributary, not distributary 分流.",
+      "example": {
+        "english": "An affluent stream joined the river.",
+        "chinese": "一條支流的溪流匯入河中。"
+      }
+    },
+    {
+      "word": "affront",
+      "part_of_speech": "noun",
+      "old_chinese": "決鬥",
+      "new_chinese": "敵對相遇；衝突",
+      "english": "(obsolete) A hostile encounter or meeting.",
+      "reason": "Affront noun obsolete means hostile encounter or meeting, not duel specifically.",
+      "example": {
+        "english": "The old text described an affront between rivals.",
+        "chinese": "舊文本描述了敵對者之間的衝突。"
+      }
+    },
+    {
+      "word": "afraid",
+      "part_of_speech": "adjective",
+      "old_chinese": "可惜",
+      "new_chinese": "抱歉的；遺憾的",
+      "english": "Regretful, sorry; expressing a reluctance to face an unpleasant situation. [with that (+ clause) or clause; or with so or not]",
+      "reason": "Afraid with that-clause can mean regretful or sorry, not 可惜 as an adjective.",
+      "example": {
+        "english": "I am afraid that I cannot help.",
+        "chinese": "我很抱歉的告訴你，我不能幫忙。"
+      }
+    },
+    {
+      "word": "ageless",
+      "part_of_speech": "adjective",
+      "old_chinese": "永恒",
+      "new_chinese": "亙古的；長久存在的",
+      "english": "(relative to past) Having existed for so great a period of time that its longevity cannot be expressed.",
+      "reason": "Ageless here means existing for an immeasurably long time; 永恒 should be Traditional 永恆 and adjectival.",
+      "example": {
+        "english": "The mountains seemed ageless.",
+        "chinese": "群山看似亙古的、長久存在的。"
+      }
+    },
+    {
+      "word": "agree",
+      "part_of_speech": "verb",
+      "old_chinese": "忖度",
+      "new_chinese": "達成協議；商定",
+      "english": "(intransitive) To make a stipulation by way of settling differences or determining a price; to exchange promises; to come to terms or to a common resolve; to promise.",
+      "reason": "Agree here means to settle differences or come to terms, not 忖度.",
+      "example": {
+        "english": "They agreed on a price.",
+        "chinese": "他們達成協議，商定了價格。"
+      }
+    },
+    {
+      "word": "agreement",
+      "part_of_speech": "noun",
+      "old_chinese": "配合",
+      "new_chinese": "可喜之處；令人愉快的特質",
+      "english": "(obsolete, chiefly, _, in the plural) An agreeable quality.",
+      "reason": "Agreement obsolete plural means agreeable qualities, not coordination.",
+      "example": {
+        "english": "The poet praised the agreements of the scene.",
+        "chinese": "詩人讚美那景象的可喜之處。"
+      }
+    },
+    {
+      "word": "alb",
+      "part_of_speech": "noun",
+      "old_chinese": "天亮",
+      "new_chinese": "白長袍；白祭衣",
+      "english": "(Christianity, chiefly, _, Anglicanism, Roman Catholicism) A long, white robe worn by priests and other ministers, underneath most of the other vestments.",
+      "reason": "Alb is a long white robe worn by priests, not dawn.",
+      "example": {
+        "english": "The priest wore an alb during the service.",
+        "chinese": "神父在禮拜中穿著白長袍。"
+      }
+    },
+    {
+      "word": "alienate",
+      "part_of_speech": "verb",
+      "old_chinese": "出售",
+      "new_chinese": "轉讓；讓渡",
+      "english": "To convey or transfer to another, as title, property, or right; to part voluntarily with ownership of.",
+      "reason": "Alienate in law means to transfer property or rights, not sell only.",
+      "example": {
+        "english": "The owner may alienate the property.",
+        "chinese": "業主可以轉讓該財產。"
+      }
+    },
+    {
+      "word": "alienate",
+      "part_of_speech": "verb",
+      "old_chinese": "盜竊",
+      "new_chinese": "使疏遠；使離間",
+      "english": "To cause one to feel unable to relate.",
+      "reason": "Alienate means to make someone feel unable to relate, not steal.",
+      "example": {
+        "english": "His remarks alienated many supporters.",
+        "chinese": "他的言論使疏遠了許多支持者。"
+      }
+    },
+    {
+      "word": "alimony",
+      "part_of_speech": "noun",
+      "old_chinese": "招待所",
+      "new_chinese": "贍養費",
+      "english": "(legal, sometimes, pejorative) A court-mandated allowance made to a former spouse by a divorced or legally separated person.",
+      "reason": "Alimony is court-mandated support paid to a former spouse, not guesthouse.",
+      "example": {
+        "english": "He pays alimony every month.",
+        "chinese": "他每月支付贍養費。"
+      }
+    },
+    {
+      "word": "all there",
+      "part_of_speech": "adjective",
+      "old_chinese": "傻子",
+      "new_chinese": "神智正常的；頭腦清楚的",
+      "english": "Used other than figuratively or idiomatically: see all,‎ there.",
+      "reason": "All there means mentally competent; 傻子 is the opposite/insulting noun.",
+      "example": {
+        "english": "After the accident, he was not quite all there.",
+        "chinese": "事故後，他不太像是神智正常的、頭腦清楚的。"
+      }
+    },
+    {
+      "word": "allay",
+      "part_of_speech": "verb",
+      "old_chinese": "和缓",
+      "new_chinese": "緩和；減輕；平息",
+      "english": "(transitive) To make quiet or put at rest; to pacify or appease; to quell; to calm.",
+      "reason": "Allay means to calm or pacify, not 和缓 as Simplified/awkward.",
+      "example": {
+        "english": "The medicine helped allay the pain.",
+        "chinese": "這種藥有助於減輕疼痛。"
+      }
+    },
+    {
+      "word": "allowance",
+      "part_of_speech": "noun",
+      "old_chinese": "游戏",
+      "new_chinese": "公差；容許偏差",
+      "english": "(engineering) A planned deviation between an exact dimension and a nominal or theoretical dimension.",
+      "reason": "Allowance in engineering is planned deviation between exact and nominal dimensions, not game.",
+      "example": {
+        "english": "The design includes a small allowance.",
+        "chinese": "設計中包含小幅公差。"
+      }
+    },
+    {
+      "word": "alternation",
+      "part_of_speech": "noun",
+      "old_chinese": "回答",
+      "new_chinese": "應答輪唱；交替應答",
+      "english": "(religion) The response of the congregation speaking alternately with the minister.",
+      "reason": "Alternation in religion means congregational responses alternating with minister, not answer alone.",
+      "example": {
+        "english": "The service included alternation between priest and congregation.",
+        "chinese": "禮拜包含神父與會眾的交替應答。"
+      }
+    },
+    {
+      "word": "altitude",
+      "part_of_speech": "noun",
+      "old_chinese": "海拔",
+      "new_chinese": "高；高度線",
+      "english": "(geometry) The distance measured perpendicularly from a figure's vertex to the opposite side of the vertex.",
+      "reason": "In geometry, altitude is the perpendicular distance from a vertex, not elevation above sea level.",
+      "example": {
+        "english": "Draw the altitude of the triangle.",
+        "chinese": "畫出三角形的高度線。"
+      }
+    },
+    {
+      "word": "ambassadorship",
+      "part_of_speech": "noun",
+      "old_chinese": "大使館",
+      "new_chinese": "大使職位；大使任期",
+      "english": "The post or office of ambassador.",
+      "reason": "Ambassadorship means the post or office of ambassador, not embassy.",
+      "example": {
+        "english": "Her ambassadorship lasted four years.",
+        "chinese": "她的大使任期持續了四年。"
+      }
+    },
+    {
+      "word": "anesthetization",
+      "part_of_speech": "noun",
+      "old_chinese": "麻醉學",
+      "new_chinese": "麻醉；施行麻醉",
+      "english": "The administration of anesthesia.",
+      "reason": "Anesthetization is administration of anesthesia, not the study of anesthesia.",
+      "example": {
+        "english": "Anesthetization began before the operation.",
+        "chinese": "手術前開始施行麻醉。"
+      }
+    },
+    {
+      "word": "anguish",
+      "part_of_speech": "noun",
+      "old_chinese": "十字",
+      "new_chinese": "極度痛苦；劇痛",
+      "english": "Extreme pain, either of body or mind; excruciating distress.",
+      "reason": "Anguish means extreme physical or mental pain, not cross.",
+      "example": {
+        "english": "She cried out in anguish.",
+        "chinese": "她因極度痛苦而喊叫。"
+      }
+    },
+    {
+      "word": "animal feed",
+      "part_of_speech": "noun",
+      "old_chinese": "定量",
+      "new_chinese": "動物飼料",
+      "english": "Material, of an animal or most often vegetable origin, prepared (especially industrially) as feed for domestic or farm animals.",
+      "reason": "Animal feed is material prepared as feed for animals, not ration/定量.",
+      "example": {
+        "english": "The farm stores animal feed in the barn.",
+        "chinese": "農場把動物飼料存放在穀倉裡。"
+      }
+    },
+    {
+      "word": "animation",
+      "part_of_speech": "noun",
+      "old_chinese": "動畫片",
+      "new_chinese": "有生化；轉為有生性",
+      "english": "(linguistics) conversion from the inanimate to animate grammatical category",
+      "reason": "In linguistics, animation is conversion from inanimate to animate grammatical category, not cartoon.",
+      "example": {
+        "english": "The language shows animation of some nouns.",
+        "chinese": "該語言顯示某些名詞轉為有生性。"
+      }
+    },
+    {
+      "word": "announcer",
+      "part_of_speech": "noun",
+      "old_chinese": "主持人",
+      "new_chinese": "公告者；播報員",
+      "english": "One who makes announcements.",
+      "reason": "Announcer is one who makes announcements, not necessarily host.",
+      "example": {
+        "english": "The announcer read the news.",
+        "chinese": "播報員讀出新聞。"
+      }
+    },
+    {
+      "word": "annoy",
+      "part_of_speech": "noun",
+      "old_chinese": "無聊",
+      "new_chinese": "煩惱；厭煩",
+      "english": "(literary, archaic) A feeling of discomfort or vexation caused by what one dislikes.",
+      "reason": "Annoy noun means a feeling of discomfort or vexation, not boredom.",
+      "example": {
+        "english": "The delay caused great annoy.",
+        "chinese": "延誤造成很大的煩惱。"
+      }
+    },
+    {
+      "word": "annulus",
+      "part_of_speech": "noun",
+      "old_chinese": "冠冕",
+      "new_chinese": "環帶；環狀構造",
+      "english": "(botany) A structure surrounding a sporangium (or part of it) which shrinks and causes it to rupture for spore dispersal; specifically, in a fern: a structure around about two-thirds of the sporangium consisting of differentially thick-walled cells which dry and distort the sporangium; and in a moss: a complete ring of cells around the tip of the sporangium which dissolves to cause the tip to detach.",
+      "reason": "Botanical annulus is a ring-like structure around a sporangium, not crown.",
+      "example": {
+        "english": "The fern has an annulus on the sporangium.",
+        "chinese": "蕨類孢子囊上有環帶。"
+      }
+    },
+    {
+      "word": "annulus",
+      "part_of_speech": "noun",
+      "old_chinese": "冠冕",
+      "new_chinese": "環形區域；圓環",
+      "english": "(geometry) The region in a plane between two concentric circles of different radii.",
+      "reason": "Geometric annulus is the region between concentric circles, not crown.",
+      "example": {
+        "english": "The shaded annulus lies between two circles.",
+        "chinese": "陰影的圓環是兩個同心圓之間的環形區域。"
+      }
+    },
+    {
+      "word": "annulus",
+      "part_of_speech": "noun",
+      "old_chinese": "冠冕",
+      "new_chinese": "環形空間；圓環",
+      "english": "(topology) Any topological space homeomorphic to the region in a plane between two concentric circles of different radii.",
+      "reason": "Topological annulus is a space homeomorphic to a ring-shaped region, not crown.",
+      "example": {
+        "english": "The surface is topologically an annulus.",
+        "chinese": "這個曲面在拓撲上是環形空間。"
+      }
+    },
+    {
+      "word": "anorak",
+      "part_of_speech": "noun",
+      "old_chinese": "羽绒服",
+      "new_chinese": "連帽防風外套；派克大衣",
+      "english": "A heavy weatherproof jacket with an attached hood; a parka or windcheater.",
+      "reason": "Anorak is a heavy weatherproof jacket, not down jacket specifically.",
+      "example": {
+        "english": "She wore an anorak in the rain.",
+        "chinese": "她下雨時穿著連帽防風外套。"
+      }
+    },
+    {
+      "word": "antinode",
+      "part_of_speech": "noun",
+      "old_chinese": "腹部",
+      "new_chinese": "波腹",
+      "english": "(physics) A region of maximum amplitude situated between adjacent nodes of a vibrating body, such as a string.",
+      "reason": "Antinode is a region of maximum amplitude, not abdomen.",
+      "example": {
+        "english": "The string vibrates with an antinode at the center.",
+        "chinese": "弦在中央形成一個波腹。"
+      }
+    },
+    {
+      "word": "antivenom",
+      "part_of_speech": "noun",
+      "old_chinese": "抗毒素",
+      "new_chinese": "抗蛇毒血清；抗毒液",
+      "english": "(medicine) A medicine that counteracts venom, an antidote to biological poisons from venomous animals such as snakes and spiders.",
+      "reason": "Antivenom counteracts venom, distinct from general antitoxin.",
+      "example": {
+        "english": "The hospital stocked antivenom for snakebites.",
+        "chinese": "醫院備有治療蛇咬的抗蛇毒血清。"
+      }
+    },
+    {
+      "word": "ape",
+      "part_of_speech": "noun",
+      "old_chinese": "猴子",
+      "new_chinese": "猿；類人猿",
+      "english": "A primate of the superfamily Hominoidea, generally larger than monkeys and distinguished from them by having no tail.",
+      "reason": "Ape is a tailless hominoid primate, not monkey.",
+      "example": {
+        "english": "A gorilla is an ape, not a monkey.",
+        "chinese": "大猩猩是猿，不是猴子。"
+      }
+    },
+    {
+      "word": "ape",
+      "part_of_speech": "noun",
+      "old_chinese": "猴子",
+      "new_chinese": "粗野的人；未開化的人",
+      "english": "(derogatory) An uncivilized person.",
+      "reason": "Derogatory ape means an uncivilized person, not monkey literally.",
+      "example": {
+        "english": "He used ape as an insult for a rude person.",
+        "chinese": "他用「猿」來辱罵粗野的人。"
+      }
+    },
+    {
+      "word": "apocryphal",
+      "part_of_speech": "adjective",
+      "old_chinese": "假話",
+      "new_chinese": "真實性可疑的；杜撰的",
+      "english": "(by extension) Of dubious veracity; of questionable accuracy or truthfulness; anecdotal or in the nature of an urban legend.",
+      "reason": "Apocryphal means dubious in truth or accuracy, not simply false words.",
+      "example": {
+        "english": "The story is probably apocryphal.",
+        "chinese": "這個故事很可能是真實性可疑的杜撰傳聞。"
+      }
+    },
+    {
+      "word": "appease",
+      "part_of_speech": "verb",
+      "old_chinese": "和缓",
+      "new_chinese": "平息；安撫；緩和",
+      "english": "To make quiet; to calm; to reduce to a state of peace; to dispel (anger or hatred).",
+      "reason": "Appease means to calm, pacify, or reduce anger; 和缓 is Simplified/awkward.",
+      "example": {
+        "english": "The apology helped appease the crowd.",
+        "chinese": "道歉有助於平息並安撫群眾。"
+      }
+    },
+    {
+      "word": "appease",
+      "part_of_speech": "verb",
+      "old_chinese": "和缓",
+      "new_chinese": "姑息；遷就",
+      "english": "To come to terms with; to adapt to the demands of.",
+      "reason": "Appease can mean to come to terms with or adapt to demands, often by concession.",
+      "example": {
+        "english": "The leader tried to appease his opponents.",
+        "chinese": "領袖試圖姑息並遷就反對者。"
+      }
+    },
+    {
+      "word": "apposition",
+      "part_of_speech": "noun",
+      "old_chinese": "并列",
+      "new_chinese": "同位語；並列",
+      "english": "(grammar) A construction in which one noun or noun phrase is placed with another as an explanatory equivalent, both of them having the same syntactic function in the sentence.",
+      "reason": "Apposition in grammar is a noun phrase placed beside another as an explanatory equivalent; convert 并 to 並 and clarify.",
+      "example": {
+        "english": "In the phrase “my friend Alice,” Alice is in apposition.",
+        "chinese": "在「我的朋友 Alice」中，Alice 是同位語。"
+      }
+    },
+    {
+      "word": "apprehend",
+      "part_of_speech": "verb",
+      "old_chinese": "害怕",
+      "new_chinese": "憂懼；害怕",
+      "english": "To anticipate (something, usually unpleasant); especially, to anticipate (something) with anxiety, dread, or fear; to dread, to fear.",
+      "reason": "Apprehend here means to anticipate with anxiety or fear; 害怕 is close but incomplete.",
+      "example": {
+        "english": "They apprehended danger ahead.",
+        "chinese": "他們憂懼前方有危險。"
+      }
+    },
+    {
+      "word": "approach",
+      "part_of_speech": "noun",
+      "old_chinese": "方法",
+      "new_chinese": "接近；靠近",
+      "english": "(also, figuratively) An act of drawing near in place or time; an advancing or coming near.",
+      "reason": "Approach noun in this sense is the act of drawing near, not method.",
+      "example": {
+        "english": "The approach of winter worried them.",
+        "chinese": "冬天的接近使他們擔心。"
+      }
+    },
+    {
+      "word": "approach",
+      "part_of_speech": "noun",
+      "old_chinese": "入口",
+      "new_chinese": "通路；入口；接近途徑",
+      "english": "(also, figuratively) An avenue, passage, or way by which a building or place can be approached; an access.",
+      "reason": "Approach as access means a way by which a place can be approached, not just entrance.",
+      "example": {
+        "english": "The north approach to the castle was blocked.",
+        "chinese": "通往城堡北面的通路被封鎖。"
+      }
+    },
+    {
+      "word": "approximate",
+      "part_of_speech": "adjective",
+      "old_chinese": "大約",
+      "new_chinese": "接近的；近似的",
+      "english": "Approaching; proximate; nearly resembling.",
+      "reason": "Approximate adjective can mean approaching or nearly resembling, not adverb 大約.",
+      "example": {
+        "english": "The approximate shape is a circle.",
+        "chinese": "這個接近的、近似的形狀是圓形。"
+      }
+    },
+    {
+      "word": "approximate",
+      "part_of_speech": "adjective",
+      "old_chinese": "大約",
+      "new_chinese": "近似的；大約準確的",
+      "english": "Nearing correctness; nearly exact; not perfectly accurate.",
+      "reason": "Approximate means nearly exact but not perfectly accurate; 大約 is adverbial.",
+      "example": {
+        "english": "The approximate answer is ten.",
+        "chinese": "近似的答案是十。"
+      }
+    },
+    {
+      "word": "arbiter",
+      "part_of_speech": "noun",
+      "old_chinese": "先生",
+      "new_chinese": "裁決者；權威判斷者",
+      "english": "(with of) A person or object having the power of judging, determining, or ordaining; one whose power of deciding and governing is not limited.",
+      "reason": "Arbiter with of means a person or object with power of judging, not gentleman.",
+      "example": {
+        "english": "The court is the final arbiter of the law.",
+        "chinese": "法院是法律的最終裁決者。"
+      }
+    },
+    {
+      "word": "arbitrary",
+      "part_of_speech": "adjective",
+      "old_chinese": "任性",
+      "new_chinese": "武斷的；任意的",
+      "english": "Determined by impulse rather than reason; often connoting heavy-handedness.",
+      "reason": "Arbitrary means determined by impulse rather than reason; 任性 is too colloquial/narrow.",
+      "example": {
+        "english": "The decision seemed arbitrary.",
+        "chinese": "這個決定顯得武斷的、任意的。"
+      }
+    },
+    {
+      "word": "arbor",
+      "part_of_speech": "noun",
+      "old_chinese": "林荫道",
+      "new_chinese": "樹林；樹叢",
+      "english": "A grove of trees.",
+      "reason": "Arbor can mean a grove of trees; 林荫道 is too specific and Simplified.",
+      "example": {
+        "english": "They walked through a quiet arbor.",
+        "chinese": "他們穿過一片安靜的樹林。"
+      }
+    },
+    {
+      "word": "arcane",
+      "part_of_speech": "adjective",
+      "old_chinese": "秘密",
+      "new_chinese": "奧秘的；晦澀難懂的",
+      "english": "Understood by only a few.",
+      "reason": "Arcane means understood by only a few, more than simply secret.",
+      "example": {
+        "english": "The book explains arcane rituals.",
+        "chinese": "這本書解釋奧秘的、晦澀難懂的儀式。"
+      }
+    },
+    {
+      "word": "armrest",
+      "part_of_speech": "noun",
+      "old_chinese": "手臂",
+      "new_chinese": "扶手；椅臂",
+      "english": "Part of the seat of a chair that is designed to support the arm.",
+      "reason": "Armrest is the part of a chair supporting the arm, not arm itself.",
+      "example": {
+        "english": "He rested his elbow on the armrest.",
+        "chinese": "他把手肘放在扶手上。"
+      }
+    },
+    {
+      "word": "array",
+      "part_of_speech": "noun",
+      "old_chinese": "打扮",
+      "new_chinese": "服飾；裝束",
+      "english": "Clothing and ornamentation; raiment.",
+      "reason": "Array can mean clothing and ornamentation; 打扮 is the action/style, not the noun sense.",
+      "example": {
+        "english": "The queen wore splendid array.",
+        "chinese": "女王穿著華麗服飾。"
+      }
+    },
+    {
+      "word": "artifact",
+      "part_of_speech": "noun",
+      "old_chinese": "干涉",
+      "new_chinese": "假象；人為干擾結果",
+      "english": "A finding or structure in an experiment or investigation that is not a true feature of the object under observation, but is a result of external action, the test arrangement, or an experimental error.",
+      "reason": "Artifact in experiments is a result of external action, not a true feature; 干涉 is Simplified and too vague.",
+      "example": {
+        "english": "The bright spot was an artifact of the imaging process.",
+        "chinese": "那個亮點是成像過程造成的人為干擾結果。"
+      }
+    },
+    {
+      "word": "artifact",
+      "part_of_speech": "noun",
+      "old_chinese": "干涉",
+      "new_chinese": "建置產物；構建成品",
+      "english": "(software engineering) Ellipsis of build artifact.",
+      "reason": "In software engineering, artifact means build artifact, not interference.",
+      "example": {
+        "english": "The compiler produced a build artifact.",
+        "chinese": "編譯器產生了一個建置產物。"
+      }
+    },
+    {
+      "word": "as long as",
+      "part_of_speech": "conjunction",
+      "old_chinese": "同時",
+      "new_chinese": "只要；在…期間",
+      "english": "(idiomatic) For the entire duration that; while; since.",
+      "reason": "As long as can mean for the whole duration or provided that; 同時 is wrong.",
+      "example": {
+        "english": "You may stay as long as you are quiet.",
+        "chinese": "只要你保持安靜，就可以留下。"
+      }
+    },
+    {
+      "word": "as though",
+      "part_of_speech": "conjunction",
+      "old_chinese": "仿佛",
+      "new_chinese": "彷彿；好像",
+      "english": "As to suggest the idea that; as if, as would be true if.",
+      "reason": "As though means as if; convert 仿佛 to Traditional 彷彿.",
+      "example": {
+        "english": "He looked as though he had seen a ghost.",
+        "chinese": "他看起來彷彿見了鬼。"
+      }
+    },
+    {
+      "word": "ascertain",
+      "part_of_speech": "verb",
+      "old_chinese": "安排",
+      "new_chinese": "查明；確定",
+      "english": "(transitive) To find out definitely; to discover or establish.",
+      "reason": "Ascertain means to find out definitely, not arrange.",
+      "example": {
+        "english": "We must ascertain the cause of the problem.",
+        "chinese": "我們必須查明並確定問題原因。"
+      }
+    },
+    {
+      "word": "aspire",
+      "part_of_speech": "verb",
+      "old_chinese": "希望",
+      "new_chinese": "渴望；立志",
+      "english": "(intransitive) To have a strong desire or ambition to achieve something.",
+      "reason": "Aspire means to have a strong desire or ambition, stronger than hope.",
+      "example": {
+        "english": "She aspires to become a doctor.",
+        "chinese": "她渴望並立志成為醫生。"
+      }
+    },
+    {
+      "word": "ass",
+      "part_of_speech": "noun",
+      "old_chinese": "波河",
+      "new_chinese": "屁股；臀部",
+      "english": "(countable, and, uncountable) The buttocks.",
+      "reason": "Ass in this sense means buttocks, not Po River.",
+      "example": {
+        "english": "He fell on his ass.",
+        "chinese": "他跌坐在屁股上。"
+      }
+    },
+    {
+      "word": "ass",
+      "part_of_speech": "noun",
+      "old_chinese": "驴子",
+      "new_chinese": "蠢人；混蛋",
+      "english": "(often, vulgar, _, through, _, confusion, _) A stupid or jerky (inconsiderate, etc) person.",
+      "reason": "Ass can be a stupid or inconsiderate person; 驴子 is Simplified and wrong for this sense.",
+      "example": {
+        "english": "Do not act like an ass.",
+        "chinese": "別像個蠢人或混蛋。"
+      }
+    },
+    {
+      "word": "assailant",
+      "part_of_speech": "noun",
+      "old_chinese": "侵略者",
+      "new_chinese": "攻擊者；襲擊者",
+      "english": "Someone who attacks or assails another violently, or criminally.",
+      "reason": "Assailant is someone who attacks another, not specifically aggressor/invader.",
+      "example": {
+        "english": "The assailant fled the scene.",
+        "chinese": "襲擊者逃離現場。"
+      }
+    },
+    {
+      "word": "assay",
+      "part_of_speech": "noun",
+      "old_chinese": "散文",
+      "new_chinese": "嘗試；試驗",
+      "english": "Trial, attempt.",
+      "reason": "Assay can mean trial or attempt, not prose.",
+      "example": {
+        "english": "The first assay failed.",
+        "chinese": "第一次嘗試和試驗失敗了。"
+      }
+    },
+    {
+      "word": "assent",
+      "part_of_speech": "noun",
+      "old_chinese": "制裁",
+      "new_chinese": "同意；贊同",
+      "english": "Agreement; act of agreeing.",
+      "reason": "Assent means agreement or act of agreeing, not sanction/punishment.",
+      "example": {
+        "english": "She nodded her assent.",
+        "chinese": "她點頭表示同意。"
+      }
+    },
+    {
+      "word": "asshole",
+      "part_of_speech": "noun",
+      "old_chinese": "屁眼",
+      "new_chinese": "混蛋；討厭鬼",
+      "english": "(vulgar, derogatory, or, offensive, synecdochically) A jerk; an inappropriately or objectionably mean, inconsiderate, contemptible, obnoxious, intrusive, stupid, or rude person.",
+      "reason": "Asshole as insult means a contemptible person, not anatomical asshole in this sense.",
+      "example": {
+        "english": "He was acting like an asshole.",
+        "chinese": "他的行為像個混蛋。"
+      }
+    },
+    {
+      "word": "assuage",
+      "part_of_speech": "verb",
+      "old_chinese": "和缓",
+      "new_chinese": "緩和；減輕",
+      "english": "(transitive) To lessen the intensity of, to mitigate or relieve (hunger, emotion, pain, etc.).",
+      "reason": "Assuage means to lessen intensity or relieve pain/emotion/hunger; 和缓 is Simplified/awkward.",
+      "example": {
+        "english": "Water helped assuage his thirst.",
+        "chinese": "水有助於緩和並減輕他的口渴。"
+      }
+    },
+    {
+      "word": "assuage",
+      "part_of_speech": "verb",
+      "old_chinese": "和缓",
+      "new_chinese": "安撫；撫慰",
+      "english": "(transitive) To pacify or soothe (someone).",
+      "reason": "Assuage can mean to pacify or soothe someone.",
+      "example": {
+        "english": "She tried to assuage the frightened child.",
+        "chinese": "她試圖安撫那個受驚的孩子。"
+      }
+    },
+    {
+      "word": "assuagement",
+      "part_of_speech": "noun",
+      "old_chinese": "利益",
+      "new_chinese": "緩和；減輕；安撫",
+      "english": "The condition of being assuaged.",
+      "reason": "Assuagement is the condition of being assuaged, not benefit.",
+      "example": {
+        "english": "He felt some assuagement of grief.",
+        "chinese": "他感到悲傷有所緩和和減輕。"
+      }
+    },
+    {
+      "word": "assume",
+      "part_of_speech": "verb",
+      "old_chinese": "忖度",
+      "new_chinese": "採納；承擔",
+      "english": "To adopt (an idea or cause)",
+      "reason": "Assume can mean to adopt an idea or cause, not conjecture.",
+      "example": {
+        "english": "The party assumed a new policy.",
+        "chinese": "該黨採納了一項新政策。"
+      }
+    },
+    {
+      "word": "assurance",
+      "part_of_speech": "noun",
+      "old_chinese": "信任",
+      "new_chinese": "自信；篤定",
+      "english": "Firmness of mind; undoubting steadiness; intrepidity, courage, or self-confidence.",
+      "reason": "Assurance here means firmness of mind or self-confidence, not trust.",
+      "example": {
+        "english": "She spoke with assurance.",
+        "chinese": "她說話時充滿自信。"
+      }
+    },
+    {
+      "word": "atrium",
+      "part_of_speech": "noun",
+      "old_chinese": "海岬",
+      "new_chinese": "內腔；花粉孔腔",
+      "english": "(palynology) A cavity inside a porate aperture of a pollen grain formed by the separation of the sexine and nexine layers, widening toward the interior of the grain.",
+      "reason": "Atrium in palynology is a cavity inside a pollen aperture, not cape.",
+      "example": {
+        "english": "The pollen grain has an atrium near the aperture.",
+        "chinese": "花粉粒在孔口附近有內腔。"
+      }
+    },
+    {
+      "word": "atrocious",
+      "part_of_speech": "adjective",
+      "old_chinese": "可怕",
+      "new_chinese": "極壞的；惡劣的",
+      "english": "Very bad; abominable, disgusting.",
+      "reason": "Atrocious means very bad or disgusting; 可怕 is too broad.",
+      "example": {
+        "english": "The food was atrocious.",
+        "chinese": "食物極壞的、惡劣的。"
+      }
+    },
+    {
+      "word": "attaboy",
+      "part_of_speech": "exclamation",
+      "old_chinese": "可以",
+      "new_chinese": "好樣的；幹得好",
+      "english": "(idiomatic, colloquial) Used to show encouragement or approval to a boy, man, or male animal.",
+      "reason": "Attaboy is encouragement or approval, not merely okay.",
+      "example": {
+        "english": "Attaboy, you solved it!",
+        "chinese": "好樣的，你解決了！"
+      }
+    },
+    {
+      "word": "august",
+      "part_of_speech": "adjective",
+      "old_chinese": "逗哏",
+      "new_chinese": "威嚴的；令人敬畏的",
+      "english": "Awe-inspiring, majestic, noble, venerable.",
+      "reason": "August means majestic or venerable, not comic straight-man role.",
+      "example": {
+        "english": "The hall had an august atmosphere.",
+        "chinese": "大廳有威嚴的、令人敬畏的氣氛。"
+      }
+    },
+    {
+      "word": "august",
+      "part_of_speech": "adjective",
+      "old_chinese": "逗哏",
+      "new_chinese": "出身高貴的",
+      "english": "Of noble birth.",
+      "reason": "August can mean of noble birth; 逗哏 is unrelated.",
+      "example": {
+        "english": "He came from an august family.",
+        "chinese": "他出身高貴的家族。"
+      }
+    },
+    {
+      "word": "auricular",
+      "part_of_speech": "adjective",
+      "old_chinese": "耳朵",
+      "new_chinese": "耳狀裝飾風格的",
+      "english": "(art, relational) Pertaining to a style of ornamental decoration, originating in Northern Europe in the first half of the 17th century, that uses softly flowing abstract shapes in relief some of which bear a resemblance to the human ear; commonly used in silverware, picture frames, and architecture.",
+      "reason": "Auricular in art refers to an ornamental style resembling soft ear-like forms, not simply ear.",
+      "example": {
+        "english": "The frame shows auricular decoration.",
+        "chinese": "畫框呈現耳狀裝飾風格的圖案。"
+      }
+    },
+    {
+      "word": "auspicious",
+      "part_of_speech": "adjective",
+      "old_chinese": "便宜",
+      "new_chinese": "吉祥的；有利的",
+      "english": "Of good omen; indicating future success.",
+      "reason": "Auspicious means of good omen or indicating success, not cheap.",
+      "example": {
+        "english": "It was an auspicious beginning.",
+        "chinese": "這是一個吉祥的、有利的開端。"
+      }
+    },
+    {
+      "word": "authoritative",
+      "part_of_speech": "adjective",
+      "old_chinese": "中指",
+      "new_chinese": "權威的；可信的",
+      "english": "Highly accurate or definitive; treated or worthy of treatment as a scholarly authority.",
+      "reason": "Authoritative means highly accurate or definitive, not middle finger.",
+      "example": {
+        "english": "Use an authoritative source.",
+        "chinese": "請使用權威的、可信的來源。"
+      }
+    },
+    {
+      "word": "avail",
+      "part_of_speech": "verb",
+      "old_chinese": "享受",
+      "new_chinese": "有用；有助益",
+      "english": "(intransitive) To be of use or advantage; to answer or serve the purpose; to have strength, force, or efficacy sufficient to accomplish the object.",
+      "reason": "Avail intransitive means to be of use or advantage, not enjoy.",
+      "example": {
+        "english": "Their efforts did not avail.",
+        "chinese": "他們的努力沒有發揮有用的助益。"
+      }
+    },
+    {
+      "word": "awake",
+      "part_of_speech": "adjective",
+      "old_chinese": "酵母",
+      "new_chinese": "醒著的；未睡的",
+      "english": "Not asleep; conscious.",
+      "reason": "Awake adjective means not asleep, not yeast.",
+      "example": {
+        "english": "The baby is awake now.",
+        "chinese": "嬰兒現在是醒著的、未睡的。"
+      }
+    },
+    {
+      "word": "awesome",
+      "part_of_speech": "adjective",
+      "old_chinese": "匪夷所思",
+      "new_chinese": "極好的；令人讚嘆的",
+      "english": "(colloquial, North America, Australia) Excellent, exciting, remarkable.",
+      "reason": "Awesome colloquially means excellent or remarkable, not unbelievable/absurd.",
+      "example": {
+        "english": "The concert was awesome.",
+        "chinese": "那場音樂會極好的、令人讚嘆的。"
+      }
+    },
+    {
+      "word": "awkward",
+      "part_of_speech": "adjective",
+      "old_chinese": "拙劣",
+      "new_chinese": "笨拙的；不靈巧的",
+      "english": "Lacking dexterity in the use of the hands, or of instruments.",
+      "reason": "Awkward here means lacking dexterity, not shoddy.",
+      "example": {
+        "english": "He is awkward with tools.",
+        "chinese": "他使用工具時很笨拙的、不靈巧的。"
+      }
+    },
+    {
+      "word": "awkward",
+      "part_of_speech": "adjective",
+      "old_chinese": "不愉快",
+      "new_chinese": "棘手的；難處理的",
+      "english": "Perverse; adverse; difficult to handle.",
+      "reason": "Awkward can mean difficult to handle, not merely unpleasant.",
+      "example": {
+        "english": "This is an awkward problem.",
+        "chinese": "這是一個棘手的、難處理的問題。"
+      }
+    },
+    {
+      "word": "baba",
+      "part_of_speech": "noun",
+      "old_chinese": "爸爸",
+      "new_chinese": "蘭姆酒糖漿蛋糕",
+      "english": "A kind of sponge cake soaked in rum-flavoured syrup.",
+      "reason": "Baba here is a sponge cake soaked in rum syrup, not father.",
+      "example": {
+        "english": "She served baba for dessert.",
+        "chinese": "她端上蘭姆酒糖漿蛋糕作甜點。"
+      }
+    },
+    {
+      "word": "babe",
+      "part_of_speech": "noun",
+      "old_chinese": "玩偶",
+      "new_chinese": "迷人女子；寶貝",
+      "english": "(slang) An attractive person, especially a young woman. [from Template:SAFESUBST: c.]",
+      "reason": "Babe slang means an attractive person, especially a young woman, not doll.",
+      "example": {
+        "english": "The singer was considered a babe.",
+        "chinese": "那位歌手被視為迷人女子。"
+      }
+    },
+    {
+      "word": "baby face",
+      "part_of_speech": "noun",
+      "old_chinese": "勇士",
+      "new_chinese": "正派摔角手；英雄型摔角手",
+      "english": "(professional wrestling, slang) A headlining wrestler with a persona embodying heroic or virtuous traits and who is regarded as a \"good guy\", especially one who is handsome and well-conditioned.",
+      "reason": "Baby face in professional wrestling is a heroic good-guy wrestler, not warrior.",
+      "example": {
+        "english": "The crowd cheered the baby face.",
+        "chinese": "觀眾為那位正派摔角手喝采。"
+      }
+    },
+    {
+      "word": "back end",
+      "part_of_speech": "noun",
+      "old_chinese": "厨房",
+      "new_chinese": "後端；背面；隱蔽部分",
+      "english": "The rear, back, or unseen portion (of something).",
+      "reason": "Back end means rear or unseen portion, not kitchen.",
+      "example": {
+        "english": "The data is processed at the back end.",
+        "chinese": "資料在後端處理。"
+      }
+    },
+    {
+      "word": "backboard",
+      "part_of_speech": "noun",
+      "old_chinese": "黑板",
+      "new_chinese": "籃板",
+      "english": "(basketball) The flat vertical surface to which the basket is attached.",
+      "reason": "Backboard in basketball is the board to which the basket is attached, not blackboard.",
+      "example": {
+        "english": "The ball hit the backboard.",
+        "chinese": "球擊中了籃板。"
+      }
+    },
+    {
+      "word": "backbone",
+      "part_of_speech": "noun",
+      "old_chinese": "背骨",
+      "new_chinese": "骨幹；基礎支柱",
+      "english": "(countable, figuratively) Any fundamental support, structure, or infrastructure.",
+      "reason": "Backbone figuratively is fundamental support or infrastructure.",
+      "example": {
+        "english": "Small businesses are the backbone of the town.",
+        "chinese": "小企業是這個城鎮的骨幹。"
+      }
+    },
+    {
+      "word": "backbone",
+      "part_of_speech": "noun",
+      "old_chinese": "背骨",
+      "new_chinese": "骨氣；勇氣",
+      "english": "(uncountable, figuratively) Courage, fortitude, or strength.",
+      "reason": "Backbone uncountable figurative means courage or fortitude.",
+      "example": {
+        "english": "She had the backbone to refuse.",
+        "chinese": "她有骨氣和勇氣拒絕。"
+      }
+    },
+    {
+      "word": "backstory",
+      "part_of_speech": "noun",
+      "old_chinese": "毯子",
+      "new_chinese": "掩護身分故事；虛構背景",
+      "english": "(chiefly, espionage, law enforcement) A fictitious account of a person's history designed to conceal their actual history and motives.",
+      "reason": "Backstory in espionage/law enforcement is a fictitious history used as cover, not blanket.",
+      "example": {
+        "english": "The agent memorized his backstory.",
+        "chinese": "特工記熟了自己的掩護身分故事。"
+      }
+    },
+    {
+      "word": "backtalk",
+      "part_of_speech": "noun",
+      "old_chinese": "回答",
+      "new_chinese": "頂嘴；回嘴",
+      "english": "Verbal impudence or argumentative discourse, given in response.",
+      "reason": "Backtalk is impudent or argumentative response, not neutral answer.",
+      "example": {
+        "english": "The teacher would not tolerate backtalk.",
+        "chinese": "老師不能容忍頂嘴。"
+      }
+    },
+    {
+      "word": "backtalk",
+      "part_of_speech": "verb",
+      "old_chinese": "回答",
+      "new_chinese": "頂嘴；回嘴",
+      "english": "(transitive) To respond to in an aggressively disputatious, often sarcastic or insolent manner.",
+      "reason": "Backtalk verb means to respond insolently, not neutral answer.",
+      "example": {
+        "english": "Do not backtalk your parents.",
+        "chinese": "不要對父母頂嘴。"
+      }
+    },
+    {
+      "word": "backwardness",
+      "part_of_speech": "noun",
+      "old_chinese": "中世紀",
+      "new_chinese": "落後狀態；遲滯",
+      "english": "The state of being backward.",
+      "reason": "Backwardness means the state of being backward, not Middle Ages.",
+      "example": {
+        "english": "The report criticized the region’s backwardness.",
+        "chinese": "報告批評該地區的落後狀態。"
+      }
+    },
+    {
+      "word": "bald",
+      "part_of_speech": "adjective",
+      "old_chinese": "平滑",
+      "new_chinese": "磨平的；胎面磨光的",
+      "english": "Of tyres: whose surface is worn away.",
+      "reason": "Bald of tyres means the surface is worn away, not smooth in general.",
+      "example": {
+        "english": "The car had bald tyres.",
+        "chinese": "那輛車的輪胎是胎面磨光的。"
+      }
+    },
+    {
+      "word": "bale",
+      "part_of_speech": "noun",
+      "old_chinese": "靴子",
+      "new_chinese": "一捆乾草",
+      "english": "A measurement of hay equal to 10 flakes. Approximately 70-90 lbs (32-41 kg).",
+      "reason": "Bale as a hay measure is a bale of hay, not boot.",
+      "example": {
+        "english": "The farmer loaded a bale of hay.",
+        "chinese": "農夫裝上一捆乾草。"
+      }
+    },
+    {
+      "word": "bale",
+      "part_of_speech": "noun",
+      "old_chinese": "子彈",
+      "new_chinese": "一包紙；紙包計量單位",
+      "english": "A measurement of paper equal to 10 reams.",
+      "reason": "Bale as paper measure means ten reams, not bullet.",
+      "example": {
+        "english": "The order included a bale of paper.",
+        "chinese": "訂單包括一包紙。"
+      }
+    },
+    {
+      "word": "ballast",
+      "part_of_speech": "noun",
+      "old_chinese": "堤岸",
+      "new_chinese": "道碴；碎石路基",
+      "english": "Coarse gravel or similar material laid to form a bed for roads or railroads, or in making concrete; track ballast.",
+      "reason": "Ballast here is coarse gravel for roads or railways, not bank.",
+      "example": {
+        "english": "Workers replaced the railway ballast.",
+        "chinese": "工人更換了鐵路道碴。"
+      }
+    },
+    {
+      "word": "balloon plant",
+      "part_of_speech": "noun",
+      "old_chinese": "路燈",
+      "new_chinese": "倒地鈴；氣球藤",
+      "english": "A flowering vine with large, hollow seedpod and round seeds featuring a heart-shaped mark; Cardiospermum halicacabum",
+      "reason": "Balloon plant is Cardiospermum halicacabum, not street lamp.",
+      "example": {
+        "english": "The balloon plant has hollow seedpods.",
+        "chinese": "倒地鈴有中空的種莢。"
+      }
+    },
+    {
+      "word": "baloney",
+      "part_of_speech": "noun",
+      "old_chinese": "奶酪",
+      "new_chinese": "胡說；廢話",
+      "english": "(uncountable, chiefly, US, slang) Nonsense.",
+      "reason": "Baloney slang means nonsense, not cheese.",
+      "example": {
+        "english": "That excuse is pure baloney.",
+        "chinese": "那個藉口純粹是胡說廢話。"
+      }
+    },
+    {
+      "word": "bane",
+      "part_of_speech": "noun",
+      "old_chinese": "害人虫",
+      "new_chinese": "禍害；災星",
+      "english": "A cause of misery or ruin.",
+      "reason": "Bane means a cause of misery or ruin; 害人虫 is Simplified and too colloquial.",
+      "example": {
+        "english": "Debt was the bane of his life.",
+        "chinese": "債務是他生活中的禍害。"
+      }
+    },
+    {
+      "word": "bang away",
+      "part_of_speech": "verb",
+      "old_chinese": "火刑",
+      "new_chinese": "埋頭苦幹；不停工作",
+      "english": "(idiomatic, intransitive) to work tirelessly",
+      "reason": "Bang away idiom means to work tirelessly, not burning at stake.",
+      "example": {
+        "english": "She banged away at the report all night.",
+        "chinese": "她整晚埋頭苦幹寫報告。"
+      }
+    },
+    {
+      "word": "banker",
+      "part_of_speech": "noun",
+      "old_chinese": "河床",
+      "new_chinese": "莊家",
+      "english": "The dealer in a casino, or one who keeps the bank in a banking game.",
+      "reason": "Banker in a casino/game is the dealer or keeper of the bank, not riverbed.",
+      "example": {
+        "english": "The banker dealt the cards.",
+        "chinese": "莊家發了牌。"
+      }
+    },
+    {
+      "word": "banter",
+      "part_of_speech": "noun",
+      "old_chinese": "戏弄",
+      "new_chinese": "打趣；玩笑談話",
+      "english": "Sharp, good-humoured, playful, typically spontaneous conversation.",
+      "reason": "Banter noun is playful conversation, not teasing only.",
+      "example": {
+        "english": "Their banter made everyone laugh.",
+        "chinese": "他們的打趣和玩笑談話讓大家發笑。"
+      }
+    },
+    {
+      "word": "barb",
+      "part_of_speech": "noun",
+      "old_chinese": "胡子",
+      "new_chinese": "羽枝",
+      "english": "(ornithology) One of the many side branches of a feather, which collectively constitute the vane.",
+      "reason": "Barb in ornithology is a side branch of a feather, not beard.",
+      "example": {
+        "english": "Each feather has many barbs.",
+        "chinese": "每根羽毛都有許多羽枝。"
+      }
+    },
+    {
+      "word": "barbie",
+      "part_of_speech": "noun",
+      "old_chinese": "娃娃",
+      "new_chinese": "花瓶美女；膚淺美女",
+      "english": "(by extension, informal, derogatory) A beautiful but stupid or shallow young woman.",
+      "reason": "Barbie figuratively can mean a beautiful but shallow young woman, not doll itself.",
+      "example": {
+        "english": "The insult called her a barbie.",
+        "chinese": "這句侮辱稱她為花瓶美女。"
+      }
+    },
+    {
+      "word": "barn",
+      "part_of_speech": "noun",
+      "old_chinese": "孩子",
+      "new_chinese": "靶恩；核截面單位",
+      "english": "(nuclear physics) A unit of surface area equal to 10−28 square metres.",
+      "reason": "Barn in nuclear physics is a unit of area, not child.",
+      "example": {
+        "english": "The cross-section was measured in barns.",
+        "chinese": "截面以靶恩這種核截面單位量度。"
+      }
+    },
+    {
+      "word": "barre chord",
+      "part_of_speech": "noun",
+      "old_chinese": "睫毛",
+      "new_chinese": "大橫按和弦",
+      "english": "(music) A guitar chord played by pressing down multiple strings on the fretboard.",
+      "reason": "Barre chord is a guitar chord made by pressing multiple strings, not eyelash.",
+      "example": {
+        "english": "He practiced a barre chord on the guitar.",
+        "chinese": "他在吉他上練習大橫按和弦。"
+      }
+    },
+    {
+      "word": "bat",
+      "part_of_speech": "verb",
+      "old_chinese": "蝙蝠",
+      "new_chinese": "擊球；輪到擊球",
+      "english": "(intransitive) To take a turn at hitting a ball with a bat in sports like cricket, baseball and softball, as opposed to fielding.",
+      "reason": "Bat verb means to take a turn hitting a ball, not the animal.",
+      "example": {
+        "english": "She will bat next.",
+        "chinese": "下一個輪到她擊球。"
+      }
+    },
+    {
+      "word": "batch",
+      "part_of_speech": "noun",
+      "old_chinese": "游戏",
+      "new_chinese": "一批；一組",
+      "english": "A group or collection of things of the same kind, such as a batch of letters or the next batch of business.",
+      "reason": "Batch is a group or collection, not game.",
+      "example": {
+        "english": "The bakery made a new batch of bread.",
+        "chinese": "麵包店做了一批新麵包。"
+      }
+    },
+    {
+      "word": "batt",
+      "part_of_speech": "noun",
+      "old_chinese": "腹部",
+      "new_chinese": "填絮；棉胎材料",
+      "english": "Pieces of fabric or fibre used for stuffing; as for batting or insulation",
+      "reason": "Batt means fabric or fibre used for stuffing/insulation, not abdomen.",
+      "example": {
+        "english": "The quilt used cotton batt.",
+        "chinese": "這床被子用了棉胎材料。"
+      }
+    },
+    {
+      "word": "batting",
+      "part_of_speech": "noun",
+      "old_chinese": "腹部",
+      "new_chinese": "填絮；襯墊材料",
+      "english": "(sewing) Cotton, wool, silk or synthetic material used to stuff the inside of a mattress, quilt etc.",
+      "reason": "Batting in sewing is stuffing material for quilts or mattresses, not abdomen.",
+      "example": {
+        "english": "The jacket contains warm batting.",
+        "chinese": "這件外套含有保暖填絮。"
+      }
+    },
+    {
+      "word": "bauble",
+      "part_of_speech": "noun",
+      "old_chinese": "拔火罐",
+      "new_chinese": "小裝飾球；聖誕樹飾球",
+      "english": "A small shiny spherical decoration, commonly put on Christmas trees.",
+      "reason": "Bauble is a small shiny decoration, not cupping therapy.",
+      "example": {
+        "english": "The child hung a bauble on the tree.",
+        "chinese": "孩子把小裝飾球掛在樹上。"
+      }
+    },
+    {
+      "word": "beanpole",
+      "part_of_speech": "noun",
+      "old_chinese": "炸丸子",
+      "new_chinese": "瘦高個子",
+      "english": "(informal) A tall, thin person.",
+      "reason": "Beanpole informal means a tall thin person, not fried ball.",
+      "example": {
+        "english": "He was a beanpole as a teenager.",
+        "chinese": "他青少年時是個瘦高個子。"
+      }
+    },
+    {
+      "word": "beaver away",
+      "part_of_speech": "verb",
+      "old_chinese": "火刑",
+      "new_chinese": "勤奮工作；賣力幹活",
+      "english": "(idiomatic) To work hard at a task.",
+      "reason": "Beaver away idiom means to work hard, not burning at stake.",
+      "example": {
+        "english": "They beavered away at the project.",
+        "chinese": "他們為這個專案勤奮工作。"
+      }
+    },
+    {
+      "word": "bedpan",
+      "part_of_speech": "noun",
+      "old_chinese": "小提琴",
+      "new_chinese": "便盆；床上便盆",
+      "english": "A pan used for urination and defecation while in bed, now usually for reasons of medical necessity or convenience.",
+      "reason": "Bedpan is a pan used for urination/defecation in bed, not violin.",
+      "example": {
+        "english": "The nurse brought a bedpan.",
+        "chinese": "護士拿來一個床上便盆。"
+      }
+    },
+    {
+      "word": "bee in one's bonnet",
+      "part_of_speech": "noun",
+      "old_chinese": "迷住",
+      "new_chinese": "念念不忘的事；執念",
+      "english": "(idiomatic) Something of particular interest or concern; an obsession.",
+      "reason": "Bee in one’s bonnet is an obsession or particular concern, not be fascinated.",
+      "example": {
+        "english": "He has a bee in his bonnet about grammar.",
+        "chinese": "他對語法有一種念念不忘的執念。"
+      }
+    },
+    {
+      "word": "beehive",
+      "part_of_speech": "noun",
+      "old_chinese": "酸菜",
+      "new_chinese": "蜂巢式髮型",
+      "english": "A women's hairstyle, popular in the 1960s, in which long hair is styled into a hive-shaped form on top of the head and usually held in place with lacquer.",
+      "reason": "Beehive can mean a 1960s hive-shaped hairstyle, not sauerkraut.",
+      "example": {
+        "english": "She wore her hair in a beehive.",
+        "chinese": "她梳著蜂巢式髮型。"
+      }
+    },
+    {
+      "word": "beer parlour",
+      "part_of_speech": "noun",
+      "old_chinese": "啤酒厂",
+      "new_chinese": "啤酒館；啤酒吧",
+      "english": "(Canada, Nigeria) A bar, selling beer, that has tables where customers may congregate socially.",
+      "reason": "Beer parlour is a bar selling beer, not brewery.",
+      "example": {
+        "english": "They met at the beer parlour.",
+        "chinese": "他們在啤酒館見面。"
+      }
+    },
+    {
+      "word": "befriend",
+      "part_of_speech": "verb",
+      "old_chinese": "忖度",
+      "new_chinese": "幫助；像朋友般對待",
+      "english": "(transitive, dated) To act as a friend to, to assist.",
+      "reason": "Befriend dated means to act as a friend to or assist, not conjecture.",
+      "example": {
+        "english": "The charity befriended lonely elders.",
+        "chinese": "慈善機構幫助孤獨長者，像朋友般對待他們。"
+      }
+    },
+    {
+      "word": "best",
+      "part_of_speech": "noun",
+      "old_chinese": "花朵",
+      "new_chinese": "最佳者；最好的事物",
+      "english": "The person (or persons; or thing or things) that is (are) most excellent.",
+      "reason": "Best noun means the person or thing that is most excellent, not flower.",
+      "example": {
+        "english": "Only the best will be chosen.",
+        "chinese": "只有最佳者會被選中。"
+      }
+    },
+    {
+      "word": "best man",
+      "part_of_speech": "noun",
+      "old_chinese": "乾爹",
+      "new_chinese": "伴郎",
+      "english": "The primary attendant to the groom in a wedding ceremony.",
+      "reason": "Best man is the groom’s primary attendant at a wedding, not godfather.",
+      "example": {
+        "english": "His brother was his best man.",
+        "chinese": "他的兄弟是他的伴郎。"
+      }
+    },
+    {
+      "word": "bestow",
+      "part_of_speech": "verb",
+      "old_chinese": "使用",
+      "new_chinese": "授予；贈與",
+      "english": "To impart (something) gratuitously; to present (something) to someone or something, especially as a gift or an honour; to confer, to give, to accord; to render.",
+      "reason": "Bestow means to present or confer as a gift or honour, not use.",
+      "example": {
+        "english": "The king bestowed a title on him.",
+        "chinese": "國王授予他一個頭銜。"
+      }
+    },
+    {
+      "word": "bevor",
+      "part_of_speech": "noun",
+      "old_chinese": "胡子",
+      "new_chinese": "下頷甲；護頸面甲",
+      "english": "(historical) A portion of plate armour to protect the lower face and the neck, typically in two parts, called upper bevor and lower bevor.",
+      "reason": "Bevor is plate armour protecting lower face and neck, not beard.",
+      "example": {
+        "english": "The knight wore a bevor under his helmet.",
+        "chinese": "騎士在頭盔下戴著下頷甲。"
+      }
+    },
+    {
+      "word": "bi",
+      "part_of_speech": "adjective",
+      "old_chinese": "蜜蜂",
+      "new_chinese": "雙性戀的",
+      "english": "(LGBTQ, slang) Bisexual.",
+      "reason": "Bi slang adjective means bisexual, not bee.",
+      "example": {
+        "english": "She identifies as bi.",
+        "chinese": "她認同自己是雙性戀的。"
+      }
+    },
+    {
+      "word": "bicorn",
+      "part_of_speech": "noun",
+      "old_chinese": "饺子",
+      "new_chinese": "雙角帽",
+      "english": "(historical) A two-cornered hat, worn by European and American military and naval officers from the 1790s.",
+      "reason": "Bicorn is a two-cornered hat, not dumpling.",
+      "example": {
+        "english": "The officer wore a bicorn.",
+        "chinese": "軍官戴著雙角帽。"
+      }
+    },
+    {
+      "word": "big toe",
+      "part_of_speech": "noun",
+      "old_chinese": "拇指",
+      "new_chinese": "大腳趾",
+      "english": "(anatomy) The largest toe (usually) on each human foot (i.e. the toe closest to the other foot when the feet are flat on the ground, side by side, and the legs not crossed) or on a foot of certain other animals.",
+      "reason": "Big toe is the largest toe, not thumb.",
+      "example": {
+        "english": "He hurt his big toe.",
+        "chinese": "他弄傷了大腳趾。"
+      }
+    },
+    {
+      "word": "biker",
+      "part_of_speech": "noun",
+      "old_chinese": "半人馬",
+      "new_chinese": "電單車騎士；機車族",
+      "english": "A person whose lifestyle is centered on motorcycles, sometimes a member of a motorcycle club.",
+      "reason": "Biker is a person whose lifestyle centers on motorcycles, not centaur.",
+      "example": {
+        "english": "The biker joined a motorcycle club.",
+        "chinese": "那名電單車騎士加入了機車俱樂部。"
+      }
+    },
+    {
+      "word": "bill of materials",
+      "part_of_speech": "noun",
+      "old_chinese": "命名法",
+      "new_chinese": "物料清單",
+      "english": "(manufacturing, design engineering) A list of materials and components used in a manufactured item.",
+      "reason": "Bill of materials is a list of materials/components for a manufactured item, not nomenclature.",
+      "example": {
+        "english": "The engineer updated the bill of materials.",
+        "chinese": "工程師更新了物料清單。"
+      }
+    },
+    {
+      "word": "bindle",
+      "part_of_speech": "noun",
+      "old_chinese": "流浪者",
+      "new_chinese": "包袱；毒品小包",
+      "english": "(Canada, US, , slang) Any bundle or package; specifically one containing narcotics such as cocaine, heroin, or morphine.",
+      "reason": "Bindle is a bundle/package, especially one containing narcotics in slang, not vagrant.",
+      "example": {
+        "english": "The police found a bindle in his pocket.",
+        "chinese": "警方在他口袋裡發現一個毒品小包。"
+      }
+    },
+    {
+      "word": "binge",
+      "part_of_speech": "noun",
+      "old_chinese": "旗子",
+      "new_chinese": "狂歡作樂；暴飲暴食",
+      "english": "A short period of excessive consumption, especially of food, alcohol, narcotics, etc.",
+      "reason": "Binge is a short period of excessive consumption, not flag.",
+      "example": {
+        "english": "He went on a drinking binge.",
+        "chinese": "他進行了一場暴飲暴食的狂歡作樂。"
+      }
+    },
+    {
+      "word": "biting",
+      "part_of_speech": "adjective",
+      "old_chinese": "波音",
+      "new_chinese": "刺痛的；刺骨的",
+      "english": "Causing a stinging sensation.",
+      "reason": "Biting means causing a stinging sensation, not Boeing.",
+      "example": {
+        "english": "A biting wind blew across the field.",
+        "chinese": "刺骨的風吹過田野。"
+      }
+    },
+    {
+      "word": "biting",
+      "part_of_speech": "adjective",
+      "old_chinese": "波音",
+      "new_chinese": "尖銳的；犀利的",
+      "english": "Cutting or incisive.",
+      "reason": "Biting means cutting or incisive in speech/style, not Boeing.",
+      "example": {
+        "english": "She made a biting remark.",
+        "chinese": "她作出尖銳的評論。"
+      }
+    },
+    {
+      "word": "biting",
+      "part_of_speech": "adjective",
+      "old_chinese": "波音",
+      "new_chinese": "會咬人的；愛咬的",
+      "english": "Tending to bite.",
+      "reason": "Biting means tending to bite, not Boeing.",
+      "example": {
+        "english": "Beware of biting insects.",
+        "chinese": "小心會咬人的昆蟲。"
+      }
+    },
+    {
+      "word": "blame",
+      "part_of_speech": "noun",
+      "old_chinese": "毛病",
+      "new_chinese": "責任標註；程式碼歸責",
+      "english": "(computing) A source control feature that can show which user was responsible for a particular portion of the source code.",
+      "reason": "Blame in computing is a source control feature showing who changed code, not fault generally.",
+      "example": {
+        "english": "Use blame to find who changed the line.",
+        "chinese": "使用責任標註找出誰改了那行程式碼。"
+      }
+    },
+    {
+      "word": "bland",
+      "part_of_speech": "adjective",
+      "old_chinese": "朋友",
+      "new_chinese": "溫和的；柔和的",
+      "english": "(now, _, rare) Mild; soft, gentle, balmy; smooth in manner; suave.",
+      "reason": "Bland in this rare sense means mild or gentle, not friend.",
+      "example": {
+        "english": "The air was bland and warm.",
+        "chinese": "空氣溫和的、柔和的。"
+      }
+    },
+    {
+      "word": "bleak",
+      "part_of_speech": "adjective",
+      "old_chinese": "沙漠",
+      "new_chinese": "荒涼的；寒冷曝露的",
+      "english": "Desolate and exposed; swept by cold winds.",
+      "reason": "Bleak means desolate and exposed to cold winds, not desert noun.",
+      "example": {
+        "english": "They crossed a bleak hillside.",
+        "chinese": "他們穿過荒涼的、寒冷曝露的山坡。"
+      }
+    },
+    {
+      "word": "bleed",
+      "part_of_speech": "noun",
+      "old_chinese": "血液",
+      "new_chinese": "出血邊；印刷出血",
+      "english": "(printing) A narrow edge around a page layout, to be printed but cut off afterwards (added to allow for slight misalignment, especially with pictures that should run to the edge of the finished sheet).",
+      "reason": "Bleed in printing is the edge printed and trimmed off, not blood.",
+      "example": {
+        "english": "The designer added a bleed to the page.",
+        "chinese": "設計師為頁面加入印刷出血。"
+      }
+    },
+    {
+      "word": "blight",
+      "part_of_speech": "noun",
+      "old_chinese": "害人虫",
+      "new_chinese": "病斑；枯萎病症",
+      "english": "(pathology, dated) A diseased condition of the face or skin; specifically, bleeding under the conjunctiva of the eye, a form of skin rash, or a palsy of the face due to cold.",
+      "reason": "Blight here is a diseased condition of face/skin, not pest.",
+      "example": {
+        "english": "The old text described a blight of the skin.",
+        "chinese": "舊文本描述了一種皮膚病斑。"
+      }
+    },
+    {
+      "word": "blight",
+      "part_of_speech": "noun",
+      "old_chinese": "害人虫",
+      "new_chinese": "禍害；阻礙發展的因素",
+      "english": "Something that impedes development or growth, or spoils any other aspect of life.",
+      "reason": "Blight figuratively is something that spoils or impedes growth, not pest only.",
+      "example": {
+        "english": "Corruption was a blight on the city.",
+        "chinese": "腐敗是這座城市的禍害。"
+      }
+    },
+    {
+      "word": "blind spot",
+      "part_of_speech": "noun",
+      "old_chinese": "陌生人",
+      "new_chinese": "盲點；認知盲區",
+      "english": "(figuratively) A subject or area about which one is uninformed or misinformed, often because of a prejudice or lack of appreciation.",
+      "reason": "Blind spot figuratively is an area one is uninformed or biased about, not stranger.",
+      "example": {
+        "english": "Technology is his blind spot.",
+        "chinese": "科技是他的認知盲區。"
+      }
+    },
+    {
+      "word": "blissful",
+      "part_of_speech": "adjective",
+      "old_chinese": "奇妙",
+      "new_chinese": "極樂的；幸福的",
+      "english": "Extremely happy; full of joy; experiencing, indicating, causing, or characterized by bliss.",
+      "reason": "Blissful means extremely happy or full of joy, not merely wonderful.",
+      "example": {
+        "english": "They spent a blissful afternoon together.",
+        "chinese": "他們一起度過了一個幸福的下午。"
+      }
+    },
+    {
+      "word": "blister",
+      "part_of_speech": "noun",
+      "old_chinese": "膀胱",
+      "new_chinese": "水泡；血泡",
+      "english": "A small bubble between the layers of the skin that contains watery or bloody fluid and is caused by friction and pressure, burning, freezing, chemical irritation, disease, or infection.",
+      "reason": "Blister is a small bubble under skin, not bladder.",
+      "example": {
+        "english": "New shoes gave her a blister.",
+        "chinese": "新鞋讓她起了水泡。"
+      }
+    },
+    {
+      "word": "blister",
+      "part_of_speech": "noun",
+      "old_chinese": "膀胱",
+      "new_chinese": "氣泡；泡狀凸起",
+      "english": "A bubble, as on a painted surface.",
+      "reason": "Blister can mean a bubble on a painted surface, not bladder.",
+      "example": {
+        "english": "A blister formed in the paint.",
+        "chinese": "油漆表面形成了一個氣泡。"
+      }
+    },
+    {
+      "word": "blooper",
+      "part_of_speech": "noun",
+      "old_chinese": "青蛙",
+      "new_chinese": "失誤；笑場錯誤",
+      "english": "(informal) A blunder, an error.",
+      "reason": "Blooper is a blunder or error, not frog.",
+      "example": {
+        "english": "The actor laughed at his blooper.",
+        "chinese": "演員為自己的失誤笑了起來。"
+      }
+    },
+    {
+      "word": "blot out",
+      "part_of_speech": "verb",
+      "old_chinese": "去世",
+      "new_chinese": "塗掉；抹去",
+      "english": "(transitive) To make indecipherable; to obliterate.",
+      "reason": "Blot out means to make indecipherable or obliterate, not die.",
+      "example": {
+        "english": "The ink blotted out the words.",
+        "chinese": "墨水把文字塗掉了。"
+      }
+    },
+    {
+      "word": "blow out",
+      "part_of_speech": "verb",
+      "old_chinese": "熄滅",
+      "new_chinese": "大聲唱出",
+      "english": "(slang) To sing out, sing out loud.",
+      "reason": "Blow out slang means to sing out loud, not extinguish.",
+      "example": {
+        "english": "The singer began to blow out a tune.",
+        "chinese": "歌手開始大聲唱出一段曲調。"
+      }
+    },
+    {
+      "word": "blow over",
+      "part_of_speech": "verb",
+      "old_chinese": "升級",
+      "new_chinese": "平息；過去",
+      "english": "(intransitive, idiomatic) To pass naturally; to go away; to calm down or subside.",
+      "reason": "Blow over idiom means to pass or calm down, not upgrade.",
+      "example": {
+        "english": "The scandal will eventually blow over.",
+        "chinese": "醜聞最終會平息過去。"
+      }
+    },
+    {
+      "word": "blow up",
+      "part_of_speech": "verb",
+      "old_chinese": "激增",
+      "new_chinese": "勃然大怒；發脾氣",
+      "english": "(intransitive, slang) To suddenly get very angry, to lose one's temper.",
+      "reason": "Blow up slang means suddenly get angry, not surge.",
+      "example": {
+        "english": "He blew up when he heard the news.",
+        "chinese": "他聽到消息後勃然大怒。"
+      }
+    },
+    {
+      "word": "blubbo",
+      "part_of_speech": "noun",
+      "old_chinese": "海象",
+      "new_chinese": "胖子；肥胖者",
+      "english": "(slang, pejorative) An overweight or obese person.",
+      "reason": "Blubbo is derogatory slang for an overweight person, not walrus.",
+      "example": {
+        "english": "The insult called him a blubbo.",
+        "chinese": "這句辱罵稱他為胖子。"
+      }
+    },
+    {
+      "word": "blueprint",
+      "part_of_speech": "noun",
+      "old_chinese": "安排",
+      "new_chinese": "藍圖；詳細技術圖",
+      "english": "(architecture, engineering, by extension) A detailed technical drawing (now often in some electronically storable and transmissible form).",
+      "reason": "Blueprint is a detailed technical drawing, not arrangement.",
+      "example": {
+        "english": "The architect checked the blueprint.",
+        "chinese": "建築師查看了藍圖。"
+      }
+    },
+    {
+      "word": "blunt",
+      "part_of_speech": "adjective",
+      "old_chinese": "二百五",
+      "new_chinese": "遲鈍的；愚鈍的",
+      "english": "Dull in understanding; slow of discernment; opposed to acute.",
+      "reason": "Blunt here means dull in understanding, not slang 二百五.",
+      "example": {
+        "english": "He was blunt in matters of subtle emotion.",
+        "chinese": "他在細膩情感方面很遲鈍的。"
+      }
+    },
+    {
+      "word": "bluntly",
+      "part_of_speech": "adverb",
+      "old_chinese": "意外",
+      "new_chinese": "直率地；不客氣地",
+      "english": "In a blunt manner; without delicacy, or the usual forms of civility.",
+      "reason": "Bluntly means without delicacy or civility, not unexpectedly.",
+      "example": {
+        "english": "She spoke bluntly.",
+        "chinese": "她直率地、不客氣地說話。"
+      }
+    },
+    {
+      "word": "blur",
+      "part_of_speech": "noun",
+      "old_chinese": "品牌",
+      "new_chinese": "污痕；模糊斑點",
+      "english": "A smear, smudge or blot.",
+      "reason": "Blur noun is a smear/smudge/blot, not brand.",
+      "example": {
+        "english": "The photo was just a blur.",
+        "chinese": "照片只是一片模糊斑點。"
+      }
+    },
+    {
+      "word": "blur",
+      "part_of_speech": "verb",
+      "old_chinese": "拭除",
+      "new_chinese": "使模糊；使朦朧",
+      "english": "To make indistinct or hazy, to obscure or dim.",
+      "reason": "Blur verb means to make indistinct or obscure, not wipe away.",
+      "example": {
+        "english": "Tears blurred his vision.",
+        "chinese": "淚水使模糊了他的視線，也使畫面朦朧。"
+      }
+    },
+    {
+      "word": "blush",
+      "part_of_speech": "noun",
+      "old_chinese": "鮭魚",
+      "new_chinese": "淡粉色；粉膚色",
+      "english": "A color between pink and cream.",
+      "reason": "Blush colour is between pink and cream, not salmon fish.",
+      "example": {
+        "english": "The wall was painted blush.",
+        "chinese": "牆壁漆成淡粉色。"
+      }
+    },
+    {
+      "word": "board",
+      "part_of_speech": "noun",
+      "old_chinese": "旗子",
+      "new_chinese": "船舷；船側",
+      "english": "(nautical) The side of a ship.",
+      "reason": "Board nautical means the side of a ship, not flag.",
+      "example": {
+        "english": "The sailor looked over the board.",
+        "chinese": "水手從船舷望出去。"
+      }
+    },
+    {
+      "word": "board up",
+      "part_of_speech": "verb",
+      "old_chinese": "禁止",
+      "new_chinese": "用木板封住",
+      "english": "(transitive) To block doors or windows with boards, either to prevent access or as protection from storms, etc.",
+      "reason": "Board up means block doors/windows with boards, not prohibit.",
+      "example": {
+        "english": "They boarded up the windows before the storm.",
+        "chinese": "暴風雨前他們用木板封住窗戶。"
+      }
+    },
+    {
+      "word": "boarder",
+      "part_of_speech": "noun",
+      "old_chinese": "海盜",
+      "new_chinese": "登船攻擊者；登船防禦者",
+      "english": "(nautical) A sailor attacking an enemy ship by boarding her, or one repelling such attempts by an enemy.",
+      "reason": "Boarder nautical means a sailor boarding an enemy ship or repelling boarders, not pirate.",
+      "example": {
+        "english": "The boarder climbed onto the enemy ship.",
+        "chinese": "登船攻擊者爬上敵船。"
+      }
+    },
+    {
+      "word": "boards",
+      "part_of_speech": "noun",
+      "old_chinese": "籬笆",
+      "new_chinese": "冰球場圍板",
+      "english": "Structure around a rink for ice hockey.",
+      "reason": "Boards in hockey are the structure around a rink, not fence generally.",
+      "example": {
+        "english": "The puck hit the boards.",
+        "chinese": "冰球撞上了冰球場圍板。"
+      }
+    },
+    {
+      "word": "bobbin",
+      "part_of_speech": "noun",
+      "old_chinese": "易拉罐",
+      "new_chinese": "梭芯；線軸",
+      "english": "In a sewing machine, the small spool that holds the lower thread.",
+      "reason": "Bobbin is a small spool in a sewing machine, not can.",
+      "example": {
+        "english": "The bobbin holds the lower thread.",
+        "chinese": "梭芯裝著底線。"
+      }
+    },
+    {
+      "word": "bogeyman",
+      "part_of_speech": "noun",
+      "old_chinese": "椰子",
+      "new_chinese": "妖怪；嚇小孩的怪物",
+      "english": "A menacing, ghost-like monster in children's stories.",
+      "reason": "Bogeyman is a menacing monster in children’s stories, not coconut.",
+      "example": {
+        "english": "The child feared the bogeyman.",
+        "chinese": "孩子害怕嚇小孩的妖怪。"
+      }
+    },
+    {
+      "word": "boiler suit",
+      "part_of_speech": "noun",
+      "old_chinese": "青蛙",
+      "new_chinese": "連身工作服",
+      "english": "A one-piece suit combining trousers and jacket, worn for heavy or hot manual labour.",
+      "reason": "Boiler suit is a one-piece work suit, not frog.",
+      "example": {
+        "english": "The mechanic wore a boiler suit.",
+        "chinese": "機械工穿著連身工作服。"
+      }
+    },
+    {
+      "word": "bolster",
+      "part_of_speech": "verb",
+      "old_chinese": "生長",
+      "new_chinese": "支撐；加強",
+      "english": "(transitive, often, figurative) To brace, reinforce, secure, or support.",
+      "reason": "Bolster means to reinforce or support, not grow.",
+      "example": {
+        "english": "The policy bolstered confidence.",
+        "chinese": "這項政策加強了信心。"
+      }
+    },
+    {
+      "word": "boom",
+      "part_of_speech": "noun",
+      "old_chinese": "乔木",
+      "new_chinese": "帆桁；吊桿",
+      "english": "(sailing) A spar extending the foot of a sail; a spar rigged outboard from a ship's side to which boats are secured in harbour.",
+      "reason": "Boom nautical means a spar extending the foot of a sail, not tree.",
+      "example": {
+        "english": "The sailor adjusted the boom.",
+        "chinese": "水手調整了帆桁。"
+      }
+    },
+    {
+      "word": "boon",
+      "part_of_speech": "noun",
+      "old_chinese": "天才",
+      "new_chinese": "神賜祝福；恩賜",
+      "english": "(Hinduism) A blessing, typically a supernatural power, granted to an ascetic by a god or goddess.",
+      "reason": "Boon in Hinduism means a blessing or supernatural power granted by a deity, not genius.",
+      "example": {
+        "english": "The god granted him a boon.",
+        "chinese": "神賜給他一項恩賜。"
+      }
+    },
+    {
+      "word": "booster dose",
+      "part_of_speech": "noun",
+      "old_chinese": "交叉引用",
+      "new_chinese": "加強劑量；追加劑量",
+      "english": "A dose of an antigen designed to strengthen immunity after an earlier immunizing dose.",
+      "reason": "Booster dose is an antigen dose to strengthen immunity, not cross-reference.",
+      "example": {
+        "english": "She received a booster dose.",
+        "chinese": "她接種了加強劑量。"
+      }
+    },
+    {
+      "word": "booth",
+      "part_of_speech": "noun",
+      "old_chinese": "細胞",
+      "new_chinese": "小隔間；電話亭；投票亭",
+      "english": "A boxlike room or enclosure just big enough to accommodate one standing person, such as a phone booth or polling booth.",
+      "reason": "Booth is a small enclosed room, not cell.",
+      "example": {
+        "english": "He stepped into the phone booth.",
+        "chinese": "他走進電話亭小隔間。"
+      }
+    },
+    {
+      "word": "bootstrap",
+      "part_of_speech": "noun",
+      "old_chinese": "蹦床",
+      "new_chinese": "自助起步手段；自力成功方法",
+      "english": "(figuratively) A means of advancing oneself or accomplishing something without aid.",
+      "reason": "Bootstrap figuratively means a means of advancing oneself without aid, not trampoline.",
+      "example": {
+        "english": "The loan served as a bootstrap for the business.",
+        "chinese": "這筆貸款成了企業自助起步手段。"
+      }
+    },
+    {
+      "word": "booze",
+      "part_of_speech": "verb",
+      "old_chinese": "加油",
+      "new_chinese": "喝酒；酗酒",
+      "english": "(slang, intransitive) To drink alcohol.",
+      "reason": "Booze verb means to drink alcohol, not refuel.",
+      "example": {
+        "english": "They boozed all night.",
+        "chinese": "他們整晚喝酒。"
+      }
+    },
+    {
+      "word": "bouncer",
+      "part_of_speech": "noun",
+      "old_chinese": "大猩猩",
+      "new_chinese": "保安；門衛",
+      "english": "(informal) A member of security personnel employed by bars, nightclubs, etc. to decide who can enter, maintain order, and deal with patrons who cause trouble.",
+      "reason": "Bouncer is security staff at a bar/nightclub, not gorilla.",
+      "example": {
+        "english": "The bouncer checked IDs at the door.",
+        "chinese": "保安在門口檢查身分證件。"
+      }
+    },
+    {
+      "word": "bound",
+      "part_of_speech": "noun",
+      "old_chinese": "端子",
+      "new_chinese": "邊界；界限",
+      "english": "(often, used in plural) A boundary, the border which one must cross in order to enter or leave a territory.",
+      "reason": "Bound noun means boundary or border, not terminal.",
+      "example": {
+        "english": "They crossed the bounds of the estate.",
+        "chinese": "他們越過了莊園的邊界。"
+      }
+    },
+    {
+      "word": "bound",
+      "part_of_speech": "noun",
+      "old_chinese": "端子",
+      "new_chinese": "界；上限或下限",
+      "english": "(mathematics) A value which is known to be greater or smaller than a given set of values.",
+      "reason": "Bound in mathematics is a value greater or smaller than a set, not terminal.",
+      "example": {
+        "english": "The function has an upper bound.",
+        "chinese": "這個函數有一個上界。"
+      }
+    },
+    {
+      "word": "bowser",
+      "part_of_speech": "noun",
+      "old_chinese": "伏地挺身",
+      "new_chinese": "加油泵；燃油泵",
+      "english": "(now, _, chiefly, Australia, and, New Zealand) A fuel metering/delivery pump at a filling station.",
+      "reason": "Bowser in Australia/NZ means a fuel pump, not push-up.",
+      "example": {
+        "english": "The bowser was out of order.",
+        "chinese": "加油泵故障了。"
+      }
+    },
+    {
+      "word": "bra",
+      "part_of_speech": "noun",
+      "old_chinese": "奶罩",
+      "new_chinese": "胸罩；乳罩",
+      "english": "An item of clothing, usually underwear worn to support the breasts. [from 1920s]",
+      "reason": "Bra is an undergarment supporting the breasts; 奶罩 is colloquial, use standard terms.",
+      "example": {
+        "english": "She bought a new bra.",
+        "chinese": "她買了一件新胸罩。"
+      }
+    },
+    {
+      "word": "brace",
+      "part_of_speech": "noun",
+      "old_chinese": "蛙泳",
+      "new_chinese": "一庹；兩臂展開長度",
+      "english": "(obsolete) A measurement of length, originally representing a person's outstretched arms.",
+      "reason": "Brace obsolete measure of length is outstretched arms, not breaststroke.",
+      "example": {
+        "english": "The old measure was a brace.",
+        "chinese": "這個舊長度單位是一庹。"
+      }
+    },
+    {
+      "word": "brace",
+      "part_of_speech": "noun",
+      "old_chinese": "力矩",
+      "new_chinese": "帆桁轉索",
+      "english": "(nautical) A rope reeved through a block at the end of a yard, by which the yard is moved horizontally; also, a rudder gudgeon.",
+      "reason": "Brace nautical is a rope used to move a yard horizontally, not torque.",
+      "example": {
+        "english": "The sailor hauled on the brace.",
+        "chinese": "水手拉動帆桁轉索。"
+      }
+    },
+    {
+      "word": "bracket",
+      "part_of_speech": "noun",
+      "old_chinese": "괄호(括弧)",
+      "new_chinese": "括號",
+      "english": "Any of the characters “(”, “)”, “[”, “]”, “{”, “}”, “⟨”, “⟩”, “<”, “>”, or the like, used in pairs to enclose parenthetic remarks, sections of mathematical expressions, etc.",
+      "reason": "Bracket means paired punctuation marks; replace Korean gloss with Traditional Chinese.",
+      "example": {
+        "english": "Put the phrase in brackets.",
+        "chinese": "把這個片語放在括號內。"
+      }
+    },
+    {
+      "word": "brass",
+      "part_of_speech": "noun",
+      "old_chinese": "意大利麵",
+      "new_chinese": "錢；金錢",
+      "english": "(slang, dated) Money.",
+      "reason": "Brass dated slang means money, not spaghetti.",
+      "example": {
+        "english": "He had no brass left.",
+        "chinese": "他沒有錢了。"
+      }
+    },
+    {
+      "word": "brasserie",
+      "part_of_speech": "noun",
+      "old_chinese": "啤酒厂",
+      "new_chinese": "小餐館；啤酒店",
+      "english": "A small, informal restaurant that serves beer and wine as well as simple food.",
+      "reason": "Brasserie is an informal restaurant serving beer/wine and simple food, not brewery.",
+      "example": {
+        "english": "They ate at a brasserie.",
+        "chinese": "他們在小餐館用餐。"
+      }
+    },
+    {
+      "word": "brat",
+      "part_of_speech": "noun",
+      "old_chinese": "侏儒",
+      "new_chinese": "熊孩子；頑劣小孩",
+      "english": "(pejorative) A child who is regarded as mischievous, unruly, spoiled, or selfish.",
+      "reason": "Brat is a spoiled or unruly child, not dwarf.",
+      "example": {
+        "english": "The brat shouted at everyone.",
+        "chinese": "那個頑劣小孩對所有人大喊。"
+      }
+    },
+    {
+      "word": "breaker",
+      "part_of_speech": "noun",
+      "old_chinese": "刀片",
+      "new_chinese": "碎浪；拍岸浪",
+      "english": "(chiefly, in the plural) A wave breaking into foam against the shore, or against a sandbank, or a rock or reef near the surface, considered a useful warning to ships of an underwater hazard",
+      "reason": "Breaker is a wave breaking into foam near shore, not blade.",
+      "example": {
+        "english": "The boat passed through the breakers.",
+        "chinese": "小船穿過拍岸碎浪。"
+      }
+    },
+    {
+      "word": "breakout",
+      "part_of_speech": "noun",
+      "old_chinese": "爆炸",
+      "new_chinese": "爆發；疾病突發",
+      "english": "An outbreak (sudden eruption of disease etc.).",
+      "reason": "Breakout means an outbreak or sudden eruption, not explosion.",
+      "example": {
+        "english": "There was a breakout of disease.",
+        "chinese": "發生了一次疾病爆發。"
+      }
+    },
+    {
+      "word": "breastfeed",
+      "part_of_speech": "verb",
+      "old_chinese": "喂奶",
+      "new_chinese": "哺乳；餵奶",
+      "english": "(transitive, intransitive) To feed (a baby) milk via the breasts; to suckle; to nurse.",
+      "reason": "Breastfeed means to feed a baby milk via breasts; convert 喂 to 餵.",
+      "example": {
+        "english": "She chose to breastfeed her baby.",
+        "chinese": "她選擇哺乳並餵奶給嬰兒。"
+      }
+    },
+    {
+      "word": "breeze",
+      "part_of_speech": "noun",
+      "old_chinese": "工作",
+      "new_chinese": "輕而易舉的事",
+      "english": "(figurative) Any activity that is easy, not testing or difficult.",
+      "reason": "Breeze figuratively means an easy activity, not work generally.",
+      "example": {
+        "english": "The exam was a breeze.",
+        "chinese": "這次考試是輕而易舉的事。"
+      }
+    },
+    {
+      "word": "brill",
+      "part_of_speech": "noun",
+      "old_chinese": "蘭姆酒",
+      "new_chinese": "菱鮃",
+      "english": "A type of flatfish, Scophthalmus rhombus.",
+      "reason": "Brill is a type of flatfish, not rum.",
+      "example": {
+        "english": "Brill is sold at the fish market.",
+        "chinese": "魚市場有菱鮃出售。"
+      }
+    },
+    {
+      "word": "brilliant",
+      "part_of_speech": "noun",
+      "old_chinese": "珍珠",
+      "new_chinese": "四點鉛字",
+      "english": "(uncountable, printing, dated) The size of type between excelsior and diamond, standardized as 4-point.",
+      "reason": "Brilliant in printing is a 4-point type size, not pearl.",
+      "example": {
+        "english": "The old book used brilliant type.",
+        "chinese": "那本舊書使用四點鉛字。"
+      }
+    },
+    {
+      "word": "brimstone",
+      "part_of_speech": "noun",
+      "old_chinese": "柠檬",
+      "new_chinese": "鉤粉蝶",
+      "english": "The butterfly Gonepteryx rhamni of the Pieridae family.",
+      "reason": "Brimstone here is a butterfly, not lemon.",
+      "example": {
+        "english": "A brimstone flew over the flowers.",
+        "chinese": "一隻鉤粉蝶飛過花叢。"
+      }
+    },
+    {
+      "word": "brisket",
+      "part_of_speech": "noun",
+      "old_chinese": "五花肉",
+      "new_chinese": "胸肉；胸脯肉",
+      "english": "The chest of an animal.",
+      "reason": "Brisket is the chest of an animal, not pork belly.",
+      "example": {
+        "english": "The butcher pointed to the brisket.",
+        "chinese": "屠夫指著胸肉。"
+      }
+    },
+    {
+      "word": "brisket",
+      "part_of_speech": "noun",
+      "old_chinese": "五花肉",
+      "new_chinese": "牛胸肉；胸脯肉",
+      "english": "A cut of meat taken from the chest, especially from the section under the first five ribs.",
+      "reason": "Brisket is a meat cut from the chest, not pork belly.",
+      "example": {
+        "english": "They smoked a beef brisket.",
+        "chinese": "他們煙燻了一塊牛胸肉。"
+      }
+    },
+    {
+      "word": "broad",
+      "part_of_speech": "adjective",
+      "old_chinese": "厉害",
+      "new_chinese": "濃重的；地方口音重的",
+      "english": "(of an accent) Strongly regional.",
+      "reason": "Broad of an accent means strongly regional, not powerful.",
+      "example": {
+        "english": "He spoke with a broad accent.",
+        "chinese": "他說話帶有濃重的地方口音。"
+      }
+    },
+    {
+      "word": "bruiser",
+      "part_of_speech": "noun",
+      "old_chinese": "大猩猩",
+      "new_chinese": "彪形大漢；粗壯好鬥者",
+      "english": "(by extension, colloquial, derogatory) A tall, strong, heavily built person, usually a man, especially one prone to physical violence; a strong and tough person.",
+      "reason": "Bruiser is a tall strong heavily built person, not gorilla.",
+      "example": {
+        "english": "The guard was a bruiser.",
+        "chinese": "那名守衛是個彪形大漢。"
+      }
+    },
+    {
+      "word": "brunette",
+      "part_of_speech": "noun",
+      "old_chinese": "昏暗",
+      "new_chinese": "棕髮女子；深褐髮者",
+      "english": "A person, especially female, with brown hair.",
+      "reason": "Brunette is a person with brown hair, not dimness.",
+      "example": {
+        "english": "The brunette smiled at the camera.",
+        "chinese": "那位棕髮女子對著鏡頭微笑。"
+      }
+    },
+    {
+      "word": "buddy",
+      "part_of_speech": "pronoun",
+      "old_chinese": "朋友",
+      "new_chinese": "遠處的人；第三者",
+      "english": "(Maritime English) A person far removed from the conversation.",
+      "reason": "Buddy in Maritime English means a person far removed from the conversation, not friend.",
+      "example": {
+        "english": "Buddy over there waved from the dock.",
+        "chinese": "遠處的人在碼頭揮手。"
+      }
+    },
+    {
+      "word": "bugger",
+      "part_of_speech": "noun",
+      "old_chinese": "屁眼",
+      "new_chinese": "蠢貨；討厭鬼",
+      "english": "(slang, derogatory, Commonwealth, Hawaii) A foolish or worthless person or thing; a despicable person.",
+      "reason": "Bugger derogatory slang means a foolish or worthless person, not anus.",
+      "example": {
+        "english": "The old bugger complained again.",
+        "chinese": "那個討厭鬼又抱怨了。"
+      }
+    },
+    {
+      "word": "building block",
+      "part_of_speech": "noun",
+      "old_chinese": "立方",
+      "new_chinese": "積木",
+      "english": "A block made of wood or plastic that is used as a children's toy and can be stacked or joined to form a larger structure.",
+      "reason": "Building block toy is a block used by children, not cube as geometry.",
+      "example": {
+        "english": "The child stacked building blocks.",
+        "chinese": "孩子把積木疊起來。"
+      }
+    },
+    {
+      "word": "bulk",
+      "part_of_speech": "noun",
+      "old_chinese": "一起",
+      "new_chinese": "大部分；主體",
+      "english": "The major part of something.",
+      "reason": "Bulk means the major part of something, not together.",
+      "example": {
+        "english": "The bulk of the work is finished.",
+        "chinese": "大部分工作已完成。"
+      }
+    },
+    {
+      "word": "bullet point",
+      "part_of_speech": "noun",
+      "old_chinese": "尖峰",
+      "new_chinese": "項目符號",
+      "english": "The symbol, typically a solid circle, that marks each item in a bulleted list.",
+      "reason": "Bullet point is the symbol marking an item in a bulleted list, not peak.",
+      "example": {
+        "english": "Add a bullet point before each item.",
+        "chinese": "在每個項目前加上項目符號。"
+      }
+    },
+    {
+      "word": "bulletin",
+      "part_of_speech": "noun",
+      "old_chinese": "小册子",
+      "new_chinese": "公報；簡報",
+      "english": "A short printed publication, especially one produced regularly by an organization.",
+      "reason": "Bulletin is a short printed publication, not booklet.",
+      "example": {
+        "english": "The school issued a bulletin.",
+        "chinese": "學校發布了一份公報。"
+      }
+    },
+    {
+      "word": "bullock",
+      "part_of_speech": "noun",
+      "old_chinese": "小牛 [xiǎoniú]",
+      "new_chinese": "小公牛",
+      "english": "(archaic) A young bull.",
+      "reason": "Bullock archaic means a young bull; remove pinyin annotation.",
+      "example": {
+        "english": "The farmer sold a young bullock.",
+        "chinese": "農夫賣了一頭小公牛。"
+      }
+    },
+    {
+      "word": "bunch of fives",
+      "part_of_speech": "noun",
+      "old_chinese": "便便",
+      "new_chinese": "一拳",
+      "english": "(British, slang) A punch; a blow with the fist.",
+      "reason": "Bunch of fives is British slang for a punch, not feces.",
+      "example": {
+        "english": "He threatened him with a bunch of fives.",
+        "chinese": "他威脅要給對方一拳。"
+      }
+    },
+    {
+      "word": "bung",
+      "part_of_speech": "noun",
+      "old_chinese": "堵塞",
+      "new_chinese": "扒手；騙子",
+      "english": "(obsolete, slang) A sharper or pickpocket.",
+      "reason": "Bung obsolete slang means sharper or pickpocket, not blockage.",
+      "example": {
+        "english": "The old story mentions a bung in the market.",
+        "chinese": "舊故事提到市場裡有個扒手。"
+      }
+    },
+    {
+      "word": "bung",
+      "part_of_speech": "verb",
+      "old_chinese": "堵塞",
+      "new_chinese": "打腫；打傷",
+      "english": "(transitive) To batter, bruise; to cause to bulge or swell.",
+      "reason": "Bung verb means to batter or bruise, not plug.",
+      "example": {
+        "english": "He bunged up his knee.",
+        "chinese": "他把膝蓋打傷打腫了。"
+      }
+    },
+    {
+      "word": "bunk bed",
+      "part_of_speech": "noun",
+      "old_chinese": "擔架床",
+      "new_chinese": "雙層床；上下鋪",
+      "english": "Two or more beds fixed on top of one another, so that one person can sleep in each bunk at a different height.",
+      "reason": "Bunk bed is beds fixed one above another, not stretcher bed.",
+      "example": {
+        "english": "The children slept in a bunk bed.",
+        "chinese": "孩子們睡在雙層床上。"
+      }
+    },
+    {
+      "word": "buoy up",
+      "part_of_speech": "verb",
+      "old_chinese": "激励",
+      "new_chinese": "鼓舞；振作",
+      "english": "(idiomatic, transitive, figurative) To uplift, hearten, inspire, or raise the spirits of.",
+      "reason": "Buoy up figuratively means to uplift or raise spirits; 激励 is Simplified.",
+      "example": {
+        "english": "Her kind words buoyed him up.",
+        "chinese": "她親切的話鼓舞了他，使他振作。"
+      }
+    },
+    {
+      "word": "burly",
+      "part_of_speech": "adjective",
+      "old_chinese": "厉害",
+      "new_chinese": "魁梧的；健壯的",
+      "english": "(usually, of a man) Large, well-built, and muscular.",
+      "reason": "Burly means large, well-built, muscular, not powerful generally.",
+      "example": {
+        "english": "A burly man opened the door.",
+        "chinese": "一名魁梧的男子開了門。"
+      }
+    },
+    {
+      "word": "burn the midnight oil",
+      "part_of_speech": "verb",
+      "old_chinese": "火刑",
+      "new_chinese": "熬夜苦讀；開夜車工作",
+      "english": "(idiomatic) To work studiously, especially late into the night.",
+      "reason": "Burn the midnight oil means to work or study late into the night, not burning at stake.",
+      "example": {
+        "english": "She burned the midnight oil before the exam.",
+        "chinese": "她考試前熬夜苦讀。"
+      }
+    },
+    {
+      "word": "burning",
+      "part_of_speech": "noun",
+      "old_chinese": "奶油",
+      "new_chinese": "燃燒；焚燒",
+      "english": "The act by which something burns or is burned.",
+      "reason": "Burning noun is the act of burning, not cream.",
+      "example": {
+        "english": "The burning of the wood warmed the room.",
+        "chinese": "木材的燃燒使房間變暖。"
+      }
+    },
+    {
+      "word": "burnt out",
+      "part_of_speech": "adjective",
+      "old_chinese": "累坏",
+      "new_chinese": "累垮的；精疲力竭的",
+      "english": "Overworked to the point of exhaustion.",
+      "reason": "Burnt out means exhausted from overwork; convert 累坏 to Traditional and adjectival.",
+      "example": {
+        "english": "After months of overtime, she felt burnt out.",
+        "chinese": "加班數月後，她感到累垮的、精疲力竭的。"
+      }
+    },
+    {
+      "word": "burr",
+      "part_of_speech": "noun",
+      "old_chinese": "胡子",
+      "new_chinese": "毛邊；金屬刺",
+      "english": "A small piece of material left on an edge after a cutting operation.",
+      "reason": "Burr is a small piece left on an edge after cutting, not beard.",
+      "example": {
+        "english": "File off the burr on the metal.",
+        "chinese": "把金屬上的毛邊磨掉。"
+      }
+    },
+    {
+      "word": "burr",
+      "part_of_speech": "noun",
+      "old_chinese": "刺猬",
+      "new_chinese": "磨盤；研磨輪",
+      "english": "(engineering) A revolving disk or cone with abrasive surfaces used to grind hard products in a grinder or mill.",
+      "reason": "Burr engineering is an abrasive disk/cone in a grinder or mill, not hedgehog.",
+      "example": {
+        "english": "The mill used a stone burr.",
+        "chinese": "磨坊使用石磨盤。"
+      }
+    },
+    {
+      "word": "burst",
+      "part_of_speech": "noun",
+      "old_chinese": "爆炸 [bàozhà]",
+      "new_chinese": "爆裂；迸發",
+      "english": "An act or instance of bursting.",
+      "reason": "Burst is an act or instance of bursting; remove pinyin and avoid only explosion.",
+      "example": {
+        "english": "There was a burst of laughter.",
+        "chinese": "笑聲突然迸發，像一陣爆裂般響起。"
+      }
+    },
+    {
+      "word": "bush-cricket",
+      "part_of_speech": "noun",
+      "old_chinese": "希望",
+      "new_chinese": "螽斯；紡織娘",
+      "english": "Synonym of katydid.",
+      "reason": "Bush-cricket is a katydid, not hope.",
+      "example": {
+        "english": "A bush-cricket chirped in the grass.",
+        "chinese": "草叢裡有一隻螽斯鳴叫。"
+      }
+    },
+    {
+      "word": "bust",
+      "part_of_speech": "verb",
+      "old_chinese": "停住",
+      "new_chinese": "逮捕",
+      "english": "(transitive, slang) To arrest (someone or a group of people) for a crime.",
+      "reason": "Bust slang verb means to arrest someone, not stop.",
+      "example": {
+        "english": "Police busted the suspect.",
+        "chinese": "警方逮捕了嫌疑人。"
+      }
+    },
+    {
+      "word": "bust",
+      "part_of_speech": "verb",
+      "old_chinese": "銷毀",
+      "new_chinese": "抓個正著；當場揭發",
+      "english": "(transitive, slang) To catch (someone) in the act of doing something wrong, socially and morally inappropriate, or illegal, especially when being done in a sneaky or secretive state.",
+      "reason": "Bust means to catch someone doing wrong, not destroy.",
+      "example": {
+        "english": "The teacher busted him cheating.",
+        "chinese": "老師抓個正著，揭發他作弊。"
+      }
+    },
+    {
+      "word": "buster",
+      "part_of_speech": "noun",
+      "old_chinese": "傻子",
+      "new_chinese": "制服者；破壞者",
+      "english": "(chiefly, colloquial, with 'of') Someone who or something that 'breaks', tames, or overpowers a specified person or thing.",
+      "reason": "Buster is someone/something that breaks, tames, or overpowers a specified thing, not fool.",
+      "example": {
+        "english": "The dog was a bronco buster.",
+        "chinese": "那人是野馬制服者。"
+      }
+    },
+    {
+      "word": "buster",
+      "part_of_speech": "noun",
+      "old_chinese": "伴侶",
+      "new_chinese": "老兄；傢伙",
+      "english": "(colloquial, variously expressing familiarity, admiration, or hostility) A form of address, particularly of men: guy, dude, fella, mack, buddy, loser. (Originally as 'old buster.)",
+      "reason": "Buster can be a familiar or hostile form of address, not partner.",
+      "example": {
+        "english": "Watch it, buster!",
+        "chinese": "小心點，老兄！"
+      }
+    },
+    {
+      "word": "butte",
+      "part_of_speech": "noun",
+      "old_chinese": "高原",
+      "new_chinese": "孤丘；平頂陡丘",
+      "english": "(US) An isolated hill with steep sides and a flat top.",
+      "reason": "Butte is an isolated hill with steep sides and flat top, not plateau.",
+      "example": {
+        "english": "A butte rose above the desert.",
+        "chinese": "一座平頂陡丘矗立在沙漠上。"
+      }
+    },
+    {
+      "word": "buzzer",
+      "part_of_speech": "noun",
+      "old_chinese": "小苇鳽",
+      "new_chinese": "蜂鳴器",
+      "english": "A device that makes a buzzing sound.",
+      "reason": "Buzzer is a device that makes a buzzing sound, not little bittern.",
+      "example": {
+        "english": "Press the buzzer at the door.",
+        "chinese": "按門口的蜂鳴器。"
+      }
     }
   ]
 }

@@ -153,7 +153,8 @@ Received Pronunciation、UK 或 British 的音標，不會把 US IPA 推斷成 U
 "ʃ": ["ipa_sh"]
 "ʒ": ["ipa_zh"]
 "aɪ": ["ipa_a", "ipa_i_short"]
-"tʃ": ["ipa_t", "ipa_sh"]
+"tʃ": ["ipa_t_ch"]
+"dʒ": ["ipa_d_zh"]
 ```
 
 對應音檔需要加入 app bundle，例如 `ipa_ae.mp3`、`ipa_schwa.mp3`。目前音素音檔放在：

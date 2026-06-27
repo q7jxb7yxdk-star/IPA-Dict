@@ -45,6 +45,20 @@ IPAHelp source: https://ipahelp.languagetechnology.org/
 The previous Wikimedia-derived versions remain preserved in
 `Tools/AudioArchive/WikimediaCommonsSources/` for comparison.
 
+### Affricate single-file replacements
+
+The following bundled affricate files are trimmed from Wikimedia Commons
+affricate source recordings so the app plays one local MP3 for each tappable
+compound IPA button instead of sequencing two separate stop/fricative files:
+
+```text
+ipa_t_ch.mp3
+ipa_d_zh.mp3
+```
+
+The original OGG files are preserved under
+`Tools/AudioArchive/WikimediaCommonsSources/affricate_source_ogg/`.
+
 ## Files
 
 ### ipa_a.mp3
@@ -126,6 +140,17 @@ The previous Wikimedia-derived versions remain preserved in
 - License URL: http://creativecommons.org/licenses/by-sa/3.0/
 - Usage terms: Creative Commons Attribution-Share Alike 3.0
 - Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
+### ipa_d_zh.mp3
+
+- Source file: `Voiced palato-alveolar affricate.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:Voiced_palato-alveolar_affricate.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/e/e6/Voiced_palato-alveolar_affricate.ogg
+- Author / artist: Octane at English Wikipedia
+- Credit: Transferred from English Wikipedia to Commons by Sevela.p using CommonsHelper.
+- License: Public domain
+- Usage terms: Public domain
+- Local changes: Trimmed to the first non-silent affricate segment and converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
 
 ### ipa_e.mp3
 
@@ -414,6 +439,18 @@ The previous Wikimedia-derived versions remain preserved in
 - License URL: http://creativecommons.org/licenses/by-sa/3.0/
 - Usage terms: Creative Commons Attribution-Share Alike 3.0
 - Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
+### ipa_t_ch.mp3
+
+- Source file: `Voiceless palato-alveolar affricate.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:Voiceless_palato-alveolar_affricate.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/9/97/Voiceless_palato-alveolar_affricate.ogg
+- Author / artist: Peter Isotalo
+- Credit: Own work
+- License: CC BY-SA 3.0
+- License URL: http://creativecommons.org/licenses/by-sa/3.0/
+- Usage terms: Creative Commons Attribution-Share Alike 3.0
+- Local changes: Trimmed to the first non-silent affricate segment and converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
 
 ### ipa_tap.mp3
 
