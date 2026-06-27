@@ -1,6 +1,10 @@
 # IPA Phoneme Audio Attribution
 
-These phoneme audio files were downloaded from Wikimedia Commons and converted from OGG to MP3 for use in IPA Dict. Some original consonant samples contain multiple demonstration sounds; the app bundle uses a single-shot derivative that keeps the main phoneme segment. Each file remains under its original Wikimedia Commons license. Follow the source file license terms when redistributing the app or repository.
+Most phoneme audio files were downloaded from Wikimedia Commons and converted
+from OGG to MP3 for use in IPA Dict. Some original consonant samples contain
+multiple demonstration sounds; where those still sounded multi-syllabic in the
+app, the app bundle now uses shorter single-phoneme MP3 files from IPAHelp.
+Follow each source file license terms when redistributing the app or repository.
 
 ## Conversion
 
@@ -8,6 +12,38 @@ These phoneme audio files were downloaded from Wikimedia Commons and converted f
 - App format: MP3
 - Tool: ffmpeg
 - Changes: audio format conversion, local filename normalization, and for multi-segment samples, trimming to a single main phoneme segment. The full converted MP3 files and the trimming report are preserved under `Tools/AudioArchive/WikimediaCommonsSources/`.
+
+### IPAHelp consonant replacements
+
+The following bundled consonant files use the shorter IPAHelp versions archived
+under `Tools/AudioArchive/IPAHelpPhonemes/`, because the Wikimedia-derived
+versions sounded like multi-segment demonstrations when used as tappable
+single-phoneme audio:
+
+```text
+ipa_eth.mp3
+ipa_h.mp3
+ipa_j.mp3
+ipa_l.mp3
+ipa_m.mp3
+ipa_n.mp3
+ipa_ng.mp3
+ipa_s.mp3
+ipa_sh.mp3
+ipa_tap.mp3
+ipa_theta.mp3
+ipa_v.mp3
+ipa_w.mp3
+ipa_w_voiceless.mp3
+ipa_x.mp3
+ipa_z.mp3
+ipa_zh.mp3
+```
+
+IPAHelp source: https://ipahelp.languagetechnology.org/
+
+The previous Wikimedia-derived versions remain preserved in
+`Tools/AudioArchive/WikimediaCommonsSources/` for comparison.
 
 ## Files
 

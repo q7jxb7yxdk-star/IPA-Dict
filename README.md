@@ -162,10 +162,11 @@ Received Pronunciation、UK 或 British 的音標，不會把 US IPA 推斷成 U
 IPA Dict/Audio/Phonemes/
 ```
 
-音素錄音取自 Wikimedia Commons 的可再散布音檔。部分原始 consonant
-錄音包含多段示範聲音；app bundle 內使用的是裁剪後的 single-shot MP3，
-只保留主要單一音素聲音。個別作者、來源頁面、裁剪紀錄及 `CC BY-SA 3.0`
-授權資料記錄於 `IPA Dict/Audio/Phonemes/ATTRIBUTION.md`。
+音素錄音主要取自 Wikimedia Commons 的可再散布音檔。部分 consonant
+錄音即使裁剪後仍較像多段示範聲音；這些單一音素按鈕改用 IPAHelp 的短版
+MP3，以便點擊音素時只聽到乾淨的單一音。個別作者、來源頁面、裁剪紀錄、
+IPAHelp replacement 清單及授權資料記錄於
+`IPA Dict/Audio/Phonemes/ATTRIBUTION.md`。
 
 ## 注意事項
 

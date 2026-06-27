@@ -339,11 +339,13 @@ audioPlayer.playPhoneme(symbol: symbol)
 IPA Dict/Audio/Phonemes/
 ```
 
-正式 app bundle 只包含轉換後的 MP3。部分 Wikimedia consonant 原始錄音
-包含多段示範聲音；app bundle 使用 single-shot 裁剪版，只保留主要單一
-音素聲音。原始 OGG、完整轉檔 MP3、single-shot 裁剪版、裁剪報告及舊版私人
-比較音檔不放入 synchronized app source folder。Wikimedia Commons 的作者、
-來源、裁剪紀錄及 `CC BY-SA 3.0` 授權紀錄保存在同目錄的 `ATTRIBUTION.md`。
+正式 app bundle 只包含 MP3。多數音檔使用 Wikimedia Commons 原始 OGG
+轉檔；部分 Wikimedia consonant 原始錄音包含多段示範聲音，先前曾使用
+single-shot 裁剪版。若裁剪後仍聽起來像多音節或多段示範，app bundle
+改用 IPAHelp 的短版 MP3 作為單一音素按鈕音檔。原始 OGG、完整轉檔 MP3、
+single-shot 裁剪版、裁剪報告及舊版私人比較音檔不放入 synchronized app
+source folder。Wikimedia Commons 與 IPAHelp 來源紀錄保存在同目錄的
+`ATTRIBUTION.md`。
 
 可使用以下唯讀工具檢查 app bundle 音素 MP3 是否與
 `AudioPlayerService.phonemeAudioMap` 一致，並確認音檔可解碼且沒有過長：
