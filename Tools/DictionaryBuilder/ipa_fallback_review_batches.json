@@ -107527,6 +107527,4194 @@
         }
       ],
       "deferred_policy": "Entries without explicit regional US IPA in Wiktextract remain generated_fallback/deferred; ambiguous candidate lists are retained for audit but first explicit regional IPA is used as primary value."
+    },
+    {
+      "batch_id": "2026-06-28-us-wiktextract-ga-deferred-014",
+      "reviewed_on": "2026-06-28",
+      "source": "raw Wiktextract English data from user-downloaded raw-wiktextract-data.jsonl.gz plus local CMUdict exact-headword check",
+      "source_url": "https://kaikki.org/dictionary/rawdata.html / Wiktextract English extraction; CMUdict cache /private/tmp/ipa-dict-builder/cmudict.dict",
+      "source_license": "Wiktionary/Wikimedia content under CC BY-SA/GFDL-compatible Wiktextract redistribution terms; CMUdict public domain/BSD-style redistribution; preserve attribution where applicable",
+      "selection_policy": "Remaining us_ipa:generated_fallback entries were checked against exact normalized word + normalized part of speech. Only phonemic /.../ IPA tagged General-American, US, or American was considered. Entries with multiple equal-priority explicit US variants were deferred; no UK IPA was inferred or copied.",
+      "candidate_count": 2321,
+      "cmudict_exact_match_count": 0,
+      "wiktextract_line_count": 10667129,
+      "wiktextract_english_record_count": 1473332,
+      "relevant_pronunciation_record_count": 13,
+      "explicit_us_candidate_entry_count": 14,
+      "replacement_count": 0,
+      "deferred_count": 14,
+      "scope_sha256": "8dff6b119f6efed6d4f2a7090db3290a7103421056e637c85e7c9e884b69451b",
+      "replacements": [],
+      "deferred": [
+        {
+          "entry_id": 4782,
+          "word": "bydgoszcz",
+          "display_word": "bydgoszcz",
+          "part_of_speech": "proper noun",
+          "english": "The capital city of Kuyavian-Pomeranian Voivodeship, Poland.",
+          "current_us_ipa": "/ˈbjdɡɑszkz/",
+          "us_candidates": [
+            "/ˈbɪd.ɡɔʃ(t͡ʃ)/",
+            "/ˈbɪd.ɡɑʃ(t͡ʃ)/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 5858,
+          "word": "chernivtsi",
+          "display_word": "chernivtsi",
+          "part_of_speech": "proper noun",
+          "english": "A city, administrative centre, and raion of Chernivtsi Oblast in the Bukovyna region, Ukraine, on the Prut river.",
+          "current_us_ipa": "/ˈtʃɝnɪvtsɪ/",
+          "us_candidates": [
+            "/t͡ʃəɹnivˈtsi/",
+            "/t͡ʃəɹˈnivtsi/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 9462,
+          "word": "dnipro",
+          "display_word": "dnipro",
+          "part_of_speech": "proper noun",
+          "english": "(with the) A major East European river which flows south through Russia, Belarus and Ukraine into the Black Sea.",
+          "current_us_ipa": "/ˈdnɪpɹɑ/",
+          "us_candidates": [
+            "/nɪˈpɹoʊ/",
+            "/niˈpɹoʊ/",
+            "/ˈni.pɹoʊ/",
+            "/ˈnɪ.pɹoʊ/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 9559,
+          "word": "donbas",
+          "display_word": "donbas",
+          "part_of_speech": "proper noun",
+          "english": "(usually with definite article) An industrial region in eastern Ukraine.",
+          "current_us_ipa": "/ˈdɑnbæs/",
+          "us_candidates": [
+            "/ˈdɑːnbɑːs/",
+            "/dʌnˈbæs/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 17068,
+          "word": "katharevousa",
+          "display_word": "katharevousa",
+          "part_of_speech": "proper noun",
+          "english": "A learned, archaising form of Modern Greek, based on Classical Greek and used for formal and official purposes; it was legally displaced as the official language of Greece in 1976 by Demotic Greek.",
+          "current_us_ipa": "/ˈkæθæɹɛvɑʌsæ/",
+          "us_candidates": [
+            "/ˌkɑθəˈɹɛvusɑ/",
+            "/ˌkɑθəˈɹɛvəsɑ/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 18955,
+          "word": "malmö",
+          "display_word": "malmö",
+          "part_of_speech": "proper noun",
+          "english": "A city in Scania, Sweden; the third-largest city in the country, located on the south-west coast.",
+          "current_us_ipa": "/ˈmælm/",
+          "us_candidates": [
+            "/ˈmɑlmʊ/",
+            "/ˈmɑlmoʊ/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 22963,
+          "word": "pentateuch",
+          "display_word": "pentateuch",
+          "part_of_speech": "proper noun",
+          "english": "The Torah: the first five books of the Bible: Genesis, Exodus, Leviticus, Numbers, and Deuteronomy.",
+          "current_us_ipa": "/ˈpɛntætɛʌtʃ/",
+          "us_candidates": [
+            "/ˈpɛn.təˌtuːk/",
+            "/ˈpɛn.təˌtʊk/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 23772,
+          "word": "pokémon",
+          "display_word": "pokémon",
+          "part_of_speech": "proper noun",
+          "english": "A Japanese media franchise featuring fictional creatures that are captured by humans and trained to battle each other.",
+          "current_us_ipa": "/ˈpɑk ˈmɑn/",
+          "us_candidates": [
+            "/ˈpoʊ.keɪˌmɑn/",
+            "/ˈpoʊ.kə.mɑn/",
+            "/ˈpoʊkiˌmɑn/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 26783,
+          "word": "samogitia",
+          "display_word": "samogitia",
+          "part_of_speech": "proper noun",
+          "english": "An ethnographic region of Lithuania, located in the north-west of the country.",
+          "current_us_ipa": "/ˈsæmɑɡɪtɪæ/",
+          "us_candidates": [
+            "/ˌsæ.moʊˈɡi.ʃə/",
+            "/ˌsæ.məˈɡi.ʃə/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 26785,
+          "word": "samogitian",
+          "display_word": "samogitian",
+          "part_of_speech": "proper noun",
+          "english": "A Baltic language spoken in Samogitia.",
+          "current_us_ipa": "/ˈsæmɑɡɪtɪæn/",
+          "us_candidates": [
+            "/ˌsæ.moʊˈɡi.ʃən/",
+            "/ˌsæ.məˈɡi.ʃən/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 30374,
+          "word": "svalbard",
+          "display_word": "svalbard",
+          "part_of_speech": "proper noun",
+          "english": "An archipelago, territory, and unincorporated area of Norway northeast of Greenland, in the Arctic Ocean.",
+          "current_us_ipa": "/ˈsvælbæɹd/",
+          "us_candidates": [
+            "/ˈsvɑlbɑɹ/",
+            "/ˈsvɑlbɑɹd/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 32904,
+          "word": "utrecht",
+          "display_word": "utrecht",
+          "part_of_speech": "proper noun",
+          "english": "A city and municipality, the capital of Utrecht province, Netherlands.",
+          "current_us_ipa": "/ˈʌtɹɛtʃt/",
+          "us_candidates": [
+            "/ˈjuˌtɹɛkt/",
+            "/ˈjuˌtɹɛxt/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 32905,
+          "word": "utrecht",
+          "display_word": "utrecht",
+          "part_of_speech": "proper noun",
+          "english": "A province of the Netherlands.",
+          "current_us_ipa": "/ˈʌtɹɛtʃt/",
+          "us_candidates": [
+            "/ˈjuˌtɹɛkt/",
+            "/ˈjuˌtɹɛxt/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        },
+        {
+          "entry_id": 33087,
+          "word": "vendémiaire",
+          "display_word": "vendémiaire",
+          "part_of_speech": "proper noun",
+          "english": "(historical) The first month of the French Republican Calendar, starting on the date of the autumnal equinox (September 22, 23 or 24) and ending on October 21, 22 or 23.",
+          "current_us_ipa": "/ˈvɛnd ˈmɪɛə/",
+          "us_candidates": [
+            "/ˌvɑndəˈmjɛəɹ/",
+            "/ˌvɑ̃deɪˈmjɛəɹ/"
+          ],
+          "deferred_reason": "multiple explicit US IPA candidates; no automatic preference rule"
+        }
+      ],
+      "deferred_policy": "Ambiguous explicit US IPA variants remain generated_fallback until a reliable source or manual review selects the appropriate pronunciation. This batch records the review to avoid repeating the same scan."
+    },
+    {
+      "batch_id": "2026-06-28-us-mfa-v3-1-0-broad-ipa-015",
+      "reviewed_on": "2026-06-28",
+      "source": "MFA English (US) MFA dictionary v3.1.0 downloaded from MontrealCorpusTools/mfa-models GitHub release",
+      "source_url": "https://github.com/MontrealCorpusTools/mfa-models/releases/download/dictionary-english_us_mfa-v3.1.0/english_us_mfa.dict",
+      "documentation_url": "https://mfa-models.readthedocs.io/en/main/dictionary/english_us_mfa.html",
+      "source_license": "CC BY 4.0",
+      "selection_policy": "Remaining us_ipa:generated_fallback entries were checked by exact normalized headword. MFA phone sequences were normalized to broad IPA using a fixed conservative mapping. Only unique top-probability pronunciations with probability >= 0.5 were accepted. No UK IPA was inferred or copied.",
+      "normalization_policy": {
+        "diphthongs": {
+          "aj": "aɪ",
+          "aw": "aʊ",
+          "ej": "eɪ",
+          "ow": "oʊ",
+          "ɔj": "ɔɪ"
+        },
+        "broad_allophones": {
+          "c": "k",
+          "cʰ": "k",
+          "ɟ": "g",
+          "ç": "h",
+          "ʎ": "l",
+          "ɲ": "n",
+          "ɫ": "l",
+          "ʉ": "u",
+          "ɐ": "ʌ",
+          "ɒ": "ɑ"
+        },
+        "removed_diacritics": [
+          "ʰ",
+          "ʲ",
+          "ʷ",
+          "̪",
+          "̩",
+          "̯",
+          "ː"
+        ]
+      },
+      "candidate_count": 2321,
+      "mfa_headword_candidate_count": 239,
+      "replacement_count": 241,
+      "deferred_count": 24,
+      "updated_resolution_count": 241,
+      "appended_resolution_count": 0,
+      "scope_sha256": "8dff6b119f6efed6d4f2a7090db3290a7103421056e637c85e7c9e884b69451b",
+      "replacements": [
+        {
+          "entry_id": 399,
+          "word": "acrylamide",
+          "display_word": "acrylamide",
+          "part_of_speech": "noun",
+          "english": "(organic compound) The amide of acrylic acid, CH2=CH.CONH2; used in the manufacture of polyacrylamides.",
+          "old_us_ipa": "/ˈækɹjlæmɪd/",
+          "new_us_ipa": "/əkɹɪləmaɪd/",
+          "us_candidates": [
+            "/əkɹɪləmaɪd/"
+          ],
+          "raw_mfa_top_phones": [
+            "ə c ɹ ɪ l ə m aj d"
+          ]
+        },
+        {
+          "entry_id": 584,
+          "word": "adze",
+          "display_word": "adze",
+          "part_of_speech": "noun",
+          "english": "A cutting tool that has a curved blade set at a right angle to the handle and is used in shaping wood.",
+          "old_us_ipa": "/ˈædz/",
+          "new_us_ipa": "/ædz/",
+          "us_candidates": [
+            "/ædz/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ d z"
+          ]
+        },
+        {
+          "entry_id": 729,
+          "word": "agriculturist",
+          "display_word": "agriculturist",
+          "part_of_speech": "noun",
+          "english": "One who practices agriculture, a farmer, a gardener.",
+          "old_us_ipa": "/ˈæɡɹɪkʌltɝɪst/",
+          "new_us_ipa": "/ægɹɪkʌltʃəɹɪst/",
+          "us_candidates": [
+            "/ægɹɪkʌltʃəɹɪst/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ ɟ ɹ ɪ kʰ ɐ ɫ tʃ ə ɹ ɪ s t"
+          ]
+        },
+        {
+          "entry_id": 748,
+          "word": "aikido",
+          "display_word": "aikido",
+          "part_of_speech": "noun",
+          "english": "A Japanese martial art developed from jujitsu and making use of holds and throws.",
+          "old_us_ipa": "/ˈeɪkɪdɑ/",
+          "new_us_ipa": "/aɪkidoʊ/",
+          "us_candidates": [
+            "/aɪkidoʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "aj cʰ iː d ow"
+          ]
+        },
+        {
+          "entry_id": 852,
+          "word": "aldehyde",
+          "display_word": "aldehyde",
+          "part_of_speech": "noun",
+          "english": "(organic compound) Any of a large class of reactive organic compounds (R·CHO) having a carbonyl functional group attached to one hydrocarbon radical and a hydrogen atom.",
+          "old_us_ipa": "/ˈældɛhjd/",
+          "new_us_ipa": "/ældəhaɪd/",
+          "us_candidates": [
+            "/ældəhaɪd/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ ɫ d ə h aj d"
+          ]
+        },
+        {
+          "entry_id": 1207,
+          "word": "amylase",
+          "display_word": "amylase",
+          "part_of_speech": "noun",
+          "english": "(enzyme) Any of a class of digestive enzymes, present in saliva and also contributed to the gut by the exocrine pancreas, that break down complex carbohydrates such as starch into simpler sugars such as glucose.",
+          "old_us_ipa": "/ˈæmjlæs/",
+          "new_us_ipa": "/æmɪleɪs/",
+          "us_candidates": [
+            "/æmɪleɪs/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ mʲ ɪ l ej s"
+          ]
+        },
+        {
+          "entry_id": 1240,
+          "word": "anaphase",
+          "display_word": "anaphase",
+          "part_of_speech": "noun",
+          "english": "(cytology) The stage of mitosis and meiosis during which the chromosomes separate, the chromatid moving to opposite poles of the cell.",
+          "old_us_ipa": "/ˈænæfæs/",
+          "new_us_ipa": "/ænəfeɪz/",
+          "us_candidates": [
+            "/ænəfeɪz/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ n ə f ej z"
+          ]
+        },
+        {
+          "entry_id": 1283,
+          "word": "androgen",
+          "display_word": "androgen",
+          "part_of_speech": "noun",
+          "english": "(steroid hormone) Any natural or synthetic compound, usually a steroid hormone, that stimulates or controls the development and maintenance of masculine characteristics in vertebrates. A male sex hormone such as testosterone or anabolic steroids.",
+          "old_us_ipa": "/ˈændɹɑɡɛn/",
+          "new_us_ipa": "/ændɹədʒən/",
+          "us_candidates": [
+            "/ændɹədʒən/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ n d ɹ ə dʒ ə n"
+          ]
+        },
+        {
+          "entry_id": 1361,
+          "word": "animatronic",
+          "display_word": "animatronic",
+          "part_of_speech": "adjective",
+          "english": "Of a robot, etc, that works by animatronics.",
+          "old_us_ipa": "/ˈænɪmætɹɑnɪk/",
+          "new_us_ipa": "/ænɪmətɹɑnɪk/",
+          "us_candidates": [
+            "/ænɪmətɹɑnɪk/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ ɲ ɪ m ə t ɹ ɑ ɲ ɪ k"
+          ]
+        },
+        {
+          "entry_id": 1503,
+          "word": "antiparticle",
+          "display_word": "antiparticle",
+          "part_of_speech": "noun",
+          "english": "(particle) A subatomic particle corresponding to another particle with the same mass, spin and mean lifetime but with charge, parity, strangeness and other quantum numbers flipped in sign; a particle that has a reversed world line to another.",
+          "old_us_ipa": "/ˈæntɪpæɹtɪkl/",
+          "new_us_ipa": "/æntipɑɹtɪkəl/",
+          "us_candidates": [
+            "/æntipɑɹtɪkəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ n tʲ i pʰ ɑ ɹ tʲ ɪ k ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 1521,
+          "word": "antonym",
+          "display_word": "antonym",
+          "part_of_speech": "noun",
+          "english": "(semantics) A word which has the opposite meaning of another word.",
+          "old_us_ipa": "/ˈæntɑnjm/",
+          "new_us_ipa": "/æntənɪm/",
+          "us_candidates": [
+            "/æntənɪm/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ n t ə ɲ ɪ m"
+          ]
+        },
+        {
+          "entry_id": 1543,
+          "word": "ao",
+          "display_word": "ao",
+          "part_of_speech": "proper noun",
+          "english": "A river in Zhejiang, China.",
+          "old_us_ipa": "/ˈæɑ/",
+          "new_us_ipa": "/eɪoʊ/",
+          "us_candidates": [
+            "/eɪoʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "ej ow"
+          ]
+        },
+        {
+          "entry_id": 1544,
+          "word": "ao",
+          "display_word": "ao",
+          "part_of_speech": "proper noun",
+          "english": "A river in Fujian, China.",
+          "old_us_ipa": "/ˈæɑ/",
+          "new_us_ipa": "/eɪoʊ/",
+          "us_candidates": [
+            "/eɪoʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "ej ow"
+          ]
+        },
+        {
+          "entry_id": 1830,
+          "word": "aridity",
+          "display_word": "aridity",
+          "part_of_speech": "noun",
+          "english": "A long-term lack of rainfall or moisture.",
+          "old_us_ipa": "/ˈæɹɪdɪtj/",
+          "new_us_ipa": "/ɛɹɪdɪti/",
+          "us_candidates": [
+            "/ɛɹɪdɪti/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɛ ɹ ɪ dʲ ɪ tʲ i"
+          ]
+        },
+        {
+          "entry_id": 1882,
+          "word": "aromaticity",
+          "display_word": "aromaticity",
+          "part_of_speech": "noun",
+          "english": "(organic chemistry) The property of being aromatic, i.e. having at least one conjugated ring.",
+          "old_us_ipa": "/ˈæɹɑmætɪkɪtj/",
+          "new_us_ipa": "/əɹoʊmətɪsɪti/",
+          "us_candidates": [
+            "/əɹoʊmətɪsɪti/"
+          ],
+          "raw_mfa_top_phones": [
+            "ə ɹ ow m ə tʲ ɪ s ɪ tʲ i"
+          ]
+        },
+        {
+          "entry_id": 1995,
+          "word": "asana",
+          "display_word": "asana",
+          "part_of_speech": "noun",
+          "english": "A body position, typically associated with the practice of yoga.",
+          "old_us_ipa": "/ˈæsænæ/",
+          "new_us_ipa": "/ɑsənə/",
+          "us_candidates": [
+            "/ɑsənə/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɑː s ə n ə"
+          ]
+        },
+        {
+          "entry_id": 2058,
+          "word": "assamese",
+          "display_word": "assamese",
+          "part_of_speech": "proper noun",
+          "english": "The Indo-Aryan language spoken by the majority people in the state of Assam, NE India.",
+          "old_us_ipa": "/ˈæssæmɛs/",
+          "new_us_ipa": "/əsɛsəmiz/",
+          "us_candidates": [
+            "/əsɛsəmiz/"
+          ],
+          "raw_mfa_top_phones": [
+            "ə s ɛ s ə mʲ i z"
+          ]
+        },
+        {
+          "entry_id": 2155,
+          "word": "astrophysical",
+          "display_word": "astrophysical",
+          "part_of_speech": "adjective",
+          "english": "Of or pertaining to astrophysics.",
+          "old_us_ipa": "/ˈæstɹɑfjsɪkæl/",
+          "new_us_ipa": "/æstɹəfɪzɪkəl/",
+          "us_candidates": [
+            "/æstɹəfɪzɪkəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ s t ɹ ə fʲ ɪ z ɪ k ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 2383,
+          "word": "austronesian",
+          "display_word": "austronesian",
+          "part_of_speech": "adjective",
+          "english": "Of or pertaining to Austronesia.",
+          "old_us_ipa": "/ˈɔːstɹɑnɛsɪæn/",
+          "new_us_ipa": "/ɑstɹoʊniʒən/",
+          "us_candidates": [
+            "/ɑstɹoʊniʒən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɒː s t ɹ ow ɲ iː ʒ ə n"
+          ]
+        },
+        {
+          "entry_id": 2450,
+          "word": "avaricious",
+          "display_word": "avaricious",
+          "part_of_speech": "adjective",
+          "english": "Actuated by avarice; extremely greedy for wealth or material gain; immoderately desirous of accumulating property.",
+          "old_us_ipa": "/ˈævæɹɪkɪɑʌs/",
+          "new_us_ipa": "/ævəɹɪʃəs/",
+          "us_candidates": [
+            "/ævəɹɪʃəs/"
+          ],
+          "raw_mfa_top_phones": [
+            "æ v ə ɹ ɪ ʃ ə s"
+          ]
+        },
+        {
+          "entry_id": 2464,
+          "word": "avestan",
+          "display_word": "avestan",
+          "part_of_speech": "proper noun",
+          "english": "An ancient Eastern Old Iranian language that was used to compose the sacred hymns and canon of the Zoroastrian Avesta.",
+          "old_us_ipa": "/ˈævɛstæn/",
+          "new_us_ipa": "/əvɛstən/",
+          "us_candidates": [
+            "/əvɛstən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ə v ɛ s t ə n"
+          ]
+        },
+        {
+          "entry_id": 2475,
+          "word": "avowal",
+          "display_word": "avowal",
+          "part_of_speech": "noun",
+          "english": "An open declaration of affirmation or admission of knowledge.",
+          "old_us_ipa": "/ˈævaʊæl/",
+          "new_us_ipa": "/əvaʊəl/",
+          "us_candidates": [
+            "/əvaʊəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "ə v aw ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 3298,
+          "word": "beriberi",
+          "display_word": "beriberi",
+          "part_of_speech": "noun",
+          "english": "(pathology) An ailment caused by a deficiency of thiamine (vitamin B1), leading to lethargy and organ complications.",
+          "old_us_ipa": "/ˈbɝɪbɝɪ/",
+          "new_us_ipa": "/bɛɹibɛɹi/",
+          "us_candidates": [
+            "/bɛɹibɛɹi/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ɛ ɹ i b ɛ ɹ i"
+          ]
+        },
+        {
+          "entry_id": 3445,
+          "word": "bilirubin",
+          "display_word": "bilirubin",
+          "part_of_speech": "noun",
+          "english": "(biochemistry) A bile pigment that is a product of the breakdown of the heme portion of hemoglobin (which occurs within macrophages as they digest red blood cells), and which is responsible for the yellowish color seen in bruises. Extremely high levels of bilirubin may cause jaundice.",
+          "old_us_ipa": "/ˈbɪlɝʌbɪn/",
+          "new_us_ipa": "/bɪlɪɹubɪn/",
+          "us_candidates": [
+            "/bɪlɪɹubɪn/"
+          ],
+          "raw_mfa_top_phones": [
+            "bʲ ɪ ʎ ɪ ɹ ʉː bʲ ɪ n"
+          ]
+        },
+        {
+          "entry_id": 3538,
+          "word": "bishkek",
+          "display_word": "bishkek",
+          "part_of_speech": "proper noun",
+          "english": "The capital city of Kyrgyzstan.",
+          "old_us_ipa": "/ˈbɪʃkɛk/",
+          "new_us_ipa": "/bɪʃkɛk/",
+          "us_candidates": [
+            "/bɪʃkɛk/"
+          ],
+          "raw_mfa_top_phones": [
+            "bʲ ɪ ʃ c ɛ k"
+          ]
+        },
+        {
+          "entry_id": 3545,
+          "word": "bissau",
+          "display_word": "bissau",
+          "part_of_speech": "proper noun",
+          "english": "The capital city of Guinea-Bissau.",
+          "old_us_ipa": "/ˈbɪssɔː/",
+          "new_us_ipa": "/bɪsaʊ/",
+          "us_candidates": [
+            "/bɪsaʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "bʲ ɪ s aw"
+          ]
+        },
+        {
+          "entry_id": 3841,
+          "word": "bochum",
+          "display_word": "bochum",
+          "part_of_speech": "proper noun",
+          "english": "A city in western Germany.",
+          "old_us_ipa": "/ˈbɑtʃʌm/",
+          "new_us_ipa": "/bɑtʃəm/",
+          "us_candidates": [
+            "/bɑtʃəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ɑ tʃ ə m"
+          ]
+        },
+        {
+          "entry_id": 3855,
+          "word": "bodywork",
+          "display_word": "bodywork",
+          "part_of_speech": "noun",
+          "english": "The exterior body of a motor vehicle.",
+          "old_us_ipa": "/ˈbɑdjwɑɹk/",
+          "new_us_ipa": "/bɑdiwɝk/",
+          "us_candidates": [
+            "/bɑdiwɝk/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ɑː dʲ i w ɝ k"
+          ]
+        },
+        {
+          "entry_id": 3908,
+          "word": "bolzano",
+          "display_word": "bolzano",
+          "part_of_speech": "proper noun",
+          "english": "A city and comune, the capital of the province of South Tyrol, Trentino-Alto Adige, Italy.",
+          "old_us_ipa": "/ˈbɑlzænɑ/",
+          "new_us_ipa": "/boʊlzænoʊ/",
+          "us_candidates": [
+            "/boʊlzænoʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ow ɫ z æ n ow"
+          ]
+        },
+        {
+          "entry_id": 4002,
+          "word": "bootmaker",
+          "display_word": "bootmaker",
+          "part_of_speech": "noun",
+          "english": "A maker of boots; a cobbler.",
+          "old_us_ipa": "/ˈbuːtmækɝ/",
+          "new_us_ipa": "/butmeɪkɚ/",
+          "us_candidates": [
+            "/butmeɪkɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ʉː t m ej k ɚ"
+          ]
+        },
+        {
+          "entry_id": 4192,
+          "word": "brane",
+          "display_word": "brane",
+          "part_of_speech": "noun",
+          "english": "(physics) A hypothetical object extending across a number of (often specified) spatial dimensions, with strings in string theory seen as one-dimensional examples.",
+          "old_us_ipa": "/ˈbɹæn/",
+          "new_us_ipa": "/bɹeɪn/",
+          "us_candidates": [
+            "/bɹeɪn/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ɹ ej n"
+          ]
+        },
+        {
+          "entry_id": 4427,
+          "word": "bruiser",
+          "display_word": "bruiser",
+          "part_of_speech": "noun",
+          "english": "(sports) In contact sports, an athlete whose size, strength, and/or aggressiveness make it likely that they will cause athletes on the opposing team to suffer physical punishment.",
+          "old_us_ipa": "/ˈbɹʌɪsɝ/",
+          "new_us_ipa": "/bɹuzɚ/",
+          "us_candidates": [
+            "/bɹuzɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ɹ ʉː z ɚ"
+          ]
+        },
+        {
+          "entry_id": 4428,
+          "word": "bruiser",
+          "display_word": "bruiser",
+          "part_of_speech": "noun",
+          "english": "(by extension, colloquial, derogatory) A tall, strong, heavily built person, usually a man, especially one prone to physical violence; a strong and tough person.",
+          "old_us_ipa": "/ˈbɹʌɪsɝ/",
+          "new_us_ipa": "/bɹuzɚ/",
+          "us_candidates": [
+            "/bɹuzɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ɹ ʉː z ɚ"
+          ]
+        },
+        {
+          "entry_id": 4459,
+          "word": "bubblegum",
+          "display_word": "bubblegum",
+          "part_of_speech": "noun",
+          "english": "(usually, _, uncountable) A sweet chewing gum formulated to be stretchy so the chewer can blow bubbles with it.",
+          "old_us_ipa": "/ˈbʌbblɛɡʌm/",
+          "new_us_ipa": "/bʌbəlɡʌm/",
+          "us_candidates": [
+            "/bʌbəlɡʌm/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ɐ b ə ɫ ɡ ɐ m"
+          ]
+        },
+        {
+          "entry_id": 4619,
+          "word": "burgenland",
+          "display_word": "burgenland",
+          "part_of_speech": "proper noun",
+          "english": "The easternmost and least populous federal state of Austria.",
+          "old_us_ipa": "/ˈbɝɡɛnlænd/",
+          "new_us_ipa": "/bɝɡənlænd/",
+          "us_candidates": [
+            "/bɝɡənlænd/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ɝ ɡ ə n l æ n d"
+          ]
+        },
+        {
+          "entry_id": 4663,
+          "word": "bursa",
+          "display_word": "bursa",
+          "part_of_speech": "proper noun",
+          "english": "A province and metropolitan municipality in northwestern Anatolia Turkey, on the Sea of Marmara.",
+          "old_us_ipa": "/ˈbɝsæ/",
+          "new_us_ipa": "/bɝsə/",
+          "us_candidates": [
+            "/bɝsə/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ɝ s ə"
+          ]
+        },
+        {
+          "entry_id": 4677,
+          "word": "busan",
+          "display_word": "busan",
+          "part_of_speech": "proper noun",
+          "english": "A metropolitan city of South Korea. It is the second largest city and the largest port city in Korea. It is also well known for its beaches and port.",
+          "old_us_ipa": "/ˈbʌsæn/",
+          "new_us_ipa": "/busɑn/",
+          "us_candidates": [
+            "/busɑn/"
+          ],
+          "raw_mfa_top_phones": [
+            "b ʉ s ɑ n"
+          ]
+        },
+        {
+          "entry_id": 4852,
+          "word": "caesium",
+          "display_word": "caesium",
+          "part_of_speech": "noun",
+          "english": "The chemical element (symbol Cs) with an atomic number of 55. It is a soft, gold-colored, highly reactive alkali metal.",
+          "old_us_ipa": "/ˈkæɛsɪʌm/",
+          "new_us_ipa": "/siziəm/",
+          "us_candidates": [
+            "/siziəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "s iː z i ə m"
+          ]
+        },
+        {
+          "entry_id": 5223,
+          "word": "carinthia",
+          "display_word": "carinthia",
+          "part_of_speech": "proper noun",
+          "english": "A state of Austria. Capital: Klagenfurt.",
+          "old_us_ipa": "/ˈkæɹɪnθɪæ/",
+          "new_us_ipa": "/kəɹɪnθiə/",
+          "us_candidates": [
+            "/kəɹɪnθiə/"
+          ],
+          "raw_mfa_top_phones": [
+            "kʰ ə ɹ ɪ n θ i ə"
+          ]
+        },
+        {
+          "entry_id": 5352,
+          "word": "castrato",
+          "display_word": "castrato",
+          "part_of_speech": "noun",
+          "english": "A male who has been castrated, especially a male whose testicles have been removed before puberty in order to retain his boyish voice.",
+          "old_us_ipa": "/ˈkæstɹætɑ/",
+          "new_us_ipa": "/kæstɹɑtoʊ/",
+          "us_candidates": [
+            "/kæstɹɑtoʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "cʰ æ s t ɹ ɑː t ow"
+          ]
+        },
+        {
+          "entry_id": 5524,
+          "word": "cementum",
+          "display_word": "cementum",
+          "part_of_speech": "noun",
+          "english": "(anatomy, dentistry) A bony substance that covers the root of a tooth; cement.",
+          "old_us_ipa": "/ˈkɛmɛntʌm/",
+          "new_us_ipa": "/səmɛntəm/",
+          "us_candidates": [
+            "/səmɛntəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ə m ɛ n t ə m"
+          ]
+        },
+        {
+          "entry_id": 5632,
+          "word": "chalkboard",
+          "display_word": "chalkboard",
+          "part_of_speech": "noun",
+          "english": "A slate or enamel board for writing on with chalk; a predecessor to a whiteboard.",
+          "old_us_ipa": "/ˈtʃælkboʊɹd/",
+          "new_us_ipa": "/tʃɑkbɑɹd/",
+          "us_candidates": [
+            "/tʃɑkbɑɹd/"
+          ],
+          "raw_mfa_top_phones": [
+            "tʃ ɒ k b ɒ ɹ d"
+          ]
+        },
+        {
+          "entry_id": 5962,
+          "word": "chinaman",
+          "display_word": "chinaman",
+          "part_of_speech": "noun",
+          "english": "(dated, now, offensive) A Chinese person, or person of Chinese descent.",
+          "old_us_ipa": "/ˈtʃɪnæmæn/",
+          "new_us_ipa": "/tʃaɪnəmən/",
+          "us_candidates": [
+            "/tʃaɪnəmən/"
+          ],
+          "raw_mfa_top_phones": [
+            "tʃ aj n ə m ə n"
+          ]
+        },
+        {
+          "entry_id": 6074,
+          "word": "chromatin",
+          "display_word": "chromatin",
+          "part_of_speech": "noun",
+          "english": "(biology) A complex of DNA, RNA and proteins within the cell nucleus out of which chromosomes condense during cell division.",
+          "old_us_ipa": "/ˈtʃɹɑmætɪn/",
+          "new_us_ipa": "/kɹoʊmətɪn/",
+          "us_candidates": [
+            "/kɹoʊmətɪn/"
+          ],
+          "raw_mfa_top_phones": [
+            "k ɹ ow m ə tʲ ɪ n"
+          ]
+        },
+        {
+          "entry_id": 6846,
+          "word": "communistic",
+          "display_word": "communistic",
+          "part_of_speech": "adjective",
+          "english": "Characteristic of communism.",
+          "old_us_ipa": "/ˈkɑmmʌnɪstɪk/",
+          "new_us_ipa": "/kəmunɪstɪk/",
+          "us_candidates": [
+            "/kəmunɪstɪk/"
+          ],
+          "raw_mfa_top_phones": [
+            "kʰ ə mʲ ʉ ɲ ɪ s tʲ ɪ k"
+          ]
+        },
+        {
+          "entry_id": 7021,
+          "word": "concupiscence",
+          "display_word": "concupiscence",
+          "part_of_speech": "noun",
+          "english": "An ardent desire, especially sexual desire; lust.",
+          "old_us_ipa": "/ˈkɑnkʌpɪskɛnk/",
+          "new_us_ipa": "/kɑnkupɪsəns/",
+          "us_candidates": [
+            "/kɑnkupɪsəns/"
+          ],
+          "raw_mfa_top_phones": [
+            "kʰ ɑː ɲ c ʉː pʲ ɪ s ə n s"
+          ]
+        },
+        {
+          "entry_id": 7293,
+          "word": "contrabass",
+          "display_word": "contrabass",
+          "part_of_speech": "noun",
+          "english": "The part or section one octave lower than bass.",
+          "old_us_ipa": "/ˈkɑntɹæbæss/",
+          "new_us_ipa": "/kɑntɹəbeɪs/",
+          "us_candidates": [
+            "/kɑntɹəbeɪs/"
+          ],
+          "raw_mfa_top_phones": [
+            "kʰ ɑ n t ɹ ə b ej s"
+          ]
+        },
+        {
+          "entry_id": 7968,
+          "word": "cryptanalysis",
+          "display_word": "cryptanalysis",
+          "part_of_speech": "noun",
+          "english": "The science of analyzing and breaking of codes and ciphers.",
+          "old_us_ipa": "/ˈkɹjptænæljsɪs/",
+          "new_us_ipa": "/kɹɪptənælɪsɪs/",
+          "us_candidates": [
+            "/kɹɪptənælɪsɪs/"
+          ],
+          "raw_mfa_top_phones": [
+            "c ɹ ɪ p t ə ɲ æ ʎ ɪ s ɪ s"
+          ]
+        },
+        {
+          "entry_id": 8020,
+          "word": "cultivar",
+          "display_word": "cultivar",
+          "part_of_speech": "noun",
+          "english": "A cultivated (not necessarily botanical) variety of a plant species or hybrid of two species. [from 1923]",
+          "old_us_ipa": "/ˈkʌltɪvæɹ/",
+          "new_us_ipa": "/kʌltɪvɑɹ/",
+          "us_candidates": [
+            "/kʌltɪvɑɹ/"
+          ],
+          "raw_mfa_top_phones": [
+            "kʰ ɐ ɫ tʲ ɪ v ɑ ɹ"
+          ]
+        },
+        {
+          "entry_id": 8184,
+          "word": "cycleway",
+          "display_word": "cycleway",
+          "part_of_speech": "noun",
+          "english": "cycle path, cycle lane",
+          "old_us_ipa": "/ˈkjklɛweɪ/",
+          "new_us_ipa": "/saɪkəlweɪ/",
+          "us_candidates": [
+            "/saɪkəlweɪ/"
+          ],
+          "raw_mfa_top_phones": [
+            "s aj k ə ɫ w ej"
+          ]
+        },
+        {
+          "entry_id": 8214,
+          "word": "cyrenaica",
+          "display_word": "cyrenaica",
+          "part_of_speech": "proper noun",
+          "english": "A geographic region, an and former province of northeastern Libya; in modern usage, extended to the entire eastern portion of Libya.",
+          "old_us_ipa": "/ˈkjɹɛneɪkæ/",
+          "new_us_ipa": "/saɪɹəneɪɪkə/",
+          "us_candidates": [
+            "/saɪɹəneɪɪkə/"
+          ],
+          "raw_mfa_top_phones": [
+            "s aj ɹ ə ɲ ej ɪ k ə"
+          ]
+        },
+        {
+          "entry_id": 8453,
+          "word": "deanery",
+          "display_word": "deanery",
+          "part_of_speech": "noun",
+          "english": "The group of parishes for which a rural dean has responsibility.",
+          "old_us_ipa": "/ˈdiːnɝj/",
+          "new_us_ipa": "/dinəɹi/",
+          "us_candidates": [
+            "/dinəɹi/"
+          ],
+          "raw_mfa_top_phones": [
+            "dʲ iː n ə ɹ i"
+          ]
+        },
+        {
+          "entry_id": 8755,
+          "word": "demosthenes",
+          "display_word": "demosthenes",
+          "part_of_speech": "proper noun",
+          "english": "TemplateParserError:LuaError.",
+          "old_us_ipa": "/ˈdɛmɑsθɛnɛs/",
+          "new_us_ipa": "/dɪmɑsθəniz/",
+          "us_candidates": [
+            "/dɪmɑsθəniz/"
+          ],
+          "raw_mfa_top_phones": [
+            "dʲ ɪ m ɑ s θ ə ɲ iː z"
+          ]
+        },
+        {
+          "entry_id": 9380,
+          "word": "distingue",
+          "display_word": "distingue",
+          "part_of_speech": "adjective",
+          "english": "Fashionably distinguished or elegant; having an air of superiority.",
+          "old_us_ipa": "/ˈdɪstɪŋʌ/",
+          "new_us_ipa": "/dɪstængeɪ/",
+          "us_candidates": [
+            "/dɪstængeɪ/"
+          ],
+          "raw_mfa_top_phones": [
+            "dʲ ɪ s t æ ɲ ɟ ej"
+          ]
+        },
+        {
+          "entry_id": 9493,
+          "word": "dodgeball",
+          "display_word": "dodgeball",
+          "part_of_speech": "noun",
+          "english": "A team sport whose main objective is to dodge or catch balls thrown by the opposition.",
+          "old_us_ipa": "/ˈdɑdɡɛbæll/",
+          "new_us_ipa": "/dɑdʒbɑl/",
+          "us_candidates": [
+            "/dɑdʒbɑl/"
+          ],
+          "raw_mfa_top_phones": [
+            "d ɑ dʒ b ɒ ɫ"
+          ]
+        },
+        {
+          "entry_id": 9880,
+          "word": "dubstep",
+          "display_word": "dubstep",
+          "part_of_speech": "noun",
+          "english": "A subgenre of electronic dance music descended from 2-step garage that was popular in the early 2010s, characterized by its dark mood, sparse half-step and two-step rhythms, and emphasis on sub-bass.",
+          "old_us_ipa": "/ˈdʌbstɛp/",
+          "new_us_ipa": "/dʌbstɛp/",
+          "us_candidates": [
+            "/dʌbstɛp/"
+          ],
+          "raw_mfa_top_phones": [
+            "d ɐ b s t ɛ p"
+          ]
+        },
+        {
+          "entry_id": 10005,
+          "word": "dysphoria",
+          "display_word": "dysphoria",
+          "part_of_speech": "noun",
+          "english": "A state of feeling unwell or unhappy; a feeling of emotional and mental discomfort and suffering from restlessness, malaise, depression, or anxiety.",
+          "old_us_ipa": "/ˈdjsfɑɹɪæ/",
+          "new_us_ipa": "/dɪsfɑɹiə/",
+          "us_candidates": [
+            "/dɪsfɑɹiə/"
+          ],
+          "raw_mfa_top_phones": [
+            "dʲ ɪ s f ɒː ɹ i ə"
+          ]
+        },
+        {
+          "entry_id": 10227,
+          "word": "egoist",
+          "display_word": "egoist",
+          "part_of_speech": "noun",
+          "english": "An advocate of egoism.",
+          "old_us_ipa": "/ˈɛɡɔɪst/",
+          "new_us_ipa": "/iɡoʊɪst/",
+          "us_candidates": [
+            "/iɡoʊɪst/"
+          ],
+          "raw_mfa_top_phones": [
+            "i ɡ ow ɪ s t"
+          ]
+        },
+        {
+          "entry_id": 10228,
+          "word": "egoistical",
+          "display_word": "egoistical",
+          "part_of_speech": "adjective",
+          "english": "Caring about oneself and the gratification of one's own desires rather than others; selfish.",
+          "old_us_ipa": "/ˈɛɡɔɪstɪkæl/",
+          "new_us_ipa": "/iɡoʊɪstɪkəl/",
+          "us_candidates": [
+            "/iɡoʊɪstɪkəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "i ɡ ow ɪ s tʲ ɪ k ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 10261,
+          "word": "ejecta",
+          "display_word": "ejecta",
+          "part_of_speech": "noun",
+          "english": "(geology) Material which has been ejected, especially from a volcano or an impact crater.",
+          "old_us_ipa": "/ˈɛdʒɛktæ/",
+          "new_us_ipa": "/ədʒɛktə/",
+          "us_candidates": [
+            "/ədʒɛktə/"
+          ],
+          "raw_mfa_top_phones": [
+            "ə dʒ ɛ k t ə"
+          ]
+        },
+        {
+          "entry_id": 10347,
+          "word": "elide",
+          "display_word": "elide",
+          "part_of_speech": "verb",
+          "english": "To leave out or omit (something).",
+          "old_us_ipa": "/ˈɛlɪd/",
+          "new_us_ipa": "/ɪlaɪd/",
+          "us_candidates": [
+            "/ɪlaɪd/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ l aj d"
+          ]
+        },
+        {
+          "entry_id": 10348,
+          "word": "elide",
+          "display_word": "elide",
+          "part_of_speech": "verb",
+          "english": "To conflate; to smear together; to blur the distinction between.",
+          "old_us_ipa": "/ˈɛlɪd/",
+          "new_us_ipa": "/ɪlaɪd/",
+          "us_candidates": [
+            "/ɪlaɪd/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ l aj d"
+          ]
+        },
+        {
+          "entry_id": 10452,
+          "word": "employability",
+          "display_word": "employability",
+          "part_of_speech": "noun",
+          "english": "The state or quality of being employable.",
+          "old_us_ipa": "/ˈɛmplɔɪæbɪlɪtj/",
+          "new_us_ipa": "/ɪmplɔɪəbɪlɪti/",
+          "us_candidates": [
+            "/ɪmplɔɪəbɪlɪti/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ m p l ɔj ə bʲ ɪ ʎ ɪ tʲ i"
+          ]
+        },
+        {
+          "entry_id": 10600,
+          "word": "enthalpy",
+          "display_word": "enthalpy",
+          "part_of_speech": "noun",
+          "english": "(thermodynamics, physical chemistry) A measure of the heat content of a chemical or physical system.",
+          "old_us_ipa": "/ˈɛnθælpj/",
+          "new_us_ipa": "/ɛnθəlpi/",
+          "us_candidates": [
+            "/ɛnθəlpi/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɛ n θ ə ɫ pʰ iː"
+          ]
+        },
+        {
+          "entry_id": 10677,
+          "word": "epididymis",
+          "display_word": "epididymis",
+          "part_of_speech": "noun",
+          "english": "(anatomy) A narrow, tightly-coiled tube connecting the efferent ducts from the rear of each testicle to its vas deferens, where sperm are stored during maturation.",
+          "old_us_ipa": "/ˈɛpɪdɪdjmɪs/",
+          "new_us_ipa": "/ɛpidɪdɪmɪs/",
+          "us_candidates": [
+            "/ɛpidɪdɪmɪs/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɛ pʰ i dʲ ɪ dʲ ɪ mʲ ɪ s"
+          ]
+        },
+        {
+          "entry_id": 10709,
+          "word": "eponym",
+          "display_word": "eponym",
+          "part_of_speech": "noun",
+          "english": "A person who gave or supposedly gave their name to a people, place, institution, etc.",
+          "old_us_ipa": "/ˈɛpɑnjm/",
+          "new_us_ipa": "/ɛpənɪm/",
+          "us_candidates": [
+            "/ɛpənɪm/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɛ p ə ɲ ɪ m"
+          ]
+        },
+        {
+          "entry_id": 10783,
+          "word": "eruct",
+          "display_word": "eruct",
+          "part_of_speech": "verb",
+          "english": "(formal) To burp or belch.",
+          "old_us_ipa": "/ˈɝʌkt/",
+          "new_us_ipa": "/ɪɹʌkt/",
+          "us_candidates": [
+            "/ɪɹʌkt/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ ɹ ɐ k t"
+          ]
+        },
+        {
+          "entry_id": 10897,
+          "word": "eugenius",
+          "display_word": "eugenius",
+          "part_of_speech": "proper noun",
+          "english": "A en given name.",
+          "old_us_ipa": "/ˈɛʌɡɛnɪʌs/",
+          "new_us_ipa": "/judʒiniəs/",
+          "us_candidates": [
+            "/judʒiniəs/"
+          ],
+          "raw_mfa_top_phones": [
+            "j ʉː dʒ iː ɲ i ə s"
+          ]
+        },
+        {
+          "entry_id": 10952,
+          "word": "eusebius",
+          "display_word": "eusebius",
+          "part_of_speech": "proper noun",
+          "english": "TemplateParserError:LuaError.",
+          "old_us_ipa": "/ˈɛʌsɛbɪʌs/",
+          "new_us_ipa": "/jusibiəs/",
+          "us_candidates": [
+            "/jusibiəs/"
+          ],
+          "raw_mfa_top_phones": [
+            "j ʉ s i bʲ i ə s"
+          ]
+        },
+        {
+          "entry_id": 11132,
+          "word": "existentialism",
+          "display_word": "existentialism",
+          "part_of_speech": "noun",
+          "english": "(philosophy, countable) The philosophical views of a particular thinker associated with the existentialist movement.",
+          "old_us_ipa": "/ˈɛksɪstɛntɪælɪsm/",
+          "new_us_ipa": "/ɛɡzɪstɛnʃəlɪzəm/",
+          "us_candidates": [
+            "/ɛɡzɪstɛnʃəlɪzəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɛ ɡ z ɪ s t ɛ n ʃ ə ʎ ɪ z ə m"
+          ]
+        },
+        {
+          "entry_id": 11466,
+          "word": "fanzine",
+          "display_word": "fanzine",
+          "part_of_speech": "noun",
+          "english": "A magazine, normally produced by amateurs, intended for people who share a common interest.",
+          "old_us_ipa": "/ˈfænzɪn/",
+          "new_us_ipa": "/fænzin/",
+          "us_candidates": [
+            "/fænzin/"
+          ],
+          "raw_mfa_top_phones": [
+            "f æ n z iː n"
+          ]
+        },
+        {
+          "entry_id": 11558,
+          "word": "faultless",
+          "display_word": "faultless",
+          "part_of_speech": "adjective",
+          "english": "Without fault; free from defect or error.",
+          "old_us_ipa": "/ˈfɔːltlɛss/",
+          "new_us_ipa": "/fɑltləs/",
+          "us_candidates": [
+            "/fɑltləs/"
+          ],
+          "raw_mfa_top_phones": [
+            "f ɒ ɫ t l ə s"
+          ]
+        },
+        {
+          "entry_id": 11687,
+          "word": "fermion",
+          "display_word": "fermion",
+          "part_of_speech": "noun",
+          "english": "(particle physics, Standard Model) Any elementary or composite particle that has half-integer spin and thus obeys Fermi–Dirac statistics and the Pauli exclusion principle (equivalently, a particle for which the wavefunction of any system of identical such particles changes sign whenever two are swapped); a baryon, a lepton or a quark;(slightly more loosely) any such particle or any composite particle composed of fermions.",
+          "old_us_ipa": "/ˈfɝmɪɑn/",
+          "new_us_ipa": "/fɝmiən/",
+          "us_candidates": [
+            "/fɝmiən/"
+          ],
+          "raw_mfa_top_phones": [
+            "f ɝ mʲ i ə n"
+          ]
+        },
+        {
+          "entry_id": 11736,
+          "word": "fibreglass",
+          "display_word": "fibreglass",
+          "part_of_speech": "noun",
+          "english": "Silica based glass extruded into fibers that possess a length at least 1000 times greater than their width.",
+          "old_us_ipa": "/ˈfɪbɹɛɡlæss/",
+          "new_us_ipa": "/faɪbɚglæs/",
+          "us_candidates": [
+            "/faɪbɚglæs/"
+          ],
+          "raw_mfa_top_phones": [
+            "f aj b ɚ ɟ ʎ æ s"
+          ]
+        },
+        {
+          "entry_id": 11744,
+          "word": "fiddly",
+          "display_word": "fiddly",
+          "part_of_speech": "adjective",
+          "english": "Requiring dexterity to operate.",
+          "old_us_ipa": "/ˈfɪddlj/",
+          "new_us_ipa": "/fɪdli/",
+          "us_candidates": [
+            "/fɪdli/"
+          ],
+          "raw_mfa_top_phones": [
+            "fʲ ɪ d ʎ i"
+          ]
+        },
+        {
+          "entry_id": 12203,
+          "word": "fluting",
+          "display_word": "fluting",
+          "part_of_speech": "noun",
+          "english": "(architecture, sculpture) A decoration consisting of parallel, normally vertical, flutes (grooves) incised into the surface.",
+          "old_us_ipa": "/ˈflʌtɪŋ/",
+          "new_us_ipa": "/flutɪŋ/",
+          "us_candidates": [
+            "/flutɪŋ/"
+          ],
+          "raw_mfa_top_phones": [
+            "f l ʉ tʲ ɪ ŋ"
+          ]
+        },
+        {
+          "entry_id": 12618,
+          "word": "freebooter",
+          "display_word": "freebooter",
+          "part_of_speech": "noun",
+          "english": "An adventurer who pillages, plunders, or thieves privately or for compensation; or wages ad-hoc war on other nations, similar to mercenary; also a \"freeboot\".",
+          "old_us_ipa": "/ˈfɹiːbuːtɝ/",
+          "new_us_ipa": "/fɹibutɚ/",
+          "us_candidates": [
+            "/fɹibutɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "f ɹ iː b ʉː t ɚ"
+          ]
+        },
+        {
+          "entry_id": 12790,
+          "word": "fuchsia",
+          "display_word": "fuchsia",
+          "part_of_speech": "noun",
+          "english": "A popular garden plant, of the genus Fuchsia, of the Onagraceae family, shrubs with red, pink or purple flowers.",
+          "old_us_ipa": "/ˈfʌtʃsɪæ/",
+          "new_us_ipa": "/fuʃə/",
+          "us_candidates": [
+            "/fuʃə/"
+          ],
+          "raw_mfa_top_phones": [
+            "fʲ ʉː ʃ ə"
+          ]
+        },
+        {
+          "entry_id": 12791,
+          "word": "fuchsia",
+          "display_word": "fuchsia",
+          "part_of_speech": "noun",
+          "english": "A purplish-red colour, the color of fuchsin, an aniline dye.",
+          "old_us_ipa": "/ˈfʌtʃsɪæ/",
+          "new_us_ipa": "/fuʃə/",
+          "us_candidates": [
+            "/fuʃə/"
+          ],
+          "raw_mfa_top_phones": [
+            "fʲ ʉː ʃ ə"
+          ]
+        },
+        {
+          "entry_id": 12867,
+          "word": "funereal",
+          "display_word": "funereal",
+          "part_of_speech": "adjective",
+          "english": "Of or relating to a funeral.",
+          "old_us_ipa": "/ˈfʌnɝiːl/",
+          "new_us_ipa": "/funɪɹiəl/",
+          "us_candidates": [
+            "/funɪɹiəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "fʲ ʉ ɲ ɪ ɹ i ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 13131,
+          "word": "gehenna",
+          "display_word": "gehenna",
+          "part_of_speech": "proper noun",
+          "english": "In rabbinical literature and Christian and Islamic scripture, the place where the souls of the wicked go after death, where they suffer eternal damnation or annihilation.",
+          "old_us_ipa": "/ˈɡɛhɛnnæ/",
+          "new_us_ipa": "/ɡəhɛnə/",
+          "us_candidates": [
+            "/ɡəhɛnə/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɡ ə h ɛ n ə"
+          ]
+        },
+        {
+          "entry_id": 13241,
+          "word": "geophysics",
+          "display_word": "geophysics",
+          "part_of_speech": "noun",
+          "english": "A branch of earth science dealing with the physical processes and phenomena occurring in the earth and in its vicinity.",
+          "old_us_ipa": "/ˈɡɛɑfjsɪks/",
+          "new_us_ipa": "/dʒioʊfɪzɪks/",
+          "us_candidates": [
+            "/dʒioʊfɪzɪks/"
+          ],
+          "raw_mfa_top_phones": [
+            "dʒ i ow fʲ ɪ z ɪ k s"
+          ]
+        },
+        {
+          "entry_id": 13344,
+          "word": "ghostwriter",
+          "display_word": "ghostwriter",
+          "part_of_speech": "noun",
+          "english": "A professional writer who is paid to write material that is officially credited to another person; one who writes on behalf of someone else, often for a celebrity.",
+          "old_us_ipa": "/ˈɡhɑstwɹɪtɝ/",
+          "new_us_ipa": "/ɡoʊstɹaɪtɚ/",
+          "us_candidates": [
+            "/ɡoʊstɹaɪtɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɡ ow s t ɹ aj t ɚ"
+          ]
+        },
+        {
+          "entry_id": 13370,
+          "word": "gilgamesh",
+          "display_word": "gilgamesh",
+          "part_of_speech": "proper noun",
+          "english": "A semi-legendary king of Uruk, who is the hero of the Babylonian poem Epic of Gilgamesh.",
+          "old_us_ipa": "/ˈɡɪlɡæmɛʃ/",
+          "new_us_ipa": "/gɪlɡəmɛʃ/",
+          "us_candidates": [
+            "/gɪlɡəmɛʃ/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɟ ɪ ɫ ɡ ə m ɛ ʃ"
+          ]
+        },
+        {
+          "entry_id": 13398,
+          "word": "girona",
+          "display_word": "girona",
+          "part_of_speech": "proper noun",
+          "english": "A city in northeastern Catalonia, Spain.",
+          "old_us_ipa": "/ˈɡɝɑnæ/",
+          "new_us_ipa": "/dʒɪɹoʊnə/",
+          "us_candidates": [
+            "/dʒɪɹoʊnə/"
+          ],
+          "raw_mfa_top_phones": [
+            "dʒ ɪ ɹ ow n ə"
+          ]
+        },
+        {
+          "entry_id": 13511,
+          "word": "glycerine",
+          "display_word": "glycerine",
+          "part_of_speech": "noun",
+          "english": "(British spelling)",
+          "old_us_ipa": "/ˈɡljkɝɪn/",
+          "new_us_ipa": "/glɪsəɹɪn/",
+          "us_candidates": [
+            "/glɪsəɹɪn/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɟ ʎ ɪ s ə ɹ ɪ n"
+          ]
+        },
+        {
+          "entry_id": 13517,
+          "word": "glyph",
+          "display_word": "glyph",
+          "part_of_speech": "noun",
+          "english": "A figure carved in relief or incised, especially representing a sound, word, or idea.",
+          "old_us_ipa": "/ˈɡljf/",
+          "new_us_ipa": "/glɪf/",
+          "us_candidates": [
+            "/glɪf/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɟ ʎ ɪ f"
+          ]
+        },
+        {
+          "entry_id": 13604,
+          "word": "goidelic",
+          "display_word": "goidelic",
+          "part_of_speech": "noun",
+          "english": "Division of the Celtic languages including Irish Gaelic, Manx Gaelic and Scottish Gaelic.",
+          "old_us_ipa": "/ˈɡɔɪdɛlɪk/",
+          "new_us_ipa": "/ɡɔɪdɛlɪk/",
+          "us_candidates": [
+            "/ɡɔɪdɛlɪk/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɡ ɔj d ɛ ʎ ɪ k"
+          ]
+        },
+        {
+          "entry_id": 14090,
+          "word": "guarana",
+          "display_word": "guarana",
+          "part_of_speech": "noun",
+          "english": "A tree, Paullinia cupana, native to Venezuela and northern Brazil.",
+          "old_us_ipa": "/ˈɡʌæɹænæ/",
+          "new_us_ipa": "/ɡəɹɑnə/",
+          "us_candidates": [
+            "/ɡəɹɑnə/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɡʷ ə ɹ ɑː n ə"
+          ]
+        },
+        {
+          "entry_id": 14091,
+          "word": "guarana",
+          "display_word": "guarana",
+          "part_of_speech": "noun",
+          "english": "The fruit from this tree, chiefly used to make caffeinated beverages.",
+          "old_us_ipa": "/ˈɡʌæɹænæ/",
+          "new_us_ipa": "/ɡəɹɑnə/",
+          "us_candidates": [
+            "/ɡəɹɑnə/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɡʷ ə ɹ ɑː n ə"
+          ]
+        },
+        {
+          "entry_id": 14607,
+          "word": "headbutt",
+          "display_word": "headbutt",
+          "part_of_speech": "noun",
+          "english": "A sharp blow delivered by driving the head into an opponent or object, generally by lowering the head and charging forward or by rapidly tilting the head backward and then forward.",
+          "old_us_ipa": "/ˈhiːdbʌtt/",
+          "new_us_ipa": "/hɛdbʌt/",
+          "us_candidates": [
+            "/hɛdbʌt/"
+          ],
+          "raw_mfa_top_phones": [
+            "h ɛ d b ɐ t"
+          ]
+        },
+        {
+          "entry_id": 14630,
+          "word": "headteacher",
+          "display_word": "headteacher",
+          "part_of_speech": "noun",
+          "english": "(UK, Irish) The most senior teacher in a school who is responsible for its management and administration.",
+          "old_us_ipa": "/ˈhiːdtiːtʃɝ/",
+          "new_us_ipa": "/hɛdtitʃɚ/",
+          "us_candidates": [
+            "/hɛdtitʃɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "h ɛ d tʲ iː tʃ ɚ"
+          ]
+        },
+        {
+          "entry_id": 14748,
+          "word": "heliport",
+          "display_word": "heliport",
+          "part_of_speech": "noun",
+          "english": "(aviation) A facility, such as a small airport, designed to let helicopters take off and land.",
+          "old_us_ipa": "/ˈhɛlɪpɑɹt/",
+          "new_us_ipa": "/hɛlɪpɑɹt/",
+          "us_candidates": [
+            "/hɛlɪpɑɹt/"
+          ],
+          "raw_mfa_top_phones": [
+            "h ɛ ʎ ɪ pʰ ɒ ɹ t"
+          ]
+        },
+        {
+          "entry_id": 14860,
+          "word": "herpetology",
+          "display_word": "herpetology",
+          "part_of_speech": "noun",
+          "english": "The branch of biology dealing with reptiles (Reptilia) and amphibians (Amphibia).",
+          "old_us_ipa": "/ˈhɝpɛtɑlɑɡj/",
+          "new_us_ipa": "/hɝptɑlədʒi/",
+          "us_candidates": [
+            "/hɝptɑlədʒi/"
+          ],
+          "raw_mfa_top_phones": [
+            "h ɝ p tʰ ɑ l ə dʒ i"
+          ]
+        },
+        {
+          "entry_id": 15091,
+          "word": "holocene",
+          "display_word": "holocene",
+          "part_of_speech": "proper noun",
+          "english": "(geology) The Holocene epoch.",
+          "old_us_ipa": "/ˈhɑlɑkɛn/",
+          "new_us_ipa": "/hɑləsin/",
+          "us_candidates": [
+            "/hɑləsin/"
+          ],
+          "raw_mfa_top_phones": [
+            "h ɑ l ə s iː n"
+          ]
+        },
+        {
+          "entry_id": 15092,
+          "word": "holotype",
+          "display_word": "holotype",
+          "part_of_speech": "noun",
+          "english": "(taxonomy) The single physical example (or illustration) of an organism used to formally describe the species (or lower-order taxon), subsequently to be kept as a reference.",
+          "old_us_ipa": "/ˈhɑlɑtjp/",
+          "new_us_ipa": "/hoʊlətaɪp/",
+          "us_candidates": [
+            "/hoʊlətaɪp/"
+          ],
+          "raw_mfa_top_phones": [
+            "h ow l ə tʰ aj p"
+          ]
+        },
+        {
+          "entry_id": 15119,
+          "word": "homebody",
+          "display_word": "homebody",
+          "part_of_speech": "noun",
+          "english": "(North American, informal) A person who prefers to remain at home, rather than participate in social events elsewhere.",
+          "old_us_ipa": "/ˈhɑmɛbɑdj/",
+          "new_us_ipa": "/hoʊmbɑdi/",
+          "us_candidates": [
+            "/hoʊmbɑdi/"
+          ],
+          "raw_mfa_top_phones": [
+            "h ow m b ɑ dʲ i"
+          ]
+        },
+        {
+          "entry_id": 15316,
+          "word": "howbeit",
+          "display_word": "howbeit",
+          "part_of_speech": "adverb",
+          "english": "(archaic) Be that as it may; nevertheless.",
+          "old_us_ipa": "/ˈhaʊbɛɪt/",
+          "new_us_ipa": "/haʊbiɪt/",
+          "us_candidates": [
+            "/haʊbiɪt/"
+          ],
+          "raw_mfa_top_phones": [
+            "h aw bʲ iː ɪ t"
+          ]
+        },
+        {
+          "entry_id": 15496,
+          "word": "hydrology",
+          "display_word": "hydrology",
+          "part_of_speech": "noun",
+          "english": "The science of the properties, distribution, and effects of water on a planet's surface, in the soil and underlying rocks, and in the atmosphere",
+          "old_us_ipa": "/ˈhjdɹɑlɑɡj/",
+          "new_us_ipa": "/haɪdɹɑlədʒi/",
+          "us_candidates": [
+            "/haɪdɹɑlədʒi/"
+          ],
+          "raw_mfa_top_phones": [
+            "h aj d ɹ ɑ l ə dʒ i"
+          ]
+        },
+        {
+          "entry_id": 15504,
+          "word": "hydroxyl",
+          "display_word": "hydroxyl",
+          "part_of_speech": "noun",
+          "english": "(chemistry) A univalent radical or functional group (–OH) in organic chemistry; present in alcohols, phenols, carboxylic acids and certain other classes of compounds.",
+          "old_us_ipa": "/ˈhjdɹɑksjl/",
+          "new_us_ipa": "/haɪdɹɑksɪiəl/",
+          "us_candidates": [
+            "/haɪdɹɑksɪiəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "h aj d ɹ ɑ k s ɪ i ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 15527,
+          "word": "hyperplane",
+          "display_word": "hyperplane",
+          "part_of_speech": "noun",
+          "english": "(geometry) An n-dimensional generalization of a plane; an affine subspace of dimension n − 1 that splits an n-dimensional space. (In a one-dimensional space, it is a point; in two-dimensional space it is a line; in three-dimensional space, it is an ordinary plane.)",
+          "old_us_ipa": "/ˈhjpɝplæn/",
+          "new_us_ipa": "/haɪpɚpleɪn/",
+          "us_candidates": [
+            "/haɪpɚpleɪn/"
+          ],
+          "raw_mfa_top_phones": [
+            "h aj p ɚ p l ej n"
+          ]
+        },
+        {
+          "entry_id": 15575,
+          "word": "iapetus",
+          "display_word": "iapetus",
+          "part_of_speech": "proper noun",
+          "english": "(Greek god) A Titan, the son of Uranus and Gaia, and father of Atlas, Prometheus, Epimetheus, and Menoetius.",
+          "old_us_ipa": "/ˈɪæpɛtʌs/",
+          "new_us_ipa": "/aɪæpɪtəs/",
+          "us_candidates": [
+            "/aɪæpɪtəs/"
+          ],
+          "raw_mfa_top_phones": [
+            "aj æ pʲ ɪ t ə s"
+          ]
+        },
+        {
+          "entry_id": 15576,
+          "word": "iapetus",
+          "display_word": "iapetus",
+          "part_of_speech": "proper noun",
+          "english": "(astronomy) A moon in Saturnian system, Solar System: The third largest moon of Saturn",
+          "old_us_ipa": "/ˈɪæpɛtʌs/",
+          "new_us_ipa": "/aɪæpɪtəs/",
+          "us_candidates": [
+            "/aɪæpɪtəs/"
+          ],
+          "raw_mfa_top_phones": [
+            "aj æ pʲ ɪ t ə s"
+          ]
+        },
+        {
+          "entry_id": 15952,
+          "word": "inconsiderate",
+          "display_word": "inconsiderate",
+          "part_of_speech": "adjective",
+          "english": "Not considerate of others.",
+          "old_us_ipa": "/ˈɪnkɑnsɪdɝæt/",
+          "new_us_ipa": "/ɪŋkənsɪdəɹɪt/",
+          "us_candidates": [
+            "/ɪŋkənsɪdəɹɪt/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ ŋ k ə n s ɪ d ə ɹ ɪ t"
+          ]
+        },
+        {
+          "entry_id": 16473,
+          "word": "involution",
+          "display_word": "involution",
+          "part_of_speech": "noun",
+          "english": "Entanglement; a spiralling inwards; intricacy.",
+          "old_us_ipa": "/ˈɪnvɑlʌʃən/",
+          "new_us_ipa": "/ɪnvəluʃən/",
+          "us_candidates": [
+            "/ɪnvəluʃən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ n v ə ʎ ʉː ʃ ə n"
+          ]
+        },
+        {
+          "entry_id": 16474,
+          "word": "involution",
+          "display_word": "involution",
+          "part_of_speech": "noun",
+          "english": "(economics, social science, of a society or nation) A cessation of development or progress involving intense inner competition.",
+          "old_us_ipa": "/ˈɪnvɑlʌʃən/",
+          "new_us_ipa": "/ɪnvəluʃən/",
+          "us_candidates": [
+            "/ɪnvəluʃən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ n v ə ʎ ʉː ʃ ə n"
+          ]
+        },
+        {
+          "entry_id": 16475,
+          "word": "involution",
+          "display_word": "involution",
+          "part_of_speech": "noun",
+          "english": "(neologism) A state of increased competition for limited resources, requiring great effort to stay ahead.",
+          "old_us_ipa": "/ˈɪnvɑlʌʃən/",
+          "new_us_ipa": "/ɪnvəluʃən/",
+          "us_candidates": [
+            "/ɪnvəluʃən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ n v ə ʎ ʉː ʃ ə n"
+          ]
+        },
+        {
+          "entry_id": 16476,
+          "word": "involution",
+          "display_word": "involution",
+          "part_of_speech": "noun",
+          "english": "(mathematics) An endofunction whose square is equal to the identity function; a function equal to its inverse.",
+          "old_us_ipa": "/ˈɪnvɑlʌʃən/",
+          "new_us_ipa": "/ɪnvəluʃən/",
+          "us_candidates": [
+            "/ɪnvəluʃən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ n v ə ʎ ʉː ʃ ə n"
+          ]
+        },
+        {
+          "entry_id": 16477,
+          "word": "involution",
+          "display_word": "involution",
+          "part_of_speech": "noun",
+          "english": "(medicine) The shrinking of an organ (such as the uterus) to a former size.",
+          "old_us_ipa": "/ˈɪnvɑlʌʃən/",
+          "new_us_ipa": "/ɪnvəluʃən/",
+          "us_candidates": [
+            "/ɪnvəluʃən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ n v ə ʎ ʉː ʃ ə n"
+          ]
+        },
+        {
+          "entry_id": 16492,
+          "word": "iphigenia",
+          "display_word": "iphigenia",
+          "part_of_speech": "proper noun",
+          "english": "(Greek mythology) The daughter of Agamemnon and Clytaemnestra, who is sacrificed by her father to ensure the safe journey of the Greeks to Troy.",
+          "old_us_ipa": "/ˈɪfɪɡɛnɪæ/",
+          "new_us_ipa": "/ɪfɪdʒɪnaɪə/",
+          "us_candidates": [
+            "/ɪfɪdʒɪnaɪə/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɪ fʲ ɪ dʒ ɪ n aj ə"
+          ]
+        },
+        {
+          "entry_id": 16521,
+          "word": "ironworks",
+          "display_word": "ironworks",
+          "part_of_speech": "noun",
+          "english": "A factory in which iron is manufactured or iron goods are made.",
+          "old_us_ipa": "/ˈɝɑnwɑɹks/",
+          "new_us_ipa": "/aɪɹənwɝks/",
+          "us_candidates": [
+            "/aɪɹənwɝks/"
+          ],
+          "raw_mfa_top_phones": [
+            "aj ɹ ə n w ɝ k s"
+          ]
+        },
+        {
+          "entry_id": 16829,
+          "word": "jilin",
+          "display_word": "jilin",
+          "part_of_speech": "proper noun",
+          "english": "A prefecture-level city of Jilin, China.",
+          "old_us_ipa": "/ˈdʒɪlɪn/",
+          "new_us_ipa": "/dʒilɪn/",
+          "us_candidates": [
+            "/dʒilɪn/"
+          ],
+          "raw_mfa_top_phones": [
+            "dʒ iː ʎ ɪ n"
+          ]
+        },
+        {
+          "entry_id": 17057,
+          "word": "karting",
+          "display_word": "karting",
+          "part_of_speech": "noun",
+          "english": "An open-wheeled motorsport that uses small vehicles called karts or go-karts.",
+          "old_us_ipa": "/ˈkæɹtɪŋ/",
+          "new_us_ipa": "/kɑɹtɪŋ/",
+          "us_candidates": [
+            "/kɑɹtɪŋ/"
+          ],
+          "raw_mfa_top_phones": [
+            "kʰ ɑ ɹ tʲ ɪ ŋ"
+          ]
+        },
+        {
+          "entry_id": 17072,
+          "word": "kaunas",
+          "display_word": "kaunas",
+          "part_of_speech": "proper noun",
+          "english": "The second largest city of Lithuania.",
+          "old_us_ipa": "/ˈkɔːnæs/",
+          "new_us_ipa": "/kɑnəz/",
+          "us_candidates": [
+            "/kɑnəz/"
+          ],
+          "raw_mfa_top_phones": [
+            "kʰ ɑː n ə z"
+          ]
+        },
+        {
+          "entry_id": 17075,
+          "word": "kawaii",
+          "display_word": "kawaii",
+          "part_of_speech": "adjective",
+          "english": "(chiefly, in the context of Japanese culture, ACG) Cute, adorable.",
+          "old_us_ipa": "/ˈkɔːeɪɪ/",
+          "new_us_ipa": "/kəwaɪi/",
+          "us_candidates": [
+            "/kəwaɪi/"
+          ],
+          "raw_mfa_top_phones": [
+            "kʰ ə w aj i"
+          ]
+        },
+        {
+          "entry_id": 17099,
+          "word": "kendo",
+          "display_word": "kendo",
+          "part_of_speech": "noun",
+          "english": "A Japanese martial art using \"swords\" of split bamboo.",
+          "old_us_ipa": "/ˈkɛndɑ/",
+          "new_us_ipa": "/kɛndoʊ/",
+          "us_candidates": [
+            "/kɛndoʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "cʰ ɛ n d ow"
+          ]
+        },
+        {
+          "entry_id": 17141,
+          "word": "keyboardist",
+          "display_word": "keyboardist",
+          "part_of_speech": "noun",
+          "english": "Someone who plays a keyboard.",
+          "old_us_ipa": "/ˈkɛjboʊɹdɪst/",
+          "new_us_ipa": "/kibɑɹdɪst/",
+          "us_candidates": [
+            "/kibɑɹdɪst/"
+          ],
+          "raw_mfa_top_phones": [
+            "cʰ iː b ɒ ɹ dʲ ɪ s t"
+          ]
+        },
+        {
+          "entry_id": 17142,
+          "word": "keychain",
+          "display_word": "keychain",
+          "part_of_speech": "noun",
+          "english": "An ornamental piece holding such a chain or ring.",
+          "old_us_ipa": "/ˈkɛjtʃeɪn/",
+          "new_us_ipa": "/kitʃeɪn/",
+          "us_candidates": [
+            "/kitʃeɪn/"
+          ],
+          "raw_mfa_top_phones": [
+            "cʰ iː tʃ ej n"
+          ]
+        },
+        {
+          "entry_id": 17148,
+          "word": "keyring",
+          "display_word": "keyring",
+          "part_of_speech": "noun",
+          "english": "A ring, normally of metal or plastic, for holding keys together.",
+          "old_us_ipa": "/ˈkɛjɹɪŋ/",
+          "new_us_ipa": "/kiɹɪŋ/",
+          "us_candidates": [
+            "/kiɹɪŋ/"
+          ],
+          "raw_mfa_top_phones": [
+            "cʰ iː ɹ ɪ ŋ"
+          ]
+        },
+        {
+          "entry_id": 17360,
+          "word": "kowloon",
+          "display_word": "kowloon",
+          "part_of_speech": "proper noun",
+          "english": "A region, peninsula, and urban area of Hong Kong.",
+          "old_us_ipa": "/ˈkaʊluːn/",
+          "new_us_ipa": "/kaʊlun/",
+          "us_candidates": [
+            "/kaʊlun/"
+          ],
+          "raw_mfa_top_phones": [
+            "kʰ aw ʎ ʉː n"
+          ]
+        },
+        {
+          "entry_id": 17367,
+          "word": "krai",
+          "display_word": "krai",
+          "part_of_speech": "noun",
+          "english": "(administrative division) A region or province in Russia.",
+          "old_us_ipa": "/ˈkɹeɪ/",
+          "new_us_ipa": "/kɹaɪ/",
+          "us_candidates": [
+            "/kɹaɪ/"
+          ],
+          "raw_mfa_top_phones": [
+            "k ɹ aj"
+          ]
+        },
+        {
+          "entry_id": 17742,
+          "word": "lazio",
+          "display_word": "lazio",
+          "part_of_speech": "proper noun",
+          "english": "An administrative region of Italy, situated in the central peninsular section of the country with Rome as its capital. It corresponds to ancient Latium.",
+          "old_us_ipa": "/ˈlæzɪɑ/",
+          "new_us_ipa": "/leɪzioʊ/",
+          "us_candidates": [
+            "/leɪzioʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "l ej z i ow"
+          ]
+        },
+        {
+          "entry_id": 17809,
+          "word": "lechery",
+          "display_word": "lechery",
+          "part_of_speech": "noun",
+          "english": "Inordinate indulgence in sexual activity.",
+          "old_us_ipa": "/ˈlɛtʃɝj/",
+          "new_us_ipa": "/lɛtʃəɹi/",
+          "us_candidates": [
+            "/lɛtʃəɹi/"
+          ],
+          "raw_mfa_top_phones": [
+            "l ɛ tʃ ə ɹ i"
+          ]
+        },
+        {
+          "entry_id": 17871,
+          "word": "lemongrass",
+          "display_word": "lemongrass",
+          "part_of_speech": "noun",
+          "english": "One of various species of grass of the genus Cymbopogon, especially Cymbopogon citratus, which have a lemon-like taste and aroma, and are used in cooking, for tea, and for fragrance.",
+          "old_us_ipa": "/ˈlɛmɑŋɹæss/",
+          "new_us_ipa": "/lɛməngɹæs/",
+          "us_candidates": [
+            "/lɛməngɹæs/"
+          ],
+          "raw_mfa_top_phones": [
+            "l ɛ m ə n ɟ ɹ æ s"
+          ]
+        },
+        {
+          "entry_id": 17953,
+          "word": "leuven",
+          "display_word": "leuven",
+          "part_of_speech": "proper noun",
+          "english": "The largest city and provincial capital of Flemish Brabant, Flanders, Belgium",
+          "old_us_ipa": "/ˈlɛʌvɛn/",
+          "new_us_ipa": "/luvən/",
+          "us_candidates": [
+            "/luvən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ʎ ʉː v ə n"
+          ]
+        },
+        {
+          "entry_id": 17989,
+          "word": "liaise",
+          "display_word": "liaise",
+          "part_of_speech": "verb",
+          "english": "To establish a liaison.",
+          "old_us_ipa": "/ˈlɪeɪs/",
+          "new_us_ipa": "/lieɪz/",
+          "us_candidates": [
+            "/lieɪz/"
+          ],
+          "raw_mfa_top_phones": [
+            "ʎ iː ej z"
+          ]
+        },
+        {
+          "entry_id": 18006,
+          "word": "libertarianism",
+          "display_word": "libertarianism",
+          "part_of_speech": "noun",
+          "english": "(economics, philosophy, politics) A political philosophy maintaining that all persons are the absolute owners of their own lives, and should be free to do whatever they wish with their persons or property, provided they allow others that same liberty.",
+          "old_us_ipa": "/ˈlɪbɝtæɹɪænɪsm/",
+          "new_us_ipa": "/lɪbɚtɛɹiənɪzəm/",
+          "us_candidates": [
+            "/lɪbɚtɛɹiənɪzəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "ʎ ɪ b ɚ tʰ ɛ ɹ i ə ɲ ɪ z ə m"
+          ]
+        },
+        {
+          "entry_id": 18103,
+          "word": "lightspeed",
+          "display_word": "lightspeed",
+          "part_of_speech": "noun",
+          "english": "The speed of light (in vacuum unless another medium is specified).",
+          "old_us_ipa": "/ˈlaɪtspiːd/",
+          "new_us_ipa": "/laɪtspid/",
+          "us_candidates": [
+            "/laɪtspid/"
+          ],
+          "raw_mfa_top_phones": [
+            "l aj t s pʲ i d"
+          ]
+        },
+        {
+          "entry_id": 18196,
+          "word": "lioness",
+          "display_word": "lioness",
+          "part_of_speech": "noun",
+          "english": "A female lion (animal).",
+          "old_us_ipa": "/ˈlɪɑnɛss/",
+          "new_us_ipa": "/laɪənɛs/",
+          "us_candidates": [
+            "/laɪənɛs/"
+          ],
+          "raw_mfa_top_phones": [
+            "l aj ə n ɛ s"
+          ]
+        },
+        {
+          "entry_id": 18258,
+          "word": "lithosphere",
+          "display_word": "lithosphere",
+          "part_of_speech": "noun",
+          "english": "(geology) The rigid, mechanically strong, outer layer of the Earth; divided into twelve major plates.",
+          "old_us_ipa": "/ˈlɪθɑsfɝ/",
+          "new_us_ipa": "/lɪθəsfɪɹ/",
+          "us_candidates": [
+            "/lɪθəsfɪɹ/"
+          ],
+          "raw_mfa_top_phones": [
+            "ʎ ɪ θ ə s fʲ ɪ ɹ"
+          ]
+        },
+        {
+          "entry_id": 18639,
+          "word": "luminosity",
+          "display_word": "luminosity",
+          "part_of_speech": "noun",
+          "english": "the state of being luminous, or a luminous object; brilliance or radiance",
+          "old_us_ipa": "/ˈlʌmɪnɑsɪtj/",
+          "new_us_ipa": "/lumɪnɑsɪti/",
+          "us_candidates": [
+            "/lumɪnɑsɪti/"
+          ],
+          "raw_mfa_top_phones": [
+            "ʎ ʉː mʲ ɪ n ɑ s ɪ tʲ i"
+          ]
+        },
+        {
+          "entry_id": 18651,
+          "word": "lunchbox",
+          "display_word": "lunchbox",
+          "part_of_speech": "noun",
+          "english": "(slang, UK) The penis when enclosed in clothing.",
+          "old_us_ipa": "/ˈlʌntʃbɑks/",
+          "new_us_ipa": "/lʌntʃbɑks/",
+          "us_candidates": [
+            "/lʌntʃbɑks/"
+          ],
+          "raw_mfa_top_phones": [
+            "l ɐ n tʃ b ɑ k s"
+          ]
+        },
+        {
+          "entry_id": 18672,
+          "word": "lusatia",
+          "display_word": "lusatia",
+          "part_of_speech": "proper noun",
+          "english": "A traditionally Slavic-speaking cultural region in Central Europe, in modern Germany, Poland and the Czech Republic.",
+          "old_us_ipa": "/ˈlʌsætɪæ/",
+          "new_us_ipa": "/luseɪʃə/",
+          "us_candidates": [
+            "/luseɪʃə/"
+          ],
+          "raw_mfa_top_phones": [
+            "ʎ ʉ s ej ʃ ə"
+          ]
+        },
+        {
+          "entry_id": 18706,
+          "word": "lyceum",
+          "display_word": "lyceum",
+          "part_of_speech": "noun",
+          "english": "(historical) A public hall designed for lectures, readings, or concerts.",
+          "old_us_ipa": "/ˈljkɛʌm/",
+          "new_us_ipa": "/laɪsiəm/",
+          "us_candidates": [
+            "/laɪsiəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "l aj s iː ə m"
+          ]
+        },
+        {
+          "entry_id": 18736,
+          "word": "macaque",
+          "display_word": "macaque",
+          "part_of_speech": "noun",
+          "english": "Any of a group of Old World monkeys of the genus Macaca.",
+          "old_us_ipa": "/ˈmækækw/",
+          "new_us_ipa": "/məkɑk/",
+          "us_candidates": [
+            "/məkɑk/"
+          ],
+          "raw_mfa_top_phones": [
+            "m ə kʰ ɑ k"
+          ]
+        },
+        {
+          "entry_id": 18832,
+          "word": "magnetosphere",
+          "display_word": "magnetosphere",
+          "part_of_speech": "noun",
+          "english": "(physics) The comet-shaped region around Earth or another planet in which charged particles are trapped or deflected. Shaped by the solar wind and the planet's magnetic field.",
+          "old_us_ipa": "/ˈmæɡnɛtɑsfɝ/",
+          "new_us_ipa": "/mægnitəsfɪɹ/",
+          "us_candidates": [
+            "/mægnitəsfɪɹ/"
+          ],
+          "raw_mfa_top_phones": [
+            "m æ ɟ ɲ i t ə s fʲ ɪ ɹ"
+          ]
+        },
+        {
+          "entry_id": 18999,
+          "word": "manchukuo",
+          "display_word": "manchukuo",
+          "part_of_speech": "proper noun",
+          "english": "A puppet state of Imperial Japan, existing from 1932 to 1945, conceived as a purported Manchu nation-state under the restored Qing dynasty. Capital: Hsinking (Changchun).",
+          "old_us_ipa": "/ˈmæntʃʌkʌɑ/",
+          "new_us_ipa": "/mæntʃʊəkuoʊ/",
+          "us_candidates": [
+            "/mæntʃʊəkuoʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "m æ n tʃ ʊ ə kʰ ʉː ow"
+          ]
+        },
+        {
+          "entry_id": 19073,
+          "word": "mantelpiece",
+          "display_word": "mantelpiece",
+          "part_of_speech": "noun",
+          "english": "A shelf that is affixed to the wall above a fireplace.",
+          "old_us_ipa": "/ˈmæntɛlpɪɛk/",
+          "new_us_ipa": "/mæntlpis/",
+          "us_candidates": [
+            "/mæntlpis/"
+          ],
+          "raw_mfa_top_phones": [
+            "m æ n t ɫ pʰ iː s"
+          ]
+        },
+        {
+          "entry_id": 19101,
+          "word": "maoism",
+          "display_word": "maoism",
+          "part_of_speech": "noun",
+          "english": "The philosophy espoused by Chinese leader Mao Zedong, a form of Marxism-Leninism that focuses on the peasantry as the revolutionary vanguard.",
+          "old_us_ipa": "/ˈmæɔɪsm/",
+          "new_us_ipa": "/maʊɪzəm/",
+          "us_candidates": [
+            "/maʊɪzəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "m aw ɪ z ə m"
+          ]
+        },
+        {
+          "entry_id": 19145,
+          "word": "mariupol",
+          "display_word": "mariupol",
+          "part_of_speech": "proper noun",
+          "english": "A city in Mariupol Raion, Donetsk Oblast, in eastern Ukraine, on the shore of the Sea of Azov, of the Black Sea.",
+          "old_us_ipa": "/ˈmæɹɪʌpɑl/",
+          "new_us_ipa": "/mɑɹiupoʊl/",
+          "us_candidates": [
+            "/mɑɹiupoʊl/"
+          ],
+          "raw_mfa_top_phones": [
+            "m ɑː ɹ i ʉː pʰ ow ɫ"
+          ]
+        },
+        {
+          "entry_id": 19242,
+          "word": "masovia",
+          "display_word": "masovia",
+          "part_of_speech": "proper noun",
+          "english": "(historical) A historic and geographical region of Poland, situated in the east of the country.",
+          "old_us_ipa": "/ˈmæsɑvɪæ/",
+          "new_us_ipa": "/məzoʊviə/",
+          "us_candidates": [
+            "/məzoʊviə/"
+          ],
+          "raw_mfa_top_phones": [
+            "m ə z ow vʲ i ə"
+          ]
+        },
+        {
+          "entry_id": 19428,
+          "word": "mechelen",
+          "display_word": "mechelen",
+          "part_of_speech": "proper noun",
+          "english": "A city and municipality in Antwerp province, Belgium.",
+          "old_us_ipa": "/ˈmɛtʃɛlɛn/",
+          "new_us_ipa": "/mɛkələn/",
+          "us_candidates": [
+            "/mɛkələn/"
+          ],
+          "raw_mfa_top_phones": [
+            "m ɛ k ə l ə n"
+          ]
+        },
+        {
+          "entry_id": 19586,
+          "word": "meridional",
+          "display_word": "meridional",
+          "part_of_speech": "adjective",
+          "english": "located in the south, southern; later especially, often pertaining to the southern parts of Europe. [from 14th c.]",
+          "old_us_ipa": "/ˈmɝɪdɪɑnæl/",
+          "new_us_ipa": "/mɪɹɪdɪənəl/",
+          "us_candidates": [
+            "/mɪɹɪdɪənəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "mʲ ɪ ɹ ɪ dʲ ɪ ə n ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 19587,
+          "word": "meridional",
+          "display_word": "meridional",
+          "part_of_speech": "adjective",
+          "english": "of or characteristic of southern areas or people, especially those in the southern parts of Europe [from 19th c.]",
+          "old_us_ipa": "/ˈmɝɪdɪɑnæl/",
+          "new_us_ipa": "/mɪɹɪdɪənəl/",
+          "us_candidates": [
+            "/mɪɹɪdɪənəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "mʲ ɪ ɹ ɪ dʲ ɪ ə n ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 19607,
+          "word": "mesoamerica",
+          "display_word": "mesoamerica",
+          "part_of_speech": "proper noun",
+          "english": "A pre-Columbian cultural region extending from southern Mexico to roughly the area that comprises modern Honduras and El Salvador.",
+          "old_us_ipa": "/ˈmɛsoʊmɝɪkæ/",
+          "new_us_ipa": "/mɛzoʊəmɛɹɪkə/",
+          "us_candidates": [
+            "/mɛzoʊəmɛɹɪkə/"
+          ],
+          "raw_mfa_top_phones": [
+            "m ɛ z ow ə m ɛ ɹ ɪ k ə"
+          ]
+        },
+        {
+          "entry_id": 19673,
+          "word": "methylation",
+          "display_word": "methylation",
+          "part_of_speech": "noun",
+          "english": "(genetics) The addition of a methyl group to cytosine and adenine residues in DNA that leads to the epigenetic modification of DNA and the reduction of gene expression and protein production.",
+          "old_us_ipa": "/ˈmɛθjlæʃən/",
+          "new_us_ipa": "/mɛθɪleɪʃən/",
+          "us_candidates": [
+            "/mɛθɪleɪʃən/"
+          ],
+          "raw_mfa_top_phones": [
+            "m ɛ θ ɪ l ej ʃ ə n"
+          ]
+        },
+        {
+          "entry_id": 19746,
+          "word": "midfielder",
+          "display_word": "midfielder",
+          "part_of_speech": "noun",
+          "english": "(sports) A player who operates behind the attackers and in front of the defence.",
+          "old_us_ipa": "/ˈmɪdfɪɛldɝ/",
+          "new_us_ipa": "/mɪdfildɚ/",
+          "us_candidates": [
+            "/mɪdfildɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "mʲ ɪ d fʲ iː ɫ d ɚ"
+          ]
+        },
+        {
+          "entry_id": 19925,
+          "word": "misato",
+          "display_word": "misato",
+          "part_of_speech": "proper noun",
+          "english": "A town and city in Saitama Prefecture, Japan.",
+          "old_us_ipa": "/ˈmɪsætɑ/",
+          "new_us_ipa": "/mɪsɑtoʊ/",
+          "us_candidates": [
+            "/mɪsɑtoʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "mʲ ɪ s ɑ t ow"
+          ]
+        },
+        {
+          "entry_id": 20332,
+          "word": "motorway",
+          "display_word": "motorway",
+          "part_of_speech": "noun",
+          "english": "(UK, Ireland, New Zealand, Queensland, New South Wales) A highway with grade-separated crossings (rather than level crossings) and designed (and only permitted) for high-speed motor-traffic (in Europe motor vehicles with a higher speed limit than 40 km/h) running in two directions on one separate carriageway each.",
+          "old_us_ipa": "/ˈmɑtɑɹweɪ/",
+          "new_us_ipa": "/moʊtɚweɪ/",
+          "us_candidates": [
+            "/moʊtɚweɪ/"
+          ],
+          "raw_mfa_top_phones": [
+            "m ow t ɚ w ej"
+          ]
+        },
+        {
+          "entry_id": 20457,
+          "word": "munificence",
+          "display_word": "munificence",
+          "part_of_speech": "noun",
+          "english": "The quality of being munificent; generosity.",
+          "old_us_ipa": "/ˈmʌnɪfɪkɛnk/",
+          "new_us_ipa": "/munɪfɪsəns/",
+          "us_candidates": [
+            "/munɪfɪsəns/"
+          ],
+          "raw_mfa_top_phones": [
+            "mʲ ʉː ɲ ɪ fʲ ɪ s ə n s"
+          ]
+        },
+        {
+          "entry_id": 20550,
+          "word": "mycelium",
+          "display_word": "mycelium",
+          "part_of_speech": "noun",
+          "english": "The vegetative part of any fungus, consisting of a mass of branching, threadlike hyphae, often underground.",
+          "old_us_ipa": "/ˈmjkɛlɪʌm/",
+          "new_us_ipa": "/maɪsiliəm/",
+          "us_candidates": [
+            "/maɪsiliəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "m aj s i ʎ i ə m"
+          ]
+        },
+        {
+          "entry_id": 20843,
+          "word": "neodymium",
+          "display_word": "neodymium",
+          "part_of_speech": "noun",
+          "english": "A chemical element (symbol Nd) with an atomic number of 60: a hard, slightly malleable silvery rare earth metal that quickly tarnishes in air and moisture.",
+          "old_us_ipa": "/ˈnɛɑdjmɪʌm/",
+          "new_us_ipa": "/nioʊdɪmiəm/",
+          "us_candidates": [
+            "/nioʊdɪmiəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɲ iː ow dʲ ɪ mʲ i ə m"
+          ]
+        },
+        {
+          "entry_id": 20967,
+          "word": "newsagent",
+          "display_word": "newsagent",
+          "part_of_speech": "noun",
+          "english": "A retail business selling newspapers, magazines, and stationery; a stationer.",
+          "old_us_ipa": "/ˈnɛwsæɡɛnt/",
+          "new_us_ipa": "/nuzeɪdʒənt/",
+          "us_candidates": [
+            "/nuzeɪdʒənt/"
+          ],
+          "raw_mfa_top_phones": [
+            "n ʉː z ej dʒ ə n t",
+            "ɲ ʉː z ej dʒ ə n t"
+          ]
+        },
+        {
+          "entry_id": 20983,
+          "word": "niamey",
+          "display_word": "niamey",
+          "part_of_speech": "proper noun",
+          "english": "The capital city of Niger.",
+          "old_us_ipa": "/ˈnɪæmɛj/",
+          "new_us_ipa": "/nɑmeɪ/",
+          "us_candidates": [
+            "/nɑmeɪ/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɲ ɑː m ej"
+          ]
+        },
+        {
+          "entry_id": 21080,
+          "word": "niue",
+          "display_word": "niue",
+          "part_of_speech": "proper noun",
+          "english": "An island and country in Polynesia in Oceania, a self-governing state in free association with New Zealand. Official name: Republic of Niue. Capital: Alofi.",
+          "old_us_ipa": "/ˈnɪʌ/",
+          "new_us_ipa": "/nueɪ/",
+          "us_candidates": [
+            "/nueɪ/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɲ ʉː ej"
+          ]
+        },
+        {
+          "entry_id": 21996,
+          "word": "orienteering",
+          "display_word": "orienteering",
+          "part_of_speech": "noun",
+          "english": "(sport) The act of racing across unfamiliar place using a map and compass.",
+          "old_us_ipa": "/ˈɑɹɪɛntiːɹɪŋ/",
+          "new_us_ipa": "/ɑɹiəntɪɹɪŋ/",
+          "us_candidates": [
+            "/ɑɹiəntɪɹɪŋ/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɒ ɹ i ə n tʲ ɪ ɹ ɪ ŋ"
+          ]
+        },
+        {
+          "entry_id": 22224,
+          "word": "overthink",
+          "display_word": "overthink",
+          "part_of_speech": "verb",
+          "english": "(rare) To think too highly (of); overestimate",
+          "old_us_ipa": "/ˈɑvɝθɪnk/",
+          "new_us_ipa": "/oʊvɚθɪŋk/",
+          "us_candidates": [
+            "/oʊvɚθɪŋk/"
+          ],
+          "raw_mfa_top_phones": [
+            "ow v ɚ θ ɪ ŋ k"
+          ]
+        },
+        {
+          "entry_id": 22441,
+          "word": "pangaea",
+          "display_word": "pangaea",
+          "part_of_speech": "proper noun",
+          "english": "(geology) A former supercontinent that included all the landmasses of the earth before the Triassic period and that broke up into Laurasia and Gondwana.",
+          "old_us_ipa": "/ˈpæŋæiː/",
+          "new_us_ipa": "/pændʒiə/",
+          "us_candidates": [
+            "/pændʒiə/"
+          ],
+          "raw_mfa_top_phones": [
+            "pʰ æ n dʒ iː ə"
+          ]
+        },
+        {
+          "entry_id": 22510,
+          "word": "paragliding",
+          "display_word": "paragliding",
+          "part_of_speech": "noun",
+          "english": "The sport of gliding with a paraglider.",
+          "old_us_ipa": "/ˈpæɹæɡlɪdɪŋ/",
+          "new_us_ipa": "/pɛɹəɡlaɪdɪŋ/",
+          "us_candidates": [
+            "/pɛɹəɡlaɪdɪŋ/"
+          ],
+          "raw_mfa_top_phones": [
+            "pʰ ɛ ɹ ə ɡ l aj dʲ ɪ ŋ"
+          ]
+        },
+        {
+          "entry_id": 22522,
+          "word": "paralympics",
+          "display_word": "paralympics",
+          "part_of_speech": "proper noun",
+          "english": "(sports) Synonym of Paralympic Games (“an international sports competition participated in by sportspeople with physical disabilities, which is held every four years as a counterpart of the Olympic Games and nowadays at the same venue”).",
+          "old_us_ipa": "/ˈpæɹæljmpɪks/",
+          "new_us_ipa": "/pɛɹəlɪmpɪks/",
+          "us_candidates": [
+            "/pɛɹəlɪmpɪks/"
+          ],
+          "raw_mfa_top_phones": [
+            "pʰ ɛ ɹ ə ʎ ɪ m pʲ ɪ k s"
+          ]
+        },
+        {
+          "entry_id": 22963,
+          "word": "pentateuch",
+          "display_word": "pentateuch",
+          "part_of_speech": "proper noun",
+          "english": "The Torah: the first five books of the Bible: Genesis, Exodus, Leviticus, Numbers, and Deuteronomy.",
+          "old_us_ipa": "/ˈpɛntætɛʌtʃ/",
+          "new_us_ipa": "/pɛntətuk/",
+          "us_candidates": [
+            "/pɛntətuk/"
+          ],
+          "raw_mfa_top_phones": [
+            "pʰ ɛ n t ə tʲ ʉː k"
+          ]
+        },
+        {
+          "entry_id": 23037,
+          "word": "pericles",
+          "display_word": "pericles",
+          "part_of_speech": "proper noun",
+          "english": "(historical) An Ancient Greek politician.",
+          "old_us_ipa": "/ˈpɝɪklɛs/",
+          "new_us_ipa": "/pɛɹɪkliz/",
+          "us_candidates": [
+            "/pɛɹɪkliz/"
+          ],
+          "raw_mfa_top_phones": [
+            "pʰ ɛ ɹ ɪ c ʎ iː z"
+          ]
+        },
+        {
+          "entry_id": 23063,
+          "word": "permaculture",
+          "display_word": "permaculture",
+          "part_of_speech": "noun",
+          "english": "(agriculture) Any system of sustainable agriculture that renews natural resources and enriches local ecosystems. [from 1978]",
+          "old_us_ipa": "/ˈpɝmækʌltʃə/",
+          "new_us_ipa": "/pɝməkʌltʃɚ/",
+          "us_candidates": [
+            "/pɝməkʌltʃɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "pʰ ɝ m ə kʰ ɐ ɫ tʃ ɚ"
+          ]
+        },
+        {
+          "entry_id": 23296,
+          "word": "physiotherapy",
+          "display_word": "physiotherapy",
+          "part_of_speech": "noun",
+          "english": "(British, Commonwealth, Irish) Therapy that uses physical techniques such as massage, ultrasound, heat, and exercise.",
+          "old_us_ipa": "/ˈfjsɪɑθɝæpj/",
+          "new_us_ipa": "/fɪzɪoʊθɛɹəpi/",
+          "us_candidates": [
+            "/fɪzɪoʊθɛɹəpi/"
+          ],
+          "raw_mfa_top_phones": [
+            "fʲ ɪ z ɪ ow θ ɛ ɹ ə pʲ i"
+          ]
+        },
+        {
+          "entry_id": 23370,
+          "word": "pikachu",
+          "display_word": "pikachu",
+          "part_of_speech": "proper noun",
+          "english": "(video games, anime, manga) A small yellow rodent-like Pokémon that has red cheeks and a tail shaped like a lightning bolt, and has electricity-related powers.",
+          "old_us_ipa": "/ˈpɪkætʃʌ/",
+          "new_us_ipa": "/pikətʃu/",
+          "us_candidates": [
+            "/pikətʃu/"
+          ],
+          "raw_mfa_top_phones": [
+            "pʰ iː k ə tʃ ʉː"
+          ]
+        },
+        {
+          "entry_id": 23625,
+          "word": "plc",
+          "display_word": "plc",
+          "part_of_speech": "noun",
+          "english": "(countable, business) Initialism of public limited company.",
+          "old_us_ipa": "/ˈplk/",
+          "new_us_ipa": "/piɛlsi/",
+          "us_candidates": [
+            "/piɛlsi/"
+          ],
+          "raw_mfa_top_phones": [
+            "pʰ iː ɛ ɫ s iː"
+          ]
+        },
+        {
+          "entry_id": 24533,
+          "word": "prophase",
+          "display_word": "prophase",
+          "part_of_speech": "noun",
+          "english": "The first stage of mitosis, during which chromatin condenses to form the chromosomes.",
+          "old_us_ipa": "/ˈpɹɑfæs/",
+          "new_us_ipa": "/pɹoʊfeɪz/",
+          "us_candidates": [
+            "/pɹoʊfeɪz/"
+          ],
+          "raw_mfa_top_phones": [
+            "p ɹ ow f ej z"
+          ]
+        },
+        {
+          "entry_id": 24875,
+          "word": "putrefaction",
+          "display_word": "putrefaction",
+          "part_of_speech": "noun",
+          "english": "The act of causing to rot; the anaerobic splitting of proteins by bacteria and fungi with the formation of malodorous, incompletely oxidized products.",
+          "old_us_ipa": "/ˈpʌtɹɛfækʃən/",
+          "new_us_ipa": "/putɹəfækʃən/",
+          "us_candidates": [
+            "/putɹəfækʃən/"
+          ],
+          "raw_mfa_top_phones": [
+            "pʲ ʉː t ɹ ə f æ c ʃ ə n"
+          ]
+        },
+        {
+          "entry_id": 25139,
+          "word": "radiotherapy",
+          "display_word": "radiotherapy",
+          "part_of_speech": "noun",
+          "english": "Synonym of radiation therapy.",
+          "old_us_ipa": "/ˈɹædɪɑθɝæpj/",
+          "new_us_ipa": "/ɹeɪdioʊθɛɹəpi/",
+          "us_candidates": [
+            "/ɹeɪdioʊθɛɹəpi/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ ej dʲ i ow θ ɛ ɹ ə pʲ i"
+          ]
+        },
+        {
+          "entry_id": 25536,
+          "word": "redox",
+          "display_word": "redox",
+          "part_of_speech": "noun",
+          "english": "(rare) (chemistry) A reaction in which an oxidation and a reduction occur simultaneously; a reaction in which electrons are transferred.",
+          "old_us_ipa": "/ˈɹɛdɑks/",
+          "new_us_ipa": "/ɹɪdɑks/",
+          "us_candidates": [
+            "/ɹɪdɑks/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ ɪ d ɑː k s"
+          ]
+        },
+        {
+          "entry_id": 25537,
+          "word": "redshift",
+          "display_word": "redshift",
+          "part_of_speech": "noun",
+          "english": "(physics, :, astronomy, relativity) An increase in the wavelength of a photon or of light, corresponding to a lower frequency and a shift toward the red end of the electromagnetic spectrum.",
+          "old_us_ipa": "/ˈɹɛdʃɪft/",
+          "new_us_ipa": "/ɹɛdʃɪft/",
+          "us_candidates": [
+            "/ɹɛdʃɪft/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ ɛ d ʃ ɪ f t"
+          ]
+        },
+        {
+          "entry_id": 25559,
+          "word": "refectory",
+          "display_word": "refectory",
+          "part_of_speech": "noun",
+          "english": "A dining hall, especially in an institution such as a college or monastery.",
+          "old_us_ipa": "/ˈɹɛfɛktɑɹj/",
+          "new_us_ipa": "/ɹɪfɛktəɹi/",
+          "us_candidates": [
+            "/ɹɪfɛktəɹi/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ ɪ f ɛ k t ə ɹ i"
+          ]
+        },
+        {
+          "entry_id": 25994,
+          "word": "reticulum",
+          "display_word": "reticulum",
+          "part_of_speech": "proper noun",
+          "english": "(constellation) A small constellation of the southern summer sky, said to resemble a reticle. It lies between the constellations of Horologium and Dorado.",
+          "old_us_ipa": "/ˈɹɛtɪkʌlʌm/",
+          "new_us_ipa": "/ɹɛtɪkʊləm/",
+          "us_candidates": [
+            "/ɹɛtɪkʊləm/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ ɛ tʲ ɪ c ʊ l ə m"
+          ]
+        },
+        {
+          "entry_id": 25995,
+          "word": "reticulum",
+          "display_word": "reticulum",
+          "part_of_speech": "noun",
+          "english": "(zoology) The second compartment of the stomach of a cow or other ruminant.",
+          "old_us_ipa": "/ˈɹɛtɪkʌlʌm/",
+          "new_us_ipa": "/ɹɛtɪkʊləm/",
+          "us_candidates": [
+            "/ɹɛtɪkʊləm/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ ɛ tʲ ɪ c ʊ l ə m"
+          ]
+        },
+        {
+          "entry_id": 26069,
+          "word": "rhenium",
+          "display_word": "rhenium",
+          "part_of_speech": "noun",
+          "english": "A metallic chemical element (symbol Re) with an atomic number of 75: a heavy, silvery-gray transition metal.",
+          "old_us_ipa": "/ˈɹhɛnɪʌm/",
+          "new_us_ipa": "/ɹiniəm/",
+          "us_candidates": [
+            "/ɹiniəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ iː ɲ i ə m"
+          ]
+        },
+        {
+          "entry_id": 26333,
+          "word": "romanization",
+          "display_word": "romanization",
+          "part_of_speech": "noun",
+          "english": "(usually, uncountable) The act or process of putting text into the Latin (Roman) alphabet, by means such as transliteration and transcription.",
+          "old_us_ipa": "/ˈɹɑmænɪzæʃən/",
+          "new_us_ipa": "/ɹoʊmənaɪzeɪʃən/",
+          "us_candidates": [
+            "/ɹoʊmənaɪzeɪʃən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ ow m ə n aj z ej ʃ ə n"
+          ]
+        },
+        {
+          "entry_id": 26456,
+          "word": "royalism",
+          "display_word": "royalism",
+          "part_of_speech": "noun",
+          "english": "Impassioned allegiance to or advocacy of the establishment, maintenance, and/or interests of a particular king, royal house, or kingly dynasty; sometimes extended to the same of a non-royal (i.e., grand ducal, imperial, or other) family or sovereign; often contrasted with monarchism.",
+          "old_us_ipa": "/ˈɹɔɪælɪsm/",
+          "new_us_ipa": "/ɹɔɪəlɪzəm/",
+          "us_candidates": [
+            "/ɹɔɪəlɪzəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ ɔj ə ʎ ɪ z ə m"
+          ]
+        },
+        {
+          "entry_id": 26600,
+          "word": "ruthenium",
+          "display_word": "ruthenium",
+          "part_of_speech": "noun",
+          "english": "A metallic chemical element (symbol Ru) with an atomic number of 44.",
+          "old_us_ipa": "/ˈɹʌθɛnɪʌm/",
+          "new_us_ipa": "/ɹuθiniəm/",
+          "us_candidates": [
+            "/ɹuθiniəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ ʉː θ iː ɲ i ə m"
+          ]
+        },
+        {
+          "entry_id": 26611,
+          "word": "ryukyuan",
+          "display_word": "ryukyuan",
+          "part_of_speech": "proper noun",
+          "english": "Any of the traditional languages of Ryukyu, in modern times predominantly displaced by Japanese.",
+          "old_us_ipa": "/ˈɹjʌkjʌæn/",
+          "new_us_ipa": "/ɹjukuən/",
+          "us_candidates": [
+            "/ɹjukuən/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɹ j ʉː c ʉː ə n"
+          ]
+        },
+        {
+          "entry_id": 26661,
+          "word": "sadomasochism",
+          "display_word": "sadomasochism",
+          "part_of_speech": "noun",
+          "english": "The practices of sadism and masochism collectively, usually in reference to consensual practices within the BDSM community.",
+          "old_us_ipa": "/ˈsædɑmæsɑtʃɪsm/",
+          "new_us_ipa": "/seɪdoʊmæsəkɪzəm/",
+          "us_candidates": [
+            "/seɪdoʊmæsəkɪzəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ej d ow m æ s ə c ɪ z ə m"
+          ]
+        },
+        {
+          "entry_id": 26662,
+          "word": "sadomasochism",
+          "display_word": "sadomasochism",
+          "part_of_speech": "noun",
+          "english": "Sadism and masochism: the (often sexual) enjoyment by one person of both inflicting and receiving pain.",
+          "old_us_ipa": "/ˈsædɑmæsɑtʃɪsm/",
+          "new_us_ipa": "/seɪdoʊmæsəkɪzəm/",
+          "us_candidates": [
+            "/seɪdoʊmæsəkɪzəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ej d ow m æ s ə c ɪ z ə m"
+          ]
+        },
+        {
+          "entry_id": 26869,
+          "word": "sashimi",
+          "display_word": "sashimi",
+          "part_of_speech": "noun",
+          "english": "A dish consisting of thin slices or pieces of raw fish or meat.",
+          "old_us_ipa": "/ˈsæʃɪmɪ/",
+          "new_us_ipa": "/səʃimi/",
+          "us_candidates": [
+            "/səʃimi/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ə ʃ iː mʲ i"
+          ]
+        },
+        {
+          "entry_id": 26993,
+          "word": "scandium",
+          "display_word": "scandium",
+          "part_of_speech": "noun",
+          "english": "A metallic chemical element, atomic number 21, obtained from some uranium ores; it is a transition element.",
+          "old_us_ipa": "/ˈskændɪʌm/",
+          "new_us_ipa": "/skændiəm/",
+          "us_candidates": [
+            "/skændiəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "s k æ n dʲ i ə m"
+          ]
+        },
+        {
+          "entry_id": 27069,
+          "word": "sciatica",
+          "display_word": "sciatica",
+          "part_of_speech": "noun",
+          "english": "(pathology, neurology) Neuralgia of the sciatic nerve, characterised by pain radiating down through the buttocks and the back of the thigh.",
+          "old_us_ipa": "/ˈskɪætɪkæ/",
+          "new_us_ipa": "/saɪætɪkə/",
+          "us_candidates": [
+            "/saɪætɪkə/"
+          ],
+          "raw_mfa_top_phones": [
+            "s aj æ tʲ ɪ k ə"
+          ]
+        },
+        {
+          "entry_id": 27218,
+          "word": "seafloor",
+          "display_word": "seafloor",
+          "part_of_speech": "noun",
+          "english": ".",
+          "old_us_ipa": "/ˈsiːfluːɹ/",
+          "new_us_ipa": "/siflɑɹ/",
+          "us_candidates": [
+            "/siflɑɹ/"
+          ],
+          "raw_mfa_top_phones": [
+            "s iː f l ɒ ɹ"
+          ]
+        },
+        {
+          "entry_id": 27487,
+          "word": "sequencer",
+          "display_word": "sequencer",
+          "part_of_speech": "noun",
+          "english": "Any device that activates or deactivates the components of a machine or system according to a preplanned sequence (as in a washing machine, or central heating system).",
+          "old_us_ipa": "/ˈsɛkwɛnkɝ/",
+          "new_us_ipa": "/sikwɛnsɚ/",
+          "us_candidates": [
+            "/sikwɛnsɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "s iː cʷ ɛ n s ɚ"
+          ]
+        },
+        {
+          "entry_id": 27488,
+          "word": "sequencer",
+          "display_word": "sequencer",
+          "part_of_speech": "noun",
+          "english": "A device or system that orders and/or modifies digitally stored music and sound for playback.",
+          "old_us_ipa": "/ˈsɛkwɛnkɝ/",
+          "new_us_ipa": "/sikwɛnsɚ/",
+          "us_candidates": [
+            "/sikwɛnsɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "s iː cʷ ɛ n s ɚ"
+          ]
+        },
+        {
+          "entry_id": 27841,
+          "word": "shiraz",
+          "display_word": "shiraz",
+          "part_of_speech": "proper noun",
+          "english": "A city in Iran, the seat of Shiraz County's Central District and the capital of Fars Province, near the remains of Persepolis.",
+          "old_us_ipa": "/ˈʃɝæz/",
+          "new_us_ipa": "/ʃɚɑz/",
+          "us_candidates": [
+            "/ʃɚɑz/"
+          ],
+          "raw_mfa_top_phones": [
+            "ʃ ɚ ɑː z"
+          ]
+        },
+        {
+          "entry_id": 27871,
+          "word": "shogi",
+          "display_word": "shogi",
+          "part_of_speech": "noun",
+          "english": "Japanese chess; a board game similar to chess, invented and traditionally played in Japan.",
+          "old_us_ipa": "/ˈʃɑɡɪ/",
+          "new_us_ipa": "/ʃoʊgi/",
+          "us_candidates": [
+            "/ʃoʊgi/"
+          ],
+          "raw_mfa_top_phones": [
+            "ʃ ow ɟ i"
+          ]
+        },
+        {
+          "entry_id": 28596,
+          "word": "snood",
+          "display_word": "snood",
+          "part_of_speech": "noun",
+          "english": "The flap of erectile red skin on the beak of a male turkey.",
+          "old_us_ipa": "/ˈsnuːd/",
+          "new_us_ipa": "/snud/",
+          "us_candidates": [
+            "/snud/"
+          ],
+          "raw_mfa_top_phones": [
+            "s n ʉː d"
+          ]
+        },
+        {
+          "entry_id": 28622,
+          "word": "snowboarding",
+          "display_word": "snowboarding",
+          "part_of_speech": "noun",
+          "english": "The sport of sliding downhill on a snowboard.",
+          "old_us_ipa": "/ˈsnaʊboʊɹdɪŋ/",
+          "new_us_ipa": "/snoʊbɑɹdɪŋ/",
+          "us_candidates": [
+            "/snoʊbɑɹdɪŋ/"
+          ],
+          "raw_mfa_top_phones": [
+            "s n ow b ɒ ɹ dʲ ɪ ŋ"
+          ]
+        },
+        {
+          "entry_id": 28706,
+          "word": "socinian",
+          "display_word": "socinian",
+          "part_of_speech": "noun",
+          "english": "A member of a particular nontrinitarian Christian denomination founded in the late 16th century.",
+          "old_us_ipa": "/ˈsɑkɪnɪæn/",
+          "new_us_ipa": "/soʊsɪniən/",
+          "us_candidates": [
+            "/soʊsɪniən/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ow s ɪ ɲ iː ə n"
+          ]
+        },
+        {
+          "entry_id": 28714,
+          "word": "socle",
+          "display_word": "socle",
+          "part_of_speech": "noun",
+          "english": "(architectural element) A low plinth or pedestal used to display a statue or other artwork.",
+          "old_us_ipa": "/ˈsɑkl/",
+          "new_us_ipa": "/soʊkəl/",
+          "us_candidates": [
+            "/soʊkəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ow k ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 28864,
+          "word": "sooth",
+          "display_word": "sooth",
+          "part_of_speech": "noun",
+          "english": "(archaic) Truth.",
+          "old_us_ipa": "/ˈsuːθ/",
+          "new_us_ipa": "/suθ/",
+          "us_candidates": [
+            "/suθ/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ʉː θ"
+          ]
+        },
+        {
+          "entry_id": 28883,
+          "word": "soreness",
+          "display_word": "soreness",
+          "part_of_speech": "noun",
+          "english": "The property, state, or condition of being sore; painfulness.",
+          "old_us_ipa": "/ˈsɑɹɛnɛss/",
+          "new_us_ipa": "/sɑɹnəs/",
+          "us_candidates": [
+            "/sɑɹnəs/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ɒ ɹ n ə s"
+          ]
+        },
+        {
+          "entry_id": 29825,
+          "word": "stratovolcano",
+          "display_word": "stratovolcano",
+          "part_of_speech": "noun",
+          "english": "(vulcanology) A tall conical volcano, composed of layers (or strata) of hardened lava, tephra and ash.",
+          "old_us_ipa": "/ˈstɹætɑvɑlkænɑ/",
+          "new_us_ipa": "/stɹætəvɑlkeɪnoʊ/",
+          "us_candidates": [
+            "/stɹætəvɑlkeɪnoʊ/"
+          ],
+          "raw_mfa_top_phones": [
+            "s t ɹ æ t ə v ɑː ɫ cʰ ej n ow"
+          ]
+        },
+        {
+          "entry_id": 29903,
+          "word": "stroboscope",
+          "display_word": "stroboscope",
+          "part_of_speech": "noun",
+          "english": "Instrument for studying or observing periodic movement by rendering a moving body visible only at regular intervals.",
+          "old_us_ipa": "/ˈstɹɑbɑskɑp/",
+          "new_us_ipa": "/stɹoʊbəskoʊp/",
+          "us_candidates": [
+            "/stɹoʊbəskoʊp/"
+          ],
+          "raw_mfa_top_phones": [
+            "s t ɹ ow b ə s k ow p"
+          ]
+        },
+        {
+          "entry_id": 29933,
+          "word": "structuralism",
+          "display_word": "structuralism",
+          "part_of_speech": "noun",
+          "english": "(linguistics) The theory that a human language is a self-contained structure related to other elements which make up its existence.",
+          "old_us_ipa": "/ˈstɹʌktɝælɪsm/",
+          "new_us_ipa": "/stɹʌktʃɹəlɪzəm/",
+          "us_candidates": [
+            "/stɹʌktʃɹəlɪzəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "s t ɹ ɐ k tʃ ɹ ə ʎ ɪ z ə m"
+          ]
+        },
+        {
+          "entry_id": 30014,
+          "word": "subclass",
+          "display_word": "subclass",
+          "part_of_speech": "noun",
+          "english": "(taxonomy) A rank directly below class.",
+          "old_us_ipa": "/ˈsʌbklæss/",
+          "new_us_ipa": "/səbklɑs/",
+          "us_candidates": [
+            "/səbklɑs/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ə b k l ɑː s"
+          ]
+        },
+        {
+          "entry_id": 30031,
+          "word": "suborder",
+          "display_word": "suborder",
+          "part_of_speech": "noun",
+          "english": "(taxonomy) A taxonomic category below order and above infraorder.",
+          "old_us_ipa": "/ˈsʌbɑɹdɝ/",
+          "new_us_ipa": "/səbɑɹdɚ/",
+          "us_candidates": [
+            "/səbɑɹdɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ə b ɒ ɹ dʲ ɚ"
+          ]
+        },
+        {
+          "entry_id": 30210,
+          "word": "sundew",
+          "display_word": "sundew",
+          "part_of_speech": "noun",
+          "english": "Any of a group of insectivorous plants in the genus Drosera that catch insects by sticky droplets (\"dew\") at the end of hairs on the leaves and grow in boggy ground all over the world.",
+          "old_us_ipa": "/ˈsʌndɛw/",
+          "new_us_ipa": "/sʌndu/",
+          "us_candidates": [
+            "/sʌndu/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ɐ n dʲ ʉ"
+          ]
+        },
+        {
+          "entry_id": 30235,
+          "word": "superannuated",
+          "display_word": "superannuated",
+          "part_of_speech": "adjective",
+          "english": "Obsolete, antiquated.",
+          "old_us_ipa": "/ˈsʌpɝænnʌætɛd/",
+          "new_us_ipa": "/supɚænueɪtɪd/",
+          "us_candidates": [
+            "/supɚænueɪtɪd/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ʉ p ɚ æ ɲ ʉ ej tʲ ɪ d"
+          ]
+        },
+        {
+          "entry_id": 30247,
+          "word": "superfluity",
+          "display_word": "superfluity",
+          "part_of_speech": "noun",
+          "english": "Something superfluous, as a luxury.",
+          "old_us_ipa": "/ˈsʌpɝflʌɪtj/",
+          "new_us_ipa": "/supɚfluɪti/",
+          "us_candidates": [
+            "/supɚfluɪti/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ʉː p ɚ f l ʉː ɪ tʲ i"
+          ]
+        },
+        {
+          "entry_id": 30272,
+          "word": "supersymmetry",
+          "display_word": "supersymmetry",
+          "part_of_speech": "noun",
+          "english": "(physics) A theory that attempts to unify the fundamental physical forces and which proposes a physical symmetry between bosons and fermions.",
+          "old_us_ipa": "/ˈsʌpɝsjmmɛtɹj/",
+          "new_us_ipa": "/supɚsɪmɛtɹi/",
+          "us_candidates": [
+            "/supɚsɪmɛtɹi/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ʉː p ɚ s ɪ m ɛ tʲ ɹ i"
+          ]
+        },
+        {
+          "entry_id": 30275,
+          "word": "supervillain",
+          "display_word": "supervillain",
+          "part_of_speech": "noun",
+          "english": "A fantasy-fiction criminal or evil-doer, often with supernatural powers or equipment, in popular children's and fantasy literature who can present a credible challenge for a superhero.",
+          "old_us_ipa": "/ˈsʌpɝvɪlleɪn/",
+          "new_us_ipa": "/supɚvɪlən/",
+          "us_candidates": [
+            "/supɚvɪlən/"
+          ],
+          "raw_mfa_top_phones": [
+            "s ʉ p ɚ vʲ ɪ l ə n"
+          ]
+        },
+        {
+          "entry_id": 30579,
+          "word": "tableland",
+          "display_word": "tableland",
+          "part_of_speech": "noun",
+          "english": "A relatively flat region of elevated terrain, particularly in reference to surrounding terrain.",
+          "old_us_ipa": "/ˈtæblɛlænd/",
+          "new_us_ipa": "/tæbləlænd/",
+          "us_candidates": [
+            "/tæbləlænd/"
+          ],
+          "raw_mfa_top_phones": [
+            "tʰ æ b l ə l æ n d"
+          ]
+        },
+        {
+          "entry_id": 30726,
+          "word": "tamarind",
+          "display_word": "tamarind",
+          "part_of_speech": "noun",
+          "english": "(botany) A tropical tree, Tamarindus indica.",
+          "old_us_ipa": "/ˈtæmæɹɪnd/",
+          "new_us_ipa": "/tæməɹɪnd/",
+          "us_candidates": [
+            "/tæməɹɪnd/"
+          ],
+          "raw_mfa_top_phones": [
+            "tʰ æ m ə ɹ ɪ n d"
+          ]
+        },
+        {
+          "entry_id": 31053,
+          "word": "terraforming",
+          "display_word": "terraforming",
+          "part_of_speech": "noun",
+          "english": "The hypothetical process of deliberately modifying the atmosphere, temperature, surface topography or ecology of a planet, moon, etc. to make it similar to those of Earth and thus suitable for human life.",
+          "old_us_ipa": "/ˈtɝɹæfɑɹmɪŋ/",
+          "new_us_ipa": "/tɛɹəfɑɹmɪŋ/",
+          "us_candidates": [
+            "/tɛɹəfɑɹmɪŋ/"
+          ],
+          "raw_mfa_top_phones": [
+            "tʰ ɛ ɹ ə f ɒ ɹ mʲ ɪ ŋ"
+          ]
+        },
+        {
+          "entry_id": 31248,
+          "word": "thessaly",
+          "display_word": "thessaly",
+          "part_of_speech": "proper noun",
+          "english": "A historical region and administrative region in north-central Greece; one of its 13 peripheries. It contains the prefectures of Karditsa, Larissa, Magnesia and Trikala.",
+          "old_us_ipa": "/ˈθɛssælj/",
+          "new_us_ipa": "/θɛsəli/",
+          "us_candidates": [
+            "/θɛsəli/"
+          ],
+          "raw_mfa_top_phones": [
+            "θ ɛ s ə ʎ i"
+          ]
+        },
+        {
+          "entry_id": 31269,
+          "word": "thimphu",
+          "display_word": "thimphu",
+          "part_of_speech": "proper noun",
+          "english": "The capital city of Bhutan.",
+          "old_us_ipa": "/ˈθɪmfʌ/",
+          "new_us_ipa": "/tɪmpu/",
+          "us_candidates": [
+            "/tɪmpu/"
+          ],
+          "raw_mfa_top_phones": [
+            "tʲ ɪ m pʰ ʉː"
+          ]
+        },
+        {
+          "entry_id": 31401,
+          "word": "thumbscrew",
+          "display_word": "thumbscrew",
+          "part_of_speech": "noun",
+          "english": "An instrument of torture used to crush the fingers.",
+          "old_us_ipa": "/ˈθʌmbskɹɛw/",
+          "new_us_ipa": "/θʌmskɹu/",
+          "us_candidates": [
+            "/θʌmskɹu/"
+          ],
+          "raw_mfa_top_phones": [
+            "θ ɐ m s k ɹ ʉː"
+          ]
+        },
+        {
+          "entry_id": 31680,
+          "word": "toothache",
+          "display_word": "toothache",
+          "part_of_speech": "noun",
+          "english": "(medicine) A pain or ache in a tooth.",
+          "old_us_ipa": "/ˈtuːθætʃ/",
+          "new_us_ipa": "/tuθeɪk/",
+          "us_candidates": [
+            "/tuθeɪk/"
+          ],
+          "raw_mfa_top_phones": [
+            "tʰ ʉ θ ej k"
+          ]
+        },
+        {
+          "entry_id": 31701,
+          "word": "toponym",
+          "display_word": "toponym",
+          "part_of_speech": "noun",
+          "english": "(less common) A word derived from the name of a place.",
+          "old_us_ipa": "/ˈtɑpɑnjm/",
+          "new_us_ipa": "/tɑpənɪm/",
+          "us_candidates": [
+            "/tɑpənɪm/"
+          ],
+          "raw_mfa_top_phones": [
+            "tʰ ɑ p ə ɲ ɪ m"
+          ]
+        },
+        {
+          "entry_id": 31940,
+          "word": "transnistria",
+          "display_word": "transnistria",
+          "part_of_speech": "proper noun",
+          "english": "A geographic region and de-facto independent but unrecognized country in Eastern Europe that claims statehood as the Pridnestrovian Moldavian Republic; internationally considered an autonomous territorial unit within Moldova.",
+          "old_us_ipa": "/ˈtɹænsnɪstɹɪæ/",
+          "new_us_ipa": "/tɹænznɪstɹiə/",
+          "us_candidates": [
+            "/tɹænznɪstɹiə/"
+          ],
+          "raw_mfa_top_phones": [
+            "t ɹ æ n z ɲ ɪ s tʲ ɹ i ə"
+          ]
+        },
+        {
+          "entry_id": 32258,
+          "word": "tsarist",
+          "display_word": "tsarist",
+          "part_of_speech": "adjective",
+          "english": "from the time of the tsar in Russia",
+          "old_us_ipa": "/ˈtsæɹɪst/",
+          "new_us_ipa": "/zɑɹɪst/",
+          "us_candidates": [
+            "/zɑɹɪst/"
+          ],
+          "raw_mfa_top_phones": [
+            "z ɑː ɹ ɪ s t"
+          ]
+        },
+        {
+          "entry_id": 32564,
+          "word": "undead",
+          "display_word": "undead",
+          "part_of_speech": "adjective",
+          "english": "(horror fiction) Being animate, though non-living.",
+          "old_us_ipa": "/ˈʌndiːd/",
+          "new_us_ipa": "/ʌndɛd/",
+          "us_candidates": [
+            "/ʌndɛd/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɐ n d ɛ d"
+          ]
+        },
+        {
+          "entry_id": 32565,
+          "word": "undead",
+          "display_word": "undead",
+          "part_of_speech": "noun",
+          "english": "(horror and fantasy fiction) A creature that is undead; that is, dead but still animate.",
+          "old_us_ipa": "/ˈʌndiːd/",
+          "new_us_ipa": "/ʌndɛd/",
+          "us_candidates": [
+            "/ʌndɛd/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɐ n d ɛ d"
+          ]
+        },
+        {
+          "entry_id": 32738,
+          "word": "unquiet",
+          "display_word": "unquiet",
+          "part_of_speech": "adjective",
+          "english": "Uneasy and restless; unable to settle.",
+          "old_us_ipa": "/ˈʌnkwɪɛt/",
+          "new_us_ipa": "/ʌŋkaɪɪt/",
+          "us_candidates": [
+            "/ʌŋkaɪɪt/"
+          ],
+          "raw_mfa_top_phones": [
+            "ɐ ŋ kʷ aj ɪ t"
+          ]
+        },
+        {
+          "entry_id": 32866,
+          "word": "usability",
+          "display_word": "usability",
+          "part_of_speech": "noun",
+          "english": "The state or condition of being usable.",
+          "old_us_ipa": "/ˈʌsæbɪlɪtj/",
+          "new_us_ipa": "/juzəbɪlɪti/",
+          "us_candidates": [
+            "/juzəbɪlɪti/"
+          ],
+          "raw_mfa_top_phones": [
+            "j ʉː z ə bʲ ɪ ʎ ɪ tʲ i"
+          ]
+        },
+        {
+          "entry_id": 32867,
+          "word": "usability",
+          "display_word": "usability",
+          "part_of_speech": "noun",
+          "english": "The degree to which an object, device, software application, etc. is easy to use with no specific training.",
+          "old_us_ipa": "/ˈʌsæbɪlɪtj/",
+          "new_us_ipa": "/juzəbɪlɪti/",
+          "us_candidates": [
+            "/juzəbɪlɪti/"
+          ],
+          "raw_mfa_top_phones": [
+            "j ʉː z ə bʲ ɪ ʎ ɪ tʲ i"
+          ]
+        },
+        {
+          "entry_id": 32896,
+          "word": "utilise",
+          "display_word": "utilise",
+          "part_of_speech": "verb",
+          "english": "To make best use of; to use to its fullest extent, potential, or ability.",
+          "old_us_ipa": "/ˈʌtɪlɪs/",
+          "new_us_ipa": "/jutɪlaɪz/",
+          "us_candidates": [
+            "/jutɪlaɪz/"
+          ],
+          "raw_mfa_top_phones": [
+            "j ʉː tʲ ɪ l aj z"
+          ]
+        },
+        {
+          "entry_id": 32897,
+          "word": "utilitarianism",
+          "display_word": "utilitarianism",
+          "part_of_speech": "noun",
+          "english": "(philosophy) The theory that action should be directed toward achieving the \"greatest happiness for the greatest number of people\" (hedonistic universalism), or one of various related theories.",
+          "old_us_ipa": "/ˈʌtɪlɪtæɹɪænɪsm/",
+          "new_us_ipa": "/jutɪlɪtɛɹiənɪzəm/",
+          "us_candidates": [
+            "/jutɪlɪtɛɹiənɪzəm/"
+          ],
+          "raw_mfa_top_phones": [
+            "j ʉ tʲ ɪ ʎ ɪ tʰ ɛ ɹ i ə ɲ ɪ z ə m"
+          ]
+        },
+        {
+          "entry_id": 32904,
+          "word": "utrecht",
+          "display_word": "utrecht",
+          "part_of_speech": "proper noun",
+          "english": "A city and municipality, the capital of Utrecht province, Netherlands.",
+          "old_us_ipa": "/ˈʌtɹɛtʃt/",
+          "new_us_ipa": "/jutɹɛkt/",
+          "us_candidates": [
+            "/jutɹɛkt/"
+          ],
+          "raw_mfa_top_phones": [
+            "j ʉ t ɹ ɛ k t"
+          ]
+        },
+        {
+          "entry_id": 32905,
+          "word": "utrecht",
+          "display_word": "utrecht",
+          "part_of_speech": "proper noun",
+          "english": "A province of the Netherlands.",
+          "old_us_ipa": "/ˈʌtɹɛtʃt/",
+          "new_us_ipa": "/jutɹɛkt/",
+          "us_candidates": [
+            "/jutɹɛkt/"
+          ],
+          "raw_mfa_top_phones": [
+            "j ʉ t ɹ ɛ k t"
+          ]
+        },
+        {
+          "entry_id": 32931,
+          "word": "vacuole",
+          "display_word": "vacuole",
+          "part_of_speech": "noun",
+          "english": "(cytology) A large membrane-bound vesicle in a cell's cytoplasm.",
+          "old_us_ipa": "/ˈvækʌɑl/",
+          "new_us_ipa": "/vækʊoʊl/",
+          "us_candidates": [
+            "/vækʊoʊl/"
+          ],
+          "raw_mfa_top_phones": [
+            "v æ c ʊ ow ɫ"
+          ]
+        },
+        {
+          "entry_id": 33007,
+          "word": "varangian",
+          "display_word": "varangian",
+          "part_of_speech": "noun",
+          "english": "(historical) A member of the ethnically Scandinavian people around the borders of Constantinople in the ninth and tenth centuries.",
+          "old_us_ipa": "/ˈvæɹæŋɪæn/",
+          "new_us_ipa": "/vəɹændʒiən/",
+          "us_candidates": [
+            "/vəɹændʒiən/"
+          ],
+          "raw_mfa_top_phones": [
+            "v ə ɹ æ n dʒ i ə n"
+          ]
+        },
+        {
+          "entry_id": 33115,
+          "word": "veracruz",
+          "display_word": "veracruz",
+          "part_of_speech": "proper noun",
+          "english": "A city in Veracruz, Mexico.",
+          "old_us_ipa": "/ˈvɝækɹʌz/",
+          "new_us_ipa": "/vɛɹəkɹuz/",
+          "us_candidates": [
+            "/vɛɹəkɹuz/"
+          ],
+          "raw_mfa_top_phones": [
+            "v ɛ ɹ ə c ɹ ʉː z"
+          ]
+        },
+        {
+          "entry_id": 33255,
+          "word": "vientiane",
+          "display_word": "vientiane",
+          "part_of_speech": "proper noun",
+          "english": "The capital city of Laos.",
+          "old_us_ipa": "/ˈvɪɛntɪæn/",
+          "new_us_ipa": "/vɛntɑn/",
+          "us_candidates": [
+            "/vɛntɑn/"
+          ],
+          "raw_mfa_top_phones": [
+            "v ɛ n t ɑː n"
+          ]
+        },
+        {
+          "entry_id": 33256,
+          "word": "vientiane",
+          "display_word": "vientiane",
+          "part_of_speech": "proper noun",
+          "english": "A prefecture of Laos. Capital: Vientiane (city).",
+          "old_us_ipa": "/ˈvɪɛntɪæn/",
+          "new_us_ipa": "/vɛntɑn/",
+          "us_candidates": [
+            "/vɛntɑn/"
+          ],
+          "raw_mfa_top_phones": [
+            "v ɛ n t ɑː n"
+          ]
+        },
+        {
+          "entry_id": 33257,
+          "word": "vientiane",
+          "display_word": "vientiane",
+          "part_of_speech": "proper noun",
+          "english": "A province of Laos. Capital: Phonhong.",
+          "old_us_ipa": "/ˈvɪɛntɪæn/",
+          "new_us_ipa": "/vɛntɑn/",
+          "us_candidates": [
+            "/vɛntɑn/"
+          ],
+          "raw_mfa_top_phones": [
+            "v ɛ n t ɑː n"
+          ]
+        },
+        {
+          "entry_id": 33271,
+          "word": "viewable",
+          "display_word": "viewable",
+          "part_of_speech": "adjective",
+          "english": "Able to be viewed.",
+          "old_us_ipa": "/ˈvɪɛwæbl/",
+          "new_us_ipa": "/vuəbəl/",
+          "us_candidates": [
+            "/vuəbəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "vʲ ʉː ə b ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 33599,
+          "word": "wasabi",
+          "display_word": "wasabi",
+          "part_of_speech": "noun",
+          "english": "A pungent green Japanese condiment made from the plant Eutrema japonicum (syn. Wasabia japonica).",
+          "old_us_ipa": "/ˈwæsæbɪ/",
+          "new_us_ipa": "/wəsɑbi/",
+          "us_candidates": [
+            "/wəsɑbi/"
+          ],
+          "raw_mfa_top_phones": [
+            "w ə s ɑː bʲ i"
+          ]
+        },
+        {
+          "entry_id": 33851,
+          "word": "whangdoodle",
+          "display_word": "whangdoodle",
+          "part_of_speech": "noun",
+          "english": "(often, humorous) A whimsical monster in folklore and children's fiction; a bugbear.",
+          "old_us_ipa": "/ˈwhæŋduːdl/",
+          "new_us_ipa": "/wæŋdudəl/",
+          "us_candidates": [
+            "/wæŋdudəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "w æ ŋ d ʉː d ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 33852,
+          "word": "whangdoodle",
+          "display_word": "whangdoodle",
+          "part_of_speech": "noun",
+          "english": "(obsolete) Term of disparagement",
+          "old_us_ipa": "/ˈwhæŋduːdl/",
+          "new_us_ipa": "/wæŋdudəl/",
+          "us_candidates": [
+            "/wæŋdudəl/"
+          ],
+          "raw_mfa_top_phones": [
+            "w æ ŋ d ʉː d ə ɫ"
+          ]
+        },
+        {
+          "entry_id": 34065,
+          "word": "wildfowl",
+          "display_word": "wildfowl",
+          "part_of_speech": "noun",
+          "english": "Any wild bird such as ducks, geese or swans.",
+          "old_us_ipa": "/ˈwɪldfaʊl/",
+          "new_us_ipa": "/waɪldfaʊl/",
+          "us_candidates": [
+            "/waɪldfaʊl/"
+          ],
+          "raw_mfa_top_phones": [
+            "w aj ɫ d f aw ɫ"
+          ]
+        },
+        {
+          "entry_id": 34112,
+          "word": "windsurfing",
+          "display_word": "windsurfing",
+          "part_of_speech": "noun",
+          "english": "A marine sport in which one stands on a floating board (typically 2 - 3 meters in length) to which a sail is attached. The board is steered by tilting the sail or banking the board. Some windsurfers use large waves to perform jumps and other stunts.",
+          "old_us_ipa": "/ˈwɪndsɝfɪŋ/",
+          "new_us_ipa": "/wɪndsɝfɪŋ/",
+          "us_candidates": [
+            "/wɪndsɝfɪŋ/"
+          ],
+          "raw_mfa_top_phones": [
+            "w ɪ n d s ɝ fʲ ɪ ŋ"
+          ]
+        },
+        {
+          "entry_id": 34456,
+          "word": "xylem",
+          "display_word": "xylem",
+          "part_of_speech": "noun",
+          "english": "(botany) A vascular tissue in land plants primarily responsible for the distribution of water and minerals taken up by the roots; also the primary component of wood.",
+          "old_us_ipa": "/ˈksjlɛm/",
+          "new_us_ipa": "/zaɪləm/",
+          "us_candidates": [
+            "/zaɪləm/"
+          ],
+          "raw_mfa_top_phones": [
+            "z aj l ə m"
+          ]
+        },
+        {
+          "entry_id": 34643,
+          "word": "zechariah",
+          "display_word": "zechariah",
+          "part_of_speech": "proper noun",
+          "english": "(biblical character) A king of Israel mentioned in the second book of Kings.",
+          "old_us_ipa": "/ˈzɛtʃæɹɪæh/",
+          "new_us_ipa": "/zɛkəɹaɪə/",
+          "us_candidates": [
+            "/zɛkəɹaɪə/"
+          ],
+          "raw_mfa_top_phones": [
+            "z ɛ k ə ɹ aj ə"
+          ]
+        },
+        {
+          "entry_id": 34644,
+          "word": "zechariah",
+          "display_word": "zechariah",
+          "part_of_speech": "proper noun",
+          "english": "(book of the bible) A book of the Old Testament and the Hebrew Tanakh.",
+          "old_us_ipa": "/ˈzɛtʃæɹɪæh/",
+          "new_us_ipa": "/zɛkəɹaɪə/",
+          "us_candidates": [
+            "/zɛkəɹaɪə/"
+          ],
+          "raw_mfa_top_phones": [
+            "z ɛ k ə ɹ aj ə"
+          ]
+        },
+        {
+          "entry_id": 34645,
+          "word": "zechariah",
+          "display_word": "zechariah",
+          "part_of_speech": "proper noun",
+          "english": "(biblical character) A Hebrew prophet traditionally considered the author of the Book of Zechariah, the eleventh of the Twelve Minor Prophets.",
+          "old_us_ipa": "/ˈzɛtʃæɹɪæh/",
+          "new_us_ipa": "/zɛkəɹaɪə/",
+          "us_candidates": [
+            "/zɛkəɹaɪə/"
+          ],
+          "raw_mfa_top_phones": [
+            "z ɛ k ə ɹ aj ə"
+          ]
+        },
+        {
+          "entry_id": 34704,
+          "word": "zoroaster",
+          "display_word": "zoroaster",
+          "part_of_speech": "proper noun",
+          "english": "An ancient Iranian prophet after whom the indigenous Iranian ethnic religion, Zoroastrianism, is named, also venerated in Mithraism.",
+          "old_us_ipa": "/ˈzɑɹoʊstɝ/",
+          "new_us_ipa": "/zɑɹoʊæstɚ/",
+          "us_candidates": [
+            "/zɑɹoʊæstɚ/"
+          ],
+          "raw_mfa_top_phones": [
+            "z ɒ ɹ ow æ s t ɚ"
+          ]
+        }
+      ],
+      "deferred": [
+        {
+          "entry_id": 492,
+          "word": "adiabatic",
+          "display_word": "adiabatic",
+          "part_of_speech": "adjective",
+          "english": "(physics, thermodynamics, of a process) Without gain or loss of heat (and thus with no change in entropy, in the quasistatic approximation).",
+          "current_us_ipa": "/ˈædɪæbætɪk/",
+          "us_candidates": [
+            "/eɪdaɪəbætɪk/",
+            "/eɪdɪəbætɪk/",
+            "/ædɪəbætɪk/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 3181,
+          "word": "belarusian",
+          "display_word": "belarusian",
+          "part_of_speech": "noun",
+          "english": "The Slavic language spoken in Belarus (formerly called White Ruthenia or White Russia).",
+          "current_us_ipa": "/ˈbɛlæɹʌsɪæn/",
+          "us_candidates": [
+            "/bɛləɹusiən/",
+            "/bɛləɹuʃən/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 3182,
+          "word": "belarusian",
+          "display_word": "belarusian",
+          "part_of_speech": "noun",
+          "english": "A citizen of Belarus.",
+          "current_us_ipa": "/ˈbɛlæɹʌsɪæn/",
+          "us_candidates": [
+            "/bɛləɹusiən/",
+            "/bɛləɹuʃən/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 5040,
+          "word": "canid",
+          "display_word": "canid",
+          "part_of_speech": "noun",
+          "english": "Any member of the family Canidae, including canines (dogs, wolves, coyotes and jackals) and vulpines (foxes).",
+          "current_us_ipa": "/ˈkænɪd/",
+          "us_candidates": [
+            "/keɪnəd/",
+            "/kænəd/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 14975,
+          "word": "hiragana",
+          "display_word": "hiragana",
+          "part_of_speech": "noun",
+          "english": "The main syllabary for the Japanese language, used to represent native Japanese words, including particles, and when kanji is used, to represent verb and adjective endings.",
+          "current_us_ipa": "/ˈhɝæɡænæ/",
+          "us_candidates": [
+            "/hɪɹəɡænə/",
+            "/hɪɹəɡɑnə/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 16348,
+          "word": "interlingua",
+          "display_word": "interlingua",
+          "part_of_speech": "proper noun",
+          "english": "A constructed interlanguage based on Romance languages, English, German, Russian and Latin, developed by the International Auxiliary Language Association, and first published in 1951.",
+          "current_us_ipa": "/ˈɪntɝlɪŋʌæ/",
+          "us_candidates": [
+            "/ɪntɚlɪŋɡə/",
+            "/ɪnɚlɪŋɡə/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 17038,
+          "word": "kannada",
+          "display_word": "kannada",
+          "part_of_speech": "noun",
+          "english": "The Dravidian language that is the official language of the state of Karnataka, India.",
+          "current_us_ipa": "/ˈkænnædæ/",
+          "us_candidates": [
+            "/kænədə/",
+            "/kɑnədə/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 17052,
+          "word": "karelia",
+          "display_word": "karelia",
+          "part_of_speech": "proper noun",
+          "english": "A historical region of Northern Europe, located to the north of Saint Petersburg and politically split between Russia and Finland.",
+          "current_us_ipa": "/ˈkæɹɛlɪæ/",
+          "us_candidates": [
+            "/kəɹeɪlɪə/",
+            "/kəɹilɪə/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 17053,
+          "word": "karelia",
+          "display_word": "karelia",
+          "part_of_speech": "proper noun",
+          "english": "A republic and federal subject of Russia. Official name: Republic of Karelia. Capital: Petrozavodsk.",
+          "current_us_ipa": "/ˈkæɹɛlɪæ/",
+          "us_candidates": [
+            "/kəɹeɪlɪə/",
+            "/kəɹilɪə/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 20217,
+          "word": "moravia",
+          "display_word": "moravia",
+          "part_of_speech": "proper noun",
+          "english": "A historic region in the eastern Czech Republic.",
+          "current_us_ipa": "/ˈmɑɹævɪæ/",
+          "us_candidates": [
+            "/mɑɹeɪviə/",
+            "/məɹeɪviə/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 22442,
+          "word": "pangolin",
+          "display_word": "pangolin",
+          "part_of_speech": "noun",
+          "english": "Any of several long-tailed, scale-covered mammals of the family Manidae within the order Pholidota of tropical Africa and Asia.",
+          "current_us_ipa": "/ˈpæŋɑlɪn/",
+          "us_candidates": [
+            "/pæŋɡoʊlɪn/",
+            "/pæŋɡəlɪn/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 22672,
+          "word": "pashto",
+          "display_word": "pashto",
+          "part_of_speech": "noun",
+          "english": "The native Indo-Iranian language of the Pashtun people; an official language of Afghanistan and Khyber Pakhtunkhwa, Pakistan.",
+          "current_us_ipa": "/ˈpæʃtɑ/",
+          "us_candidates": [
+            "/pæʃtoʊ/",
+            "/pʌʃtoʊ/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 23921,
+          "word": "porcine",
+          "display_word": "porcine",
+          "part_of_speech": "adjective",
+          "english": "Of or pertaining to pigs.",
+          "current_us_ipa": "/ˈpɑɹkɪn/",
+          "us_candidates": [
+            "/pɑɹsaɪn/",
+            "/pɑɹsin/",
+            "/pɑɹsɪn/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 23922,
+          "word": "porcine",
+          "display_word": "porcine",
+          "part_of_speech": "adjective",
+          "english": "(derogatory) Overweight to the extent of resembling a pig; morbidly obese.",
+          "current_us_ipa": "/ˈpɑɹkɪn/",
+          "us_candidates": [
+            "/pɑɹsaɪn/",
+            "/pɑɹsin/",
+            "/pɑɹsɪn/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 24990,
+          "word": "quechua",
+          "display_word": "quechua",
+          "part_of_speech": "proper noun",
+          "english": "The language spoken by these people.",
+          "current_us_ipa": "/ˈkwɛtʃʌæ/",
+          "us_candidates": [
+            "/kɛtʃwə/",
+            "/kɛtʃəwə/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 26610,
+          "word": "ryukyu",
+          "display_word": "ryukyu",
+          "part_of_speech": "proper noun",
+          "english": "A chain of islands in Japan roughly between Kyushu and Taiwan.",
+          "current_us_ipa": "/ˈɹjʌkjʌ/",
+          "us_candidates": [
+            "/ɹiuku/",
+            "/ɹjuku/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 27513,
+          "word": "serif",
+          "display_word": "serif",
+          "part_of_speech": "noun",
+          "english": "(typography) A short line added to the end of a stroke in traditional typefaces, such as Times New Roman.",
+          "current_us_ipa": "/ˈsɝɪf/",
+          "us_candidates": [
+            "/sɛɹif/",
+            "/sɛɹəf/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 29983,
+          "word": "stuntman",
+          "display_word": "stuntman",
+          "part_of_speech": "noun",
+          "english": "In films, someone who performs stunts that are deemed too dangerous or physically difficult for the main actors to attempt.",
+          "current_us_ipa": "/ˈstʌntmæn/",
+          "us_candidates": [
+            "/stʌntmæn/",
+            "/stʌntmən/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 29985,
+          "word": "stupefy",
+          "display_word": "stupefy",
+          "part_of_speech": "verb",
+          "english": "(transitive, especially, law) To dull the senses or capacity to think thereby reducing responsiveness; to stun.",
+          "current_us_ipa": "/ˈstʌpɛfj/",
+          "us_candidates": [
+            "/stupəfaɪ/",
+            "/stʃupəfaɪ/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 30370,
+          "word": "suzerain",
+          "display_word": "suzerain",
+          "part_of_speech": "noun",
+          "english": "(international, _, politics) A dominant nation or state that has control over the international affairs of a subservient state which otherwise has domestic autonomy.",
+          "current_us_ipa": "/ˈsʌzɝeɪn/",
+          "us_candidates": [
+            "/suzəɹeɪn/",
+            "/suzəɹən/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 30371,
+          "word": "suzerain",
+          "display_word": "suzerain",
+          "part_of_speech": "noun",
+          "english": "(historical) A feudal landowner to whom vassals were forced to pledge allegiance.",
+          "current_us_ipa": "/ˈsʌzɝeɪn/",
+          "us_candidates": [
+            "/suzəɹeɪn/",
+            "/suzəɹən/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 30372,
+          "word": "suzerainty",
+          "display_word": "suzerainty",
+          "part_of_speech": "noun",
+          "english": "A relation between states in which a subservient nation has its own government, but is unable to take international action independent of the superior state; a similar relationship between other entities.",
+          "current_us_ipa": "/ˈsʌzɝeɪntj/",
+          "us_candidates": [
+            "/suzəɹeɪnti/",
+            "/suzəɹənti/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 30719,
+          "word": "tallinn",
+          "display_word": "tallinn",
+          "part_of_speech": "proper noun",
+          "english": "The capital city of Estonia.",
+          "current_us_ipa": "/ˈtællɪnn/",
+          "us_candidates": [
+            "/tælɪn/",
+            "/tɑlɪn/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        },
+        {
+          "entry_id": 31247,
+          "word": "thessaloniki",
+          "display_word": "thessaloniki",
+          "part_of_speech": "proper noun",
+          "english": "A port city, the capital of Central Macedonia, in northern Greece.",
+          "current_us_ipa": "/ˈθɛssælɑnɪkɪ/",
+          "us_candidates": [
+            "/θɛsləniki/",
+            "/θɛsələniki/"
+          ],
+          "deferred_reason": "multiple equal-priority or low-probability MFA v3.1 candidates after broad IPA normalization"
+        }
+      ],
+      "deferred_policy": "MFA candidates with multiple equal top-probability variants or low top probability remain generated_fallback/deferred until manually reviewed or verified from another source."
     }
   ]
 }

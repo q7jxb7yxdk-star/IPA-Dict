@@ -1,6 +1,7 @@
 import Combine
 import SwiftUI
 import Translation
+import UniformTypeIdentifiers
 
 @MainActor
 final class DictionarySearchViewModel: ObservableObject {
@@ -74,6 +75,38 @@ final class DictionarySearchViewModel: ObservableObject {
         isLoading = false
     }
 
+    func personalDraft(
+        word: String,
+        fallbackEntries: [DictionaryEntry]
+    ) async throws -> EditablePersonalDictionaryEntry {
+        try await service.personalDraft(
+            word: word,
+            fallbackEntries: fallbackEntries
+        )
+    }
+
+    func savePersonalDraft(
+        _ draft: EditablePersonalDictionaryEntry
+    ) async throws -> [DictionaryEntry] {
+        try await service.savePersonalDraft(draft)
+    }
+
+    func deletePersonalEntry(word: String) async throws {
+        try await service.deletePersonalEntry(word: word)
+    }
+
+    func personalDatabaseURL() async throws -> URL {
+        try await service.personalDatabaseURL()
+    }
+
+    func personalExportDocument() async throws -> PersonalDictionaryDocument {
+        try await service.personalExportDocument()
+    }
+
+    func importPersonalDatabase(from url: URL) async throws {
+        try await service.importPersonalDatabase(from: url)
+    }
+
     func clearResult() {
         entries = []
         entriesAwaitingTranslation = []
@@ -104,6 +137,14 @@ struct DictionarySearchView: View {
     @State private var selectedHistoryIndex: Int?
     @State private var hasActivatedSearch = false
     @State private var hasCompletedInitialAppearance = false
+    @State private var editingDraft: EditablePersonalDictionaryEntry?
+    @State private var isSavingPersonalEntry = false
+    @State private var showsResetPersonalConfirmation = false
+    @State private var personalActionError: String?
+    @State private var personalActionMessage: String?
+    @State private var exportDocument: PersonalDictionaryDocument?
+    @State private var showsPersonalExport = false
+    @State private var showsPersonalImport = false
     @FocusState private var isSearchFocused: Bool
 
     var body: some View {
@@ -155,6 +196,81 @@ struct DictionarySearchView: View {
                 } message: {
                     Text("清除後無法復原。")
                 }
+                .alert(
+                    "私人字典操作失敗",
+                    isPresented: personalErrorAlertBinding
+                ) {
+                    Button("好", role: .cancel) {
+                        personalActionError = nil
+                    }
+                } message: {
+                    Text(personalActionError ?? "")
+                }
+                .confirmationDialog(
+                    "還原原始詞庫？",
+                    isPresented: $showsResetPersonalConfirmation,
+                    titleVisibility: .visible
+                ) {
+                    Button("刪除私人修改", role: .destructive) {
+                        resetPersonalEntry()
+                    }
+                    Button("取消", role: .cancel) {}
+                } message: {
+                    Text("這會刪除此字的私人筆記，查詢結果會回到原本字典資料。")
+                }
+                .alert(
+                    "私人字典",
+                    isPresented: personalMessageAlertBinding
+                ) {
+                    Button("好", role: .cancel) {
+                        personalActionMessage = nil
+                    }
+                } message: {
+                    Text(personalActionMessage ?? "")
+                }
+                .sheet(
+                    isPresented: personalEditorSheetBinding
+                ) {
+                    if editingDraft != nil {
+                        PersonalEntryEditView(
+                            draft: Binding(
+                                get: {
+                                    editingDraft ?? EditablePersonalDictionaryEntry(
+                                        word: "",
+                                        ukIPA: "",
+                                        usIPA: "",
+                                        senses: []
+                                    )
+                                },
+                                set: { editingDraft = $0 }
+                            ),
+                            isSaving: isSavingPersonalEntry,
+                            onSave: {
+                                savePersonalEntry()
+                            },
+                            onCancel: {
+                                if !isSavingPersonalEntry {
+                                    editingDraft = nil
+                                }
+                            }
+                        )
+                    }
+                }
+                .fileExporter(
+                    isPresented: $showsPersonalExport,
+                    document: exportDocument,
+                    contentType: .sqliteDatabase,
+                    defaultFilename: "PersonalDictionary.sqlite"
+                ) { result in
+                    handlePersonalExportCompletion(result)
+                }
+                .fileImporter(
+                    isPresented: $showsPersonalImport,
+                    allowedContentTypes: [.sqliteDatabase, .data],
+                    allowsMultipleSelection: false
+                ) { result in
+                    handlePersonalImportSelection(result)
+                }
                 .onAppear {
                     isSearchFocused = false
                     showsHistorySuggestions = false
@@ -201,6 +317,44 @@ struct DictionarySearchView: View {
 
             floatingHistoryDropdown
         }
+        .toolbar {
+            ToolbarItem(placement: .secondaryAction) {
+                personalDictionaryMenu
+            }
+        }
+    }
+
+    private var personalErrorAlertBinding: Binding<Bool> {
+        Binding(
+            get: { personalActionError != nil },
+            set: { isPresented in
+                if !isPresented {
+                    personalActionError = nil
+                }
+            }
+        )
+    }
+
+    private var personalMessageAlertBinding: Binding<Bool> {
+        Binding(
+            get: { personalActionMessage != nil },
+            set: { isPresented in
+                if !isPresented {
+                    personalActionMessage = nil
+                }
+            }
+        )
+    }
+
+    private var personalEditorSheetBinding: Binding<Bool> {
+        Binding(
+            get: { editingDraft != nil },
+            set: { isPresented in
+                if !isPresented, !isSavingPersonalEntry {
+                    editingDraft = nil
+                }
+            }
+        )
     }
 
     private func resultContent(_ result: DictionarySearchResult) -> some View {
@@ -258,6 +412,27 @@ struct DictionarySearchView: View {
         }
         .background(Color.searchBackground)
         .navigationTitle(result.word)
+        .toolbar {
+            ToolbarItem(placement: .secondaryAction) {
+                personalDictionaryMenu
+            }
+
+            ToolbarItemGroup(placement: .primaryAction) {
+                if result.isPersonal {
+                    Text("私人筆記")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+
+                    Button("還原") {
+                        showsResetPersonalConfirmation = true
+                    }
+                }
+
+                Button("編輯") {
+                    preparePersonalEditor(for: result)
+                }
+            }
+        }
         #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
         #endif
@@ -385,6 +560,25 @@ struct DictionarySearchView: View {
         .padding(.vertical)
         .frame(maxWidth: 820)
         .zIndex(10)
+    }
+
+    private var personalDictionaryMenu: some View {
+        Menu {
+            Button {
+                preparePersonalDictionaryExport()
+            } label: {
+                Label("匯出到 iCloud Drive", systemImage: "square.and.arrow.up")
+            }
+
+            Button {
+                showsPersonalImport = true
+            } label: {
+                Label("從 iCloud Drive 匯入", systemImage: "square.and.arrow.down")
+            }
+        } label: {
+            Label("私人字典", systemImage: "externaldrive")
+        }
+        .disabled(isSavingPersonalEntry)
     }
 
     @ViewBuilder
@@ -618,6 +812,101 @@ struct DictionarySearchView: View {
         viewModel.search(word: word)
     }
 
+    private func preparePersonalEditor(for result: DictionarySearchResult) {
+        Task {
+            do {
+                let draft = try await viewModel.personalDraft(
+                    word: result.word,
+                    fallbackEntries: result.entries
+                )
+                editingDraft = draft
+            } catch {
+                personalActionError = error.localizedDescription
+            }
+        }
+    }
+
+    private func savePersonalEntry() {
+        guard let draft = editingDraft else { return }
+        isSavingPersonalEntry = true
+
+        Task {
+            do {
+                let savedEntries = try await viewModel.savePersonalDraft(draft)
+                presentedResult = DictionarySearchResult(
+                    word: EditablePersonalDictionaryEntry.normalizedWord(draft.word),
+                    entries: savedEntries
+                )
+                editingDraft = nil
+            } catch {
+                personalActionError = error.localizedDescription
+            }
+            isSavingPersonalEntry = false
+        }
+    }
+
+    private func resetPersonalEntry() {
+        guard let result = presentedResult else { return }
+
+        Task {
+            do {
+                try await viewModel.deletePersonalEntry(word: result.word)
+                viewModel.search(word: result.word)
+            } catch {
+                personalActionError = error.localizedDescription
+            }
+        }
+    }
+
+    private func preparePersonalDictionaryExport() {
+        Task {
+            do {
+                exportDocument = try await viewModel.personalExportDocument()
+                showsPersonalExport = true
+            } catch {
+                personalActionError = error.localizedDescription
+            }
+        }
+    }
+
+    private func handlePersonalExportCompletion(
+        _ result: Result<URL, Error>
+    ) {
+        switch result {
+        case .success:
+            personalActionMessage = "私人字典已匯出。你可以在 iCloud Drive／Files App 保留這個 SQLite 備份。"
+        case .failure(let error):
+            personalActionError = error.localizedDescription
+        }
+    }
+
+    private func handlePersonalImportSelection(
+        _ result: Result<[URL], Error>
+    ) {
+        switch result {
+        case .success(let urls):
+            guard let url = urls.first else { return }
+            importPersonalDictionary(from: url)
+        case .failure(let error):
+            personalActionError = error.localizedDescription
+        }
+    }
+
+    private func importPersonalDictionary(from url: URL) {
+        Task {
+            do {
+                try await viewModel.importPersonalDatabase(from: url)
+                personalActionMessage = "私人字典已匯入。原本本機私人字典已自動備份。"
+
+                if let word = presentedResult?.word {
+                    viewModel.search(word: word)
+                }
+            } catch {
+                personalActionError = error.localizedDescription
+            }
+        }
+    }
+
     private func activateSearchSuggestions() {
         hasActivatedSearch = true
         isSearchFocused = true
@@ -678,6 +967,10 @@ private struct DictionarySearchResult: Identifiable, Hashable {
     let id = UUID()
     let word: String
     let entries: [DictionaryEntry]
+
+    var isPersonal: Bool {
+        entries.contains { $0.isPersonal }
+    }
 }
 
 private extension DictionaryEntry {

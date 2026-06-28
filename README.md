@@ -25,6 +25,10 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - 搜尋歷史記錄，輸入框 focus 時以類似 Google 搜尋的下拉選單顯示。
 - 同義詞以文字連結形式顯示，可點擊查詢。
 - 精選詞庫 `CuratedDictionary` 可覆蓋或補充 SQLite 缺失詞條。
+- 可手動編輯私人字典詞條，只開放模板中的 IPA、詞性、釋義、例句等欄位修改。
+- 私人字典儲存在本機 `PersonalDictionary.sqlite`，查詢時優先於 bundled 詞庫。
+- 可透過系統 Files picker 匯出／匯入私人字典 SQLite 到 iCloud Drive。
+- 匯出／匯入不依賴 Apple iCloud Capability，因此 Personal Team 也可使用。
 
 ## App 畫面結構
 
@@ -71,16 +75,20 @@ IPA Dict/
 │   │   └── DictionaryLicenses.md
 │   ├── Models/
 │   │   ├── DictionaryEntry.swift
-│   │   └── DictionaryAPIResponse.swift
+│   │   ├── DictionaryAPIResponse.swift
+│   │   ├── PersonalDictionaryEntry.swift
+│   │   └── PersonalDictionaryDocument.swift
 │   ├── Services/
 │   │   ├── DictionaryService.swift
 │   │   ├── LocalDictionaryService.swift
 │   │   ├── AudioPlayerService.swift
+│   │   ├── PersonalDictionaryService.swift
 │   │   ├── SearchHistoryStore.swift
 │   │   └── TranslationCache.swift
 │   └── Views/
 │       ├── DictionarySearchView.swift
 │       ├── WordDetailView.swift
+│       ├── PersonalEntryEditView.swift
 │       ├── MarkdownText.swift
 │       ├── PhonemeButton.swift
 │       └── TranslatedText.swift
@@ -187,6 +195,8 @@ IPAHelp replacement 清單及授權資料記錄於
 
 - 這仍是一個 prototype，部分功能和資料仍可繼續改善。
 - SQLite 詞庫是主要資料來源；`CuratedDictionary` 用於修正常用詞、補充缺字或覆蓋錯誤結果。
+- App bundle 內的 `dictionary.sqlite` 是可重建的內建詞庫；使用者手動修改內容不會寫回 bundle，而是存入本機私人字典 `PersonalDictionary.sqlite`。
+- 私人字典可以經由「私人字典」選單匯出到 iCloud Drive 或從 iCloud Drive 匯入。匯入前 app 會檢查 SQLite 完整性並自動備份原本本機私人字典。
 - 如果 SQLite 沒有某個字，但 `CuratedDictionary` 有資料，app 會直接顯示精選詞條。
 - 若本地資料和精選詞庫都沒有，app 會嘗試使用線上 Dictionary API fallback。
 - 部分發音若沒有本地音檔或遠端音檔，會使用系統語音合成。

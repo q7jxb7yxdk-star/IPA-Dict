@@ -26,13 +26,16 @@ enum DictionaryServiceError: LocalizedError {
 struct DictionaryService {
     private let session: URLSession
     private let localDictionary: LocalDictionaryService
+    private let personalDictionary: PersonalDictionaryService
 
     init(
         session: URLSession = .shared,
-        localDictionary: LocalDictionaryService = LocalDictionaryService()
+        localDictionary: LocalDictionaryService = LocalDictionaryService(),
+        personalDictionary: PersonalDictionaryService = .shared
     ) {
         self.session = session
         self.localDictionary = localDictionary
+        self.personalDictionary = personalDictionary
     }
 
     func lookup(word rawWord: String) async throws -> [DictionaryEntry] {
@@ -40,6 +43,12 @@ struct DictionaryService {
         guard !word.isEmpty else {
             throw DictionaryServiceError.invalidWord
         }
+
+        let personalEntries = try await personalDictionary.lookup(word: word)
+        if !personalEntries.isEmpty {
+            return personalEntries
+        }
+
         let curatedEntries = CuratedDictionary.entries(for: word)
 
         if let localEntries = try? await localDictionary.lookup(word: word),
@@ -115,5 +124,38 @@ struct DictionaryService {
                 "字典服務暫時無法使用（\(httpResponse.statusCode)）。"
             )
         }
+    }
+
+    func personalDraft(
+        word: String,
+        fallbackEntries: [DictionaryEntry]
+    ) async throws -> EditablePersonalDictionaryEntry {
+        if let draft = try await personalDictionary.draft(word: word) {
+            return draft
+        }
+        return EditablePersonalDictionaryEntry(entries: fallbackEntries)
+    }
+
+    func savePersonalDraft(
+        _ draft: EditablePersonalDictionaryEntry
+    ) async throws -> [DictionaryEntry] {
+        try await personalDictionary.save(draft)
+    }
+
+    func deletePersonalEntry(word: String) async throws {
+        try await personalDictionary.delete(word: word)
+    }
+
+    func personalDatabaseURL() async throws -> URL {
+        try await personalDictionary.databaseURL()
+    }
+
+    func personalExportDocument() async throws -> PersonalDictionaryDocument {
+        let url = try await personalDictionary.exportCopyURL()
+        return PersonalDictionaryDocument(fileURL: url)
+    }
+
+    func importPersonalDatabase(from url: URL) async throws {
+        try await personalDictionary.importDatabase(from: url)
     }
 }
