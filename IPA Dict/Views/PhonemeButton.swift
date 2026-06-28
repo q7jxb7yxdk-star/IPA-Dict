@@ -38,7 +38,9 @@ enum IPATokenizer {
                 remaining.removeFirst(compound.count)
             } else {
                 let symbol = String(remaining.removeFirst())
-                if symbol == "ː", let previous = result.popLast() {
+                if symbol == "." {
+                    continue
+                } else if symbol == "ː", let previous = result.popLast() {
                     result.append(previous + symbol)
                 } else {
                     result.append(symbol)
@@ -63,7 +65,7 @@ enum IPATokenizer {
             .replacingOccurrences(of: "ä", with: "a")
 
         [
-            "/", "[", "]", "ˈ", "ˌ", ".", " ", "(", ")", "-",
+            "/", "[", "]", "ˈ", "ˌ", " ", "(", ")", "-",
             "~", "ˑ", "ʰ", "ʲ", "̃", "̈", "̝", "̞", "̟", "̩",
             "̬", "̯", "͡", "͜", "‿"
         ].forEach {

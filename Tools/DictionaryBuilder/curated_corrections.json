@@ -669,6 +669,23 @@
       {"word":"fall","uk_ipa":"/fɔːl/","us_ipa":"/fɑːl/","part_of_speech":"noun","countability":"C","chinese":"跌倒；墜落","english":"an act of falling to the ground or from a higher position","examples":[{"english":"He injured his arm in a fall.","chinese":"他跌倒時弄傷了手臂。"}]},
       {"word":"fall","uk_ipa":"/fɔːl/","us_ipa":"/fɑːl/","part_of_speech":"noun","countability":"C","chinese":"下降；減少","english":"a reduction in amount, level, or value","examples":[{"english":"The company reported a fall in sales.","chinese":"公司報告銷售額有所下降。"}]},
       {"word":"fall","uk_ipa":"/fɔːl/","us_ipa":"/fɑːl/","part_of_speech":"noun","countability":"U","chinese":"秋季；秋天","english":"the season between summer and winter","examples":[{"english":"The leaves change colour in the fall.","chinese":"樹葉在秋天會變色。"}]}
+    ],
+    "parboil": [
+      {
+        "word": "parboil",
+        "uk_ipa": "/ˈpɑː.bɔɪl/",
+        "us_ipa": "/ˈpɑːr.bɔɪl/",
+        "part_of_speech": "verb",
+        "countability": "T",
+        "chinese": "煮成半熟",
+        "english": "to boil food for a short time until it is partly cooked",
+        "examples": [
+          {
+            "english": "Parboil the potatoes before roasting them.",
+            "chinese": "烤馬鈴薯前先把它們煮成半熟。"
+          }
+        ]
+      }
     ]
   }
 }

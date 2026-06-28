@@ -59,7 +59,49 @@ ipa_d_zh.mp3
 The original OGG files are preserved under
 `Tools/AudioArchive/WikimediaCommonsSources/affricate_source_ogg/`.
 
+### Diphthong single-file replacements
+
+The following bundled diphthong files use single Wikimedia Commons word
+recordings so the app plays one local MP3 for each tappable compound IPA button
+instead of sequencing two separate vowel files:
+
+```text
+ipa_ai.mp3
+ipa_au.mp3
+ipa_e_schwa.mp3
+ipa_ei.mp3
+ipa_i_schwa.mp3
+ipa_oi.mp3
+ipa_ou.mp3
+ipa_schwa_u.mp3
+ipa_u_schwa.mp3
+```
+
+The original OGG files are preserved under
+`Tools/AudioArchive/WikimediaCommonsSources/source_ogg/`.
+
 ## Files
+
+### ipa_ai.mp3
+
+- Source file: `En-us-eye.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-us-eye.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/6/6f/En-us-eye.ogg
+- Author / artist: No machine-readable author provided. Muke assumed (based on copyright claims).
+- License: Public domain
+- Usage terms: Public domain
+- Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
+### ipa_au.mp3
+
+- Source file: `En-us-cow.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-us-cow.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/e/e1/En-us-cow.ogg
+- Author / artist: Dvortygirl
+- License: CC BY-SA 3.0
+- License URL: http://creativecommons.org/licenses/by-sa/3.0/
+- Usage terms: Creative Commons Attribution-Share Alike 3.0
+- Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
 
 ### ipa_a.mp3
 
@@ -159,6 +201,28 @@ The original OGG files are preserved under
 - Original audio URL: https://upload.wikimedia.org/wikipedia/commons/6/6c/Close-mid_front_unrounded_vowel.ogg
 - Author / artist: No machine-readable author provided. Denelson83 assumed (based on copyright claims).
 - Credit: No machine-readable source provided. Own work assumed (based on copyright claims).
+- License: CC BY-SA 3.0
+- License URL: http://creativecommons.org/licenses/by-sa/3.0/
+- Usage terms: Creative Commons Attribution-Share Alike 3.0
+- Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
+### ipa_e_schwa.mp3
+
+- Source file: `En-uk-hair.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-uk-hair.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/8/8a/En-uk-hair.ogg
+- Author / artist: Association Shtooka, Judith Franck
+- License: CC BY 3.0 US
+- License URL: https://creativecommons.org/licenses/by/3.0/us/
+- Usage terms: Creative Commons Attribution 3.0 United States
+- Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
+### ipa_ei.mp3
+
+- Source file: `En-us-day.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-us-day.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/5/58/En-us-day.ogg
+- Author / artist: Dvortygirl
 - License: CC BY-SA 3.0
 - License URL: http://creativecommons.org/licenses/by-sa/3.0/
 - Usage terms: Creative Commons Attribution-Share Alike 3.0
@@ -276,6 +340,17 @@ The original OGG files are preserved under
 - Usage terms: Creative Commons Attribution-Share Alike 3.0
 - Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
 
+### ipa_i_schwa.mp3
+
+- Source file: `En-uk-near.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-uk-near.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/5/5d/En-uk-near.ogg
+- Author / artist: Association Shtooka, Judith Franck
+- License: CC BY 3.0 US
+- License URL: https://creativecommons.org/licenses/by/3.0/us/
+- Usage terms: Creative Commons Attribution 3.0 United States
+- Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
 ### ipa_j.mp3
 
 - Source file: `Palatal approximant.ogg`
@@ -343,6 +418,28 @@ The original OGG files are preserved under
 - Original audio URL: https://upload.wikimedia.org/wikipedia/commons/8/84/Close-mid_back_rounded_vowel.ogg
 - Author / artist: No machine-readable author provided. Denelson83 assumed (based on copyright claims).
 - Credit: No machine-readable source provided. Own work assumed (based on copyright claims).
+- License: CC BY-SA 3.0
+- License URL: http://creativecommons.org/licenses/by-sa/3.0/
+- Usage terms: Creative Commons Attribution-Share Alike 3.0
+- Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
+### ipa_oi.mp3
+
+- Source file: `En-us-boy.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-us-boy.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/7/7f/En-us-boy.ogg
+- Author / artist: Dvortygirl
+- License: CC BY-SA 3.0
+- License URL: http://creativecommons.org/licenses/by-sa/3.0/
+- Usage terms: Creative Commons Attribution-Share Alike 3.0
+- Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
+### ipa_ou.mp3
+
+- Source file: `En-us-go.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-us-go.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/0/0a/En-us-go.ogg
+- Author / artist: Dvortygirl
 - License: CC BY-SA 3.0
 - License URL: http://creativecommons.org/licenses/by-sa/3.0/
 - Usage terms: Creative Commons Attribution-Share Alike 3.0
@@ -416,6 +513,17 @@ The original OGG files are preserved under
 - License: CC BY-SA 3.0
 - License URL: http://creativecommons.org/licenses/by-sa/3.0/
 - Usage terms: Creative Commons Attribution-Share Alike 3.0
+- Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
+### ipa_schwa_u.mp3
+
+- Source file: `En-uk-no.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-uk-no.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/9/91/En-uk-no.ogg
+- Author / artist: Association Shtooka, Judith Franck
+- License: CC BY 3.0 US
+- License URL: https://creativecommons.org/licenses/by/3.0/us/
+- Usage terms: Creative Commons Attribution 3.0 United States
 - Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
 
 ### ipa_sh.mp3
@@ -495,6 +603,15 @@ The original OGG files are preserved under
 - License URL: http://creativecommons.org/licenses/by-sa/3.0/
 - Usage terms: Creative Commons Attribution-Share Alike 3.0
 - Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+
+### ipa_u_schwa.mp3
+
+- Source file: `En-uk-poor.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-uk-poor.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/1/14/En-uk-poor.ogg
+- License: Public domain
+- Usage terms: Public domain
+- Local changes: Trimmed to 1.25 seconds, faded out, converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
 
 ### ipa_v.mp3
 

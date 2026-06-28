@@ -20,6 +20,7 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - UK / US IPA 可以點擊播放整字發音。
 - IPA 會拆成音素按鈕，例如 `/ˈæp.əl/` 可拆成 `æ`、`p`、`ə`、`l`。
 - 每個音素可對應本地音檔播放，例如 `æ -> ipa_ae.mp3`、`ə -> ipa_schwa.mp3`。
+- 常見複合音素會優先使用單一 MP3，避免點擊一次音素時聽到兩段分開播放的聲音。
 - 使用 AVFoundation 播放本地音檔、遠端音檔與系統語音 fallback。
 - 搜尋歷史記錄，輸入框 focus 時以類似 Google 搜尋的下拉選單顯示。
 - 同義詞以文字連結形式顯示，可點擊查詢。
@@ -141,7 +142,7 @@ Received Pronunciation、UK 或 British 的音標，不會把 US IPA 推斷成 U
 2. 遠端 audio URL。
 3. 使用 `AVSpeechSynthesizer` 作為 fallback。
 
-音素對應表位於 `AudioPlayerService.phonemeAudioMap`。單一音素可對應一個本地音檔，複合音素可對應多個音檔順序播放，例如：
+音素對應表位於 `AudioPlayerService.phonemeAudioMap`。單一音素通常對應一個本地音檔；常見雙元音與 affricate 也優先對應單一 MP3，避免按下一個 IPA button 時聽到兩個分開音檔。例如：
 
 ```swift
 "æ": ["ipa_ae"]
@@ -152,7 +153,15 @@ Received Pronunciation、UK 或 British 的音標，不會把 US IPA 推斷成 U
 "ð": ["ipa_eth"]
 "ʃ": ["ipa_sh"]
 "ʒ": ["ipa_zh"]
-"aɪ": ["ipa_a", "ipa_i_short"]
+"aɪ": ["ipa_ai"]
+"eɪ": ["ipa_ei"]
+"ɔɪ": ["ipa_oi"]
+"əʊ": ["ipa_schwa_u"]
+"oʊ": ["ipa_ou"]
+"aʊ": ["ipa_au"]
+"ɪə": ["ipa_i_schwa"]
+"eə": ["ipa_e_schwa"]
+"ʊə": ["ipa_u_schwa"]
 "tʃ": ["ipa_t_ch"]
 "dʒ": ["ipa_d_zh"]
 ```
@@ -168,6 +177,11 @@ IPA Dict/Audio/Phonemes/
 MP3，以便點擊音素時只聽到乾淨的單一音。個別作者、來源頁面、裁剪紀錄、
 IPAHelp replacement 清單及授權資料記錄於
 `IPA Dict/Audio/Phonemes/ATTRIBUTION.md`。
+
+常見雙元音例如 `eɪ`、`aɪ`、`ɔɪ`、`əʊ`、`oʊ`、`aʊ`、`ɪə`、`eə`、`ʊə`
+也使用單一 MP3。`əl`、`əm`、`ən`、`ər` 不作為獨立 IPA 音素處理；
+例如 `ər` 會拆成 `ə` 與 `r`，避免把不存在於 Cambridge IPA 表的組合當作
+獨立音素。
 
 ## 注意事項
 

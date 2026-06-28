@@ -314,7 +314,7 @@ linked words
 audioPlayer.playPhoneme(symbol: symbol)
 ```
 
-音素會查 `phonemeAudioMap`。此 map 的 value 是 `[String]`，因此同一個 IPA symbol 可以播放一個或多個本地音檔：
+音素會查 `phonemeAudioMap`。此 map 的 value 是 `[String]`，因此同一個 IPA symbol 技術上可以播放一個或多個本地音檔；但實際維護原則是：可被使用者點擊的常見複合音素應優先使用單一 MP3，避免按下一個 IPA button 時聽到兩段分開播放的聲音。
 
 ```swift
 "æ": ["ipa_ae"]
@@ -327,12 +327,20 @@ audioPlayer.playPhoneme(symbol: symbol)
 "ʒ": ["ipa_zh"]
 "p": ["ipa_p"]
 "l": ["ipa_l"]
-"aɪ": ["ipa_a", "ipa_i_short"]
+"eɪ": ["ipa_ei"]
+"aɪ": ["ipa_ai"]
+"ɔɪ": ["ipa_oi"]
+"əʊ": ["ipa_schwa_u"]
+"oʊ": ["ipa_ou"]
+"aʊ": ["ipa_au"]
+"ɪə": ["ipa_i_schwa"]
+"eə": ["ipa_e_schwa"]
+"ʊə": ["ipa_u_schwa"]
 "tʃ": ["ipa_t_ch"]
 "dʒ": ["ipa_d_zh"]
 ```
 
-例如 `æ` 會播放 app bundle 內的 `ipa_ae.mp3`，`aɪ` 會依序播放 `ipa_a.mp3` 與 `ipa_i_short.mp3`。`tʃ` 與 `dʒ` 使用獨立 affricate MP3，避免順序播放 `t + ʃ` 或 `d + ʒ` 時聽起來像兩個音。
+例如 `æ` 會播放 app bundle 內的 `ipa_ae.mp3`，`aɪ` 會播放 `ipa_ai.mp3`。`tʃ` 與 `dʒ` 使用獨立 affricate MP3，避免順序播放 `t + ʃ` 或 `d + ʒ` 時聽起來像兩個音。`eɪ`、`aɪ`、`ɔɪ`、`əʊ`、`oʊ`、`aʊ`、`ɪə`、`eə`、`ʊə` 也使用單一 MP3。
 
 本地音素音檔位於：
 
@@ -347,6 +355,10 @@ single-shot 裁剪版。若裁剪後仍聽起來像多音節或多段示範，ap
 single-shot 裁剪版、裁剪報告及舊版私人比較音檔不放入 synchronized app
 source folder。Wikimedia Commons 與 IPAHelp 來源紀錄保存在同目錄的
 `ATTRIBUTION.md`。
+
+常見雙元音的單一 MP3 來自 Wikimedia Commons 的可再散布 word recordings，
+再轉成 MP3 放入 app bundle。這些檔案的用途是讓一個 IPA button 對應一次
+播放行為，而不是用 `playSoundSequence` 連播兩個 vowel MP3。
 
 可使用以下唯讀工具檢查 app bundle 音素 MP3 是否與
 `AudioPlayerService.phonemeAudioMap` 一致，並確認音檔可解碼且沒有過長：
@@ -401,6 +413,11 @@ uː
 ```
 
 如果遇到長音符號 `ː`，會合併到前一個音素。
+
+`əl`、`əm`、`ən`、`ər` 不作為獨立 compound phoneme。以 `ər` 為例，
+tokenizer 會拆成 `ə` 與 `r`；這可避免把 Cambridge IPA 表沒有列出的組合
+當成獨立音素，也避免誤播不存在的單一音檔。syllable dot `.` 會作為
+compound matching 的邊界，不會讓雙元音或其他複合音素跨 syllable 合併。
 
 ## 10. 翻譯 fallback
 

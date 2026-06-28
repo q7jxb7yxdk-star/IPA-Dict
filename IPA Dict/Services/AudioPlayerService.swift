@@ -74,18 +74,18 @@ final class AudioPlayerService {
         "sː": ["ipa_s"],
         "tʃ": ["ipa_t_ch"],
         "dʒ": ["ipa_d_zh"],
-        "eɪ": ["ipa_e", "ipa_i_short"],
-        "eɪː": ["ipa_e", "ipa_i_short"],
-        "aɪ": ["ipa_a", "ipa_i_short"],
-        "aɪː": ["ipa_a", "ipa_i_short"],
-        "ɔɪ": ["ipa_aw", "ipa_i_short"],
-        "aʊ": ["ipa_a", "ipa_u_short"],
-        "əʊ": ["ipa_schwa", "ipa_u_short"],
-        "oʊ": ["ipa_o", "ipa_u_short"],
-        "oʊː": ["ipa_o", "ipa_u_short"],
-        "ɪə": ["ipa_i_short", "ipa_schwa"],
-        "eə": ["ipa_e", "ipa_schwa"],
-        "ʊə": ["ipa_u_short", "ipa_schwa"]
+        "eɪ": ["ipa_ei"],
+        "eɪː": ["ipa_ei"],
+        "aɪ": ["ipa_ai"],
+        "aɪː": ["ipa_ai"],
+        "ɔɪ": ["ipa_oi"],
+        "aʊ": ["ipa_au"],
+        "əʊ": ["ipa_schwa_u"],
+        "oʊ": ["ipa_ou"],
+        "oʊː": ["ipa_ou"],
+        "ɪə": ["ipa_i_schwa"],
+        "eə": ["ipa_e_schwa"],
+        "ʊə": ["ipa_u_schwa"]
     ]
 
     private var audioPlayer: AVAudioPlayer?
