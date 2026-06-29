@@ -155,6 +155,7 @@ struct DictionarySearchView: View {
     @StateObject private var viewModel = DictionarySearchViewModel()
     @StateObject private var historyStore = SearchHistoryStore()
     @StateObject private var bookmarkStore = BookmarkStore()
+    @StateObject private var dictionaryManifestStore = DictionaryManifestStore()
     @State private var translationConfiguration: TranslationSession.Configuration?
     @State private var presentedResult: DictionarySearchResult?
     @State private var showsClearHistoryConfirmation = false
@@ -746,6 +747,8 @@ struct DictionarySearchView: View {
                     .padding(.top, 6)
 
                 bookmarkContent
+
+                databaseDateContent
             }
             .frame(maxWidth: 760, alignment: .leading)
             .padding(.horizontal, 24)
@@ -756,6 +759,18 @@ struct DictionarySearchView: View {
         .onTapGesture {
             dismissSearchSuggestions()
         }
+    }
+
+    private var databaseDateContent: some View {
+        HStack(spacing: 6) {
+            Image(systemName: "externaldrive")
+            Text(dictionaryManifestStore.displayText)
+        }
+        .font(.system(size: 14))
+        .foregroundStyle(.secondary)
+        .frame(maxWidth: .infinity, alignment: .center)
+        .padding(.top, 8)
+        .accessibilityLabel(dictionaryManifestStore.displayText)
     }
 
     private var bookmarkContent: some View {

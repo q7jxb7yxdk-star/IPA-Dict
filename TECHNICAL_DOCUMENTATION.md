@@ -258,6 +258,45 @@ app 顯示時，每個 entry 只取最多一個例句：
 examples: Array(examples.prefix(1))
 ```
 
+### Dictionary manifest
+
+App bundle 內另有一個輕量 manifest：
+
+```text
+IPA Dict/Data/dictionary_manifest.json
+```
+
+用途是讓 macOS、iOS、iPadOS 都能在 UI 顯示同一個詞庫日期，而不需要先
+打開 SQLite。格式如下：
+
+```json
+{
+  "database_file": "dictionary.sqlite",
+  "database_updated_at": "2026-06-29T20:09:00+08:00",
+  "display_updated_at": "2026-06-29 20:09",
+  "sha256": "...",
+  "generated_at": "2026-06-29T20:09:00+08:00"
+}
+```
+
+`DictionaryManifestStore` 會從 bundle 讀取此 JSON，並在首頁顯示：
+
+```text
+資料庫日期：2026-06-29 20:09
+```
+
+如果使用 Letos 或其他 SQLite 工具直接維護 bundled `dictionary.sqlite`，
+修改完成後應執行：
+
+```sh
+python3 Tools/DictionaryBuilder/update_dictionary_manifest.py
+```
+
+此工具會使用 `Asia/Hong_Kong` 目前時間更新 `database_updated_at` /
+`display_updated_at`，並重新計算 `dictionary.sqlite` 的 SHA-256。之後再
+用 Xcode / Git Commit and Push，其他平台即可透過同一份 GitHub repo 取得
+一致的資料庫檔案與顯示日期。
+
 ## 6. 私人字典與匯出／匯入
 
 私人字典用於保存使用者手動修正的字典筆記。它不會直接修改 app bundle 內的
