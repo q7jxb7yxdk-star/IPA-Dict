@@ -1,7 +1,6 @@
 import Combine
 import SwiftUI
 import Translation
-import UniformTypeIdentifiers
 
 @MainActor
 final class DictionarySearchViewModel: ObservableObject {
@@ -117,18 +116,6 @@ final class DictionarySearchViewModel: ObservableObject {
         try await service.deletePersonalEntry(word: word)
     }
 
-    func personalDatabaseURL() async throws -> URL {
-        try await service.personalDatabaseURL()
-    }
-
-    func personalExportDocument() async throws -> PersonalDictionaryDocument {
-        try await service.personalExportDocument()
-    }
-
-    func importPersonalDatabase(from url: URL) async throws {
-        try await service.importPersonalDatabase(from: url)
-    }
-
     func clearResult() {
         entries = []
         entriesAwaitingTranslation = []
@@ -168,10 +155,6 @@ struct DictionarySearchView: View {
     @State private var isSavingPersonalEntry = false
     @State private var showsResetPersonalConfirmation = false
     @State private var personalActionError: String?
-    @State private var personalActionMessage: String?
-    @State private var exportDocument: PersonalDictionaryDocument?
-    @State private var showsPersonalExport = false
-    @State private var showsPersonalImport = false
     @FocusState private var isSearchFocused: Bool
 
     var body: some View {
@@ -193,31 +176,6 @@ struct DictionarySearchView: View {
             }
         } message: {
             Text(personalActionError ?? "")
-        }
-        .alert(
-            "私人字典",
-            isPresented: personalMessageAlertBinding
-        ) {
-            Button("好", role: .cancel) {
-                personalActionMessage = nil
-            }
-        } message: {
-            Text(personalActionMessage ?? "")
-        }
-        .fileExporter(
-            isPresented: $showsPersonalExport,
-            document: exportDocument,
-            contentType: .sqliteDatabase,
-            defaultFilename: "PersonalDictionary.sqlite"
-        ) { result in
-            handlePersonalExportCompletion(result)
-        }
-        .fileImporter(
-            isPresented: $showsPersonalImport,
-            allowedContentTypes: [.sqliteDatabase, .data],
-            allowsMultipleSelection: false
-        ) { result in
-            handlePersonalImportSelection(result)
         }
     }
 
@@ -368,11 +326,6 @@ struct DictionarySearchView: View {
 
             floatingHistoryDropdown
         }
-        .toolbar {
-            ToolbarItem(placement: .secondaryAction) {
-                personalDictionaryMenu
-            }
-        }
     }
 
     private var personalErrorAlertBinding: Binding<Bool> {
@@ -381,17 +334,6 @@ struct DictionarySearchView: View {
             set: { isPresented in
                 if !isPresented {
                     personalActionError = nil
-                }
-            }
-        )
-    }
-
-    private var personalMessageAlertBinding: Binding<Bool> {
-        Binding(
-            get: { personalActionMessage != nil },
-            set: { isPresented in
-                if !isPresented {
-                    personalActionMessage = nil
                 }
             }
         )
@@ -453,10 +395,6 @@ struct DictionarySearchView: View {
         .background(Color.searchBackground)
         .navigationTitle(result.word)
         .toolbar {
-            ToolbarItem(placement: .secondaryAction) {
-                personalDictionaryMenu
-            }
-
             ToolbarItemGroup(placement: .primaryAction) {
                 if result.isPersonal {
                     Text("私人筆記")
@@ -620,25 +558,6 @@ struct DictionarySearchView: View {
         .padding(.vertical)
         .frame(maxWidth: 820)
         .zIndex(10)
-    }
-
-    private var personalDictionaryMenu: some View {
-        Menu {
-            Button {
-                preparePersonalDictionaryExport()
-            } label: {
-                Label("匯出到 iCloud Drive", systemImage: "square.and.arrow.up")
-            }
-
-            Button {
-                showsPersonalImport = true
-            } label: {
-                Label("從 iCloud Drive 匯入", systemImage: "square.and.arrow.down")
-            }
-        } label: {
-            Label("私人字典", systemImage: "externaldrive")
-        }
-        .disabled(isSavingPersonalEntry)
     }
 
     @ViewBuilder
@@ -1011,55 +930,6 @@ struct DictionarySearchView: View {
             do {
                 try await viewModel.deletePersonalEntry(word: result.word)
                 viewModel.search(word: result.word)
-            } catch {
-                personalActionError = error.localizedDescription
-            }
-        }
-    }
-
-    private func preparePersonalDictionaryExport() {
-        Task { @MainActor in
-            do {
-                exportDocument = try await viewModel.personalExportDocument()
-                showsPersonalExport = true
-            } catch {
-                personalActionError = error.localizedDescription
-            }
-        }
-    }
-
-    private func handlePersonalExportCompletion(
-        _ result: Result<URL, Error>
-    ) {
-        switch result {
-        case .success:
-            personalActionMessage = "私人字典已匯出。你可以在 iCloud Drive／Files App 保留這個 SQLite 備份。"
-        case .failure(let error):
-            personalActionError = error.localizedDescription
-        }
-    }
-
-    private func handlePersonalImportSelection(
-        _ result: Result<[URL], Error>
-    ) {
-        switch result {
-        case .success(let urls):
-            guard let url = urls.first else { return }
-            importPersonalDictionary(from: url)
-        case .failure(let error):
-            personalActionError = error.localizedDescription
-        }
-    }
-
-    private func importPersonalDictionary(from url: URL) {
-        Task { @MainActor in
-            do {
-                try await viewModel.importPersonalDatabase(from: url)
-                personalActionMessage = "私人字典已匯入。原本本機私人字典已自動備份。"
-
-                if let word = presentedResult?.word {
-                    viewModel.search(word: word)
-                }
             } catch {
                 personalActionError = error.localizedDescription
             }

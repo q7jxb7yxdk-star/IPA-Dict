@@ -35,7 +35,7 @@ DictionaryEntry models
   - 搜尋頁與結果頁容器。
   - 管理搜尋輸入框、搜尋歷史、書簽、下拉選單、loading、error state。
   - 使用 `NavigationStack` 顯示查詢結果。
-  - 提供私人字典編輯、重設、匯出與匯入入口。
+  - 提供私人字典編輯與重設入口。
 
 - `WordDetailView.swift`
   - 顯示字典詞條內容。
@@ -78,10 +78,6 @@ DictionaryEntry models
   - 私人字典 SQLite 的資料模型。
   - 包含 `EditablePersonalDictionaryEntry` 與 `EditablePersonalDictionarySense`，用於編輯畫面與 SQLite 儲存之間轉換。
 
-- `PersonalDictionaryDocument.swift`
-  - `FileDocument` wrapper。
-  - 讓私人字典 SQLite 可透過 SwiftUI `fileExporter` 匯出到 Files / iCloud Drive。
-
 ### Services
 
 - `DictionaryService.swift`
@@ -114,8 +110,7 @@ DictionaryEntry models
   - 使用 SQLite3 管理使用者私人字典。
   - 儲存在 Application Support 內的 `PersonalDictionary.sqlite`。
   - 查詢時優先於 bundled `dictionary.sqlite`。
-  - 支援保存、刪除、匯出副本、匯入 SQLite。
-  - 匯入前會檢查 SQLite 完整性與必要 tables，並備份原本本機私人字典。
+  - 支援保存與刪除私人詞條。
 
 - `TranslationCache.swift`
   - 快取 Apple Translation fallback 結果。
@@ -297,7 +292,7 @@ python3 Tools/DictionaryBuilder/update_dictionary_manifest.py
 用 Xcode / Git Commit and Push，其他平台即可透過同一份 GitHub repo 取得
 一致的資料庫檔案與顯示日期。
 
-## 6. 私人字典與匯出／匯入
+## 6. 私人字典與 GitHub 主詞庫
 
 私人字典用於保存使用者手動修正的字典筆記。它不會直接修改 app bundle 內的
 `dictionary.sqlite`，避免使用者資料在重新安裝 app 或更新內建詞庫時混入可重建資料。
@@ -349,42 +344,21 @@ personal_senses (
 
 每個私人詞條可以有多個 sense；app 仍沿用相同查詢結果 UI 顯示。
 
-### 匯出到 iCloud Drive / Files
+### GitHub 主詞庫管理
 
-`DictionarySearchView` 透過 `fileExporter` 匯出 `PersonalDictionaryDocument`。
-匯出前 `PersonalDictionaryService.exportCopyURL()` 會：
+主詞庫 `dictionary.sqlite` 放在 GitHub repository，由 macOS 端統一維護。
+建議流程：
 
-1. 確保私人 SQLite 已建立。
-2. 暫時關閉目前 SQLite connection。
-3. 複製一份 timestamped SQLite 到 temporary directory。
-4. 重新開啟本機私人 SQLite。
-5. 交給系統 Files exporter，使用者可儲存到 iCloud Drive。
+1. 使用 Letos 或其他 SQLite 工具修改 `IPA Dict/Data/dictionary.sqlite`。
+2. 執行 `python3 Tools/DictionaryBuilder/update_dictionary_manifest.py` 更新
+   `dictionary_manifest.json` 的資料庫日期與 SHA-256。
+3. 用 Xcode / Git Commit and Push 到 GitHub。
+4. 其他平台顯示同一個 bundle manifest 日期，之後可再擴充成從 GitHub
+   下載最新主詞庫。
 
-這是使用者主動匯出檔案，不是 iCloud 自動同步 entitlement。
-
-### 從 iCloud Drive / Files 匯入
-
-`DictionarySearchView` 透過 `fileImporter` 讓使用者選取 SQLite。匯入時：
-
-1. 對選取 URL 呼叫 `startAccessingSecurityScopedResource()`。
-2. 用 readonly SQLite connection 驗證檔案。
-3. 執行 `PRAGMA integrity_check`，必須得到 `ok`。
-4. 檢查必要 tables：
-   - `personal_words`
-   - `personal_senses`
-5. 關閉目前本機 SQLite connection。
-6. 先把原本本機 `PersonalDictionary.sqlite` 備份成 timestamped backup。
-7. 用匯入檔案取代本機私人字典。
-8. 重新開啟本機私人 SQLite。
-
-若匯入檔案不是有效私人字典 SQLite，app 會拒絕匯入，不會覆蓋現有資料。
-
-### 與 Apple iCloud Capability 的關係
-
-目前方案不使用 `forUbiquityContainerIdentifier`，也不需要 iCloud Documents
-capability / entitlement。這是刻意設計，因為 Personal Development Team
-不支援 iCloud capability。使用者仍可透過 Files UI 手動把 SQLite 放到
-iCloud Drive，達到跨裝置備份與移轉。
+App 內已移除 iCloud Drive 匯入／匯出私人字典功能，避免和 GitHub 主詞庫
+管理流程混淆。私人字典只作為本機 per-word override，用於 app 內手動修正
+個別詞條。
 
 ## 7. 查詢結果 UI
 
@@ -719,7 +693,7 @@ Tools/DictionaryBuilder/README.md
 - IPA tokenizer 仍是簡化版，未完整覆蓋所有 IPA 符號與語音變體。
 - 目前本地音素 mp3 對應表只涵蓋部分音素。
 - SQLite 詞庫仍可能存在缺詞、詞性缺漏、IPA 缺失或例句不足。
-- 私人字典目前採用手動匯出／匯入，不是背景自動雲端同步。
+- 私人字典是本機 per-word override；跨平台主詞庫目前透過 GitHub repository 更新，而不是 app 內自動同步。
 - Apple Translation fallback 可能與正確字典釋義不同，不應作為正式詞庫資料來源。
 - ContentUnavailableView 的部分系統文字樣式由 SwiftUI 控制，不能完全套用自訂字體。
 
@@ -751,5 +725,4 @@ git diff --check
 - 同義詞連結可查詢。
 - 詞性、中文釋義、英文釋義、例句顯示完整。
 - 編輯私人詞條後，再查同一個字會優先顯示私人字典內容。
-- 私人字典可匯出到 Files / iCloud Drive。
-- 匯入有效私人 SQLite 後，原有本機私人字典會先備份，查詢結果會刷新。
+- 首頁會顯示 `dictionary_manifest.json` 的資料庫日期。

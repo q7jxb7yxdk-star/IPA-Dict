@@ -24,7 +24,6 @@ enum PersonalDictionaryError: LocalizedError {
     case databasePrepareFailed
     case databaseWriteFailed
     case invalidEntry
-    case invalidImportFile
 
     var errorDescription: String? {
         switch self {
@@ -36,8 +35,6 @@ enum PersonalDictionaryError: LocalizedError {
             "無法儲存私人字典內容。"
         case .invalidEntry:
             "私人字典內容不完整。"
-        case .invalidImportFile:
-            "選取的檔案不是有效的私人字典 SQLite。"
         }
     }
 }
@@ -168,64 +165,6 @@ actor PersonalDictionaryService {
         guard sqlite3_step(statement) == SQLITE_DONE else {
             throw PersonalDictionaryError.databaseWriteFailed
         }
-    }
-
-    func databaseURL() throws -> URL {
-        try databaseURLProvider()
-    }
-
-    func exportCopyURL() throws -> URL {
-        try openDatabaseIfNeeded()
-        let sourceURL = try databaseURLProvider()
-        let exportURL = FileManager.default.temporaryDirectory
-            .appendingPathComponent(Self.exportFileName())
-
-        if FileManager.default.fileExists(atPath: exportURL.path) {
-            try FileManager.default.removeItem(at: exportURL)
-        }
-
-        sqlite3_close(database)
-        database = nil
-        try FileManager.default.copyItem(at: sourceURL, to: exportURL)
-        try openDatabaseIfNeeded()
-        return exportURL
-    }
-
-    func importDatabase(from sourceURL: URL) throws {
-        let destinationURL = try databaseURLProvider()
-        let securityScoped = sourceURL.startAccessingSecurityScopedResource()
-        defer {
-            if securityScoped {
-                sourceURL.stopAccessingSecurityScopedResource()
-            }
-        }
-
-        try validateImportDatabase(at: sourceURL)
-
-        sqlite3_close(database)
-        database = nil
-
-        let fileManager = FileManager.default
-        try fileManager.createDirectory(
-            at: destinationURL.deletingLastPathComponent(),
-            withIntermediateDirectories: true
-        )
-
-        if fileManager.fileExists(atPath: destinationURL.path) {
-            let backupURL = destinationURL
-                .deletingLastPathComponent()
-                .appendingPathComponent(Self.backupFileName())
-            if fileManager.fileExists(atPath: backupURL.path) {
-                try fileManager.removeItem(at: backupURL)
-            }
-            try fileManager.copyItem(at: destinationURL, to: backupURL)
-        }
-
-        if fileManager.fileExists(atPath: destinationURL.path) {
-            try fileManager.removeItem(at: destinationURL)
-        }
-        try fileManager.copyItem(at: sourceURL, to: destinationURL)
-        try openDatabaseIfNeeded()
     }
 
     private func personalEntry(word rawWord: String) throws -> PersonalDictionaryEntry? {
@@ -497,60 +436,6 @@ actor PersonalDictionaryService {
         """)
     }
 
-    private func validateImportDatabase(at url: URL) throws {
-        var importDatabase: OpaquePointer?
-        guard sqlite3_open_v2(
-            url.path,
-            &importDatabase,
-            SQLITE_OPEN_READONLY,
-            nil
-        ) == SQLITE_OK else {
-            sqlite3_close(importDatabase)
-            throw PersonalDictionaryError.invalidImportFile
-        }
-        defer { sqlite3_close(importDatabase) }
-
-        let integrity = singleTextValue(
-            database: importDatabase,
-            sql: "PRAGMA integrity_check"
-        )
-        guard integrity == "ok" else {
-            throw PersonalDictionaryError.invalidImportFile
-        }
-
-        let requiredTables = ["personal_words", "personal_senses"]
-        for table in requiredTables {
-            let exists = singleTextValue(
-                database: importDatabase,
-                sql: """
-                    SELECT name
-                    FROM sqlite_master
-                    WHERE type = 'table' AND name = '\(table)'
-                    LIMIT 1
-                """
-            )
-            guard exists == table else {
-                throw PersonalDictionaryError.invalidImportFile
-            }
-        }
-    }
-
-    private func singleTextValue(
-        database: OpaquePointer?,
-        sql: String
-    ) -> String {
-        var statement: OpaquePointer?
-        guard sqlite3_prepare_v2(database, sql, -1, &statement, nil) == SQLITE_OK else {
-            return ""
-        }
-        defer { sqlite3_finalize(statement) }
-        guard sqlite3_step(statement) == SQLITE_ROW,
-              let value = sqlite3_column_text(statement, 0) else {
-            return ""
-        }
-        return String(cString: value)
-    }
-
     private func execute(_ sql: String) throws {
         guard sqlite3_exec(database, sql, nil, nil, nil) == SQLITE_OK else {
             throw PersonalDictionaryError.databaseWriteFailed
@@ -588,19 +473,4 @@ actor PersonalDictionaryService {
         iso8601Formatter.date(from: value) ?? Date(timeIntervalSince1970: 0)
     }
 
-    private static func exportFileName() -> String {
-        "PersonalDictionary-\(fileTimestamp()).sqlite"
-    }
-
-    private static func backupFileName() -> String {
-        "PersonalDictionary-backup-\(fileTimestamp()).sqlite"
-    }
-
-    private static func fileTimestamp() -> String {
-        let formatter = DateFormatter()
-        formatter.calendar = Calendar(identifier: .gregorian)
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "yyyy-MM-dd-HHmmss"
-        return formatter.string(from: Date())
-    }
 }

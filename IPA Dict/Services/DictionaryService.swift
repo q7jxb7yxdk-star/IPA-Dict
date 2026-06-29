@@ -171,17 +171,4 @@ struct DictionaryService {
     func deletePersonalEntry(word: String) async throws {
         try await personalDictionary.delete(word: word)
     }
-
-    func personalDatabaseURL() async throws -> URL {
-        try await personalDictionary.databaseURL()
-    }
-
-    func personalExportDocument() async throws -> PersonalDictionaryDocument {
-        let url = try await personalDictionary.exportCopyURL()
-        return PersonalDictionaryDocument(fileURL: url)
-    }
-
-    func importPersonalDatabase(from url: URL) async throws {
-        try await personalDictionary.importDatabase(from: url)
-    }
 }
