@@ -1,0 +1,2718 @@
+{
+  "tool": "merge_same_pos_entries.py",
+  "tool_version": "same_pos_merge_v1",
+  "database": "IPA Dict/Data/dictionary.sqlite",
+  "dry_run": false,
+  "backup_path": "/tmp/dictionary-before-same-pos-merge-20260629-110941.sqlite",
+  "before": {
+    "entries": 31906,
+    "entry_provenance": 159530
+  },
+  "after": {
+    "entries": 25665,
+    "entry_provenance": 128325
+  },
+  "merged_group_count": 4679,
+  "deleted_entry_count": 6241,
+  "groups_by_part_of_speech": {
+    "adjective": 617,
+    "adverb": 70,
+    "article": 1,
+    "conjunction": 11,
+    "determiner": 5,
+    "exclamation": 13,
+    "noun": 2926,
+    "numeral": 2,
+    "phrasal verb": 1,
+    "phrase": 20,
+    "prefix": 2,
+    "preposition": 25,
+    "pronoun": 10,
+    "proper noun": 369,
+    "proverb": 1,
+    "verb": 606
+  },
+  "ipa_conflict_count": 7,
+  "grammar_conflict_count": 618,
+  "integrity_check": "ok",
+  "orphan_provenance_count": 0,
+  "sample_merges": [
+    {
+      "word": "a lot",
+      "part_of_speech": "adverb",
+      "retained_id": 13,
+      "merged_ids": [
+        14
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "a lot",
+      "part_of_speech": "pronoun",
+      "retained_id": 15,
+      "merged_ids": [
+        16
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "a minor",
+      "part_of_speech": "noun",
+      "retained_id": 17,
+      "merged_ids": [
+        18
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abandon",
+      "part_of_speech": "verb",
+      "retained_id": 34,
+      "merged_ids": [
+        35
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abase",
+      "part_of_speech": "verb",
+      "retained_id": 38,
+      "merged_ids": [
+        39
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abate",
+      "part_of_speech": "verb",
+      "retained_id": 36475,
+      "merged_ids": [
+        36476
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abbey",
+      "part_of_speech": "noun",
+      "retained_id": 50,
+      "merged_ids": [
+        51
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abbreviated",
+      "part_of_speech": "adjective",
+      "retained_id": 55,
+      "merged_ids": [
+        56
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abbreviature",
+      "part_of_speech": "noun",
+      "retained_id": 58,
+      "merged_ids": [
+        59
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abc",
+      "part_of_speech": "noun",
+      "retained_id": 60,
+      "merged_ids": [
+        61
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abduction",
+      "part_of_speech": "noun",
+      "retained_id": 70,
+      "merged_ids": [
+        71
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abet",
+      "part_of_speech": "verb",
+      "retained_id": 74,
+      "merged_ids": [
+        75
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abject",
+      "part_of_speech": "adjective",
+      "retained_id": 97,
+      "merged_ids": [
+        98
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abjure",
+      "part_of_speech": "verb",
+      "retained_id": 100,
+      "merged_ids": [
+        101
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "ablation",
+      "part_of_speech": "noun",
+      "retained_id": 106,
+      "merged_ids": [
+        107
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "able",
+      "part_of_speech": "adjective",
+      "retained_id": 35299,
+      "merged_ids": [
+        35300
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "aborigine",
+      "part_of_speech": "noun",
+      "retained_id": 123,
+      "merged_ids": [
+        124
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": true
+    },
+    {
+      "word": "abort",
+      "part_of_speech": "noun",
+      "retained_id": 125,
+      "merged_ids": [
+        126,
+        127,
+        128
+      ],
+      "row_count": 4,
+      "zh_definition_count": 3,
+      "en_definition_count": 4,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abort",
+      "part_of_speech": "verb",
+      "retained_id": 129,
+      "merged_ids": [
+        130,
+        131
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "I or T",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abraham",
+      "part_of_speech": "proper noun",
+      "retained_id": 152,
+      "merged_ids": [
+        153
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abroad",
+      "part_of_speech": "adverb",
+      "retained_id": 159,
+      "merged_ids": [
+        160
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abscond",
+      "part_of_speech": "verb",
+      "retained_id": 167,
+      "merged_ids": [
+        168,
+        169
+      ],
+      "row_count": 3,
+      "zh_definition_count": 2,
+      "en_definition_count": 3,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "absence",
+      "part_of_speech": "noun",
+      "retained_id": 170,
+      "merged_ids": [
+        171,
+        172,
+        173
+      ],
+      "row_count": 4,
+      "zh_definition_count": 2,
+      "en_definition_count": 4,
+      "countability_values": [
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "absolute value",
+      "part_of_speech": "noun",
+      "retained_id": 176,
+      "merged_ids": [
+        177
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "absolution",
+      "part_of_speech": "noun",
+      "retained_id": 179,
+      "merged_ids": [
+        180
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "absorb",
+      "part_of_speech": "verb",
+      "retained_id": 183,
+      "merged_ids": [
+        184
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "absorption",
+      "part_of_speech": "noun",
+      "retained_id": 185,
+      "merged_ids": [
+        186
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abstract",
+      "part_of_speech": "adjective",
+      "retained_id": 189,
+      "merged_ids": [
+        190,
+        191
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abstraction",
+      "part_of_speech": "noun",
+      "retained_id": 195,
+      "merged_ids": [
+        196
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "absurdity",
+      "part_of_speech": "noun",
+      "retained_id": 198,
+      "merged_ids": [
+        199
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abundance",
+      "part_of_speech": "noun",
+      "retained_id": 201,
+      "merged_ids": [
+        202
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abuse",
+      "part_of_speech": "verb",
+      "retained_id": 205,
+      "merged_ids": [
+        206
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abyss",
+      "part_of_speech": "noun",
+      "retained_id": 209,
+      "merged_ids": [
+        210,
+        211,
+        212
+      ],
+      "row_count": 4,
+      "zh_definition_count": 2,
+      "en_definition_count": 4,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "academia",
+      "part_of_speech": "noun",
+      "retained_id": 216,
+      "merged_ids": [
+        217
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "academic",
+      "part_of_speech": "noun",
+      "retained_id": 219,
+      "merged_ids": [
+        220
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "academician",
+      "part_of_speech": "noun",
+      "retained_id": 222,
+      "merged_ids": [
+        223
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "academy",
+      "part_of_speech": "noun",
+      "retained_id": 224,
+      "merged_ids": [
+        228
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accelerate",
+      "part_of_speech": "verb",
+      "retained_id": 233,
+      "merged_ids": [
+        234,
+        235
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "acceleration",
+      "part_of_speech": "noun",
+      "retained_id": 236,
+      "merged_ids": [
+        237,
+        238
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accelerator",
+      "part_of_speech": "noun",
+      "retained_id": 241,
+      "merged_ids": [
+        245
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accent",
+      "part_of_speech": "noun",
+      "retained_id": 247,
+      "merged_ids": [
+        248,
+        249
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "acceptance",
+      "part_of_speech": "noun",
+      "retained_id": 253,
+      "merged_ids": [
+        254
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "access",
+      "part_of_speech": "noun",
+      "retained_id": 35739,
+      "merged_ids": [
+        35740
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accessible",
+      "part_of_speech": "adjective",
+      "retained_id": 262,
+      "merged_ids": [
+        263,
+        264
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accident",
+      "part_of_speech": "noun",
+      "retained_id": 265,
+      "merged_ids": [
+        266
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accidental",
+      "part_of_speech": "noun",
+      "retained_id": 268,
+      "merged_ids": [
+        269
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accommodate",
+      "part_of_speech": "verb",
+      "retained_id": 275,
+      "merged_ids": [
+        276
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accommodation",
+      "part_of_speech": "noun",
+      "retained_id": 277,
+      "merged_ids": [
+        278
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accompaniment",
+      "part_of_speech": "noun",
+      "retained_id": 279,
+      "merged_ids": [
+        280
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accomplishment",
+      "part_of_speech": "noun",
+      "retained_id": 284,
+      "merged_ids": [
+        285
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    }
+  ],
+  "ipa_conflicts": [
+    {
+      "word": "aborigine",
+      "part_of_speech": "noun",
+      "retained_id": 123,
+      "merged_ids": [
+        124
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": true
+    },
+    {
+      "word": "bass",
+      "part_of_speech": "noun",
+      "retained_id": 35904,
+      "merged_ids": [
+        35905
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U"
+      ],
+      "uk_ipa_conflict": true,
+      "us_ipa_conflict": true
+    },
+    {
+      "word": "char",
+      "part_of_speech": "noun",
+      "retained_id": 5690,
+      "merged_ids": [
+        5691
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": true
+    },
+    {
+      "word": "cosmos",
+      "part_of_speech": "noun",
+      "retained_id": 7545,
+      "merged_ids": [
+        7546
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": true
+    },
+    {
+      "word": "ought",
+      "part_of_speech": "verb",
+      "retained_id": 22079,
+      "merged_ids": [
+        22080,
+        22081,
+        22082
+      ],
+      "row_count": 4,
+      "zh_definition_count": 2,
+      "en_definition_count": 4,
+      "countability_values": [],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": true
+    },
+    {
+      "word": "polish",
+      "part_of_speech": "noun",
+      "retained_id": 23795,
+      "merged_ids": [
+        23796
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "U",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": true
+    },
+    {
+      "word": "resound",
+      "part_of_speech": "verb",
+      "retained_id": 25931,
+      "merged_ids": [
+        25932,
+        25933
+      ],
+      "row_count": 3,
+      "zh_definition_count": 2,
+      "en_definition_count": 3,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": true
+    }
+  ],
+  "grammar_conflicts": [
+    {
+      "word": "abate",
+      "part_of_speech": "verb",
+      "retained_id": 36475,
+      "merged_ids": [
+        36476
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "aborigine",
+      "part_of_speech": "noun",
+      "retained_id": 123,
+      "merged_ids": [
+        124
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": true
+    },
+    {
+      "word": "abort",
+      "part_of_speech": "verb",
+      "retained_id": 129,
+      "merged_ids": [
+        130,
+        131
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "I or T",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "abscond",
+      "part_of_speech": "verb",
+      "retained_id": 167,
+      "merged_ids": [
+        168,
+        169
+      ],
+      "row_count": 3,
+      "zh_definition_count": 2,
+      "en_definition_count": 3,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "absurdity",
+      "part_of_speech": "noun",
+      "retained_id": 198,
+      "merged_ids": [
+        199
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accelerate",
+      "part_of_speech": "verb",
+      "retained_id": 233,
+      "merged_ids": [
+        234,
+        235
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "acceleration",
+      "part_of_speech": "noun",
+      "retained_id": 236,
+      "merged_ids": [
+        237,
+        238
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accrue",
+      "part_of_speech": "verb",
+      "retained_id": 308,
+      "merged_ids": [
+        309
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "accuse",
+      "part_of_speech": "verb",
+      "retained_id": 316,
+      "merged_ids": [
+        317
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "act",
+      "part_of_speech": "verb",
+      "retained_id": 35193,
+      "merged_ids": [
+        35194
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "I or T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "activity",
+      "part_of_speech": "noun",
+      "retained_id": 431,
+      "merged_ids": [
+        432,
+        433
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "adapt",
+      "part_of_speech": "verb",
+      "retained_id": 457,
+      "merged_ids": [
+        458,
+        459,
+        460
+      ],
+      "row_count": 4,
+      "zh_definition_count": 1,
+      "en_definition_count": 4,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "add up",
+      "part_of_speech": "verb",
+      "retained_id": 464,
+      "merged_ids": [
+        465
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "adjourn",
+      "part_of_speech": "verb",
+      "retained_id": 498,
+      "merged_ids": [
+        499,
+        500
+      ],
+      "row_count": 3,
+      "zh_definition_count": 2,
+      "en_definition_count": 3,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "administration",
+      "part_of_speech": "noun",
+      "retained_id": 509,
+      "merged_ids": [
+        510
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "admit",
+      "part_of_speech": "verb",
+      "retained_id": 35913,
+      "merged_ids": [
+        35914
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I or T",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "adumbration",
+      "part_of_speech": "noun",
+      "retained_id": 549,
+      "merged_ids": [
+        550,
+        551
+      ],
+      "row_count": 3,
+      "zh_definition_count": 2,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "advantage",
+      "part_of_speech": "noun",
+      "retained_id": 560,
+      "merged_ids": [
+        561,
+        562,
+        563
+      ],
+      "row_count": 4,
+      "zh_definition_count": 3,
+      "en_definition_count": 4,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "age",
+      "part_of_speech": "noun",
+      "retained_id": 35261,
+      "merged_ids": [
+        35262
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "agency",
+      "part_of_speech": "noun",
+      "retained_id": 36487,
+      "merged_ids": [
+        36488
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "agreement",
+      "part_of_speech": "noun",
+      "retained_id": 722,
+      "merged_ids": [
+        723,
+        724,
+        725,
+        726
+      ],
+      "row_count": 5,
+      "zh_definition_count": 4,
+      "en_definition_count": 5,
+      "countability_values": [
+        "C",
+        "C or U",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "ai",
+      "part_of_speech": "noun",
+      "retained_id": 739,
+      "merged_ids": [
+        740
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "alarm",
+      "part_of_speech": "noun",
+      "retained_id": 36489,
+      "merged_ids": [
+        36490
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "alchemy",
+      "part_of_speech": "noun",
+      "retained_id": 841,
+      "merged_ids": [
+        842
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "alcohol",
+      "part_of_speech": "noun",
+      "retained_id": 36015,
+      "merged_ids": [
+        36016
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "U",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "algebra",
+      "part_of_speech": "noun",
+      "retained_id": 874,
+      "merged_ids": [
+        875,
+        876
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "algorithm",
+      "part_of_speech": "noun",
+      "retained_id": 886,
+      "merged_ids": [
+        887
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "alt-right",
+      "part_of_speech": "noun",
+      "retained_id": 1038,
+      "merged_ids": [
+        1039
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "altercation",
+      "part_of_speech": "noun",
+      "retained_id": 1048,
+      "merged_ids": [
+        1049
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "analysis",
+      "part_of_speech": "noun",
+      "retained_id": 1226,
+      "merged_ids": [
+        1227,
+        1228
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "anime",
+      "part_of_speech": "noun",
+      "retained_id": 1362,
+      "merged_ids": [
+        1363
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "annoyance",
+      "part_of_speech": "noun",
+      "retained_id": 1390,
+      "merged_ids": [
+        1391,
+        1392
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "appease",
+      "part_of_speech": "verb",
+      "retained_id": 1609,
+      "merged_ids": [
+        1610
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "approve",
+      "part_of_speech": "verb",
+      "retained_id": 1663,
+      "merged_ids": [
+        1664,
+        1665,
+        1666
+      ],
+      "row_count": 4,
+      "zh_definition_count": 2,
+      "en_definition_count": 4,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "archery",
+      "part_of_speech": "noun",
+      "retained_id": 1764,
+      "merged_ids": [
+        1765
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "argument",
+      "part_of_speech": "noun",
+      "retained_id": 1822,
+      "merged_ids": [
+        1823,
+        1824,
+        1825
+      ],
+      "row_count": 4,
+      "zh_definition_count": 2,
+      "en_definition_count": 4,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "arrival",
+      "part_of_speech": "noun",
+      "retained_id": 36023,
+      "merged_ids": [
+        36024
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "ass",
+      "part_of_speech": "noun",
+      "retained_id": 2048,
+      "merged_ids": [
+        2049,
+        2050,
+        2051
+      ],
+      "row_count": 4,
+      "zh_definition_count": 4,
+      "en_definition_count": 4,
+      "countability_values": [
+        "C",
+        "C or U",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "assemble",
+      "part_of_speech": "verb",
+      "retained_id": 2072,
+      "merged_ids": [
+        2073
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I or T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "assembly",
+      "part_of_speech": "noun",
+      "retained_id": 35915,
+      "merged_ids": [
+        35916
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "attack",
+      "part_of_speech": "verb",
+      "retained_id": 34817,
+      "merged_ids": [
+        34818
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I or T",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "attention",
+      "part_of_speech": "noun",
+      "retained_id": 2288,
+      "merged_ids": [
+        2289,
+        2290
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C or U",
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "audition",
+      "part_of_speech": "noun",
+      "retained_id": 2333,
+      "merged_ids": [
+        2334
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "authority",
+      "part_of_speech": "noun",
+      "retained_id": 2397,
+      "merged_ids": [
+        2398
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "avail",
+      "part_of_speech": "verb",
+      "retained_id": 2442,
+      "merged_ids": [
+        2443
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "baba",
+      "part_of_speech": "noun",
+      "retained_id": 2535,
+      "merged_ids": [
+        2536
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "backbone",
+      "part_of_speech": "noun",
+      "retained_id": 2577,
+      "merged_ids": [
+        2578,
+        2579
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bake",
+      "part_of_speech": "verb",
+      "retained_id": 2658,
+      "merged_ids": [
+        2659
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I or T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bathe",
+      "part_of_speech": "verb",
+      "retained_id": 2944,
+      "merged_ids": [
+        2945
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bay",
+      "part_of_speech": "noun",
+      "retained_id": 2984,
+      "merged_ids": [
+        2985,
+        2986,
+        2987
+      ],
+      "row_count": 4,
+      "zh_definition_count": 3,
+      "en_definition_count": 4,
+      "countability_values": [
+        "C",
+        "U",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "beat",
+      "part_of_speech": "verb",
+      "retained_id": 34823,
+      "merged_ids": [
+        34824
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I or T",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "beer",
+      "part_of_speech": "noun",
+      "retained_id": 3122,
+      "merged_ids": [
+        3123
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "beg",
+      "part_of_speech": "verb",
+      "retained_id": 3141,
+      "merged_ids": [
+        3142
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "belarusian",
+      "part_of_speech": "noun",
+      "retained_id": 3181,
+      "merged_ids": [
+        3182
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "belay",
+      "part_of_speech": "verb",
+      "retained_id": 3184,
+      "merged_ids": [
+        3185
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "belief",
+      "part_of_speech": "noun",
+      "retained_id": 3197,
+      "merged_ids": [
+        3198,
+        3199,
+        3200,
+        3201,
+        3202
+      ],
+      "row_count": 6,
+      "zh_definition_count": 4,
+      "en_definition_count": 6,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "betide",
+      "part_of_speech": "verb",
+      "retained_id": 3341,
+      "merged_ids": [
+        3342
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bid",
+      "part_of_speech": "verb",
+      "retained_id": 3404,
+      "merged_ids": [
+        3405,
+        3406
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "birth",
+      "part_of_speech": "noun",
+      "retained_id": 3518,
+      "merged_ids": [
+        3519,
+        3520
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "blubber",
+      "part_of_speech": "noun",
+      "retained_id": 3780,
+      "merged_ids": [
+        3781
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "blueberry",
+      "part_of_speech": "noun",
+      "retained_id": 3795,
+      "merged_ids": [
+        3796,
+        3797
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bottom",
+      "part_of_speech": "noun",
+      "retained_id": 4063,
+      "merged_ids": [
+        4064,
+        4065
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bounty",
+      "part_of_speech": "noun",
+      "retained_id": 4083,
+      "merged_ids": [
+        4084,
+        4085
+      ],
+      "row_count": 3,
+      "zh_definition_count": 2,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "brass",
+      "part_of_speech": "noun",
+      "retained_id": 4194,
+      "merged_ids": [
+        4195,
+        4196
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C or U",
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bread",
+      "part_of_speech": "noun",
+      "retained_id": 4214,
+      "merged_ids": [
+        4215,
+        4216
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "break",
+      "part_of_speech": "verb",
+      "retained_id": 34928,
+      "merged_ids": [
+        34929
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I or T",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "break up",
+      "part_of_speech": "verb",
+      "retained_id": 4241,
+      "merged_ids": [
+        4242
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "breed",
+      "part_of_speech": "verb",
+      "retained_id": 4276,
+      "merged_ids": [
+        4277,
+        4278
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "breton",
+      "part_of_speech": "noun",
+      "retained_id": 4289,
+      "merged_ids": [
+        4290
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bring on",
+      "part_of_speech": "verb",
+      "retained_id": 4339,
+      "merged_ids": [
+        4340
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "broth",
+      "part_of_speech": "noun",
+      "retained_id": 4402,
+      "merged_ids": [
+        4403
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bulgarian",
+      "part_of_speech": "noun",
+      "retained_id": 4531,
+      "merged_ids": [
+        4532
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "bust",
+      "part_of_speech": "verb",
+      "retained_id": 4698,
+      "merged_ids": [
+        4699,
+        4700,
+        4701
+      ],
+      "row_count": 4,
+      "zh_definition_count": 3,
+      "en_definition_count": 4,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cabbage",
+      "part_of_speech": "noun",
+      "retained_id": 4808,
+      "merged_ids": [
+        4809
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cable",
+      "part_of_speech": "noun",
+      "retained_id": 35846,
+      "merged_ids": [
+        35847
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "calculation",
+      "part_of_speech": "noun",
+      "retained_id": 4882,
+      "merged_ids": [
+        4883,
+        4884
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "calculus",
+      "part_of_speech": "noun",
+      "retained_id": 4887,
+      "merged_ids": [
+        4888,
+        4889
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cane",
+      "part_of_speech": "noun",
+      "retained_id": 5033,
+      "merged_ids": [
+        5034
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "canon",
+      "part_of_speech": "noun",
+      "retained_id": 5060,
+      "merged_ids": [
+        5061,
+        5062,
+        5063
+      ],
+      "row_count": 4,
+      "zh_definition_count": 4,
+      "en_definition_count": 4,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cant",
+      "part_of_speech": "noun",
+      "retained_id": 5066,
+      "merged_ids": [
+        5067
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "capital",
+      "part_of_speech": "noun",
+      "retained_id": 5109,
+      "merged_ids": [
+        5110
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "careen",
+      "part_of_speech": "verb",
+      "retained_id": 5199,
+      "merged_ids": [
+        5200
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "carve",
+      "part_of_speech": "verb",
+      "retained_id": 36043,
+      "merged_ids": [
+        36044
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I or T",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "casserole",
+      "part_of_speech": "noun",
+      "retained_id": 5313,
+      "merged_ids": [
+        5314
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cease",
+      "part_of_speech": "verb",
+      "retained_id": 5473,
+      "merged_ids": [
+        5474
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "celebrate",
+      "part_of_speech": "verb",
+      "retained_id": 5484,
+      "merged_ids": [
+        5485,
+        5486
+      ],
+      "row_count": 3,
+      "zh_definition_count": 1,
+      "en_definition_count": 3,
+      "countability_values": [
+        "T",
+        "I or T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cereal",
+      "part_of_speech": "noun",
+      "retained_id": 5572,
+      "merged_ids": [
+        5573
+      ],
+      "row_count": 2,
+      "zh_definition_count": 1,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "chaff",
+      "part_of_speech": "verb",
+      "retained_id": 5613,
+      "merged_ids": [
+        5614
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "chance",
+      "part_of_speech": "noun",
+      "retained_id": 5657,
+      "merged_ids": [
+        5658,
+        5659
+      ],
+      "row_count": 3,
+      "zh_definition_count": 2,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "character",
+      "part_of_speech": "noun",
+      "retained_id": 35736,
+      "merged_ids": [
+        35737,
+        35738
+      ],
+      "row_count": 3,
+      "zh_definition_count": 3,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "charge",
+      "part_of_speech": "noun",
+      "retained_id": 34876,
+      "merged_ids": [
+        34877
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "charge",
+      "part_of_speech": "verb",
+      "retained_id": 34874,
+      "merged_ids": [
+        34875
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I or T",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cheat",
+      "part_of_speech": "noun",
+      "retained_id": 5776,
+      "merged_ids": [
+        5777,
+        5778
+      ],
+      "row_count": 3,
+      "zh_definition_count": 2,
+      "en_definition_count": 3,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cheat",
+      "part_of_speech": "verb",
+      "retained_id": 5779,
+      "merged_ids": [
+        5780
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I",
+        "T"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "check out",
+      "part_of_speech": "verb",
+      "retained_id": 5793,
+      "merged_ids": [
+        5794
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cheek",
+      "part_of_speech": "noun",
+      "retained_id": 36153,
+      "merged_ids": [
+        36154
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "cheese",
+      "part_of_speech": "noun",
+      "retained_id": 5822,
+      "merged_ids": [
+        5823
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C or U",
+        "C"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "chi",
+      "part_of_speech": "noun",
+      "retained_id": 5885,
+      "merged_ids": [
+        5886
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "C",
+        "U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "childhood",
+      "part_of_speech": "noun",
+      "retained_id": 5931,
+      "merged_ids": [
+        5932
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "U",
+        "C or U"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    },
+    {
+      "word": "chill",
+      "part_of_speech": "verb",
+      "retained_id": 36156,
+      "merged_ids": [
+        36157
+      ],
+      "row_count": 2,
+      "zh_definition_count": 2,
+      "en_definition_count": 2,
+      "countability_values": [
+        "I or T",
+        "I"
+      ],
+      "uk_ipa_conflict": false,
+      "us_ipa_conflict": false
+    }
+  ]
+}

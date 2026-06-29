@@ -18,7 +18,7 @@ PersonalDictionaryService / LocalDictionaryService / CuratedDictionary / Diction
 DictionaryEntry models
 ```
 
-查詢結果由 `WordDetailView` 顯示，私人詞條由 `PersonalEntryEditView` 編輯，發音由 `AudioPlayerService` 負責，搜尋歷史由 `SearchHistoryStore` 儲存在 `UserDefaults`。
+查詢結果由 `WordDetailView` 顯示，私人詞條由 `PersonalEntryEditView` 編輯，發音由 `AudioPlayerService` 負責，搜尋歷史由 `SearchHistoryStore` 儲存在 `UserDefaults`，書簽由 `BookmarkStore` 儲存在 `UserDefaults`。
 
 ## 2. 主要檔案
 
@@ -33,7 +33,7 @@ DictionaryEntry models
 
 - `DictionarySearchView.swift`
   - 搜尋頁與結果頁容器。
-  - 管理搜尋輸入框、搜尋歷史、下拉選單、loading、error state。
+  - 管理搜尋輸入框、搜尋歷史、書簽、下拉選單、loading、error state。
   - 使用 `NavigationStack` 顯示查詢結果。
   - 提供私人字典編輯、重設、匯出與匯入入口。
 
@@ -105,6 +105,11 @@ DictionaryEntry models
   - 使用 `UserDefaults` 儲存最近搜尋字。
   - 預設最多保留 20 個。
 
+- `BookmarkStore.swift`
+  - 使用 `UserDefaults` 儲存書簽字詞。
+  - 提供加入、移除、切換、清除與查詢是否已收藏。
+  - 書簽是使用者偏好資料，不寫入 bundled `dictionary.sqlite` 或私人字典 SQLite。
+
 - `PersonalDictionaryService.swift`
   - 使用 SQLite3 管理使用者私人字典。
   - 儲存在 Application Support 內的 `PersonalDictionary.sqlite`。
@@ -140,6 +145,13 @@ DictionaryService.lookup(word:)
    - 直接返回 curated entries
 7. 如果 private / local / curated 都沒有：
    - 使用線上 Dictionary API fallback
+```
+
+也就是：
+
+```text
+你編輯過的字 → 讀 PersonalDictionary.sqlite
+未編輯過的字 → 讀內建 dictionary.sqlite
 ```
 
 目前 `CuratedDictionary` 的用途包括：
@@ -250,6 +262,9 @@ examples: Array(examples.prefix(1))
 
 私人字典用於保存使用者手動修正的字典筆記。它不會直接修改 app bundle 內的
 `dictionary.sqlite`，避免使用者資料在重新安裝 app 或更新內建詞庫時混入可重建資料。
+查詢時採用 per-word override：如果某個字已被手動編輯，app 會優先讀取
+`PersonalDictionary.sqlite` 內的私人版本；如果該字沒有私人版本，才讀取
+app bundle 內建的 `dictionary.sqlite`。
 
 本機私人字典位置由 `FileManager.default.url(for:in:appropriateFor:create:)`
 取得 Application Support，再建立：
@@ -376,7 +391,7 @@ linked words
 
 點擊後透過 `onSelectWord` callback 回到 `DictionarySearchView` 執行新查詢。
 
-## 8. 搜尋歷史與下拉選單
+## 8. 搜尋歷史、書簽與下拉選單
 
 `SearchHistoryStore` 負責儲存最近搜尋：
 
@@ -384,6 +399,14 @@ linked words
 - key：`dictionarySearchHistory`
 - 最大數量：20
 - 新查詢會移到最前面。
+
+`BookmarkStore` 負責儲存書簽：
+
+- 儲存位置：`UserDefaults`
+- key：`dictionaryBookmarks`
+- 未設定最大數量。
+- 結果頁工具列以 `star` / `star.fill` 顯示目前字是否已收藏。
+- 首頁會顯示書簽區，點擊書簽字詞可直接重新查詢，也可逐個移除或清除全部。
 
 `DictionarySearchView` 的下拉選單設計目標是類似 Google 搜尋框：
 

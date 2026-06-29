@@ -126,6 +126,32 @@ struct DictionaryService {
         }
     }
 
+    func suggestions(prefix rawPrefix: String, limit: Int = 20) async -> [String] {
+        let prefix = rawPrefix.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !prefix.isEmpty else { return [] }
+
+        var seen = Set<String>()
+        var words: [String] = []
+
+        func append(_ word: String) {
+            let normalized = word.lowercased()
+            guard !normalized.isEmpty, !seen.contains(normalized) else { return }
+            seen.insert(normalized)
+            words.append(word)
+        }
+
+        CuratedDictionary.suggestions(prefix: prefix).forEach(append)
+
+        if let localWords = try? await localDictionary.suggestions(
+            prefix: prefix,
+            limit: limit
+        ) {
+            localWords.forEach(append)
+        }
+
+        return Array(words.prefix(limit))
+    }
+
     func personalDraft(
         word: String,
         fallbackEntries: [DictionaryEntry]

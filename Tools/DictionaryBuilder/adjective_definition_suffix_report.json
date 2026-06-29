@@ -1,0 +1,714 @@
+{
+  "tool": "normalize_adjective_chinese_definitions.py",
+  "tool_version": "adjective_definition_suffix_v1",
+  "database": "IPA Dict/Data/dictionary.sqlite",
+  "dry_run": false,
+  "backup_path": "/tmp/dictionary-before-adjective-suffix-20260629-113404.sqlite",
+  "adjective_entry_count": 3012,
+  "before_missing_suffix_count": 2032,
+  "after_missing_suffix_count": 0,
+  "updated_entry_count": 2099,
+  "integrity_check": "ok",
+  "sample_updates": [
+    {
+      "id": 2,
+      "word": "101",
+      "normalized_word": "101",
+      "old_chinese": "入門",
+      "new_chinese": "入門的"
+    },
+    {
+      "id": 41,
+      "word": "abashed",
+      "normalized_word": "abashed",
+      "old_chinese": "不好意思",
+      "new_chinese": "不好意思的"
+    },
+    {
+      "id": 97,
+      "word": "abject",
+      "normalized_word": "abject",
+      "old_chinese": "卑鄙；卑微的；卑屈的；絕望的",
+      "new_chinese": "卑鄙的；卑微的；卑屈的；絕望的"
+    },
+    {
+      "id": 102,
+      "word": "abkhaz",
+      "normalized_word": "abkhaz",
+      "old_chinese": "阿布哈茲語",
+      "new_chinese": "阿布哈茲語的"
+    },
+    {
+      "id": 108,
+      "word": "ablative",
+      "normalized_word": "ablative",
+      "old_chinese": "離格",
+      "new_chinese": "離格的"
+    },
+    {
+      "id": 174,
+      "word": "absent",
+      "normalized_word": "absent",
+      "old_chinese": "缺席",
+      "new_chinese": "缺席的"
+    },
+    {
+      "id": 187,
+      "word": "abstemious",
+      "normalized_word": "abstemious",
+      "old_chinese": "中度",
+      "new_chinese": "中度的"
+    },
+    {
+      "id": 188,
+      "word": "abstinent",
+      "normalized_word": "abstinent",
+      "old_chinese": "中度",
+      "new_chinese": "中度的"
+    },
+    {
+      "id": 189,
+      "word": "abstract",
+      "normalized_word": "abstract",
+      "old_chinese": "抽象",
+      "new_chinese": "抽象的"
+    },
+    {
+      "id": 262,
+      "word": "accessible",
+      "normalized_word": "accessible",
+      "old_chinese": "可得到",
+      "new_chinese": "可得到的"
+    },
+    {
+      "id": 267,
+      "word": "accidental",
+      "normalized_word": "accidental",
+      "old_chinese": "偶然",
+      "new_chinese": "偶然的"
+    },
+    {
+      "id": 283,
+      "word": "accomplished",
+      "normalized_word": "accomplished",
+      "old_chinese": "有才能",
+      "new_chinese": "有才能的"
+    },
+    {
+      "id": 300,
+      "word": "accountable",
+      "normalized_word": "accountable",
+      "old_chinese": "負責",
+      "new_chinese": "負責的"
+    },
+    {
+      "id": 311,
+      "word": "accurate",
+      "normalized_word": "accurate",
+      "old_chinese": "準確",
+      "new_chinese": "準確的"
+    },
+    {
+      "id": 378,
+      "word": "acquiescent",
+      "normalized_word": "acquiescent",
+      "old_chinese": "溫順",
+      "new_chinese": "溫順的"
+    },
+    {
+      "id": 398,
+      "word": "acrostical",
+      "normalized_word": "acrostical",
+      "old_chinese": "離合詩",
+      "new_chinese": "離合詩的"
+    },
+    {
+      "id": 425,
+      "word": "active",
+      "normalized_word": "active",
+      "old_chinese": "主動；活動",
+      "new_chinese": "主動的；活動的"
+    },
+    {
+      "id": 436,
+      "word": "actual",
+      "normalized_word": "actual",
+      "old_chinese": "實際的；真實的；本",
+      "new_chinese": "實際的；真實的；本的"
+    },
+    {
+      "id": 442,
+      "word": "acute",
+      "normalized_word": "acute",
+      "old_chinese": "強烈的；敏銳的；緊急；銳利；和",
+      "new_chinese": "強烈的；敏銳的；緊急的；銳利的；和的"
+    },
+    {
+      "id": 450,
+      "word": "acute-angled",
+      "normalized_word": "acute-angled",
+      "old_chinese": "銳角",
+      "new_chinese": "銳角的"
+    },
+    {
+      "id": 461,
+      "word": "adaptive",
+      "normalized_word": "adaptive",
+      "old_chinese": "適應性",
+      "new_chinese": "適應性的"
+    },
+    {
+      "id": 482,
+      "word": "adept",
+      "normalized_word": "adept",
+      "old_chinese": "有才能",
+      "new_chinese": "有才能的"
+    },
+    {
+      "id": 484,
+      "word": "adequate",
+      "normalized_word": "adequate",
+      "old_chinese": "適當",
+      "new_chinese": "適當的"
+    },
+    {
+      "id": 492,
+      "word": "adiabatic",
+      "normalized_word": "adiabatic",
+      "old_chinese": "絕熱",
+      "new_chinese": "絕熱的"
+    },
+    {
+      "id": 495,
+      "word": "adjectival",
+      "normalized_word": "adjectival",
+      "old_chinese": "形容詞",
+      "new_chinese": "形容詞的"
+    },
+    {
+      "id": 524,
+      "word": "adolescent",
+      "normalized_word": "adolescent",
+      "old_chinese": "青少年",
+      "new_chinese": "青少年的"
+    },
+    {
+      "id": 532,
+      "word": "adorable",
+      "normalized_word": "adorable",
+      "old_chinese": "可愛",
+      "new_chinese": "可愛的"
+    },
+    {
+      "id": 546,
+      "word": "adulterous",
+      "normalized_word": "adulterous",
+      "old_chinese": "私通",
+      "new_chinese": "私通的"
+    },
+    {
+      "id": 556,
+      "word": "advanced",
+      "normalized_word": "advanced",
+      "old_chinese": "高級；前",
+      "new_chinese": "高級的；前的"
+    },
+    {
+      "id": 590,
+      "word": "aerial",
+      "normalized_word": "aerial",
+      "old_chinese": "空氣",
+      "new_chinese": "空氣的"
+    },
+    {
+      "id": 602,
+      "word": "aesthetic",
+      "normalized_word": "aesthetic",
+      "old_chinese": "美學",
+      "new_chinese": "美學的"
+    },
+    {
+      "id": 616,
+      "word": "affectionate",
+      "normalized_word": "affectionate",
+      "old_chinese": "親切",
+      "new_chinese": "親切的"
+    },
+    {
+      "id": 631,
+      "word": "affordable",
+      "normalized_word": "affordable",
+      "old_chinese": "買得起",
+      "new_chinese": "買得起的"
+    },
+    {
+      "id": 640,
+      "word": "aforethought",
+      "normalized_word": "aforethought",
+      "old_chinese": "故意",
+      "new_chinese": "故意的"
+    },
+    {
+      "id": 641,
+      "word": "afraid",
+      "normalized_word": "afraid",
+      "old_chinese": "害怕；抱歉的；遺憾的",
+      "new_chinese": "害怕的；抱歉的；遺憾的"
+    },
+    {
+      "id": 727,
+      "word": "agricultural",
+      "normalized_word": "agricultural",
+      "old_chinese": "農業",
+      "new_chinese": "農業的"
+    },
+    {
+      "id": 755,
+      "word": "ainu",
+      "normalized_word": "ainu",
+      "old_chinese": "阿伊努",
+      "new_chinese": "阿伊努的"
+    },
+    {
+      "id": 803,
+      "word": "akin",
+      "normalized_word": "akin",
+      "old_chinese": "類似",
+      "new_chinese": "類似的"
+    },
+    {
+      "id": 845,
+      "word": "alcoholic",
+      "normalized_word": "alcoholic",
+      "old_chinese": "酒客",
+      "new_chinese": "酒客的"
+    },
+    {
+      "id": 857,
+      "word": "aleatory",
+      "normalized_word": "aleatory",
+      "old_chinese": "偶然",
+      "new_chinese": "偶然的"
+    },
+    {
+      "id": 861,
+      "word": "alert",
+      "normalized_word": "alert",
+      "old_chinese": "警惕",
+      "new_chinese": "警惕的"
+    },
+    {
+      "id": 880,
+      "word": "algid",
+      "normalized_word": "algid",
+      "old_chinese": "冷",
+      "new_chinese": "冷的"
+    },
+    {
+      "id": 891,
+      "word": "alien",
+      "normalized_word": "alien",
+      "old_chinese": "外國；外來；外星人",
+      "new_chinese": "外國的；外來的；外星人的"
+    },
+    {
+      "id": 903,
+      "word": "alive",
+      "normalized_word": "alive",
+      "old_chinese": "活著",
+      "new_chinese": "活著的"
+    },
+    {
+      "id": 904,
+      "word": "alive and kicking",
+      "normalized_word": "alive and kicking",
+      "old_chinese": "安然無恙",
+      "new_chinese": "安然無恙的"
+    },
+    {
+      "id": 919,
+      "word": "all around",
+      "normalized_word": "all around",
+      "old_chinese": "完全",
+      "new_chinese": "完全的"
+    },
+    {
+      "id": 947,
+      "word": "all-boys",
+      "normalized_word": "all-boys",
+      "old_chinese": "男孩",
+      "new_chinese": "男孩的"
+    },
+    {
+      "id": 949,
+      "word": "all-inclusive",
+      "normalized_word": "all-inclusive",
+      "old_chinese": "全部",
+      "new_chinese": "全部的"
+    },
+    {
+      "id": 950,
+      "word": "all-out",
+      "normalized_word": "all-out",
+      "old_chinese": "全部",
+      "new_chinese": "全部的"
+    },
+    {
+      "id": 34950,
+      "word": "alone",
+      "normalized_word": "alone",
+      "old_chinese": "一",
+      "new_chinese": "一的"
+    },
+    {
+      "id": 1050,
+      "word": "alternate",
+      "normalized_word": "alternate",
+      "old_chinese": "交替的；另外的美",
+      "new_chinese": "交替的；另外的美的"
+    },
+    {
+      "id": 1093,
+      "word": "amazed",
+      "normalized_word": "amazed",
+      "old_chinese": "驚讶",
+      "new_chinese": "驚讶的"
+    },
+    {
+      "id": 1095,
+      "word": "amazing",
+      "normalized_word": "amazing",
+      "old_chinese": "棒",
+      "new_chinese": "棒的"
+    },
+    {
+      "id": 1105,
+      "word": "ambient",
+      "normalized_word": "ambient",
+      "old_chinese": "環境",
+      "new_chinese": "環境的"
+    },
+    {
+      "id": 1123,
+      "word": "amenable",
+      "normalized_word": "amenable",
+      "old_chinese": "平易近人",
+      "new_chinese": "平易近人的"
+    },
+    {
+      "id": 1148,
+      "word": "amiable",
+      "normalized_word": "amiable",
+      "old_chinese": "仁慈",
+      "new_chinese": "仁慈的"
+    },
+    {
+      "id": 1165,
+      "word": "ammonical",
+      "normalized_word": "ammonical",
+      "old_chinese": "氨",
+      "new_chinese": "氨的"
+    },
+    {
+      "id": 1174,
+      "word": "amorous",
+      "normalized_word": "amorous",
+      "old_chinese": "愛情",
+      "new_chinese": "愛情的"
+    },
+    {
+      "id": 1184,
+      "word": "amphibious",
+      "normalized_word": "amphibious",
+      "old_chinese": "兩棲",
+      "new_chinese": "兩棲的"
+    },
+    {
+      "id": 1190,
+      "word": "ample",
+      "normalized_word": "ample",
+      "old_chinese": "不少",
+      "new_chinese": "不少的"
+    },
+    {
+      "id": 1204,
+      "word": "amusing",
+      "normalized_word": "amusing",
+      "old_chinese": "好玩",
+      "new_chinese": "好玩的"
+    },
+    {
+      "id": 1219,
+      "word": "anal-retentive",
+      "normalized_word": "anal-retentive",
+      "old_chinese": "仔細；吹毛求疵的",
+      "new_chinese": "仔細的；吹毛求疵的"
+    },
+    {
+      "id": 1222,
+      "word": "analog",
+      "normalized_word": "analog",
+      "old_chinese": "模擬",
+      "new_chinese": "模擬的"
+    },
+    {
+      "id": 1223,
+      "word": "analogical",
+      "normalized_word": "analogical",
+      "old_chinese": "模擬",
+      "new_chinese": "模擬的"
+    },
+    {
+      "id": 1265,
+      "word": "ancillary",
+      "normalized_word": "ancillary",
+      "old_chinese": "次要",
+      "new_chinese": "次要的"
+    },
+    {
+      "id": 1296,
+      "word": "anesthetic",
+      "normalized_word": "anesthetic",
+      "old_chinese": "麻藥",
+      "new_chinese": "麻藥的"
+    },
+    {
+      "id": 1331,
+      "word": "anglo-saxon",
+      "normalized_word": "anglo-saxon",
+      "old_chinese": "盎格魯-撒克遜",
+      "new_chinese": "盎格魯-撒克遜的"
+    },
+    {
+      "id": 1336,
+      "word": "angry",
+      "normalized_word": "angry",
+      "old_chinese": "不對",
+      "new_chinese": "不對的"
+    },
+    {
+      "id": 1342,
+      "word": "anhydrous",
+      "normalized_word": "anhydrous",
+      "old_chinese": "無水",
+      "new_chinese": "無水的"
+    },
+    {
+      "id": 35076,
+      "word": "animal",
+      "normalized_word": "animal",
+      "old_chinese": "動物",
+      "new_chinese": "動物的"
+    },
+    {
+      "id": 1356,
+      "word": "animal-like",
+      "normalized_word": "animal-like",
+      "old_chinese": "動物",
+      "new_chinese": "動物的"
+    },
+    {
+      "id": 1357,
+      "word": "animalistic",
+      "normalized_word": "animalistic",
+      "old_chinese": "動物",
+      "new_chinese": "動物的"
+    },
+    {
+      "id": 1361,
+      "word": "animatronic",
+      "normalized_word": "animatronic",
+      "old_chinese": "電子動畫",
+      "new_chinese": "電子動畫的"
+    },
+    {
+      "id": 1393,
+      "word": "annoyed",
+      "normalized_word": "annoyed",
+      "old_chinese": "酸",
+      "new_chinese": "酸的"
+    },
+    {
+      "id": 1394,
+      "word": "annual",
+      "normalized_word": "annual",
+      "old_chinese": "一年生",
+      "new_chinese": "一年生的"
+    },
+    {
+      "id": 1400,
+      "word": "annular",
+      "normalized_word": "annular",
+      "old_chinese": "無名指",
+      "new_chinese": "無名指的"
+    },
+    {
+      "id": 1432,
+      "word": "antarctic",
+      "normalized_word": "antarctic",
+      "old_chinese": "南極洲",
+      "new_chinese": "南極洲的"
+    },
+    {
+      "id": 1438,
+      "word": "antebellum",
+      "normalized_word": "antebellum",
+      "old_chinese": "戰前",
+      "new_chinese": "戰前的"
+    },
+    {
+      "id": 1469,
+      "word": "antiblue",
+      "normalized_word": "antiblue",
+      "old_chinese": "反藍",
+      "new_chinese": "反藍的"
+    },
+    {
+      "id": 1471,
+      "word": "antic",
+      "normalized_word": "antic",
+      "old_chinese": "奇怪",
+      "new_chinese": "奇怪的"
+    },
+    {
+      "id": 1487,
+      "word": "antifogging",
+      "normalized_word": "antifogging",
+      "old_chinese": "霧燈",
+      "new_chinese": "霧燈的"
+    },
+    {
+      "id": 1493,
+      "word": "antihistaminic",
+      "normalized_word": "antihistaminic",
+      "old_chinese": "抗組胺",
+      "new_chinese": "抗組胺的"
+    },
+    {
+      "id": 1496,
+      "word": "antimicrobial",
+      "normalized_word": "antimicrobial",
+      "old_chinese": "抗微生物",
+      "new_chinese": "抗微生物的"
+    },
+    {
+      "id": 1513,
+      "word": "antired",
+      "normalized_word": "antired",
+      "old_chinese": "反紅",
+      "new_chinese": "反紅的"
+    },
+    {
+      "id": 1514,
+      "word": "antiseptic",
+      "normalized_word": "antiseptic",
+      "old_chinese": "抗菌",
+      "new_chinese": "抗菌的"
+    },
+    {
+      "id": 1522,
+      "word": "antonymous",
+      "normalized_word": "antonymous",
+      "old_chinese": "反義詞",
+      "new_chinese": "反義詞的"
+    },
+    {
+      "id": 1532,
+      "word": "anxious",
+      "normalized_word": "anxious",
+      "old_chinese": "擔心",
+      "new_chinese": "擔心的"
+    },
+    {
+      "id": 1567,
+      "word": "aphrodisiac",
+      "normalized_word": "aphrodisiac",
+      "old_chinese": "春藥",
+      "new_chinese": "春藥的"
+    },
+    {
+      "id": 1591,
+      "word": "appalling",
+      "normalized_word": "appalling",
+      "old_chinese": "可怕",
+      "new_chinese": "可怕的"
+    },
+    {
+      "id": 1642,
+      "word": "apposite",
+      "normalized_word": "apposite",
+      "old_chinese": "宜",
+      "new_chinese": "宜的"
+    },
+    {
+      "id": 1657,
+      "word": "approachable",
+      "normalized_word": "approachable",
+      "old_chinese": "可得到",
+      "new_chinese": "可得到的"
+    },
+    {
+      "id": 1680,
+      "word": "apropos",
+      "normalized_word": "apropos",
+      "old_chinese": "宜",
+      "new_chinese": "宜的"
+    },
+    {
+      "id": 1700,
+      "word": "aquatic",
+      "normalized_word": "aquatic",
+      "old_chinese": "水棲",
+      "new_chinese": "水棲的"
+    },
+    {
+      "id": 1711,
+      "word": "arabian",
+      "normalized_word": "arabian",
+      "old_chinese": "阿拉伯",
+      "new_chinese": "阿拉伯的"
+    },
+    {
+      "id": 1716,
+      "word": "arabic",
+      "normalized_word": "arabic",
+      "old_chinese": "阿拉伯",
+      "new_chinese": "阿拉伯的"
+    },
+    {
+      "id": 1723,
+      "word": "aragonese",
+      "normalized_word": "aragonese",
+      "old_chinese": "阿拉貢語",
+      "new_chinese": "阿拉貢語的"
+    },
+    {
+      "id": 1729,
+      "word": "aramaic",
+      "normalized_word": "aramaic",
+      "old_chinese": "亞拉姆語",
+      "new_chinese": "亞拉姆語的"
+    },
+    {
+      "id": 1732,
+      "word": "arawak",
+      "normalized_word": "arawak",
+      "old_chinese": "阿拉瓦",
+      "new_chinese": "阿拉瓦的"
+    },
+    {
+      "id": 1766,
+      "word": "archetypal",
+      "normalized_word": "archetypal",
+      "old_chinese": "原始模型",
+      "new_chinese": "原始模型的"
+    },
+    {
+      "id": 1780,
+      "word": "arctic",
+      "normalized_word": "arctic",
+      "old_chinese": "北極",
+      "new_chinese": "北極的"
+    }
+  ]
+}

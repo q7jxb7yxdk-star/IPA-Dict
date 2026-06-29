@@ -68,6 +68,44 @@ actor LocalDictionaryService {
         return entries
     }
 
+    func suggestions(prefix rawPrefix: String, limit: Int = 20) throws -> [String] {
+        let prefix = rawPrefix
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .lowercased()
+
+        guard !prefix.isEmpty else { return [] }
+        try openDatabaseIfNeeded()
+
+        let sql = """
+            SELECT word, normalized_word
+            FROM entries
+            WHERE normalized_word LIKE ?
+            GROUP BY normalized_word
+            ORDER BY
+                CASE WHEN normalized_word = ? THEN 0 ELSE 1 END,
+                normalized_word
+            LIMIT ?
+        """
+        var statement: OpaquePointer?
+        guard sqlite3_prepare_v2(database, sql, -1, &statement, nil) == SQLITE_OK else {
+            throw LocalDictionaryError.queryFailed
+        }
+        defer { sqlite3_finalize(statement) }
+
+        sqlite3_bind_text(statement, 1, "\(prefix)%", -1, sqliteTransient)
+        sqlite3_bind_text(statement, 2, prefix, -1, sqliteTransient)
+        sqlite3_bind_int(statement, 3, Int32(limit))
+
+        var words: [String] = []
+        while sqlite3_step(statement) == SQLITE_ROW {
+            let word = columnText(statement, 0)
+            if !word.isEmpty {
+                words.append(word)
+            }
+        }
+        return words
+    }
+
     private func openDatabaseIfNeeded() throws {
         guard database == nil else { return }
         guard let url = Bundle.main.url(

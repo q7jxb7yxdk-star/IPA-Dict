@@ -5,6 +5,7 @@ struct WordDetailView: View {
     var showsNavigationTitle = true
     var onSelectWord: ((String) -> Void)?
 
+    @Environment(\.openURL) private var openURL
     @State private var expandedPartsOfSpeech: Set<String> = []
 
     private let audioPlayer = AudioPlayerService.shared
@@ -57,6 +58,10 @@ struct WordDetailView: View {
                             .padding(.vertical, 4)
                         linkedWordsSection(title: "同義詞", words: allSynonyms)
                     }
+
+                    Divider()
+                        .padding(.vertical, 4)
+                    referenceSection(for: primaryEntry)
                 }
             }
             .frame(maxWidth: 760, alignment: .leading)
@@ -406,6 +411,43 @@ struct WordDetailView: View {
                 }
             }
         }
+    }
+
+    private func referenceSection(for entry: DictionaryEntry) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            sectionTitle("Reference")
+
+            Button {
+                if let url = cambridgeReferenceURL(for: entry.word) {
+                    openURL(url)
+                }
+            } label: {
+                Text("Cambridge Dictionary")
+                    .font(.system(size: 16, weight: .medium))
+                    .underline()
+                    .foregroundStyle(Color.accentColor)
+                    .padding(.vertical, 4)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .disabled(cambridgeReferenceURL(for: entry.word) == nil)
+        }
+    }
+
+    private func cambridgeReferenceURL(for word: String) -> URL? {
+        let normalizedWord = word
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .lowercased()
+        guard !normalizedWord.isEmpty,
+              let encodedWord = normalizedWord.addingPercentEncoding(
+                  withAllowedCharacters: .urlPathAllowed
+              ) else {
+            return nil
+        }
+
+        return URL(
+            string: "https://dictionary.cambridge.org/dictionary/english-chinese-traditional/\(encodedWord)"
+        )
     }
 
     private func sectionTitle(_ title: String) -> some View {

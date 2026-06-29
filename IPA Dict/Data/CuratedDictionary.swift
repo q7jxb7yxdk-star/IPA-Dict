@@ -16,6 +16,14 @@ enum CuratedDictionary {
         entries[word.lowercased()]
     }
 
+    static func suggestions(prefix rawPrefix: String) -> [String] {
+        let prefix = rawPrefix.lowercased()
+        guard !prefix.isEmpty else { return [] }
+        return entries.keys
+            .filter { $0.hasPrefix(prefix) }
+            .sorted()
+    }
+
     static func merge(
         curatedEntries: [DictionaryEntry],
         apiEntries: [DictionaryEntry]

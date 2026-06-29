@@ -1,0 +1,519 @@
+{
+  "tool": "merge_same_pos_entries.py",
+  "tool_version": "same_pos_merge_v2",
+  "operation": "reformat_numbered_definitions",
+  "database": "IPA Dict/Data/dictionary.sqlite",
+  "dry_run": false,
+  "backup_path": "/tmp/dictionary-before-definition-reformat-20260629-111407.sqlite",
+  "before": {
+    "entries": 25665
+  },
+  "after": {
+    "entries": 25665
+  },
+  "reformatted_entry_count": 4679,
+  "integrity_check": "ok",
+  "orphan_provenance_count": 0,
+  "sample_updates": [
+    {
+      "id": 13,
+      "word": "a lot",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": 15,
+      "word": "a lot",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": 17,
+      "word": "a minor",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 34,
+      "word": "abandon",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 38,
+      "word": "abase",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 50,
+      "word": "abbey",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 55,
+      "word": "abbreviated",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 58,
+      "word": "abbreviature",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 60,
+      "word": "abc",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 70,
+      "word": "abduction",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 74,
+      "word": "abet",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 97,
+      "word": "abject",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 100,
+      "word": "abjure",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 106,
+      "word": "ablation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 123,
+      "word": "aborigine",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 125,
+      "word": "abort",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 129,
+      "word": "abort",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 152,
+      "word": "abraham",
+      "part_of_speech": "proper noun"
+    },
+    {
+      "id": 159,
+      "word": "abroad",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": 167,
+      "word": "abscond",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 170,
+      "word": "absence",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 176,
+      "word": "absolute value",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 179,
+      "word": "absolution",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 183,
+      "word": "absorb",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 185,
+      "word": "absorption",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 189,
+      "word": "abstract",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 195,
+      "word": "abstraction",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 198,
+      "word": "absurdity",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 201,
+      "word": "abundance",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 205,
+      "word": "abuse",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 209,
+      "word": "abyss",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 216,
+      "word": "academia",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 219,
+      "word": "academic",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 222,
+      "word": "academician",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 224,
+      "word": "academy",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 233,
+      "word": "accelerate",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 236,
+      "word": "acceleration",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 241,
+      "word": "accelerator",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 247,
+      "word": "accent",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 253,
+      "word": "acceptance",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 262,
+      "word": "accessible",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 265,
+      "word": "accident",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 268,
+      "word": "accidental",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 275,
+      "word": "accommodate",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 277,
+      "word": "accommodation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 279,
+      "word": "accompaniment",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 284,
+      "word": "accomplishment",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 288,
+      "word": "according to",
+      "part_of_speech": "preposition"
+    },
+    {
+      "id": 290,
+      "word": "accordingly",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": 300,
+      "word": "accountable",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 303,
+      "word": "accountant",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 308,
+      "word": "accrue",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 313,
+      "word": "accusation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 316,
+      "word": "accuse",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 324,
+      "word": "acerbic",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 336,
+      "word": "achieve",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 338,
+      "word": "achievement",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 346,
+      "word": "achromatic",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 361,
+      "word": "acknowledge",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 363,
+      "word": "acknowledgment",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 381,
+      "word": "acquisition",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 384,
+      "word": "acre",
+      "part_of_speech": "proper noun"
+    },
+    {
+      "id": 425,
+      "word": "active",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 431,
+      "word": "activity",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 436,
+      "word": "actual",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 442,
+      "word": "acute",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 454,
+      "word": "adam",
+      "part_of_speech": "proper noun"
+    },
+    {
+      "id": 457,
+      "word": "adapt",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 461,
+      "word": "adaptive",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 464,
+      "word": "add up",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 467,
+      "word": "adder",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 470,
+      "word": "addiction",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 488,
+      "word": "adhesive",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 498,
+      "word": "adjourn",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 509,
+      "word": "administration",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 511,
+      "word": "admiral",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 521,
+      "word": "adobe",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 527,
+      "word": "adopt",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 529,
+      "word": "adoptee",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 533,
+      "word": "adore",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 537,
+      "word": "adrian",
+      "part_of_speech": "proper noun"
+    },
+    {
+      "id": 549,
+      "word": "adumbration",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 556,
+      "word": "advanced",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 560,
+      "word": "advantage",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 566,
+      "word": "adventure",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 571,
+      "word": "adverb",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 579,
+      "word": "advise",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 586,
+      "word": "aegis",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 608,
+      "word": "affair",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 610,
+      "word": "affect",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 614,
+      "word": "affection",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 619,
+      "word": "affinity",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 627,
+      "word": "affluent",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 629,
+      "word": "afford",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": 641,
+      "word": "afraid",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 656,
+      "word": "after all",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": 703,
+      "word": "aggressive",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": 710,
+      "word": "aging",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 715,
+      "word": "agony",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": 719,
+      "word": "agree",
+      "part_of_speech": "verb"
+    }
+  ]
+}

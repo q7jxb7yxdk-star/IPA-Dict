@@ -7,71 +7,86 @@ struct PersonalEntryEditView: View {
     var onCancel: () -> Void
 
     var body: some View {
-        NavigationStack {
-            Form {
-                wordSection
-                pronunciationSection
-                sensesSection
-                sourceSection
-            }
-            .formStyle(.grouped)
-            .navigationTitle("編輯字典筆記")
-            #if os(iOS)
-            .navigationBarTitleDisplayMode(.inline)
-            #endif
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("取消") {
-                        onCancel()
-                    }
-                    .disabled(isSaving)
-                }
+        VStack(spacing: 0) {
+            editorToolbar
 
-                ToolbarItem(placement: .confirmationAction) {
-                    Button {
-                        onSave()
-                    } label: {
-                        if isSaving {
-                            ProgressView()
-                        } else {
-                            Text("儲存")
-                        }
-                    }
-                    .disabled(isSaving || !canSave)
+            Divider()
+
+            ScrollView {
+                VStack(alignment: .leading, spacing: 28) {
+                    wordSection
+                    pronunciationSection
+                    sensesSection
+                    sourceSection
                 }
+                .frame(maxWidth: 900, alignment: .leading)
+                .padding(.horizontal, 28)
+                .padding(.vertical, 24)
+                .frame(maxWidth: .infinity, alignment: .center)
             }
         }
     }
 
-    private var wordSection: some View {
-        Section {
-            LabeledContent("查詢字") {
-                Text(draft.word)
-                    .textSelection(.enabled)
+    private var editorToolbar: some View {
+        HStack(spacing: 12) {
+            Button("取消") {
+                onCancel()
             }
-        } footer: {
+            .disabled(isSaving)
+
+            Spacer()
+
+            Text("編輯字典筆記")
+                .font(.system(size: 18, weight: .semibold))
+
+            Spacer()
+
+            Button {
+                onSave()
+            } label: {
+                if isSaving {
+                    ProgressView()
+                } else {
+                    Text("儲存")
+                }
+            }
+            .disabled(isSaving || !canSave)
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 14)
+        .background(.regularMaterial)
+    }
+
+    private var wordSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("# \(draft.word)")
+                .font(.system(size: 28, weight: .bold, design: .rounded))
+                .textSelection(.enabled)
+
             Text("版面模板、標題和分隔線由 App 固定產生；這裡只編輯模板中的內容欄位。")
+                .font(.system(size: 16))
+                .foregroundStyle(.secondary)
         }
     }
 
     private var pronunciationSection: some View {
-        Section("音標") {
+        editorSection(title: "音標") {
             editableTextField("UK IPA", text: $draft.ukIPA)
             editableTextField("US IPA", text: $draft.usIPA)
 
             VStack(alignment: .leading, spacing: 8) {
                 Text("音素預覽")
-                    .font(.caption)
+                    .font(.system(size: 16, weight: .medium))
                     .foregroundStyle(.secondary)
 
                 let ipa = draft.ukIPA.isEmpty ? draft.usIPA : draft.ukIPA
                 if ipa.isEmpty {
                     Text("儲存 IPA 後，查詢結果會自動拆成可點擊音素。")
-                        .font(.caption)
+                        .font(.system(size: 16))
                         .foregroundStyle(.secondary)
                 } else {
                     Text(IPATokenizer.phonemes(in: ipa).joined(separator: "  "))
-                        .font(.system(.body, design: .rounded))
+                        .font(.system(size: 16, design: .rounded))
                         .foregroundStyle(Color.accentColor)
                         .textSelection(.enabled)
                 }
@@ -80,7 +95,7 @@ struct PersonalEntryEditView: View {
     }
 
     private var sensesSection: some View {
-        Section {
+        editorSection(title: "詞義") {
             ForEach($draft.senses) { $sense in
                 senseEditor(sense: $sense)
             }
@@ -90,37 +105,55 @@ struct PersonalEntryEditView: View {
             } label: {
                 Label("新增詞義", systemImage: "plus.circle")
             }
-        } header: {
-            Text("詞義")
-        } footer: {
+
             Text("每個詞義會自動顯示為：詞性、中文釋義、英文釋義、例句。例句每個詞義只保留一組。")
+                .font(.system(size: 16))
+                .foregroundStyle(.secondary)
         }
     }
 
     private var sourceSection: some View {
-        Section("私人來源備註") {
+        editorSection(title: "私人來源備註") {
             editableTextField("來源 URL", text: $draft.sourceURL)
             VStack(alignment: .leading, spacing: 8) {
                 Text("備註")
-                    .font(.caption)
+                    .font(.system(size: 16, weight: .medium))
                     .foregroundStyle(.secondary)
                 TextEditor(text: $draft.sourceNote)
-                    .frame(minHeight: 72)
+                    .font(.system(size: 16))
+                    .frame(minHeight: 90)
+                    .padding(8)
+                    .background(Color.editorFieldBackground)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.primary.opacity(0.12), lineWidth: 0.5)
+                    }
             }
         }
+    }
+
+    private func editorSection<Content: View>(
+        title: String,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text("## \(title)")
+                .font(.system(size: 22, weight: .bold))
+
+            content()
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func senseEditor(
         sense: Binding<EditablePersonalDictionarySense>
     ) -> some View {
         VStack(alignment: .leading, spacing: 14) {
-            HStack {
-                Text("詞義")
-                    .font(.headline)
+            if draft.senses.count > 1 {
+                HStack {
+                    Spacer()
 
-                Spacer()
-
-                if draft.senses.count > 1 {
                     Button(role: .destructive) {
                         draft.senses.removeAll { $0.id == sense.wrappedValue.id }
                     } label: {
@@ -137,7 +170,11 @@ struct PersonalEntryEditView: View {
             editableTextEditor("例句英文", text: sense.exampleEnglish)
             editableTextEditor("例句中文", text: sense.exampleChinese)
         }
-        .padding(.vertical, 8)
+        .padding(16)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(Color.editorCardBackground)
+        )
     }
 
     private func editableTextField(
@@ -146,10 +183,11 @@ struct PersonalEntryEditView: View {
     ) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
-                .font(.caption)
+                .font(.system(size: 16, weight: .medium))
                 .foregroundStyle(.secondary)
-            TextField(title, text: text, axis: .vertical)
+            TextField("", text: text, axis: .vertical)
                 .textFieldStyle(.roundedBorder)
+                .font(.system(size: 16))
                 .lineLimit(1...3)
         }
     }
@@ -160,10 +198,14 @@ struct PersonalEntryEditView: View {
     ) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
-                .font(.caption)
+                .font(.system(size: 16, weight: .medium))
                 .foregroundStyle(.secondary)
             TextEditor(text: text)
-                .frame(minHeight: 86)
+                .font(.system(size: 16))
+                .frame(minHeight: 110)
+                .padding(8)
+                .background(Color.editorFieldBackground)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
                 .overlay {
                     RoundedRectangle(cornerRadius: 8)
                         .stroke(Color.primary.opacity(0.12), lineWidth: 0.5)
@@ -178,6 +220,24 @@ struct PersonalEntryEditView: View {
                     || !sense.zhDefinition.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
                     || !sense.enDefinition.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
             }
+    }
+}
+
+private extension Color {
+    static var editorCardBackground: Color {
+        #if os(macOS)
+        Color(nsColor: .controlBackgroundColor)
+        #else
+        Color(uiColor: .secondarySystemGroupedBackground)
+        #endif
+    }
+
+    static var editorFieldBackground: Color {
+        #if os(macOS)
+        Color(nsColor: .textBackgroundColor)
+        #else
+        Color(uiColor: .systemBackground)
+        #endif
     }
 }
 

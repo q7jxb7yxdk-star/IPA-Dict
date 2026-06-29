@@ -8,12 +8,14 @@ final class DictionarySearchViewModel: ObservableObject {
     @Published var query = ""
     @Published private(set) var entries: [DictionaryEntry] = []
     @Published private(set) var entriesAwaitingTranslation: [DictionaryEntry] = []
+    @Published private(set) var suggestions: [String] = []
     @Published private(set) var isLoading = false
     @Published private(set) var errorMessage: String?
     @Published private(set) var searchedWord = ""
 
     private let service: DictionaryService
     private var searchTask: Task<Void, Never>?
+    private var suggestionTask: Task<Void, Never>?
 
     init(service: DictionaryService? = nil) {
         self.service = service ?? DictionaryService()
@@ -31,6 +33,8 @@ final class DictionarySearchViewModel: ObservableObject {
         }
 
         searchTask?.cancel()
+        suggestionTask?.cancel()
+        suggestions = []
         isLoading = true
         errorMessage = nil
         entries = []
@@ -60,6 +64,24 @@ final class DictionarySearchViewModel: ObservableObject {
             if entriesAwaitingTranslation.isEmpty {
                 isLoading = false
             }
+        }
+    }
+
+    func updateSuggestions(for rawQuery: String) {
+        let query = rawQuery.trimmingCharacters(in: .whitespacesAndNewlines)
+        suggestionTask?.cancel()
+
+        guard !query.isEmpty else {
+            suggestions = []
+            return
+        }
+
+        suggestionTask = Task {
+            try? await Task.sleep(for: .milliseconds(120))
+            guard !Task.isCancelled else { return }
+            let words = await service.suggestions(prefix: query)
+            guard !Task.isCancelled else { return }
+            suggestions = words
         }
     }
 
@@ -113,6 +135,8 @@ final class DictionarySearchViewModel: ObservableObject {
         errorMessage = nil
         isLoading = false
         searchTask?.cancel()
+        suggestionTask?.cancel()
+        suggestions = []
     }
 
     private func networkMessage(for error: URLError) -> String {
@@ -130,9 +154,11 @@ final class DictionarySearchViewModel: ObservableObject {
 struct DictionarySearchView: View {
     @StateObject private var viewModel = DictionarySearchViewModel()
     @StateObject private var historyStore = SearchHistoryStore()
+    @StateObject private var bookmarkStore = BookmarkStore()
     @State private var translationConfiguration: TranslationSession.Configuration?
     @State private var presentedResult: DictionarySearchResult?
     @State private var showsClearHistoryConfirmation = false
+    @State private var showsClearBookmarksConfirmation = false
     @State private var showsHistorySuggestions = false
     @State private var selectedHistoryIndex: Int?
     @State private var hasActivatedSearch = false
@@ -148,6 +174,53 @@ struct DictionarySearchView: View {
     @FocusState private var isSearchFocused: Bool
 
     var body: some View {
+        ZStack {
+            dictionaryNavigation
+
+            if editingDraft != nil {
+                personalEditorOverlay
+                    .transition(.opacity)
+                    .zIndex(100)
+            }
+        }
+        .alert(
+            "私人字典操作失敗",
+            isPresented: personalErrorAlertBinding
+        ) {
+            Button("好", role: .cancel) {
+                personalActionError = nil
+            }
+        } message: {
+            Text(personalActionError ?? "")
+        }
+        .alert(
+            "私人字典",
+            isPresented: personalMessageAlertBinding
+        ) {
+            Button("好", role: .cancel) {
+                personalActionMessage = nil
+            }
+        } message: {
+            Text(personalActionMessage ?? "")
+        }
+        .fileExporter(
+            isPresented: $showsPersonalExport,
+            document: exportDocument,
+            contentType: .sqliteDatabase,
+            defaultFilename: "PersonalDictionary.sqlite"
+        ) { result in
+            handlePersonalExportCompletion(result)
+        }
+        .fileImporter(
+            isPresented: $showsPersonalImport,
+            allowedContentTypes: [.sqliteDatabase, .data],
+            allowsMultipleSelection: false
+        ) { result in
+            handlePersonalImportSelection(result)
+        }
+    }
+
+    private var dictionaryNavigation: some View {
         NavigationStack {
             homeContent
                 .background(Color.searchBackground)
@@ -196,15 +269,17 @@ struct DictionarySearchView: View {
                 } message: {
                     Text("清除後無法復原。")
                 }
-                .alert(
-                    "私人字典操作失敗",
-                    isPresented: personalErrorAlertBinding
+                .confirmationDialog(
+                    "清除所有書簽？",
+                    isPresented: $showsClearBookmarksConfirmation,
+                    titleVisibility: .visible
                 ) {
-                    Button("好", role: .cancel) {
-                        personalActionError = nil
+                    Button("清除全部", role: .destructive) {
+                        bookmarkStore.clear()
                     }
+                    Button("取消", role: .cancel) {}
                 } message: {
-                    Text(personalActionError ?? "")
+                    Text("清除後無法復原。")
                 }
                 .confirmationDialog(
                     "還原原始詞庫？",
@@ -217,59 +292,6 @@ struct DictionarySearchView: View {
                     Button("取消", role: .cancel) {}
                 } message: {
                     Text("這會刪除此字的私人筆記，查詢結果會回到原本字典資料。")
-                }
-                .alert(
-                    "私人字典",
-                    isPresented: personalMessageAlertBinding
-                ) {
-                    Button("好", role: .cancel) {
-                        personalActionMessage = nil
-                    }
-                } message: {
-                    Text(personalActionMessage ?? "")
-                }
-                .sheet(
-                    isPresented: personalEditorSheetBinding
-                ) {
-                    if editingDraft != nil {
-                        PersonalEntryEditView(
-                            draft: Binding(
-                                get: {
-                                    editingDraft ?? EditablePersonalDictionaryEntry(
-                                        word: "",
-                                        ukIPA: "",
-                                        usIPA: "",
-                                        senses: []
-                                    )
-                                },
-                                set: { editingDraft = $0 }
-                            ),
-                            isSaving: isSavingPersonalEntry,
-                            onSave: {
-                                savePersonalEntry()
-                            },
-                            onCancel: {
-                                if !isSavingPersonalEntry {
-                                    editingDraft = nil
-                                }
-                            }
-                        )
-                    }
-                }
-                .fileExporter(
-                    isPresented: $showsPersonalExport,
-                    document: exportDocument,
-                    contentType: .sqliteDatabase,
-                    defaultFilename: "PersonalDictionary.sqlite"
-                ) { result in
-                    handlePersonalExportCompletion(result)
-                }
-                .fileImporter(
-                    isPresented: $showsPersonalImport,
-                    allowedContentTypes: [.sqliteDatabase, .data],
-                    allowsMultipleSelection: false
-                ) { result in
-                    handlePersonalImportSelection(result)
                 }
                 .onAppear {
                     isSearchFocused = false
@@ -295,11 +317,39 @@ struct DictionarySearchView: View {
                 }
                 .onChange(of: viewModel.query) {
                     selectedHistoryIndex = nil
+                    viewModel.updateSuggestions(for: viewModel.query)
                     if isSearchFocused && hasActivatedSearch {
                         showsHistorySuggestions = true
                     }
                 }
         }
+    }
+
+    private var personalEditorOverlay: some View {
+        PersonalEntryEditView(
+            draft: Binding(
+                get: {
+                    editingDraft ?? EditablePersonalDictionaryEntry(
+                        word: "",
+                        ukIPA: "",
+                        usIPA: "",
+                        senses: []
+                    )
+                },
+                set: { editingDraft = $0 }
+            ),
+            isSaving: isSavingPersonalEntry,
+            onSave: {
+                savePersonalEntry()
+            },
+            onCancel: {
+                if !isSavingPersonalEntry {
+                    editingDraft = nil
+                }
+            }
+        )
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.searchBackground.ignoresSafeArea())
     }
 
     private var homeContent: some View {
@@ -341,17 +391,6 @@ struct DictionarySearchView: View {
             set: { isPresented in
                 if !isPresented {
                     personalActionMessage = nil
-                }
-            }
-        )
-    }
-
-    private var personalEditorSheetBinding: Binding<Bool> {
-        Binding(
-            get: { editingDraft != nil },
-            set: { isPresented in
-                if !isPresented, !isSavingPersonalEntry {
-                    editingDraft = nil
                 }
             }
         )
@@ -427,6 +466,26 @@ struct DictionarySearchView: View {
                         showsResetPersonalConfirmation = true
                     }
                 }
+
+                Button {
+                    bookmarkStore.toggle(result.word)
+                } label: {
+                    Image(
+                        systemName: bookmarkStore.contains(result.word)
+                            ? "star.fill"
+                            : "star"
+                    )
+                }
+                .help(
+                    bookmarkStore.contains(result.word)
+                        ? "移除書簽"
+                        : "加入書簽"
+                )
+                .accessibilityLabel(
+                    bookmarkStore.contains(result.word)
+                        ? "移除書簽"
+                        : "加入書簽"
+                )
 
                 Button("編輯") {
                     preparePersonalEditor(for: result)
@@ -682,6 +741,11 @@ struct DictionarySearchView: View {
                         }
                     }
                 }
+
+                Divider()
+                    .padding(.top, 6)
+
+                bookmarkContent
             }
             .frame(maxWidth: 760, alignment: .leading)
             .padding(.horizontal, 24)
@@ -691,6 +755,74 @@ struct DictionarySearchView: View {
         .contentShape(Rectangle())
         .onTapGesture {
             dismissSearchSuggestions()
+        }
+    }
+
+    private var bookmarkContent: some View {
+        VStack(alignment: .leading, spacing: 18) {
+            HStack {
+                Text("書簽")
+                    .font(.system(size: 22, weight: .bold))
+
+                Spacer()
+
+                if !bookmarkStore.words.isEmpty {
+                    Button("清除書簽") {
+                        showsClearBookmarksConfirmation = true
+                    }
+                    .font(.system(size: 16))
+                    .buttonStyle(.borderless)
+                    .foregroundStyle(.primary)
+                }
+            }
+
+            if bookmarkStore.words.isEmpty {
+                ContentUnavailableView(
+                    "尚無書簽",
+                    systemImage: "star",
+                    description: Text("在查詢結果頁點擊星號，就可以把單字加入書簽。")
+                        .font(.system(size: 16))
+                )
+                .foregroundStyle(.primary)
+                .frame(maxWidth: .infinity, minHeight: 180)
+            } else {
+                LazyVStack(spacing: 0) {
+                    ForEach(bookmarkStore.words, id: \.self) { word in
+                        HStack(spacing: 12) {
+                            Button {
+                                viewModel.search(word: word)
+                            } label: {
+                                HStack(spacing: 12) {
+                                    Image(systemName: "star.fill")
+                                    Text(word)
+                                        .font(.system(size: 16, weight: .medium))
+                                    Spacer()
+                                    Image(systemName: "arrow.up.left")
+                                }
+                                .foregroundStyle(.primary)
+                                .contentShape(Rectangle())
+                            }
+                            .buttonStyle(.plain)
+
+                            Button {
+                                bookmarkStore.remove(word)
+                            } label: {
+                                Image(systemName: "xmark.circle.fill")
+                                    .font(.system(size: 16))
+                                    .foregroundStyle(.secondary)
+                            }
+                            .buttonStyle(.borderless)
+                            .help("移除書簽")
+                            .accessibilityLabel("移除 \(word) 書簽")
+                        }
+                        .padding(.vertical, 14)
+
+                        if word != bookmarkStore.words.last {
+                            Divider()
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -706,12 +838,20 @@ struct DictionarySearchView: View {
 
     private var showsHistoryDropdown: Bool {
         showsHistorySuggestions
-            && !filteredHistory.isEmpty
+            && !dropdownWords.isEmpty
             && !viewModel.isLoading
     }
 
     private var historyDropdownHeight: CGFloat {
-        CGFloat(min(filteredHistory.count, 10)) * 49
+        CGFloat(min(dropdownWords.count, 10)) * 49
+    }
+
+    private var dropdownWords: [String] {
+        isShowingDictionarySuggestions ? viewModel.suggestions : historyStore.words
+    }
+
+    private var isShowingDictionarySuggestions: Bool {
+        !viewModel.query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 
     private var historyDropdown: some View {
@@ -719,14 +859,18 @@ struct DictionarySearchView: View {
             ScrollView {
                 LazyVStack(spacing: 0) {
                     ForEach(
-                        Array(filteredHistory.enumerated()),
+                        Array(dropdownWords.enumerated()),
                         id: \.element
                     ) { index, word in
                         Button {
-                            selectHistoryWord(word)
+                            selectDropdownWord(word)
                         } label: {
                             HStack(spacing: 12) {
-                                Image(systemName: "clock.arrow.circlepath")
+                                Image(
+                                    systemName: isShowingDictionarySuggestions
+                                        ? "book"
+                                        : "clock.arrow.circlepath"
+                                )
                                 Text(word)
                                     .font(.system(size: 16, weight: .medium))
                                 Spacer()
@@ -755,7 +899,7 @@ struct DictionarySearchView: View {
                         )
                         .id(word)
 
-                        if index < filteredHistory.count - 1 {
+                        if index < dropdownWords.count - 1 {
                             Divider()
                         }
                     }
@@ -763,11 +907,11 @@ struct DictionarySearchView: View {
             }
             .onChange(of: selectedHistoryIndex) { _, index in
                 guard let index,
-                      filteredHistory.indices.contains(index) else {
+                      dropdownWords.indices.contains(index) else {
                     return
                 }
                 withAnimation(.easeInOut(duration: 0.12)) {
-                    proxy.scrollTo(filteredHistory[index], anchor: .center)
+                    proxy.scrollTo(dropdownWords[index], anchor: .center)
                 }
             }
         }
@@ -786,8 +930,8 @@ struct DictionarySearchView: View {
 
     private func submitSearch() {
         if let selectedHistoryIndex,
-           filteredHistory.indices.contains(selectedHistoryIndex) {
-            selectHistoryWord(filteredHistory[selectedHistoryIndex])
+           dropdownWords.indices.contains(selectedHistoryIndex) {
+            selectDropdownWord(dropdownWords[selectedHistoryIndex])
             return
         }
 
@@ -797,7 +941,7 @@ struct DictionarySearchView: View {
         viewModel.search()
     }
 
-    private func selectHistoryWord(_ word: String) {
+    private func selectDropdownWord(_ word: String) {
         isSearchFocused = false
         showsHistorySuggestions = false
         selectedHistoryIndex = nil
@@ -813,7 +957,7 @@ struct DictionarySearchView: View {
     }
 
     private func preparePersonalEditor(for result: DictionarySearchResult) {
-        Task {
+        Task { @MainActor in
             do {
                 let draft = try await viewModel.personalDraft(
                     word: result.word,
@@ -830,7 +974,7 @@ struct DictionarySearchView: View {
         guard let draft = editingDraft else { return }
         isSavingPersonalEntry = true
 
-        Task {
+        Task { @MainActor in
             do {
                 let savedEntries = try await viewModel.savePersonalDraft(draft)
                 presentedResult = DictionarySearchResult(
@@ -848,7 +992,7 @@ struct DictionarySearchView: View {
     private func resetPersonalEntry() {
         guard let result = presentedResult else { return }
 
-        Task {
+        Task { @MainActor in
             do {
                 try await viewModel.deletePersonalEntry(word: result.word)
                 viewModel.search(word: result.word)
@@ -859,7 +1003,7 @@ struct DictionarySearchView: View {
     }
 
     private func preparePersonalDictionaryExport() {
-        Task {
+        Task { @MainActor in
             do {
                 exportDocument = try await viewModel.personalExportDocument()
                 showsPersonalExport = true
@@ -893,7 +1037,7 @@ struct DictionarySearchView: View {
     }
 
     private func importPersonalDictionary(from url: URL) {
-        Task {
+        Task { @MainActor in
             do {
                 try await viewModel.importPersonalDatabase(from: url)
                 personalActionMessage = "私人字典已匯入。原本本機私人字典已自動備份。"
@@ -911,7 +1055,8 @@ struct DictionarySearchView: View {
         hasActivatedSearch = true
         isSearchFocused = true
         selectedHistoryIndex = nil
-        showsHistorySuggestions = !filteredHistory.isEmpty && !viewModel.isLoading
+        viewModel.updateSuggestions(for: viewModel.query)
+        showsHistorySuggestions = !viewModel.isLoading
     }
 
     private func handleEscapeKey() -> KeyPress.Result {
@@ -928,12 +1073,12 @@ struct DictionarySearchView: View {
         guard showsHistoryDropdown else {
             activateSearchSuggestions()
             selectedHistoryIndex = key == .upArrow
-                ? filteredHistory.indices.last
-                : filteredHistory.indices.first
+                ? dropdownWords.indices.last
+                : dropdownWords.indices.first
             return
         }
 
-        guard !filteredHistory.isEmpty else {
+        guard !dropdownWords.isEmpty else {
             selectedHistoryIndex = nil
             return
         }
@@ -943,11 +1088,11 @@ struct DictionarySearchView: View {
             let nextIndex = (selectedHistoryIndex ?? -1) + 1
             selectedHistoryIndex = min(
                 nextIndex,
-                filteredHistory.count - 1
+                dropdownWords.count - 1
             )
         case .upArrow:
             let previousIndex = (
-                selectedHistoryIndex ?? filteredHistory.count
+                selectedHistoryIndex ?? dropdownWords.count
             ) - 1
             selectedHistoryIndex = max(previousIndex, 0)
         default:
