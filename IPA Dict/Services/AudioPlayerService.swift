@@ -111,6 +111,7 @@ final class AudioPlayerService {
     func playRemoteSound(url: URL) {
         playbackTask?.cancel()
         remotePlayer = AVPlayer(url: url)
+        remotePlayer?.volume = 1.0
         remotePlayer?.play()
     }
 
@@ -121,6 +122,7 @@ final class AudioPlayerService {
             language: region == "UK" ? "en-GB" : "en-US"
         )
         utterance.rate = 0.42
+        utterance.volume = 1.0
         speechSynthesizer.stopSpeaking(at: .immediate)
         speechSynthesizer.speak(utterance)
     }
@@ -135,6 +137,7 @@ final class AudioPlayerService {
                 }
 
                 audioPlayer = player
+                player.volume = 1.0
                 player.prepareToPlay()
                 player.play()
 

@@ -7,9 +7,13 @@ struct WordDetailView: View {
 
     @Environment(\.openURL) private var openURL
     @State private var expandedPartsOfSpeech: Set<String> = []
+    @State private var showsReportSheet = false
+    @State private var missingWordReport = ""
+    @State private var reportStatusMessage: String?
 
     private let audioPlayer = AudioPlayerService.shared
     private let collapsedMeaningLimit = 3
+    private let reportStore = DictionaryReportStore()
 
     init(
         entry: DictionaryEntry,
@@ -62,6 +66,10 @@ struct WordDetailView: View {
                     Divider()
                         .padding(.vertical, 4)
                     referenceSection(for: primaryEntry)
+
+                    Divider()
+                        .padding(.vertical, 4)
+                    reportSection(for: primaryEntry)
                 }
             }
             .frame(maxWidth: 760, alignment: .leading)
@@ -71,6 +79,11 @@ struct WordDetailView: View {
         }
         .background(Color.detailBackground)
         .navigationTitle(showsNavigationTitle ? "Dictionary" : "")
+        .sheet(isPresented: $showsReportSheet) {
+            if let primaryEntry {
+                reportSheet(for: primaryEntry)
+            }
+        }
         #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
         #endif
@@ -431,6 +444,91 @@ struct WordDetailView: View {
             }
             .buttonStyle(.plain)
             .disabled(cambridgeReferenceURL(for: entry.word) == nil)
+        }
+    }
+
+    private func reportSection(for entry: DictionaryEntry) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Button {
+                reportStatusMessage = nil
+                showsReportSheet = true
+            } label: {
+                Label(
+                    "發現錯誤或遺失詞",
+                    systemImage: "exclamationmark.bubble"
+                )
+                .font(.system(size: 16, weight: .semibold))
+            }
+            .buttonStyle(.borderless)
+            .foregroundStyle(.primary)
+            .accessibilityLabel("發現錯誤或遺失詞")
+        }
+    }
+
+    private func reportSheet(for entry: DictionaryEntry) -> some View {
+        NavigationStack {
+            VStack(alignment: .leading, spacing: 14) {
+                MarkdownText("## 發現錯誤或遺失詞")
+
+                Text("查詢詞：\(entry.word)")
+                    .font(.system(size: 14))
+                    .foregroundStyle(.secondary)
+
+                TextField("遺失的詞（可留空）", text: $missingWordReport)
+                    .textFieldStyle(.roundedBorder)
+                    .font(.system(size: 16))
+                    #if os(iOS)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                    #endif
+
+                Text("如果只是詞有錯誤，點擊發送。")
+                    .font(.system(size: 14))
+                    .foregroundStyle(.secondary)
+
+                Button("發送") {
+                    sendReport(for: entry)
+                }
+                .buttonStyle(.borderedProminent)
+
+                if let reportStatusMessage {
+                    Text(reportStatusMessage)
+                        .font(.system(size: 14))
+                        .foregroundStyle(.secondary)
+                }
+
+                Spacer(minLength: 0)
+            }
+            .padding(24)
+            .frame(minWidth: 320, maxWidth: 460, alignment: .topLeading)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("取消") {
+                        showsReportSheet = false
+                    }
+                }
+            }
+        }
+    }
+
+    private func sendReport(for entry: DictionaryEntry) {
+        let report = DictionaryReport(
+            queriedWord: entry.word,
+            missingWord: missingWordReport
+                .trimmingCharacters(in: .whitespacesAndNewlines),
+            createdAt: Date()
+        )
+
+        do {
+            _ = try reportStore.append(report)
+            reportStatusMessage = "已記錄，正在打開 GitHub Issues…"
+            missingWordReport = ""
+
+            if let issueURL = reportStore.githubIssueURL(for: report) {
+                openURL(issueURL)
+            }
+        } catch {
+            reportStatusMessage = error.localizedDescription
         }
     }
 

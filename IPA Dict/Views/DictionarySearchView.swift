@@ -1,6 +1,9 @@
 import Combine
 import SwiftUI
 import Translation
+#if os(iOS)
+import UIKit
+#endif
 
 @MainActor
 final class DictionarySearchViewModel: ObservableObject {
@@ -154,7 +157,9 @@ struct DictionarySearchView: View {
     @State private var editingDraft: EditablePersonalDictionaryEntry?
     @State private var isSavingPersonalEntry = false
     @State private var showsResetPersonalConfirmation = false
+    @State private var showsBookmarkSheet = false
     @State private var personalActionError: String?
+    @State private var sidebarVisibility = NavigationSplitViewVisibility.automatic
     @FocusState private var isSearchFocused: Bool
 
     var body: some View {
@@ -177,110 +182,236 @@ struct DictionarySearchView: View {
         } message: {
             Text(personalActionError ?? "")
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.searchBackground.ignoresSafeArea())
+        .bookmarkPresentation(isPresented: $showsBookmarkSheet) {
+            NavigationStack {
+                bookmarkListContent(
+                    emptyDescription: "在查詢結果頁點擊星號，就可以把單字加入書簽。"
+                )
+                .navigationTitle("書簽")
+                .toolbar {
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button("完成") {
+                            showsBookmarkSheet = false
+                        }
+                    }
+                }
+            }
+        }
     }
 
+    @ViewBuilder
     private var dictionaryNavigation: some View {
-        NavigationStack {
-            homeContent
-                .background(Color.searchBackground)
-                .navigationTitle("IPA Dictionary")
-                .navigationDestination(item: $presentedResult) { result in
-                    resultContent(result)
+        if usesPhoneNavigation {
+            NavigationStack {
+                dictionaryRoot
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        } else {
+            NavigationSplitView(columnVisibility: $sidebarVisibility) {
+                bookmarkSidebar
+            } detail: {
+                NavigationStack {
+                    dictionaryRoot
                 }
-                .onChange(of: viewModel.entries) { _, entries in
-                    guard !entries.isEmpty else { return }
-                    let word = viewModel.searchedWord
-                    historyStore.add(word)
-                    presentedResult = DictionarySearchResult(
-                        word: word,
-                        entries: entries
-                    )
-                    isSearchFocused = false
-                    showsHistorySuggestions = false
-                    selectedHistoryIndex = nil
+            }
+            .navigationSplitViewStyle(.balanced)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .onAppear {
+                sidebarVisibility = .automatic
+            }
+        }
+    }
+
+    private var dictionaryRoot: some View {
+        homeContent
+            .background(Color.searchBackground)
+            .navigationTitle(homeNavigationTitle)
+            #if os(iOS)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar(.hidden, for: .navigationBar)
+            #endif
+            .navigationDestination(item: $presentedResult) { result in
+                resultContent(result)
+            }
+            .onChange(of: viewModel.entries) { _, entries in
+                guard !entries.isEmpty else { return }
+                let word = viewModel.searchedWord
+                historyStore.add(word)
+                presentedResult = DictionarySearchResult(
+                    word: word,
+                    entries: entries
+                )
+                isSearchFocused = false
+                showsHistorySuggestions = false
+                selectedHistoryIndex = nil
+                viewModel.clearResult()
+            }
+            .onChange(of: presentedResult) { _, result in
+                if result == nil {
+                    viewModel.query = ""
                     viewModel.clearResult()
                 }
-                .onChange(of: presentedResult) { _, result in
-                    if result == nil {
-                        viewModel.query = ""
-                        viewModel.clearResult()
-                    }
+            }
+            .onChange(of: viewModel.entriesAwaitingTranslation) { _, entries in
+                guard !entries.isEmpty else { return }
+                translationConfiguration = TranslationSession.Configuration(
+                    source: Locale.Language(identifier: "en"),
+                    target: Locale.Language(identifier: "zh-Hant")
+                )
+            }
+            .translationTask(translationConfiguration) { session in
+                await translatePendingEntries(using: session)
+            }
+            .confirmationDialog(
+                "清除所有搜尋記錄？",
+                isPresented: $showsClearHistoryConfirmation,
+                titleVisibility: .visible
+            ) {
+                Button("清除全部", role: .destructive) {
+                    historyStore.clear()
                 }
-                .onChange(of: viewModel.entriesAwaitingTranslation) { _, entries in
-                    guard !entries.isEmpty else { return }
-                    translationConfiguration = TranslationSession.Configuration(
-                        source: Locale.Language(identifier: "en"),
-                        target: Locale.Language(identifier: "zh-Hant")
-                    )
+                Button("取消", role: .cancel) {}
+            } message: {
+                Text("清除後無法復原。")
+            }
+            .confirmationDialog(
+                "清除所有書簽？",
+                isPresented: $showsClearBookmarksConfirmation,
+                titleVisibility: .visible
+            ) {
+                Button("清除全部", role: .destructive) {
+                    bookmarkStore.clear()
                 }
-                .translationTask(translationConfiguration) { session in
-                    await translatePendingEntries(using: session)
+                Button("取消", role: .cancel) {}
+            } message: {
+                Text("清除後無法復原。")
+            }
+            .confirmationDialog(
+                "還原原始詞庫？",
+                isPresented: $showsResetPersonalConfirmation,
+                titleVisibility: .visible
+            ) {
+                Button("刪除私人修改", role: .destructive) {
+                    resetPersonalEntry()
                 }
-                .confirmationDialog(
-                    "清除所有搜尋記錄？",
-                    isPresented: $showsClearHistoryConfirmation,
-                    titleVisibility: .visible
-                ) {
-                    Button("清除全部", role: .destructive) {
-                        historyStore.clear()
-                    }
-                    Button("取消", role: .cancel) {}
-                } message: {
-                    Text("清除後無法復原。")
-                }
-                .confirmationDialog(
-                    "清除所有書簽？",
-                    isPresented: $showsClearBookmarksConfirmation,
-                    titleVisibility: .visible
-                ) {
-                    Button("清除全部", role: .destructive) {
-                        bookmarkStore.clear()
-                    }
-                    Button("取消", role: .cancel) {}
-                } message: {
-                    Text("清除後無法復原。")
-                }
-                .confirmationDialog(
-                    "還原原始詞庫？",
-                    isPresented: $showsResetPersonalConfirmation,
-                    titleVisibility: .visible
-                ) {
-                    Button("刪除私人修改", role: .destructive) {
-                        resetPersonalEntry()
-                    }
-                    Button("取消", role: .cancel) {}
-                } message: {
-                    Text("這會刪除此字的私人筆記，查詢結果會回到原本字典資料。")
-                }
-                .onAppear {
+                Button("取消", role: .cancel) {}
+            } message: {
+                Text("這會刪除此字的私人筆記，查詢結果會回到原本字典資料。")
+            }
+            .onAppear {
+                isSearchFocused = false
+                showsHistorySuggestions = false
+                selectedHistoryIndex = nil
+                hasActivatedSearch = false
+                hasCompletedInitialAppearance = false
+
+                Task { @MainActor in
+                    await Task.yield()
                     isSearchFocused = false
+                    hasCompletedInitialAppearance = true
+                }
+            }
+            .onChange(of: isSearchFocused) { _, isFocused in
+                if isFocused && hasCompletedInitialAppearance {
+                    hasActivatedSearch = true
+                    showsHistorySuggestions = true
+                } else {
                     showsHistorySuggestions = false
                     selectedHistoryIndex = nil
-                    hasActivatedSearch = false
-                    hasCompletedInitialAppearance = false
+                }
+            }
+            .onChange(of: viewModel.query) {
+                selectedHistoryIndex = nil
+                viewModel.updateSuggestions(for: viewModel.query)
+                if isSearchFocused && hasActivatedSearch {
+                    showsHistorySuggestions = true
+                }
+            }
+    }
 
-                    Task { @MainActor in
-                        await Task.yield()
-                        isSearchFocused = false
-                        hasCompletedInitialAppearance = true
+    private var usesPhoneNavigation: Bool {
+        #if os(iOS)
+        UIDevice.current.userInterfaceIdiom == .phone
+        #else
+        false
+        #endif
+    }
+
+    private var bookmarkSidebar: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            HStack {
+                Text("書簽")
+                    .font(.system(size: 22, weight: .bold))
+
+                Spacer()
+
+                if !bookmarkStore.words.isEmpty {
+                    Button("清除") {
+                        showsClearBookmarksConfirmation = true
+                    }
+                    .font(.system(size: 14))
+                    .buttonStyle(.borderless)
+                }
+            }
+            .padding(.horizontal, 18)
+            .padding(.top, 18)
+            .padding(.bottom, 10)
+
+            Divider()
+
+            bookmarkListContent(
+                emptyDescription: "在查詢結果頁點擊星號，就可以把單字加入書簽。"
+            )
+        }
+        .navigationTitle("書簽")
+        .frame(minWidth: 220, idealWidth: 260)
+        .background(Color.searchBackground)
+    }
+
+    @ViewBuilder
+    private func bookmarkListContent(emptyDescription: String) -> some View {
+        if bookmarkStore.words.isEmpty {
+            ContentUnavailableView(
+                "尚無書簽",
+                systemImage: "star",
+                description: Text(emptyDescription)
+                    .font(.system(size: 14))
+            )
+            .foregroundStyle(.primary)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.horizontal, 12)
+        } else {
+            List {
+                ForEach(bookmarkStore.words, id: \.self) { word in
+                    HStack(spacing: 10) {
+                        Button {
+                            selectBookmarkedWord(word)
+                        } label: {
+                            HStack(spacing: 10) {
+                                Image(systemName: "star.fill")
+                                Text(word)
+                                    .font(.system(size: 14))
+                                Spacer()
+                            }
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+
+                        Button {
+                            bookmarkStore.remove(word)
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundStyle(.secondary)
+                        }
+                        .buttonStyle(.borderless)
+                        .help("移除書簽")
+                        .accessibilityLabel("移除 \(word) 書簽")
                     }
                 }
-                .onChange(of: isSearchFocused) { _, isFocused in
-                    if isFocused && hasCompletedInitialAppearance {
-                        hasActivatedSearch = true
-                        showsHistorySuggestions = true
-                    } else {
-                        showsHistorySuggestions = false
-                        selectedHistoryIndex = nil
-                    }
-                }
-                .onChange(of: viewModel.query) {
-                    selectedHistoryIndex = nil
-                    viewModel.updateSuggestions(for: viewModel.query)
-                    if isSearchFocused && hasActivatedSearch {
-                        showsHistorySuggestions = true
-                    }
-                }
+            }
+            .listStyle(.sidebar)
         }
     }
 
@@ -314,6 +445,7 @@ struct DictionarySearchView: View {
     private var homeContent: some View {
         ZStack(alignment: .top) {
             VStack(spacing: 0) {
+                homeTitle
                 searchHeader
                 Divider()
 
@@ -326,6 +458,45 @@ struct DictionarySearchView: View {
 
             floatingHistoryDropdown
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(Color.searchBackground)
+    }
+
+    @ViewBuilder
+    private var homeTitle: some View {
+        #if os(iOS)
+        HStack(spacing: 12) {
+            Text("IPA Dictionary")
+                .font(.system(size: 24, weight: .bold))
+                .foregroundStyle(.primary)
+
+            Spacer()
+
+            if usesPhoneNavigation {
+                Button {
+                    openBookmarks()
+                } label: {
+                    Image(systemName: "list.star")
+                        .font(.system(size: 18, weight: .semibold))
+                }
+                .buttonStyle(.borderless)
+                .foregroundStyle(.primary)
+                .accessibilityLabel("打開書簽")
+            }
+        }
+            .frame(maxWidth: 820, alignment: .leading)
+            .padding(.horizontal)
+            .padding(.top, 0)
+            .padding(.bottom, 2)
+        #endif
+    }
+
+    private var homeNavigationTitle: String {
+        #if os(iOS)
+        ""
+        #else
+        "IPA Dictionary"
+        #endif
     }
 
     private var personalErrorAlertBinding: Binding<Bool> {
@@ -426,12 +597,23 @@ struct DictionarySearchView: View {
                         : "加入書簽"
                 )
 
+                if usesPhoneNavigation {
+                    Button {
+                        openBookmarks()
+                    } label: {
+                        Image(systemName: "list.star")
+                    }
+                    .help("打開書簽")
+                    .accessibilityLabel("打開書簽")
+                }
+
                 Button("編輯") {
                     preparePersonalEditor(for: result)
                 }
             }
         }
         #if os(iOS)
+        .toolbar(.visible, for: .navigationBar)
         .navigationBarTitleDisplayMode(.inline)
         #endif
     }
@@ -513,9 +695,6 @@ struct DictionarySearchView: View {
                 .onSubmit {
                     submitSearch()
                 }
-                .onTapGesture {
-                    activateSearchSuggestions()
-                }
                 .onKeyPress(.escape) {
                     handleEscapeKey()
                 }
@@ -549,15 +728,27 @@ struct DictionarySearchView: View {
         .padding(12)
         .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 16))
         .contentShape(RoundedRectangle(cornerRadius: 16))
-        .simultaneousGesture(
-            TapGesture().onEnded {
-                activateSearchSuggestions()
-            }
-        )
         .padding(.horizontal)
-        .padding(.vertical)
+        .padding(.top, searchHeaderTopPadding)
+        .padding(.bottom, searchHeaderBottomPadding)
         .frame(maxWidth: 820)
         .zIndex(10)
+    }
+
+    private var searchHeaderTopPadding: CGFloat {
+        #if os(iOS)
+        2
+        #else
+        16
+        #endif
+    }
+
+    private var searchHeaderBottomPadding: CGFloat {
+        #if os(iOS)
+        10
+        #else
+        16
+        #endif
     }
 
     @ViewBuilder
@@ -565,13 +756,21 @@ struct DictionarySearchView: View {
         if showsHistoryDropdown {
             historyDropdown
                 .padding(.horizontal)
-                .padding(.top, 74)
+                .padding(.top, historyDropdownTopPadding)
                 .frame(maxWidth: 820)
                 .transition(
                     .opacity.combined(with: .move(edge: .top))
                 )
                 .zIndex(20)
         }
+    }
+
+    private var historyDropdownTopPadding: CGFloat {
+        #if os(iOS)
+        presentedResult == nil ? 92 : 70
+        #else
+        74
+        #endif
     }
 
     @ViewBuilder
@@ -604,12 +803,52 @@ struct DictionarySearchView: View {
         }
     }
 
+    private var homeSectionTitleFontSize: CGFloat {
+        #if os(iOS)
+        18
+        #else
+        22
+        #endif
+    }
+
+    private var emptyStateDescriptionFontSize: CGFloat {
+        #if os(iOS)
+        14
+        #else
+        16
+        #endif
+    }
+
+    private var homeVerticalPadding: CGFloat {
+        #if os(iOS)
+        18
+        #else
+        28
+        #endif
+    }
+
+    private var historyEmptyMinHeight: CGFloat {
+        #if os(iOS)
+        170
+        #else
+        280
+        #endif
+    }
+
+    private var homeBottomSafePadding: CGFloat {
+        #if os(iOS)
+        34
+        #else
+        0
+        #endif
+    }
+
     private var historyContent: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 HStack {
                     Text("最近搜尋")
-                        .font(.system(size: 22, weight: .bold))
+                        .font(.system(size: homeSectionTitleFontSize, weight: .bold))
 
                     Spacer()
 
@@ -617,7 +856,7 @@ struct DictionarySearchView: View {
                         Button("清除記錄") {
                             showsClearHistoryConfirmation = true
                         }
-                        .font(.system(size: 16))
+                        .font(.system(size: 14))
                         .buttonStyle(.borderless)
                         .foregroundStyle(.primary)
                     }
@@ -632,10 +871,10 @@ struct DictionarySearchView: View {
                                 ? "成功查詢的英文單字會顯示在這裡。"
                                 : "請輸入其他字母或直接查詢新單字。"
                         )
-                        .font(.system(size: 16))
+                        .font(.system(size: emptyStateDescriptionFontSize))
                     )
                     .foregroundStyle(.primary)
-                    .frame(maxWidth: .infinity, minHeight: 280)
+                    .frame(maxWidth: .infinity, minHeight: historyEmptyMinHeight)
                 } else {
                     LazyVStack(spacing: 0) {
                         ForEach(filteredHistory, id: \.self) { word in
@@ -645,7 +884,7 @@ struct DictionarySearchView: View {
                                 HStack(spacing: 12) {
                                     Image(systemName: "clock.arrow.circlepath")
                                     Text(word)
-                                        .font(.system(size: 16, weight: .medium))
+                                        .font(.system(size: 14))
                                     Spacer()
                                     Image(systemName: "arrow.up.left")
                                 }
@@ -662,16 +901,12 @@ struct DictionarySearchView: View {
                     }
                 }
 
-                Divider()
-                    .padding(.top, 6)
-
-                bookmarkContent
-
                 databaseDateContent
             }
             .frame(maxWidth: 760, alignment: .leading)
             .padding(.horizontal, 24)
-            .padding(.vertical, 28)
+            .padding(.vertical, homeVerticalPadding)
+            .padding(.bottom, homeBottomSafePadding)
             .frame(maxWidth: .infinity)
         }
         .contentShape(Rectangle())
@@ -692,74 +927,6 @@ struct DictionarySearchView: View {
         .accessibilityLabel(dictionaryManifestStore.displayText)
     }
 
-    private var bookmarkContent: some View {
-        VStack(alignment: .leading, spacing: 18) {
-            HStack {
-                Text("書簽")
-                    .font(.system(size: 22, weight: .bold))
-
-                Spacer()
-
-                if !bookmarkStore.words.isEmpty {
-                    Button("清除書簽") {
-                        showsClearBookmarksConfirmation = true
-                    }
-                    .font(.system(size: 16))
-                    .buttonStyle(.borderless)
-                    .foregroundStyle(.primary)
-                }
-            }
-
-            if bookmarkStore.words.isEmpty {
-                ContentUnavailableView(
-                    "尚無書簽",
-                    systemImage: "star",
-                    description: Text("在查詢結果頁點擊星號，就可以把單字加入書簽。")
-                        .font(.system(size: 16))
-                )
-                .foregroundStyle(.primary)
-                .frame(maxWidth: .infinity, minHeight: 180)
-            } else {
-                LazyVStack(spacing: 0) {
-                    ForEach(bookmarkStore.words, id: \.self) { word in
-                        HStack(spacing: 12) {
-                            Button {
-                                viewModel.search(word: word)
-                            } label: {
-                                HStack(spacing: 12) {
-                                    Image(systemName: "star.fill")
-                                    Text(word)
-                                        .font(.system(size: 16, weight: .medium))
-                                    Spacer()
-                                    Image(systemName: "arrow.up.left")
-                                }
-                                .foregroundStyle(.primary)
-                                .contentShape(Rectangle())
-                            }
-                            .buttonStyle(.plain)
-
-                            Button {
-                                bookmarkStore.remove(word)
-                            } label: {
-                                Image(systemName: "xmark.circle.fill")
-                                    .font(.system(size: 16))
-                                    .foregroundStyle(.secondary)
-                            }
-                            .buttonStyle(.borderless)
-                            .help("移除書簽")
-                            .accessibilityLabel("移除 \(word) 書簽")
-                        }
-                        .padding(.vertical, 14)
-
-                        if word != bookmarkStore.words.last {
-                            Divider()
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     private var filteredHistory: [String] {
         let query = viewModel.query
             .trimmingCharacters(in: .whitespacesAndNewlines)
@@ -777,7 +944,7 @@ struct DictionarySearchView: View {
     }
 
     private var historyDropdownHeight: CGFloat {
-        CGFloat(min(dropdownWords.count, 10)) * 49
+        CGFloat(min(dropdownWords.count, 10)) * 42
     }
 
     private var dropdownWords: [String] {
@@ -806,13 +973,13 @@ struct DictionarySearchView: View {
                                         : "clock.arrow.circlepath"
                                 )
                                 Text(word)
-                                    .font(.system(size: 16, weight: .medium))
+                                    .font(.system(size: 14))
                                 Spacer()
                                 Image(systemName: "arrow.up.left")
                             }
                             .foregroundStyle(.primary)
                             .padding(.horizontal, 14)
-                            .padding(.vertical, 12)
+                            .padding(.vertical, 10)
                             .contentShape(Rectangle())
                         }
                         .buttonStyle(.plain)
@@ -888,6 +1055,20 @@ struct DictionarySearchView: View {
         selectedHistoryIndex = nil
         hasActivatedSearch = false
         viewModel.search(word: word)
+    }
+
+    private func selectBookmarkedWord(_ word: String) {
+        isSearchFocused = false
+        showsHistorySuggestions = false
+        showsBookmarkSheet = false
+        selectedHistoryIndex = nil
+        hasActivatedSearch = false
+        viewModel.search(word: word)
+    }
+
+    private func openBookmarks() {
+        dismissSearchSuggestions()
+        showsBookmarkSheet = true
     }
 
     private func preparePersonalEditor(for result: DictionarySearchResult) {
@@ -1015,6 +1196,20 @@ private extension Color {
         Color(nsColor: .windowBackgroundColor)
         #else
         Color(uiColor: .systemGroupedBackground)
+        #endif
+    }
+}
+
+private extension View {
+    @ViewBuilder
+    func bookmarkPresentation<Content: View>(
+        isPresented: Binding<Bool>,
+        @ViewBuilder content: @escaping () -> Content
+    ) -> some View {
+        #if os(iOS)
+        fullScreenCover(isPresented: isPresented, content: content)
+        #else
+        sheet(isPresented: isPresented, content: content)
         #endif
     }
 }
