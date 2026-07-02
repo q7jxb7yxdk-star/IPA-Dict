@@ -1,47 +1,41 @@
 import Combine
 import Foundation
 
-struct DictionaryManifest: Decodable {
-    let databaseFile: String
-    let databaseUpdatedAt: String
-    let displayUpdatedAt: String
-    let sha256: String
-    let generatedAt: String
-
-    enum CodingKeys: String, CodingKey {
-        case databaseFile = "database_file"
-        case databaseUpdatedAt = "database_updated_at"
-        case displayUpdatedAt = "display_updated_at"
-        case sha256
-        case generatedAt = "generated_at"
-    }
-}
-
 @MainActor
 final class DictionaryManifestStore: ObservableObject {
-    @Published private(set) var manifest: DictionaryManifest?
+    @Published private(set) var displayText = "資料庫日期：未知"
 
     init(bundle: Bundle = .main) {
-        manifest = Self.loadManifest(from: bundle)
+        displayText = Self.databaseDateText(from: bundle)
     }
 
-    var displayText: String {
-        guard let manifest else {
+    private static func databaseDateText(from bundle: Bundle) -> String {
+        guard let url = bundle.url(
+            forResource: "dictionary",
+            withExtension: "sqlite"
+        ) else {
             return "資料庫日期：未知"
         }
-        return "資料庫日期：\(manifest.displayUpdatedAt)"
+
+        do {
+            let attributes = try FileManager.default.attributesOfItem(
+                atPath: url.path
+            )
+            guard let updatedAt = attributes[.modificationDate] as? Date else {
+                return "資料庫日期：未知"
+            }
+
+            return "資料庫日期：\(Self.displayFormatter.string(from: updatedAt))"
+        } catch {
+            return "資料庫日期：未知"
+        }
     }
 
-    private static func loadManifest(
-        from bundle: Bundle
-    ) -> DictionaryManifest? {
-        guard let url = bundle.url(
-            forResource: "dictionary_manifest",
-            withExtension: "json"
-        ),
-              let data = try? Data(contentsOf: url) else {
-            return nil
-        }
-        return try? JSONDecoder().decode(DictionaryManifest.self, from: data)
-    }
+    private static let displayFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "zh_Hant_HK")
+        formatter.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        return formatter
+    }()
 }

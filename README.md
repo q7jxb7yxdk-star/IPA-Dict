@@ -71,7 +71,6 @@ IPA Dict/
 ├── IPA Dict/
 │   ├── Data/
 │   │   ├── dictionary.sqlite
-│   │   ├── dictionary_manifest.json
 │   │   ├── CuratedDictionary.swift
 │   │   └── DictionaryLicenses.md
 │   ├── Models/
@@ -123,8 +122,9 @@ IPA Dict/
 資料庫日期：2026-06-29 20:09
 ```
 
-這個日期來自 `IPA Dict/Data/dictionary_manifest.json`，方便 macOS、iOS、
-iPadOS 都顯示同一個資料庫版本時間。
+這個日期來自 app bundle 內 `dictionary.sqlite` 的檔案修改時間。只要
+更新並重新打包 SQLite，macOS、iOS、iPadOS 都會顯示該份 bundled
+資料庫的修改日期。
 
 ## 字典資料來源
 
@@ -206,7 +206,7 @@ IPAHelp replacement 清單及授權資料記錄於
 - 這仍是一個 prototype，部分功能和資料仍可繼續改善。
 - SQLite 詞庫是主要資料來源；`CuratedDictionary` 用於修正常用詞、補充缺字或覆蓋錯誤結果。
 - App bundle 內的 `dictionary.sqlite` 是可重建的內建詞庫；使用者手動修改內容不會寫回 bundle，而是存入本機私人字典 `PersonalDictionary.sqlite`。
-- 如果使用 Letos 或其他 SQLite 工具直接維護 bundled `dictionary.sqlite`，修改後應執行 `python3 Tools/DictionaryBuilder/update_dictionary_manifest.py` 更新 `dictionary_manifest.json`，再用 Xcode / Git Commit and Push 到 GitHub。
+- 如果使用 Letos 或其他 SQLite 工具直接維護 bundled `dictionary.sqlite`，修改後直接用 Xcode / Git Commit and Push 到 GitHub；首頁日期會讀取 bundled SQLite 的檔案修改時間，不需要額外更新 manifest。
 - 查詢時採用私人字典覆蓋邏輯：你編輯過的字會讀取 `PersonalDictionary.sqlite`；未編輯過的字會讀取內建 `dictionary.sqlite`。
 - 搜尋歷史與書簽屬於 app 偏好資料，儲存在 `UserDefaults`，不會寫入 bundled `dictionary.sqlite` 或私人字典 SQLite。
 - App 內已移除 iCloud Drive 匯入／匯出私人字典功能；跨平台主詞庫同步改由 GitHub repository 管理。

@@ -253,44 +253,23 @@ app 顯示時，每個 entry 只取最多一個例句：
 examples: Array(examples.prefix(1))
 ```
 
-### Dictionary manifest
+### Dictionary database date
 
-App bundle 內另有一個輕量 manifest：
+App 會直接讀取 app bundle 內 `dictionary.sqlite` 的檔案修改時間，並在首頁
+顯示詞庫日期。這樣用 Letos、Codex 或建庫工具修改 bundled SQLite 後，不需要
+額外維護獨立 manifest 或 SHA-256 檔案。
 
-```text
-IPA Dict/Data/dictionary_manifest.json
-```
-
-用途是讓 macOS、iOS、iPadOS 都能在 UI 顯示同一個詞庫日期，而不需要先
-打開 SQLite。格式如下：
-
-```json
-{
-  "database_file": "dictionary.sqlite",
-  "database_updated_at": "2026-06-29T20:09:00+08:00",
-  "display_updated_at": "2026-06-29 20:09",
-  "sha256": "...",
-  "generated_at": "2026-06-29T20:09:00+08:00"
-}
-```
-
-`DictionaryManifestStore` 會從 bundle 讀取此 JSON，並在首頁顯示：
+`DictionaryManifestStore` 會用 `Bundle.main.url(forResource:withExtension:)`
+找到 `dictionary.sqlite`，再透過 `FileManager.default.attributesOfItem` 讀取
+`.modificationDate`，並以 `Asia/Hong_Kong` 時區格式化顯示：
 
 ```text
-資料庫日期：2026-06-29 20:09
+資料庫日期：2026-07-02 20:09
 ```
 
 如果使用 Letos 或其他 SQLite 工具直接維護 bundled `dictionary.sqlite`，
-修改完成後應執行：
-
-```sh
-python3 Tools/DictionaryBuilder/update_dictionary_manifest.py
-```
-
-此工具會使用 `Asia/Hong_Kong` 目前時間更新 `database_updated_at` /
-`display_updated_at`，並重新計算 `dictionary.sqlite` 的 SHA-256。之後再
-用 Xcode / Git Commit and Push，其他平台即可透過同一份 GitHub repo 取得
-一致的資料庫檔案與顯示日期。
+修改完成後直接用 Xcode / Git Commit and Push；其他平台重新取得或重新打包
+同一份 GitHub repo 內的 `dictionary.sqlite` 後，即會顯示該份檔案的修改日期。
 
 ## 6. 私人字典與 GitHub 主詞庫
 
@@ -350,10 +329,8 @@ personal_senses (
 建議流程：
 
 1. 使用 Letos 或其他 SQLite 工具修改 `IPA Dict/Data/dictionary.sqlite`。
-2. 執行 `python3 Tools/DictionaryBuilder/update_dictionary_manifest.py` 更新
-   `dictionary_manifest.json` 的資料庫日期與 SHA-256。
-3. 用 Xcode / Git Commit and Push 到 GitHub。
-4. 其他平台顯示同一個 bundle manifest 日期，之後可再擴充成從 GitHub
+2. 用 Xcode / Git Commit and Push 到 GitHub。
+3. 其他平台顯示 bundled `dictionary.sqlite` 的檔案修改日期，之後可再擴充成從 GitHub
    下載最新主詞庫。
 
 App 內已移除 iCloud Drive 匯入／匯出私人字典功能，避免和 GitHub 主詞庫
@@ -725,4 +702,4 @@ git diff --check
 - 同義詞連結可查詢。
 - 詞性、中文釋義、英文釋義、例句顯示完整。
 - 編輯私人詞條後，再查同一個字會優先顯示私人字典內容。
-- 首頁會顯示 `dictionary_manifest.json` 的資料庫日期。
+- 首頁會顯示 bundled `dictionary.sqlite` 的檔案修改日期。
