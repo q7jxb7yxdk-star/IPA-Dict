@@ -219,14 +219,14 @@ The original OGG files are preserved under
 
 ### ipa_ei.mp3
 
-- Source file: `En-us-day.ogg`
-- File page: https://commons.wikimedia.org/wiki/File:En-us-day.ogg
-- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/5/58/En-us-day.ogg
-- Author / artist: Dvortygirl
-- License: CC BY-SA 3.0
-- License URL: http://creativecommons.org/licenses/by-sa/3.0/
-- Usage terms: Creative Commons Attribution-Share Alike 3.0
-- Local changes: Converted from OGG to MP3 using ffmpeg; filename normalized for app bundle use.
+- Source file: `En-us-a.ogg`
+- File page: https://commons.wikimedia.org/wiki/File:En-us-a.ogg
+- Original audio URL: https://upload.wikimedia.org/wikipedia/commons/5/52/En-us-a.ogg
+- Author / artist: Not specified on file page
+- License: Public domain
+- License URL: https://commons.wikimedia.org/wiki/File:En-us-a.ogg
+- Usage terms: Public domain
+- Local changes: Used Wikimedia Commons MP3 transcode; filename normalized for app bundle use. Replaced the previous `En-us-day.ogg` source because the `d` onset made it unsuitable for the standalone `/eɪ/` phoneme button. Previous app-bundled MP3 is archived at `Tools/AudioArchive/ReplacedPhonemes/20260703/ipa_ei_from_en_us_day.mp3`.
 
 ### ipa_e_open.mp3
 
