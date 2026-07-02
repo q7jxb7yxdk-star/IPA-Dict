@@ -1,5 +1,8 @@
 import AVFoundation
 import Foundation
+#if os(macOS)
+import AppKit
+#endif
 
 @MainActor
 final class AudioPlayerService {
@@ -91,7 +94,10 @@ final class AudioPlayerService {
     private var audioPlayer: AVAudioPlayer?
     private var remotePlayer: AVPlayer?
     private var playbackTask: Task<Void, Never>?
-    private let speechSynthesizer = AVSpeechSynthesizer()
+    private var speechSynthesizer: AVSpeechSynthesizer?
+    #if os(macOS)
+    private var soundPlayer: NSSound?
+    #endif
 
     private init() {}
 
@@ -109,39 +115,58 @@ final class AudioPlayerService {
     }
 
     func playRemoteSound(url: URL) {
-        playbackTask?.cancel()
+        stopPlayback()
         remotePlayer = AVPlayer(url: url)
         remotePlayer?.volume = 1.0
         remotePlayer?.play()
     }
 
     func speak(word: String, region: String) {
-        playbackTask?.cancel()
+        stopPlayback()
         let utterance = AVSpeechUtterance(string: word)
         utterance.voice = AVSpeechSynthesisVoice(
             language: region == "UK" ? "en-GB" : "en-US"
         )
         utterance.rate = 0.42
         utterance.volume = 1.0
-        speechSynthesizer.stopSpeaking(at: .immediate)
-        speechSynthesizer.speak(utterance)
+        let synthesizer = speechSynthesizer ?? AVSpeechSynthesizer()
+        speechSynthesizer = synthesizer
+        synthesizer.stopSpeaking(at: .immediate)
+        synthesizer.speak(utterance)
     }
 
     private func playSoundSequence(fileNames: [String]) {
-        playbackTask?.cancel()
+        stopPlayback()
         playbackTask = Task { @MainActor in
             for fileName in fileNames {
-                guard !Task.isCancelled,
-                      let player = makeAudioPlayer(fileName: fileName) else {
+                guard !Task.isCancelled else {
                     continue
                 }
 
+                #if os(macOS)
+                guard let sound = makeSoundPlayer(fileName: fileName) else {
+                    continue
+                }
+
+                soundPlayer?.stop()
+                soundPlayer = sound
+                sound.volume = 1.0
+                sound.play()
+
+                let duration = max(sound.duration, 0.18)
+                #else
+                guard let player = makeAudioPlayer(fileName: fileName) else {
+                    continue
+                }
+
+                audioPlayer?.stop()
                 audioPlayer = player
                 player.volume = 1.0
                 player.prepareToPlay()
                 player.play()
-
                 let duration = max(player.duration, 0.18)
+                #endif
+
                 try? await Task.sleep(
                     nanoseconds: UInt64(duration * 1_000_000_000)
                 )
@@ -149,7 +174,55 @@ final class AudioPlayerService {
         }
     }
 
+    private func stopPlayback() {
+        playbackTask?.cancel()
+        playbackTask = nil
+        audioPlayer?.stop()
+        audioPlayer = nil
+        remotePlayer?.pause()
+        remotePlayer = nil
+        speechSynthesizer?.stopSpeaking(at: .immediate)
+        #if os(macOS)
+        soundPlayer?.stop()
+        soundPlayer = nil
+        #endif
+    }
+
     private func makeAudioPlayer(fileName: String) -> AVAudioPlayer? {
+        guard let url = audioURL(fileName: fileName) else {
+            return nil
+        }
+
+        do {
+            #if os(iOS)
+            let session = AVAudioSession.sharedInstance()
+            try session.setCategory(.playback, mode: .spokenAudio)
+            try session.setActive(true)
+            #endif
+
+            return try AVAudioPlayer(contentsOf: url)
+        } catch {
+            print("Unable to play \(fileName): \(error.localizedDescription)")
+            return nil
+        }
+    }
+
+    #if os(macOS)
+    private func makeSoundPlayer(fileName: String) -> NSSound? {
+        guard let url = audioURL(fileName: fileName) else {
+            return nil
+        }
+
+        guard let sound = NSSound(contentsOf: url, byReference: false) else {
+            print("Unable to play \(fileName)")
+            return nil
+        }
+
+        return sound
+    }
+    #endif
+
+    private func audioURL(fileName: String) -> URL? {
         let file = fileName as NSString
         let resourceName = file.deletingPathExtension
         let fileExtension = file.pathExtension.isEmpty ? "mp3" : file.pathExtension
@@ -168,17 +241,6 @@ final class AudioPlayerService {
             return nil
         }
 
-        do {
-            #if os(iOS)
-            let session = AVAudioSession.sharedInstance()
-            try session.setCategory(.playback, mode: .spokenAudio)
-            try session.setActive(true)
-            #endif
-
-            return try AVAudioPlayer(contentsOf: url)
-        } catch {
-            print("Unable to play \(fileName): \(error.localizedDescription)")
-            return nil
-        }
+        return url
     }
 }

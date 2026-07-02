@@ -91,11 +91,12 @@ DictionaryEntry models
   - 會把簡體中文用 `StringTransform("Hans-Hant")` 轉成繁體。
 
 - `AudioPlayerService.swift`
-  - 使用 AVFoundation 播放本地 mp3。
+  - iOS / iPadOS 使用 `AVAudioPlayer` 播放本地 mp3。
+  - macOS 使用 `NSSound` 播放本地音素 mp3，以減少 sandbox 下不必要的 AVFoundation audio analytics log。
   - 使用 `AVPlayer` 播放遠端 audio URL。
   - 使用 `AVSpeechSynthesizer` 作為整字發音 fallback。
   - 包含 `phonemeAudioMap`。
-  - 支援複合音素依序播放多個本地 mp3。
+  - 支援複合音素依序播放多個本地 mp3；常用複合音素維護上優先使用單一 mp3。
 
 - `SearchHistoryStore.swift`
   - 使用 `UserDefaults` 儲存最近搜尋字。
@@ -419,14 +420,27 @@ linked words
 
 ## 9. 發音系統
 
-`AudioPlayerService` 使用 AVFoundation。
+`AudioPlayerService` 依平台使用不同音訊元件：
+
+- iOS / iPadOS：本地 mp3 使用 `AVAudioPlayer`。
+- macOS：本地音素 mp3 使用 `NSSound`。
+- 遠端整字 audio URL：使用 `AVPlayer`。
+- 缺音檔 fallback：使用 `AVSpeechSynthesizer`。
+
+macOS app 保持 App Sandbox，不加入
+`com.apple.security.exception.mach-lookup.global-name` temporary exception。這樣較適合
+App Store 路線；若 Xcode Debug Area 出現 `com.apple.audioanalyticsd` 相關系統 log，
+優先透過降低 AVFoundation 本地音素播放使用量處理，而不是加入 sandbox exception。
+播放新音檔前會停止舊的 local / remote / speech 播放，避免多條 audio pipeline 同時存在。
 
 ### 整字發音
 
 整字發音順序：
 
 1. 如果 entry 有遠端音檔 URL，使用 `AVPlayer` 播放。
-2. 如果 app bundle 有本地 mp3，例如 `word_uk.mp3`，使用 `AVAudioPlayer` 播放。
+2. 如果 app bundle 有本地 mp3，例如 `word_uk.mp3`，會使用平台對應本地播放器播放：
+   - iOS / iPadOS：`AVAudioPlayer`
+   - macOS：`NSSound`
 3. 如果都沒有，使用 `AVSpeechSynthesizer`：
    - UK: `en-GB`
    - US: `en-US`

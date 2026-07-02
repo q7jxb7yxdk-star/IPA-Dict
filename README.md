@@ -21,7 +21,7 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - IPA 會拆成音素按鈕，例如 `/ˈæp.əl/` 可拆成 `æ`、`p`、`ə`、`l`。
 - 每個音素可對應本地音檔播放，例如 `æ -> ipa_ae.mp3`、`ə -> ipa_schwa.mp3`。
 - 常見複合音素會優先使用單一 MP3，避免點擊一次音素時聽到兩段分開播放的聲音。
-- 使用 AVFoundation 播放本地音檔、遠端音檔與系統語音 fallback。
+- 本地音素音檔在 iOS / iPadOS 使用 `AVAudioPlayer` 播放，在 macOS 使用 `NSSound` 播放；遠端整字發音使用 `AVPlayer`，缺音檔時使用系統語音 fallback。
 - 搜尋歷史記錄，輸入框 focus 時以類似 Google 搜尋的下拉選單顯示。
 - 書簽功能，可在查詢結果頁收藏單字，並在首頁快速重新查詢。
 - 同義詞以文字連結形式顯示，可點擊查詢。
@@ -156,9 +156,14 @@ Received Pronunciation、UK 或 British 的音標，不會把 US IPA 推斷成 U
 
 `AudioPlayerService` 支援三種播放方式：
 
-1. 本地 mp3 音檔。
+1. 本地 mp3 音檔：iOS / iPadOS 使用 `AVAudioPlayer`，macOS 使用 `NSSound` 播放本地音素。
 2. 遠端 audio URL。
 3. 使用 `AVSpeechSynthesizer` 作為 fallback。
+
+macOS app 仍保持 App Sandbox，不加入 `com.apple.security.exception.mach-lookup.global-name`
+temporary exception。macOS 本地音素改用 `NSSound`，並在切換播放前停止舊的
+local / remote / speech 播放，以降低 AVFoundation 在 sandbox 下觸發
+`audioanalyticsd` 類系統 log 的機會。
 
 音素對應表位於 `AudioPlayerService.phonemeAudioMap`。單一音素通常對應一個本地音檔；常見雙元音與 affricate 也優先對應單一 MP3，避免按下一個 IPA button 時聽到兩個分開音檔。例如：
 
