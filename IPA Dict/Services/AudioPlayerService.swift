@@ -1,7 +1,7 @@
 import AVFoundation
 import Foundation
 #if os(macOS)
-import AppKit
+import AudioToolbox
 #endif
 
 @MainActor
@@ -96,7 +96,8 @@ final class AudioPlayerService {
     private var playbackTask: Task<Void, Never>?
     private var speechSynthesizer: AVSpeechSynthesizer?
     #if os(macOS)
-    private var soundPlayer: NSSound?
+    private var systemSoundIDs: [String: SystemSoundID] = [:]
+    private var activeSystemSoundID: SystemSoundID?
     #endif
 
     private init() {}
@@ -122,8 +123,13 @@ final class AudioPlayerService {
     }
 
     func speak(word: String, region: String) {
+        let trimmedWord = word.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedWord.isEmpty else {
+            return
+        }
+
         stopPlayback()
-        let utterance = AVSpeechUtterance(string: word)
+        let utterance = AVSpeechUtterance(string: trimmedWord)
         utterance.voice = AVSpeechSynthesisVoice(
             language: region == "UK" ? "en-GB" : "en-US"
         )
@@ -144,16 +150,14 @@ final class AudioPlayerService {
                 }
 
                 #if os(macOS)
-                guard let sound = makeSoundPlayer(fileName: fileName) else {
+                guard let soundID = makeSystemSoundID(fileName: fileName) else {
                     continue
                 }
 
-                soundPlayer?.stop()
-                soundPlayer = sound
-                sound.volume = 1.0
-                sound.play()
+                activeSystemSoundID = soundID
+                AudioServicesPlaySystemSound(soundID)
 
-                let duration = max(sound.duration, 0.18)
+                let duration = max(audioDuration(fileName: fileName), 0.18)
                 #else
                 guard let player = makeAudioPlayer(fileName: fileName) else {
                     continue
@@ -183,8 +187,11 @@ final class AudioPlayerService {
         remotePlayer = nil
         speechSynthesizer?.stopSpeaking(at: .immediate)
         #if os(macOS)
-        soundPlayer?.stop()
-        soundPlayer = nil
+        if let activeSystemSoundID {
+            AudioServicesDisposeSystemSoundID(activeSystemSoundID)
+            systemSoundIDs = systemSoundIDs.filter { $0.value != activeSystemSoundID }
+            self.activeSystemSoundID = nil
+        }
         #endif
     }
 
@@ -208,17 +215,55 @@ final class AudioPlayerService {
     }
 
     #if os(macOS)
-    private func makeSoundPlayer(fileName: String) -> NSSound? {
+    private func makeSystemSoundID(fileName: String) -> SystemSoundID? {
+        if let cachedSoundID = systemSoundIDs[fileName] {
+            return cachedSoundID
+        }
+
         guard let url = audioURL(fileName: fileName) else {
             return nil
         }
 
-        guard let sound = NSSound(contentsOf: url, byReference: false) else {
-            print("Unable to play \(fileName)")
+        var soundID: SystemSoundID = 0
+        let status = AudioServicesCreateSystemSoundID(url as CFURL, &soundID)
+        guard status == kAudioServicesNoError else {
+            print("Unable to create system sound for \(fileName): \(status)")
             return nil
         }
 
-        return sound
+        systemSoundIDs[fileName] = soundID
+        return soundID
+    }
+
+    private func audioDuration(fileName: String) -> TimeInterval {
+        guard let url = audioURL(fileName: fileName) else {
+            return 0
+        }
+
+        var audioFile: AudioFileID?
+        let openStatus = AudioFileOpenURL(url as CFURL, .readPermission, 0, &audioFile)
+        guard openStatus == noErr, let audioFile else {
+            return 0
+        }
+
+        defer {
+            AudioFileClose(audioFile)
+        }
+
+        var duration: Float64 = 0
+        var dataSize = UInt32(MemoryLayout<Float64>.size)
+        let durationStatus = AudioFileGetProperty(
+            audioFile,
+            kAudioFilePropertyEstimatedDuration,
+            &dataSize,
+            &duration
+        )
+
+        guard durationStatus == noErr else {
+            return 0
+        }
+
+        return duration
     }
     #endif
 
