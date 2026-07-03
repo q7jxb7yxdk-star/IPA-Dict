@@ -22610,6 +22610,30 @@
         "english": "The stewpot simmered on the stove.",
         "chinese": "燉鍋在爐上慢慢煮著。"
       }
+    },
+    {
+      "word": "crush",
+      "part_of_speech": "noun",
+      "old_chinese": "喜歡",
+      "new_chinese": "迷戀；暗戀；迷戀或暗戀的對象；擁擠的人群",
+      "english": "(informal, by extension) The human object of such infatuation or affection.",
+      "reason": "User-reviewed dictionary entry expanded the noun sense from a narrow 'like' gloss to the common crush senses: infatuation, the person liked, and a crowded press of people.",
+      "example": {
+        "english": "She had a crush on him when they were at school.",
+        "chinese": "她讀書時曾經暗戀他。"
+      }
+    },
+    {
+      "word": "crush",
+      "part_of_speech": "verb",
+      "old_chinese": "壓碎；壓垮",
+      "new_chinese": "壓碎；壓壞；擠壓變形；打敗；徹底擊敗；鎮壓；壓制；使極度失望；使精神崩潰",
+      "english": "To press between two hard objects; to squeeze so as to alter the natural shape or integrity, or to force together into a mass.",
+      "reason": "User-reviewed dictionary entry expanded the verb sense to cover physical crushing, complete defeat, suppression, and emotional devastation.",
+      "example": {
+        "english": "The box was crushed under the weight of the books.",
+        "chinese": "箱子被書的重量壓壞了。"
+      }
     }
   ]
 }
