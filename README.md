@@ -165,7 +165,8 @@ temporary exception。macOS 本地音素使用較輕量的 `AudioToolbox` / `Sys
 並在切換播放前停止舊的 local / remote / speech 播放，以降低 AVFoundation 在 sandbox 下觸發
 `audioanalyticsd` 類系統 log 的機會。整字發音若缺少真人音檔，會使用
 `AVSpeechSynthesizer` fallback。呼叫 speech fallback 前會先去除前後空白，並跳過空字串，
-避免對無效文字建立空的 speech buffer。iOS / macOS Debug Area 仍可能顯示少量 Apple
+避免對無效文字建立空的 speech buffer。iOS / iPadOS 會在 speech fallback 前先啟用
+`AVAudioSession` 的 `.playback` / `.spokenAudio`，讓系統音訊管線更明確。iOS / macOS Debug Area 仍可能顯示少量 Apple
 系統 speech pipeline log，這類訊息通常不代表 app 播放流程失敗。
 
 音素對應表位於 `AudioPlayerService.phonemeAudioMap`。單一音素通常對應一個本地音檔；常見雙元音與 affricate 也優先對應單一 MP3，避免按下一個 IPA button 時聽到兩個分開音檔。例如：

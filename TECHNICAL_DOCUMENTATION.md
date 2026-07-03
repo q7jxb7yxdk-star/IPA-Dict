@@ -434,6 +434,8 @@ App Store 路線；若 Xcode Debug Area 出現 `com.apple.audioanalyticsd` 相�
 整字發音 fallback 使用 `AVSpeechSynthesizer`，避免依賴 macOS 14 已 deprecated 的
 舊 macOS speech API。播放新音檔前會停止舊的 local / remote / speech 播放，避免多條 audio pipeline 同時存在。
 呼叫 speech fallback 前會先去除前後空白，並跳過空字串，避免對無效文字建立空的 speech buffer。
+iOS / iPadOS 會在 speech fallback 前先啟用 `AVAudioSession` 的 `.playback` / `.spokenAudio`
+並使用 `.duckOthers` option，讓系統音訊管線更明確。
 iOS / macOS Debug Area 仍可能顯示少量 Apple 系統 speech pipeline log；這類訊息通常來自
 `AVSpeechSynthesizer` 或系統音訊服務，不一定代表 app 播放流程失敗。
 

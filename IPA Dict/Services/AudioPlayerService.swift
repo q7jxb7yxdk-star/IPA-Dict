@@ -129,6 +129,7 @@ final class AudioPlayerService {
         }
 
         stopPlayback()
+        prepareSpeechAudioSession()
         let utterance = AVSpeechUtterance(string: trimmedWord)
         utterance.voice = AVSpeechSynthesisVoice(
             language: region == "UK" ? "en-GB" : "en-US"
@@ -191,6 +192,22 @@ final class AudioPlayerService {
             AudioServicesDisposeSystemSoundID(activeSystemSoundID)
             systemSoundIDs = systemSoundIDs.filter { $0.value != activeSystemSoundID }
             self.activeSystemSoundID = nil
+        }
+        #endif
+    }
+
+    private func prepareSpeechAudioSession() {
+        #if os(iOS)
+        do {
+            let session = AVAudioSession.sharedInstance()
+            try session.setCategory(
+                .playback,
+                mode: .spokenAudio,
+                options: [.duckOthers]
+            )
+            try session.setActive(true)
+        } catch {
+            print("Unable to prepare speech audio session: \(error.localizedDescription)")
         }
         #endif
     }
