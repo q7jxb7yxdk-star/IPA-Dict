@@ -15,7 +15,6 @@ struct DictionaryEntry: Identifiable, Hashable, Sendable {
     let examples: [DictionaryExample]
     let synonyms: [String]
     let antonyms: [String]
-    let isPersonal: Bool
 
     nonisolated init(
         id: UUID = UUID(),
@@ -31,8 +30,7 @@ struct DictionaryEntry: Identifiable, Hashable, Sendable {
         enDefinition: String,
         examples: [DictionaryExample],
         synonyms: [String] = [],
-        antonyms: [String] = [],
-        isPersonal: Bool = false
+        antonyms: [String] = []
     ) {
         self.id = id
         self.word = word
@@ -48,7 +46,6 @@ struct DictionaryEntry: Identifiable, Hashable, Sendable {
         self.examples = examples
         self.synonyms = synonyms
         self.antonyms = antonyms
-        self.isPersonal = isPersonal
     }
 }
 
@@ -98,8 +95,7 @@ extension DictionaryEntry {
                 )
             },
             synonyms: synonyms,
-            antonyms: antonyms,
-            isPersonal: isPersonal
+            antonyms: antonyms
         )
     }
 

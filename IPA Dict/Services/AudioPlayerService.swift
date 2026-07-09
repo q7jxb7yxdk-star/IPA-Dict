@@ -115,6 +115,19 @@ final class AudioPlayerService {
         playSoundSequence(fileNames: fileNames)
     }
 
+    func playPhonemeSequence(symbols: [String]) {
+        let fileNames = symbols.flatMap { symbol in
+            Self.phonemeAudioMap[symbol] ?? []
+        }
+
+        guard !fileNames.isEmpty else {
+            print("No local audio mapping for phoneme sequence: \(symbols)")
+            return
+        }
+
+        playSoundSequence(fileNames: fileNames)
+    }
+
     func playRemoteSound(url: URL) {
         stopPlayback()
         remotePlayer = AVPlayer(url: url)
@@ -138,8 +151,16 @@ final class AudioPlayerService {
         utterance.volume = 1.0
         let synthesizer = speechSynthesizer ?? AVSpeechSynthesizer()
         speechSynthesizer = synthesizer
-        synthesizer.stopSpeaking(at: .immediate)
-        synthesizer.speak(utterance)
+
+        if synthesizer.isSpeaking {
+            synthesizer.stopSpeaking(at: .immediate)
+        }
+
+        Task { @MainActor in
+            await Task.yield()
+            guard !Task.isCancelled else { return }
+            synthesizer.speak(utterance)
+        }
     }
 
     private func playSoundSequence(fileNames: [String]) {

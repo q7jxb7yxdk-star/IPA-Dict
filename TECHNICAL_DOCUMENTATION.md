@@ -13,12 +13,12 @@ DictionarySearchViewModel
     ↓
 DictionaryService
     ↓
-PersonalDictionaryService / LocalDictionaryService / CuratedDictionary / Dictionary API fallback
+LocalDictionaryService / CuratedDictionary / Dictionary API fallback
     ↓
 DictionaryEntry models
 ```
 
-查詢結果由 `WordDetailView` 顯示，私人詞條由 `PersonalEntryEditView` 編輯，發音由 `AudioPlayerService` 負責，搜尋歷史由 `SearchHistoryStore` 儲存在 `UserDefaults`，書簽由 `BookmarkStore` 儲存在 `UserDefaults`。
+查詢結果由 `WordDetailView` 顯示，發音由 `AudioPlayerService` 負責，搜尋歷史由 `SearchHistoryStore` 儲存在 `UserDefaults`，書簽由 `BookmarkStore` 儲存在 `UserDefaults`。
 
 ## 2. 主要檔案
 
@@ -35,7 +35,6 @@ DictionaryEntry models
   - 搜尋頁與結果頁容器。
   - 管理搜尋輸入框、搜尋歷史、書簽、下拉選單、loading、error state。
   - 使用 `NavigationStack` 顯示查詢結果。
-  - 提供私人字典編輯與重設入口。
 
 - `WordDetailView.swift`
   - 顯示字典詞條內容。
@@ -54,15 +53,6 @@ DictionaryEntry models
   - `IPATokenizer` 會把 IPA 字串拆成音素 token。
   - `PhonemeFlowLayout` 讓音素按鈕自動換行。
 
-- `TranslatedText.swift`
-  - Apple Translation framework 的輔助 view。
-  - 用於缺少中文內容時的翻譯 fallback 顯示。
-
-- `PersonalEntryEditView.swift`
-  - 私人字典結構化編輯畫面。
-  - 只開放模板中的欄位修改，例如 UK IPA、US IPA、詞性、中文釋義、英文釋義與雙語例句。
-  - 不提供任意 Markdown 全文編輯，避免破壞查詢結果版面結構。
-
 ### Models
 
 - `DictionaryEntry.swift`
@@ -74,15 +64,11 @@ DictionaryEntry models
   - 線上 Dictionary API response 的 decoding model。
   - 負責把 API response 轉成 `DictionaryEntry`。
 
-- `PersonalDictionaryEntry.swift`
-  - 私人字典 SQLite 的資料模型。
-  - 包含 `EditablePersonalDictionaryEntry` 與 `EditablePersonalDictionarySense`，用於編輯畫面與 SQLite 儲存之間轉換。
-
 ### Services
 
 - `DictionaryService.swift`
   - 查詢入口。
-  - 統一處理私人字典、本地 SQLite、精選詞庫與線上 API fallback。
+  - 統一處理本地 SQLite、精選詞庫與線上 API fallback。
 
 - `LocalDictionaryService.swift`
   - 使用 SQLite3 讀取 app bundle 內的 `dictionary.sqlite`。
@@ -105,13 +91,7 @@ DictionaryEntry models
 - `BookmarkStore.swift`
   - 使用 `UserDefaults` 儲存書簽字詞。
   - 提供加入、移除、切換、清除與查詢是否已收藏。
-  - 書簽是使用者偏好資料，不寫入 bundled `dictionary.sqlite` 或私人字典 SQLite。
-
-- `PersonalDictionaryService.swift`
-  - 使用 SQLite3 管理使用者私人字典。
-  - 儲存在 Application Support 內的 `PersonalDictionary.sqlite`。
-  - 查詢時優先於 bundled `dictionary.sqlite`。
-  - 支援保存與刪除私人詞條。
+  - 書簽是使用者偏好資料，不寫入 bundled `dictionary.sqlite`。
 
 - `TranslationCache.swift`
   - 快取 Apple Translation fallback 結果。
@@ -129,25 +109,15 @@ DictionarySearchViewModel.search()
     ↓
 DictionaryService.lookup(word:)
     ↓
-1. 查詢 PersonalDictionaryService / 私人 SQLite
-2. 如果私人字典有資料：
-   - 直接返回私人詞條
-3. 檢查 CuratedDictionary 是否有精選詞條
-4. 查詢 LocalDictionaryService / bundled SQLite
-5. 如果 bundled SQLite 有資料：
+1. 檢查 CuratedDictionary 是否有精選詞條
+2. 查詢 LocalDictionaryService / bundled SQLite
+3. 如果 bundled SQLite 有資料：
    - 有 curated：merge curated + local entries
    - 無 curated：返回 local entries
-6. 如果 bundled SQLite 沒資料但 curated 有資料：
+4. 如果 bundled SQLite 沒資料但 curated 有資料：
    - 直接返回 curated entries
-7. 如果 private / local / curated 都沒有：
+5. 如果 local / curated 都沒有：
    - 使用線上 Dictionary API fallback
-```
-
-也就是：
-
-```text
-你編輯過的字 → 讀 PersonalDictionary.sqlite
-未編輯過的字 → 讀內建 dictionary.sqlite
 ```
 
 目前 `CuratedDictionary` 的用途包括：
@@ -189,8 +159,6 @@ let chinese: String
 ```swift
 interjection -> exclamation
 ```
-
-`DictionaryEntry.isPersonal` 用於標記查詢結果是否來自私人字典。結果頁會以此決定是否顯示「私人筆記」提示與「還原」操作。
 
 ## 5. SQLite 詞庫
 
@@ -272,59 +240,7 @@ App 會直接讀取 app bundle 內 `dictionary.sqlite` 的檔案修改時間，�
 修改完成後直接用 Xcode / Git Commit and Push；其他平台重新取得或重新打包
 同一份 GitHub repo 內的 `dictionary.sqlite` 後，即會顯示該份檔案的修改日期。
 
-## 6. 私人字典與 GitHub 主詞庫
-
-私人字典用於保存使用者手動修正的字典筆記。它不會直接修改 app bundle 內的
-`dictionary.sqlite`，避免使用者資料在重新安裝 app 或更新內建詞庫時混入可重建資料。
-查詢時採用 per-word override：如果某個字已被手動編輯，app 會優先讀取
-`PersonalDictionary.sqlite` 內的私人版本；如果該字沒有私人版本，才讀取
-app bundle 內建的 `dictionary.sqlite`。
-
-本機私人字典位置由 `FileManager.default.url(for:in:appropriateFor:create:)`
-取得 Application Support，再建立：
-
-```text
-IPA Dict/PersonalDictionary.sqlite
-```
-
-實際 sandbox 路徑會因平台與安裝方式不同而改變。
-
-### 私人 SQLite schema
-
-`PersonalDictionaryService` 會自動建立兩個 table：
-
-```sql
-personal_words (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    word TEXT NOT NULL,
-    normalized_word TEXT NOT NULL UNIQUE,
-    uk_ipa TEXT NOT NULL DEFAULT '',
-    us_ipa TEXT NOT NULL DEFAULT '',
-    source_note TEXT NOT NULL DEFAULT '',
-    source_url TEXT NOT NULL DEFAULT '',
-    created_at TEXT NOT NULL,
-    updated_at TEXT NOT NULL
-)
-```
-
-```sql
-personal_senses (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    word_id INTEGER NOT NULL,
-    display_order INTEGER NOT NULL,
-    part_of_speech TEXT NOT NULL DEFAULT '',
-    countability TEXT NOT NULL DEFAULT '',
-    zh_definition TEXT NOT NULL DEFAULT '',
-    en_definition TEXT NOT NULL DEFAULT '',
-    example_english TEXT NOT NULL DEFAULT '',
-    example_chinese TEXT NOT NULL DEFAULT '',
-    FOREIGN KEY(word_id) REFERENCES personal_words(id) ON DELETE CASCADE
-)
-```
-
-每個私人詞條可以有多個 sense；app 仍沿用相同查詢結果 UI 顯示。
-
-### GitHub 主詞庫管理
+## 6. GitHub 主詞庫管理
 
 主詞庫 `dictionary.sqlite` 放在 GitHub repository，由 macOS 端統一維護。
 建議流程：
@@ -334,9 +250,9 @@ personal_senses (
 3. 其他平台顯示 bundled `dictionary.sqlite` 的檔案修改日期，之後可再擴充成從 GitHub
    下載最新主詞庫。
 
-App 內已移除 iCloud Drive 匯入／匯出私人字典功能，避免和 GitHub 主詞庫
-管理流程混淆。私人字典只作為本機 per-word override，用於 app 內手動修正
-個別詞條。
+App 不提供詞條編輯、私人筆記或私人 SQLite override。所有平台的正式詞庫內容
+以 repository 內的 `dictionary.sqlite` 為準；其他裝置需要使用包含最新版資料庫的
+app build，才會取得更新內容。
 
 ## 7. 查詢結果 UI
 
@@ -691,7 +607,7 @@ Tools/DictionaryBuilder/README.md
 - IPA tokenizer 仍是簡化版，未完整覆蓋所有 IPA 符號與語音變體。
 - 目前本地音素 mp3 對應表只涵蓋部分音素。
 - SQLite 詞庫仍可能存在缺詞、詞性缺漏、IPA 缺失或例句不足。
-- 私人字典是本機 per-word override；跨平台主詞庫目前透過 GitHub repository 更新，而不是 app 內自動同步。
+- 跨平台主詞庫目前透過 GitHub repository 和新版 app build 更新，而不是 app 內自動同步。
 - Apple Translation fallback 可能與正確字典釋義不同，不應作為正式詞庫資料來源。
 - ContentUnavailableView 的部分系統文字樣式由 SwiftUI 控制，不能完全套用自訂字體。
 
@@ -722,5 +638,4 @@ git diff --check
 - 音素按鈕可點擊。
 - 同義詞連結可查詢。
 - 詞性、中文釋義、英文釋義、例句顯示完整。
-- 編輯私人詞條後，再查同一個字會優先顯示私人字典內容。
 - 首頁會顯示 bundled `dictionary.sqlite` 的檔案修改日期。

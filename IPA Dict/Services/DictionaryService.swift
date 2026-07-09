@@ -26,27 +26,19 @@ enum DictionaryServiceError: LocalizedError {
 struct DictionaryService {
     private let session: URLSession
     private let localDictionary: LocalDictionaryService
-    private let personalDictionary: PersonalDictionaryService
 
     init(
         session: URLSession = .shared,
-        localDictionary: LocalDictionaryService = LocalDictionaryService(),
-        personalDictionary: PersonalDictionaryService = .shared
+        localDictionary: LocalDictionaryService = LocalDictionaryService()
     ) {
         self.session = session
         self.localDictionary = localDictionary
-        self.personalDictionary = personalDictionary
     }
 
     func lookup(word rawWord: String) async throws -> [DictionaryEntry] {
         let word = rawWord.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !word.isEmpty else {
             throw DictionaryServiceError.invalidWord
-        }
-
-        let personalEntries = try await personalDictionary.lookup(word: word)
-        if !personalEntries.isEmpty {
-            return personalEntries
         }
 
         let curatedEntries = CuratedDictionary.entries(for: word)
@@ -152,23 +144,4 @@ struct DictionaryService {
         return Array(words.prefix(limit))
     }
 
-    func personalDraft(
-        word: String,
-        fallbackEntries: [DictionaryEntry]
-    ) async throws -> EditablePersonalDictionaryEntry {
-        if let draft = try await personalDictionary.draft(word: word) {
-            return draft
-        }
-        return EditablePersonalDictionaryEntry(entries: fallbackEntries)
-    }
-
-    func savePersonalDraft(
-        _ draft: EditablePersonalDictionaryEntry
-    ) async throws -> [DictionaryEntry] {
-        try await personalDictionary.save(draft)
-    }
-
-    func deletePersonalEntry(word: String) async throws {
-        try await personalDictionary.delete(word: word)
-    }
 }

@@ -1,15 +1,24 @@
+import Foundation
 import SwiftUI
+#if os(iOS)
+import SafariServices
+import UIKit
+#elseif os(macOS)
+import AppKit
+#endif
 
 struct WordDetailView: View {
     let entries: [DictionaryEntry]
     var showsNavigationTitle = true
     var onSelectWord: ((String) -> Void)?
 
-    @Environment(\.openURL) private var openURL
     @State private var expandedPartsOfSpeech: Set<String> = []
     @State private var showsReportSheet = false
     @State private var missingWordReport = ""
     @State private var reportStatusMessage: String?
+    #if os(iOS)
+    @State private var safariURL: SafariURL?
+    #endif
 
     private let audioPlayer = AudioPlayerService.shared
     private let collapsedMeaningLimit = 3
@@ -85,6 +94,10 @@ struct WordDetailView: View {
             }
         }
         #if os(iOS)
+        .sheet(item: $safariURL) { safariURL in
+            SafariView(url: safariURL.url)
+                .ignoresSafeArea()
+        }
         .navigationBarTitleDisplayMode(.inline)
         #endif
     }
@@ -178,7 +191,9 @@ struct WordDetailView: View {
             visibleEntries.map(\.zhDefinition)
         )
         let countability = uniqueValues(
-            group.entries.map(\.countability).filter { !$0.isEmpty }
+            group.entries
+                .map { normalizedCountability($0.countability) }
+                .filter { !$0.isEmpty }
         ).joined(separator: " or ")
         let inflections = uniqueValues(
             group.entries.flatMap(\.inflections)
@@ -242,6 +257,17 @@ struct WordDetailView: View {
         }
 
         return "\(partOfSpeech.markdownEscaped) \\[ \(countability.markdownEscaped) \\]"
+    }
+
+    private func normalizedCountability(_ value: String) -> String {
+        var normalized = value.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        while normalized.hasPrefix("[") && normalized.hasSuffix("]") {
+            normalized = String(normalized.dropFirst().dropLast())
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+
+        return normalized
     }
 
     private func uniqueValues(_ values: [String]) -> [String] {
@@ -432,7 +458,7 @@ struct WordDetailView: View {
 
             Button {
                 if let url = cambridgeReferenceURL(for: entry.word) {
-                    openURL(url)
+                    openExternalURL(url)
                 }
             } label: {
                 Text("Cambridge Dictionary")
@@ -525,10 +551,20 @@ struct WordDetailView: View {
             missingWordReport = ""
 
             if let issueURL = reportStore.githubIssueURL(for: report) {
-                openURL(issueURL)
+                openExternalURL(issueURL)
             }
         } catch {
             reportStatusMessage = error.localizedDescription
+        }
+    }
+
+    private func openExternalURL(_ url: URL) {
+        DispatchQueue.main.async {
+            #if os(iOS)
+            safariURL = SafariURL(url: url)
+            #elseif os(macOS)
+            NSWorkspace.shared.open(url)
+            #endif
         }
     }
 
@@ -561,6 +597,26 @@ private struct MeaningGroup: Identifiable {
     let partOfSpeech: String
     let entries: [DictionaryEntry]
 }
+
+#if os(iOS)
+private struct SafariURL: Identifiable {
+    let id = UUID()
+    let url: URL
+}
+
+private struct SafariView: UIViewControllerRepresentable {
+    let url: URL
+
+    func makeUIViewController(context: Context) -> SFSafariViewController {
+        SFSafariViewController(url: url)
+    }
+
+    func updateUIViewController(
+        _ uiViewController: SFSafariViewController,
+        context: Context
+    ) {}
+}
+#endif
 
 private extension Color {
     static var detailBackground: Color {

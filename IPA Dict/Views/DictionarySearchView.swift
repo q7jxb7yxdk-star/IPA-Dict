@@ -99,26 +99,6 @@ final class DictionarySearchViewModel: ObservableObject {
         isLoading = false
     }
 
-    func personalDraft(
-        word: String,
-        fallbackEntries: [DictionaryEntry]
-    ) async throws -> EditablePersonalDictionaryEntry {
-        try await service.personalDraft(
-            word: word,
-            fallbackEntries: fallbackEntries
-        )
-    }
-
-    func savePersonalDraft(
-        _ draft: EditablePersonalDictionaryEntry
-    ) async throws -> [DictionaryEntry] {
-        try await service.savePersonalDraft(draft)
-    }
-
-    func deletePersonalEntry(word: String) async throws {
-        try await service.deletePersonalEntry(word: word)
-    }
-
     func clearResult() {
         entries = []
         entriesAwaitingTranslation = []
@@ -154,34 +134,12 @@ struct DictionarySearchView: View {
     @State private var selectedHistoryIndex: Int?
     @State private var hasActivatedSearch = false
     @State private var hasCompletedInitialAppearance = false
-    @State private var editingDraft: EditablePersonalDictionaryEntry?
-    @State private var isSavingPersonalEntry = false
-    @State private var showsResetPersonalConfirmation = false
     @State private var showsBookmarkSheet = false
-    @State private var personalActionError: String?
     @State private var sidebarVisibility = NavigationSplitViewVisibility.automatic
     @FocusState private var isSearchFocused: Bool
 
     var body: some View {
-        ZStack {
-            dictionaryNavigation
-
-            if editingDraft != nil {
-                personalEditorOverlay
-                    .transition(.opacity)
-                    .zIndex(100)
-            }
-        }
-        .alert(
-            "私人字典操作失敗",
-            isPresented: personalErrorAlertBinding
-        ) {
-            Button("好", role: .cancel) {
-                personalActionError = nil
-            }
-        } message: {
-            Text(personalActionError ?? "")
-        }
+        dictionaryNavigation
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.searchBackground.ignoresSafeArea())
         .bookmarkPresentation(isPresented: $showsBookmarkSheet) {
@@ -246,7 +204,6 @@ struct DictionarySearchView: View {
                 isSearchFocused = false
                 showsHistorySuggestions = false
                 selectedHistoryIndex = nil
-                viewModel.clearResult()
             }
             .onChange(of: presentedResult) { _, result in
                 if result == nil {
@@ -255,7 +212,13 @@ struct DictionarySearchView: View {
                 }
             }
             .onChange(of: viewModel.entriesAwaitingTranslation) { _, entries in
-                guard !entries.isEmpty else { return }
+                guard entries.contains(where: { !$0.hasCompleteChineseContent }) else {
+                    if !entries.isEmpty {
+                        viewModel.finishTranslation(with: entries)
+                    }
+                    translationConfiguration = nil
+                    return
+                }
                 translationConfiguration = TranslationSession.Configuration(
                     source: Locale.Language(identifier: "en"),
                     target: Locale.Language(identifier: "zh-Hant")
@@ -287,18 +250,6 @@ struct DictionarySearchView: View {
                 Button("取消", role: .cancel) {}
             } message: {
                 Text("清除後無法復原。")
-            }
-            .confirmationDialog(
-                "還原原始詞庫？",
-                isPresented: $showsResetPersonalConfirmation,
-                titleVisibility: .visible
-            ) {
-                Button("刪除私人修改", role: .destructive) {
-                    resetPersonalEntry()
-                }
-                Button("取消", role: .cancel) {}
-            } message: {
-                Text("這會刪除此字的私人筆記，查詢結果會回到原本字典資料。")
             }
             .onAppear {
                 isSearchFocused = false
@@ -415,33 +366,6 @@ struct DictionarySearchView: View {
         }
     }
 
-    private var personalEditorOverlay: some View {
-        PersonalEntryEditView(
-            draft: Binding(
-                get: {
-                    editingDraft ?? EditablePersonalDictionaryEntry(
-                        word: "",
-                        ukIPA: "",
-                        usIPA: "",
-                        senses: []
-                    )
-                },
-                set: { editingDraft = $0 }
-            ),
-            isSaving: isSavingPersonalEntry,
-            onSave: {
-                savePersonalEntry()
-            },
-            onCancel: {
-                if !isSavingPersonalEntry {
-                    editingDraft = nil
-                }
-            }
-        )
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.searchBackground.ignoresSafeArea())
-    }
-
     private var homeContent: some View {
         ZStack(alignment: .top) {
             VStack(spacing: 0) {
@@ -497,17 +421,6 @@ struct DictionarySearchView: View {
         #else
         "IPA Dictionary"
         #endif
-    }
-
-    private var personalErrorAlertBinding: Binding<Bool> {
-        Binding(
-            get: { personalActionError != nil },
-            set: { isPresented in
-                if !isPresented {
-                    personalActionError = nil
-                }
-            }
-        )
     }
 
     private func resultContent(_ result: DictionarySearchResult) -> some View {
@@ -567,16 +480,6 @@ struct DictionarySearchView: View {
         .navigationTitle(result.word)
         .toolbar {
             ToolbarItemGroup(placement: .primaryAction) {
-                if result.isPersonal {
-                    Text("私人筆記")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-
-                    Button("還原") {
-                        showsResetPersonalConfirmation = true
-                    }
-                }
-
                 Button {
                     bookmarkStore.toggle(result.word)
                 } label: {
@@ -606,10 +509,6 @@ struct DictionarySearchView: View {
                     .help("打開書簽")
                     .accessibilityLabel("打開書簽")
                 }
-
-                Button("編輯") {
-                    preparePersonalEditor(for: result)
-                }
             }
         }
         #if os(iOS)
@@ -621,6 +520,10 @@ struct DictionarySearchView: View {
     private func translatePendingEntries(using session: TranslationSession) async {
         let pendingEntries = viewModel.entriesAwaitingTranslation
         guard !pendingEntries.isEmpty else { return }
+        guard pendingEntries.contains(where: { !$0.hasCompleteChineseContent }) else {
+            viewModel.finishTranslation(with: pendingEntries)
+            return
+        }
 
         do {
             var translatedEntries: [DictionaryEntry] = []
@@ -1071,52 +974,6 @@ struct DictionarySearchView: View {
         showsBookmarkSheet = true
     }
 
-    private func preparePersonalEditor(for result: DictionarySearchResult) {
-        Task { @MainActor in
-            do {
-                let draft = try await viewModel.personalDraft(
-                    word: result.word,
-                    fallbackEntries: result.entries
-                )
-                editingDraft = draft
-            } catch {
-                personalActionError = error.localizedDescription
-            }
-        }
-    }
-
-    private func savePersonalEntry() {
-        guard let draft = editingDraft else { return }
-        isSavingPersonalEntry = true
-
-        Task { @MainActor in
-            do {
-                let savedEntries = try await viewModel.savePersonalDraft(draft)
-                presentedResult = DictionarySearchResult(
-                    word: EditablePersonalDictionaryEntry.normalizedWord(draft.word),
-                    entries: savedEntries
-                )
-                editingDraft = nil
-            } catch {
-                personalActionError = error.localizedDescription
-            }
-            isSavingPersonalEntry = false
-        }
-    }
-
-    private func resetPersonalEntry() {
-        guard let result = presentedResult else { return }
-
-        Task { @MainActor in
-            do {
-                try await viewModel.deletePersonalEntry(word: result.word)
-                viewModel.search(word: result.word)
-            } catch {
-                personalActionError = error.localizedDescription
-            }
-        }
-    }
-
     private func activateSearchSuggestions() {
         hasActivatedSearch = true
         isSearchFocused = true
@@ -1178,15 +1035,14 @@ private struct DictionarySearchResult: Identifiable, Hashable {
     let id = UUID()
     let word: String
     let entries: [DictionaryEntry]
-
-    var isPersonal: Bool {
-        entries.contains { $0.isPersonal }
-    }
 }
 
 private extension DictionaryEntry {
     var hasCompleteChineseContent: Bool {
-        !zhDefinition.isEmpty
+        !zhDefinition.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+            && examples.allSatisfy {
+                !$0.chinese.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+            }
     }
 }
 

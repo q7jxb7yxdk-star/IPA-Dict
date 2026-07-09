@@ -26,8 +26,6 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - 書簽功能，可在查詢結果頁收藏單字，並在首頁快速重新查詢。
 - 同義詞以文字連結形式顯示，可點擊查詢。
 - 精選詞庫 `CuratedDictionary` 可覆蓋或補充 SQLite 缺失詞條。
-- 可手動編輯私人字典詞條，只開放模板中的 IPA、詞性、釋義、例句等欄位修改。
-- 私人字典儲存在本機 `PersonalDictionary.sqlite`，查詢時優先於 bundled 詞庫。
 - 主詞庫 `dictionary.sqlite` 放在 GitHub repository，由 macOS 端修改後 Commit and Push 統一管理。
 
 ## App 畫面結構
@@ -75,23 +73,19 @@ IPA Dict/
 │   │   └── DictionaryLicenses.md
 │   ├── Models/
 │   │   ├── DictionaryEntry.swift
-│   │   ├── DictionaryAPIResponse.swift
-│   │   └── PersonalDictionaryEntry.swift
+│   │   └── DictionaryAPIResponse.swift
 │   ├── Services/
 │   │   ├── DictionaryService.swift
 │   │   ├── LocalDictionaryService.swift
 │   │   ├── AudioPlayerService.swift
-│   │   ├── PersonalDictionaryService.swift
 │   │   ├── BookmarkStore.swift
 │   │   ├── SearchHistoryStore.swift
 │   │   └── TranslationCache.swift
 │   └── Views/
 │       ├── DictionarySearchView.swift
 │       ├── WordDetailView.swift
-│       ├── PersonalEntryEditView.swift
 │       ├── MarkdownText.swift
-│       ├── PhonemeButton.swift
-│       └── TranslatedText.swift
+│       └── PhonemeButton.swift
 ├── Tools/
 │   └── DictionaryBuilder/
 ├── README.md
@@ -214,11 +208,10 @@ IPAHelp replacement 清單及授權資料記錄於
 
 - 這仍是一個 prototype，部分功能和資料仍可繼續改善。
 - SQLite 詞庫是主要資料來源；`CuratedDictionary` 用於修正常用詞、補充缺字或覆蓋錯誤結果。
-- App bundle 內的 `dictionary.sqlite` 是可重建的內建詞庫；使用者手動修改內容不會寫回 bundle，而是存入本機私人字典 `PersonalDictionary.sqlite`。
+- App bundle 內的 `dictionary.sqlite` 是主要內建詞庫；app 不提供直接編輯詞條或私人筆記功能。
 - 如果使用 Letos 或其他 SQLite 工具直接維護 bundled `dictionary.sqlite`，修改後直接用 Xcode / Git Commit and Push 到 GitHub；首頁日期會讀取 bundled SQLite 的檔案修改時間，不需要額外更新 manifest。
-- 查詢時採用私人字典覆蓋邏輯：你編輯過的字會讀取 `PersonalDictionary.sqlite`；未編輯過的字會讀取內建 `dictionary.sqlite`。
-- 搜尋歷史與書簽屬於 app 偏好資料，儲存在 `UserDefaults`，不會寫入 bundled `dictionary.sqlite` 或私人字典 SQLite。
-- App 內已移除 iCloud Drive 匯入／匯出私人字典功能；跨平台主詞庫同步改由 GitHub repository 管理。
+- 搜尋歷史與書簽屬於 app 偏好資料，儲存在 `UserDefaults`，不會寫入 bundled `dictionary.sqlite`。
+- 跨平台主詞庫由 GitHub repository 管理；其他裝置需使用包含最新版 `dictionary.sqlite` 的 app build。
 - 如果 SQLite 沒有某個字，但 `CuratedDictionary` 有資料，app 會直接顯示精選詞條。
 - 若本地資料和精選詞庫都沒有，app 會嘗試使用線上 Dictionary API fallback。
 - 部分發音若沒有本地音檔或遠端音檔，會使用系統語音合成。
