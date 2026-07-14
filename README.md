@@ -16,7 +16,7 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
   - 中文釋義
   - 英文釋義
   - 一組雙語例句
-  - 同義詞連結
+  - 同義詞及反義詞連結
 - UK / US IPA 可以點擊播放整字發音。
 - IPA 會拆成音素按鈕，例如 `/ˈæp.əl/` 可拆成 `æ`、`p`、`ə`、`l`。
 - 每個音素可對應本地音檔播放，例如 `æ -> ipa_ae.mp3`、`ə -> ipa_schwa.mp3`。
@@ -24,7 +24,7 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - 本地音素音檔在 iOS / iPadOS 使用 `AVAudioPlayer` 播放，在 macOS 使用 `AudioToolbox` / `SystemSoundID` 播放；遠端整字發音使用 `AVPlayer`。缺少整字音檔時，macOS、iOS、iPadOS 都會使用 `AVSpeechSynthesizer` 作為系統語音 fallback。
 - 搜尋歷史記錄，輸入框 focus 時以類似 Google 搜尋的下拉選單顯示。
 - 書簽功能，可在查詢結果頁收藏單字，並在首頁快速重新查詢。
-- 同義詞以文字連結形式顯示，可點擊查詢。
+- 同義詞及反義詞以文字連結形式顯示，可點擊查詢；只有資料存在時才顯示對應區塊。
 - 精選詞庫 `CuratedDictionary` 可覆蓋或補充 SQLite 缺失詞條。
 - 主詞庫 `dictionary.sqlite` 放在 GitHub repository，由 macOS 端修改後 Commit and Push 統一管理。
 
@@ -58,6 +58,10 @@ noun [ C ]
 ---
 
 ## 同義詞
+
+word link
+
+## 反義詞
 
 word link
 ```
@@ -119,6 +123,11 @@ IPA Dict/
 這個日期來自 app bundle 內 `dictionary.sqlite` 的檔案修改時間。只要
 更新並重新打包 SQLite，macOS、iOS、iPadOS 都會顯示該份 bundled
 資料庫的修改日期。
+
+目前 bundled `dictionary.sqlite` 包含 29,352 筆詞義及 23,000 個詞頭。
+`entries.id` 已按照 `normalized_word` 不分大小寫排序，並連續編號為
+`1–29,352`。同一個 word 的不同詞性及詞義會維持相鄰，方便使用 SQLite
+工具檢查及維護。
 
 ## 字典資料來源
 
@@ -221,6 +230,6 @@ IPAHelp replacement 清單及授權資料記錄於
 - 增加更多音素本地音檔。
 - 改善 IPA tokenizer，支援更多複合音素和變體。
 - 增加詞庫審核工具的 UI。
-- 讓同義詞、反義詞、相關詞形成更完整的可瀏覽詞網。
+- 繼續擴充同義詞、反義詞及相關詞的資料覆蓋率。
 - 把書簽延伸成生字本、複習模式。
 - 增加詞庫版本資訊與資料更新介面。

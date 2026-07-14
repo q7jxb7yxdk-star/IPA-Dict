@@ -38,7 +38,7 @@ DictionaryEntry models
 
 - `WordDetailView.swift`
   - 顯示字典詞條內容。
-  - 負責 word heading、IPA button、phoneme buttons、詞性分組、中文釋義、英文釋義、例句、同義詞連結。
+  - 負責 word heading、IPA button、phoneme buttons、詞性分組、中文釋義、英文釋義、例句、同義詞及反義詞連結。
 
 - `MarkdownText.swift`
   - 使用 Swift `AttributedString(markdown:)` 做簡化 Markdown rendering。
@@ -216,6 +216,19 @@ semantic_correction_failure_count = 0
 missing_part_of_speech_candidate_count = 0
 ```
 
+目前 bundled database 包含：
+
+```text
+entries = 29,352
+headwords = 23,000
+id range = 1–29,352
+ordering_errors = 0
+```
+
+`entries.id` 按 `normalized_word COLLATE NOCASE` 排列；同一個 word 內維持
+原有詞義次序。重新排序或刪除詞條時，會先在暫存 SQLite 驗證資料內容、
+`integrity_check`、JSON、例句、metadata 及連續 ID，通過後才更新正式資料庫。
+
 app 顯示時，每個 entry 只取最多一個例句：
 
 ```swift
@@ -288,15 +301,22 @@ noun [ C ]
 ## 同義詞
 
 linked words
+
+## 反義詞
+
+linked words
 ```
 
-同義詞不是 capsule chip，而是類似網頁的文字連結：
+同義詞及反義詞不是 capsule chip，而是類似網頁的文字連結：
 
 - accent color
 - underline
 - plain button style
 
-點擊後透過 `onSelectWord` callback 回到 `DictionarySearchView` 執行新查詢。
+`allSynonyms` 與 `allAntonyms` 會整合同一個查詢字所有詞義的資料，並以
+不分大小寫方式去除重複。連結不設 20 個上限；只有陣列有內容時才顯示
+對應區塊。點擊任一同義詞或反義詞後，會透過 `onSelectWord` callback 回到
+`DictionarySearchView` 執行新查詢。
 
 ## 8. 搜尋歷史、書簽與下拉選單
 
@@ -636,6 +656,6 @@ git diff --check
 - 查詢結果排版正確。
 - UK / US IPA 可點擊。
 - 音素按鈕可點擊。
-- 同義詞連結可查詢。
+- 同義詞及反義詞連結會完整顯示並可查詢。
 - 詞性、中文釋義、英文釋義、例句顯示完整。
 - 首頁會顯示 bundled `dictionary.sqlite` 的檔案修改日期。

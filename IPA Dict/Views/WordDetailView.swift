@@ -72,6 +72,12 @@ struct WordDetailView: View {
                         linkedWordsSection(title: "同義詞", words: allSynonyms)
                     }
 
+                    if !allAntonyms.isEmpty {
+                        Divider()
+                            .padding(.vertical, 4)
+                        linkedWordsSection(title: "反義詞", words: allAntonyms)
+                    }
+
                     Divider()
                         .padding(.vertical, 4)
                     referenceSection(for: primaryEntry)
@@ -133,6 +139,13 @@ struct WordDetailView: View {
     private var allSynonyms: [String] {
         var seen = Set<String>()
         return entries.flatMap(\.synonyms).filter {
+            seen.insert($0.lowercased()).inserted
+        }
+    }
+
+    private var allAntonyms: [String] {
+        var seen = Set<String>()
+        return entries.flatMap(\.antonyms).filter {
             seen.insert($0.lowercased()).inserted
         }
     }
@@ -433,7 +446,7 @@ struct WordDetailView: View {
             sectionTitle(title)
 
             PhonemeFlowLayout(spacing: 8) {
-                ForEach(words.prefix(20), id: \.self) { word in
+                ForEach(words, id: \.self) { word in
                     Button {
                         onSelectWord?(word)
                     } label: {
@@ -446,7 +459,7 @@ struct WordDetailView: View {
                     }
                     .buttonStyle(.plain)
                     .disabled(onSelectWord == nil)
-                    .accessibilityLabel("查詢同義詞 \(word)")
+                    .accessibilityLabel("查詢\(title) \(word)")
                 }
             }
         }
