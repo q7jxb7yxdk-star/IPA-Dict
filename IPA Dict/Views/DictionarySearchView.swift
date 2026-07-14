@@ -18,12 +18,29 @@ final class DictionarySearchViewModel: ObservableObject {
     private let service: DictionaryService
     private var searchTask: Task<Void, Never>?
     private var suggestionTask: Task<Void, Never>?
+    private var submittedSearchTask: Task<Void, Never>?
 
     init(service: DictionaryService? = nil) {
         self.service = service ?? DictionaryService()
     }
 
     func search(word rawWord: String? = nil) {
+        submittedSearchTask?.cancel()
+        submittedSearchTask = nil
+        performSearch(word: rawWord)
+    }
+
+    func searchAfterTextFieldSubmit(word rawWord: String) {
+        submittedSearchTask?.cancel()
+        submittedSearchTask = Task { [weak self] in
+            await Task.yield()
+            guard !Task.isCancelled, let self else { return }
+            submittedSearchTask = nil
+            performSearch(word: rawWord)
+        }
+    }
+
+    private func performSearch(word rawWord: String? = nil) {
         let submittedQuery = (rawWord ?? query)
             .trimmingCharacters(in: .whitespacesAndNewlines)
         query = ""
@@ -100,6 +117,8 @@ final class DictionarySearchViewModel: ObservableObject {
     }
 
     func clearResult() {
+        submittedSearchTask?.cancel()
+        submittedSearchTask = nil
         entries = []
         entriesAwaitingTranslation = []
         errorMessage = nil
@@ -128,6 +147,7 @@ struct DictionarySearchView: View {
     @StateObject private var dictionaryManifestStore = DictionaryManifestStore()
     @State private var translationConfiguration: TranslationSession.Configuration?
     @State private var presentedResult: DictionarySearchResult?
+    @State private var isShowingResult = false
     @State private var showsClearHistoryConfirmation = false
     @State private var showsClearBookmarksConfirmation = false
     @State private var showsHistorySuggestions = false
@@ -136,7 +156,7 @@ struct DictionarySearchView: View {
     @State private var hasCompletedInitialAppearance = false
     @State private var showsBookmarkSheet = false
     @State private var sidebarVisibility = NavigationSplitViewVisibility.automatic
-    @FocusState private var isSearchFocused: Bool
+    @FocusState private var focusedSearchField: SearchField?
 
     var body: some View {
         dictionaryNavigation
@@ -190,8 +210,10 @@ struct DictionarySearchView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar(.hidden, for: .navigationBar)
             #endif
-            .navigationDestination(item: $presentedResult) { result in
-                resultContent(result)
+            .navigationDestination(isPresented: $isShowingResult) {
+                if let presentedResult {
+                    resultContent(presentedResult)
+                }
             }
             .onChange(of: viewModel.entries) { _, entries in
                 guard !entries.isEmpty else { return }
@@ -201,12 +223,16 @@ struct DictionarySearchView: View {
                     word: word,
                     entries: entries
                 )
-                isSearchFocused = false
+                if !isShowingResult {
+                    isShowingResult = true
+                }
+                focusedSearchField = nil
                 showsHistorySuggestions = false
                 selectedHistoryIndex = nil
             }
-            .onChange(of: presentedResult) { _, result in
-                if result == nil {
+            .onChange(of: isShowingResult) { _, isPresented in
+                if !isPresented {
+                    presentedResult = nil
                     viewModel.query = ""
                     viewModel.clearResult()
                 }
@@ -252,7 +278,7 @@ struct DictionarySearchView: View {
                 Text("清除後無法復原。")
             }
             .onAppear {
-                isSearchFocused = false
+                focusedSearchField = nil
                 showsHistorySuggestions = false
                 selectedHistoryIndex = nil
                 hasActivatedSearch = false
@@ -260,12 +286,12 @@ struct DictionarySearchView: View {
 
                 Task { @MainActor in
                     await Task.yield()
-                    isSearchFocused = false
+                    focusedSearchField = nil
                     hasCompletedInitialAppearance = true
                 }
             }
-            .onChange(of: isSearchFocused) { _, isFocused in
-                if isFocused && hasCompletedInitialAppearance {
+            .onChange(of: focusedSearchField) { _, focusedField in
+                if focusedField != nil && hasCompletedInitialAppearance {
                     hasActivatedSearch = true
                     showsHistorySuggestions = true
                 } else {
@@ -276,7 +302,7 @@ struct DictionarySearchView: View {
             .onChange(of: viewModel.query) {
                 selectedHistoryIndex = nil
                 viewModel.updateSuggestions(for: viewModel.query)
-                if isSearchFocused && hasActivatedSearch {
+                if focusedSearchField != nil && hasActivatedSearch {
                     showsHistorySuggestions = true
                 }
             }
@@ -368,19 +394,23 @@ struct DictionarySearchView: View {
 
     private var homeContent: some View {
         ZStack(alignment: .top) {
-            VStack(spacing: 0) {
-                homeTitle
-                searchHeader
-                Divider()
+            Color.searchBackground
 
-                if viewModel.isLoading || viewModel.errorMessage != nil {
-                    statusContent
-                } else {
-                    historyContent
+            if !isShowingResult {
+                VStack(spacing: 0) {
+                    homeTitle
+                    searchHeader(focus: .home)
+                    Divider()
+
+                    if viewModel.isLoading || viewModel.errorMessage != nil {
+                        statusContent
+                    } else {
+                        historyContent
+                    }
                 }
-            }
 
-            floatingHistoryDropdown
+                floatingHistoryDropdown
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color.searchBackground)
@@ -426,7 +456,7 @@ struct DictionarySearchView: View {
     private func resultContent(_ result: DictionarySearchResult) -> some View {
         ZStack(alignment: .top) {
             VStack(spacing: 0) {
-                searchHeader
+                searchHeader(focus: .result)
                 Divider()
 
                 ZStack {
@@ -580,7 +610,7 @@ struct DictionarySearchView: View {
         return response.targetText
     }
 
-    private var searchHeader: some View {
+    private func searchHeader(focus: SearchField) -> some View {
         HStack(spacing: 10) {
             Image(systemName: "magnifyingglass")
                 .foregroundStyle(.primary)
@@ -589,7 +619,7 @@ struct DictionarySearchView: View {
                 .textFieldStyle(.plain)
                 .font(.system(size: 16))
                 .foregroundStyle(.primary)
-                .focused($isSearchFocused)
+                .focused($focusedSearchField, equals: focus)
                 .submitLabel(.search)
                 .autocorrectionDisabled()
                 #if os(iOS)
@@ -670,7 +700,7 @@ struct DictionarySearchView: View {
 
     private var historyDropdownTopPadding: CGFloat {
         #if os(iOS)
-        presentedResult == nil ? 92 : 70
+        isShowingResult ? 70 : 92
         #else
         74
         #endif
@@ -933,27 +963,31 @@ struct DictionarySearchView: View {
     }
 
     private func submitSearch() {
+        guard !viewModel.isLoading else { return }
+
+        let submittedWord: String
         if let selectedHistoryIndex,
            dropdownWords.indices.contains(selectedHistoryIndex) {
-            selectDropdownWord(dropdownWords[selectedHistoryIndex])
-            return
+            submittedWord = dropdownWords[selectedHistoryIndex]
+        } else {
+            submittedWord = viewModel.query
         }
 
-        isSearchFocused = false
+        focusedSearchField = nil
         showsHistorySuggestions = false
         selectedHistoryIndex = nil
-        viewModel.search()
+        viewModel.searchAfterTextFieldSubmit(word: submittedWord)
     }
 
     private func selectDropdownWord(_ word: String) {
-        isSearchFocused = false
+        focusedSearchField = nil
         showsHistorySuggestions = false
         selectedHistoryIndex = nil
         viewModel.search(word: word)
     }
 
     private func selectLinkedWord(_ word: String) {
-        isSearchFocused = false
+        focusedSearchField = nil
         showsHistorySuggestions = false
         selectedHistoryIndex = nil
         hasActivatedSearch = false
@@ -961,7 +995,7 @@ struct DictionarySearchView: View {
     }
 
     private func selectBookmarkedWord(_ word: String) {
-        isSearchFocused = false
+        focusedSearchField = nil
         showsHistorySuggestions = false
         showsBookmarkSheet = false
         selectedHistoryIndex = nil
@@ -976,7 +1010,7 @@ struct DictionarySearchView: View {
 
     private func activateSearchSuggestions() {
         hasActivatedSearch = true
-        isSearchFocused = true
+        focusedSearchField = isShowingResult ? .result : .home
         selectedHistoryIndex = nil
         viewModel.updateSuggestions(for: viewModel.query)
         showsHistorySuggestions = !viewModel.isLoading
@@ -987,7 +1021,7 @@ struct DictionarySearchView: View {
             showsHistorySuggestions = false
             selectedHistoryIndex = nil
         } else {
-            isSearchFocused = false
+            focusedSearchField = nil
         }
         return .handled
     }
@@ -1024,11 +1058,16 @@ struct DictionarySearchView: View {
     }
 
     private func dismissSearchSuggestions() {
-        isSearchFocused = false
+        focusedSearchField = nil
         showsHistorySuggestions = false
         selectedHistoryIndex = nil
         hasActivatedSearch = false
     }
+}
+
+private enum SearchField: Hashable {
+    case home
+    case result
 }
 
 private struct DictionarySearchResult: Identifiable, Hashable {

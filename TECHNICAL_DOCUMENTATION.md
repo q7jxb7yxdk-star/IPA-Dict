@@ -100,6 +100,13 @@ DictionaryEntry models
 
 `DictionarySearchViewModel.search(word:)` 是 UI 發起查詢的入口。
 
+TextField 的 Enter / Submit 會先保存準備查詢的字詞、關閉焦點及下拉選單，
+再透過 `searchAfterTextFieldSubmit(word:)` 等待目前的 SwiftUI UI 更新週期完成後
+才執行 `search(word:)`。新的 Enter 提交會取消尚未開始的前一次提交，避免快速
+重複按 Enter 時建立重複搜尋，亦避免在 TextField 的同步提交週期內同時清空
+輸入內容、切換焦點及更新結果而形成 AttributeGraph cycle。點擊下拉項目則可
+直接使用 `search(word:)`。
+
 流程如下：
 
 ```text
@@ -343,6 +350,10 @@ linked words
 - Esc 可關閉下拉。
 - 上下方向鍵可選擇歷史項目。
 - Enter / Submit 可查詢選中的歷史項目。
+- 結果頁顯示時，首頁的搜尋輸入框會移出 view hierarchy，確保同一時間只有一個
+  TextField 綁定搜尋內容。
+- 首頁與結果頁使用獨立的 `SearchField` focus 值。
+- Enter / Submit 的實際查詢會延遲至 TextField 提交週期完成後執行。
 
 相關 state：
 
@@ -351,7 +362,8 @@ linked words
 @State private var selectedHistoryIndex: Int?
 @State private var hasActivatedSearch = false
 @State private var hasCompletedInitialAppearance = false
-@FocusState private var isSearchFocused: Bool
+@State private var isShowingResult = false
+@FocusState private var focusedSearchField: SearchField?
 ```
 
 ## 9. 發音系統
