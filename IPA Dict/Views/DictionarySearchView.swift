@@ -777,71 +777,84 @@ struct DictionarySearchView: View {
     }
 
     private var historyContent: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 18) {
-                HStack {
-                    Text("最近搜尋")
-                        .font(.system(size: homeSectionTitleFontSize, weight: .bold))
+        VStack(alignment: .leading, spacing: 18) {
+            HStack {
+                Text("最近搜尋")
+                    .font(.system(size: homeSectionTitleFontSize, weight: .bold))
 
-                    Spacer()
+                Spacer()
 
-                    if !historyStore.words.isEmpty {
-                        Button("清除記錄") {
-                            showsClearHistoryConfirmation = true
-                        }
-                        .font(.system(size: 14))
-                        .buttonStyle(.borderless)
-                        .foregroundStyle(.primary)
+                if !historyStore.words.isEmpty {
+                    Button("清除記錄") {
+                        showsClearHistoryConfirmation = true
                     }
-                }
-
-                if filteredHistory.isEmpty {
-                    ContentUnavailableView(
-                        historyStore.words.isEmpty ? "尚無搜尋記錄" : "沒有符合的搜尋記錄",
-                        systemImage: "clock.arrow.circlepath",
-                        description: Text(
-                            historyStore.words.isEmpty
-                                ? "成功查詢的英文單字會顯示在這裡。"
-                                : "請輸入其他字母或直接查詢新單字。"
-                        )
-                        .font(.system(size: emptyStateDescriptionFontSize))
-                    )
+                    .font(.system(size: 14))
+                    .buttonStyle(.borderless)
                     .foregroundStyle(.primary)
-                    .frame(maxWidth: .infinity, minHeight: historyEmptyMinHeight)
-                } else {
-                    LazyVStack(spacing: 0) {
-                        ForEach(filteredHistory, id: \.self) { word in
-                            Button {
-                                viewModel.search(word: word)
-                            } label: {
-                                HStack(spacing: 12) {
-                                    Image(systemName: "clock.arrow.circlepath")
-                                    Text(word)
-                                        .font(.system(size: 14))
-                                    Spacer()
-                                    Image(systemName: "arrow.up.left")
-                                }
-                                .foregroundStyle(.primary)
-                                .padding(.vertical, 14)
-                                .contentShape(Rectangle())
-                            }
-                            .buttonStyle(.plain)
+                }
+            }
+            .frame(maxWidth: 760)
+            .padding(.horizontal, 24)
+            .padding(.top, homeVerticalPadding)
 
-                            if word != filteredHistory.last {
-                                Divider()
+            if filteredHistory.isEmpty {
+                ContentUnavailableView(
+                    historyStore.words.isEmpty ? "尚無搜尋記錄" : "沒有符合的搜尋記錄",
+                    systemImage: "clock.arrow.circlepath",
+                    description: Text(
+                        historyStore.words.isEmpty
+                            ? "成功查詢的英文單字會顯示在這裡。"
+                            : "請輸入其他字母或直接查詢新單字。"
+                    )
+                    .font(.system(size: emptyStateDescriptionFontSize))
+                )
+                .foregroundStyle(.primary)
+                .frame(
+                    maxWidth: .infinity,
+                    minHeight: historyEmptyMinHeight,
+                    maxHeight: .infinity
+                )
+            } else {
+                List {
+                    ForEach(filteredHistory, id: \.self) { word in
+                        Button {
+                            viewModel.search(word: word)
+                        } label: {
+                            HStack(spacing: 12) {
+                                Image(systemName: "clock.arrow.circlepath")
+                                Text(word)
+                                    .font(.system(size: 14))
+                                Spacer()
+                                Image(systemName: "arrow.up.left")
+                            }
+                            .foregroundStyle(.primary)
+                            .padding(.vertical, 8)
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+                        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                            Button(role: .destructive) {
+                                historyStore.remove(word)
+                            } label: {
+                                Label("刪除", systemImage: "trash")
                             }
                         }
+                        .accessibilityHint("向左滑動可刪除此搜尋記錄")
+                        .listRowBackground(Color.clear)
                     }
                 }
-
-                databaseDateContent
+                .listStyle(.plain)
+                .scrollContentBackground(.hidden)
+                .frame(maxWidth: 760, maxHeight: .infinity)
             }
-            .frame(maxWidth: 760, alignment: .leading)
+
+            databaseDateContent
+                .frame(maxWidth: 760)
             .padding(.horizontal, 24)
-            .padding(.vertical, homeVerticalPadding)
             .padding(.bottom, homeBottomSafePadding)
-            .frame(maxWidth: .infinity)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(Color.searchBackground)
         .contentShape(Rectangle())
         .onTapGesture {
             dismissSearchSuggestions()

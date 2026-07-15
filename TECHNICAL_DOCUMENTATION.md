@@ -333,6 +333,8 @@ linked words
 - key：`dictionarySearchHistory`
 - 最大數量：20
 - 新查詢會移到最前面。
+- `remove(_:)` 以不分大小寫方式刪除指定記錄並立即更新 `UserDefaults`。
+- 首頁歷史使用原生 `List` swipe action，向左滑動可單筆刪除；完整滑動可直接確認刪除。
 
 `BookmarkStore` 負責儲存書簽：
 

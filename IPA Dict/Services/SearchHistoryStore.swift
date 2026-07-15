@@ -31,6 +31,20 @@ final class SearchHistoryStore: ObservableObject {
         defaults.removeObject(forKey: storageKey)
     }
 
+    func remove(_ rawWord: String) {
+        let originalCount = words.count
+        words.removeAll {
+            $0.caseInsensitiveCompare(rawWord) == .orderedSame
+        }
+        guard words.count != originalCount else { return }
+
+        if words.isEmpty {
+            defaults.removeObject(forKey: storageKey)
+        } else {
+            save()
+        }
+    }
+
     private func save() {
         defaults.set(words, forKey: storageKey)
     }
