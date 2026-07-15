@@ -10,7 +10,7 @@ enum DictionaryServiceError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidWord:
-            "請輸入要查詢的英文單字。"
+            "請輸入要查詢的英文單字或中文釋義。"
         case .wordNotFound(let word):
             "找不到「\(word)」的字典資料。"
         case .invalidResponse:
@@ -41,9 +41,22 @@ struct DictionaryService {
             throw DictionaryServiceError.invalidWord
         }
 
-        let curatedEntries = CuratedDictionary.entries(for: word)
+        let lookupWord: String
+        if word.containsHanScriptCharacter {
+            guard let englishWord = try await localDictionary.reverseSuggestions(
+                chinese: word,
+                limit: 1
+            ).first else {
+                throw DictionaryServiceError.wordNotFound(word)
+            }
+            lookupWord = englishWord
+        } else {
+            lookupWord = word
+        }
 
-        if let localEntries = try? await localDictionary.lookup(word: word),
+        let curatedEntries = CuratedDictionary.entries(for: lookupWord)
+
+        if let localEntries = try? await localDictionary.lookup(word: lookupWord),
            !localEntries.isEmpty {
             if let curatedEntries {
                 return CuratedDictionary.merge(
@@ -63,7 +76,7 @@ struct DictionaryService {
         ) else {
             throw DictionaryServiceError.invalidResponse
         }
-        components.path += word.lowercased()
+        components.path += lookupWord.lowercased()
 
         guard let url = components.url else {
             throw DictionaryServiceError.invalidWord
@@ -122,6 +135,13 @@ struct DictionaryService {
         let prefix = rawPrefix.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !prefix.isEmpty else { return [] }
 
+        if prefix.containsHanScriptCharacter {
+            return (try? await localDictionary.reverseSuggestions(
+                chinese: prefix,
+                limit: limit
+            )) ?? []
+        }
+
         var seen = Set<String>()
         var words: [String] = []
 
@@ -144,4 +164,19 @@ struct DictionaryService {
         return Array(words.prefix(limit))
     }
 
+}
+
+private extension String {
+    var containsHanScriptCharacter: Bool {
+        unicodeScalars.contains { scalar in
+            switch scalar.value {
+            case 0x3400...0x4DBF,
+                 0x4E00...0x9FFF,
+                 0xF900...0xFAFF:
+                true
+            default:
+                false
+            }
+        }
+    }
 }

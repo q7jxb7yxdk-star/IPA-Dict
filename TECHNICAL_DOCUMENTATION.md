@@ -127,6 +127,16 @@ DictionaryService.lookup(word:)
    - 使用線上 Dictionary API fallback
 ```
 
+中文輸入使用本地反向查詢：
+
+- `DictionaryService` 先判斷查詢是否包含 Han script 字元。
+- `LocalDictionaryService.reverseSuggestions(chinese:limit:)` 在
+  `zh_definition` 搜尋包含該中文釋義的詞條。
+- 簡體中文輸入會先轉換為繁體中文。
+- 中文釋義完全匹配的英文字優先，其次按釋義長度及英文字母排序。
+- 搜尋框最多顯示 20 個英文字候選；沒有手動選擇時，Enter 會查詢排名第一的詞。
+- 成功查詢後，結果頁及搜尋歷史使用實際英文字，而不是原始中文查詢文字。
+
 目前 `CuratedDictionary` 的用途包括：
 
 - 修正常用字錯誤。

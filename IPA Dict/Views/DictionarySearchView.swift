@@ -64,6 +64,8 @@ final class DictionarySearchViewModel: ObservableObject {
             do {
                 let results = try await service.lookup(word: submittedQuery)
                 try Task.checkCancellation()
+                searchedWord = results.first?.word.lowercased()
+                    ?? submittedQuery.lowercased()
                 if results.allSatisfy(\.hasCompleteChineseContent) {
                     entries = results
                     isLoading = false
@@ -615,7 +617,10 @@ struct DictionarySearchView: View {
             Image(systemName: "magnifyingglass")
                 .foregroundStyle(.primary)
 
-            TextField("輸入英文單字，例如 apple", text: $viewModel.query)
+            TextField(
+                "輸入英文單字或中文釋義，例如 apple／蘋果",
+                text: $viewModel.query
+            )
                 .textFieldStyle(.plain)
                 .font(.system(size: 16))
                 .foregroundStyle(.primary)
