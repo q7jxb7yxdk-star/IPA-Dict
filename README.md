@@ -115,9 +115,9 @@ IPA Dict/
 
 專案內已包含 app bundle 使用的 `dictionary.sqlite`。如果要重新建置字典資料，請參考 `Tools/DictionaryBuilder/README.md` 與 `TECHNICAL_DOCUMENTATION.md`。
 
-目前 bundled `dictionary.sqlite` 包含 33,332 筆詞義及 26,865 個詞頭。
+目前 bundled `dictionary.sqlite` 包含 33,759 筆詞義及 27,292 個詞頭。
 `entries.id` 已按照 `normalized_word` 不分大小寫排序，並連續編號為
-`1–33,332`。同一個 word 的不同詞性及詞義會維持相鄰，方便使用 SQLite
+`1–33,759`。同一個 word 的不同詞性及詞義會維持相鄰，方便使用 SQLite
 工具檢查及維護。
 
 ## 字典資料來源
