@@ -252,24 +252,6 @@ app 顯示時，每個 entry 只取最多一個例句：
 examples: Array(examples.prefix(1))
 ```
 
-### Dictionary database date
-
-App 會直接讀取 app bundle 內 `dictionary.sqlite` 的檔案修改時間，並在首頁
-顯示詞庫日期。這樣用 Letos、Codex 或建庫工具修改 bundled SQLite 後，不需要
-額外維護獨立 manifest 或 SHA-256 檔案。
-
-`DictionaryManifestStore` 會用 `Bundle.main.url(forResource:withExtension:)`
-找到 `dictionary.sqlite`，再透過 `FileManager.default.attributesOfItem` 讀取
-`.modificationDate`，並以 `Asia/Hong_Kong` 時區格式化顯示：
-
-```text
-資料庫日期：2026-07-02 20:09
-```
-
-如果使用 Letos 或其他 SQLite 工具直接維護 bundled `dictionary.sqlite`，
-修改完成後直接用 Xcode / Git Commit and Push；其他平台重新取得或重新打包
-同一份 GitHub repo 內的 `dictionary.sqlite` 後，即會顯示該份檔案的修改日期。
-
 ## 6. GitHub 主詞庫管理
 
 主詞庫 `dictionary.sqlite` 放在 GitHub repository，由 macOS 端統一維護。

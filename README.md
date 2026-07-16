@@ -115,19 +115,9 @@ IPA Dict/
 
 專案內已包含 app bundle 使用的 `dictionary.sqlite`。如果要重新建置字典資料，請參考 `Tools/DictionaryBuilder/README.md` 與 `TECHNICAL_DOCUMENTATION.md`。
 
-首頁會顯示目前詞庫日期，例如：
-
-```text
-資料庫日期：2026-06-29 20:09
-```
-
-這個日期來自 app bundle 內 `dictionary.sqlite` 的檔案修改時間。只要
-更新並重新打包 SQLite，macOS、iOS、iPadOS 都會顯示該份 bundled
-資料庫的修改日期。
-
-目前 bundled `dictionary.sqlite` 包含 29,352 筆詞義及 23,000 個詞頭。
+目前 bundled `dictionary.sqlite` 包含 29,354 筆詞義及 23,001 個詞頭。
 `entries.id` 已按照 `normalized_word` 不分大小寫排序，並連續編號為
-`1–29,352`。同一個 word 的不同詞性及詞義會維持相鄰，方便使用 SQLite
+`1–29,354`。同一個 word 的不同詞性及詞義會維持相鄰，方便使用 SQLite
 工具檢查及維護。
 
 ## 字典資料來源

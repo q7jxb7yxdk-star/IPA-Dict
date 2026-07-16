@@ -146,7 +146,6 @@ struct DictionarySearchView: View {
     @StateObject private var viewModel = DictionarySearchViewModel()
     @StateObject private var historyStore = SearchHistoryStore()
     @StateObject private var bookmarkStore = BookmarkStore()
-    @StateObject private var dictionaryManifestStore = DictionaryManifestStore()
     @State private var translationConfiguration: TranslationSession.Configuration?
     @State private var presentedResult: DictionarySearchResult?
     @State private var isShowingResult = false
@@ -773,14 +772,6 @@ struct DictionarySearchView: View {
         #endif
     }
 
-    private var homeBottomSafePadding: CGFloat {
-        #if os(iOS)
-        34
-        #else
-        0
-        #endif
-    }
-
     private var historyContent: some View {
         VStack(alignment: .leading, spacing: 18) {
             HStack {
@@ -853,10 +844,6 @@ struct DictionarySearchView: View {
                 .frame(maxWidth: 760, maxHeight: .infinity)
             }
 
-            databaseDateContent
-                .frame(maxWidth: 760)
-            .padding(.horizontal, 24)
-            .padding(.bottom, homeBottomSafePadding)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color.searchBackground)
@@ -864,18 +851,6 @@ struct DictionarySearchView: View {
         .onTapGesture {
             dismissSearchSuggestions()
         }
-    }
-
-    private var databaseDateContent: some View {
-        HStack(spacing: 6) {
-            Image(systemName: "externaldrive")
-            Text(dictionaryManifestStore.displayText)
-        }
-        .font(.system(size: 14))
-        .foregroundStyle(.secondary)
-        .frame(maxWidth: .infinity, alignment: .center)
-        .padding(.top, 8)
-        .accessibilityLabel(dictionaryManifestStore.displayText)
     }
 
     private var filteredHistory: [String] {
