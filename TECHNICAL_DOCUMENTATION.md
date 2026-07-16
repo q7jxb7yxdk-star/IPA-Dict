@@ -236,11 +236,23 @@ missing_part_of_speech_candidate_count = 0
 目前 bundled database 包含：
 
 ```text
-entries = 29,352
-headwords = 23,000
-id range = 1–29,352
+entries = 35,214
+headwords = 28,554
+id range = 1–35,214
 ordering_errors = 0
 ```
+
+最近一次缺詞審核以每批最多 100 個候選處理，合共人工檢查 1,130 個詞：
+
+```text
+accepted headwords = 1,060
+accepted sense rows = 1,240
+rejected candidates = 70
+```
+
+拒絕項目包括規則屈折詞、可自由組合的片語、錯誤或重複拼寫、數字組合及
+沒有獨立英語學習價值的冷門項目。正式資料庫完成後的 integrity、JSON、
+雙語例句、IPA、metadata、排序、連續 ID、完全重複及關聯目標檢查均為正常。
 
 `entries.id` 按 `normalized_word COLLATE NOCASE` 排列；同一個 word 內維持
 原有詞義次序。重新排序或刪除詞條時，會先在暫存 SQLite 驗證資料內容、
@@ -259,8 +271,7 @@ examples: Array(examples.prefix(1))
 
 1. 使用 Letos 或其他 SQLite 工具修改 `IPA Dict/Data/dictionary.sqlite`。
 2. 用 Xcode / Git Commit and Push 到 GitHub。
-3. 其他平台顯示 bundled `dictionary.sqlite` 的檔案修改日期，之後可再擴充成從 GitHub
-   下載最新主詞庫。
+3. 其他平台安裝包含最新版 bundled `dictionary.sqlite` 的 app build，以取得更新內容。
 
 App 不提供詞條編輯、私人筆記或私人 SQLite override。所有平台的正式詞庫內容
 以 repository 內的 `dictionary.sqlite` 為準；其他裝置需要使用包含最新版資料庫的
@@ -664,4 +675,3 @@ git diff --check
 - 音素按鈕可點擊。
 - 同義詞及反義詞連結會完整顯示並可查詢。
 - 詞性、中文釋義、英文釋義、例句顯示完整。
-- 首頁會顯示 bundled `dictionary.sqlite` 的檔案修改日期。
