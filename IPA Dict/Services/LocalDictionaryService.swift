@@ -26,11 +26,12 @@ actor LocalDictionaryService {
 
         guard !word.isEmpty else { return [] }
         try openDatabaseIfNeeded()
+        let resolvedWord = try resolvedHeadword(for: word)
 
         let sql = """
             SELECT word, uk_ipa, us_ipa, part_of_speech, countability,
-                   zh_definition, en_definition, examples_json,
-                   synonyms_json, antonyms_json
+                   plural_forms_json, zh_definition, en_definition,
+                   examples_json, synonyms_json, antonyms_json
             FROM entries
             WHERE normalized_word = ?
             ORDER BY id
@@ -40,13 +41,13 @@ actor LocalDictionaryService {
             throw LocalDictionaryError.queryFailed
         }
         defer { sqlite3_finalize(statement) }
-        sqlite3_bind_text(statement, 1, word, -1, sqliteTransient)
+        sqlite3_bind_text(statement, 1, resolvedWord, -1, sqliteTransient)
 
         var entries: [DictionaryEntry] = []
         while sqlite3_step(statement) == SQLITE_ROW {
             let entryWord = columnText(statement, 0)
-            let chineseDefinition = traditionalChinese(columnText(statement, 5))
-            let examples = decodeExamples(columnText(statement, 7))
+            let chineseDefinition = traditionalChinese(columnText(statement, 6))
+            let examples = decodeExamples(columnText(statement, 8))
             entries.append(
                 DictionaryEntry(
                     word: entryWord,
@@ -56,12 +57,13 @@ actor LocalDictionaryService {
                         columnText(statement, 3)
                     ),
                     countability: columnText(statement, 4),
+                    pluralForms: decodeJSON(columnText(statement, 5)),
                     inflections: [],
                     zhDefinition: chineseDefinition,
-                    enDefinition: columnText(statement, 6),
+                    enDefinition: columnText(statement, 7),
                     examples: Array(examples.prefix(1)),
-                    synonyms: decodeJSON(columnText(statement, 8)),
-                    antonyms: decodeJSON(columnText(statement, 9))
+                    synonyms: decodeJSON(columnText(statement, 9)),
+                    antonyms: decodeJSON(columnText(statement, 10))
                 )
             )
         }
@@ -77,12 +79,32 @@ actor LocalDictionaryService {
         try openDatabaseIfNeeded()
 
         let sql = """
-            SELECT word, normalized_word
-            FROM entries
-            WHERE normalized_word LIKE ?
+            WITH candidates AS (
+                SELECT word, normalized_word, normalized_word AS matched_form,
+                       0 AS source_rank
+                FROM entries
+                WHERE normalized_word LIKE ?
+
+                UNION ALL
+
+                SELECT MIN(entries.word) AS word,
+                       plural_lookup.normalized_headword AS normalized_word,
+                       plural_lookup.plural_form AS matched_form,
+                       1 AS source_rank
+                FROM plural_lookup
+                JOIN entries
+                  ON entries.normalized_word = plural_lookup.normalized_headword
+                WHERE plural_lookup.plural_form LIKE ?
+                GROUP BY plural_lookup.normalized_headword,
+                         plural_lookup.plural_form
+            )
+            SELECT MIN(word), normalized_word
+            FROM candidates
             GROUP BY normalized_word
             ORDER BY
-                CASE WHEN normalized_word = ? THEN 0 ELSE 1 END,
+                MIN(CASE WHEN matched_form = ? THEN 0 ELSE 1 END),
+                MIN(source_rank),
+                MIN(matched_form),
                 normalized_word
             LIMIT ?
         """
@@ -93,8 +115,9 @@ actor LocalDictionaryService {
         defer { sqlite3_finalize(statement) }
 
         sqlite3_bind_text(statement, 1, "\(prefix)%", -1, sqliteTransient)
-        sqlite3_bind_text(statement, 2, prefix, -1, sqliteTransient)
-        sqlite3_bind_int(statement, 3, Int32(limit))
+        sqlite3_bind_text(statement, 2, "\(prefix)%", -1, sqliteTransient)
+        sqlite3_bind_text(statement, 3, prefix, -1, sqliteTransient)
+        sqlite3_bind_int(statement, 4, Int32(limit))
 
         var words: [String] = []
         while sqlite3_step(statement) == SQLITE_ROW {
@@ -104,6 +127,36 @@ actor LocalDictionaryService {
             }
         }
         return words
+    }
+
+    private func resolvedHeadword(for word: String) throws -> String {
+        let sql = """
+            SELECT normalized_headword
+            FROM (
+                SELECT normalized_word AS normalized_headword, 0 AS match_rank
+                FROM entries
+                WHERE normalized_word = ?
+
+                UNION ALL
+
+                SELECT normalized_headword, 1 AS match_rank
+                FROM plural_lookup
+                WHERE plural_form = ?
+            )
+            ORDER BY match_rank, normalized_headword
+            LIMIT 1
+        """
+        var statement: OpaquePointer?
+        guard sqlite3_prepare_v2(database, sql, -1, &statement, nil) == SQLITE_OK else {
+            throw LocalDictionaryError.queryFailed
+        }
+        defer { sqlite3_finalize(statement) }
+
+        sqlite3_bind_text(statement, 1, word, -1, sqliteTransient)
+        sqlite3_bind_text(statement, 2, word, -1, sqliteTransient)
+
+        guard sqlite3_step(statement) == SQLITE_ROW else { return word }
+        return columnText(statement, 0)
     }
 
     func reverseSuggestions(

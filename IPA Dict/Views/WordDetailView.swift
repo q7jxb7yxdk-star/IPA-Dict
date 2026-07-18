@@ -211,6 +211,9 @@ struct WordDetailView: View {
         let inflections = uniqueValues(
             group.entries.flatMap(\.inflections)
         )
+        let pluralForms = uniqueValues(
+            group.entries.flatMap(\.pluralForms)
+        )
 
         return VStack(alignment: .leading, spacing: 24) {
             MarkdownText(
@@ -220,6 +223,16 @@ struct WordDetailView: View {
                 ),
                 font: .system(size: 16, weight: .semibold)
             )
+
+            if group.partOfSpeech.caseInsensitiveCompare("noun") == .orderedSame {
+                MarkdownText(
+                    pluralForms.isEmpty
+                        ? "複數：—（不可數或通常只用單數）"
+                        : "複數：\(pluralForms.map(\.markdownEscaped).joined(separator: " / "))",
+                    font: .system(size: 16),
+                    color: .primary
+                )
+            }
 
             if !inflections.isEmpty {
                 MarkdownText(

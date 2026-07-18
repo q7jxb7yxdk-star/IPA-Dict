@@ -57,7 +57,7 @@ DictionaryEntry models
 
 - `DictionaryEntry.swift`
   - app 內部主要字典資料模型。
-  - 包含 word、UK IPA、US IPA、詞性、可數性、中文釋義、英文釋義、例句、同義詞、反義詞。
+  - 包含 word、UK IPA、US IPA、詞性、可數性、名詞複數、中文釋義、英文釋義、例句、同義詞、反義詞。
   - 也包含若干 curated static entries，例如 `apple`、`program`、`find`、`test`、`yes`、`itinerary`。
 
 - `DictionaryAPIResponse.swift`
@@ -156,6 +156,7 @@ let ukAudioURL: URL?
 let usAudioURL: URL?
 let partOfSpeech: String
 let countability: String
+let pluralForms: [String]
 let inflections: [String]
 let zhDefinition: String
 let enDefinition: String
@@ -193,6 +194,7 @@ uk_ipa
 us_ipa
 part_of_speech
 countability
+plural_forms_json
 zh_definition
 en_definition
 examples_json
@@ -250,6 +252,17 @@ accepted sense rows = 1,240
 rejected candidates = 70
 ```
 
+名詞複數以 JSON array 儲存在 `plural_forms_json`，可保留多個正確形式，
+例如 `index` 可顯示 `indexes / indices`。目前 21,144 筆 noun 詞義中，
+15,617 筆具有一般複數形式、280 筆本身是僅用複數詞，另有 5,247 筆屬於
+不可數或通常只用單數。UI 會在 noun 詞性下一行顯示複數；沒有一般複數時
+顯示 `複數：—（不可數或通常只用單數）`。
+
+`plural_lookup` 是由 `plural_forms_json` 展開的搜尋索引表，將每個小寫複數
+映射至 `normalized_headword`。英文搜尋會先匹配現有詞頭；只有完全相同的
+詞頭不存在時，才使用此表把 `indexes`、`indices` 等輸入解析成 `index`。
+搜尋建議也會查詢這個索引，因此輸入複數或其前綴時可以選擇相應單數詞頭。
+
 拒絕項目包括規則屈折詞、可自由組合的片語、錯誤或重複拼寫、數字組合及
 沒有獨立英語學習價值的冷門項目。正式資料庫完成後的 integrity、JSON、
 雙語例句、IPA、metadata、排序、連續 ID、完全重複及關聯目標檢查均為正常。
@@ -293,6 +306,8 @@ UK /ipa/  US /ipa/
 ---
 
 noun [ C ]
+
+複數：words
 
 ## 中文釋義
 

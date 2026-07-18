@@ -39,6 +39,7 @@ enum CuratedDictionary {
                     )
                     == .orderedSame
             }
+            let matchingPluralForms = matchingAPIEntry?.pluralForms ?? []
 
             return DictionaryEntry(
                 word: curated.word,
@@ -52,6 +53,9 @@ enum CuratedDictionary {
                 usAudioURL: matchingAPIEntry?.usAudioURL,
                 partOfSpeech: curated.partOfSpeech,
                 countability: curated.countability,
+                pluralForms: matchingPluralForms.isEmpty
+                    ? curated.pluralForms
+                    : matchingPluralForms,
                 inflections: curated.inflections,
                 zhDefinition: curated.zhDefinition,
                 enDefinition: curated.enDefinition,

@@ -9,6 +9,7 @@ struct DictionaryEntry: Identifiable, Hashable, Sendable {
     let usAudioURL: URL?
     let partOfSpeech: String
     let countability: String
+    let pluralForms: [String]
     let inflections: [String]
     let zhDefinition: String
     let enDefinition: String
@@ -25,6 +26,7 @@ struct DictionaryEntry: Identifiable, Hashable, Sendable {
         usAudioURL: URL? = nil,
         partOfSpeech: String,
         countability: String,
+        pluralForms: [String] = [],
         inflections: [String] = [],
         zhDefinition: String,
         enDefinition: String,
@@ -40,6 +42,7 @@ struct DictionaryEntry: Identifiable, Hashable, Sendable {
         self.usAudioURL = usAudioURL
         self.partOfSpeech = Self.normalizedPartOfSpeech(partOfSpeech)
         self.countability = countability
+        self.pluralForms = pluralForms
         self.inflections = inflections
         self.zhDefinition = zhDefinition
         self.enDefinition = enDefinition
@@ -84,6 +87,7 @@ extension DictionaryEntry {
             usAudioURL: usAudioURL,
             partOfSpeech: partOfSpeech,
             countability: countability,
+            pluralForms: pluralForms,
             inflections: inflections,
             zhDefinition: definition,
             enDefinition: enDefinition,
@@ -105,6 +109,7 @@ extension DictionaryEntry {
         usIPA: "/ˈæp.əl/",
         partOfSpeech: "noun",
         countability: "C or U",
+        pluralForms: ["apples"],
         zhDefinition: "蘋果",
         enDefinition: "A round fruit with firm, white flesh and a green, red, or yellow skin.",
         examples: [
@@ -121,6 +126,7 @@ extension DictionaryEntry {
         usIPA: "/ˈproʊ.ɡræm/",
         partOfSpeech: "noun",
         countability: "C",
+        pluralForms: ["programs"],
         zhDefinition: "（電腦）程式；編碼指令",
         enDefinition: "a series of instructions that can be put into a computer in order to make it perform an operation",
         examples: [
@@ -170,6 +176,7 @@ extension DictionaryEntry {
         usIPA: "/faɪnd/",
         partOfSpeech: "noun",
         countability: "C",
+        pluralForms: ["finds"],
         zhDefinition: "發現物；被發現的人（尤指有價值或有用者）",
         enDefinition: "a good or valuable thing or a special person that has been discovered but was not known about before",
         examples: [
@@ -186,6 +193,7 @@ extension DictionaryEntry {
         usIPA: "/test/",
         partOfSpeech: "noun",
         countability: "C",
+        pluralForms: ["tests"],
         zhDefinition: "測驗，考查",
         enDefinition: "a way of discovering, by questions or practical activities, what someone knows, or what someone or something can do or is like",
         examples: [
@@ -234,6 +242,7 @@ extension DictionaryEntry {
         usIPA: "/jes/",
         partOfSpeech: "noun",
         countability: "C",
+        pluralForms: ["yeses"],
         zhDefinition: "肯定的回答；同意",
         enDefinition: "an answer or decision that shows agreement or acceptance",
         examples: [
@@ -250,6 +259,7 @@ extension DictionaryEntry {
         usIPA: "/aɪˈtɪn.ə.rer.i/",
         partOfSpeech: "noun",
         countability: "C",
+        pluralForms: ["itineraries"],
         zhDefinition: "旅行計劃，預定行程",
         enDefinition: "a detailed plan or route of a journey",
         examples: [

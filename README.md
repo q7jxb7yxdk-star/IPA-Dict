@@ -13,6 +13,7 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
   - UK / US IPA
   - 可點擊音素
   - 詞性與文法標籤
+  - 名詞複數形式；不可數或通常只用單數的名詞會清楚標示
   - 中文釋義
   - 英文釋義
   - 一組雙語例句
@@ -24,6 +25,7 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - 本地音素音檔在 iOS / iPadOS 使用 `AVAudioPlayer` 播放，在 macOS 使用 `AudioToolbox` / `SystemSoundID` 播放；遠端整字發音使用 `AVPlayer`。缺少整字音檔時，macOS、iOS、iPadOS 都會使用 `AVSpeechSynthesizer` 作為系統語音 fallback。
 - 搜尋歷史記錄，輸入框 focus 時以類似 Google 搜尋的下拉選單顯示；首頁記錄可向左滑動單筆刪除。
 - 支援中文反向查詢：輸入繁體或簡體中文釋義時顯示相關英文字候選，按 Enter 可查詢最相關的英文字。
+- 支援複數名詞查詢：輸入 `indexes`、`indices` 等複數時，可開啟其單數詞頭 `index`。
 - 書簽功能，可在查詢結果頁收藏單字，並在首頁快速重新查詢。
 - 同義詞及反義詞以文字連結形式顯示，可點擊查詢；只有資料存在時才顯示對應區塊。
 - 精選詞庫 `CuratedDictionary` 可覆蓋或補充 SQLite 缺失詞條。
@@ -43,6 +45,8 @@ UK /.../  US /.../
 ---
 
 noun [ C ]
+
+複數：words
 
 ## 中文釋義
 
