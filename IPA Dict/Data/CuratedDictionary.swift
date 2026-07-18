@@ -40,6 +40,7 @@ enum CuratedDictionary {
                     == .orderedSame
             }
             let matchingPluralForms = matchingAPIEntry?.pluralForms ?? []
+            let matchingVerbForms = matchingAPIEntry?.verbForms
 
             return DictionaryEntry(
                 word: curated.word,
@@ -56,6 +57,7 @@ enum CuratedDictionary {
                 pluralForms: matchingPluralForms.isEmpty
                     ? curated.pluralForms
                     : matchingPluralForms,
+                verbForms: matchingVerbForms ?? curated.verbForms,
                 inflections: curated.inflections,
                 zhDefinition: curated.zhDefinition,
                 enDefinition: curated.enDefinition,

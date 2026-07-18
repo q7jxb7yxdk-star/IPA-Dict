@@ -10,6 +10,7 @@ struct DictionaryEntry: Identifiable, Hashable, Sendable {
     let partOfSpeech: String
     let countability: String
     let pluralForms: [String]
+    let verbForms: VerbForms?
     let inflections: [String]
     let zhDefinition: String
     let enDefinition: String
@@ -27,6 +28,7 @@ struct DictionaryEntry: Identifiable, Hashable, Sendable {
         partOfSpeech: String,
         countability: String,
         pluralForms: [String] = [],
+        verbForms: VerbForms? = nil,
         inflections: [String] = [],
         zhDefinition: String,
         enDefinition: String,
@@ -43,12 +45,29 @@ struct DictionaryEntry: Identifiable, Hashable, Sendable {
         self.partOfSpeech = Self.normalizedPartOfSpeech(partOfSpeech)
         self.countability = countability
         self.pluralForms = pluralForms
+        self.verbForms = verbForms
         self.inflections = inflections
         self.zhDefinition = zhDefinition
         self.enDefinition = enDefinition
         self.examples = examples
         self.synonyms = synonyms
         self.antonyms = antonyms
+    }
+}
+
+nonisolated struct VerbForms: Hashable, Codable, Sendable {
+    let presentParticiple: [String]
+    let pastTense: [String]
+    let pastParticiple: [String]
+
+    nonisolated init(
+        presentParticiple: [String],
+        pastTense: [String],
+        pastParticiple: [String]
+    ) {
+        self.presentParticiple = presentParticiple
+        self.pastTense = pastTense
+        self.pastParticiple = pastParticiple
     }
 }
 
@@ -88,6 +107,7 @@ extension DictionaryEntry {
             partOfSpeech: partOfSpeech,
             countability: countability,
             pluralForms: pluralForms,
+            verbForms: verbForms,
             inflections: inflections,
             zhDefinition: definition,
             enDefinition: enDefinition,
@@ -143,6 +163,11 @@ extension DictionaryEntry {
         usIPA: "/ˈproʊ.ɡræm/",
         partOfSpeech: "verb",
         countability: "T",
+        verbForms: VerbForms(
+            presentParticiple: ["programming"],
+            pastTense: ["programmed"],
+            pastParticiple: ["programmed"]
+        ),
         zhDefinition: "為（電腦）程式設計；編制…的程式",
         enDefinition: "to write a series of instructions that make a computer perform a particular operation",
         examples: [
@@ -159,7 +184,11 @@ extension DictionaryEntry {
         usIPA: "/faɪnd/",
         partOfSpeech: "verb",
         countability: "",
-        inflections: ["found", "found"],
+        verbForms: VerbForms(
+            presentParticiple: ["finding"],
+            pastTense: ["found"],
+            pastParticiple: ["found"]
+        ),
         zhDefinition: "（偶然）發現，碰上；找到，尋得；找出，查明",
         enDefinition: "to discover, especially where a thing or person is, either unexpectedly or by searching, or to discover where to get or how to achieve something",
         examples: [
@@ -210,6 +239,11 @@ extension DictionaryEntry {
         usIPA: "/test/",
         partOfSpeech: "verb",
         countability: "",
+        verbForms: VerbForms(
+            presentParticiple: ["testing"],
+            pastTense: ["tested"],
+            pastParticiple: ["tested"]
+        ),
         zhDefinition: "試驗；檢驗；試用；檢測",
         enDefinition: "to put something through a process in order to discover if it is safe, works correctly, etc., or if something is present in it",
         examples: [

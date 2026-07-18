@@ -26,6 +26,8 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - 搜尋歷史記錄，輸入框 focus 時以類似 Google 搜尋的下拉選單顯示；首頁記錄可向左滑動單筆刪除。
 - 支援中文反向查詢：輸入繁體或簡體中文釋義時顯示相關英文字候選，按 Enter 可查詢最相關的英文字。
 - 支援複數名詞查詢：輸入 `indexes`、`indices` 等複數時，可開啟其單數詞頭 `index`。
+- 動詞詞性下方顯示 present participle、past tense 及 past participle。
+- 支援動詞 tense 查詢：沒有獨立詞頭的 tense（例如 `went`）可開啟原形 `go`。
 - 書簽功能，可在查詢結果頁收藏單字，並在首頁快速重新查詢。
 - 同義詞及反義詞以文字連結形式顯示，可點擊查詢；只有資料存在時才顯示對應區塊。
 - 精選詞庫 `CuratedDictionary` 可覆蓋或補充 SQLite 缺失詞條。
@@ -44,9 +46,17 @@ UK /.../  US /.../
 
 ---
 
+{詞性，例如：}
+
 noun [ C ]
 
 複數：words
+
+或
+
+verb
+
+present participle: **going** | past tense: **went** | past participle: **gone**
 
 ## 中文釋義
 

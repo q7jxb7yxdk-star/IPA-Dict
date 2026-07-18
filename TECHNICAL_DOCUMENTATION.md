@@ -157,6 +157,7 @@ let usAudioURL: URL?
 let partOfSpeech: String
 let countability: String
 let pluralForms: [String]
+let verbForms: VerbForms?
 let inflections: [String]
 let zhDefinition: String
 let enDefinition: String
@@ -195,6 +196,7 @@ us_ipa
 part_of_speech
 countability
 plural_forms_json
+verb_forms_json
 zh_definition
 en_definition
 examples_json
@@ -263,6 +265,27 @@ rejected candidates = 70
 詞頭不存在時，才使用此表把 `indexes`、`indices` 等輸入解析成 `index`。
 搜尋建議也會查詢這個索引，因此輸入複數或其前綴時可以選擇相應單數詞頭。
 
+動詞的三組主要屈折形式以 JSON object 儲存在 `verb_forms_json`：
+
+```json
+{
+  "presentParticiple": ["going"],
+  "pastTense": ["went"],
+  "pastParticiple": ["gone"]
+}
+```
+
+array 可保留多個正確形式，例如 `be` 的 past tense 是 `was / were`。
+資料庫內全部 4,824 筆 verb 詞義均具有完整三組形式；片語動詞會變化主要
+動詞，同形異義動詞則按詞義儲存不同形式。UI 會在 verb 詞性下一行顯示
+present participle、past tense 及 past participle。
+
+`verb_form_lookup` 是由 `verb_forms_json` 展開的搜尋索引表，記錄 tense、
+原形詞頭、形式種類及歧義排序。英文搜尋在沒有完全相同詞頭時，會利用此表
+把 `went` 等 tense 解析成原形 `go`；搜尋建議亦支援 tense 及其前綴。
+完全相同的獨立詞頭仍然優先，例如 `gone` 的 adjective 詞條不會被覆蓋。
+同一形式可保留多個候選詞頭，已知同形衝突會以 canonical 動詞優先排序。
+
 拒絕項目包括規則屈折詞、可自由組合的片語、錯誤或重複拼寫、數字組合及
 沒有獨立英語學習價值的冷門項目。正式資料庫完成後的 integrity、JSON、
 雙語例句、IPA、metadata、排序、連續 ID、完全重複及關聯目標檢查均為正常。
@@ -305,9 +328,17 @@ UK /ipa/  US /ipa/
 
 ---
 
+{詞性，例如：}
+
 noun [ C ]
 
 複數：words
+
+或
+
+verb
+
+present participle: **going** | past tense: **went** | past participle: **gone**
 
 ## 中文釋義
 

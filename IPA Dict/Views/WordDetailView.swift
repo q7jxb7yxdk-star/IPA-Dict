@@ -208,11 +208,17 @@ struct WordDetailView: View {
                 .map { normalizedCountability($0.countability) }
                 .filter { !$0.isEmpty }
         ).joined(separator: " or ")
-        let inflections = uniqueValues(
-            group.entries.flatMap(\.inflections)
-        )
         let pluralForms = uniqueValues(
             group.entries.flatMap(\.pluralForms)
+        )
+        let presentParticiples = uniqueValues(
+            group.entries.flatMap { $0.verbForms?.presentParticiple ?? [] }
+        )
+        let pastTenses = uniqueValues(
+            group.entries.flatMap { $0.verbForms?.pastTense ?? [] }
+        )
+        let pastParticiples = uniqueValues(
+            group.entries.flatMap { $0.verbForms?.pastParticiple ?? [] }
         )
 
         return VStack(alignment: .leading, spacing: 24) {
@@ -234,12 +240,15 @@ struct WordDetailView: View {
                 )
             }
 
-            if !inflections.isEmpty {
+            if group.partOfSpeech.caseInsensitiveCompare("verb") == .orderedSame,
+               !presentParticiples.isEmpty,
+               !pastTenses.isEmpty,
+               !pastParticiples.isEmpty {
                 MarkdownText(
-                    inflections
-                        .map(\.markdownEscaped)
-                        .joined(separator: " \\| "),
-                    font: .system(size: 16, weight: .semibold),
+                    "present participle: **\(presentParticiples.map(\.markdownEscaped).joined(separator: " / "))** \\| "
+                        + "past tense: **\(pastTenses.map(\.markdownEscaped).joined(separator: " / "))** \\| "
+                        + "past participle: **\(pastParticiples.map(\.markdownEscaped).joined(separator: " / "))**",
+                    font: .system(size: 16),
                     color: .primary
                 )
             }
