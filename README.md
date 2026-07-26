@@ -1,6 +1,6 @@
 # IPA Dict
 
-IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app prototype，支援 iOS、iPadOS 與 macOS。它以本地 SQLite 字典庫為主，提供英文單字查詢、繁體中文釋義、英文釋義、雙語例句、UK / US IPA 音標、音素拆解與發音功能。
+IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app prototype，支援 iOS、iPadOS 與 macOS。它以本地 SQLite 字典庫為主，提供英文單字查詢、繁體中文釋義、英文釋義、雙語例句、UK / US IPA 音標、音素拆解、發音說明與 IPA 發音表。
 
 這個專案的重點不是單純顯示字典資料，而是建立一個適合語言學習的查詢介面：查一個字時，可以同時看意思、例句、音標，並逐個音素練習發音。
 
@@ -20,7 +20,9 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
   - 同義詞及反義詞連結
 - UK / US IPA 可以點擊播放整字發音。
 - IPA 會拆成音素按鈕，例如 `/ˈæp.əl/` 可拆成 `æ`、`p`、`ə`、`l`。
-- 每個音素可對應本地音檔播放，例如 `æ -> ipa_ae.mp3`、`ə -> ipa_schwa.mp3`。
+- 查詢結果的個別音素按鈕會在音素下方顯示發音說明，不播放 MP3；點擊外部即可關閉。
+- 音素說明的 Cambridge reference 會在 App 內開啟：iOS / iPadOS 使用 `SFSafariViewController`，macOS 使用 `WKWebView`。
+- 獨立「IPA 發音表」整理元音、輔音、例字及發音方法；表內音素可播放本地音檔。
 - 常見複合音素會優先使用單一 MP3，避免點擊一次音素時聽到兩段分開播放的聲音。
 - 本地音素音檔在 iOS / iPadOS 使用 `AVAudioPlayer` 播放，在 macOS 使用 `AudioToolbox` / `SystemSoundID` 播放；遠端整字發音使用 `AVPlayer`。缺少整字音檔時，macOS、iOS、iPadOS 都會使用 `AVSpeechSynthesizer` 作為系統語音 fallback。
 - 搜尋歷史記錄，輸入框 focus 時以類似 Google 搜尋的下拉選單顯示；首頁記錄可向左滑動單筆刪除。
@@ -29,6 +31,7 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - 動詞詞性下方顯示 present participle、past tense 及 past participle。
 - 支援動詞 tense 查詢：沒有獨立詞頭的 tense（例如 `went`）可開啟原形 `go`。
 - 書簽功能，可在查詢結果頁收藏單字，並在首頁快速重新查詢。
+- macOS 與 iPadOS 使用 `NavigationSplitView` 顯示字典、IPA 發音表及書簽 sidebar；iPhone 使用單欄 navigation。
 - 同義詞及反義詞以文字連結形式顯示，可點擊查詢；只有資料存在時才顯示對應區塊。
 - 精選詞庫 `CuratedDictionary` 可覆蓋或補充 SQLite 缺失詞條。
 - 主詞庫 `dictionary.sqlite` 放在 GitHub repository，由 macOS 端修改後 Commit and Push 統一管理。
@@ -102,6 +105,7 @@ IPA Dict/
 │   │   └── TranslationCache.swift
 │   └── Views/
 │       ├── DictionarySearchView.swift
+│       ├── IPAGuideView.swift
 │       ├── WordDetailView.swift
 │       ├── MarkdownText.swift
 │       └── PhonemeButton.swift
@@ -129,9 +133,9 @@ IPA Dict/
 
 專案內已包含 app bundle 使用的 `dictionary.sqlite`。如果要重新建置字典資料，請參考 `Tools/DictionaryBuilder/README.md` 與 `TECHNICAL_DOCUMENTATION.md`。
 
-目前 bundled `dictionary.sqlite` 包含 35,214 筆詞義及 28,554 個詞頭。
+目前 bundled `dictionary.sqlite` 包含 35,411 筆詞義及 28,734 個詞頭。
 `entries.id` 已按照 `normalized_word` 不分大小寫排序，並連續編號為
-`1–35,214`。同一個 word 的不同詞性及詞義會維持相鄰，方便使用 SQLite
+`1–35,411`。同一個 word 的不同詞性及詞義會維持相鄰，方便使用 SQLite
 工具檢查及維護。
 
 最近一次缺詞審核共人工檢查 1,130 個英語學習候選：接受 1,060 個詞頭，
@@ -182,7 +186,7 @@ temporary exception。macOS 本地音素使用較輕量的 `AudioToolbox` / `Sys
 `AVAudioSession` 的 `.playback` / `.spokenAudio`，讓系統音訊管線更明確。iOS / macOS Debug Area 仍可能顯示少量 Apple
 系統 speech pipeline log，這類訊息通常不代表 app 播放流程失敗。
 
-音素對應表位於 `AudioPlayerService.phonemeAudioMap`。單一音素通常對應一個本地音檔；常見雙元音與 affricate 也優先對應單一 MP3，避免按下一個 IPA button 時聽到兩個分開音檔。例如：
+音素對應表位於 `AudioPlayerService.phonemeAudioMap`。目前只有 IPA 發音表由音素按鈕呼叫本地 MP3；字典結果的音素按鈕只顯示發音解釋。單一音素通常對應一個本地音檔；常見雙元音與 affricate 也優先對應單一 MP3。例如：
 
 ```swift
 "æ": ["ipa_ae"]
@@ -212,11 +216,10 @@ temporary exception。macOS 本地音素使用較輕量的 `AudioToolbox` / `Sys
 IPA Dict/Audio/Phonemes/
 ```
 
-音素錄音主要取自 Wikimedia Commons 的可再散布音檔。部分 consonant
-錄音即使裁剪後仍較像多段示範聲音；這些單一音素按鈕改用 IPAHelp 的短版
-MP3，以便點擊音素時只聽到乾淨的單一音。個別作者、來源頁面、裁剪紀錄、
-IPAHelp replacement 清單及授權資料記錄於
-`IPA Dict/Audio/Phonemes/ATTRIBUTION.md`。
+音素錄音主要取自 Wikimedia Commons。個別作者、來源頁面、裁剪紀錄及
+既有 IPAHelp replacement 清單記錄於 `IPA Dict/Audio/Phonemes/ATTRIBUTION.md`。
+IPAHelp 官方說明其錄音受版權保護、並非 public domain；正式發佈前須取得
+明確授權，或替換為具有商業重新散布權的錄音。
 
 常見雙元音例如 `eɪ`、`aɪ`、`ɔɪ`、`əʊ`、`oʊ`、`aʊ`、`ɪə`、`eə`、`ʊə`
 也使用單一 MP3。`əl`、`əm`、`ən`、`ər` 不作為獨立 IPA 音素處理；

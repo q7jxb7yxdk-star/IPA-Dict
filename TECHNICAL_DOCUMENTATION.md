@@ -34,11 +34,19 @@ DictionaryEntry models
 - `DictionarySearchView.swift`
   - 搜尋頁與結果頁容器。
   - 管理搜尋輸入框、搜尋歷史、書簽、下拉選單、loading、error state。
-  - 使用 `NavigationStack` 顯示查詢結果。
+  - iPhone 使用 `NavigationStack`；iPadOS 與 macOS 使用 `NavigationSplitView`。
+  - iPadOS / macOS 預設顯示字典、IPA 發音表及書簽 sidebar。
+
+- `IPAGuideView.swift`
+  - 顯示元音、雙元音、輔音、口語變音、例字及發音方法。
+  - 發音表中的音素按鈕可呼叫本地 MP3。
+  - 提供 `IPAGuideView.reference(for:)`，讓結果頁重用相同發音說明。
 
 - `WordDetailView.swift`
   - 顯示字典詞條內容。
   - 負責 word heading、IPA button、phoneme buttons、詞性分組、中文釋義、英文釋義、例句、同義詞及反義詞連結。
+  - 個別 phoneme button 在按鈕下方顯示發音說明 popover，不播放 MP3。
+  - Cambridge reference 在 iOS / iPadOS 使用 `SFSafariViewController`、macOS 使用 `WKWebView`。
 
 - `MarkdownText.swift`
   - 使用 Swift `AttributedString(markdown:)` 做簡化 Markdown rendering。
@@ -50,7 +58,7 @@ DictionaryEntry models
 
 - `PhonemeButton.swift`
   - 單一音素按鈕。
-  - `IPATokenizer` 會把 IPA 字串拆成音素 token。
+  - `IPATokenizer` 會把 IPA 字串拆成音素 token，並保留 `/ɚ/`、`/ɝː/`。
   - `PhonemeFlowLayout` 讓音素按鈕自動換行。
 
 ### Models
@@ -240,9 +248,9 @@ missing_part_of_speech_candidate_count = 0
 目前 bundled database 包含：
 
 ```text
-entries = 35,214
-headwords = 28,554
-id range = 1–35,214
+entries = 35,411
+headwords = 28,734
+id range = 1–35,411
 ordering_errors = 0
 ```
 
@@ -374,6 +382,15 @@ linked words
 對應區塊。點擊任一同義詞或反義詞後，會透過 `onSelectWord` callback 回到
 `DictionarySearchView` 執行新查詢。
 
+查詢結果中的音素按鈕不直接呼叫 `AudioPlayerService`。每個
+`PhonemeReferenceButton` 以自身 bounds 作為 popover anchor，讓說明優先顯示在
+音素下方；popover 使用不透明系統背景，點擊外部即可關閉。內容由
+`IPAGuideView.reference(for:)` 提供，避免維護兩套說明。
+
+Cambridge 音標 reference 使用
+`https://dictionary.cambridge.org/zht/help/phonetics.html`。iOS / iPadOS 以
+`SFSafariViewController` 顯示，macOS 以 `WKWebView` 顯示，不離開 App。
+
 ## 8. 搜尋歷史、書簽與下拉選單
 
 `SearchHistoryStore` 負責儲存最近搜尋：
@@ -451,15 +468,15 @@ iOS / macOS Debug Area 仍可能顯示少量 Apple 系統 speech pipeline log；
    - UK: `en-GB`
    - US: `en-US`
 
-### 音素發音
+### IPA 發音表的音素發音
 
-音素按鈕呼叫：
+`IPAGuideView` 的音素按鈕呼叫：
 
 ```swift
 audioPlayer.playPhoneme(symbol: symbol)
 ```
 
-音素會查 `phonemeAudioMap`。此 map 的 value 是 `[String]`，因此同一個 IPA symbol 技術上可以播放一個或多個本地音檔；但實際維護原則是：可被使用者點擊的常見複合音素應優先使用單一 MP3，避免按下一個 IPA button 時聽到兩段分開播放的聲音。
+音素會查 `phonemeAudioMap`。此 map 的 value 是 `[String]`，因此同一個 IPA symbol 技術上可以播放一個或多個本地音檔；實際維護原則是常見複合音素應優先使用單一 MP3。字典結果的音素按鈕不會進入這個播放流程。
 
 ```swift
 "æ": ["ipa_ae"]
@@ -485,7 +502,7 @@ audioPlayer.playPhoneme(symbol: symbol)
 "dʒ": ["ipa_d_zh"]
 ```
 
-例如 `æ` 會播放 app bundle 內的 `ipa_ae.mp3`，`aɪ` 會播放 `ipa_ai.mp3`。`tʃ` 與 `dʒ` 使用獨立 affricate MP3，避免順序播放 `t + ʃ` 或 `d + ʒ` 時聽起來像兩個音。`eɪ`、`aɪ`、`ɔɪ`、`əʊ`、`oʊ`、`aʊ`、`ɪə`、`eə`、`ʊə` 也使用單一 MP3。
+例如在 IPA 發音表點擊 `æ` 會播放 app bundle 內的 `ipa_ae.mp3`，點擊 `aɪ` 會播放 `ipa_ai.mp3`。`tʃ` 與 `dʒ` 使用獨立 affricate MP3。`eɪ`、`aɪ`、`ɔɪ`、`əʊ`、`oʊ`、`aʊ`、`ɪə`、`eə`、`ʊə` 也使用單一 MP3。
 
 本地音素音檔位於：
 
@@ -500,6 +517,10 @@ single-shot 裁剪版。若裁剪後仍聽起來像多音節或多段示範，ap
 single-shot 裁剪版、裁剪報告及舊版私人比較音檔不放入 synchronized app
 source folder。Wikimedia Commons 與 IPAHelp 來源紀錄保存在同目錄的
 `ATTRIBUTION.md`。
+
+IPAHelp 官方指出其錄音受版權保護且並非 public domain。既有 IPAHelp 音檔
+不可因為能免費下載便視為可重新散布；正式發佈 App Store 前須取得書面授權，
+或替換成具有明確商業重新散布授權的錄音。
 
 常見雙元音的單一 MP3 來自 Wikimedia Commons 的可再散布 word recordings，
 再轉成 MP3 放入 app bundle。這些檔案的用途是讓一個 IPA button 對應一次

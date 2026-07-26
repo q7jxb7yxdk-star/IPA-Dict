@@ -5,6 +5,7 @@ import SafariServices
 import UIKit
 #elseif os(macOS)
 import AppKit
+import WebKit
 #endif
 
 struct WordDetailView: View {
@@ -394,9 +395,7 @@ struct WordDetailView: View {
                         Array(IPATokenizer.phonemes(in: ipa).enumerated()),
                         id: \.offset
                     ) { _, symbol in
-                        PhonemeButton(symbol: symbol) {
-                            audioPlayer.playPhoneme(symbol: symbol)
-                        }
+                        PhonemeReferenceButton(symbol: symbol)
                     }
                 }
 
@@ -627,6 +626,142 @@ struct WordDetailView: View {
     }
 }
 
+private struct PhonemeReferenceButton: View {
+    let symbol: String
+
+    @State private var showsReference = false
+
+    private var item: IPAItem {
+        IPAGuideView.reference(for: symbol)
+            ?? IPAItem(
+                symbol: symbol,
+                description: "這個音素暫未收錄詳細解釋。"
+            )
+    }
+
+    var body: some View {
+        PhonemeButton(symbol: symbol) {
+            showsReference = true
+        }
+        .popover(
+            isPresented: $showsReference,
+            attachmentAnchor: .rect(.bounds),
+            arrowEdge: .top
+        ) {
+            PhonemeReferenceSheet(item: item)
+                #if os(iOS)
+                .presentationCompactAdaptation(.popover)
+                #endif
+        }
+    }
+}
+
+private struct PhonemeReferenceSheet: View {
+    let item: IPAItem
+
+    @State private var browserURL: InAppBrowserURL?
+
+    private let referenceURL = URL(
+        string: "https://dictionary.cambridge.org/zht/help/phonetics.html"
+    )!
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 22) {
+            Text(referenceText)
+                .font(.system(size: 16))
+                .foregroundStyle(.primary)
+                .fixedSize(horizontal: false, vertical: true)
+                .textSelection(.enabled)
+
+            HStack(spacing: 5) {
+                Text("Reference:")
+                    .foregroundStyle(.secondary)
+
+                Button("Cambridge 音標") {
+                    browserURL = InAppBrowserURL(url: referenceURL)
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(Color.accentColor)
+                .underline()
+                .accessibilityLabel("在 App 內打開 Cambridge 音標參考")
+            }
+            .font(.system(size: 14))
+        }
+        .padding(24)
+        .frame(minWidth: 320, idealWidth: 480, maxWidth: 520, alignment: .topLeading)
+        .background(
+            Color.phonemePopoverBackground,
+            in: RoundedRectangle(cornerRadius: 16, style: .continuous)
+        )
+        .overlay {
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .stroke(Color.primary.opacity(0.12), lineWidth: 0.5)
+        }
+        .contentShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .accessibilityAddTraits(.isModal)
+        .sheet(item: $browserURL) { browserURL in
+            InAppBrowserView(url: browserURL.url)
+                .ignoresSafeArea()
+        }
+    }
+
+    private var referenceText: String {
+        let voice = phonationLabel(for: item.symbol)
+        let description = item.description
+            .replacingOccurrences(of: "清音。", with: "")
+            .replacingOccurrences(of: "濁音。", with: "")
+
+        if let voice {
+            return "/\(item.symbol)/（\(voice)）— \(description)"
+        }
+        return "/\(item.symbol)/ — \(description)"
+    }
+
+    private func phonationLabel(for symbol: String) -> String? {
+        let voiceless: Set<String> = ["p", "t", "k", "f", "θ", "s", "ʃ", "h", "tʃ", "ʔ"]
+        let voiced: Set<String> = ["b", "d", "ɡ", "g", "v", "ð", "z", "ʒ", "dʒ", "m", "n", "ŋ", "l", "r", "ɹ", "j", "w", "ɾ"]
+
+        if voiceless.contains(symbol) { return "清" }
+        if voiced.contains(symbol) { return "濁" }
+        return nil
+    }
+}
+
+private struct InAppBrowserURL: Identifiable {
+    let id = UUID()
+    let url: URL
+}
+
+private struct InAppBrowserView: View {
+    let url: URL
+
+    var body: some View {
+        #if os(iOS)
+        SafariView(url: url)
+        #elseif os(macOS)
+        MacWebView(url: url)
+            .frame(minWidth: 820, minHeight: 620)
+        #endif
+    }
+}
+
+#if os(macOS)
+private struct MacWebView: NSViewRepresentable {
+    let url: URL
+
+    func makeNSView(context: Context) -> WKWebView {
+        let webView = WKWebView()
+        webView.load(URLRequest(url: url))
+        return webView
+    }
+
+    func updateNSView(_ webView: WKWebView, context: Context) {
+        guard webView.url != url else { return }
+        webView.load(URLRequest(url: url))
+    }
+}
+#endif
+
 private struct MeaningGroup: Identifiable {
     let id: String
     let partOfSpeech: String
@@ -654,6 +789,14 @@ private struct SafariView: UIViewControllerRepresentable {
 #endif
 
 private extension Color {
+    static var phonemePopoverBackground: Color {
+        #if os(macOS)
+        Color(nsColor: .textBackgroundColor)
+        #else
+        Color(uiColor: .systemBackground)
+        #endif
+    }
+
     static var detailBackground: Color {
         #if os(macOS)
         Color(nsColor: .windowBackgroundColor)

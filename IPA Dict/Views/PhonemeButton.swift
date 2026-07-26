@@ -15,7 +15,7 @@ struct PhonemeButton: View {
         .buttonBorderShape(.capsule)
         .tint(.accentColor)
         .foregroundStyle(Color.accentColor)
-        .accessibilityLabel("Play \(symbol) phoneme")
+        .accessibilityLabel("查看 \(symbol) 音素解釋")
     }
 }
 
@@ -58,8 +58,6 @@ enum IPATokenizer {
             .replacingOccurrences(of: "t͡ʃ", with: "tʃ")
             .replacingOccurrences(of: "t͜ʃ", with: "tʃ")
             .replacingOccurrences(of: "ɫ", with: "l")
-            .replacingOccurrences(of: "ɚ", with: "ər")
-            .replacingOccurrences(of: "ɝ", with: "ɜr")
             .replacingOccurrences(of: "ᵻ", with: "ɪ")
             .replacingOccurrences(of: "ᵿ", with: "ʊ")
             .replacingOccurrences(of: "ä", with: "a")

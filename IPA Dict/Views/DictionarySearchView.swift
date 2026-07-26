@@ -156,7 +156,8 @@ struct DictionarySearchView: View {
     @State private var hasActivatedSearch = false
     @State private var hasCompletedInitialAppearance = false
     @State private var showsBookmarkSheet = false
-    @State private var sidebarVisibility = NavigationSplitViewVisibility.automatic
+    @State private var sidebarDestination = SidebarDestination.dictionary
+    @State private var sidebarVisibility = NavigationSplitViewVisibility.all
     @FocusState private var focusedSearchField: SearchField?
 
     var body: some View {
@@ -192,13 +193,18 @@ struct DictionarySearchView: View {
                 bookmarkSidebar
             } detail: {
                 NavigationStack {
-                    dictionaryRoot
+                    switch sidebarDestination {
+                    case .dictionary:
+                        dictionaryRoot
+                    case .ipaGuide:
+                        IPAGuideView()
+                    }
                 }
             }
             .navigationSplitViewStyle(.balanced)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onAppear {
-                sidebarVisibility = .automatic
+                sidebarVisibility = .all
             }
         }
     }
@@ -209,7 +215,10 @@ struct DictionarySearchView: View {
             .navigationTitle(homeNavigationTitle)
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar(.hidden, for: .navigationBar)
+            .toolbar(
+                usesPhoneNavigation ? .hidden : .visible,
+                for: .navigationBar
+            )
             #endif
             .navigationDestination(isPresented: $isShowingResult) {
                 if let presentedResult {
@@ -319,6 +328,24 @@ struct DictionarySearchView: View {
 
     private var bookmarkSidebar: some View {
         VStack(alignment: .leading, spacing: 0) {
+            VStack(spacing: 4) {
+                sidebarButton(
+                    title: "字典",
+                    systemImage: "book.closed",
+                    destination: .dictionary
+                )
+                sidebarButton(
+                    title: "IPA 發音表",
+                    systemImage: "waveform",
+                    destination: .ipaGuide
+                )
+            }
+            .padding(.horizontal, 10)
+            .padding(.top, 10)
+            .padding(.bottom, 8)
+
+            Divider()
+
             HStack {
                 Text("書簽")
                     .font(.system(size: 22, weight: .bold))
@@ -344,8 +371,38 @@ struct DictionarySearchView: View {
             )
         }
         .navigationTitle("書簽")
+        .navigationSplitViewColumnWidth(min: 220, ideal: 260, max: 320)
         .frame(minWidth: 220, idealWidth: 260)
         .background(Color.searchBackground)
+    }
+
+    private func sidebarButton(
+        title: String,
+        systemImage: String,
+        destination: SidebarDestination
+    ) -> some View {
+        Button {
+            sidebarDestination = destination
+        } label: {
+            HStack(spacing: 10) {
+                Image(systemName: systemImage)
+                    .frame(width: 20)
+                Text(title)
+                    .font(.system(size: 14))
+                Spacer()
+            }
+            .padding(.horizontal, 10)
+            .padding(.vertical, 8)
+            .contentShape(Rectangle())
+            .background(
+                sidebarDestination == destination
+                    ? Color.accentColor.opacity(0.14)
+                    : Color.clear,
+                in: RoundedRectangle(cornerRadius: 8)
+            )
+        }
+        .buttonStyle(.plain)
+        .foregroundStyle(.primary)
     }
 
     @ViewBuilder
@@ -428,6 +485,16 @@ struct DictionarySearchView: View {
             Spacer()
 
             if usesPhoneNavigation {
+                NavigationLink {
+                    IPAGuideView()
+                } label: {
+                    Image(systemName: "waveform")
+                        .font(.system(size: 18, weight: .semibold))
+                }
+                .buttonStyle(.borderless)
+                .foregroundStyle(.primary)
+                .accessibilityLabel("打開 IPA 發音表")
+
                 Button {
                     openBookmarks()
                 } label: {
@@ -532,6 +599,14 @@ struct DictionarySearchView: View {
                 )
 
                 if usesPhoneNavigation {
+                    NavigationLink {
+                        IPAGuideView()
+                    } label: {
+                        Image(systemName: "waveform")
+                    }
+                    .help("打開 IPA 發音表")
+                    .accessibilityLabel("打開 IPA 發音表")
+
                     Button {
                         openBookmarks()
                     } label: {
@@ -988,6 +1063,7 @@ struct DictionarySearchView: View {
     }
 
     private func selectBookmarkedWord(_ word: String) {
+        sidebarDestination = .dictionary
         focusedSearchField = nil
         showsHistorySuggestions = false
         showsBookmarkSheet = false
@@ -1056,6 +1132,11 @@ struct DictionarySearchView: View {
         selectedHistoryIndex = nil
         hasActivatedSearch = false
     }
+}
+
+private enum SidebarDestination: Hashable {
+    case dictionary
+    case ipaGuide
 }
 
 private enum SearchField: Hashable {
