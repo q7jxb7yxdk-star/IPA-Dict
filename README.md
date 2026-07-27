@@ -232,7 +232,7 @@ IPAHelp 官方說明其錄音受版權保護、並非 public domain；正式發�
 - SQLite 詞庫是主要資料來源；`CuratedDictionary` 用於修正常用詞、補充缺字或覆蓋錯誤結果。
 - App bundle 內的 `dictionary.sqlite` 是主要內建詞庫；app 不提供直接編輯詞條或私人筆記功能。
 - 如果使用 Letos 或其他 SQLite 工具直接維護 bundled `dictionary.sqlite`，修改後直接用 Xcode / Git Commit and Push 到 GitHub；首頁日期會讀取 bundled SQLite 的檔案修改時間，不需要額外更新 manifest。
-- 搜尋歷史與書簽屬於 app 偏好資料，儲存在 `UserDefaults`，不會寫入 bundled `dictionary.sqlite`。
+- 搜尋歷史與書簽以 `UserDefaults` 作本地快取，並透過 iCloud Key-Value Storage 在登入同一 Apple ID 的 macOS、iOS、iPadOS 裝置間同步；資料不會寫入 bundled `dictionary.sqlite`。
 - 跨平台主詞庫由 GitHub repository 管理；其他裝置需使用包含最新版 `dictionary.sqlite` 的 app build。
 - 如果 SQLite 沒有某個字，但 `CuratedDictionary` 有資料，app 會直接顯示精選詞條。
 - 若本地資料和精選詞庫都沒有，app 會嘗試使用線上 Dictionary API fallback。

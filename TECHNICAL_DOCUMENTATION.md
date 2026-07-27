@@ -18,7 +18,7 @@ LocalDictionaryService / CuratedDictionary / Dictionary API fallback
 DictionaryEntry models
 ```
 
-查詢結果由 `WordDetailView` 顯示，發音由 `AudioPlayerService` 負責，搜尋歷史由 `SearchHistoryStore` 儲存在 `UserDefaults`，書簽由 `BookmarkStore` 儲存在 `UserDefaults`。
+查詢結果由 `WordDetailView` 顯示，發音由 `AudioPlayerService` 負責。`SearchHistoryStore` 與 `BookmarkStore` 以 `UserDefaults` 作本地快取，並透過 `NSUbiquitousKeyValueStore` 在同一 Apple ID 的裝置間同步。
 
 ## 2. 主要檔案
 
@@ -409,6 +409,12 @@ Cambridge 音標 reference 使用
 - 未設定最大數量。
 - 結果頁工具列以 `star` / `star.fill` 顯示目前字是否已收藏。
 - 首頁會顯示書簽區，點擊書簽字詞可直接重新查詢，也可逐個移除或清除全部。
+
+兩個 Store 都以 `UserDefaults` 作離線快取，並使用
+`NSUbiquitousKeyValueStore` 在同一 Apple ID 的裝置間同步。首次啟用會合併
+本地與 iCloud 資料；後續以修改時間採用較新版本，並監聽
+`didChangeExternallyNotification` 即時更新 UI。target 的 KVS identifier 是
+`$(TeamIdentifierPrefix)$(CFBundleIdentifier)`。
 
 `DictionarySearchView` 的下拉選單設計目標是類似 Google 搜尋框：
 
