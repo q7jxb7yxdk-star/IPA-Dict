@@ -5,28 +5,24 @@ import Foundation
 final class BookmarkStore: ObservableObject {
     @Published private(set) var words: [String]
 
-    private let defaults: UserDefaults
     private let cloudStore: NSUbiquitousKeyValueStore
     private let storageKey = "dictionaryBookmarks"
-    private let modifiedKey = "dictionaryBookmarksModifiedAt"
     private var cloudChangeTask: Task<Void, Never>?
 
-    init(
-        defaults: UserDefaults = .standard,
-        cloudStore: NSUbiquitousKeyValueStore = .default
-    ) {
-        self.defaults = defaults
+    init(cloudStore: NSUbiquitousKeyValueStore = .default) {
         self.cloudStore = cloudStore
-        self.words = defaults.stringArray(forKey: storageKey) ?? []
+        self.words = cloudStore.array(forKey: storageKey) as? [String] ?? []
 
-        synchronizeInitialData()
+        words = unique(words)
+        cloudStore.synchronize()
+        applyCloudValue()
         cloudChangeTask = Task { [weak self] in
             for await _ in NotificationCenter.default.notifications(
                 named: NSUbiquitousKeyValueStore.didChangeExternallyNotification,
                 object: nil
             ) {
                 guard !Task.isCancelled else { return }
-                self?.applyNewerCloudValue()
+                self?.applyCloudValue()
             }
         }
     }
@@ -51,66 +47,27 @@ final class BookmarkStore: ObservableObject {
         guard !word.isEmpty else { return }
         words.removeAll { $0.caseInsensitiveCompare(word) == .orderedSame }
         words.insert(word, at: 0)
-        saveAndSync()
+        save()
     }
 
     func remove(_ rawWord: String) {
         let word = normalizedWord(rawWord)
         guard !word.isEmpty else { return }
         words.removeAll { $0.caseInsensitiveCompare(word) == .orderedSame }
-        saveAndSync()
+        save()
     }
 
     func clear() {
         words = []
-        saveAndSync()
+        save()
     }
 
-    private func synchronizeInitialData() {
-        cloudStore.synchronize()
-        let localModified = defaults.double(forKey: modifiedKey)
-        let cloudModified = cloudStore.double(forKey: modifiedKey)
-        let cloudWords = cloudStore.array(forKey: storageKey) as? [String]
-
-        guard let cloudWords else {
-            saveAndSync()
-            return
-        }
-
-        if localModified == 0 {
-            words = unique(words + cloudWords)
-            saveAndSync()
-        } else if cloudModified > localModified {
-            applyCloud(words: cloudWords, modifiedAt: cloudModified)
-        } else if localModified > cloudModified {
-            publish(words: words, modifiedAt: localModified)
-        }
+    private func applyCloudValue() {
+        words = unique(cloudStore.array(forKey: storageKey) as? [String] ?? [])
     }
 
-    private func applyNewerCloudValue() {
-        let cloudModified = cloudStore.double(forKey: modifiedKey)
-        guard cloudModified > defaults.double(forKey: modifiedKey),
-              let cloudWords = cloudStore.array(forKey: storageKey) as? [String]
-        else { return }
-        applyCloud(words: cloudWords, modifiedAt: cloudModified)
-    }
-
-    private func applyCloud(words: [String], modifiedAt: Double) {
-        self.words = unique(words)
-        defaults.set(self.words, forKey: storageKey)
-        defaults.set(modifiedAt, forKey: modifiedKey)
-    }
-
-    private func saveAndSync() {
-        let modifiedAt = Date().timeIntervalSince1970
-        defaults.set(words, forKey: storageKey)
-        defaults.set(modifiedAt, forKey: modifiedKey)
-        publish(words: words, modifiedAt: modifiedAt)
-    }
-
-    private func publish(words: [String], modifiedAt: Double) {
+    private func save() {
         cloudStore.set(words, forKey: storageKey)
-        cloudStore.set(modifiedAt, forKey: modifiedKey)
         cloudStore.synchronize()
     }
 

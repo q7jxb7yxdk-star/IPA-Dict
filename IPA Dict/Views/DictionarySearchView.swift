@@ -198,8 +198,11 @@ struct DictionarySearchView: View {
                         dictionaryRoot
                     case .ipaGuide:
                         IPAGuideView()
+                    case .legalInformation:
+                        LegalInformationView()
                     }
                 }
+                .id(sidebarDestination)
             }
             .navigationSplitViewStyle(.balanced)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -339,6 +342,11 @@ struct DictionarySearchView: View {
                     systemImage: "waveform",
                     destination: .ipaGuide
                 )
+                sidebarButton(
+                    title: "私隱與授權",
+                    systemImage: "checkmark.shield",
+                    destination: .legalInformation
+                )
             }
             .padding(.horizontal, 10)
             .padding(.top, 10)
@@ -382,7 +390,7 @@ struct DictionarySearchView: View {
         destination: SidebarDestination
     ) -> some View {
         Button {
-            sidebarDestination = destination
+            selectSidebarDestination(destination)
         } label: {
             HStack(spacing: 10) {
                 Image(systemName: systemImage)
@@ -403,6 +411,21 @@ struct DictionarySearchView: View {
         }
         .buttonStyle(.plain)
         .foregroundStyle(.primary)
+    }
+
+    private func selectSidebarDestination(_ destination: SidebarDestination) {
+        guard sidebarDestination != destination else { return }
+
+        dismissSearchSuggestions()
+
+        if destination != .dictionary {
+            isShowingResult = false
+            presentedResult = nil
+            viewModel.query = ""
+            viewModel.clearResult()
+        }
+
+        sidebarDestination = destination
     }
 
     @ViewBuilder
@@ -494,6 +517,16 @@ struct DictionarySearchView: View {
                 .buttonStyle(.borderless)
                 .foregroundStyle(.primary)
                 .accessibilityLabel("打開 IPA 發音表")
+
+                NavigationLink {
+                    LegalInformationView()
+                } label: {
+                    Image(systemName: "checkmark.shield")
+                        .font(.system(size: 18, weight: .semibold))
+                }
+                .buttonStyle(.borderless)
+                .foregroundStyle(.primary)
+                .accessibilityLabel("打開私隱與授權")
 
                 Button {
                     openBookmarks()
@@ -606,6 +639,14 @@ struct DictionarySearchView: View {
                     }
                     .help("打開 IPA 發音表")
                     .accessibilityLabel("打開 IPA 發音表")
+
+                    NavigationLink {
+                        LegalInformationView()
+                    } label: {
+                        Image(systemName: "checkmark.shield")
+                    }
+                    .help("打開私隱與授權")
+                    .accessibilityLabel("打開私隱與授權")
 
                     Button {
                         openBookmarks()
@@ -1137,6 +1178,7 @@ struct DictionarySearchView: View {
 private enum SidebarDestination: Hashable {
     case dictionary
     case ipaGuide
+    case legalInformation
 }
 
 private enum SearchField: Hashable {

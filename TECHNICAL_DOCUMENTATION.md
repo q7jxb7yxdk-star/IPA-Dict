@@ -18,7 +18,7 @@ LocalDictionaryService / CuratedDictionary / Dictionary API fallback
 DictionaryEntry models
 ```
 
-查詢結果由 `WordDetailView` 顯示，發音由 `AudioPlayerService` 負責。`SearchHistoryStore` 與 `BookmarkStore` 以 `UserDefaults` 作本地快取，並透過 `NSUbiquitousKeyValueStore` 在同一 Apple ID 的裝置間同步。
+查詢結果由 `WordDetailView` 顯示，發音由 `AudioPlayerService` 負責。`SearchHistoryStore` 與 `BookmarkStore` 直接使用 `NSUbiquitousKeyValueStore`，在同一 Apple ID 的裝置間同步並使用 KVS 的裝置快取。
 
 ## 2. 主要檔案
 
@@ -39,8 +39,12 @@ DictionaryEntry models
 
 - `IPAGuideView.swift`
   - 顯示元音、雙元音、輔音、口語變音、例字及發音方法。
-  - 發音表中的音素按鈕可呼叫本地 MP3。
+  - 音素本身只作說明；點擊例字的完整 IPA 會以系統語音播放整個例字。
   - 提供 `IPAGuideView.reference(for:)`，讓結果頁重用相同發音說明。
+
+- `LegalInformationView.swift`
+  - 顯示 App 內私隱摘要、網絡服務、錯誤報告及資料授權說明。
+  - 提供公開 Privacy Policy、字典授權及支援連結。
 
 - `WordDetailView.swift`
   - 顯示字典詞條內容。
@@ -85,19 +89,16 @@ DictionaryEntry models
   - 會把簡體中文用 `StringTransform("Hans-Hant")` 轉成繁體。
 
 - `AudioPlayerService.swift`
-  - iOS / iPadOS 使用 `AVAudioPlayer` 播放本地 mp3。
-  - macOS 使用 `AudioToolbox` / `SystemSoundID` 播放本地音素 mp3，以減少 sandbox 下不必要的 AVFoundation audio analytics log。
   - 使用 `AVPlayer` 播放遠端 audio URL。
   - 使用系統語音作為整字發音 fallback：macOS、iOS、iPadOS 都使用 `AVSpeechSynthesizer`。
-  - 包含 `phonemeAudioMap`。
-  - 支援複合音素依序播放多個本地 mp3；常用複合音素維護上優先使用單一 mp3。
+  - 專案不包含本地 MP3 播放或音素音檔對應表。
 
 - `SearchHistoryStore.swift`
-  - 使用 `UserDefaults` 儲存最近搜尋字。
+  - 使用 `NSUbiquitousKeyValueStore` 儲存及同步最近搜尋字。
   - 預設最多保留 20 個。
 
 - `BookmarkStore.swift`
-  - 使用 `UserDefaults` 儲存書簽字詞。
+  - 使用 `NSUbiquitousKeyValueStore` 儲存及同步書簽字詞。
   - 提供加入、移除、切換、清除與查詢是否已收藏。
   - 書簽是使用者偏好資料，不寫入 bundled `dictionary.sqlite`。
 
@@ -395,26 +396,26 @@ Cambridge 音標 reference 使用
 
 `SearchHistoryStore` 負責儲存最近搜尋：
 
-- 儲存位置：`UserDefaults`
+- 儲存位置：`NSUbiquitousKeyValueStore`
 - key：`dictionarySearchHistory`
 - 最大數量：20
 - 新查詢會移到最前面。
-- `remove(_:)` 以不分大小寫方式刪除指定記錄並立即更新 `UserDefaults`。
+- `remove(_:)` 以不分大小寫方式刪除指定記錄並立即更新 iCloud KVS。
 - 首頁歷史使用原生 `List` swipe action，向左滑動可單筆刪除；完整滑動可直接確認刪除。
 
 `BookmarkStore` 負責儲存書簽：
 
-- 儲存位置：`UserDefaults`
+- 儲存位置：`NSUbiquitousKeyValueStore`
 - key：`dictionaryBookmarks`
 - 未設定最大數量。
 - 結果頁工具列以 `star` / `star.fill` 顯示目前字是否已收藏。
 - 首頁會顯示書簽區，點擊書簽字詞可直接重新查詢，也可逐個移除或清除全部。
 
-兩個 Store 都以 `UserDefaults` 作離線快取，並使用
-`NSUbiquitousKeyValueStore` 在同一 Apple ID 的裝置間同步。首次啟用會合併
-本地與 iCloud 資料；後續以修改時間採用較新版本，並監聽
-`didChangeExternallyNotification` 即時更新 UI。target 的 KVS identifier 是
-`$(TeamIdentifierPrefix)$(CFBundleIdentifier)`。
+兩個 Store 直接使用 `NSUbiquitousKeyValueStore`；KVS 本身會在裝置保留持久
+快取並於 iCloud 可用時同步。Store 監聽 `didChangeExternallyNotification`
+更新 UI。target 的 KVS identifier 是
+`$(TeamIdentifierPrefix)$(CFBundleIdentifier)`，不再另外把同一批資料寫入
+`UserDefaults`。
 
 `DictionarySearchView` 的下拉選單設計目標是類似 Google 搜尋框：
 
@@ -442,19 +443,11 @@ Cambridge 音標 reference 使用
 
 ## 9. 發音系統
 
-`AudioPlayerService` 依平台使用不同音訊元件：
-
-- iOS / iPadOS：本地 mp3 使用 `AVAudioPlayer`。
-- macOS：本地音素 mp3 使用 `AudioToolbox` / `SystemSoundID`。
-- 遠端整字 audio URL：使用 `AVPlayer`。
-- 缺音檔 fallback：macOS、iOS、iPadOS 都使用 `AVSpeechSynthesizer`。
+`AudioPlayerService` 使用 `AVPlayer` 播放遠端整字 audio URL；沒有遠端錄音時，macOS、iOS、iPadOS 都使用 `AVSpeechSynthesizer`。
 
 macOS app 保持 App Sandbox，不加入
 `com.apple.security.exception.mach-lookup.global-name` temporary exception。這樣較適合
-App Store 路線；若 Xcode Debug Area 出現 `com.apple.audioanalyticsd` 相關系統 log，
-優先透過降低 AVFoundation 本地音素播放使用量處理，而不是加入 sandbox exception。
-整字發音 fallback 使用 `AVSpeechSynthesizer`，避免依賴 macOS 14 已 deprecated 的
-舊 macOS speech API。播放新音檔前會停止舊的 local / remote / speech 播放，避免多條 audio pipeline 同時存在。
+App Store 路線。整字發音 fallback 使用 `AVSpeechSynthesizer`，避免依賴 macOS 14 已 deprecated 的舊 macOS speech API。播放新內容前會停止舊的 remote／speech 播放，避免多條 audio pipeline 同時存在。
 呼叫 speech fallback 前會先去除前後空白，並跳過空字串，避免對無效文字建立空的 speech buffer。
 iOS / iPadOS 會在 speech fallback 前先啟用 `AVAudioSession` 的 `.playback` / `.spokenAudio`
 並使用 `.duckOthers` option，讓系統音訊管線更明確。
@@ -466,78 +459,14 @@ iOS / macOS Debug Area 仍可能顯示少量 Apple 系統 speech pipeline log；
 整字發音順序：
 
 1. 如果 entry 有遠端音檔 URL，使用 `AVPlayer` 播放。
-2. 如果 app bundle 有本地 mp3，例如 `word_uk.mp3`，會使用平台對應本地播放器播放：
-   - iOS / iPadOS：`AVAudioPlayer`
-   - macOS：`AudioToolbox` / `SystemSoundID`
-3. 如果都沒有，使用系統語音 fallback：
+2. 如果沒有，使用系統語音 fallback：
    - macOS / iOS / iPadOS：`AVSpeechSynthesizer`
    - UK: `en-GB`
    - US: `en-US`
 
-### IPA 發音表的音素發音
+### IPA 發音表的例字發音
 
-`IPAGuideView` 的音素按鈕呼叫：
-
-```swift
-audioPlayer.playPhoneme(symbol: symbol)
-```
-
-音素會查 `phonemeAudioMap`。此 map 的 value 是 `[String]`，因此同一個 IPA symbol 技術上可以播放一個或多個本地音檔；實際維護原則是常見複合音素應優先使用單一 MP3。字典結果的音素按鈕不會進入這個播放流程。
-
-```swift
-"æ": ["ipa_ae"]
-"ə": ["ipa_schwa"]
-"ɪ": ["ipa_i_short"]
-"iː": ["ipa_i"]
-"θ": ["ipa_theta"]
-"ð": ["ipa_eth"]
-"ʃ": ["ipa_sh"]
-"ʒ": ["ipa_zh"]
-"p": ["ipa_p"]
-"l": ["ipa_l"]
-"eɪ": ["ipa_ei"]
-"aɪ": ["ipa_ai"]
-"ɔɪ": ["ipa_oi"]
-"əʊ": ["ipa_schwa_u"]
-"oʊ": ["ipa_ou"]
-"aʊ": ["ipa_au"]
-"ɪə": ["ipa_i_schwa"]
-"eə": ["ipa_e_schwa"]
-"ʊə": ["ipa_u_schwa"]
-"tʃ": ["ipa_t_ch"]
-"dʒ": ["ipa_d_zh"]
-```
-
-例如在 IPA 發音表點擊 `æ` 會播放 app bundle 內的 `ipa_ae.mp3`，點擊 `aɪ` 會播放 `ipa_ai.mp3`。`tʃ` 與 `dʒ` 使用獨立 affricate MP3。`eɪ`、`aɪ`、`ɔɪ`、`əʊ`、`oʊ`、`aʊ`、`ɪə`、`eə`、`ʊə` 也使用單一 MP3。
-
-本地音素音檔位於：
-
-```text
-IPA Dict/Audio/Phonemes/
-```
-
-正式 app bundle 只包含 MP3。多數音檔使用 Wikimedia Commons 原始 OGG
-轉檔；部分 Wikimedia consonant 原始錄音包含多段示範聲音，先前曾使用
-single-shot 裁剪版。若裁剪後仍聽起來像多音節或多段示範，app bundle
-改用 IPAHelp 的短版 MP3 作為單一音素按鈕音檔。原始 OGG、完整轉檔 MP3、
-single-shot 裁剪版、裁剪報告及舊版私人比較音檔不放入 synchronized app
-source folder。Wikimedia Commons 與 IPAHelp 來源紀錄保存在同目錄的
-`ATTRIBUTION.md`。
-
-IPAHelp 官方指出其錄音受版權保護且並非 public domain。既有 IPAHelp 音檔
-不可因為能免費下載便視為可重新散布；正式發佈 App Store 前須取得書面授權，
-或替換成具有明確商業重新散布授權的錄音。
-
-常見雙元音的單一 MP3 來自 Wikimedia Commons 的可再散布 word recordings，
-再轉成 MP3 放入 app bundle。這些檔案的用途是讓一個 IPA button 對應一次
-播放行為，而不是用 `playSoundSequence` 連播兩個 vowel MP3。
-
-可使用以下唯讀工具檢查 app bundle 音素 MP3 是否與
-`AudioPlayerService.phonemeAudioMap` 一致，並確認音檔可解碼且沒有過長：
-
-```sh
-python3 Tools/audit_phoneme_audio.py
-```
+IPA 發音表的左側音素為純文字。描述中的例字完整 IPA 是可點擊連結，連結會把對應例字及 UK／US region 傳給 `AudioPlayerService.speak(word:region:)`，一次播放整個例字。專案與 App bundle 均不包含本地 MP3 或其他 IPA 錄音檔。
 
 ## 10. IPA Tokenizer
 
@@ -694,6 +623,15 @@ static let itinerary = DictionaryEntry(
 
 ## 14. 資料授權
 
+App Store 私隱設定：
+
+- `PrivacyInfo.xcprivacy` 聲明不追蹤、沒有第三方 tracking domain，亦不由
+  開發者收集使用者資料。
+- 搜尋記錄與書簽使用 Apple iCloud KVS；公開政策位於
+  repository 根目錄的 `PRIVACY_POLICY.md`。
+- target 設定 `ITSAppUsesNonExemptEncryption = NO`，因為 App 只使用 Apple
+  系統提供的 HTTPS／iCloud 加密能力，沒有自行實作非豁免加密。
+
 App bundle 內字典資料的授權說明位於：
 
 ```text
@@ -715,7 +653,6 @@ Tools/DictionaryBuilder/README.md
 ## 15. 已知限制
 
 - IPA tokenizer 仍是簡化版，未完整覆蓋所有 IPA 符號與語音變體。
-- 目前本地音素 mp3 對應表只涵蓋部分音素。
 - SQLite 詞庫仍可能存在缺詞、詞性缺漏、IPA 缺失或例句不足。
 - 跨平台主詞庫目前透過 GitHub repository 和新版 app build 更新，而不是 app 內自動同步。
 - Apple Translation fallback 可能與正確字典釋義不同，不應作為正式詞庫資料來源。

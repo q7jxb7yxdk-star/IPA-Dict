@@ -161,16 +161,14 @@ struct WordDetailView: View {
                         region: "UK",
                         word: entry.word,
                         ipa: entry.ukIPA,
-                        remoteAudioURL: entry.ukAudioURL,
-                        localAudioFile: "\(entry.word)_uk"
+                        remoteAudioURL: entry.ukAudioURL
                     )
 
                     pronunciationButton(
                         region: "US",
                         word: entry.word,
                         ipa: entry.usIPA,
-                        remoteAudioURL: entry.usAudioURL,
-                        localAudioFile: "\(entry.word)_us"
+                        remoteAudioURL: entry.usAudioURL
                     )
                 }
 
@@ -179,16 +177,14 @@ struct WordDetailView: View {
                         region: "UK",
                         word: entry.word,
                         ipa: entry.ukIPA,
-                        remoteAudioURL: entry.ukAudioURL,
-                        localAudioFile: "\(entry.word)_uk"
+                        remoteAudioURL: entry.ukAudioURL
                     )
 
                     pronunciationButton(
                         region: "US",
                         word: entry.word,
                         ipa: entry.usIPA,
-                        remoteAudioURL: entry.usAudioURL,
-                        localAudioFile: "\(entry.word)_us"
+                        remoteAudioURL: entry.usAudioURL
                     )
                 }
             }
@@ -343,21 +339,13 @@ struct WordDetailView: View {
         region: String,
         word: String,
         ipa: String,
-        remoteAudioURL: URL?,
-        localAudioFile: String
+        remoteAudioURL: URL?
     ) -> some View {
         Button {
             if let remoteAudioURL {
                 audioPlayer.playRemoteSound(url: remoteAudioURL)
             } else {
-                if Bundle.main.url(
-                    forResource: localAudioFile,
-                    withExtension: "mp3"
-                ) != nil {
-                    audioPlayer.playSound(fileName: localAudioFile)
-                } else {
-                    audioPlayer.speak(word: word, region: region)
-                }
+                audioPlayer.speak(word: word, region: region)
             }
         } label: {
             HStack(spacing: 7) {
