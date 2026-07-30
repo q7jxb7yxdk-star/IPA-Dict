@@ -32,8 +32,8 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - 書簽功能，可在查詢結果頁收藏單字，並在首頁快速重新查詢。
 - macOS 與 iPadOS 使用 `NavigationSplitView` 顯示字典、IPA 發音表、私隱與授權及書簽 sidebar；iPhone 使用單欄 navigation。
 - App 內提供「私隱與授權」頁面；完整公開政策位於
-  `https://q7jxb7yxdk-star.github.io/IPA-Dict/privacy-policy/`，來源保留於
-  `PRIVACY_POLICY.md` 及 `docs/privacy-policy/index.md`。
+  `https://q7jxb7yxdk-star.github.io/IPA-Dict/privacy-policy/`，唯一來源位於
+  `docs/privacy-policy/index.md`。
 - 同義詞及反義詞以文字連結形式顯示，可點擊查詢；只有資料存在時才顯示對應區塊。
 - 精選詞庫 `CuratedDictionary` 可覆蓋或補充 SQLite 缺失詞條。
 - 主詞庫 `dictionary.sqlite` 放在 GitHub repository，由 macOS 端修改後 Commit and Push 統一管理。

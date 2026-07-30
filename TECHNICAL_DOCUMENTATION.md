@@ -629,7 +629,7 @@ App Store 私隱設定：
   開發者收集使用者資料。
 - 搜尋記錄與書簽使用 Apple iCloud KVS；App Store 及 App 內使用的公開政策
   URL 是 `https://q7jxb7yxdk-star.github.io/IPA-Dict/privacy-policy/`，來源位於
-  repository 的 `PRIVACY_POLICY.md` 及 `docs/privacy-policy/index.md`。
+  repository 的 `docs/privacy-policy/index.md`。
 - target 設定 `ITSAppUsesNonExemptEncryption = NO`，因為 App 只使用 Apple
   系統提供的 HTTPS／iCloud 加密能力，沒有自行實作非豁免加密。
 
