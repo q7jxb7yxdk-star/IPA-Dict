@@ -2,7 +2,7 @@ import SwiftUI
 
 struct LegalInformationView: View {
     private let privacyPolicyURL = URL(
-        string: "https://github.com/q7jxb7yxdk-star/IPA-Dict/blob/main/PRIVACY_POLICY.md"
+        string: "https://q7jxb7yxdk-star.github.io/IPA-Dict/privacy-policy/"
     )!
     private let dictionaryLicensesURL = URL(
         string: "https://github.com/q7jxb7yxdk-star/IPA-Dict/blob/main/IPA%20Dict/Data/DictionaryLicenses.md"
@@ -43,7 +43,7 @@ struct LegalInformationView: View {
                 }
                 .font(.system(size: 16))
 
-                Text("最後更新：2026-07-29")
+                Text("最後更新：2026-07-30")
                     .font(.system(size: 14))
                     .foregroundStyle(.secondary)
             }

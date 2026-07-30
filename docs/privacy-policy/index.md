@@ -1,3 +1,8 @@
+---
+title: IPA Dict 私隱政策
+description: IPA Dict 在 iOS、iPadOS 及 macOS 的資料處理政策
+---
+
 # IPA Dict 私隱政策
 
 最後更新：2026-07-30
@@ -58,6 +63,4 @@ IPA Dict 不會故意收集兒童的個人資料。App 不包含廣告、社交�
 
 ## 聯絡及支援
 
-如對私隱或 App 有疑問，請使用：
-
-https://github.com/q7jxb7yxdk-star/IPA-Dict/issues
+如對私隱或 App 有疑問，請使用 [IPA Dict GitHub Issues](https://github.com/q7jxb7yxdk-star/IPA-Dict/issues)。
