@@ -1,8 +1,3 @@
----
-title: IPA Dict 私隱政策
-description: IPA Dict 在 iOS、iPadOS 及 macOS 的資料處理政策
----
-
 # IPA Dict 私隱政策
 
 最後更新：2026-07-30

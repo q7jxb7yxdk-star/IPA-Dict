@@ -2,7 +2,7 @@ import SwiftUI
 
 struct LegalInformationView: View {
     private let privacyPolicyURL = URL(
-        string: "https://q7jxb7yxdk-star.github.io/IPA-Dict/privacy-policy/"
+        string: "https://github.com/q7jxb7yxdk-star/IPA-Dict/blob/main/PRIVACY_POLICY.md"
     )!
     private let dictionaryLicensesURL = URL(
         string: "https://github.com/q7jxb7yxdk-star/IPA-Dict/blob/main/IPA%20Dict/Data/DictionaryLicenses.md"
