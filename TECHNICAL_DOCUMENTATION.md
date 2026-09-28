@@ -249,11 +249,13 @@ missing_part_of_speech_candidate_count = 0
 目前 bundled database 包含：
 
 ```text
-entries = 35,411
-headwords = 28,734
-id range = 1–35,411
-ordering_errors = 0
+entries = 35,496
+headwords = 28,784
+id range = 1–35,496
+ordering_errors = 4
 ```
+
+4 處排序差異在加入 `mitigation` 前已存在；所有 `entries.id` 仍保持連續。
 
 最近一次缺詞審核以每批最多 100 個候選處理，合共人工檢查 1,130 個詞：
 
@@ -264,9 +266,9 @@ rejected candidates = 70
 ```
 
 名詞複數以 JSON array 儲存在 `plural_forms_json`，可保留多個正確形式，
-例如 `index` 可顯示 `indexes / indices`。目前 21,144 筆 noun 詞義中，
-15,617 筆具有一般複數形式、280 筆本身是僅用複數詞，另有 5,247 筆屬於
-不可數或通常只用單數。UI 會在 noun 詞性下一行顯示複數；沒有一般複數時
+例如 `index` 可顯示 `indexes / indices`。目前 21,315 筆 noun 詞義中，
+16,003 筆有 `plural_forms_json` 形式，5,312 筆沒有；其中 280 筆標記為
+僅用複數詞。UI 會在 noun 詞性下一行顯示複數；沒有一般複數時
 顯示 `複數：—（不可數或通常只用單數）`。
 
 `plural_lookup` 是由 `plural_forms_json` 展開的搜尋索引表，將每個小寫複數
@@ -285,7 +287,7 @@ rejected candidates = 70
 ```
 
 array 可保留多個正確形式，例如 `be` 的 past tense 是 `was / were`。
-資料庫內全部 4,824 筆 verb 詞義均具有完整三組形式；片語動詞會變化主要
+資料庫內全部 4,846 筆 verb 詞義均具有完整三組形式；片語動詞會變化主要
 動詞，同形異義動詞則按詞義儲存不同形式。UI 會在 verb 詞性下一行顯示
 present participle、past tense 及 past participle。
 
@@ -297,9 +299,10 @@ present participle、past tense 及 past participle。
 
 拒絕項目包括規則屈折詞、可自由組合的片語、錯誤或重複拼寫、數字組合及
 沒有獨立英語學習價值的冷門項目。正式資料庫完成後的 integrity、JSON、
-雙語例句、IPA、metadata、排序、連續 ID、完全重複及關聯目標檢查均為正常。
+雙語例句、IPA、metadata、連續 ID、完全重複及關聯目標檢查均為正常；
+目前仍有上述 4 處既有排序差異。
 
-`entries.id` 按 `normalized_word COLLATE NOCASE` 排列；同一個 word 內維持
+`entries.id` 大致按 `normalized_word COLLATE NOCASE` 排列；同一個 word 內維持
 原有詞義次序。重新排序或刪除詞條時，會先在暫存 SQLite 驗證資料內容、
 `integrity_check`、JSON、例句、metadata 及連續 ID，通過後才更新正式資料庫。
 

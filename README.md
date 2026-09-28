@@ -135,10 +135,10 @@ IPA Dict/
 
 專案內已包含 app bundle 使用的 `dictionary.sqlite`。如果要重新建置字典資料，請參考 `Tools/DictionaryBuilder/README.md` 與 `TECHNICAL_DOCUMENTATION.md`。
 
-目前 bundled `dictionary.sqlite` 包含 35,411 筆詞義及 28,734 個詞頭。
-`entries.id` 已按照 `normalized_word` 不分大小寫排序，並連續編號為
-`1–35,411`。同一個 word 的不同詞性及詞義會維持相鄰，方便使用 SQLite
-工具檢查及維護。
+目前 bundled `dictionary.sqlite` 包含 35,496 筆詞義及 28,784 個詞頭。
+`entries.id` 連續編號為 `1–35,496`，詞條大致按照 `normalized_word`
+不分大小寫排序；目前有 4 處既有的排序差異。同一個 word 的不同詞性及
+詞義會維持相鄰，方便使用 SQLite 工具檢查及維護。
 
 最近一次缺詞審核共人工檢查 1,130 個英語學習候選：接受 1,060 個詞頭，
 新增 1,240 筆完整詞義；其餘 70 個屈折詞、自由組合、錯誤詞形及低價值
