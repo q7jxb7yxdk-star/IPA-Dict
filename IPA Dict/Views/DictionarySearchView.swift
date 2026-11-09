@@ -158,12 +158,31 @@ struct DictionarySearchView: View {
     @State private var showsBookmarkSheet = false
     @State private var sidebarDestination = SidebarDestination.dictionary
     @State private var sidebarVisibility = NavigationSplitViewVisibility.all
+    #if os(macOS)
+    @State private var referencePage: MacReferencePage?
+    #endif
     @FocusState private var focusedSearchField: SearchField?
 
     var body: some View {
         dictionaryNavigation
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.searchBackground.ignoresSafeArea())
+        #if os(macOS)
+        .disabled(referencePage != nil)
+        .accessibilityHidden(referencePage != nil)
+        .environment(\.openReferencePage) { page in
+            focusedSearchField = nil
+            dismissSearchSuggestions()
+            referencePage = page
+        }
+        .overlay {
+            if let referencePage {
+                MacReferenceBrowser(page: referencePage) {
+                    self.referencePage = nil
+                }
+            }
+        }
+        #endif
         .bookmarkPresentation(isPresented: $showsBookmarkSheet) {
             NavigationStack {
                 bookmarkListContent(

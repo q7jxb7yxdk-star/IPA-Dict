@@ -21,7 +21,7 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
 - UK / US IPA 可以點擊播放整字發音。
 - IPA 會拆成音素按鈕，例如 `/ˈæp.əl/` 可拆成 `æ`、`p`、`ə`、`l`。
 - 查詢結果的個別音素按鈕會在音素下方顯示發音說明，不播放 MP3；點擊外部即可關閉。
-- 音素說明的 Cambridge reference 會在 App 內開啟：iOS / iPadOS 使用 `SFSafariViewController`，macOS 使用 `WKWebView`。
+- 音素說明的「Cambridge 音標」及詞條下方的「Cambridge Dictionary」都會在 App 內開啟：iOS / iPadOS 使用 Safari sheet；macOS 使用填滿視窗內容區的內嵌網頁，提供右上角「關閉」按鈕及 Esc 快捷鍵。
 - 獨立「IPA 發音表」整理元音、輔音、例字及發音方法；音素本身只作說明，點擊例字的完整 IPA 會以系統語音播放整個例字。
 - 遠端整字發音使用 `AVPlayer`；沒有遠端錄音時，macOS、iOS、iPadOS 都會使用 `AVSpeechSynthesizer` 作為系統語音 fallback。
 - 搜尋歷史記錄，輸入框 focus 時以類似 Google 搜尋的下拉選單顯示；首頁記錄可向左滑動單筆刪除。

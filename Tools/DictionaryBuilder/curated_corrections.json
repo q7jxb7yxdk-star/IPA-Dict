@@ -129,6 +129,62 @@
   {"word":"ward","part_of_speech":"noun","english":"A part of a hospital, with beds, where patients reside.","chinese":"病房"}
   ],
   "word_replacements": {
+    "workhorse": [
+      {
+        "word": "workhorse",
+        "uk_ipa": "/ˈwɜːk.hɔːs/",
+        "us_ipa": "/ˈwɝːk.hɔːrs/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "plural_forms": [
+          "workhorses"
+        ],
+        "chinese": "吃苦耐勞的人；埋頭苦幹的人",
+        "english": "a dependable person who does a large amount of hard work",
+        "examples": [
+          {
+            "english": "She is the workhorse of our team and handles the daily tasks.",
+            "chinese": "她是我們團隊中吃苦耐勞的人，負責處理日常工作。"
+          }
+        ]
+      },
+      {
+        "word": "workhorse",
+        "uk_ipa": "/ˈwɜːk.hɔːs/",
+        "us_ipa": "/ˈwɝːk.hɔːrs/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "plural_forms": [
+          "workhorses"
+        ],
+        "chinese": "可靠耐用的機器；主力設備",
+        "english": "a reliable machine or piece of equipment used regularly for demanding work",
+        "examples": [
+          {
+            "english": "This printer is the workhorse of our office.",
+            "chinese": "這台印表機是我們辦公室的主力設備。"
+          }
+        ]
+      },
+      {
+        "word": "workhorse",
+        "uk_ipa": "/ˈwɜːk.hɔːs/",
+        "us_ipa": "/ˈwɝːk.hɔːrs/",
+        "part_of_speech": "noun",
+        "countability": "C",
+        "plural_forms": [
+          "workhorses"
+        ],
+        "chinese": "役馬；工作用馬",
+        "english": "a horse used for heavy tasks such as pulling carts or farm equipment",
+        "examples": [
+          {
+            "english": "The farmer used a workhorse to pull the cart.",
+            "chinese": "農夫用一匹役馬拉車。"
+          }
+        ]
+      }
+    ],
     "test": [
       {
         "word": "test",

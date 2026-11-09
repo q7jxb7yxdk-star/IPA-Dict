@@ -36,6 +36,7 @@ DictionaryEntry models
   - 管理搜尋輸入框、搜尋歷史、書簽、下拉選單、loading、error state。
   - iPhone 使用 `NavigationStack`；iPadOS 與 macOS 使用 `NavigationSplitView`。
   - iPadOS / macOS 預設顯示字典、IPA 發音表及書簽 sidebar。
+  - macOS 以 `referencePage` 管理 Cambridge 參考頁，在整個導覽容器上顯示滿版網頁，覆蓋 sidebar 及內容區。
 
 - `IPAGuideView.swift`
   - 顯示元音、雙元音、輔音、口語變音、例字及發音方法。
@@ -50,7 +51,7 @@ DictionaryEntry models
   - 顯示字典詞條內容。
   - 負責 word heading、IPA button、phoneme buttons、詞性分組、中文釋義、英文釋義、例句、同義詞及反義詞連結。
   - 個別 phoneme button 在按鈕下方顯示發音說明 popover，不播放 MP3。
-  - Cambridge reference 在 iOS / iPadOS 使用 `SFSafariViewController`、macOS 使用 `WKWebView`。
+  - Cambridge 音標及詞條 reference 在 iOS / iPadOS 使用 `SFSafariViewController` sheet；macOS 透過 `openReferencePage` environment action 開啟共用的 `MacReferenceBrowser`（`WKWebView`）。
 
 - `MarkdownText.swift`
   - 使用 Swift `AttributedString(markdown:)` 做簡化 Markdown rendering。
@@ -392,8 +393,24 @@ linked words
 `IPAGuideView.reference(for:)` 提供，避免維護兩套說明。
 
 Cambridge 音標 reference 使用
-`https://dictionary.cambridge.org/zht/help/phonetics.html`。iOS / iPadOS 以
-`SFSafariViewController` 顯示，macOS 以 `WKWebView` 顯示，不離開 App。
+`https://dictionary.cambridge.org/zht/help/phonetics.html`；詞條下方的
+Cambridge Dictionary reference 則使用該詞的英漢繁體詞條 URL。兩者都在 App 內顯示。
+
+iOS / iPadOS 使用 `SFSafariViewController` sheet。`SafariView.Coordinator`
+處理 `safariViewControllerDidFinish`，透過 SwiftUI `dismiss` 同步關閉外層
+sheet，避免按 Safari「完成」後外層呈現及灰色遮罩仍然保留。
+
+macOS 不再從音素 popover 內開啟網頁 sheet，也不再以外部瀏覽器開啟詞條
+reference。兩個入口透過 `openReferencePage` environment action 傳送
+`MacReferencePage`（URL 及標題），由 `DictionarySearchView.referencePage`
+管理，並以 overlay 呈現 `MacReferenceBrowser`。開啟音標網頁前會收起
+popover；網頁填滿目前視窗內容區（包括 sidebar 範圍），不切換系統全螢幕。
+背景字典介面暫停互動並從輔助使用導覽中隱藏。網頁頂部顯示對應標題及
+「關閉」按鈕，亦可按 Esc 清除 `referencePage`、返回原來字典介面。
+GitHub 問題報告仍沿用原有 `openExternalURL` 流程。
+
+上述關閉及滿版呈現改動已通過 macOS / iOS 語法解析與空白檢查；
+尚未執行 Build/Test，仍需手動驗證實際關閉、視窗縮放及遮罩是否消失。
 
 ## 8. 搜尋歷史、書簽與下拉選單
 

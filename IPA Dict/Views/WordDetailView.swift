@@ -19,6 +19,8 @@ struct WordDetailView: View {
     @State private var reportStatusMessage: String?
     #if os(iOS)
     @State private var safariURL: SafariURL?
+    #elseif os(macOS)
+    @Environment(\.openReferencePage) private var openReferencePage
     #endif
 
     private let audioPlayer = AudioPlayerService.shared
@@ -480,7 +482,11 @@ struct WordDetailView: View {
 
             Button {
                 if let url = cambridgeReferenceURL(for: entry.word) {
+                    #if os(macOS)
+                    openReferencePage(MacReferencePage(url: url, title: "Cambridge Dictionary"))
+                    #else
                     openExternalURL(url)
+                    #endif
                 }
             } label: {
                 Text("Cambridge Dictionary")
@@ -647,7 +653,12 @@ private struct PhonemeReferenceButton: View {
 private struct PhonemeReferenceSheet: View {
     let item: IPAItem
 
+    #if os(macOS)
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.openReferencePage) private var openReferencePage
+    #else
     @State private var browserURL: InAppBrowserURL?
+    #endif
 
     private let referenceURL = URL(
         string: "https://dictionary.cambridge.org/zht/help/phonetics.html"
@@ -666,7 +677,12 @@ private struct PhonemeReferenceSheet: View {
                     .foregroundStyle(.secondary)
 
                 Button("Cambridge 音標") {
+                    #if os(macOS)
+                    dismiss()
+                    openReferencePage(MacReferencePage(url: referenceURL, title: "Cambridge 音標"))
+                    #else
                     browserURL = InAppBrowserURL(url: referenceURL)
+                    #endif
                 }
                 .buttonStyle(.plain)
                 .foregroundStyle(Color.accentColor)
@@ -687,10 +703,12 @@ private struct PhonemeReferenceSheet: View {
         }
         .contentShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .accessibilityAddTraits(.isModal)
+        #if os(iOS)
         .sheet(item: $browserURL) { browserURL in
             InAppBrowserView(url: browserURL.url)
                 .ignoresSafeArea()
         }
+        #endif
     }
 
     private var referenceText: String {
@@ -734,6 +752,50 @@ private struct InAppBrowserView: View {
 }
 
 #if os(macOS)
+struct MacReferencePage {
+    let url: URL
+    let title: String
+}
+
+private struct OpenReferencePageKey: EnvironmentKey {
+    static let defaultValue: (MacReferencePage) -> Void = { _ in }
+}
+
+extension EnvironmentValues {
+    var openReferencePage: (MacReferencePage) -> Void {
+        get { self[OpenReferencePageKey.self] }
+        set { self[OpenReferencePageKey.self] = newValue }
+    }
+}
+
+struct MacReferenceBrowser: View {
+    let page: MacReferencePage
+    let onClose: () -> Void
+
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack {
+                Text(page.title)
+                    .font(.headline)
+                Spacer()
+                Button(action: onClose) {
+                    Label("關閉", systemImage: "xmark")
+                }
+                .keyboardShortcut(.cancelAction)
+            }
+            .padding()
+
+            Divider()
+
+            MacWebView(url: page.url)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(nsColor: .windowBackgroundColor))
+        .accessibilityAddTraits(.isModal)
+    }
+}
+
 private struct MacWebView: NSViewRepresentable {
     let url: URL
 
@@ -765,14 +827,37 @@ private struct SafariURL: Identifiable {
 private struct SafariView: UIViewControllerRepresentable {
     let url: URL
 
+    @Environment(\.dismiss) private var dismiss
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(onFinish: { dismiss() })
+    }
+
     func makeUIViewController(context: Context) -> SFSafariViewController {
-        SFSafariViewController(url: url)
+        let controller = SFSafariViewController(url: url)
+        controller.delegate = context.coordinator
+        return controller
     }
 
     func updateUIViewController(
         _ uiViewController: SFSafariViewController,
         context: Context
-    ) {}
+    ) {
+        context.coordinator.onFinish = { dismiss() }
+    }
+
+    final class Coordinator: NSObject, SFSafariViewControllerDelegate {
+        var onFinish: () -> Void
+
+        init(onFinish: @escaping () -> Void) {
+            self.onFinish = onFinish
+        }
+
+        func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+            // Dismiss the SwiftUI sheet as well as Safari's own controller.
+            onFinish()
+        }
+    }
 }
 #endif
 
