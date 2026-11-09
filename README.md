@@ -18,9 +18,9 @@ IPA Dict 是一個使用 SwiftUI 製作的 multi-platform 中英字典 app proto
   - 英文釋義
   - 一組雙語例句
   - 同義詞及反義詞連結
-- UK / US IPA 可以點擊播放整字發音。
-- IPA 會拆成音素按鈕，例如 `/ˈæp.əl/` 可拆成 `æ`、`p`、`ə`、`l`。
-- 查詢結果的個別音素按鈕會在音素下方顯示發音說明，不播放 MP3；點擊外部即可關閉。
+- 點擊 UK / US 旁的喇叭或口音標籤可播放整字發音；IPA 文字可選取及複製。
+- IPA 會拆成音素及組合按鈕，例如 `/ˈæp.əl/` 可拆成 `æ`、`p`、`əl`；組合不一定代表單一音素。
+- 查詢結果的個別音素按鈕會在音素下方顯示發音說明 popover；內文例字的藍色完整 IPA 可點擊，以系統語音播放該例字並沿用其英／美口音設定；點擊外部即可關閉。
 - 音素說明的「Cambridge 音標」及詞條下方的「Cambridge Dictionary」都會在 App 內開啟：iOS / iPadOS 使用 Safari sheet；macOS 使用填滿視窗內容區的內嵌網頁，提供右上角「關閉」按鈕及 Esc 快捷鍵。
 - 獨立「IPA 發音表」整理元音、輔音、例字及發音方法；音素本身只作說明，點擊例字的完整 IPA 會以系統語音播放整個例字。
 - 遠端整字發音使用 `AVPlayer`；沒有遠端錄音時，macOS、iOS、iPadOS 都會使用 `AVSpeechSynthesizer` 作為系統語音 fallback。
@@ -178,7 +178,7 @@ Received Pronunciation、UK 或 British 的音標，不會把 US IPA 推斷成 U
 1. 詞條有遠端 audio URL 時，使用 `AVPlayer` 播放。
 2. 沒有遠端錄音時，使用 `AVSpeechSynthesizer`；UK 使用 `en-GB`，US 使用 `en-US`。
 
-IPA 發音表不播放獨立音素檔案。音素只顯示發音說明；例字後的完整 IPA 是可點擊連結，按下後會以系統語音播放整個例字。專案與 App bundle 均不包含 MP3 或其他 IPA 錄音檔。
+IPA 發音表及字典音素 popover 不播放獨立音素檔案。音素只顯示發音說明；例字後的完整 IPA 是可點擊連結，按下後會按該例字的 UK／US 設定，以系統語音播放整個例字。專案與 App bundle 均不包含 MP3 或其他 IPA 錄音檔。
 
 macOS app 保持 App Sandbox，不加入 `com.apple.security.exception.mach-lookup.global-name` temporary exception。iOS / iPadOS 會在系統語音播放前啟用 `AVAudioSession` 的 `.playback`／`.spokenAudio`。
 

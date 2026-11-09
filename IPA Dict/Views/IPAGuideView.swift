@@ -9,12 +9,13 @@ struct IPAGuideView: View {
                 Text("IPA 發音表")
                     .font(.system(size: 24, weight: .bold))
 
-                Text("音素用作發音說明；按下例字後的藍色完整 IPA，可播放整個例字。例字使用本 App 的簡化 IPA 寫法。")
+                Text("音素及組合用作發音說明；組合不一定代表單一音素。按下例字後的藍色完整 IPA，可播放整個例字。例字使用本 App 的簡化 IPA 寫法，實際讀法會隨口音及語境而異。")
                     .font(.system(size: 11))
                     .foregroundStyle(.secondary)
 
                 ipaSection(title: "元音（Vowels）", groups: Self.vowelGroups)
                 ipaSection(title: "輔音（Consonants）", groups: Self.consonantGroups)
+                ipaSection(title: "其他符號與音節組合", groups: Self.otherGroups)
             }
             .frame(maxWidth: 820, alignment: .leading)
             .padding(.horizontal, 20)
@@ -46,11 +47,13 @@ struct IPAGuideView: View {
                             Text("/\(item.symbol)/")
                                 .font(.system(size: 16, weight: .semibold, design: .rounded))
                                 .frame(minWidth: 54, alignment: .leading)
+                                .textSelection(.enabled)
 
-                            Text(attributedDescription(for: item))
+                            Text(item.attributedDescription())
                                 .font(.system(size: 11))
                                 .foregroundStyle(.primary)
                                 .fixedSize(horizontal: false, vertical: true)
+                                .textSelection(.enabled)
                                 .environment(\.openURL, OpenURLAction { url in
                                     playExample(from: url, in: item)
                                 })
@@ -63,33 +66,11 @@ struct IPAGuideView: View {
         }
     }
 
-    private func attributedDescription(for item: IPAItem) -> AttributedString {
-        var result = AttributedString(item.description)
-
-        for (index, example) in item.examples.enumerated() {
-            let label = "/\(example.ipa)/"
-            guard let range = result.range(of: label),
-                  let url = URL(string: "ipa-example://play/\(index)") else {
-                continue
-            }
-
-            result[range].link = url
-            result[range].foregroundColor = .accentColor
-            result[range].underlineStyle = .single
-        }
-
-        return result
-    }
-
     private func playExample(from url: URL, in item: IPAItem) -> OpenURLAction.Result {
-        guard url.scheme == "ipa-example",
-              let indexText = url.pathComponents.last,
-              let index = Int(indexText),
-              item.examples.indices.contains(index) else {
+        guard let example = item.example(for: url) else {
             return .systemAction
         }
 
-        let example = item.examples[index]
         audioPlayer.speak(word: example.word, region: example.region)
         return .handled
     }
@@ -113,6 +94,36 @@ struct IPAItem: Identifiable {
     }
 
     var id: String { symbol }
+
+    func attributedDescription(_ text: String? = nil) -> AttributedString {
+        var result = AttributedString(text ?? description)
+
+        for (index, example) in examples.enumerated() {
+            let label = "/\(example.ipa)/"
+            guard let range = result.range(of: label),
+                  let url = URL(string: "ipa-example://play/\(index)") else {
+                continue
+            }
+
+            result[range].link = url
+            result[range].foregroundColor = .accentColor
+            result[range].underlineStyle = .single
+        }
+
+        return result
+    }
+
+    func example(for url: URL) -> IPAExample? {
+        guard url.scheme == "ipa-example",
+              url.host == "play",
+              let indexText = url.pathComponents.last,
+              let index = Int(indexText),
+              examples.indices.contains(index) else {
+            return nil
+        }
+
+        return examples[index]
+    }
 }
 
 struct IPAExample: Hashable {
@@ -133,14 +144,20 @@ extension IPAGuideView {
             "ɛ": "e",
             "ɑ": "ɑː",
             "ɔ": "ɔː",
-            "ɹ": "r"
+            "ɹ": "r",
+            "g": "ɡ",
+            "l̩": "əl",
+            "m̩": "əm",
+            "n̩": "ən",
+            "r̩": "ər",
+            "ʳ": "◌r"
         ]
         let lookupSymbol = aliases[symbol] ?? symbol
 
-        return (vowelGroups + consonantGroups)
+        return (vowelGroups + consonantGroups + otherGroups)
             .flatMap(\.items)
             .first { $0.symbol == lookupSymbol }
-            .map { IPAItem(symbol: symbol, description: $0.description) }
+            .map { IPAItem(symbol: symbol, description: $0.description, examples: $0.examples) }
     }
 
     static let vowelGroups = [
@@ -208,6 +225,14 @@ extension IPAGuideView {
                 IPAItem(symbol: "eə", description: "例字：英式 air /eə/；美式通常改用帶 /r/ 的讀音。", examples: [.init(word: "air", ipa: "eə")]),
                 IPAItem(symbol: "ʊə", description: "例字：部分英式讀音的 tour /tʊə/；美式通常改用帶 /r/ 的讀音。", examples: [.init(word: "tour", ipa: "tʊə")])
             ]
+        ),
+        IPAGroup(
+            id: "vowel-sequences",
+            title: "連續元音組合（常稱三合元音）——主要見於英式讀音",
+            items: [
+                IPAItem(symbol: "aɪə", description: "例字：英式 fire /faɪə/；由 /aɪ/ 滑向 /ə/。可讀成連續的元音組合，部分口音會簡化或合併。", examples: [.init(word: "fire", ipa: "faɪə")]),
+                IPAItem(symbol: "aʊə", description: "例字：英式 hour /aʊə/；由 /aʊ/ 滑向 /ə/。可讀成連續的元音組合，部分口音會簡化或合併。", examples: [.init(word: "hour", ipa: "aʊə")])
+            ]
         )
     ]
 
@@ -261,7 +286,7 @@ extension IPAGuideView {
             title: "近音／半元音（Approximants / Semi-vowels）",
             items: [
                 IPAItem(symbol: "l", description: "濁音。例字：light /laɪt/；舌尖接觸上齒齦，氣流從舌頭兩側通過。", examples: [.init(word: "light", ipa: "laɪt")]),
-                IPAItem(symbol: "r", description: "濁音。例字：red /red/；字典常以 /r/ 簡寫英語近音 /ɹ/，舌頭向後收，通常不接觸上顎。", examples: [.init(word: "red", ipa: "red")]),
+                IPAItem(symbol: "r", description: "濁音。例字：red /red/；字典常以 /r/ 簡寫英語近音 /ɹ/，舌頭向後收，通常不接觸上顎。英式字尾的 /r/ 是否發音，另見連音 r 說明。", examples: [.init(word: "red", ipa: "red")]),
                 IPAItem(symbol: "j", description: "濁音。例字：yes /jes/；半元音，起音接近短促的 /i/。", examples: [.init(word: "yes", ipa: "jes")]),
                 IPAItem(symbol: "w", description: "濁音。例字：wet /wet/；半元音，雙唇先收圓再放開。", examples: [.init(word: "wet", ipa: "wet")])
             ]
@@ -271,7 +296,44 @@ extension IPAGuideView {
             title: "口語常用特殊變音（進階參考）",
             items: [
                 IPAItem(symbol: "ʔ", description: "喉塞音（glottal stop）。現代英式口語尤其常見；例字：button /ˈbʌt.ən/。部分說話者會在字尾 /t/ 或 /t/ 接音節鼻音前收緊聲門。", examples: [.init(word: "button", ipa: "ˈbʌt.ən")]),
-                IPAItem(symbol: "ɾ", description: "閃音／彈音（flap）。常見於美式英語；例字：water /ˈwɑː.t̬ɚ/。當 /t/ 或 /d/ 位於重讀元音後、非重讀元音前，舌尖快速輕觸齒齦。", examples: [.init(word: "water", ipa: "ˈwɑː.t̬ɚ", region: "US")])
+                IPAItem(symbol: "ɾ", description: "閃音／彈音（flap）。常見於美式英語；例字：water /ˈwɑː.t̬ɚ/。當 /t/ 或 /d/ 位於重讀元音後、非重讀元音前，舌尖快速輕觸齒齦；Cambridge 常以 /t̬/ 標示這種 /t/ 的讀法。", examples: [.init(word: "water", ipa: "ˈwɑː.t̬ɚ", region: "US")]),
+                IPAItem(symbol: "t̬", description: "Cambridge 的美式閃音標記。例字：cutting /ˈkʌt̬.ɪŋ/；舌尖快速輕觸上齒齦，常以 IPA /ɾ/ 表示，並非一般清音 /t/。", examples: [.init(word: "cutting", ipa: "ˈkʌt̬.ɪŋ", region: "US")])
+            ]
+        )
+    ]
+
+    static let otherGroups = [
+        IPAGroup(
+            id: "unstressed-vowels",
+            title: "部分非重讀音節中的元音",
+            items: [
+                IPAItem(symbol: "i", description: "例字：happy /ˈhæp.i/；常用於非重讀音節，不標示長音 /iː/ 或短音 /ɪ/ 的對立，實際音值會隨口音而異。", examples: [.init(word: "happy", ipa: "ˈhæp.i")]),
+                IPAItem(symbol: "u", description: "例字：situation /ˌsɪtʃ.uˈeɪ.ʃən/；用於部分非重讀音節，不標示長音 /uː/ 或短音 /ʊ/ 的對立。", examples: [.init(word: "situation", ipa: "ˌsɪtʃ.uˈeɪ.ʃən")])
+            ]
+        ),
+        IPAGroup(
+            id: "loanword-sounds",
+            title: "外來語中的發音",
+            items: [
+                IPAItem(symbol: "ɒ̃", description: "鼻化元音。例字：英式 croissant /ˈkwæs.ɒ̃/；發元音時讓部分氣流同時通過鼻腔，並非在 /ɒ/ 後另加 /n/。", examples: [.init(word: "croissant", ipa: "ˈkwæs.ɒ̃")]),
+                IPAItem(symbol: "x", description: "清軟顎摩擦音。例字：loch /lɒx/；舌後部靠近軟顎，讓氣流摩擦通過；部分英語口音會改讀 /k/。", examples: [.init(word: "loch", ipa: "lɒx")])
+            ]
+        ),
+        IPAGroup(
+            id: "optional-schwa-syllables",
+            title: "可省略中央元音的弱讀音節",
+            items: [
+                IPAItem(symbol: "əl", description: "例字：label /ˈleɪ.bəl/；弱讀音節的 /ə/ 可省略，改由 /l/ 構成音節，亦可寫作 /l̩/。是否省略取決於口音及語境。", examples: [.init(word: "label", ipa: "ˈleɪ.bəl")]),
+                IPAItem(symbol: "əm", description: "例字：criticism /ˈkrɪt.ɪ.sɪ.zəm/；弱讀音節的 /ə/ 可省略，改由 /m/ 構成音節，亦可寫作 /m̩/。", examples: [.init(word: "criticism", ipa: "ˈkrɪt.ɪ.sɪ.zəm")]),
+                IPAItem(symbol: "ən", description: "例字：sudden /ˈsʌd.ən/；弱讀音節的 /ə/ 可省略，改由 /n/ 構成音節，亦可寫作 /n̩/。", examples: [.init(word: "sudden", ipa: "ˈsʌd.ən")]),
+                IPAItem(symbol: "ər", description: "例字：英式 dictionary /ˈdɪk.ʃən.ər.i/；此類弱讀音節的 /ə/ 可省略，由 /r/ 承擔音節核心。連續的 /ər/ 在本表合併顯示，但不表示每處 /ər/ 都必須省略元音，也不一律等同美式 /ɚ/。", examples: [.init(word: "dictionary", ipa: "ˈdɪk.ʃən.ər.i")])
+            ]
+        ),
+        IPAGroup(
+            id: "linking-r",
+            title: "英式字尾連音 r",
+            items: [
+                IPAItem(symbol: "◌r", description: "字典標示的英式字尾 /r/，在後接元音時才發音。比較：four apples /ˌfɔːr ˈæp.əlz/ 與 four cars /ˌfɔː ˈkɑːz/；後接輔音或單獨讀 four 時，這類英式口音不發字尾 /r/。此處 ◌ 只標示符號位置。", examples: [.init(word: "four apples", ipa: "ˌfɔːr ˈæp.əlz"), .init(word: "four cars", ipa: "ˌfɔː ˈkɑːz")])
             ]
         )
     ]

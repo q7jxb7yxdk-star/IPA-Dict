@@ -343,34 +343,35 @@ struct WordDetailView: View {
         ipa: String,
         remoteAudioURL: URL?
     ) -> some View {
-        Button {
-            if let remoteAudioURL {
-                audioPlayer.playRemoteSound(url: remoteAudioURL)
-            } else {
-                audioPlayer.speak(word: word, region: region)
-            }
-        } label: {
-            HStack(spacing: 7) {
-                Image(systemName: "speaker.wave.2.fill")
-                    .font(.system(size: 16))
-                    .foregroundStyle(.primary)
-                MarkdownText(
-                    "**\(region.markdownEscaped)**",
-                    font: .system(size: 16, weight: .semibold),
-                    color: .primary
-                )
-                if !ipa.isEmpty {
-                    MarkdownText(
-                        ipa.markdownEscaped,
-                        font: .system(size: 16, design: .rounded),
-                        color: .accentColor
-                    )
+        HStack(spacing: 7) {
+            Button {
+                if let remoteAudioURL {
+                    audioPlayer.playRemoteSound(url: remoteAudioURL)
+                } else {
+                    audioPlayer.speak(word: word, region: region)
                 }
+            } label: {
+                HStack(spacing: 7) {
+                    Image(systemName: "speaker.wave.2.fill")
+                        .font(.system(size: 16))
+                        .foregroundStyle(.primary)
+                    Text(region)
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundStyle(.primary)
+                }
+                .contentShape(Rectangle())
             }
-            .contentShape(Rectangle())
+            .buttonStyle(.plain)
+            .accessibilityLabel("Play \(region) pronunciation")
+
+            if !ipa.isEmpty {
+                MarkdownText(
+                    ipa.markdownEscaped,
+                    font: .system(size: 16, design: .rounded),
+                    color: .accentColor
+                )
+            }
         }
-        .buttonStyle(.plain)
-        .accessibilityLabel("Play \(region) pronunciation")
     }
 
     @ViewBuilder
@@ -671,6 +672,14 @@ private struct PhonemeReferenceSheet: View {
                 .foregroundStyle(.primary)
                 .fixedSize(horizontal: false, vertical: true)
                 .textSelection(.enabled)
+                .environment(\.openURL, OpenURLAction { url in
+                    guard let example = item.example(for: url) else {
+                        return .systemAction
+                    }
+
+                    AudioPlayerService.shared.speak(word: example.word, region: example.region)
+                    return .handled
+                })
 
             HStack(spacing: 5) {
                 Text("Reference:")
@@ -711,16 +720,18 @@ private struct PhonemeReferenceSheet: View {
         #endif
     }
 
-    private var referenceText: String {
+    private var referenceText: AttributedString {
         let voice = phonationLabel(for: item.symbol)
         let description = item.description
             .replacingOccurrences(of: "清音。", with: "")
             .replacingOccurrences(of: "濁音。", with: "")
 
-        if let voice {
-            return "/\(item.symbol)/（\(voice)）— \(description)"
+        let prefix = if let voice {
+            "/\(item.symbol)/（\(voice)）— "
+        } else {
+            "/\(item.symbol)/ — "
         }
-        return "/\(item.symbol)/ — \(description)"
+        return AttributedString(prefix) + item.attributedDescription(description)
     }
 
     private func phonationLabel(for symbol: String) -> String? {

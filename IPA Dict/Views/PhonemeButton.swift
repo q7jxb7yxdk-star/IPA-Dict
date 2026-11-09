@@ -22,9 +22,13 @@ struct PhonemeButton: View {
 enum IPATokenizer {
     private static let compoundPhonemes = [
         "tʃ", "dʒ", "eɪ", "aɪ", "ɔɪ", "aʊ", "əʊ", "oʊ",
-        "ɪə", "eə", "ʊə", "iː", "ɑː", "ɔː", "uː", "ɜː",
+        "ɪə", "eə", "ʊə", "əl", "əm", "ən", "ər", "iː", "ɑː", "ɔː", "uː", "ɜː",
         "æː", "ɛː", "ɪː", "ʊː", "əː", "ɝː", "aː", "oː",
-        "eɪː", "aɪː", "oʊː"
+        "eɪː", "aɪː", "oʊː", "aɪə", "aʊə"
+    ].sorted { $0.count > $1.count }
+
+    private static let boundaries: Set<Character> = [
+        ".", "/", "[", "]", "ˈ", "ˌ", "(", ")", "-", "~", "‿"
     ]
 
     static func phonemes(in transcription: String) -> [String] {
@@ -33,14 +37,19 @@ enum IPATokenizer {
         var result: [String] = []
 
         while !remaining.isEmpty {
+            // Keep separators until tokenization so compounds cannot span syllables or words.
+            if let first = remaining.first,
+               boundaries.contains(first) || first.isWhitespace {
+                remaining.removeFirst()
+                continue
+            }
+
             if let compound = compoundPhonemes.first(where: { remaining.hasPrefix($0) }) {
                 result.append(compound)
                 remaining.removeFirst(compound.count)
             } else {
                 let symbol = String(remaining.removeFirst())
-                if symbol == "." {
-                    continue
-                } else if symbol == "ː", let previous = result.popLast() {
+                if symbol == "ː", let previous = result.popLast() {
                     result.append(previous + symbol)
                 } else {
                     result.append(symbol)
@@ -63,9 +72,7 @@ enum IPATokenizer {
             .replacingOccurrences(of: "ä", with: "a")
 
         [
-            "/", "[", "]", "ˈ", "ˌ", " ", "(", ")", "-",
-            "~", "ˑ", "ʰ", "ʲ", "̃", "̈", "̝", "̞", "̟", "̩",
-            "̬", "̯", "͡", "͜", "‿"
+            "ˑ", "ʰ", "ʲ", "̈", "̝", "̞", "̟", "̯", "͡", "͜"
         ].forEach {
             value = value.replacingOccurrences(of: $0, with: "")
         }

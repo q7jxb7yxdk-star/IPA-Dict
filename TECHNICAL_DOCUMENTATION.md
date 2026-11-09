@@ -41,7 +41,7 @@ DictionaryEntry models
 - `IPAGuideView.swift`
   - 顯示元音、雙元音、輔音、口語變音、例字及發音方法。
   - 音素本身只作說明；點擊例字的完整 IPA 會以系統語音播放整個例字。
-  - 提供 `IPAGuideView.reference(for:)`，讓結果頁重用相同發音說明。
+  - 提供 `IPAGuideView.reference(for:)`，讓結果頁重用相同發音說明及例字資料，包括 UK／US region；別名查詢亦保留例字資料。
 
 - `LegalInformationView.swift`
   - 顯示 App 內私隱摘要、網絡服務、錯誤報告及資料授權說明。
@@ -50,7 +50,7 @@ DictionaryEntry models
 - `WordDetailView.swift`
   - 顯示字典詞條內容。
   - 負責 word heading、IPA button、phoneme buttons、詞性分組、中文釋義、英文釋義、例句、同義詞及反義詞連結。
-  - 個別 phoneme button 在按鈕下方顯示發音說明 popover，不播放 MP3。
+  - 個別 phoneme button 在按鈕下方顯示發音說明 popover；內文例字的完整 IPA 可點擊，透過系統語音播放整個例字。
   - Cambridge 音標及詞條 reference 在 iOS / iPadOS 使用 `SFSafariViewController` sheet；macOS 透過 `openReferencePage` environment action 開啟共用的 `MacReferenceBrowser`（`WKWebView`）。
 
 - `MarkdownText.swift`
@@ -392,6 +392,11 @@ linked words
 音素下方；popover 使用不透明系統背景，點擊外部即可關閉。內容由
 `IPAGuideView.reference(for:)` 提供，避免維護兩套說明。
 
+`PhonemeReferenceSheet.referenceText` 使用 `AttributedString`，保留音素標題及
+清／濁音標籤；只有內文例字的完整 IPA 加上發音連結。點擊後在該文字的
+`OpenURLAction` 內取得例字及 region，呼叫 `AudioPlayerService.speak(word:region:)`，
+popover 保持開啟。Cambridge 參考按鈕沿用原有流程。
+
 Cambridge 音標 reference 使用
 `https://dictionary.cambridge.org/zht/help/phonetics.html`；詞條下方的
 Cambridge Dictionary reference 則使用該詞的英漢繁體詞條 URL。兩者都在 App 內顯示。
@@ -484,9 +489,19 @@ iOS / macOS Debug Area 仍可能顯示少量 Apple 系統 speech pipeline log；
    - UK: `en-GB`
    - US: `en-US`
 
-### IPA 發音表的例字發音
+### IPA 發音表及音素 popover 的例字發音
 
 IPA 發音表的左側音素為純文字。描述中的例字完整 IPA 是可點擊連結，連結會把對應例字及 UK／US region 傳給 `AudioPlayerService.speak(word:region:)`，一次播放整個例字。專案與 App bundle 均不包含本地 MP3 或其他 IPA 錄音檔。
+
+發音表與字典音素 popover 共用 `IPAItem.attributedDescription(_:)`，以 accent color
+及底線標示例字完整 IPA，連結格式為 `ipa-example://play/<index>`。
+`IPAItem.example(for:)` 檢查 scheme、host 及例字索引範圍，再返回對應的
+`IPAExample`。Popover 只對說明內文建立連結，避免音素標題與例字 IPA
+相同時把連結加到標題上。例字預設使用 UK，標示 US 的例字使用美式語音。
+
+單一大寫字母例字會先轉換為字母名稱再合成語音；`Z` 按 UK／US 分別讀作
+zed／zee。Speech 播放以可取消的 task 準備音訊；iOS 的 audio session 設定及
+啟用在專用 queue 執行，再回到主 actor 建立及播放 utterance。
 
 ## 10. IPA Tokenizer
 
@@ -495,8 +510,6 @@ IPA 發音表的左側音素為純文字。描述中的例字完整 IPA 是可�
 - `d͡ʒ` / `d͜ʒ` -> `dʒ`
 - `t͡ʃ` / `t͜ʃ` -> `tʃ`
 - `ɫ` -> `l`
-- `ɚ` -> `ər`
-- `ɝ` -> `ɜr`
 - `ᵻ` -> `ɪ`
 - `ᵿ` -> `ʊ`
 
@@ -535,10 +548,12 @@ uː
 
 如果遇到長音符號 `ː`，會合併到前一個音素。
 
-`əl`、`əm`、`ən`、`ər` 不作為獨立 compound phoneme。以 `ər` 為例，
-tokenizer 會拆成 `ə` 與 `r`；這可避免把 Cambridge IPA 表沒有列出的組合
-當成獨立音素，也避免誤播不存在的單一音檔。syllable dot `.` 會作為
-compound matching 的邊界，不會讓雙元音或其他複合音素跨 syllable 合併。
+`əl`、`əm`、`ən`、`ər` 及連續元音 `aɪə`、`aʊə` 會合併顯示為組合按鈕，
+不表示每個組合都是單一音素。`ɚ`、`ɝː` 保留原有符號；`t̬`、`ɒ̃` 等
+帶附加符號的字元亦保留，讓說明可以對應相關讀法。分音節符號、空白及其他
+邊界會保留到 tokenization 階段，避免 compound matching 跨音節或跨詞合併。
+發音說明亦涵蓋可省略中央元音的弱讀音節及英式連音 r；`g`、`l̩`、`m̩`、
+`n̩`、`r̩`、`ʳ` 等別名會映射到對應說明。
 
 ## 11. 翻譯 fallback
 
@@ -702,7 +717,9 @@ git diff --check
 - 點擊搜尋框會顯示歷史。
 - Esc 可關閉下拉。
 - 查詢結果排版正確。
-- UK / US IPA 可點擊。
+- UK / US 旁的喇叭及口音標籤可播放整字；IPA 文字可選取及複製。
 - 音素按鈕可點擊。
+- 音素 popover 內例字的藍色完整 IPA 可播放整個例字，播放後 popover 保持開啟。
+- 檢查多例字（例如 `əʊ`）及 US 例字（例如 `ɚ`）的連結與口音；音素標題保持純文字。
 - 同義詞及反義詞連結會完整顯示並可查詢。
 - 詞性、中文釋義、英文釋義、例句顯示完整。
